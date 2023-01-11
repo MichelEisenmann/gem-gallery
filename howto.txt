@@ -1,0 +1,3 @@
+Use deploy.sh to copy to Terranora
+
+Then open //10.0.0.43/public/home.html (for example)
