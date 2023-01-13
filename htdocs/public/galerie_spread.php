@@ -56,12 +56,12 @@ foreach( $dico->mostRecents as $paint ) {
   <div class="w3-card-4">
        <a target="_blank" href="images/<?= $paint->file; ?>">
             <img src="images/<?= $paint->file; ?>"
-                 alt="<?= $paint->title; ?>"
+                 alt="<?= htmlspecialchars($paint->title); ?>"
 		 style="width:100%"
 	    >
        </a>
        <div class="w3-container w3-center">
-         <p><?= ucfirst($paint->title); ?></p>
+          <p><?= ucfirst(htmlspecialchars($paint->title)); ?></p>
        </div>
   </div>
 </div>
