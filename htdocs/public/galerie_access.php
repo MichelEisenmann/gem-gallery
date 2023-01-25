@@ -74,7 +74,7 @@ div.desc {
 <?php include ('../private/initialize_galleries.php'); ?>
 
 <div class="w3-container top-container">
-<h1>Galeries<h1>
+<h1>Galerie<h1>
 </div>
 
 <?php
