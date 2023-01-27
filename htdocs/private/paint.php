@@ -23,6 +23,13 @@ class Paint {
         //        echo date_format($this->date, "Y/m/d") ."<br>";
     }
 
+    // what is displayed in the gallery
+    function full_title() {
+        //
+        $fdate= date_format($this->date, "m/Y");
+        return $fdate ." - " .$this->title;
+    }
+
     function print() {
         echo "[" .$this->file .", " .$this->title .", " .$this->type .", " .date_format($this->date, "Y/m/d") .", " .$this->width ."x" .$this->height ."]";
     }
