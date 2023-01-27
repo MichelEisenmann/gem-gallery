@@ -61,7 +61,14 @@ foreach( $dico->mostRecents as $paint ) {
 	    >
        </a>
        <div class="w3-container w3-center">
-          <p><?= ucfirst(htmlspecialchars($paint->full_title())); ?></p>
+          <button onclick="myFunction('<?= $cur; ?>')" class="w3-button w3-block w3-left-align">
+          <p><?= ucfirst(htmlspecialchars($paint->full_title())); ?> ...</p>
+
+	  </button>
+       </div>
+       <div id='<?= $cur; ?>' class="w3-container w3-hide">
+	 <p><?= $paint->get_description() ?></p>
+	 <p><?= $paint->get_date() ." - " .$paint->get_size(); ?></p>
        </div>
   </div>
 </div>
@@ -76,6 +83,18 @@ foreach( $dico->mostRecents as $paint ) {
 
 <!-- allow including some separate html file -->
 <script src="../private/w3-include-html.js"></script>
+
+<script>
+
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}          
+</script>
 
 </body>
 </html>

@@ -26,8 +26,22 @@ class Paint {
     // what is displayed in the gallery
     function full_title() {
         //
-        $fdate= date_format($this->date, "m/Y");
+        $fdate= $this->get_date();
         return $fdate ." - " .$this->title;
+    }
+
+    function get_date() {
+        return date_format($this->date, "m/Y");
+    }
+
+    // return a label that shows the dimensions
+    function get_size() {
+        return $this->width ."x" .$this->height ." cm";
+    }
+
+    // return a protected description
+    function get_description() {
+        return addslashes($this->description);
     }
 
     function print() {
