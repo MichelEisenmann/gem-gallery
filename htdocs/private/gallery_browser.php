@@ -46,8 +46,8 @@ class GalleryBrowser {
             while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {
                 $num = count($data);
                 //                echo "<p> $num fields in line $row: <br /></p>\n";
-                // skip first row (comment)
-                if ( $row > 1 ) {
+                // skip commented lines (starts with '#')
+                if ( !str_starts_with($data[0], '#') ) {
                     //                    for ($c=0; $c < $num; $c++) {
                     //                        echo $data[$c] . "<br />\n";
                     //                    }
