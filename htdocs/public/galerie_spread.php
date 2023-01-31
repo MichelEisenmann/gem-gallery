@@ -61,7 +61,7 @@ foreach( $dico->mostRecents as $paint ) {
 	    >
        </a>
        <div class="w3-container w3-center">
-          <button onclick="myFunction('<?= $cur; ?>')" class="w3-button w3-block w3-left-align">
+          <button onclick="openAdditionalInfo('<?= $cur; ?>')" class="w3-button w3-block w3-left-align">
           <p><?= ucfirst(htmlspecialchars($paint->full_title())); ?> ...</p>
 
 	  </button>
@@ -86,7 +86,18 @@ foreach( $dico->mostRecents as $paint ) {
 
 <script>
 
-function myFunction(id) {
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Used to open the part that shows description + size
+function openAdditionalInfo(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
