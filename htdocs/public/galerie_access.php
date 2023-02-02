@@ -84,9 +84,9 @@ foreach ( $GALLERY_BROWSER->dictionnaries as $dico ) {
     if ( count($dico->paints) == 0 ) {
         continue;
     }
-    $latest= $dico->mostRecents[0];
+    $latest= $dico->sortedList[0];
     //    echo $dico->type ."<br>";
-    //    echo $dico->mostRecents[0]->print() ."<br>";
+    //    echo $dico->sortedList[0]->print() ."<br>";
 ?>
     <div class="responsive">
      <div class="gallery">

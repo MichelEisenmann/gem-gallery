@@ -26,7 +26,7 @@
 <?php
  $dico_type=htmlspecialchars($_GET["type"]);
  $dico= $GALLERY_BROWSER->dictionnaries[$dico_type];
-    $count= count($dico->mostRecents);
+    $count= count($dico->sortedList);
     $first= true;
  $cur= 1;
     // change row every 6
@@ -41,7 +41,7 @@
 <div class="w3-row-padding">
 
 <?php
-foreach( $dico->mostRecents as $paint ) {
+foreach( $dico->sortedList as $paint ) {
   if ( $cur % $every == 1 && !$first ) {
 ?>
 </div>
