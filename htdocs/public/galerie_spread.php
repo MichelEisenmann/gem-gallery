@@ -55,7 +55,7 @@ foreach( $dico->sortedList as $paint ) {
 <div class="w3-col m2 w3-center">
   <div class="w3-card-4">
        <a target="_blank" href="images/<?= $paint->file; ?>">
-            <img src="images/<?= $paint->file; ?>"
+            <img src="images/<?= $paint->getThumbnailFile(); ?>"
                  alt="<?= htmlspecialchars($paint->full_title()); ?>"
 		 style="width:100%"
 	    >

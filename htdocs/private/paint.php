@@ -33,6 +33,23 @@ class Paint {
         //        echo date_format($this->date, "Y/m/d") ."<br>";
     }
 
+    /**
+     * Receives an image path and creates the corresponding thumbnail name
+     *     images/public/toto.jpg -> images/public/toto_thumb.jpg
+     */
+    function getThumbnailFile() {
+        // get extension
+        $ext= pathinfo($this->file)['extension'];
+        // get filename (no extension)
+        $base= pathinfo($this->file)['filename'];
+        // get directory
+        $dir= pathinfo($this->file)['dirname'];
+
+        // compute thumbnail name
+        return $dir ."/" .$base ."_small." .$ext;
+    }
+
+
     function useRankForSort() {
         return $this->rank >= 0;
     }
