@@ -34,15 +34,15 @@ class PaintDictionnary {
         usort( $this->sortedList, "PaintDictionnary::latest" );
     }
 
-    // ranked paintings are shown first (lowest values come first)
+    // ranked paintings are shown first (highest values come first)
     // non-ranked paintings are shown afterward (most recent come first)
     function latest($p1, $p2) {
         if ( $p1->useRankForSort() ) {
             if ( $p2->useRankForSort() ) {
                 if ( $p1->rank > $p2->rank ) {
-                    return 1;
-                } else {
                     return -1;
+                } else {
+                    return 1;
                 }
             } else {
                 return -1;
