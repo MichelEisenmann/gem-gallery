@@ -91,7 +91,7 @@ foreach ( $GALLERY_BROWSER->dictionnaries as $dico ) {
     <div class="responsive">
      <div class="gallery">
               <a href="../public/galerie_spread.php?type=<?= $dico->type; ?>">
-       <img src="images/<?= $latest->file; ?>"
+       <img src="images/<?= $latest->getThumbnailFile(); ?>"
 	    >
               </a>
        <div class="desc"><h2><?= ucfirst($dico->name); ?></h2></div>
