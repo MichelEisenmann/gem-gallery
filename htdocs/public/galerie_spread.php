@@ -67,8 +67,8 @@ foreach( $dico->sortedList as $paint ) {
 	  </button>
        </div>
        <div id='<?= $cur; ?>' class="w3-container w3-hide">
-	 <p><?= $paint->get_description() ?></p>
-	 <p><?= $paint->get_date() ." - " .$paint->get_size(); ?></p>
+	 <p><?= htmlspecialchars($paint->get_description()); ?></p>
+	 <p><?= $paint->get_size(); ?></p>
        </div>
   </div>
 </div>
