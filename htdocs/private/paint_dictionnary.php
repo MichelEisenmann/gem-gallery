@@ -13,33 +13,51 @@ class PaintDictionnary {
     // array indexed by paint filenames
     public $paints;
 
-    // sorted list (most recent first)
-    public $mostRecents;
+    // sorted by rank if available, otherwise by date
+    public $sortedList;
 
     public function __construct() {
         $this->paints= array();
-        $this->mostRecents= array();
+        $this->sortedList= array();
     }
 
     function add_paint( $paint ) {
         // case insensitive
         if ( strcasecmp($paint->type, $this->type) == 0 ) {
             $this->paints[$paint->file]= $paint;
-            $this->mostRecents[]=$paint;
+            $this->sortedList[]=$paint;
         }
     }
 
     // must be called to ensure dictionnary is ready to be used
     function finalize() {
-        usort( $this->mostRecents, "PaintDictionnary::latest" );
+        usort( $this->sortedList, "PaintDictionnary::latest" );
     }
 
+    // ranked paintings are shown first (highest values come first)
+    // non-ranked paintings are shown afterward (most recent come first)
     function latest($p1, $p2) {
-        $interval= $p1->date->diff($p2->date);
-        if ( $interval->invert == 1 ) {
-            return -1;
+        if ( $p1->useRankForSort() ) {
+            if ( $p2->useRankForSort() ) {
+                if ( $p1->rank > $p2->rank ) {
+                    return -1;
+                } else {
+                    return 1;
+                }
+            } else {
+                return -1;
+            }
         } else {
-            return 1;
+            if ( $p2->useRankForSort() ) {
+                return 1;
+            } else {
+                $interval= $p1->date->diff($p2->date);
+                if ( $interval->invert == 1 ) {
+                    return -1;
+                } else {
+                    return 1;
+                }
+            }
         }
     }
 

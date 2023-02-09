@@ -84,14 +84,14 @@ foreach ( $GALLERY_BROWSER->dictionnaries as $dico ) {
     if ( count($dico->paints) == 0 ) {
         continue;
     }
-    $latest= $dico->mostRecents[0];
+    $latest= $dico->sortedList[0];
     //    echo $dico->type ."<br>";
-    //    echo $dico->mostRecents[0]->print() ."<br>";
+    //    echo $dico->sortedList[0]->print() ."<br>";
 ?>
     <div class="responsive">
      <div class="gallery">
               <a href="../public/galerie_spread.php?type=<?= $dico->type; ?>">
-       <img src="images/<?= $latest->file; ?>"
+       <img src="images/<?= $latest->getThumbnailFile(); ?>"
 	    >
               </a>
        <div class="desc"><h2><?= ucfirst($dico->name); ?></h2></div>

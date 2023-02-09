@@ -26,7 +26,7 @@
 <?php
  $dico_type=htmlspecialchars($_GET["type"]);
  $dico= $GALLERY_BROWSER->dictionnaries[$dico_type];
-    $count= count($dico->mostRecents);
+    $count= count($dico->sortedList);
     $first= true;
  $cur= 1;
     // change row every 6
@@ -41,7 +41,7 @@
 <div class="w3-row-padding">
 
 <?php
-foreach( $dico->mostRecents as $paint ) {
+foreach( $dico->sortedList as $paint ) {
   if ( $cur % $every == 1 && !$first ) {
 ?>
 </div>
@@ -55,13 +55,13 @@ foreach( $dico->mostRecents as $paint ) {
 <div class="w3-col m2 w3-center">
   <div class="w3-card-4">
        <a target="_blank" href="images/<?= $paint->file; ?>">
-            <img src="images/<?= $paint->file; ?>"
+            <img src="images/<?= $paint->getThumbnailFile(); ?>"
                  alt="<?= htmlspecialchars($paint->full_title()); ?>"
 		 style="width:100%"
 	    >
        </a>
        <div class="w3-container w3-center">
-          <button onclick="myFunction('<?= $cur; ?>')" class="w3-button w3-block w3-left-align">
+          <button onclick="openAdditionalInfo('<?= $cur; ?>')" class="w3-button w3-block w3-left-align">
           <p><?= ucfirst(htmlspecialchars($paint->full_title())); ?> ...</p>
 
 	  </button>
@@ -86,7 +86,18 @@ foreach( $dico->mostRecents as $paint ) {
 
 <script>
 
-function myFunction(id) {
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Used to open the part that shows description + size
+function openAdditionalInfo(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
