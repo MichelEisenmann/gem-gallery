@@ -52,6 +52,7 @@ div.desc {
   }
 }
 
+// mobile vertical
 @media only screen and (max-width: 500px) {
   .responsive {
     width: 100%;
