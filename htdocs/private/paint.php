@@ -57,8 +57,9 @@ class Paint {
     // what is displayed in the gallery
     function full_title() {
         //
-        $fdate= $this->get_date();
-        return $fdate ." - " .$this->title;
+        //$fdate= $this->get_date();
+		$fsize= $this->get_size();
+        return $fsize ." - " .$this->title;
     }
 
     function get_date() {

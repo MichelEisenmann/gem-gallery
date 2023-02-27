@@ -86,7 +86,7 @@ foreach( $dico->sortedList as $paint ) {
        </a>
        <div class="w3-container w3-center">
           <button onclick="openAdditionalInfo('<?= $cur; ?>')" class="w3-button w3-block w3-left-align">
-          <p><?= ucfirst(htmlspecialchars($paint->full_title())); ?> ...</p>
+          <p><?= ucfirst(htmlspecialchars($paint->full_title())); ?> <i class="fa fa-arrow-circle-down"></i></p>
 
 	  </button>
        </div>
