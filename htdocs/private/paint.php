@@ -59,7 +59,7 @@ class Paint {
         //
         //$fdate= $this->get_date();
 		$fsize= $this->get_size();
-        return $fsize ." - " .$this->title;
+        return $this->title ." - " .$fsize ;
     }
 
     function get_date() {
