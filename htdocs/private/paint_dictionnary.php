@@ -21,6 +21,39 @@ class PaintDictionnary {
         $this->sortedList= array();
     }
 
+    // number of paints
+    function get_count() {
+        $count= count($this->sortedList);
+        return $count;
+    }
+
+    // at the end, loops back to zero
+    function get_next($rank) {
+        $count= count($this->sortedList);
+        $rank= $rank+1;
+        if ( $rank >= $count ) return 0;
+        return $rank;
+    }
+
+    // at zero, loops to the end of the list
+    function get_prev($rank) {
+        $count= count($this->sortedList);
+        $rank= $rank-1;
+        if ( $rank < 0 ) return $count-1;
+        return $rank;
+    }
+
+    function get_paint( $rank ) {
+        $count= count($this->sortedList);
+        if ( $rank < 0 ) {
+            return $this->sortedList[0];
+        }
+        if ( $rank >= $count ) {
+            return $this->sortedList[count-1];
+        }
+        return $this->sortedList[$rank];
+    }
+
     function add_paint( $paint ) {
         // case insensitive
         if ( strcasecmp($paint->type, $this->type) == 0 ) {

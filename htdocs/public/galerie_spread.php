@@ -54,7 +54,7 @@
 <?php
  $dico_type=htmlspecialchars($_GET["type"]);
  $dico= $GALLERY_BROWSER->dictionnaries[$dico_type];
-    $count= count($dico->sortedList);
+    $count= $dico->get_count();
     $first= true;
  $cur= 1;
     // change row every 6
@@ -82,7 +82,7 @@ foreach( $dico->sortedList as $paint ) {
 
 <div class="w3-col m2 w3-center">
   <div class="w3-card-4">
-       <a target="_blank" href="images/<?= $paint->file; ?>">
+       <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $cur-1; ?>">
             <img src="images/<?= $paint->getThumbnailFile(); ?>"
                  alt="<?= htmlspecialchars($paint->full_title()); ?>"
 		 style="width:100%"
