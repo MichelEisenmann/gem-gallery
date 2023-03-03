@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+	.top-container {
+      padding-top: 50px;
+      }
 	.containerBtn {
 		position: relative;
 	}
@@ -69,11 +72,12 @@
  $prev= $dico->get_prev($rank);
 ?>
 
+<div class="w3-container top-container">
 <div class="w3-content w3-display-container">
- <a href="../public/galerie_spread.php?type=<?= $dico->type; ?>"><i class="fa fa-th">Galerie </i></a>
- <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $prev; ?>"><i class="fa fa-arrow-left"></i>Previous</a>
- <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $next; ?>"><i class="fa fa-toggle-right"></i>Next</a>
-   <div class="containerBtn">
+ <a href="index.html"><i class="fa fa-arrow-circle-up"> Accueil </i></a>
+ <a href="../public/galerie_spread.php?type=<?= $dico->type; ?>"><i class="fa fa-step-backward"> Galerie <?= $dico->name ?></i></a>
+ <p>
+    <div class="containerBtn">
      <img src="images/<?= $paint->file; ?>" style="width:100%">
      <button class="leftbtn"><a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $prev; ?>">
 		<i class="fa fa-arrow-left"></i></a>
@@ -82,8 +86,10 @@
 	    <i class="fa fa-arrow-right"></i></a>
 	 </button>
    </div>
+   <p><?= ucfirst(htmlspecialchars($paint->full_title())); ?> </p>
+  </p> 
  </div>
-
+</div>
 <!-- allow including some separate html file -->
 <script src="../private/w3-include-html.js"></script>
 
