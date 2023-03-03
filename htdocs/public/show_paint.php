@@ -8,6 +8,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+	.containerBtn {
+		position: relative;
+	}
+	.containerBtn img {
+		  width: 100%;
+          height: auto;
+	}
+	.containerBtn .leftbtn {
+       position: absolute;
+       top: 10%;
+       left: 5%;
+       transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 16px;
+      padding: 5px 5px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+   }
+   .containerBtn .leftbtn:hover {
+     background-color: blue;
+   }
+   	.containerBtn .rightbtn {
+       position: absolute;
+       top: 10%;
+       left: 95%;
+       transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 16px;
+      padding: 5px 5px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+   }
+   .containerBtn .rightbtn:hover {
+     background-color: blue;
+   }
     </style>
   </head>
 
@@ -27,14 +70,19 @@
 ?>
 
 <div class="w3-content w3-display-container">
- <a href="../public/galerie_spread.php?type=<?= $dico->type; ?>">GALERIE</a>
+ <a href="../public/galerie_spread.php?type=<?= $dico->type; ?>"><i class="fa fa-th">Galerie </i></a>
  <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $prev; ?>"><i class="fa fa-arrow-left"></i>Previous</a>
  <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $next; ?>"><i class="fa fa-toggle-right"></i>Next</a>
- <img src="images/<?= $paint->file; ?>" style="width:100%">
- <a href="../public/galerie_spread.php?type=<?= $dico->type; ?>">GALERIE</a>
- <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $prev; ?>"><i class="fa fa-arrow-left"></i>Previous</a>
- <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $next; ?>"><i class="fa fa-toggle-right"></i>Next</a>
-</div>
+   <div class="containerBtn">
+     <img src="images/<?= $paint->file; ?>" style="width:100%">
+     <button class="leftbtn"><a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $prev; ?>">
+		<i class="fa fa-arrow-left"></i></a>
+	 </button>
+     <button class="rightbtn"><a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $next; ?>">
+	    <i class="fa fa-arrow-right"></i></a>
+	 </button>
+   </div>
+ </div>
 
 <!-- allow including some separate html file -->
 <script src="../private/w3-include-html.js"></script>
