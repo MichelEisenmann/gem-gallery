@@ -28,12 +28,12 @@
 
 <div class="w3-content w3-display-container">
  <a href="../public/galerie_spread.php?type=<?= $dico->type; ?>">GALERIE</a>
- <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $prev; ?>">PREV</a>
- <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $next; ?>">NEXT</a>
+ <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $prev; ?>"><i class="fa fa-arrow-left"></i>Previous</a>
+ <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $next; ?>"><i class="fa fa-toggle-right"></i>Next</a>
  <img src="images/<?= $paint->file; ?>" style="width:100%">
  <a href="../public/galerie_spread.php?type=<?= $dico->type; ?>">GALERIE</a>
- <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $prev; ?>">PREV</a>
- <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $next; ?>">NEXT</a>
+ <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $prev; ?>"><i class="fa fa-arrow-left"></i>Previous</a>
+ <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $next; ?>"><i class="fa fa-toggle-right"></i>Next</a>
 </div>
 
 <!-- allow including some separate html file -->

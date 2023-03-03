@@ -11,7 +11,7 @@ class GalleryBrowser {
     // what is displayed
     const OIL_NAME= "Huiles";
     const PASTEL_NAME= "Pastels";
-    const OTHER_NAME= "Autres";
+    const OTHER_NAME= "Aquarelles, encre de chine, sanguine";
     
     const ACRYLIC_NAME= "acryliques";
     

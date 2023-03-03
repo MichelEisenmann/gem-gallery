@@ -34,13 +34,51 @@ body, html {
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+   margin: auto;
+  width: 1080px;
+}
+.grid img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+.grid img:nth-child(2) {
+  grid-column: span 4;
+  }
+
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
+@media only screen and (max-device-width: 576px) {
+    .grid {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+	  justify-items: left;
+      grid-gap: 1px;
+    }
+   .box {
+      margin: 0;
+      }
+    .box:nth-child(1) ,
+    .box:nth-child(2){
+      grid-column: span 2;
+      } 
+    .box:nth-child(3), 
+    .box:nth-child(4) {
+      grid-column: span 2;
+      }
   .bgimg-1 {
     background-attachment: scroll;
     min-height: 400px;
   }
-}
+ }
+
+
 </style>
 </head>
 <body>
@@ -79,9 +117,31 @@ body, html {
   -->
 </div>
 
+
+
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">Pr&eacute;sentation (about me)</h3>
+  <h3 class="w3-center">Gis&egrave;le EISENMANN <img src="public/images/web/gisele.jpg" alt="Ma photo" width="208" height="215"></h3>
+  <!-- GRID -->
+
+<div class="w3-content w3-container " id="grid">
+<p class="w3-center">
+<main class="grid">
+  <a target="_blank" href="public/galerie_spread.php?type=oil">
+          <img class="huile" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" width="208" height="167"/><br>Huiles</br>
+	</a>
+	<a target="_blank" href="public/galerie_spread.php?type=acrylic">
+          <img src="public/images/Acrylique/20211228_Evocation de Gourdon_small" alt="Acrylique" width="208" height="166"/><br>Acryliques</br>
+	</a>
+ 	<a target="_blank" href="public/galerie_spread.php?type=pastel">
+          <img src="public/images/Pastels/20210909_canalDuMidi_small" alt="Pastel" width="208" height="282"/><br>Pastels</br>
+	</a>
+	<a target="_blank" href="public/galerie_spread.php?type=other">
+          <img src="public/images/Autres/20200920_SanguinePascaleGuillaume_small" alt="Autres" width="208" height="146"/><br>Aquarelles</br>
+	</a>
+ </main>
+</p>
+</div>
   <p class="w3-center"><em>La peinture pour transcender le r&eacute;el</em></p>
   <p>J'ai commenc&eacute; &agrave; peindre en 2020 pour g&eacute;rer mon stress professionnel et les pr&eacute;misses des confinements du covid19. 
   Mon choix s'est port&eacute; sur la technique du pastel sec, soutenu par les mots de Francis Bacon entendus dans une vid&eacute;o 
@@ -94,14 +154,7 @@ me permet d’appr&eacute;cier la composition et la palette de couleurs avant de
 Mes tableaux pr&eacute;sentent souvent des couleurs vives, contrast&eacute;es et des formes courbes. 
 Mon imagination est aliment&eacute;e en grande partie par mes photos et je travaille en musique.
  </p></p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Gisele Eisenmann</b></p><br>
-      <img src="public/images/web/gisele.jpg" alt="Ma photo" width="208" height="215">
-    </div>
-
  
-  </div>
   <p class="w3-large w3-center w3-padding-16">Mes activit&eacute;s</p>
   <p>Une autre de mes passions est le cinéma. Je suis un membre actif du conseil d'administration de l'association
        <a href="http://lesvisiteursdusoir.com/">Les visiteurs du soir</a> qui g&egrave;re le cinéma Art &amp; Essai de Valbonne (06).
@@ -112,10 +165,7 @@ Mon imagination est aliment&eacute;e en grande partie par mes photos et je trava
     </div>
 -->	   
 
-  <p><i class="fa fa-paint-brush"></i>voir les <a href="public/galerie_spread.php?type=oil">Huiles</a></p>
-   <p><i class="fa fa-paint-brush"></i>voir les <a href="public/galerie_spread.php?type=acrylic">Acryliques</a></p>
-    <p><i class="fa fa-paint-brush"></i>voir les <a href="public/galerie_spread.php?type=pastel">Pastels</a></p>
-	 <p><i class="fa fa-paint-brush"></i>voir les <a href="public/galerie_spread.php?type=other">Autres (Aquarelles...)</a></p>
+
   
 
 <!--
