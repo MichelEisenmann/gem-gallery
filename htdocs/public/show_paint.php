@@ -74,7 +74,7 @@
 
 <div class="w3-container top-container">
 <div class="w3-content w3-display-container">
- <a href="index.html"><i class="fa fa-arrow-circle-up"> Accueil </i></a>
+ <a href="../index.html"><i class="fa fa-arrow-circle-up"> Accueil </i></a>
  <a href="../public/galerie_spread.php?type=<?= $dico->type; ?>"><i class="fa fa-step-backward"> Galerie <?= $dico->name ?></i></a>
  <p>
     <div class="containerBtn">
