@@ -34,6 +34,22 @@ body, html {
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
+.huile {
+   width: 208px ;
+   height: 167px ;
+   }
+.acrylique {
+   width: 208px ;
+   height: 167px ;
+   }
+   .pastel {
+   width: 120px ;
+   height: 162px ;
+   }
+    .aquarelle {
+   width: 208px ;
+   height: 146px ;
+   }
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -54,10 +70,26 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 576px) {
-    .grid {
+  .huile {
+   width: 100px ;
+   height: 80px ;
+   }
+   .acrylique {
+   width: 100px ;
+   height: 80px ;
+   }
+   .pastel {
+   width: 100px ;
+   height: 80px ;
+   }
+   .aquarelle {
+   width: 100px ;
+   height: 80px ;
+   }
+   .grid {
       display: grid;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(1, 1fr);
 	  justify-items: left;
       grid-gap: 1px;
     }
@@ -65,12 +97,10 @@ body, html {
       margin: 0;
       }
     .box:nth-child(1) ,
-    .box:nth-child(2){
-      grid-column: span 2;
-      } 
+    .box:nth-child(2);
     .box:nth-child(3), 
     .box:nth-child(4) {
-      grid-column: span 2;
+      grid-column: span 1;
       }
   .bgimg-1 {
     background-attachment: scroll;
@@ -128,16 +158,16 @@ body, html {
 <p class="w3-center">
 <main class="grid">
   <a target="_blank" href="public/galerie_spread.php?type=oil">
-          <img class="huile" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" width="208" height="167"/><br>Huiles</br>
+          <img class="huile" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
 	</a>
 	<a target="_blank" href="public/galerie_spread.php?type=acrylic">
-          <img src="public/images/Acrylique/20211228_Evocation de Gourdon_small" alt="Acrylique" width="208" height="166"/><br>Acryliques</br>
+          <img class="acrylique" src="public/images/Acrylique/20211228_Evocation de Gourdon_small" alt="Acrylique" /><br>Acryliques</br>
 	</a>
  	<a target="_blank" href="public/galerie_spread.php?type=pastel">
-          <img src="public/images/Pastels/20210909_canalDuMidi_small" alt="Pastel" width="208" height="282"/><br>Pastels</br>
+          <img class="pastel" src="public/images/Pastels/20210909_canalDuMidi_small" alt="Pastel" ><br>Pastels</br>
 	</a>
 	<a target="_blank" href="public/galerie_spread.php?type=other">
-          <img src="public/images/Autres/20200920_SanguinePascaleGuillaume_small" alt="Autres" width="208" height="146"/><br>Aquarelles</br>
+          <img class="aquarelle" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small" alt="Aquarelle" /><br>Aquarelles</br>
 	</a>
  </main>
 </p>
