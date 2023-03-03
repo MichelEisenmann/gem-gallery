@@ -20,7 +20,7 @@
 	}
 	.containerBtn .leftbtn {
        position: absolute;
-       top: 10%;
+       top: 5%;
        left: 5%;
        transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -38,7 +38,7 @@
    }
    	.containerBtn .rightbtn {
        position: absolute;
-       top: 10%;
+       top: 5%;
        left: 95%;
        transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
