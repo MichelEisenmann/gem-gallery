@@ -12,9 +12,10 @@
   gtag('config', 'G-R9KWX3PWND');
 </script>
 
+<?php include ('../private/initialize.php'); ?>
+<?php include ('../private/initialize_galleries.php'); ?>
 
-
-    <title>GEM site</title>
+    <title>Galeries</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -105,9 +106,6 @@ div.desc {
   </div>
 </div>
 
-
-<?php include ('../private/initialize.php'); ?>
-<?php include ('../private/initialize_galleries.php'); ?>
 
 <div class="w3-container top-container">
 <h1>Galerie<h1>

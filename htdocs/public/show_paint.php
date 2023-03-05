@@ -11,8 +11,21 @@
   gtag('config', 'G-R9KWX3PWND');
 </script>
 
+<?php include ('../private/initialize.php'); ?>
+<?php include ('../private/initialize_galleries.php'); ?>
 
-    <title>GEM site</title>
+<?php
+     // receives the rank of the image and the dictionnary type
+ $dico_type=htmlspecialchars($_GET["type"]);
+ $dico= $GALLERY_BROWSER->dictionnaries[$dico_type];
+ $rank= $_GET["rank"];
+ $paint= $dico->get_paint($rank);
+ $count= $dico->get_count();
+ $next= $dico->get_next($rank);
+ $prev= $dico->get_prev($rank);
+?>
+
+    <title><?= ucfirst(htmlspecialchars($paint->full_title())); ?> </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -70,20 +83,6 @@
   </head>
 
   <body>
-<?php include ('../private/initialize.php'); ?>
-<?php include ('../private/initialize_galleries.php'); ?>
-
-<?php
-     // receives the rank of the image and the dictionnary type
- $dico_type=htmlspecialchars($_GET["type"]);
- $dico= $GALLERY_BROWSER->dictionnaries[$dico_type];
- $rank= $_GET["rank"];
- $paint= $dico->get_paint($rank);
- $count= $dico->get_count();
- $next= $dico->get_next($rank);
- $prev= $dico->get_prev($rank);
-?>
-
 <div class="w3-container top-container">
 <div class="w3-content w3-display-container">
  <a href="../index.html"><i class="fa fa-arrow-circle-up"> Accueil </i></a>
