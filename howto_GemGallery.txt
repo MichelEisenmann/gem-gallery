@@ -1,0 +1,7 @@
+Le HowTo officiel, partagé se trouve sur le drive
+Galerie de Gisele
+https://docs.google.com/document/d/1ysWqG0F7GHWDTgJKCJ74-wTQoC5ul9yGuE0cEP4q8AY/edit
+
+Use deploy.sh to copy to Terranora
+
+Then open //10.0.0.43/public/home.html (for example)
