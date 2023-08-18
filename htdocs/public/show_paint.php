@@ -17,7 +17,7 @@
 <?php
      // receives the rank of the image and the dictionnary key
  $dico_key=htmlspecialchars($_GET["key"]);
- $dico= $GALLERY_BROWSER->dictionnaries[$dico_key];
+ $dico= $GALLERY_BROWSER->paint_dictionnaries[$dico_key];
  $rank= $_GET["rank"];
  $paint= $dico->get_paint($rank);
  $count= $dico->get_count();
