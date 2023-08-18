@@ -1,0 +1,17 @@
+# Ce fichier donne un correspondance entre une cle (utilisee en interne) et un intitule (qui sera affiche)
+# Il est utilise
+#   - pour donner un intitule aux differents cycles
+#   - pour donner un intitule aux types de techniques
+
+# cle, intitule
+# - techniques
+acrylic;Acryliques
+pastel;Pastels
+oil;Huiles
+other;Aquarelles, encre de chine, sanguine
+# - cycles
+donazac; Aude et Donazac
+australie; Australie
+animaux; Animaux
+copie; Copie
+

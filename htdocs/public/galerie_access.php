@@ -119,16 +119,16 @@ foreach ( $GALLERY_BROWSER->dictionnaries as $dico ) {
         continue;
     }
     $latest= $dico->sortedList[0];
-    //    echo $dico->type ."<br>";
+    //    echo $dico->key ."<br>";
     //    echo $dico->sortedList[0]->print() ."<br>";
 ?>
     <div class="responsive">
      <div class="gallery">
-              <a href="../public/galerie_spread.php?type=<?= $dico->type; ?>">
+              <a href="../public/galerie_spread.php?key=<?= $dico->key; ?>">
        <img src="images/<?= $latest->getThumbnailFile(); ?>"
 	    >
               </a>
-       <div class="desc"><h2><a href="../public/galerie_spread.php?type=<?= $dico->type; ?>">
+       <div class="desc"><h2><a href="../public/galerie_spread.php?key=<?= $dico->key; ?>">
 	   <?= ucfirst($dico->name); ?>
 	          </a>
 	   </h2></div>

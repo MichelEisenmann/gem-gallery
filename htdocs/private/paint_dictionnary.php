@@ -2,13 +2,13 @@
 
 require('paint.php');
 
-// should contain all paints of the same type
+// Contient les tableaux qui partagent une meme cle (ca peut etre le type ou le cycle par exemple)
 class PaintDictionnary {
     // name displayed
     public $name;
 
-    // type of paints (must match CSV)
-    public $type;
+    // la cle commune aux tableaux du dictionnaire (le type ou le cycle)
+    public $key;
 
     // array indexed by paint filenames
     public $paints;
@@ -54,9 +54,9 @@ class PaintDictionnary {
         return $this->sortedList[$rank];
     }
 
-    function add_paint( $paint ) {
+    function add_paint( $paint, $paint_key ) {
         // case insensitive
-        if ( strcasecmp($paint->type, $this->type) == 0 ) {
+        if ( strcasecmp($paint_key, $this->key) == 0 ) {
             $this->paints[$paint->file]= $paint;
             $this->sortedList[]=$paint;
         }
@@ -95,7 +95,7 @@ class PaintDictionnary {
     }
 
     function print() {
-        echo $this->type ."<br>";
+        echo $this->key ."<br>";
         foreach ( $this->paints as $paint ) {
             echo "-   ";
             $paint->print();

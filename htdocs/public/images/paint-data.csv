@@ -1,60 +1,65 @@
-# Rank is used for sorting the paintings
-#   - '-1' or no value means use date for sorting (most recent first)
-#   - positive value means use value to sort (highest first)
+# Rank est utilise pour trier les peintures
+#   - '-1' ou pas de valeur, signifie que la date sera utilisee pour le tri (la plus recente en premier)
+#   - une valeur positive signifie qu'on utilise cette valeur pour le tri (valeurs les plus fortes apparaissent en premier)
 #
-# rank;filename;title;date;width;height;type;description
--1;Acrylique/20210624_Lever soleil sur Donazac.jpg;Matin sur Donazac;20210610;38;28;acrylic;Lever soleil Donazac (11)
--1;Acrylique/20210722_GuillaumePense_Piscine.jpg;Réflexion au bord de piscine;20210710;20;20;acrylic;Le penseur
--1;Acrylique/20210801_Olen La trouee Donazac.jpg;La trouée du bois;20210810;24;33;acrylic;(collection privée Paris, FR)
--1;Acrylique/20210815_Polynesie-PascaleEtLuc.jpg;Lagon à Taha'a;20210815;46;33;acrylic;Enfants dans le lagon de Polynesie
--1;Acrylique/20210826_Jeux d'eaux Nice_Acrylic.jpg;Miroir d'eau;20210826;18;12;acrylic;Promenade du Paillon Nice 06
--1;Acrylique/20211003_Luc Planneur.jpg;L'aviateur;20211003;40;30;acrylic;Planneur
--1;Acrylique/20211019_Portrait Guillaume.jpg;Guillaume;20211019;24;33;acrylic;Guillaume 2ans, doudou et tetine
--1;Acrylique/20211105_Olen en pieds.jpg;Royal;20211105;46;55;acrylic;Olen le chien avec sa friandise
--1;Acrylique/20211127_Playing-the-waves.jpg;Jeux de vagues;20211127;55;45;acrylic;Esterel
+# Cycle est utilise pour permettre de "trier" les tableaux
+#   - un tableau n'appartient qu'a un cycle
+#   - dans la colonne cycle, mettre la cle du cycle: par ex, "mangrove"
+#   - l'intitule du cycle se trouve dans le fichier "cycles.csv" en face de sa cle: par ex, "mangrove" -> "Mangroves Australiennes"
+#
+# rank;filename;title;date;width;height;type;description;cycle
+-1;Acrylique/20210624_Lever soleil sur Donazac.jpg;Matin sur Donazac;20210610;38;28;acrylic;Lever soleil Donazac (11);donazac
+-1;Acrylique/20210722_GuillaumePense_Piscine.jpg;Réflexion au bord de piscine;20210710;20;20;acrylic;Le penseur;famille
+-1;Acrylique/20210801_Olen La trouee Donazac.jpg;La trouée du bois;20210810;24;33;acrylic;(collection privée Paris, FR);donazac
+-1;Acrylique/20210815_Polynesie-PascaleEtLuc.jpg;Lagon à Taha'a;20210815;46;33;acrylic;Enfants dans le lagon de Polynesie;
+-1;Acrylique/20210826_Jeux d'eaux Nice_Acrylic.jpg;Miroir d'eau;20210826;18;12;acrylic;Promenade du Paillon Nice 06;
+-1;Acrylique/20211003_Luc Planneur.jpg;L'aviateur;20211003;40;30;acrylic;Planneur;
+-1;Acrylique/20211019_Portrait Guillaume.jpg;Guillaume;20211019;24;33;acrylic;Guillaume 2ans, doudou et tetine;famille
+-1;Acrylique/20211105_Olen en pieds.jpg;Royal;20211105;46;55;acrylic;Olen le chien avec sa friandise;animaux
+-1;Acrylique/20211127_Playing-the-waves.jpg;Jeux de vagues;20211127;55;45;acrylic;Esterel;
 -1;Acrylique/20211209_IleAuxLoups.png;Ile aux loups;20211209;80;40;acrylic;
--1;Acrylique/20211228_Evocation de Gourdon.jpg;Evocation de Gourdon;20211228;90;73;acrylic;La cote et le Cap Antibes
--1;Acrylique/20220317_Les zebres_acrylique.jpg;Les zebres;20220317;40;80;acrylic;Zèbres de Namibie en miroir
--1;Acrylique/20220312_Paris Quai de Seine.jpg;La Seine;20220312;80;40;acrylic;Paris Quai de Seine
--1;Acrylique/20220601_Terranora Creek Australian Pelican_Acrylic.jpg;Australian Pelican;20220601;24;35;acrylic;Terranora Creek Australian Pelican
--1;Acrylique/20220609_Le Ficus_Acrylique.jpg;Le Ficus;20220609;20;20;acrylic;Bord de rivière (NSW)
--1;Acrylique/20220723_LesFlamantsRouges_Acrylique.jpg;Les Flamants Rouges;20220723;50;50;acrylic;Les Flamants Rouges
+-1;Acrylique/20211228_Evocation de Gourdon.jpg;Evocation de Gourdon;20211228;90;73;acrylic;La cote et le Cap Antibes;
+-1;Acrylique/20220317_Les zebres_acrylique.jpg;Les zebres;20220317;40;80;acrylic;Zèbres de Namibie en miroir;
+-1;Acrylique/20220312_Paris Quai de Seine.jpg;La Seine;20220312;80;40;acrylic;Paris Quai de Seine;
+-1;Acrylique/20220601_Terranora Creek Australian Pelican_Acrylic.jpg;Australian Pelican;20220601;24;35;acrylic;Terranora Creek Australian Pelican;australie
+-1;Acrylique/20220609_Le Ficus_Acrylique.jpg;Le Ficus;20220609;20;20;acrylic;Bord de rivière (NSW);australie
+-1;Acrylique/20220723_LesFlamantsRouges_Acrylique.jpg;Les Flamants Rouges;20220723;50;50;acrylic;Les Flamants Rouges;
 -1;Acrylique/20220821_Regards.jpg;Jeu de Regards;20220821;50;40;acrylic;
--1;Acrylique/20221016_Abutilon_Acrylic 20x27.jpg;Vase aux Abutilons;20221016;27;22;acrylic; 
--1;Acrylique/20221103_Sunset on Terranora Creek-Acrylic 50x76.jpg;Sunset Terranora Creek;20221103;80;54;acrylic;Sunset on Terranora Creek (collection privée Brisbane, AUS)
--1;Acrylique/20221210_TerranoraCreek_Acrylique-53x70.jpg;Sunset;20221210;80;54;acrylic;Sunset on Terranora Creek (NSW)
--1;Acrylique/20230504_La-Mangrove-SulfurCockatoo_Acryl-53x71.jpg;La mangrove;20230504;56;71;acrylic;La mangrove avec martin-pecheur et sulfur cockatoo (NSW, AUS)
--1;Acrylique/20230530_Contemplation_A100x73.jpg;Contemplation;20230530;73;100;acrylic;Bord de riviere La Sorgue (Vaucluse)
--1;Acrylique/20230629_La-Vague_AcF6_33x41.jpg;La vague;20230629;41;33;acrylic;Une vague
--1;Huile/20211229_Automne_FromCezanne.jpg;Automne;20211229;40;80;oil;Automne (d'apres Cezanne)
--1;Huile/20220222_Melancolie.jpg;Melancolie;20220222;55;46;oil;Melancolie
--1;Huile/20220601_Terranora creek-Sunset-Egret-Huile.jpg;The great egret;20220601;65;90;oil;Terranora Creek - Australian Great Egret
--1;Huile/20220723_Chardin-Le panier Fraises des bois - Huile.jpg;Panier de fraises des bois;20220723;80;60;oil;Le panier Fraises des bois (d apres Jean Siméon Chardin)
--1;Huile/20221128_Reve de tropiques_Huile53x70.jpg;Rêve de tropiques;20221128;72;53;oil;Reve de tropiques
--1;Huile/20221109_Flamboyance_Huile.jpg;Flamboyance;20221109;41;32;oil;Flamboyance
--1;Huile/20230216_LesDanseuses_Huile.jpg;Les danseuses;20230216;80;65;oil;Les danseuses -Hommage Pina Bausch Le sacre du Printemps
--1;Huile/20230706_Donazac_Hu30P_65x92.jpg;Donazac;20230706;65;92;oil;Village de Donazac - Aude France
--1;Huile/20230708_ClairDeSoleil_Huile_30P.jpg;Clair de Soleil;20230708;65;92;oil;Couchant sur la plage de Coolangatta - Queensland Australia
--1;Pastels/20200809_Le lievre.jpg;Le lièvre;20200809;24;18;pastel;Le lièvre
--1;Pastels/20200815_AmericanRobin.jpg;American Robins;20200815;24;18;pastel;American robins
--1;Pastels/20200824_GuillaumeMaximilien_Bisou.jpg;Calin;20200824;23;17;pastel;Calin dans le cou
--1;Pastels/20200827_Desert Jordanie.jpg;Wadi Ram;20200827;24;16;pastel;Wadi Ram Desert Jordanie
--1;Pastels/20200829_Guillaume_Angelot.jpg;Angelot;20200829;23;17;pastel;Angelot
+-1;Acrylique/20221016_Abutilon_Acrylic 20x27.jpg;Vase aux Abutilons;20221016;27;22;acrylic;
+-1;Acrylique/20221103_Sunset on Terranora Creek-Acrylic 50x76.jpg;Sunset Terranora Creek;20221103;80;54;acrylic;Sunset on Terranora Creek (collection privée Brisbane, AUS);australie
+-1;Acrylique/20221210_TerranoraCreek_Acrylique-53x70.jpg;Sunset;20221210;80;54;acrylic;Sunset on Terranora Creek (NSW);australie
+-1;Acrylique/20230504_La-Mangrove-SulfurCockatoo_Acryl-53x71.jpg;La mangrove;20230504;56;71;acrylic;La mangrove avec martin-pecheur et sulfur cockatoo (NSW, AUS);animaux
+-1;Acrylique/20230530_Contemplation_A100x73.jpg;Contemplation;20230530;73;100;acrylic;Bord de riviere La Sorgue (Vaucluse);
+-1;Acrylique/20230629_La-Vague_AcF6_33x41.jpg;La vague;20230629;41;33;acrylic;Une vague;
+-1;Huile/20211229_Automne_FromCezanne.jpg;Automne;20211229;40;80;oil;Automne (d'apres Cezanne);copie
+-1;Huile/20220222_Melancolie.jpg;Melancolie;20220222;55;46;oil;Melancolie;
+-1;Huile/20220601_Terranora creek-Sunset-Egret-Huile.jpg;The great egret;20220601;65;90;oil;Terranora Creek - Australian Great Egret;animaux
+-1;Huile/20220723_Chardin-Le panier Fraises des bois - Huile.jpg;Panier de fraises des bois;20220723;80;60;oil;Le panier Fraises des bois (d apres Jean Siméon Chardin);copie
+-1;Huile/20221128_Reve de tropiques_Huile53x70.jpg;Rêve de tropiques;20221128;72;53;oil;Reve de tropiques;
+-1;Huile/20221109_Flamboyance_Huile.jpg;Flamboyance;20221109;41;32;oil;Flamboyance;
+-1;Huile/20230216_LesDanseuses_Huile.jpg;Les danseuses;20230216;80;65;oil;Les danseuses -Hommage Pina Bausch Le sacre du Printemps;
+-1;Huile/20230706_Donazac_Hu30P_65x92.jpg;Donazac;20230706;65;92;oil;Village de Donazac - Aude France;donazac
+-1;Huile/20230708_ClairDeSoleil_Huile_30P.jpg;Clair de Soleil;20230708;65;92;oil;Couchant sur la plage de Coolangatta - Queensland Australia;australie
+-1;Pastels/20200809_Le lievre.jpg;Le lièvre;20200809;24;18;pastel;Le lièvre;animaux
+-1;Pastels/20200815_AmericanRobin.jpg;American Robins;20200815;24;18;pastel;American robins;animaux
+-1;Pastels/20200824_GuillaumeMaximilien_Bisou.jpg;Calin;20200824;23;17;pastel;Calin dans le cou;
+-1;Pastels/20200827_Desert Jordanie.jpg;Wadi Ram;20200827;24;16;pastel;Wadi Ram Desert Jordanie;
+-1;Pastels/20200829_Guillaume_Angelot.jpg;Angelot;20200829;23;17;pastel;Angelot;
 -1;Pastels/20200902_BebeEpanoui.jpg;Bebe Epanoui;20200902;14;19;pastel;
--1;Pastels/20200906_Guillaume-surlaTable_Pascale.jpg;Premiers pas;20200906;13;19;pastel;Premiers pas
--1;Pastels/20201023_Luc_Profil.jpg;Profil;20201023;18;24;pastel;Profil
--1;Pastels/20201106_Pascale_RenaissanceItalienne.jpg;Dans le vent;20201106;24;18;pastel;Dans le vent
--1;Pastels/20201110_Le bisou_PascaleGuillaume.jpg;Le bisou;20201110;28;20;pastel;Le bisou
--1;Pastels/20201111_Luc au clair de lune.jpg;Clair de Lune;20201111;40;30;pastel;Au clair de lune
--1;Pastels/20201206_Fiancailles_VersionAUS.jpg;Fiançailles;20201206;40;30;pastel;Pastel - Fiançailles (collection privée Brisbane, AUS)
--1;Pastels/20201210_Fiancailles_VersionFR.jpg;Fiançailles du soir;20201210;40;30;pastel;Fiançailles
--1;Pastels/20201227_Femme Cruche.jpg;La servante;20201227;30;40;pastel;La servante au tableau
--1;Pastels/20210124_PascaleAmelie.jpg;Generations;20210124;40;30;pastel;Generations Petite-fille Grand-mère
--1;Pastels/20210630_Olen et marguerite.jpg;Printemps à Entraunes;20210630;18;23;pastel;Printemps à Entraunes 06
--1;Pastels/20210909_canalDuMidi.jpg;Allée de platanes;20210909;29;39;pastel;Le long du canal du Midi (Aude) - (collection privée, USA)
+-1;Pastels/20200906_Guillaume-surlaTable_Pascale.jpg;Premiers pas;20200906;13;19;pastel;Premiers pas;
+-1;Pastels/20201023_Luc_Profil.jpg;Profil;20201023;18;24;pastel;Profil;
+-1;Pastels/20201106_Pascale_RenaissanceItalienne.jpg;Dans le vent;20201106;24;18;pastel;Dans le vent;
+-1;Pastels/20201110_Le bisou_PascaleGuillaume.jpg;Le bisou;20201110;28;20;pastel;Le bisou;
+-1;Pastels/20201111_Luc au clair de lune.jpg;Clair de Lune;20201111;40;30;pastel;Au clair de lune;
+-1;Pastels/20201206_Fiancailles_VersionAUS.jpg;Fiançailles;20201206;40;30;pastel;Pastel - Fiançailles (collection privée Brisbane, AUS);
+-1;Pastels/20201210_Fiancailles_VersionFR.jpg;Fiançailles du soir;20201210;40;30;pastel;Fiançailles;
+-1;Pastels/20201227_Femme Cruche.jpg;La servante;20201227;30;40;pastel;La servante au tableau;
+-1;Pastels/20210124_PascaleAmelie.jpg;Generations;20210124;40;30;pastel;Generations Petite-fille Grand-mère;
+-1;Pastels/20210630_Olen et marguerite.jpg;Printemps à Entraunes;20210630;18;23;pastel;Printemps à Entraunes 06;
+-1;Pastels/20210909_canalDuMidi.jpg;Allée de platanes;20210909;29;39;pastel;Le long du canal du Midi (Aude) - (collection privée, USA);donazac
 -1;Pastels/20210917_Michel en Polynesie.jpg;Torride;20210917;28;20;pastel;Pastel- Au soleil de Polynesie;
 -1;Pastels/20220714_LaBrague.jpg;La Brague;20220714;28;20;pastel;Pastel- La Brague près du pont des Tamarins (Biot, 06);
--1;Autres/20200920_SanguinePascaleGuillaume.jpg;Mere et enfant;20200920;18;12;other;Sanguine- Mere et enfant
--1;Autres/20201220_Loup et Corbeaux.jpg;Loup et Corbeaux;20201220;24;18;other;Encre de chine - Loups et corbeaux
--1;Autres/20221224_La Sorgue_Aquarelle.jpg;La Sorgue;20221224;15;20;other;Aquarelle - La Sorgue Fontaine de Vaucluse
--1;Autres/20230202_LesMouettes_30x40_Aquarelle.jpg;Les mouettes;20230202;30;40;other;Aquarelle - Les mouettes
+-1;Autres/20200920_SanguinePascaleGuillaume.jpg;Mere et enfant;20200920;18;12;other;Sanguine- Mere et enfant;
+-1;Autres/20201220_Loup et Corbeaux.jpg;Loup et Corbeaux;20201220;24;18;other;Encre de chine - Loups et corbeaux;animaux
+-1;Autres/20221224_La Sorgue_Aquarelle.jpg;La Sorgue;20221224;15;20;other;Aquarelle - La Sorgue Fontaine de Vaucluse;
+-1;Autres/20230202_LesMouettes_30x40_Aquarelle.jpg;Les mouettes;20230202;30;40;other;Aquarelle - Les mouettes;animaux

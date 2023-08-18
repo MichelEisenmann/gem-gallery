@@ -15,8 +15,8 @@
 <?php include ('../private/initialize_galleries.php'); ?>
 
 <?php
-    $dico_type=htmlspecialchars($_GET["type"]);
-    $dico= $GALLERY_BROWSER->dictionnaries[$dico_type];
+    $dico_key=htmlspecialchars($_GET["key"]);
+    $dico= $GALLERY_BROWSER->dictionnaries[$dico_key];
 ?>
 
     <title><?= ucfirst($dico->name) ?></title>
@@ -95,7 +95,7 @@ foreach( $dico->sortedList as $paint ) {
 
 <div class="w3-col m2 w3-center">
   <div class="w3-card-4">
-       <a href="../public/show_paint.php?type=<?= $dico->type; ?>&rank=<?= $cur-1; ?>">
+       <a href="../public/show_paint.php?key=<?= $dico->key; ?>&rank=<?= $cur-1; ?>">
             <img src="images/<?= $paint->getThumbnailFile(); ?>"
                  alt="<?= htmlspecialchars($paint->full_title()); ?>"
 		 style="width:100%"

@@ -1,45 +1,42 @@
 <?php
 
+require('dictionnary.php');
 require('paint_dictionnary.php');
 
 class GalleryBrowser {
-    // must match the CSV file
-    const OIL= "oil";
-    const PASTEL= "pastel";
-    const OTHER= "other";
-    const ACRYLIC= "acrylic";
-    // what is displayed
-    const OIL_NAME= "Huiles";
-    const PASTEL_NAME= "Pastels";
-    const OTHER_NAME= "Aquarelles, encre de chine, sanguine";
-    
-    const ACRYLIC_NAME= "acryliques";
-    
-    // indexed by paint types (oil, pastel, etc.)
-    public $dictionnaries;
+    // provient du fichier "dico.csv"
+    // sert a associer une cle et un intitule
+    public $dictionnary;
 
+    // indexed by paint types (oil, pastel, etc.) and by cyles
+    public $paint_dictionnaries;
+
+    function load_dico( $dico_file ) {
+        // creation du dictionnaire
+        $dictionnary= new Dictionnary();
+
+        // ouvre le fichier csv - separateur doit etre ';'
+        $row= 1;
+        if (($handle = fopen($dico_file, "r")) !== FALSE) {
+            while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {
+                $num = count($data);
+                //                echo "<p> $num fields in line $row: <br /></p>\n";
+                // on saute les commentaires (lignes qui commencent par '#')
+                if ( !str_starts_with($data[0], '#') ) {
+                    //                    for ($c=0; $c < $num; $c++) {
+                    //                        echo $data[$c] . "<br />\n";
+                    //                    }
+                    // premier element est la cle, le second est l'intitule
+                    $dictionnary->add_key( $data[0], $data[1] );
+                }
+                $row++;
+            }
+            fclose($handle);
+        }
+    }
+
+    // le dictionnaire doit avoir ete deja charge (cf "load_dico")
     function load_paint_data( $paint_data_file ) {
-        // create the dictionnaries
-        $oils= new PaintDictionnary();
-        $oils->name= GalleryBrowser::OIL_NAME;
-        $oils->type= GalleryBrowser::OIL;
-        $this->dictionnaries[$oils->type]= $oils;
-
-        $pastels= new PaintDictionnary();
-        $pastels->name= GalleryBrowser::PASTEL_NAME;
-        $pastels->type= GalleryBrowser::PASTEL;
-        $this->dictionnaries[$pastels->type]= $pastels;
-
-        $acrylics= new PaintDictionnary();
-        $acrylics->name= GalleryBrowser::ACRYLIC_NAME;
-        $acrylics->type= GalleryBrowser::ACRYLIC;
-        $this->dictionnaries[$acrylics->type]= $acrylics;
-
-        $others= new PaintDictionnary();
-        $others->name= GalleryBrowser::OTHER_NAME;
-        $others->type= GalleryBrowser::OTHER;
-        $this->dictionnaries[$others->type]= $others;
-
         // open the csv file
         $row = 1;
         if (($handle = fopen($paint_data_file, "r")) !== FALSE) {
@@ -54,17 +51,41 @@ class GalleryBrowser {
                     // create the paint
                     $cur_paint= new Paint();
                     $cur_paint->set_attributes($data);
-                    //
-                    $dico= $this->dictionnaries[$cur_paint->type];
-                    $dico->add_paint($cur_paint);
+                    // ajoute le tableau dans ses dictionnaires associes (Type et cycle)
+                    // les dictionnaires sont crees si necessaire
+                    $this->register_paint( $paint );
                 }
                 $row++;
             }
             fclose($handle);
         }
         // finalize the dicos
-        foreach ($this->dictionnaries as $dico ) {
+        foreach ($this->paint_dictionnaries as $dico ) {
             $dico->finalize();
+        }
+    }
+
+    // un tableau est present au plus dans deux dictionnaires
+    // - son cycle si il est present
+    // - son type (huile, pastel, etc...)
+    function register_paint( $paint ) {
+        if ( $cur_paint->cycle != '' ) {
+            $dico= $this->get_or_create_dictionnary($cur_paint->cycle);
+            $dico->add_paint($cur_paint, $cur_paint->cycle);
+        }
+        $dico= $this->get_or_create_dictionnary($cur_paint->type);
+        $dico->add_paint($cur_paint, cur_paint->type );
+    }
+
+    function get_or_create_dictionnary( $key ) {
+        if ( array_key_exists( $key, $this->paint_dictionnaries ) ) {
+            return $this->paint_dictionnaries($key);
+        } else {
+            $dico= new PaintDictionnary();
+            $dico->key= $key;
+            $dico->name= $this->$dictionnary->get_label( $key );
+            $this->paint_dictionnaries[$dico->key]= $dico;
+            return $dico;
         }
     }
 
@@ -87,7 +108,7 @@ class GalleryBrowser {
     }
 
     function print() {
-        foreach ($this->dictionnaries as $dico) {
+        foreach ($this->paint_dictionnaries as $dico) {
             $dico->print();
         }
     }
