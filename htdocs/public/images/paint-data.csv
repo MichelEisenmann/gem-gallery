@@ -5,7 +5,7 @@
 # Cycle est utilise pour permettre de "trier" les tableaux
 #   - un tableau n'appartient qu'a un cycle
 #   - dans la colonne cycle, mettre la cle du cycle: par ex, "mangrove"
-#   - l'intitule du cycle se trouve dans le fichier "cycles.csv" en face de sa cle: par ex, "mangrove" -> "Mangroves Australiennes"
+#   - l'intitule du cycle se trouve dans le fichier "dico.csv" en face de sa cle: par ex, "mangrove" -> "Mangroves Australiennes"
 #
 # rank;filename;title;date;width;height;type;description;cycle
 -1;Acrylique/20210624_Lever soleil sur Donazac.jpg;Matin sur Donazac;20210610;38;28;acrylic;Lever soleil Donazac (11);donazac
