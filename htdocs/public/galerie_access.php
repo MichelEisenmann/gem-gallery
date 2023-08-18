@@ -113,7 +113,7 @@ div.desc {
 
 <?php
          // $GALLERY_BROWSER->print();
-foreach ( $GALLERY_BROWSER->dictionnaries as $dico ) {
+foreach ( $GALLERY_BROWSER->paint_dictionnaries as $dico ) {
     // skip empty dictionaries
     if ( count($dico->paints) == 0 ) {
         continue;

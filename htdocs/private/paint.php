@@ -30,7 +30,11 @@ class Paint {
         $this->height= $array[5];
         $this->type= $array[6];
         $this->description= $array[7];
-        $this->cycle= trim($array[8]); // on enleve tous les blancs
+        // au cas ou cycle n'est pas renseigne
+        $this->cycle='';
+        if ( count($array) > 8 ) {
+            $this->cycle= trim($array[8]); // on enleve tous les blancs
+        }
         //        echo $array[1] ."<br>";
         //        echo date_format($this->date, "Y/m/d") ."<br>";
     }

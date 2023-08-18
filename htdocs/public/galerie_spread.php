@@ -16,7 +16,7 @@
 
 <?php
     $dico_key=htmlspecialchars($_GET["key"]);
-    $dico= $GALLERY_BROWSER->dictionnaries[$dico_key];
+    $dico= $GALLERY_BROWSER->paint_dictionnaries[$dico_key];
 ?>
 
     <title><?= ucfirst($dico->name) ?></title>
