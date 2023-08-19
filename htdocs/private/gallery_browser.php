@@ -76,11 +76,14 @@ class GalleryBrowser {
     // - son cycle si il est present
     // - son type (huile, pastel, etc...)
     function register_paint( $paint ) {
-        if ( $paint->cycle != '' ) {
-            $dico= $this->get_or_create_dictionnary($paint->cycle);
-            $dico->add_paint($paint, $paint->cycle);
+        if ( count($paint->themes) > 0 ) {
+            foreach( $paint->themes as $theme ) {
+                $dico= $this->get_or_create_dictionnary($theme);
+                $dico->add_paint($paint, $theme);
+            }
         }
         $dico= $this->get_or_create_dictionnary($paint->type);
+        $dico->kind= PaintDictionnary::TYPE;
         $dico->add_paint($paint, $paint->type );
     }
 
