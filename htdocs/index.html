@@ -68,6 +68,29 @@ blockquote {
 .grid img:nth-child(2) {
   grid-column: span 4;
   }
+	.grid_theme {
+  display: grid_theme;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+   margin: auto;
+//  width: 1080px;
+}
+// Theme grid
+.grid_theme img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+.grid_theme img:nth-child(2) {
+    grid-column: span 2;
+  }
+  .australie_theme {
+   width: 208px ;
+   height: 167px ;
+   }
+
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 576px) {
@@ -157,6 +180,25 @@ blockquote {
   </h3>
   <!-- GRID -->
 
+<div class="w3-content w3-container " id="grid_theme">
+<p class="w3-center">
+<main class="grid_theme">
+  <a href="public/galerie_spread.php?key=australie">
+          <img class=".australie_theme" src="public/images/Huile/20230708_ClairDeSoleil_Huile_30P_small.jpg" alt="Australie" /><br>Mangrove & Mer, Australie NSW</br>
+	</a>
+	<a href="public/galerie_spread.php?key=acrylic">
+          <img class="acrylique" src="public/images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
+          <!-- <img class="acrylique" src="public/images/Acrylique/20230530_Contemplation_A100x73_small.jpg" alt="Acrylique" /><br>Acryliques</br> -->
+	</a>
+ 	<a href="public/galerie_spread.php?key=pastel">
+          <img class="pastel" src="public/images/Pastels/20210909_canalDuMidi_small.jpg" alt="Pastel" ><br>Pastels</br>			
+	</a>
+	<a href="public/galerie_spread.php?key=other">
+          <img class="aquarelle" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Aquarelle" /><br>Aquarelles</br>
+	</a>
+ </main>
+</p>
+</div>
 <div class="w3-content w3-container " id="grid">
 <p class="w3-center">
 <main class="grid">
