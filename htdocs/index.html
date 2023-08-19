@@ -68,29 +68,36 @@ blockquote {
 .grid img:nth-child(2) {
   grid-column: span 4;
   }
-	.grid_theme {
+
+// Theme grid - changer la taille des themes en fonction des tableaux small affichés
+.grid_theme {
   display: grid_theme;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
   align-items: center;
   justify-items: center;
    margin: auto;
-//  width: 1080px;
 }
-// Theme grid
 .grid_theme img {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   max-width: 100%;
 }
-.grid_theme img:nth-child(2) {
+.grid_theme img:nth-child(1) {
     grid-column: span 2;
   }
   .australie_theme {
-   width: 208px ;
-   height: 167px ;
+   width: 176px ;
+   height: 250px ;
    }
-
+  .paysage_theme {
+   width: 182px ;
+   height: 250px ;
+   }
+  .artiste {
+   width: 188px ;
+   height: 250px ;
+   }
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 576px) {
@@ -176,26 +183,28 @@ blockquote {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">
   <blockquote>
-  Gis&egrave;le EISENMANN (gem)</blockquote> <img src="public/images/web/gisele.jpg" alt="Ma photo" width="208" height="215">
+  Gis&egrave;le EISENMANN (gem)</blockquote> 
+      <!--  <img src="public/images/web/gisele.jpg" alt="Ma photo" width="208" height="215">  -->
   </h3>
   <!-- GRID -->
 
+<!-- Theme grid -->
 <div class="w3-content w3-container " id="grid_theme">
 <p class="w3-center">
 <main class="grid_theme">
   <a href="public/galerie_spread.php?key=australie">
-          <img class=".australie_theme" src="public/images/Huile/20230708_ClairDeSoleil_Huile_30P_small.jpg" alt="Australie" /><br>Mangrove & Mer, Australie NSW</br>
+          <img class="australie_theme" src="public/images/Huile/20230708_ClairDeSoleil_Huile_30P_small.jpg" alt="Australie" />
 	</a>
-	<a href="public/galerie_spread.php?key=acrylic">
-          <img class="acrylique" src="public/images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
-          <!-- <img class="acrylique" src="public/images/Acrylique/20230530_Contemplation_A100x73_small.jpg" alt="Acrylique" /><br>Acryliques</br> -->
+	<a href="public/galerie_spread.php?key=paysage">
+          <img class="paysage_theme" src="public/images/Acrylique/20230530_Contemplation_A100x73_small.jpg" alt="Paysage" />
 	</a>
- 	<a href="public/galerie_spread.php?key=pastel">
-          <img class="pastel" src="public/images/Pastels/20210909_canalDuMidi_small.jpg" alt="Pastel" ><br>Pastels</br>			
+	<a></a>
+ 
+		<a href="public/galerie_spread.php?key=other">
+          <img class="aquarelle" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Aquarelle" />
 	</a>
-	<a href="public/galerie_spread.php?key=other">
-          <img class="aquarelle" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Aquarelle" /><br>Aquarelles</br>
-	</a>
+	  <a href="public/galerie_spread.php?key=australie">
+          <img class="artiste" src="public/images/web/20211008_2emePrix_Pastel_small.jpg" alt="Artist's photo" /><br>
  </main>
 </p>
 </div>
