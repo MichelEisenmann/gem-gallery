@@ -2,12 +2,12 @@
 #   - '-1' ou pas de valeur, signifie que la date sera utilisee pour le tri (la plus recente en premier)
 #   - une valeur positive signifie qu'on utilise cette valeur pour le tri (valeurs les plus fortes apparaissent en premier)
 #
-# Cycle est utilise pour permettre de "trier" les tableaux
-#   - un tableau n'appartient qu'a un cycle
-#   - dans la colonne cycle, mettre la cle du cycle: par ex, "mangrove"
-#   - l'intitule du cycle se trouve dans le fichier "dico.csv" en face de sa cle: par ex, "mangrove" -> "Mangroves Australiennes"
+# Themes est utilise pour permettre de "trier" les tableaux
+#   - un tableau peut appartenir a plusieurs themes
+#   - dans la colonne theme, on peut mettre plusieurs themes en separant leurs cles par un espace: par ex, "mangrove australia"
+#   - l'intitule du theme (se qu'on affiche) se trouve dans le fichier "dico.csv" en face de sa cle: par ex, "mangrove" -> "Mangroves Australiennes"
 #
-# rank;filename;title;date;width;height;type;description;cycle
+# rank;filename;title;date;width;height;type;description;themes
 -1;Acrylique/20210624_Lever soleil sur Donazac.jpg;Matin sur Donazac;20210610;38;28;acrylic;Lever soleil Donazac (11);paysage
 -1;Acrylique/20210722_GuillaumePense_Piscine.jpg;Réflexion au bord de piscine;20210710;20;20;acrylic;Le penseur;ambiance
 -1;Acrylique/20210801_Olen La trouee Donazac.jpg;La trouée du bois;20210810;24;33;acrylic;(collection privée Paris, FR);paysage

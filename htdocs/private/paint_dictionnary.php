@@ -7,8 +7,11 @@ class PaintDictionnary {
     // name displayed
     public $name;
 
-    // la cle commune aux tableaux du dictionnaire (le type ou le cycle)
+    // la cle commune aux tableaux du dictionnaire (le type ou le theme)
     public $key;
+
+    // soit un Theme, soit un Type (Oil, etc)
+    public $kind;
 
     // array indexed by paint filenames
     public $paints;
@@ -16,9 +19,21 @@ class PaintDictionnary {
     // sorted by rank if available, otherwise by date
     public $sortedList;
 
+    const TYPE= "Type";
+    const THEME= "Theme";
+
     public function __construct() {
         $this->paints= array();
         $this->sortedList= array();
+        $this->kind= self::THEME;
+    }
+
+    function is_by_theme() {
+        return $this->kind == self::THEME;
+    }
+
+    function is_by_type() {
+        return $this->kind == self::TYPE;
     }
 
     // number of paints

@@ -12,10 +12,10 @@ class Paint {
     public $height;
     public $type;
     public $description;
-    public $cycle;
+    public $themes; // an array of strings
 
     // as read from CSV
-    // filename, title, date (YY/MM/DD) , width, height, type, description, cycle
+    // filename, title, date (YY/MM/DD) , width, height, type, description, themes
     function set_attributes( $array ) {
         $this->rank= $array[0];
         if ( empty($this->rank) ) {
@@ -30,10 +30,18 @@ class Paint {
         $this->height= $array[5];
         $this->type= $array[6];
         $this->description= $array[7];
-        // au cas ou cycle n'est pas renseigne
-        $this->cycle='';
+        // au cas ou les themes ne sont pas donnes
+        $this->themes=array();
         if ( count($array) > 8 ) {
-            $this->cycle= trim($array[8]); // on enleve tous les blancs
+            // array[8] contient les themes separes par des espaces
+            $themes= explode(" ", trim($array[8]));
+            //
+            foreach( $themes as $theme ) {
+                $cur= trim($theme);
+                if ( strlen($cur) > 0 ) {
+                    array_push($this->themes, $cur);
+                }
+            }
         }
         //        echo $array[1] ."<br>";
         //        echo date_format($this->date, "Y/m/d") ."<br>";
@@ -82,12 +90,12 @@ class Paint {
         return addslashes($this->description);
     }
 
-    function get_cycle() {
-        return $this->cycle;
+    function get_themes() {
+        return $this->themes;
     }
 
     function print() {
-        echo "[" .$this->rank .", " .$this->file .", " .$this->title .", " .$this->type .", " .date_format($this->date, "Y/m/d") .", " .$this->width ."x" .$this->height .", " .$this->cycle ."]";
+        echo "[" .$this->rank .", " .$this->file .", " .$this->title .", " .$this->type .", " .date_format($this->date, "Y/m/d") .", " .$this->width ."x" .$this->height .", " .$this->themes ."]";
     }
 }
 ?>
