@@ -51,42 +51,7 @@ blockquote {
    width: 208px ;
    height: 146px ;
    }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  align-items: center;
-  justify-items: center;
-   margin: auto;
-//  width: 1080px;
-}
-.grid img {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  max-width: 100%;
-}
-.grid img:nth-child(2) {
-  grid-column: span 4;
-  }
-
-// Theme grid - changer la taille des themes en fonction des tableaux small affichés
-.grid_theme {
-  display: grid_theme;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  align-items: center;
-  justify-items: center;
-   margin: auto;
-}
-.grid_theme img {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  max-width: 100%;
-}
-.grid_theme img:nth-child(1) {
-    grid-column: span 2;
-  }
-  .australie_theme {
+    .australie_theme {
    width: 176px ;
    height: 250px ;
    }
@@ -98,6 +63,23 @@ blockquote {
    width: 188px ;
    height: 250px ;
    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+   margin: auto;
+}
+.grid img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+.grid img:nth-child(2) {
+  grid-column: span 4;
+  }
+
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 576px) {
@@ -191,23 +173,40 @@ blockquote {
 <!-- Theme grid -->
 <div class="w3-content w3-container " id="grid_theme">
 <p class="w3-center">
-<main class="grid_theme">
-  <a href="public/galerie_spread.php?key=australie">
+<main class="grid">
+	<div><a href="public/galerie_spread.php?key=australie">
           <img class="australie_theme" src="public/images/Huile/20230708_ClairDeSoleil_Huile_30P_small.jpg" alt="Australie" />
-	</a>
-	<a href="public/galerie_spread.php?key=paysage">
+		</a>
+	</div>
+	<div><a href="public/galerie_spread.php?key=paysage">
           <img class="paysage_theme" src="public/images/Acrylique/20230530_Contemplation_A100x73_small.jpg" alt="Paysage" />
-	</a>
-	<a></a>
- 
-		<a href="public/galerie_spread.php?key=other">
-          <img class="aquarelle" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Aquarelle" />
-	</a>
-	  <a href="public/galerie_spread.php?key=australie">
-          <img class="artiste" src="public/images/web/20211008_2emePrix_Pastel_small.jpg" alt="Artist's photo" /><br>
+		</a>
+	</div>
+	<div></div>
+	<div>
+          <img class="artiste" src="public/images/web/20211008_2emePrix_Pastel_small.jpg" alt="Artist's photo" />
+		  
+     </div>
  </main>
 </p>
 </div>
+
+  <p class="w3-center"><em>La peinture pour transcender le r&eacute;el / Painting to transcend reality</em></p>
+  <p>J'ai commenc&eacute; &agrave; peindre en 2020 pour g&eacute;rer mon stress professionnel et les pr&eacute;mices des confinements du covid19. 
+  Mon choix s'est port&eacute; sur la technique du pastel sec, soutenu par les mots de Francis Bacon entendus dans une vid&eacute;o 
+  lors d'une exposition &agrave; Monaco. Il avait choisi de peindre avec des pastels parce qu'ils lui apportaient 
+  une riche vari&eacute;t&eacute; de couleurs, ce en quoi il rejoignait mes souhaits. 
+  Fin 2021, j'ai rejoint l'atelier de <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant</a> &agrave; Grasse (06) 
+  pour m'instruire dans les techniques de peinture &agrave; l'acrylique et &agrave; l'huile. 
+<p>Je pr&eacute;pare et d&eacute;veloppe mes cr&eacute;ations sur tablette avec un stylet. Cette phase d’esquisse numérique 
+me permet d’appr&eacute;cier la composition et la palette de couleurs avant de reproduire sur toile, avec la technique choisie. 
+Mes tableaux pr&eacute;sentent souvent des couleurs vives, contrast&eacute;es et des formes courbes. 
+Mon imagination est aliment&eacute;e en grande partie par mes photos et dynamisée par la musique.
+ </p></p>
+ 
+  <p>Une autre de mes passions est le cinéma. Je suis un membre actif du conseil d'administration de l'association
+       <a href="http://lesvisiteursdusoir.com/">Les visiteurs du soir</a> qui g&egrave;re le cinéma Art &amp; Essai de Valbonne (06).
+
 <div class="w3-content w3-container " id="grid">
 <p class="w3-center">
 <main class="grid">
@@ -222,28 +221,11 @@ blockquote {
           <img class="pastel" src="public/images/Pastels/20210909_canalDuMidi_small.jpg" alt="Pastel" ><br>Pastels</br>			
 	</a>
 	<a href="public/galerie_spread.php?key=other">
-          <img class="aquarelle" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Aquarelle" /><br>Aquarelles</br>
+          <img class="aquarelle" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Aquarelle" /><br>Autres</br>
 	</a>
  </main>
 </p>
-</div>
-  <p class="w3-center"><em>La peinture pour transcender le r&eacute;el / Painting to transcend reality</em></p>
-  <p>J'ai commenc&eacute; &agrave; peindre en 2020 pour g&eacute;rer mon stress professionnel et les pr&eacute;mices des confinements du covid19. 
-  Mon choix s'est port&eacute; sur la technique du pastel sec, soutenu par les mots de Francis Bacon entendus dans une vid&eacute;o 
-  lors d'une exposition &agrave; Monaco. Il avait choisi de peindre avec des pastels parce qu'ils lui apportaient 
-  une riche vari&eacute;t&eacute; de couleurs, ce en quoi il rejoignait mes souhaits. 
-  Fin 2021, j'ai rejoint l'atelier de <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant</a> &agrave; Grasse (06) 
-  pour m'instruire dans les techniques de peinture &agrave; l'acrylique et &agrave; l'huile. 
-<p>Je pr&eacute;pare et d&eacute;veloppe mes cr&eacute;ations sur tablette avec un stylet. Cette phase d’esquisse numérique 
-me permet d’appr&eacute;cier la composition et la palette de couleurs avant de reproduire sur toile, avec la technique choisie. 
-Mes tableaux pr&eacute;sentent souvent des couleurs vives, contrast&eacute;es et des formes courbes. 
-Mon imagination est aliment&eacute;e en grande partie par mes photos et dynamisée par la musique.
- </p></p>
- 
-  <p class="w3-large w3-center w3-padding-16">Mes activit&eacute;s / <em>My activities</em></p>
-  <p>Une autre de mes passions est le cinéma. Je suis un membre actif du conseil d'administration de l'association
-       <a href="http://lesvisiteursdusoir.com/">Les visiteurs du soir</a> qui g&egrave;re le cinéma Art &amp; Essai de Valbonne (06).
-	   
+</div>	   
 <p><em>
 I started painting in 2020 to manage my professional stress and the beginnings of covid19 lockdowns. My choice fell on the technique of dry pastel, supported by the words of Francis Bacon heard in a video during an exhibition in Monaco. He had chosen to paint with pastels because they brought him a rich variety of colors, which I agreed with. 
 At the end of 2021, I joined <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant's workshop</a> in Grasse (06) to learn in acrylic and oil painting techniques. </br>
@@ -254,37 +236,11 @@ I have exhibited several times - Antibes, Gourdon - in Alpes-Maritimes.
 <a href="http://lesvisiteursdusoir.com/">Les visiteurs du soir</a> which manages the Art & Essai cinema in Valbonne (06).</br>
 </p>
 
-	   
-	   
-   <!-- Hide this text on small devices -->
-<!--    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. </p>
-    </div>
--->	   
 
-
-  
-
-<!--
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:35%">35%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-group"></i>Passer du temps en famille, avec les amis et mon chien.</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:40%">40%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-bicycle"></i>Pratiquer des activit&eacute;s sportives et &ecirc;tre membre active d'une association de cin&eacute;ma &agrave; Valbonne</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:25%">25%</div>
-  </div>
--->
-
-</div>
+<!-- </div> -->
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-<!--  <h3 class="w3-center">Mon travail</h3> 
--->
   <p class="w3-center"><em>Pour me contacter / To contact me</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
