@@ -24,7 +24,7 @@ class GalleryBrowser {
                 $num = count($data);
                 // echo "<p> $num fields in line $row: <br /></p>\n";
                 // on saute les commentaires (lignes qui commencent par '#')
-                if ( !str_starts_with($data[0], '#') && $num == 2 ) {
+                if ( $data[0] != null && !str_starts_with($data[0], '#') && $num == 2 ) {
                     //                                        for ($c=0; $c < $num; $c++) {
                     //                                            echo $data[$c] . "<br />\n";
                     //                                        }
