@@ -98,7 +98,7 @@
 	 </button>
    </div>
    <p><?= ucfirst(htmlspecialchars($paint->full_title())); ?> </p>
-  </p> 
+ </p> 
  </div>
 </div>
 <!-- allow including some separate html file -->
