@@ -128,10 +128,10 @@ foreach ( $GALLERY_BROWSER->paint_dictionnaries as $dico ) {
        <img src="images/<?= $latest->getThumbnailFile(); ?>"
 	    >
               </a>
-       <div class="desc"><h2><a href="../public/galerie_spread.php?key=<?= $dico->key; ?>">
+       <div class="desc"><a href="../public/galerie_spread.php?key=<?= $dico->key; ?>">
 	   <?= ucfirst($dico->name); ?>
 	          </a>
-	   </h2></div>
+	   </div>
      </div>              
     </div>
 <?php
