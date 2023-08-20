@@ -31,8 +31,8 @@
       padding-top: 50px;
       }
 	  
-	  .tiroir {
-		  font-size: 9px; 
+	  .description {
+		  font-size: 10px; 
 	  }
 
     </style>
@@ -101,13 +101,13 @@ foreach( $dico->sortedList as $paint ) {
 		 style="width:100%"
 	    >
        </a>
-       <div class="w3-container tiroir">
+       <div class="w3-container description">
           <button onclick="openAdditionalInfo('<?= $cur; ?>')" class="w3-button w3-block w3-left-align">
           <p><?= ucfirst(htmlspecialchars($paint->full_title())); ?> <i class="fa fa-arrow-circle-down"></i></p>
 
 	  </button>
        </div>
-       <div id='<?= $cur; ?>' class="w3-container w3-hide">
+       <div id='<?= $cur; ?>' class="w3-container w3-hide description">
 	 <p><?= htmlspecialchars($paint->get_description()); ?></p>
 	 <p><?= $paint->get_date(); ?></p>
        </div>
