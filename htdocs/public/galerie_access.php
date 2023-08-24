@@ -93,7 +93,7 @@ div.desc {
     </a>
     <a href="/index.html" class="w3-bar-item w3-button">ACCUEIL</a>
     <a href="/public/expositions.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> EXPOSITIONS</a>
-    <a href="/public/galerie_access.php" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GALERIE</a>
+    <a href="/public/galerie_access.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIE</a>
     <a href="/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
   </div>
 
@@ -128,10 +128,10 @@ foreach ( $GALLERY_BROWSER->paint_dictionnaries as $dico ) {
        <img src="images/<?= $latest->getThumbnailFile(); ?>"
 	    >
               </a>
-       <div class="desc"><h2><a href="../public/galerie_spread.php?key=<?= $dico->key; ?>">
+       <div class="desc"><a href="../public/galerie_spread.php?key=<?= $dico->key; ?>">
 	   <?= ucfirst($dico->name); ?>
 	          </a>
-	   </h2></div>
+	   </div>
      </div>              
     </div>
 <?php
