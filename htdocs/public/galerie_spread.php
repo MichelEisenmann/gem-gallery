@@ -35,6 +35,13 @@
 		  font-size: 10px; 
 	  }
 
+.center {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        margin: auto;
+        width: 40%;
+}
     </style>
   </head>
 
@@ -74,12 +81,28 @@
 ?>
 
 
-<div class="w3-container top-container">
-<h1><?= $dico->name ?><h1>
+<div class="center">
+<select id="gallery_selector" onChange="gallerySelected();">
+<?php
+foreach ( $GALLERY_BROWSER->paint_dictionnaries as $cur_dico ) {
+    // skip empty dictionaries
+    if ( count($cur_dico->paints) == 0 ) {
+        continue;
+    }
+    if ( $cur_dico == $dico ) {
+        echo "<option value=\"" .$cur_dico->key ."\" selected>" .$cur_dico->name ."</option><br>";
+    } else {
+        echo "<option value=\"" .$cur_dico->key ."\">" .$cur_dico->name ."</option><br>";
+    }
+}
+?>
+</select>
 </div>
 
 <div class="w3-row-padding w3-container">
 <div class="w3-row-padding">
+
+
 
 <?php
 foreach( $dico->sortedList as $paint ) {
@@ -146,6 +169,12 @@ function openAdditionalInfo(id) {
     x.className = x.className.replace(" w3-show", "");
   }
 }          
+
+function gallerySelected() {
+    var x = document.getElementById("gallery_selector").value;
+    location.replace("/public/galerie_spread.php?key=" + x);
+}
+
 </script>
 
 </body>

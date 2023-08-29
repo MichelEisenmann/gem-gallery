@@ -70,6 +70,8 @@ class GalleryBrowser {
         foreach ($this->paint_dictionnaries as $dico ) {
             $dico->finalize();
         }
+        // sort the list of dicos alphabetically
+        asort( $this->paint_dictionnaries );
     }
 
     // un tableau est present au plus dans deux dictionnaires
