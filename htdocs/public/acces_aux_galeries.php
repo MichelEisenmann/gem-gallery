@@ -124,11 +124,11 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
 ?>
     <div class="responsive">
      <div class="gallery">
-              <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
+              <a href="../public/contenu_d_une_galerie_new.php?key=<?= $dico->key; ?>">
        <img src="images/<?= $latest->getThumbnailFile(); ?>"
 	    >
               </a>
-       <div class="desc"><a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
+       <div class="desc"><a href="../public/contenu_d_une_galerie_new.php?key=<?= $dico->key; ?>">
 	   <?= ucfirst($dico->name); ?>
 	          </a>
 	   </div>

@@ -93,7 +93,7 @@ if ( $pagination_start > $total_number - $pagination_size ) {
     padding-bottom: 10px;
     margin: auto;
     width: 60%;
-    border: 1px solid;
+    //    border: 1px solid;
 }
 
 .fitting-image {
@@ -119,9 +119,8 @@ if ( $pagination_start > $total_number - $pagination_size ) {
 }
 
 .pagination img.active {
-	background-color: #4CAF50;
 	color: white;
-	border: 1px solid #4CAF50;
+	border: 4px solid black;
 }
 
 .pagination img:hover:not(.active) {background-color: #ddd;}
@@ -153,16 +152,8 @@ if ( $pagination_start > $total_number - $pagination_size ) {
       </div>
     </div>
 
-
-
-    <?php
-  $count= $dico->get_count();
-$first= true;
-$cur= 1;
-// change row every 6
-$every= 6;
-    ?>
-    
+     <!-- ------------------------------------------------------- -->
+     <!-- gallery selector -->
 
     <div class="center">
       <select id="gallery_selector" onChange="gallerySelected();">
@@ -227,13 +218,11 @@ $paint= $dico->get_paint($rank_in_gallery);
        <div class="w3-container w3-center" style="width:100%;margin:auto;">
          <div class="w3-card-4" >
            <div class="w3-container">
-             <h4><?= $rank_in_gallery+1 ."/" .$total_number ?>
-           </div>
-           <div class="w3-container">
-             <h4><b><?= htmlspecialchars($paint->full_title()); ?></b>
+             <h4>(<?= $rank_in_gallery+1 ."/" .$total_number ?>)
+             <b><?= htmlspecialchars($paint->full_title()); ?></b>
            </div>
            <a href="../public/affichage_peinture.php?key=<?= $dico->key; ?>&rank=<?= $rank_in_gallery; ?>">
-           <img src="images/<?= $paint->getThumbnailFile(); ?>"
+           <img src="images/<?= $paint->file; ?>"
                 alt="<?= htmlspecialchars($paint->full_title()); ?>"
 		        style="width:100%" >
            </a>
