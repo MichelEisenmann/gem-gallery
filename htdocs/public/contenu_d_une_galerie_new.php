@@ -88,17 +88,28 @@ if ( $pagination_start > $total_number - $pagination_size ) {
     width: 40%;
 }
 
+.center-pagination {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    width: 60%;
+    border: 1px solid;
+}
+
 .fitting-image {
-        width: 100px;
-        height: 100px;
-        object-fit: scale-down;
-        border: 1px solid;
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+    border: 1px solid;
 }
 
 .hidden-image {
     display: none;
 }
 
+.pagination-button {
+    font-size: 20px;
+}
 
 .visible-image {
 }
@@ -106,23 +117,6 @@ if ( $pagination_start > $total_number - $pagination_size ) {
 .pagination {
 	display: inline-block;
 }
-
-.pagination a {
-	color: black;
-	float: left;
-	padding: 8px 16px;
-	text-decoration: none;
-	transition: background-color .3s;
-	border: 1px solid #ddd;
-}
-
-.pagination a.active {
-	background-color: #4CAF50;
-	color: white;
-	border: 1px solid #4CAF50;
-}
-
-.pagination a:hover:not(.active) {background-color: #ddd;}
 
 .pagination img.active {
 	background-color: #4CAF50;
@@ -188,31 +182,16 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
       </select>
     </div>
 
-    <?php        
-echo "Total: " .$total_number ."\n\r";
-     ?>
-    <div class="pagination">
-       <a href="#" onClick="paginatePrevious();">&laquo;</a>
-
-       <?php        
-for ($cur= $pagination_start; $cur <= $pagination_start + $pagination_size; $cur++ ) {
-  if ( $cur == $rank_in_gallery ) {
-    echo "<a href=\"#\" class=\"active\">" .$cur ."</a>";
-  } else {
-    echo "<a href=\"#\">" .$cur ."</a>";
-  }
-}
-	   ?>
-	<a href="#" onClick="paginateNext();">&raquo;</a>
-     </div>
-
      <!-- ------------------------------------------------------- -->
      <!-- pagination with images -->
 
-    <div class="pagination">
-      <a onClick="paginatePrevious(<?= $pagination_start ."," .$pagination_size ."," .$rank_in_gallery ?>);">
-      &laquo;</a>
-	 <?php
+     <div class="center-pagination">
+       <!-- necessaire pour etre centre a l'interieur du div de dessus -->
+       <div class="pagination w3-center" style="width:100%;margin:auto;">
+         <button class="w3-button w3-round pagination-button"
+                 onClick="paginatePrevious(<?= $pagination_start ."," .$pagination_size ."," .$rank_in_gallery ?>);">
+         &laquo;</button>
+	     <?php
 $i= 0;
 foreach( $dico->sortedList as $paint ) {
   $status= "visible-image";
@@ -222,39 +201,45 @@ foreach( $dico->sortedList as $paint ) {
   if ( $i == $rank_in_gallery ) {
       $status= $status ." active";
   }
-  echo $i;
      ?>
-     <img class="fitting-image <?= $status ?>"
+       <img class="fitting-image <?= $status ?>"
           src="images/<?= $paint->getThumbnailFile(); ?>"
           alt="<?= htmlspecialchars($paint->full_title()); ?>"
-          onClick="selectPaint(<?= $i ?>);"
+          onClick="selectPaint(<?= $pagination_start ."," .$i ?>);"
           >
 	   <?php
   $i++;
 }
        ?>
-      <a 
-           onClick="paginateNext(<?= $pagination_start ."," .$pagination_size ."," .$rank_in_gallery ?>);">
-      &raquo;</a>
-</div>
+         <button class="w3-button w3-round pagination-button"
+                 onClick="paginateNext(<?= $pagination_start ."," .$pagination_size ."," .$rank_in_gallery ?>);">
+           &raquo;</button>
+         </div>
+       </div>
 
      <!-- ------------------------------------------------------- -->
+     <!-- the selected paint -->
 
      <?php
 $paint= $dico->get_paint($rank_in_gallery);
      ?>
-     <div class="w3-container">
-<div class="w3-card-4" style="width:50%">
-       <div class="w3-container">
-         <h4><b><?= htmlspecialchars($paint->full_title()); ?></b>
+     <div class="center-pagination">
+       <div class="w3-container w3-center" style="width:100%;margin:auto;">
+         <div class="w3-card-4" >
+           <div class="w3-container">
+             <h4><?= $rank_in_gallery+1 ."/" .$total_number ?>
+           </div>
+           <div class="w3-container">
+             <h4><b><?= htmlspecialchars($paint->full_title()); ?></b>
+           </div>
+           <a href="../public/affichage_peinture.php?key=<?= $dico->key; ?>&rank=<?= $rank_in_gallery; ?>">
+           <img src="images/<?= $paint->getThumbnailFile(); ?>"
+                alt="<?= htmlspecialchars($paint->full_title()); ?>"
+		        style="width:100%" >
+           </a>
+         </div>
        </div>
-       <a href="../public/affichage_peinture.php?key=<?= $dico->key; ?>&rank=<?= $rank_in_gallery; ?>">
-            <img src="images/<?= $paint->getThumbnailFile(); ?>"
-                 alt="<?= htmlspecialchars($paint->full_title()); ?>"
-		         style="width:100%" >
-            </a>
-</div>
-</div>
+     </div>
 
 
      <!-- ------------------------------------------------------- -->
@@ -308,10 +293,10 @@ function paginateNext(page, size, rank) {
                      + "&pagination=" + page );
 }
 
-function selectPaint(rank) {
+function selectPaint(page, rank) {
     var x = document.getElementById("gallery_selector").value;
     location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
-                     + "&rank=" + nextRank
+                     + "&rank=" + rank
                      + "&pagination=" + page );
 }
 
