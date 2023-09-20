@@ -207,13 +207,16 @@ for ($cur= $pagination_start; $cur <= $pagination_start + $pagination_size; $cur
      </div>
 
      <!-- ------------------------------------------------------- -->
+     <!-- pagination with images -->
 
     <div class="pagination">
+      <a onClick="paginatePrevious(<?= $pagination_start ."," .$pagination_size ."," .$rank_in_gallery ?>);">
+      &laquo;</a>
 	 <?php
 $i= 0;
 foreach( $dico->sortedList as $paint ) {
   $status= "visible-image";
-  if ( $i < $pagination_start || $i >= $pagination_start + $pagination_size ) {
+  if ( $i < $pagination_start || $i > $pagination_start + $pagination_size ) {
     $status= "hidden-image";
   }
   if ( $i == $rank_in_gallery ) {
@@ -230,6 +233,9 @@ foreach( $dico->sortedList as $paint ) {
   $i++;
 }
        ?>
+      <a 
+           onClick="paginateNext(<?= $pagination_start ."," .$pagination_size ."," .$rank_in_gallery ?>);">
+      &raquo;</a>
 </div>
 
      <!-- ------------------------------------------------------- -->
@@ -280,18 +286,33 @@ function openAdditionalInfo(id) {
 
 function gallerySelected() {
     var x = document.getElementById("gallery_selector").value;
-    location.replace("/public/contenu_d_une_galerie.php?key=" + x);
+    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x);
 }
 
-function paginatePrevious() {
+function paginatePrevious(page, size, rank) {
+    var x = document.getElementById("gallery_selector").value;
+    var nextRank= rank-1;
+    if ( nextRank < 0 ) {
+        nextRank= 0;
+    }
+    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
+                     + "&rank=" + nextRank
+                     + "&pagination=" + page );
 }
 
-function paginateNext() {
+function paginateNext(page, size, rank) {
+    var x = document.getElementById("gallery_selector").value;
+    var nextRank= rank+1;
+    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
+                     + "&rank=" + nextRank
+                     + "&pagination=" + page );
 }
 
 function selectPaint(rank) {
     var x = document.getElementById("gallery_selector").value;
-    location.replace("/public/contenu_d_une_galerie.php?key=" + x+ "&rank=" + rank);
+    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
+                     + "&rank=" + nextRank
+                     + "&pagination=" + page );
 }
 
 </script>
