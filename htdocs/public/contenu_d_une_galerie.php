@@ -16,7 +16,7 @@
 
 <?php
     $dico_key=htmlspecialchars($_GET["key"]);
-    $dico= $GALLERY_BROWSER->paint_dictionnaries[$dico_key];
+    $dico= $ALL_GALLERIES->paint_dictionnaries[$dico_key];
 ?>
 
     <title><?= ucfirst($dico->name) ?></title>
@@ -57,7 +57,7 @@
     </a>
     <a href="/index.html" class="w3-bar-item w3-button">ACCUEIL</a>
     <a href="/public/expositions.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> EXPOSITIONS</a>
-    <a href="/public/galerie_access.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIE</a>
+    <a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIE</a>
     <a href="/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
   </div>
 
@@ -65,7 +65,7 @@
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ACCUEIL</a>
     <a href="/public/expositions.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPOSITIONS</a>
-    <a href="/public/galerie_access.php" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERIE</a>
+    <a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERIE</a>
     <a href="/index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
   </div>
 </div>
@@ -84,7 +84,7 @@
 <div class="center">
 <select id="gallery_selector" onChange="gallerySelected();">
 <?php
-foreach ( $GALLERY_BROWSER->paint_dictionnaries as $cur_dico ) {
+foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
     // skip empty dictionaries
     if ( count($cur_dico->paints) == 0 ) {
         continue;
@@ -118,7 +118,7 @@ foreach( $dico->sortedList as $paint ) {
 
 <div class="w3-col m2 w3-center">
   <div class="w3-card-4">
-       <a href="../public/show_paint.php?key=<?= $dico->key; ?>&rank=<?= $cur-1; ?>">
+       <a href="../public/affichage_peinture.php?key=<?= $dico->key; ?>&rank=<?= $cur-1; ?>">
             <img src="images/<?= $paint->getThumbnailFile(); ?>"
                  alt="<?= htmlspecialchars($paint->full_title()); ?>"
 		 style="width:100%"
@@ -172,7 +172,7 @@ function openAdditionalInfo(id) {
 
 function gallerySelected() {
     var x = document.getElementById("gallery_selector").value;
-    location.replace("/public/galerie_spread.php?key=" + x);
+    location.replace("/public/contenu_d_une_galerie.php?key=" + x);
 }
 
 </script>

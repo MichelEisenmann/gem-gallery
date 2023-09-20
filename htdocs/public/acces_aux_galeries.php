@@ -93,7 +93,7 @@ div.desc {
     </a>
     <a href="/index.html" class="w3-bar-item w3-button">ACCUEIL</a>
     <a href="/public/expositions.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> EXPOSITIONS</a>
-    <a href="/public/galerie_access.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIE</a>
+    <a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIE</a>
     <a href="/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
   </div>
 
@@ -101,7 +101,7 @@ div.desc {
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ACCUEIL</a>
     <a href="/public/expositions.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPOSITIONS</a>
-    <a href="/public/galerie_access.php" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERIE</a>
+    <a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERIE</a>
     <a href="/index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
   </div>
 </div>
@@ -112,8 +112,8 @@ div.desc {
 </div>
 
 <?php
-         // $GALLERY_BROWSER->print();
-foreach ( $GALLERY_BROWSER->paint_dictionnaries as $dico ) {
+         // $ALL_GALLERIES->print();
+foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
     // skip empty dictionaries
     if ( count($dico->paints) == 0 ) {
         continue;
@@ -124,11 +124,11 @@ foreach ( $GALLERY_BROWSER->paint_dictionnaries as $dico ) {
 ?>
     <div class="responsive">
      <div class="gallery">
-              <a href="../public/galerie_spread.php?key=<?= $dico->key; ?>">
+              <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
        <img src="images/<?= $latest->getThumbnailFile(); ?>"
 	    >
               </a>
-       <div class="desc"><a href="../public/galerie_spread.php?key=<?= $dico->key; ?>">
+       <div class="desc"><a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
 	   <?= ucfirst($dico->name); ?>
 	          </a>
 	   </div>

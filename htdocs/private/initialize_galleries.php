@@ -1,8 +1,8 @@
 <?php
-include (PRIVATE_PATH . '/gallery_browser.php');
+include (PRIVATE_PATH . '/all_galleries.php');
 
-$GALLERY_BROWSER= new GalleryBrowser();
-$GALLERY_BROWSER->load_dico( "images/dico.csv" );
-$GALLERY_BROWSER->load_paint_data( "images/paint-data.csv" );
+$ALL_GALLERIES= new AllGalleries();
+$ALL_GALLERIES->load_dico( "images/dico.csv" );
+$ALL_GALLERIES->load_paint_data( "images/paint-data.csv" );
 
 ?>

@@ -17,7 +17,7 @@
 <?php
      // receives the rank of the image and the dictionnary key
  $dico_key=htmlspecialchars($_GET["key"]);
- $dico= $GALLERY_BROWSER->paint_dictionnaries[$dico_key];
+ $dico= $ALL_GALLERIES->paint_dictionnaries[$dico_key];
  $rank= $_GET["rank"];
  $paint= $dico->get_paint($rank);
  $count= $dico->get_count();
@@ -86,14 +86,14 @@
 <div class="w3-container top-container">
 <div class="w3-content w3-display-container">
  <a href="../index.html"><i class="fa fa-arrow-circle-up"> Accueil </i></a>
- <a href="../public/galerie_spread.php?key=<?= $dico->key; ?>"><i class="fa fa-step-backward"> Galerie <?= $dico->name ?></i></a>
+ <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>"><i class="fa fa-step-backward"> Galerie <?= $dico->name ?></i></a>
  <p>
     <div class="containerBtn">
      <img src="images/<?= $paint->file; ?>" style="width:100%">
-     <button class="leftbtn"><a href="../public/show_paint.php?key=<?= $dico->key; ?>&rank=<?= $prev; ?>">
+     <button class="leftbtn"><a href="../public/affichage_peinture.php?key=<?= $dico->key; ?>&rank=<?= $prev; ?>">
 		<i class="fa fa-arrow-left"></i></a>
 	 </button>
-     <button class="rightbtn"><a href="../public/show_paint.php?key=<?= $dico->key; ?>&rank=<?= $next; ?>">
+     <button class="rightbtn"><a href="../public/affichage_peinture.php?key=<?= $dico->key; ?>&rank=<?= $next; ?>">
 	    <i class="fa fa-arrow-right"></i></a>
 	 </button>
    </div>
