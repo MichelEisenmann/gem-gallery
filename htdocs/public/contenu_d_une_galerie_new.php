@@ -14,9 +14,27 @@ window.dataLayer = window.dataLayer || [];
     <?php include ('../private/initialize_galleries.php'); ?>
 
     <?php
+// retrieve all the variables coming with the URL
+
 $dico_key=htmlspecialchars($_GET["key"]);
 $dico= $ALL_GALLERIES->paint_dictionnaries[$dico_key];
 
+// the rank of current selected paint in our gallery
+$rank_in_gallery=0;
+if (array_key_exists("rank", $_GET) ) {
+  $rank_in_gallery=htmlspecialchars($_GET["rank"]);
+ }
+
+// the rank of the first paint shown in the pagination
+$pagination_start=0;
+if (array_key_exists("pagination", $_GET) ) {
+  $pagination_start=htmlspecialchars($_GET["pagination"]);
+ }
+    ?>
+
+    <script>
+// Transfer the PHP variables into script global variables
+//
 // Pagination:
 //
 //    0 1 2 3 4 5 6 7 8 ...... 40
@@ -27,30 +45,69 @@ $dico= $ALL_GALLERIES->paint_dictionnaries[$dico_key];
 //  pagination_start= 3
 //  pagination_size= 5  (constant)
 
-
 // total number of paints
-$total_number= count($dico->sortedList);
+var total_number= <?= count($dico->sortedList) ?>;
 
 // size of pagination
+var pagination_size= 5;
+
+// the rank of current selected paint in our gallery
+var rank_in_gallery= <?= $rank_in_gallery ?>;
+
+// the rank of the first paint shown in the pagination
+var pagination_start= <?= $pagination_start ?>;
+
+// ensure that the received values are consistent
+function adjustPaginationValues() {
+    if ( total_number < pagination_size ) {
+        pagination_size= total_number;
+    }
+    // loops when arriving at the extremities
+    if ( rank_in_gallery < 0 ) {
+        rank_in_gallery= total_number-1;
+    }
+    if ( rank_in_gallery >= total_number ) {
+        rank_in_gallery= 0;
+    }
+    // adjust the pagination start so that it fits 
+    if ( rank_in_gallery < pagination_start ) {
+        pagination_start= rank_in_gallery;
+    } else if ( rank_in_gallery >= pagination_start + pagination_size ) {
+        pagination_start++;
+    }
+    if ( pagination_start > total_number - pagination_size ) {
+        pagination_start= total_number - pagination_size;
+    }
+}
+
+adjustPaginationValues();
+
+    </script>
+
+    <?php
+//
+//    0 1 2 3 4 5 6 7 8 ...... 40
+//          |-X-----|
+//              
+//  total_number= 41
+//  rank_in_gallery= 4
+//  pagination_start= 3
+//  pagination_size= 5  (constant)
+
+$total_number= count($dico->sortedList);
 $pagination_size= 5;
+
+// size of pagination
 if ( $total_number < $pagination_size ) {
   $pagination_size= $total_number;
  }
 
 // the rank of current selected paint in our gallery
-$rank_in_gallery=0;
-if (array_key_exists("rank", $_GET) ) {
-  $rank_in_gallery=htmlspecialchars($_GET["rank"]);
- }
 if ( $rank_in_gallery >= $total_number ) {
   $rank_in_gallery= 0;
  }
 
 // the rank of the first paint shown in the pagination
-$pagination_start=0;
-if (array_key_exists("pagination", $_GET) ) {
-  $pagination_start=htmlspecialchars($_GET["pagination"]);
- }
 
 // adjust the pagination start so that it fits 
 if ( $rank_in_gallery < $pagination_start ) {
@@ -181,31 +238,31 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
        <!-- necessaire pour etre centre a l'interieur du div de dessus -->
        <div class="pagination w3-center" style="width:100%;margin:auto;">
          <button class="w3-button w3-round pagination-button"
-                 onClick="paginatePrevious(<?= $pagination_start ."," .$pagination_size ."," .$rank_in_gallery ."," .$total_number ?>);">
+                 onClick="showPrevious(<?= $pagination_start ."," .$rank_in_gallery ."," .$total_number ?>);">
          &laquo;</button>
 	     <?php
 $i= 0;
 foreach( $dico->sortedList as $paint ) {
-  $status= "visible-image";
-  if ( $i < $pagination_start || $i > $pagination_start + $pagination_size ) {
-    $status= "hidden-image";
-  }
-  if ( $i == $rank_in_gallery ) {
-      $status= $status ." active";
-  }
      ?>
-       <img class="fitting-image <?= $status ?>"
-          src="images/<?= $paint->getThumbnailFile(); ?>"
-          alt="<?= htmlspecialchars($paint->full_title()); ?>"
-          onClick="selectPaint(<?= $pagination_start ."," .$i ?>);"
+       <img id="paint-<?= $i ?>"
+            class="fitting-image hidden-image"
+            src="images/<?= $paint->getThumbnailFile(); ?>"
+            alt="<?= htmlspecialchars($paint->full_title()); ?>"
+            onClick="selectPaint(<?= $pagination_start ."," .$i ?>);"
           >
 	   <?php
   $i++;
 }
        ?>
          <button class="w3-button w3-round pagination-button"
-                 onClick="paginateNext(<?= $pagination_start ."," .$pagination_size ."," .$rank_in_gallery ."," .$total_number ?>);">
+                 onClick="showNext(<?= $pagination_start ."," .$rank_in_gallery ."," .$total_number ?>);">
            &raquo;</button>
+         <button class="w3-button w3-round pagination-button"
+                 onClick="startTimer(<?= $pagination_start ."," .$rank_in_gallery ."," .$total_number ?>);">
+           GO</button>
+         <button class="w3-button w3-round pagination-button"
+                 onClick="stopTimer();">
+           STOP</button>
          </div>
        </div>
 
@@ -239,6 +296,8 @@ $paint= $dico->get_paint($rank_in_gallery);
 
      <script>
 
+updateDocument();
+
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
@@ -257,33 +316,95 @@ function openAdditionalInfo(id) {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
-}          
+}
+
+var repeatFunction= null;
 
 function gallerySelected() {
     var x = document.getElementById("gallery_selector").value;
     location.replace("/public/contenu_d_une_galerie_new.php?key=" + x);
 }
 
-function paginatePrevious(page, size, rank, total) {
-    var x = document.getElementById("gallery_selector").value;
-    var nextRank= rank-1;
-    if ( nextRank < 0 ) {
-        nextRank= total-1;
-    }
-    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
-                     + "&rank=" + nextRank
-                     + "&pagination=" + page );
+function startTimer( page, rank, total ) {
+    repeatFunction= function(){
+        showNext( page, rank, total );
+    };
+    setInterval( repeatFunction, 4000 );
 }
 
-function paginateNext(page, size, rank, total ) {
-    var x = document.getElementById("gallery_selector").value;
-    var nextRank= rank+1;
-    if ( nextRank >= total ) {
-        nextRank= 0;
+function stopTimer() {
+    if ( repeatFunction != null) {
+        clearInterval(repeatFunction);
+        repeatFunction= null;
     }
-    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
-                     + "&rank=" + nextRank
-                     + "&pagination=" + page );
+}
+
+function printVariables() {
+    console.log( "rank: " + rank_in_gallery );
+    console.log( "pagination_start: " + pagination_start );
+    console.log( "total_number: " + total_number );
+}
+
+function showPreviousJS() {
+    var x = document.getElementById("gallery_selector").value;
+    rank_in_gallery= rank_in_gallery-1;
+    adjustPaginationValues();
+    printVariables();
+    updateDocument();
+}
+
+function showNextJS() {
+    var x = document.getElementById("gallery_selector").value;
+    rank_in_gallery= rank_in_gallery+1;
+    adjustPaginationValues();
+    printVariables();
+    updateDocument();
+}
+
+function updateDocument() {
+    for ( i= 0; i < total_number; i++ ) {
+        var img= document.getElementById("paint-" + i);
+        if ( i < pagination_start ) {
+            makeHidden(img);
+        } else if ( i >= pagination_start + pagination_size ) {
+            makeHidden(img);
+        } else {
+            makeVisible(img);
+        }
+        if ( i == rank_in_gallery ) {
+            makeActive(img);
+        } else {
+            makeInactive(img);
+        }
+    }
+}
+
+function showPrevious(page, rank, total) {
+    showPreviousJS();
+//    var x = document.getElementById("gallery_selector").value;
+//    var nextRank= rank-1;
+//    if ( nextRank < 0 ) {
+//        nextRank= total-1;
+//    }
+//    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
+//                     + "&rank=" + nextRank
+//                     + "&pagination=" + page );
+}
+
+function showNext(page, rank, total ) {
+    showNextJS();
+//    var x = document.getElementById("gallery_selector").value;
+//    var nextRank= rank+1;
+//    if ( nextRank >= total ) {
+//        nextRank= 0;
+//    }
+//    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
+//                     + "&rank=" + nextRank
+//                     + "&pagination=" + page );
+//    if ( repeatFunction != null ) {
+//        // restore timer
+//        setInterval( repeatFunction, 4000 );
+//    }
 }
 
 function selectPaint(page, rank) {
@@ -292,6 +413,34 @@ function selectPaint(page, rank) {
                      + "&rank=" + rank
                      + "&pagination=" + page );
 }
+
+
+function makeVisible( img ) {
+    if ( img.classList.contains("hidden-image" ) ) {
+        img.classList.remove("hidden-image");
+        img.classList.add( "visible-image" );
+    } 
+}
+
+function makeHidden( img ) {
+    if ( img.classList.contains("visible-image" ) ) {
+        img.classList.remove("visible-image");
+        img.classList.add( "hidden-image" );
+    } 
+}
+
+function makeActive( img ) {
+    if ( !img.classList.contains("active" ) ) {
+        img.classList.add("active");
+    }
+}
+
+function makeInactive( img ) {
+    if ( img.classList.contains("active" ) ) {
+        img.classList.remove("active");
+    }
+}
+
 
 </script>
 
