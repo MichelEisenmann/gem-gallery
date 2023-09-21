@@ -5,14 +5,14 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9KWX3PWND"></script>
     <script>
 window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-R9KWX3PWND');
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-R9KWX3PWND');
     </script>
-
+    
     <?php include ('../private/initialize.php'); ?>
     <?php include ('../private/initialize_galleries.php'); ?>
-
+    
     <?php
 // retrieve all the variables coming with the URL
 
@@ -31,10 +31,23 @@ if (array_key_exists("pagination", $_GET) ) {
   $pagination_start=htmlspecialchars($_GET["pagination"]);
  }
     ?>
-
+    
     <script>
 // Transfer the PHP variables into script global variables
-//
+// Paint information
+
+var paintFiles= [];
+var paintTitles= [];
+<?php
+foreach( $dico->sortedList as $paint ) {
+?>
+        paintFiles.push( "images/<?= $paint->file ?>" );
+        paintTitles.push( "<?= $paint->full_title() ?>" );
+<?php
+}
+?>
+    
+
 // Pagination:
 //
 //    0 1 2 3 4 5 6 7 8 ...... 40
@@ -83,18 +96,18 @@ function adjustPaginationValues() {
 adjustPaginationValues();
 
     </script>
-
+    
     <?php
-//
-//    0 1 2 3 4 5 6 7 8 ...... 40
-//          |-X-----|
-//              
-//  total_number= 41
-//  rank_in_gallery= 4
-//  pagination_start= 3
-//  pagination_size= 5  (constant)
-
-$total_number= count($dico->sortedList);
+  //
+  //    0 1 2 3 4 5 6 7 8 ...... 40
+  //          |-X-----|
+  //              
+  //  total_number= 41
+  //  rank_in_gallery= 4
+  //  pagination_start= 3
+  //  pagination_size= 5  (constant)
+  
+  $total_number= count($dico->sortedList);
 $pagination_size= 5;
 
 // size of pagination
@@ -120,20 +133,20 @@ if ( $pagination_start > $total_number - $pagination_size ) {
  }
 
 	?>
-
-	<title><?= ucfirst($dico->name) ?></title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-          <!-- TO BE REMOVED
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+<title><?= ucfirst($dico->name) ?></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TO BE REMOVED
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 -->
-          <style>
+<style>
 .top-container {
 	padding-top: 50px;
 }
-	  
+
 .description {
 	font-size: 10px; 
 }
@@ -183,40 +196,40 @@ if ( $pagination_start > $total_number - $pagination_size ) {
 
 .pagination img:hover:not(.active) {background-color: #ddd;}
 </style>
-  </head>
+</head>
 
-  <body>
-    <!-- Navbar (sit on top) -->
-    <!-- <div w3-include-html="public/navbar.html"></div> -->
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-      <!-- on veut la navbar toujours au dessus -> modification de la classe des le depart -->
-      <div class="w3-bar w3-card w3-animate-top w3-white" id="myNavbar">
-	<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-	  <i class="fa fa-bars"></i>
-	</a>
-	<a href="/index.html" class="w3-bar-item w3-button">ACCUEIL</a>
-	<a href="/public/expositions.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> EXPOSITIONS</a>
-	<a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIE</a>
-	<a href="/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-      </div>
+<body>
+<!-- Navbar (sit on top) -->
+<!-- <div w3-include-html="public/navbar.html"></div> -->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+<!-- on veut la navbar toujours au dessus -> modification de la classe des le depart -->
+<div class="w3-bar w3-card w3-animate-top w3-white" id="myNavbar">
+<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+<i class="fa fa-bars"></i>
+</a>
+<a href="/index.html" class="w3-bar-item w3-button">ACCUEIL</a>
+<a href="/public/expositions.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> EXPOSITIONS</a>
+<a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIE</a>
+<a href="/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+</div>
 
-      <!-- Navbar on small screens -->
-      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-	<a href="/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ACCUEIL</a>
-	<a href="/public/expositions.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPOSITIONS</a>
-	<a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERIE</a>
-	<a href="/index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-      </div>
-    </div>
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+<a href="/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ACCUEIL</a>
+<a href="/public/expositions.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPOSITIONS</a>
+<a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERIE</a>
+<a href="/index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+</div>
+</div>
 
-     <!-- ------------------------------------------------------- -->
-     <!-- gallery selector -->
+<!-- ------------------------------------------------------- -->
+<!-- gallery selector -->
 
-    <div class="center">
-      <select id="gallery_selector" onChange="gallerySelected();">
-	<?php
-foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
+<div class="center">
+<select id="gallery_selector" onChange="gallerySelected();">
+<?php
+  foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
   // skip empty dictionaries
   if ( count($cur_dico->paints) == 0 ) {
     continue;
@@ -226,75 +239,72 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
   } else {
     echo "<option value=\"" .$cur_dico->key ."\">" .$cur_dico->name ."</option><br>";
   }
-}
-	?>
-      </select>
-    </div>
+                                                            }
+?>
+</select>
+</div>
 
-     <!-- ------------------------------------------------------- -->
-     <!-- pagination with images -->
+<!-- ------------------------------------------------------- -->
+<!-- pagination with images -->
 
-     <div class="center-pagination">
-       <!-- necessaire pour etre centre a l'interieur du div de dessus -->
-       <div class="pagination w3-center" style="width:100%;margin:auto;">
-         <button class="w3-button w3-round pagination-button"
-                 onClick="showPrevious(<?= $pagination_start ."," .$rank_in_gallery ."," .$total_number ?>);">
-         &laquo;</button>
-	     <?php
-$i= 0;
+<div class="center-pagination">
+  <!-- necessaire pour etre centre a l'interieur du div de dessus -->
+  <div class="pagination w3-center" style="width:100%;margin:auto;">
+    <button class="w3-button w3-round pagination-button"
+            onClick="showPrevious(<?= $pagination_start ."," .$rank_in_gallery ."," .$total_number ?>);">
+    &laquo;</button>
+<?php
+  $i= 0;
 foreach( $dico->sortedList as $paint ) {
-     ?>
-       <img id="paint-<?= $i ?>"
-            class="fitting-image hidden-image"
-            src="images/<?= $paint->getThumbnailFile(); ?>"
-            alt="<?= htmlspecialchars($paint->full_title()); ?>"
-            onClick="selectPaint(<?= $pagination_start ."," .$i ?>);"
-          >
-	   <?php
-  $i++;
+?>
+<img id="paint-<?= $i ?>"
+     class="fitting-image hidden-image"
+     src="images/<?= $paint->getThumbnailFile(); ?>"
+     onClick="selectPaint( <?= $i ?> );" >
+<?php
+$i++;
 }
-       ?>
-         <button class="w3-button w3-round pagination-button"
-                 onClick="showNext(<?= $pagination_start ."," .$rank_in_gallery ."," .$total_number ?>);">
-           &raquo;</button>
-         <button class="w3-button w3-round pagination-button"
-                 onClick="startTimer(<?= $pagination_start ."," .$rank_in_gallery ."," .$total_number ?>);">
-           GO</button>
-         <button class="w3-button w3-round pagination-button"
-                 onClick="stopTimer();">
-           STOP</button>
-         </div>
-       </div>
+?>
+<button class="w3-button w3-round pagination-button"
+        onClick="showNext(<?= $pagination_start ."," .$rank_in_gallery ."," .$total_number ?>);">
+&raquo;</button>
+<button class="w3-button w3-round pagination-button"
+        onClick="startTimer(<?= $pagination_start ."," .$rank_in_gallery ."," .$total_number ?>);">
+GO</button>
+<button class="w3-button w3-round pagination-button"
+        onClick="stopTimer();">
+STOP</button>
+</div>
+</div>
 
-     <!-- ------------------------------------------------------- -->
-     <!-- the selected paint -->
+<!-- ------------------------------------------------------- -->
+<!-- the selected paint -->
 
-     <?php
-$paint= $dico->get_paint($rank_in_gallery);
-     ?>
-     <div class="center-pagination">
-       <div class="w3-container w3-center" style="width:100%;margin:auto;">
-         <div class="w3-card-4" >
-           <div class="w3-container">
-             <h4>(<?= $rank_in_gallery+1 ."/" .$total_number ?>)
-             <b><?= htmlspecialchars($paint->full_title()); ?></b>
-           </div>
-           <a href="../public/affichage_peinture.php?key=<?= $dico->key; ?>&rank=<?= $rank_in_gallery; ?>">
-           <img src="images/<?= $paint->file; ?>"
-                alt="<?= htmlspecialchars($paint->full_title()); ?>"
-		        style="width:100%" >
-           </a>
-         </div>
-       </div>
-     </div>
+<?php
+                            $paint= $dico->get_paint($rank_in_gallery);
+?>
+<div class="center-pagination">
+<div class="w3-container w3-center" style="width:100%;margin:auto;">
+<div class="w3-card-4" >
+<div class="w3-container">
+<h4>(<?= $rank_in_gallery+1 ."/" .$total_number ?>)
+<b><?= htmlspecialchars($paint->full_title()); ?></b>
+</div>
+<a href="../public/affichage_peinture.php?key=<?= $dico->key; ?>&rank=<?= $rank_in_gallery; ?>">
+<img id="paint-img"
+style="width:100%" >
+</a>
+</div>
+</div>
+</div>
 
 
-     <!-- ------------------------------------------------------- -->
+<!-- ------------------------------------------------------- -->
 
-     <!-- allow including some separate html file -->
-     <script src="../private/w3-include-html.js"></script>
+<!-- allow including some separate html file -->
+<script src="../private/w3-include-html.js"></script>
 
-     <script>
+<script>
 
 updateDocument();
 
@@ -362,8 +372,10 @@ function showNextJS() {
 }
 
 function updateDocument() {
+    // update the pagination part
     for ( i= 0; i < total_number; i++ ) {
         var img= document.getElementById("paint-" + i);
+        if ( img == null ) continue;
         if ( i < pagination_start ) {
             makeHidden(img);
         } else if ( i >= pagination_start + pagination_size ) {
@@ -377,41 +389,47 @@ function updateDocument() {
             makeInactive(img);
         }
     }
+    // show the active paint
+    updateCentralPaint();
 }
 
 function showPrevious(page, rank, total) {
     showPreviousJS();
-//    var x = document.getElementById("gallery_selector").value;
-//    var nextRank= rank-1;
-//    if ( nextRank < 0 ) {
-//        nextRank= total-1;
-//    }
-//    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
-//                     + "&rank=" + nextRank
-//                     + "&pagination=" + page );
+    //    var x = document.getElementById("gallery_selector").value;
+    //    var nextRank= rank-1;
+    //    if ( nextRank < 0 ) {
+    //        nextRank= total-1;
+    //    }
+    //    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
+    //                     + "&rank=" + nextRank
+    //                     + "&pagination=" + page );
 }
 
 function showNext(page, rank, total ) {
     showNextJS();
-//    var x = document.getElementById("gallery_selector").value;
-//    var nextRank= rank+1;
-//    if ( nextRank >= total ) {
-//        nextRank= 0;
-//    }
-//    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
-//                     + "&rank=" + nextRank
-//                     + "&pagination=" + page );
-//    if ( repeatFunction != null ) {
-//        // restore timer
-//        setInterval( repeatFunction, 4000 );
-//    }
+    //    var x = document.getElementById("gallery_selector").value;
+    //    var nextRank= rank+1;
+    //    if ( nextRank >= total ) {
+    //        nextRank= 0;
+    //    }
+    //    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
+    //                     + "&rank=" + nextRank
+    //                     + "&pagination=" + page );
+    //    if ( repeatFunction != null ) {
+    //        // restore timer
+    //        setInterval( repeatFunction, 4000 );
+    //    }
 }
 
-function selectPaint(page, rank) {
-    var x = document.getElementById("gallery_selector").value;
-    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
-                     + "&rank=" + rank
-                     + "&pagination=" + page );
+function selectPaint( rank ) {
+    rank_in_gallery= rank;
+    updateDocument();
+}
+
+function updateCentralPaint() {
+    var img = document.getElementById("paint-img");
+    img.src= paintFiles[rank_in_gallery];
+    img.alt= paintTitles[rank_in_gallery];
 }
 
 
@@ -444,5 +462,5 @@ function makeInactive( img ) {
 
 </script>
 
-  </body>
+</body>
 </html>
