@@ -43,7 +43,7 @@ if (array_key_exists("rank", $_GET) ) {
   $rank_in_gallery=htmlspecialchars($_GET["rank"]);
  }
 if ( $rank_in_gallery >= $total_number ) {
-  $rank_in_gallery= $total_number-1;
+  $rank_in_gallery= 0;
  }
 
 // the rank of the first paint shown in the pagination
@@ -67,10 +67,11 @@ if ( $pagination_start > $total_number - $pagination_size ) {
 	<title><?= ucfirst($dico->name) ?></title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+          <!-- TO BE REMOVED
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+-->
           <style>
 .top-container {
 	padding-top: 50px;
@@ -180,7 +181,7 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
        <!-- necessaire pour etre centre a l'interieur du div de dessus -->
        <div class="pagination w3-center" style="width:100%;margin:auto;">
          <button class="w3-button w3-round pagination-button"
-                 onClick="paginatePrevious(<?= $pagination_start ."," .$pagination_size ."," .$rank_in_gallery ?>);">
+                 onClick="paginatePrevious(<?= $pagination_start ."," .$pagination_size ."," .$rank_in_gallery ."," .$total_number ?>);">
          &laquo;</button>
 	     <?php
 $i= 0;
@@ -203,7 +204,7 @@ foreach( $dico->sortedList as $paint ) {
 }
        ?>
          <button class="w3-button w3-round pagination-button"
-                 onClick="paginateNext(<?= $pagination_start ."," .$pagination_size ."," .$rank_in_gallery ?>);">
+                 onClick="paginateNext(<?= $pagination_start ."," .$pagination_size ."," .$rank_in_gallery ."," .$total_number ?>);">
            &raquo;</button>
          </div>
        </div>
@@ -263,20 +264,23 @@ function gallerySelected() {
     location.replace("/public/contenu_d_une_galerie_new.php?key=" + x);
 }
 
-function paginatePrevious(page, size, rank) {
+function paginatePrevious(page, size, rank, total) {
     var x = document.getElementById("gallery_selector").value;
     var nextRank= rank-1;
     if ( nextRank < 0 ) {
-        nextRank= 0;
+        nextRank= total-1;
     }
     location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
                      + "&rank=" + nextRank
                      + "&pagination=" + page );
 }
 
-function paginateNext(page, size, rank) {
+function paginateNext(page, size, rank, total ) {
     var x = document.getElementById("gallery_selector").value;
     var nextRank= rank+1;
+    if ( nextRank >= total ) {
+        nextRank= 0;
+    }
     location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
                      + "&rank=" + nextRank
                      + "&pagination=" + page );
