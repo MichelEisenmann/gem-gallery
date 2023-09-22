@@ -195,9 +195,9 @@ adjustPaginationValues();
         font-size: 15px;
     }
 
-#central-paint-title {
-    font-size: 15px;
-}
+    #central-paint-title {
+        font-size: 15px;
+    }
 
 
 }
@@ -292,10 +292,10 @@ $i++;
 <button class="w3-button w3-round pagination-button"
         onClick="showNext();">
 &raquo;</button>
-<button class="w3-button w3-round pagination-button"
+<button id="start-button" class="w3-button w3-round pagination-button"
         onClick="startTimer();">
 GO</button>
-<button class="w3-button w3-round pagination-button"
+<button id="stop-button" class="w3-button w3-round pagination-button"
         onClick="stopTimer();">
 STOP</button>
         <b id="central-paint-title"></b>
@@ -357,6 +357,12 @@ var repeatId= null;
 function startTimer() {
     // just in case..
     stopTimer();
+    //
+    var startBut= document.getElementById("start-button");
+    startBut.disabled= true;
+    var stopBut= document.getElementById("stop-button");
+    stopBut.disabled= false;
+    //
     repeatId= setInterval( showNext, 4000 );
 }
 
@@ -364,6 +370,10 @@ function stopTimer() {
     if ( repeatId != null) {
         clearInterval(repeatId);
         repeatId= null;
+        var startBut= document.getElementById("start-button");
+        startBut.disabled= false;
+        var stopBut= document.getElementById("stop-button");
+        stopBut.disabled= true;
     }
 }
 
