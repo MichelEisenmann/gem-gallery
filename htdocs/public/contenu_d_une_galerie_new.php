@@ -16,7 +16,10 @@ gtag('config', 'G-R9KWX3PWND');
     <?php
 // retrieve all the variables coming with the URL
 
-$dico_key=htmlspecialchars($_GET["key"]);
+$dico_key="oil";
+if (array_key_exists("key", $_GET) ) {
+  $dico_key=htmlspecialchars($_GET["key"]);
+} 
 $dico= $ALL_GALLERIES->paint_dictionnaries[$dico_key];
 
 // the rank of current selected paint in our gallery
@@ -131,6 +134,14 @@ adjustPaginationValues();
     //    border: 1px solid;
 }
 
+.center-paint {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    width: 80%;
+    //    border: 1px solid;
+}
+
 .fitting-image {
     width: 100px;
     height: 100px;
@@ -140,10 +151,6 @@ adjustPaginationValues();
 
 .hidden-image {
     display: none;
-}
-
-.pagination-button {
-    font-size: 20px;
 }
 
 .visible-image {
@@ -159,6 +166,42 @@ adjustPaginationValues();
 }
 
 .pagination img:hover:not(.active) {background-color: #ddd;}
+
+#gallery_selector {
+    font-size: 20px;
+}
+
+#central-paint-title {
+    font-size: 20px;
+}
+
+.pagination-button {
+    font-size: 20px;
+}
+
+
+/* Adjustments for phones */
+@media only screen and (max-device-width: 576px) {
+
+    #pagination-bar {
+        display: none;
+    }
+
+    .pagination-button {
+        font-size: 15px;
+    }
+
+    #gallery_selector {
+        font-size: 15px;
+    }
+
+#central-paint-title {
+    font-size: 15px;
+}
+
+
+}
+
 </style>
 </head>
 
@@ -211,7 +254,7 @@ adjustPaginationValues();
 <!-- ------------------------------------------------------- -->
 <!-- pagination with images -->
 
-<div class="center-pagination">
+<div id="pagination-bar" class="center-pagination">
   <!-- necessaire pour etre centre a l'interieur du div de dessus -->
   <div class="pagination w3-center" style="width:100%;margin:auto;">
     <button class="w3-button w3-round pagination-button"
@@ -232,12 +275,6 @@ $i++;
 <button class="w3-button w3-round pagination-button"
         onClick="showNext();">
 &raquo;</button>
-<button class="w3-button w3-round pagination-button"
-        onClick="startTimer();">
-GO</button>
-<button class="w3-button w3-round pagination-button"
-        onClick="stopTimer();">
-STOP</button>
 </div>
 </div>
 
@@ -245,11 +282,22 @@ STOP</button>
 <!-- the central selected paint -->
 <!-- this will be updated via updateCentralPaint() function -->
 
-<div class="center-pagination">
+<div class="center-paint">
   <div class="w3-container w3-center" style="width:100%;margin:auto;">
     <div class="w3-card-4" >
       <div class="w3-container">
-        <h4 id="central-paint-counter"></h4>
+        <button class="w3-button w3-round pagination-button"
+                onClick="showPrevious();">
+        &laquo;</button>
+<button class="w3-button w3-round pagination-button"
+        onClick="showNext();">
+&raquo;</button>
+<button class="w3-button w3-round pagination-button"
+        onClick="startTimer();">
+GO</button>
+<button class="w3-button w3-round pagination-button"
+        onClick="stopTimer();">
+STOP</button>
         <b id="central-paint-title"></b>
       </div>
       <a id="central-paint-href" href="">
@@ -349,11 +397,10 @@ function updateCentralPaint() {
     var a= document.getElementById("central-paint-href");
     a.href="../public/affichage_peinture.php?key=" + dicoKey + "&rank=" + rank_in_gallery;
     //
-    var h4= document.getElementById("central-paint-counter");
-    h4.textContent= (rank_in_gallery+1) + "/" + total_number;
+    var count= "(" + (rank_in_gallery+1) + "/" + total_number + ")";
     //        
     var b= document.getElementById("central-paint-title");
-    b.textContent= paintTitles[rank_in_gallery];
+    b.textContent= count + " - " + paintTitles[rank_in_gallery];
 }
 
 function makeVisible( img ) {
