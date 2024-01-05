@@ -3,7 +3,7 @@
 require('dictionnary.php');
 require('paint_dictionnary.php');
 
-class GalleryBrowser {
+class AllGalleries {
     // provient du fichier "dico.csv"
     // sert a associer une cle et un intitule
     public $dictionnary;
