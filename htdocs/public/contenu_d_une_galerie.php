@@ -139,8 +139,9 @@ if ( $pagination_start > $total_number - $pagination_size ) {
 	border: 2px solid black;
 }
 
-.title {
-    font-size: 10px;
+.pagination-button {
+    font-size: 15px;
+    width: 10px;
 }
 
 
@@ -247,7 +248,7 @@ $paint= $dico->get_paint($rank_in_gallery);
            <div class="w3-container">
              <div class="title">
              (<?= $rank_in_gallery+1 ."/" .$total_number ?>)
-             <b><?= htmlspecialchars($paint->full_title()); ?></b>
+             <?= htmlspecialchars($paint->full_title()); ?>
              </div>
            </div>
          </div>
