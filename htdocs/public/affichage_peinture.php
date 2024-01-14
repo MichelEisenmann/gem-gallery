@@ -91,11 +91,11 @@
  <p>
     <div class="containerBtn">
      <img src="images/<?= $paint->file; ?>" style="width:100%">
-     <button class="leftbtn"><a href="../public/affichage_peinture.php?key=<?= $dico->key; ?>&rank=<?= $prev; ?>">
-		<i class="fa fa-arrow-left"></i></a>
+     <button class="leftbtn" onClick="goto_page(<?= "'".$dico->key ."'," .$prev ?>);">
+		 &laquo;
 	 </button>
-     <button class="rightbtn"><a href="../public/affichage_peinture.php?key=<?= $dico->key; ?>&rank=<?= $next; ?>">
-	    <i class="fa fa-arrow-right"></i></a>
+     <button class="rightbtn" onClick="goto_page(<?= "'".$dico->key ."'," .$next ?>);">
+	    &raquo;</a>
 	 </button>
    </div>
    <p><?= ucfirst(htmlspecialchars($paint->full_title())); ?> </p>
@@ -107,6 +107,11 @@
 
 <script>
           
+function goto_page(key, rank) {
+    location.replace("/public/affichage_peinture.php?key=" + key
+                     + "&rank=" + rank );
+}
+
 </script>
 
 </body>
