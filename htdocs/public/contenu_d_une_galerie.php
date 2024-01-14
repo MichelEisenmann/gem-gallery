@@ -100,7 +100,7 @@ if ( $pagination_start > $total_number - $pagination_size ) {
     width: 100px;
     height: 100px;
     object-fit: scale-down;
-    border: 1px solid;
+    border: 1px solid grey;
 }
 
 .hidden-image {
@@ -120,7 +120,7 @@ if ( $pagination_start > $total_number - $pagination_size ) {
 
 .pagination img.active {
 	color: white;
-	border: 4px solid black;
+	border: 3px solid black;
 }
 
 .pagination img:hover:not(.active) {background-color: #ddd;}
@@ -260,7 +260,7 @@ function openAdditionalInfo(id) {
 
 function gallerySelected() {
     var x = document.getElementById("gallery_selector").value;
-    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x);
+    location.replace("/public/contenu_d_une_galerie.php?key=" + x);
 }
 
 function paginatePrevious(page, size, rank) {
@@ -269,7 +269,7 @@ function paginatePrevious(page, size, rank) {
     if ( nextRank < 0 ) {
         nextRank= 0;
     }
-    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
+    location.replace("/public/contenu_d_une_galerie.php?key=" + x
                      + "&rank=" + nextRank
                      + "&pagination=" + page );
 }
@@ -277,14 +277,14 @@ function paginatePrevious(page, size, rank) {
 function paginateNext(page, size, rank) {
     var x = document.getElementById("gallery_selector").value;
     var nextRank= rank+1;
-    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
+    location.replace("/public/contenu_d_une_galerie.php?key=" + x
                      + "&rank=" + nextRank
                      + "&pagination=" + page );
 }
 
 function selectPaint(page, rank) {
     var x = document.getElementById("gallery_selector").value;
-    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x
+    location.replace("/public/contenu_d_une_galerie.php?key=" + x
                      + "&rank=" + rank
                      + "&pagination=" + page );
 }
