@@ -124,6 +124,28 @@ if ( $pagination_start > $total_number - $pagination_size ) {
 }
 
 .pagination img:hover:not(.active) {background-color: #ddd;}
+
+/* Phone and tablets */
+@media only screen and (max-device-width: 576px) {
+.fitting-image {
+    width: 40px;
+    height: 40px;
+    object-fit: scale-down;
+    border: 1px solid grey;
+}
+
+.pagination img.active {
+	color: white;
+	border: 2px solid black;
+}
+
+.title {
+    font-size: 10px;
+}
+
+
+}
+
 </style>
   </head>
 
@@ -217,15 +239,17 @@ $paint= $dico->get_paint($rank_in_gallery);
      <div class="center-pagination">
        <div class="w3-container w3-center" style="width:100%;margin:auto;">
          <div class="w3-card-4" >
-           <div class="w3-container">
-             <h4>(<?= $rank_in_gallery+1 ."/" .$total_number ?>)
-             <b><?= htmlspecialchars($paint->full_title()); ?></b>
-           </div>
            <a href="../public/affichage_peinture.php?key=<?= $dico->key; ?>&rank=<?= $rank_in_gallery; ?>">
            <img src="images/<?= $paint->file; ?>"
                 alt="<?= htmlspecialchars($paint->full_title()); ?>"
 		        style="width:100%" >
            </a>
+           <div class="w3-container">
+             <div class="title">
+             (<?= $rank_in_gallery+1 ."/" .$total_number ?>)
+             <b><?= htmlspecialchars($paint->full_title()); ?></b>
+             </div>
+           </div>
          </div>
        </div>
      </div>
