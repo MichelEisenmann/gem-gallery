@@ -42,13 +42,11 @@ if (array_key_exists("pagination", $_GET) ) {
 var dicoKey= "<?= $dico_key ?>";
 var paintFiles= [];
 var paintTitles= [];
-var paintDescriptions= [];
 <?php
 foreach( $dico->sortedList as $paint ) {
 ?>
         paintFiles.push( "images/<?= $paint->file ?>" );
         paintTitles.push( "<?= $paint->full_title() ?>" );
-        paintDescriptions.push( "<?= $paint->get_description() ?>" );
 <?php
 }
 ?>
@@ -106,9 +104,11 @@ adjustPaginationValues();
 <title><?= ucfirst($dico->name) ?></title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TO BE REMOVED
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+-->
 <style>
 .top-container {
 	padding-top: 50px;
@@ -165,9 +165,7 @@ adjustPaginationValues();
 	border: 3px solid black;
 }
 
-.pagination img:hover:not(.active) {
-    background-color: #ddd;
-}
+.pagination img:hover:not(.active) {background-color: #ddd;}
 
 #gallery_selector {
     font-size: 20px;
@@ -177,52 +175,35 @@ adjustPaginationValues();
     font-size: 20px;
 }
 
-#central-paint-description {
-    font-size: 20px;
-}
-
 .pagination-button {
     font-size: 20px;
 }
 
-.espace {
-    display: none;
-}
 
 /* Adjustments for phones */
 @media only screen and (max-device-width: 576px) {
-.espace {
-    display: block;
-    height: 50px;
-}
 
-#pagination-bar {
-    display: none;
-}
+    #pagination-bar {
+        display: none;
+    }
 
-.pagination-button {
-    font-size: 15px;
-}
+    .pagination-button {
+        font-size: 15px;
+    }
 
-.gallery_selector {
-    display: none;
-}
+    #gallery_selector {
+        font-size: 15px;
+    }
 
-.pagination {
-	display: none;
-}
+    #central-paint-title {
+        font-size: 15px;
+    }
 
-#central-paint-title {
-    font-size: 10px;
-}
 
-#central-paint-description {
-    font-size: 10px;
 }
-
 
 </style>
-  </head>
+</head>
 
 <body>
 <!-- Navbar (sit on top) -->
@@ -252,10 +233,10 @@ adjustPaginationValues();
 <!-- ------------------------------------------------------- -->
 <!-- gallery selector -->
 
-    <div class="center gallery_selector">
-      <select id="gallery_selector" onChange="gallerySelected();">
-	<?php
-foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
+<div class="center">
+<select id="gallery_selector" onChange="gallerySelected();">
+<?php
+  foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
   // skip empty dictionaries
   if ( count($cur_dico->paints) == 0 ) {
     continue;
@@ -270,15 +251,10 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
       </select>
     </div>
 
-<!-- seulement visible sur les petits ecrans (reserve un peu de hauteur) -->
-<div class="w3-center espace" style="width:100%;margin:auto;">
-</div>
-
 <!-- ------------------------------------------------------- -->
 <!-- pagination with images -->
 
-<div id="pagination-bar"  class="center-pagination">
-  <!-- seulement visible sur les grands ecrans -->
+<div id="pagination-bar" class="center-pagination">
   <!-- necessaire pour etre centre a l'interieur du div de dessus -->
   <div class="pagination w3-center" style="width:100%;margin:auto;">
     <button class="w3-button w3-round pagination-button"
@@ -310,10 +286,10 @@ $i++;
   <div class="w3-container w3-center" style="width:100%;margin:auto;">
     <div class="w3-card-4" >
       <div class="w3-container">
-        <button id="prev-button" class="w3-button w3-round pagination-button"
+        <button class="w3-button w3-round pagination-button"
                 onClick="showPrevious();">
         &laquo;</button>
-<button id="next-button" class="w3-button w3-round pagination-button"
+<button class="w3-button w3-round pagination-button"
         onClick="showNext();">
 &raquo;</button>
 <button id="start-button" class="w3-button w3-round pagination-button"
@@ -322,19 +298,12 @@ GO</button>
 <button id="stop-button" class="w3-button w3-round pagination-button"
         onClick="stopTimer();">
 STOP</button>
+        <b id="central-paint-title"></b>
       </div>
       <a id="central-paint-href" href="">
         <img id="central-paint-img"
              style="width:100%" >
         </a>
-      </div>
-      <div class="w3-container">
-        <div>
-           <span id="central-paint-title"></span>
-     	</div>
-        <div>
-           <span id="central-paint-description"></span>
-     	</div>
       </div>
     </div>
 </div>
@@ -362,7 +331,7 @@ function toggleFunction() {
 
 function gallerySelected() {
     var x = document.getElementById("gallery_selector").value;
-    location.replace("/public/contenu_d_une_galerie.php?key=" + x);
+    location.replace("/public/contenu_d_une_galerie_new.php?key=" + x);
 }
 
 function showPrevious() {
@@ -389,10 +358,6 @@ function startTimer() {
     // just in case..
     stopTimer();
     //
-    var prevBut= document.getElementById("prev-button");
-    prevBut.disabled= true;
-    var nextBut= document.getElementById("next-button");
-    nextBut.disabled= true;
     var startBut= document.getElementById("start-button");
     startBut.disabled= true;
     var stopBut= document.getElementById("stop-button");
@@ -405,10 +370,6 @@ function stopTimer() {
     if ( repeatId != null) {
         clearInterval(repeatId);
         repeatId= null;
-        var prevBut= document.getElementById("prev-button");
-        prevBut.disabled= false;
-        var nextBut= document.getElementById("next-button");
-        nextBut.disabled= false;
         var startBut= document.getElementById("start-button");
         startBut.disabled= false;
         var stopBut= document.getElementById("stop-button");
@@ -450,8 +411,6 @@ function updateCentralPaint() {
     //        
     var b= document.getElementById("central-paint-title");
     b.textContent= count + " - " + paintTitles[rank_in_gallery];
-    var b= document.getElementById("central-paint-description");
-    b.textContent= paintDescriptions[rank_in_gallery];
 }
 
 function makeVisible( img ) {
