@@ -123,29 +123,33 @@ if ( $pagination_start > $total_number - $pagination_size ) {
 	border: 3px solid black;
 }
 
-.pagination img:hover:not(.active) {background-color: #ddd;}
+.pagination img:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.espace {
+    display: none;
+}
 
 /* Phone and tablets */
 @media only screen and (max-device-width: 576px) {
-.fitting-image {
-    width: 40px;
-    height: 40px;
-    object-fit: scale-down;
-    border: 1px solid grey;
+.espace {
+    display: block;
+    height: 50px;
 }
 
-.pagination img.active {
-	color: white;
-	border: 2px solid black;
+.gallery_selector_mine {
+    display: none;
 }
 
-.pagination-button {
-    font-size: 15px;
-    width: 10px;
+.pagination {
+	display: none;
 }
 
-
+.title {
+    font-size: 10px;
 }
+
 
 </style>
   </head>
@@ -178,7 +182,7 @@ if ( $pagination_start > $total_number - $pagination_size ) {
      <!-- ------------------------------------------------------- -->
      <!-- gallery selector -->
 
-    <div class="center">
+    <div class="center gallery_selector_mine">
       <select id="gallery_selector" onChange="gallerySelected();">
 	<?php
 foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
@@ -200,6 +204,11 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
      <!-- pagination with images -->
 
      <div class="center-pagination">
+       <!-- seulement visible sur les petits ecrans (reserve un peu de hauteur) -->
+       <div class="w3-center espace" style="width:100%;margin:auto;">
+       </div>
+
+       <!-- seulement visible sur les grands ecrans -->
        <!-- necessaire pour etre centre a l'interieur du div de dessus -->
        <div class="pagination w3-center" style="width:100%;margin:auto;">
          <button class="w3-button w3-round pagination-button"
@@ -249,6 +258,9 @@ $paint= $dico->get_paint($rank_in_gallery);
              <div class="title">
              (<?= $rank_in_gallery+1 ."/" .$total_number ?>)
              <?= htmlspecialchars($paint->full_title()); ?>
+             </div>
+             <div class="title">
+             <?= htmlspecialchars($paint->get_description()); ?>
              </div>
            </div>
          </div>

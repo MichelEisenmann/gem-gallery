@@ -87,6 +87,7 @@
 <div class="w3-container top-container">
 <div class="w3-content w3-display-container">
  <a href="../index.html"><i class="fa fa-arrow-circle-up"> Accueil </i></a>
+  > 
  <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key ."&rank=" .$rank ?>"><i class="fa fa-step-backward"> Galerie <?= $dico->name ?></i></a>
  <p>
     <div class="containerBtn">
@@ -99,6 +100,7 @@
 	 </button>
    </div>
    <p><?= ucfirst(htmlspecialchars($paint->full_title())); ?> </p>
+   <p><?= ucfirst(htmlspecialchars($paint->get_description())); ?> </p>
  </p> 
  </div>
 </div>
