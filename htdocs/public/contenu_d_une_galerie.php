@@ -283,7 +283,8 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
   <div class="pagination w3-center" style="width:100%;margin:auto;">
     <button class="w3-button w3-round pagination-button"
             onClick="showPrevious();">
-    &laquo;</button>
+<i class="fa fa-backward"></i>
+    </button>
 <?php
   $i= 0;
 foreach( $dico->sortedList as $paint ) {
@@ -298,7 +299,8 @@ $i++;
 ?>
 <button class="w3-button w3-round pagination-button"
         onClick="showNext();">
-&raquo;</button>
+<i class="fa fa-forward"></i>
+</button>
 </div>
 </div>
 
@@ -312,16 +314,20 @@ $i++;
       <div class="w3-container">
         <button id="prev-button" class="w3-button w3-round pagination-button"
                 onClick="showPrevious();">
-        &laquo;</button>
+<i class="fa fa-backward"></i>
+</button>
 <button id="next-button" class="w3-button w3-round pagination-button"
         onClick="showNext();">
-&raquo;</button>
+<i class="fa fa-forward"></i>
+</button>
 <button id="start-button" class="w3-button w3-round pagination-button"
         onClick="startTimer();">
-GO</button>
+<i class="fa fa-play"></i>
+</button>
 <button id="stop-button" class="w3-button w3-round pagination-button"
         onClick="stopTimer();">
-STOP</button>
+<i class="fa fa-stop"></i>
+</button>
       </div>
       <a id="central-paint-href" href="">
         <img id="central-paint-img"
@@ -398,7 +404,8 @@ function startTimer() {
     var stopBut= document.getElementById("stop-button");
     stopBut.disabled= false;
     //
-    repeatId= setInterval( showNext, 4000 );
+    showNext();
+    repeatId= setInterval( showNext, 3000 );
 }
 
 function stopTimer() {
