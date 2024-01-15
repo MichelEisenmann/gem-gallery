@@ -36,60 +36,44 @@
 	.top-container {
       padding-top: 10px;
       }
-	.containerBtn {
-		position: relative;
-        padding-top: 40px;
-	}
-	.containerBtn .leftbtn {
-       position: absolute;
-       top: 5px;
-       left: 40px;
-      background-color: #555;
-      color: white;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-   }
-   .containerBtn .leftbtn:hover {
-     background-color: blue;
-   }
-   	.containerBtn .rightbtn {
-       position: absolute;
-       top: 5px;
-       right: 40px;
-      background-color: #555;
-      color: white;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-   }
-   .containerBtn .rightbtn:hover {
-     background-color: blue;
-   }
+        .title {
+	        font-size: 12px; 
+      }
     </style>
   </head>
 
   <body>
-<div class="w3-container top-container">
-<div class="w3-content w3-display-container">
- <a href="../index.html"><i class="fa fa-arrow-circle-up"></i> Accueil</a>
- >
- <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key ."&rank=" .$rank ?>">Galerie <?= $dico->name ?></i></a>
- <p>
-    <div class="containerBtn">
-     <img src="images/<?= $paint->file; ?>" style="width:100%">
-     <button class="w3-button w3-round pagination-button leftbtn" onClick="goto_page(<?= "'".$dico->key ."'," .$prev ?>);">
-<i class="fa fa-backward"></i>
-	 </button>
-     <button class="w3-button w3-round pagination-button rightbtn" onClick="goto_page(<?= "'".$dico->key ."'," .$next ?>);">
-<i class="fa fa-forward"></i>
-	 </button>
-   </div>
-   <p><?= ucfirst(htmlspecialchars($paint->full_title())); ?> </p>
-   <p><?= ucfirst(htmlspecialchars($paint->get_description())); ?> </p>
- </p> 
- </div>
-</div>
+    <div class="w3-container top-container">
+      <a href="../index.html"><i class="fa fa-arrow-circle-up"></i> Accueil</a>
+      >
+      <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key ."&rank=" .$rank ?>">Galerie <?= $dico->name ?></i></a>
+      
+      <div class="w3-container top-container">
+        <div class="w3-card-4" >
+          <div class="w3-row">
+            <div class="w3-col w3-center s1">
+              <button class="w3-button w3-round" onClick="goto_page(<?= "'".$dico->key ."'," .$prev ?>);"><i class="fa fa-backward"></i>
+              </button>
+            </div>
+            <div class="w3-col w3-center s10 title">
+              <?= ucfirst($paint->full_title()); ?> <br>
+                <?= ucfirst($paint->description); ?>
+              </div>
+              <div class="w3-col w3-center s1">
+                <button class="w3-button w3-round" onClick="goto_page(<?= "'".$dico->key ."'," .$next ?>);"><i class="fa fa-forward"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w3-container">
+          <div class="w3-card-4" >
+            <img src="images/<?= $paint->file; ?>" style="width:100%">
+            </div>
+          </div>
+        </div>
+
 <!-- allow including some separate html file -->
 <script src="../private/w3-include-html.js"></script>
 
