@@ -21,114 +21,145 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+  body, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+  }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+  .w3-wide {letter-spacing: 10px;}
+  .w3-hover-opacity {cursor: pointer;}
 
-blockquote {
-  font-family: 'Lucida Handwriting','Zapfino', cursive;
-  text-align: center;
-}
-.limited {
-    height: 200px;
-}
+  blockquote {
+      font-family: 'Lucida Handwriting','Zapfino', cursive;
+      text-align: center;
+  }
+  .limited {
+      height: 200px;
+  }
 
-.australie_theme {
-   width: 176px ;
-   height: 250px ;
-   }
+  .australie_theme {
+      width: 176px ;
+      height: 250px ;
+  }
   .paysage_theme {
-   width: 182px ;
-   height: 250px ;
-   }
+      width: 182px ;
+      height: 250px ;
+  }
   .artiste {
-   width: 188px ;
-   height: 250px ;
-   }
-   .video {
-   width: 50px ;
-   height: 35px ;
-   }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  align-items: center;
-  justify-items: center;
-   margin: auto;
-}
-.grid img {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  max-width: 100%;
-}
-.grid img:nth-child(2) {
-  grid-column: span 4;
+      width: 188px ;
+      height: 250px ;
+  }
+  .video {
+      width: 50px ;
+      height: 35px ;
+  }
+  .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      align-items: center;
+      justify-items: center;
+      margin: auto;
+  }
+  .grid img {
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+      max-width: 100%;
+  }
+  .grid img:nth-child(2) {
+      grid-column: span 4;
+  }
+
+  .computer {
+      display: block;
+  }
+
+  .mobile {
+      display: none;
   }
 
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 576px) {
-blockquote {
-  font-family: 'Lucida Handwriting','Zapfino', cursive;
-  text-align: center;
-}
-  .limited {
-   width: 100px ;
-   height: 80px ;
-   }
- .australie_theme {
-   width: 80px ;
-   height: 114px ;
-   }
-  .paysage_theme {
-   width: 80px ;
-   height: 114px ;
-   }
-  .artiste {
-   width: 80px ;
-   height: 114px ;
-   }
-  .video {
-   width: 30px ;
-   height: 18px ;
-   }
-   .grid {
-      display: grid;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: repeat(2, 1fr);
-	  justify-items: center;
-      grid-gap: 1px;
-	  gap: 10px;
-	  align-items: center;
-      margin: auto;
+    .computer {
+	display: none;
     }
-   .box {
-      margin: 0;
-      }
+
+    .mobile {
+	display: block;
+    }
+
+    blockquote {
+	font-family: 'Lucida Handwriting','Zapfino', cursive;
+	text-align: center;
+    }
+
+    .title {
+	margin-top: 60px;
+    }
+
+    .limited {
+	width: 100px ;
+	height: 80px ;
+    }
+
+    .australie_theme {
+	width: 80px ;
+	height: 114px ;
+    }
+    .paysage_theme {
+	width: 80px ;
+	height: 114px ;
+    }
+    .artiste {
+	width: 80px ;
+	height: 114px ;
+    }
+    .video {
+	width: 30px ;
+	height: 18px ;
+    }
+
+    .title-grid {
+	display: grid;
+	grid-template-rows: repeat(1, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	grid-gap: 1px;
+	align-items: center;
+    }
+    .grid {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	grid-gap: 1px;
+	gap: 10px;
+	align-items: center;
+	margin: auto;
+    }
+    .box {
+	margin: 0;
+    }
     .box:nth-child(1) ,
-    .box:nth-child(2);
+	 .box:nth-child(2);
     .box:nth-child(3), 
     .box:nth-child(4) {
-      grid-column: span 2;
-      }
-  
-.grid img {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  max-width: 100%;
+	grid-column: span 2;
+    }
+    
+    .grid img {
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+	max-width: 100%;
+    }
+    .grid img:nth-child(2) {
+	grid-column: span 4;
+    }
+    
 }
-.grid img:nth-child(2) {
-  grid-column: span 4;
-  }
-  
- }
 
 
 </style>
@@ -160,83 +191,123 @@ blockquote {
 </div>
 
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
+<!-- Mobile version -->
+<div class="mobile w3-content title" id="about">
+  <div class="title-grid">
+    <div >
+      <a href="/public/acces_aux_galeries.php">
+	<img class="artiste" src="public/images/web/20211008_2emePrix_Pastel_small.jpg" alt="Artist's photo" />
+      </a>
+    </div>
+    <div>
+      <blockquote>
+	Gis&egrave;le EISENMANN (gem)</blockquote>
+    </div>
+  </div>
+
+  <div>
+    <p class="w3-center"><em>La peinture pour transcender le r&eacute;el / Painting to transcend reality</em></p>
+    <div class="grid">
+      <a href="public/contenu_d_une_galerie.php?key=oil&rank=4">
+        <img class="limited" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
+      </a>
+      <a href="public/contenu_d_une_galerie.php?key=acrylic&rank=16">
+        <img class="limited" src="public/images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
+      </a>
+      <a href="public/contenu_d_une_galerie.php?key=pastel&rank=2">
+        <img class="limited" src="public/images/Pastels/20210909_canalDuMidi_small.jpg" alt="Pastel" ><br>Pastels</br>			
+      </a>
+      <a href="public/contenu_d_une_galerie.php?key=other&rank=2">
+        <img class="limited" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
+      </a>
+    </div>
+  </div>	   
+</div>
+<!-- Mobile version -->
+
+<!-- Computer version -->
+<div class="computer w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">
-  <blockquote>
-  Gis&egrave;le EISENMANN (gem)</blockquote> 
+    <blockquote>
+      Gis&egrave;le EISENMANN (gem)</blockquote> 
   </h3>
   <!-- GRID -->
 
-<!-- Theme grid -->
-<div class="w3-content w3-container " id="grid_theme">
-<p class="w3-center">
-<main class="grid">
+  <!-- Theme grid -->
+  <div class="w3-content w3-container " id="grid_theme">
+    <p class="w3-center">
+      <main class="grid">
 	<div><a href="/public/acces_aux_galeries.php">
-          <img class="artiste" src="public/images/web/20211008_2emePrix_Pastel_small.jpg" alt="Artist's photo" />
-		  </a>
-     </div>
+            <img class="artiste" src="public/images/web/20211008_2emePrix_Pastel_small.jpg" alt="Artist's photo" />
+	  </a>
+	</div>
 	<div></div>
 	<div><a href="public/contenu_d_une_galerie.php?key=australie&rank=2">
-          <img class="australie_theme" src="public/images/Huile/20230708_ClairDeSoleil_Huile_30P_small.jpg" alt="Australie" />
-		</a>
+            <img class="australie_theme" src="public/images/Huile/20230708_ClairDeSoleil_Huile_30P_small.jpg" alt="Australie" />
+	  </a>
 	</div>
 
-   <div><a href="public/contenu_d_une_galerie.php?key=paysage&rank=1">
-          <img class="paysage_theme" src="public/images/Acrylique/20230530_Contemplation_A100x73_small.jpg" alt="Paysage" />
-		</a>
+	<div><a href="public/contenu_d_une_galerie.php?key=paysage&rank=1">
+            <img class="paysage_theme" src="public/images/Acrylique/20230530_Contemplation_A100x73_small.jpg" alt="Paysage" />
+	  </a>
 	</div>
- </main>
-</p>
+      </main>
+    </p>
+  </div>
 </div>
 
-  <p class="w3-center"><em>La peinture pour transcender le r&eacute;el / Painting to transcend reality</em></p>
+<p class="computer w3-center"><em>La peinture pour transcender le r&eacute;el / Painting to transcend reality</em></p>
+
+<!-- common part -->
+<div class="w3-content w3-container" id="">
   <p>J'ai commenc&eacute; &agrave; peindre en 2020 pour g&eacute;rer mon stress professionnel et les pr&eacute;mices des confinements du covid19. 
-  Mon choix s'est port&eacute; sur la technique du pastel sec, soutenu par les mots de Francis Bacon entendus dans une vid&eacute;o 
-  lors d'une exposition &agrave; Monaco. Il avait choisi de peindre avec des pastels parce qu'ils lui apportaient 
-  une riche vari&eacute;t&eacute; de couleurs, ce en quoi il rejoignait mes souhaits. 
-  Fin 2021, j'ai rejoint l'atelier de <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant</a> &agrave; Grasse (06) 
-  pour m'instruire dans les techniques de peinture &agrave; l'acrylique et &agrave; l'huile. 
-<p>Je pr&eacute;pare et d&eacute;veloppe mes cr&eacute;ations sur tablette avec un stylet. Cette phase d’esquisse numérique 
-me permet d’appr&eacute;cier la composition et la palette de couleurs avant de reproduire sur toile, avec la technique choisie. 
-Mes tableaux pr&eacute;sentent souvent des couleurs vives, contrast&eacute;es et des formes courbes. 
-Mon imagination est aliment&eacute;e en grande partie par mes photos et dynamisée par la musique.
+    Mon choix s'est port&eacute; sur la technique du pastel sec, soutenu par les mots de Francis Bacon entendus dans une vid&eacute;o 
+    lors d'une exposition &agrave; Monaco. Il avait choisi de peindre avec des pastels parce qu'ils lui apportaient 
+    une riche vari&eacute;t&eacute; de couleurs, ce en quoi il rejoignait mes souhaits. 
+    Fin 2021, j'ai rejoint l'atelier de <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant</a> &agrave; Grasse (06) 
+    pour m'instruire dans les techniques de peinture &agrave; l'acrylique et &agrave; l'huile. 
+  <p>Je pr&eacute;pare et d&eacute;veloppe mes cr&eacute;ations sur tablette avec un stylet. Cette phase d’esquisse numérique 
+    me permet d’appr&eacute;cier la composition et la palette de couleurs avant de reproduire sur toile, avec la technique choisie. 
+    Mes tableaux pr&eacute;sentent souvent des couleurs vives, contrast&eacute;es et des formes courbes. 
+    Mon imagination est aliment&eacute;e en grande partie par mes photos et dynamisée par la musique.
 
- </p></p>
- 
+  </p></p>
+  
   <p>Une autre de mes passions est le cinéma. Je suis un membre actif du conseil d'administration de l'association
-       <a href="http://lesvisiteursdusoir.com/">Les visiteurs du soir</a> qui g&egrave;re le cinéma Art &amp; Essai de Valbonne (06).
+    <a href="http://lesvisiteursdusoir.com/">Les visiteurs du soir</a> qui g&egrave;re le cinéma Art &amp; Essai de Valbonne (06).
 
-<div class="w3-content w3-container " id="grid">
-<p class="w3-center">
-<main class="grid">
-  <a href="public/contenu_d_une_galerie.php?key=oil">
-          <img class="limited" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
-	</a>
-	<a href="public/contenu_d_une_galerie.php?key=acrylic">
-          <img class="limited" src="public/images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
-	</a>
- 	<a href="public/contenu_d_une_galerie.php?key=pastel">
-          <img class="limited" src="public/images/Pastels/20210909_canalDuMidi_small.jpg" alt="Pastel" ><br>Pastels</br>			
-	</a>
-	<a href="public/contenu_d_une_galerie.php?key=other">
-          <img class="limited" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
-	</a>
- </main>
-</p>
-</div>	   
-<p><em>
-I started painting in 2020 to manage my professional stress and the beginnings of covid19 lockdowns. My choice fell on the technique of dry pastel, supported by the words of Francis Bacon heard in a video during an exhibition in Monaco. He had chosen to paint with pastels because they brought him a rich variety of colors, which I agreed with. 
-At the end of 2021, I joined <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant's workshop</a> in Grasse (06) to learn in acrylic and oil painting techniques. </br>
-<br>I prepare and develop my creations on tablet with a stylus. This phase of digital sketching allows me to appreciate the composition and the color palette before reproducing on canvas, with the chosen technique. 
-My paintings often feature bright, contrasting colors and curved shapes. My imagination is fuelled largely by my photos and boosted with music.
-I have exhibited several times - Antibes, Gourdon - in Alpes-Maritimes. 
-<br>Another of my passions is cinema. I am an active member of the board of directors of the association 
-<a href="http://lesvisiteursdusoir.com/">Les visiteurs du soir</a> which manages the Art & Essai cinema in Valbonne (06).</br>
-</p>
+    <div class="computer">
+      <div class="w3-content w3-container " id="grid">
+	<p class="w3-center">
+	  <main class="grid">
+	    <a href="public/contenu_d_une_galerie.php?key=oil&rank=4">
+              <img class="limited" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
+	    </a>
+	    <a href="public/contenu_d_une_galerie.php?key=acrylic&rank=16">
+              <img class="limited" src="public/images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
+	    </a>
+ 	    <a href="public/contenu_d_une_galerie.php?key=pastel&rank=2">
+              <img class="limited" src="public/images/Pastels/20210909_canalDuMidi_small.jpg" alt="Pastel" ><br>Pastels</br>			
+	    </a>
+	    <a href="public/contenu_d_une_galerie.php?key=other&rank=2">
+              <img class="limited" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
+	    </a>
+	  </main>
+	</p>
+      </div>	   
+    </div>	   
+  <p><em>
+      I started painting in 2020 to manage my professional stress and the beginnings of covid19 lockdowns. My choice fell on the technique of dry pastel, supported by the words of Francis Bacon heard in a video during an exhibition in Monaco. He had chosen to paint with pastels because they brought him a rich variety of colors, which I agreed with. 
+      At the end of 2021, I joined <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant's workshop</a> in Grasse (06) to learn in acrylic and oil painting techniques. </br>
+      <br>I prepare and develop my creations on tablet with a stylus. This phase of digital sketching allows me to appreciate the composition and the color palette before reproducing on canvas, with the chosen technique. 
+      My paintings often feature bright, contrasting colors and curved shapes. My imagination is fuelled largely by my photos and boosted with music.
+      I have exhibited several times - Antibes, Gourdon - in Alpes-Maritimes. 
+      <br>Another of my passions is cinema. I am an active member of the board of directors of the association 
+      <a href="http://lesvisiteursdusoir.com/">Les visiteurs du soir</a> which manages the Art & Essai cinema in Valbonne (06).</br>
+  </p>
 
 
-<!-- </div> -->
+  <!-- </div> -->
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
@@ -246,14 +317,14 @@ I have exhibited several times - Antibes, Gourdon - in Alpes-Maritimes.
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Roquefort-les-pins / Valbonne, 06, FR</br>
-		<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Siret: 799 002 423 00017</br>
+	<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Siret: 799 002 423 00017</br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: contact@giseleeisenmann.com</br>
-		<i class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Instagram: gem.eisenmann</br>	
+	<i class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Instagram: gem.eisenmann</br>	
         <i class="fa fa-play-circle fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-		   <a href="public/images/web/20230725_GEM_painting.mp4">
-		   <img class="video" src="public/images/web/2023_artist-working_small.png" alt="Atelier" />at the studio
-		   </a>     
-	  </div>
+	<a href="public/images/web/20230725_GEM_painting.mp4">
+	  <img class="video" src="public/images/web/2023_artist-working_small.png" alt="Atelier" />at the studio
+	</a>     
+      </div>
     </div>
   </div>
 
