@@ -133,8 +133,8 @@ div.desc {
       <a href="contenu_d_une_galerie.php?key=acrylic&rank=16">
         <img class="limited" src="images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
       </a>
-      <a href="contenu_d_une_galerie.php?key=pastel&rank=2">
-        <img class="limited" src="images/Pastels/20210909_canalDuMidi_small.jpg" alt="Pastel" ><br>Pastels</br>			
+      <a href="contenu_d_une_galerie.php?key=pastel&rank=0">
+        <img class="limited" src="images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" ><br>Pastels</br>			
       </a>
       <a href="contenu_d_une_galerie.php?key=other&rank=2">
         <img class="limited" src="images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
