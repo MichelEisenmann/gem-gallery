@@ -72,22 +72,22 @@
       grid-column: span 4;
   }
 
-  .computer {
+  .visible-on-computer {
       display: block;
   }
 
-  .mobile {
+  .visible-on-mobile {
       display: none;
   }
 
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 576px) {
-    .computer {
+    .visible-on-computer {
 	display: none;
     }
 
-    .mobile {
+    .visible-on-mobile {
 	display: block;
     }
 
@@ -192,7 +192,7 @@
 
 
 <!-- Mobile version -->
-<div class="mobile w3-content title" id="about">
+<div class="visible-on-mobile w3-content title" id="about">
   <div class="title-grid">
     <div >
       <a href="/public/acces_aux_galeries.php">
@@ -226,7 +226,7 @@
 <!-- Mobile version -->
 
 <!-- Computer version -->
-<div class="computer w3-content w3-container w3-padding-64" id="about">
+<div class="visible-on-computer w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">
     <blockquote>
       Gis&egrave;le EISENMANN (gem)</blockquote> 
@@ -256,7 +256,7 @@
   </div>
 </div>
 
-<p class="computer w3-center"><em>La peinture pour transcender le r&eacute;el / Painting to transcend reality</em></p>
+<p class="visible-on-computer w3-center"><em>La peinture pour transcender le r&eacute;el / Painting to transcend reality</em></p>
 
 <!-- common part -->
 <div class="w3-content w3-container" id="">
@@ -276,7 +276,7 @@
   <p>Une autre de mes passions est le cinéma. Je suis un membre actif du conseil d'administration de l'association
     <a href="http://lesvisiteursdusoir.com/">Les visiteurs du soir</a> qui g&egrave;re le cinéma Art &amp; Essai de Valbonne (06).
 
-    <div class="computer">
+    <div class="visible-on-computer">
       <div class="w3-content w3-container " id="grid">
 	<p class="w3-center">
 	  <main class="grid">
