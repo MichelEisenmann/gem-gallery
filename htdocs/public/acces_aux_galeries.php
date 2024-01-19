@@ -15,71 +15,85 @@
 <?php include ('../private/initialize.php'); ?>
 <?php include ('../private/initialize_galleries.php'); ?>
 
-    <title>Galeries</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Galeries</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style>
-      body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 
-      .top-container {
-      padding-top: 50px;
-      }
-      
+.top-container {
+    padding-top: 50px;
+}
+
 div.gallery {
-  border: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+    border: 1px solid #777;
 }
 
 div.gallery img {
-      float: left;
-      width: 100%;
-      aspect-ratio: 1;
-      object-fit: contain;
-      }
+    float: left;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
 
 div.desc {
-  padding: 15px;
-  text-align: center;
+    padding: 15px;
+    text-align: center;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
+.limited {
+    height: 200px;
 }
 
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+}
+.grid img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 100%;
+}
+.grid img:nth-child(2) {
+    grid-column: span 4;
 }
 
-// mobile vertical
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
+
+@media only screen and (max-device-width: 576px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .limited {
+        height: 100px;
+    }
+
 }
 
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 </style>
-  </head>
+
+</head>
 
   <body>
 <!-- Navbar (sit on top) -->
@@ -111,32 +125,51 @@ div.desc {
 <h1>Galerie<h1>
 </div>
 
+<div class="w3-content">
+    <div class="grid">
+      <a href="contenu_d_une_galerie.php?key=oil&rank=4">
+        <img class="limited" src="images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
+      </a>
+      <a href="contenu_d_une_galerie.php?key=acrylic&rank=16">
+        <img class="limited" src="images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
+      </a>
+      <a href="contenu_d_une_galerie.php?key=pastel&rank=2">
+        <img class="limited" src="images/Pastels/20210909_canalDuMidi_small.jpg" alt="Pastel" ><br>Pastels</br>			
+      </a>
+      <a href="contenu_d_une_galerie.php?key=other&rank=2">
+        <img class="limited" src="images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
+      </a>
+    </div>
+</div>
+
+<hr>
+<div class="w3-content">
+    <div class="grid">
 <?php
-         // $ALL_GALLERIES->print();
+    $main_galleries= array("oil", "acrylic", "pastel", "other");
+      // $ALL_GALLERIES->print();
 foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
     // skip empty dictionaries
     if ( count($dico->paints) == 0 ) {
         continue;
     }
+    // skip the main types
+    if ( in_array($dico->key, $main_galleries) ) {
+        continue;
+    }
     $latest= $dico->sortedList[0];
-    //    echo $dico->key ."<br>";
-    //    echo $dico->sortedList[0]->print() ."<br>";
 ?>
-    <div class="responsive">
-     <div class="gallery">
-              <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
-       <img src="images/<?= $latest->getThumbnailFile(); ?>"
+     <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
+       <img class="limited" src="images/<?= $latest->getThumbnailFile(); ?>"
 	    >
-              </a>
-       <div class="desc"><a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
-	   <?= ucfirst($dico->name); ?>
-	          </a>
-	   </div>
-     </div>              
-    </div>
+       <br><?= ucfirst($dico->name); ?> </br>
+     </a>
 <?php
 }
 ?>
+</div>
+</div>
+
 </div>
 
 <div class="clearfix"></div>    
