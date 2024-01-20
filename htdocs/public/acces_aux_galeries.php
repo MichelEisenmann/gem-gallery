@@ -128,16 +128,16 @@ div.desc {
 <div class="w3-content">
     <div class="grid">
       <a href="contenu_d_une_galerie.php?key=oil&rank=4">
-        <img class="limited" src="images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
+        <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
       </a>
       <a href="contenu_d_une_galerie.php?key=acrylic&rank=16">
-        <img class="limited" src="images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
+        <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
       </a>
       <a href="contenu_d_une_galerie.php?key=pastel&rank=0">
-        <img class="limited" src="images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" ><br>Pastels</br>			
+        <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" ><br>Pastels</br>			
       </a>
       <a href="contenu_d_une_galerie.php?key=other&rank=2">
-        <img class="limited" src="images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
+        <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
       </a>
     </div>
 </div>
@@ -160,7 +160,7 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
     $latest= $dico->sortedList[0];
 ?>
      <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
-       <img class="limited" src="images/<?= $latest->getThumbnailFile(); ?>"
+       <img class="limited" alt="<?= $GEM_SIGNATURE ?>" src="images/<?= $latest->getThumbnailFile(); ?>"
 	    >
        <br><?= ucfirst($dico->name); ?> </br>
      </a>

@@ -43,6 +43,7 @@ var dicoKey= "<?= $dico_key ?>";
 var paintFiles= [];
 var paintTitles= [];
 var paintDescriptions= [];
+var gemSignature= "<?= $GEM_SIGNATURE ?>";
 <?php
 foreach( $dico->sortedList as $paint ) {
 ?>
@@ -448,7 +449,7 @@ function updateDocument() {
 function updateCentralPaint() {
     var img = document.getElementById("central-paint-img");
     img.src= paintFiles[rank_in_gallery];
-    img.alt= paintTitles[rank_in_gallery];
+    img.alt= paintTitles[rank_in_gallery] + " " + gemSignature;
     //
     var a= document.getElementById("central-paint-href");
     a.href="../public/affichage_peinture.php?key=" + dicoKey + "&rank=" + rank_in_gallery;
