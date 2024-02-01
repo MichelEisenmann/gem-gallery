@@ -14,8 +14,8 @@ gtag('config', 'G-R9KWX3PWND');
     <?php include ('../private/initialize_galleries.php'); ?>
     
     <?php
-// retrieve all the variables coming with the URL
 
+// ---- retrieve all the variables coming with the URL
 $dico_key="oil";
 if (array_key_exists("key", $_GET) ) {
   $dico_key=htmlspecialchars($_GET["key"]);
@@ -23,9 +23,20 @@ if (array_key_exists("key", $_GET) ) {
 $dico= $ALL_GALLERIES->paint_dictionnaries[$dico_key];
 
 // the rank of current selected paint in our gallery
+// OPTIONAL. If not given, the image variable must be set
 $rank_in_gallery=0;
 if (array_key_exists("rank", $_GET) ) {
   $rank_in_gallery=htmlspecialchars($_GET["rank"]);
+ }
+
+// the file of the paint. If given, it is used to compute
+//   the rank in gallery
+// OPTIONAL. Should be provided if the rank is unknown (see index.html)
+
+$file_in_gallery="";
+if (array_key_exists("file", $_GET) ) {
+  $file_in_gallery=htmlspecialchars($_GET["file"]);
+  $rank_in_gallery=$dico->get_file_rank($file_in_gallery);
  }
 
 // the rank of the first paint shown in the pagination

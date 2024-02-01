@@ -69,6 +69,23 @@ class PaintDictionnary {
         return $this->sortedList[$rank];
     }
 
+    // receive the file of a paiting
+    // must return its rank
+    function get_file_rank( $file ) {
+      //      echo $file ." for file <br>";
+      $rank= 0;
+      foreach ( $this->sortedList as $paint ) {
+        //        echo $rank ." as cur rank <br>";
+        //        echo $paint->file ." as cur file <br>";
+        if ( strcmp( $paint->file, $file ) == 0 ) {
+          //          echo $rank ." for rank <br>";
+          return $rank;
+        }
+        $rank= $rank+1;
+      }
+      return 0;
+    }
+
     function add_paint( $paint, $paint_key ) {
         // case insensitive
         if ( strcasecmp($paint_key, $this->key) == 0 ) {
