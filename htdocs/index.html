@@ -35,10 +35,6 @@
       font-family: 'Lucida Handwriting','Zapfino', cursive;
       text-align: center;
   }
-  .limited {
-      height: 200px;
-  }
-
   .australie_theme {
       width: 176px ;
       height: 250px ;
@@ -80,7 +76,12 @@
       display: none;
   }
 
-
+  .limited {
+      height: 150px;
+  }
+  
+  .cliping { height: 100%; width: 200px; overflow: hidden; }
+  
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 576px) {
@@ -291,18 +292,26 @@
       <div class="w3-content w3-container " id="grid">
 	<p class="w3-center">
 	  <main class="grid">
-	    <a href="public/contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg">
-              <img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
-	    </a>
-	    <a href="public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20211228_Evocation de Gourdon.jpg">
-              <img class="limited to-be-signed" src="public/images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
-	    </a>
- 	    <a href="public/contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg">
-              <img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" ><br>Pastels</br>			
-	    </a>
-	    <a href="public/contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg">
-              <img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
-	    </a>
+	    <div class="cliping">
+	      <a href="public/contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg">
+		<img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
+	      </a>
+	    </div>
+	    <div class="cliping">
+	      <a href="public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20211228_Evocation de Gourdon.jpg">
+		<img class="limited to-be-signed" src="public/images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
+	      </a>
+	    </div>
+	    <div class="cliping">
+ 	      <a href="public/contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg">
+		<img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" ><br>Pastels</br>			
+	      </a>
+	    </div>
+	    <div class="cliping">
+	      <a href="public/contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg">
+		<img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
+	      </a>
+	    </div>
 	  </main>
 	</p>
       </div>	   
