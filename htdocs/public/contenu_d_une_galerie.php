@@ -150,13 +150,14 @@ adjustPaginationValues();
     padding-top: 10px;
     padding-bottom: 10px;
     margin: auto;
-    width: 80%;
+    max-width: 600px;
+    max-height: 500px;
     //    border: 1px solid;
 }
 
 .fitting-image {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     object-fit: scale-down;
     border: 1px solid grey;
 }
@@ -193,6 +194,10 @@ adjustPaginationValues();
     font-size: 20px;
 }
 
+#central-paint-img {
+    width: 100%;
+}
+
 .pagination-button {
     font-size: 20px;
 }
@@ -200,6 +205,7 @@ adjustPaginationValues();
 .espace {
     display: none;
 }
+
 
 /* Adjustments for phones */
 @media only screen and (max-device-width: 576px) {
@@ -321,42 +327,47 @@ $i++;
 <!-- this will be updated via updateCentralPaint() function -->
 
 <div class="center-paint">
-  <div class="w3-container w3-center" style="width:100%;margin:auto;">
+  <div class="w3-container w3-center">
+    
     <div class="w3-card-4" >
+
       <div class="w3-container">
         <button id="prev-button" class="w3-button w3-round pagination-button"
                 onClick="showPrevious();">
-<i class="fa fa-backward"></i>
-</button>
-<button id="next-button" class="w3-button w3-round pagination-button"
-        onClick="showNext();">
-<i class="fa fa-forward"></i>
-</button>
-<button id="start-button" class="w3-button w3-round pagination-button"
-        onClick="startTimer();">
-<i class="fa fa-play"></i>
-</button>
-<button id="stop-button" class="w3-button w3-round pagination-button"
-        onClick="stopTimer();">
-<i class="fa fa-stop"></i>
-</button>
+          <i class="fa fa-backward"></i>
+        </button>
+        <button id="next-button" class="w3-button w3-round pagination-button"
+                onClick="showNext();">
+          <i class="fa fa-forward"></i>
+        </button>
+        <button id="start-button" class="w3-button w3-round pagination-button"
+                onClick="startTimer();">
+          <i class="fa fa-play"></i>
+        </button>
+        <button id="stop-button" class="w3-button w3-round pagination-button"
+                onClick="stopTimer();">
+          <i class="fa fa-stop"></i>
+        </button>
       </div>
-      <a id="central-paint-href" href="">
-        <img id="central-paint-img"
-             style="width:100%" >
+
+      <div class="w3-container">
+        <a id="central-paint-href" href="">
+          <img id="central-paint-img"/>
         </a>
       </div>
+      
       <div class="w3-container">
         <div>
-           <span id="central-paint-title"></span>
+          <span id="central-paint-title"></span>
      	</div>
         <div>
-           <span id="central-paint-description"></span>
+          <span id="central-paint-description"></span>
      	</div>
       </div>
+      
     </div>
+  </div>
 </div>
-
 
 <!-- ------------------------------------------------------- -->
 
