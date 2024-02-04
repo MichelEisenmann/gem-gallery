@@ -6,7 +6,7 @@
 #   - un tableau peut appartenir a plusieurs themes
 #   - dans la colonne theme, on peut mettre plusieurs themes en separant leurs cles par un espace: par ex, 
 # "mangrove australia"
-#   - l'intitule du theme (se qu'on affiche) se trouve dans le fichier "dico.csv" en face de sa cle: 
+#   - l'intitule du theme (ce qu'on affiche) se trouve dans le fichier "dico.csv" en face de sa cle: 
 #  par ex, "mangrove" -> "Mangroves Australiennes"
 #
 # rank;filename;title;date;width;height;type;description;themes
