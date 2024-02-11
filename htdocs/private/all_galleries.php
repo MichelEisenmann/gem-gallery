@@ -11,9 +11,28 @@ class AllGalleries {
     // indexed by paint types (oil, pastel, etc.) and by cyles
     public $paint_dictionnaries;
 
+    // specific dictionnaries (not indexed in paint_dictionnaries
+    public $all_paint_dictionnary;
+    public $new_paints_dictionnary;
+
     public function __construct() {
         $this->dictionnary= new Dictionnary();
         $this->paint_dictionnaries= array();
+    }
+
+    function initialize_contents() {
+      $this->load_dico( "images/dico.csv" );
+      $this->create_specific_dictionnaries();
+      $this->load_paint_data( "images/paint-data.csv" );
+    }
+
+    // must be called after load_dico so that labels are available
+    function create_specific_dictionnaries() {
+        $this->all_paint_dictionnary= new PaintDictionnary();
+        $this->all_paint_dictionnary->name= $this->dictionnary->get_label(PaintDictionnary::ALL);
+        //
+        $this->new_paints_dictionnary= new PaintDictionnary();
+        $this->new_paints_dictionnary->name= $this->dictionnary->get_label(PaintDictionnary::NEW);
     }
 
     function load_dico( $dico_file ) {
@@ -81,12 +100,14 @@ class AllGalleries {
         if ( count($paint->themes) > 0 ) {
             foreach( $paint->themes as $theme ) {
                 $dico= $this->get_or_create_dictionnary($theme);
-                $dico->add_paint($paint, $theme);
+                $dico->add_paint($paint);
             }
         }
         $dico= $this->get_or_create_dictionnary($paint->type);
         $dico->kind= PaintDictionnary::TYPE;
-        $dico->add_paint($paint, $paint->type );
+        $dico->add_paint($paint);
+        // paints are all put into the all_paint_dictionnary
+        $this->all_paint_dictionnary->add_paint($paint);
     }
 
     function get_or_create_dictionnary( $key ) {

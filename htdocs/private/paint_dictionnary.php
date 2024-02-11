@@ -22,6 +22,9 @@ class PaintDictionnary {
     const TYPE= "Type";
     const THEME= "Theme";
 
+    const ALL="all";
+    const NEW="new";
+
     public function __construct() {
         $this->paints= array();
         $this->sortedList= array();
@@ -86,7 +89,12 @@ class PaintDictionnary {
       return 0;
     }
 
-    function add_paint( $paint, $paint_key ) {
+    function add_paint( $paint ) {
+      $this->paints[$paint->file]= $paint;
+      $this->sortedList[]=$paint;
+    }
+
+    function old_add_paint( $paint, $paint_key ) {
         // case insensitive
         if ( strcasecmp($paint_key, $this->key) == 0 ) {
             $this->paints[$paint->file]= $paint;

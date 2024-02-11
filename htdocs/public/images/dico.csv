@@ -1,7 +1,12 @@
 # Ce fichier donne un correspondance entre une cle (utilisee en interne) et un intitule (qui sera affiche)
 # Il est utilise
+#   - pour donner un intitule aux dictionnaires speciaux (toutes les peintures et nouvelles peintures)
 #   - pour donner un intitule aux differents cycles
 #   - pour donner un intitule aux types de techniques
+
+# dictionnaires speciaux
+all;All Paints
+new;New Paints
 
 # cle, intitule
 # - techniques
