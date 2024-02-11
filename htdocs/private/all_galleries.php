@@ -15,6 +15,9 @@ class AllGalleries {
     public $all_paint_dictionnary;
     public $new_paints_dictionnary;
 
+    // how many paints are inserted in the new_paints_dictionnary
+    const NUMBER_OF_NEW_PAINTS=5;
+
     public function __construct() {
         $this->dictionnary= new Dictionnary();
         $this->paint_dictionnaries= array();
@@ -24,15 +27,7 @@ class AllGalleries {
       $this->load_dico( "images/dico.csv" );
       $this->create_specific_dictionnaries();
       $this->load_paint_data( "images/paint-data.csv" );
-    }
-
-    // must be called after load_dico so that labels are available
-    function create_specific_dictionnaries() {
-        $this->all_paint_dictionnary= new PaintDictionnary();
-        $this->all_paint_dictionnary->name= $this->dictionnary->get_label(PaintDictionnary::ALL);
-        //
-        $this->new_paints_dictionnary= new PaintDictionnary();
-        $this->new_paints_dictionnary->name= $this->dictionnary->get_label(PaintDictionnary::NEW);
+      $this->fill_new_paints();
     }
 
     function load_dico( $dico_file ) {
@@ -61,7 +56,17 @@ class AllGalleries {
         }
     }
 
+    // must be called after load_dico so that labels are available
+    function create_specific_dictionnaries() {
+      $dico= $this->get_or_create_dictionnary(PaintDictionnary::ALL);
+      $this->all_paint_dictionnary= $dico;
+      //
+      $dico= $this->get_or_create_dictionnary(PaintDictionnary::NEW);
+      $this->new_paints_dictionnary= $dico;
+    }
+
     // le dictionnaire doit avoir ete deja charge (cf "load_dico")
+    // all_paint_dictionnary doit etre cree
     function load_paint_data( $paint_data_file ) {
         // open the csv file
         $row = 1;
@@ -91,6 +96,17 @@ class AllGalleries {
         }
         // sort the list of dicos alphabetically
         asort( $this->paint_dictionnaries );
+    }
+
+    // load_paint_data doit avoir ete appele pour que le all_paint_dictionnary soit rempli
+    function fill_new_paints() {
+      $count= 0;
+      // on prend les 5 dernieres peintures
+      foreach( $this->all_paint_dictionnary->sortedList as $paint ) {
+        if ($count >= self::NUMBER_OF_NEW_PAINTS ) return;
+          $this->new_paints_dictionnary->add_paint( $paint );
+          $count++;
+      }
     }
 
     // un tableau est present au plus dans deux dictionnaires
