@@ -153,8 +153,8 @@ div.desc {
     $main_galleries= array("oil", "acrylic", "pastel", "other");
       // $ALL_GALLERIES->print();
 foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
-    // skip empty dictionaries
-    if ( count($dico->paints) == 0 ) {
+    // skip empty dictionaries and dictionaries that are not supposed to be shown
+    if ( count($dico->paints) == 0 || $dico->shownInSelector == FALSE ) {
         continue;
     }
     // skip the main types

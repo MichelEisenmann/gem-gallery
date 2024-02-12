@@ -60,9 +60,11 @@ class AllGalleries {
     function create_specific_dictionnaries() {
       $dico= $this->get_or_create_dictionnary(PaintDictionnary::ALL);
       $this->all_paint_dictionnary= $dico;
+      $dico->shownInSelector= FALSE;
       //
       $dico= $this->get_or_create_dictionnary(PaintDictionnary::NEW);
       $this->new_paints_dictionnary= $dico;
+      $dico->shownInSelector= FALSE;
     }
 
     // le dictionnaire doit avoir ete deja charge (cf "load_dico")

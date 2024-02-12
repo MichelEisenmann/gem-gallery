@@ -279,7 +279,7 @@ adjustPaginationValues();
 	<?php
 foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
   // skip empty dictionaries
-  if ( count($cur_dico->paints) == 0 ) {
+  if ( count($cur_dico->paints) == 0 || $cur_dico->shownInSelector == FALSE) {
     continue;
   }
   if ( $cur_dico == $dico ) {

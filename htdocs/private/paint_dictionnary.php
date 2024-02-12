@@ -19,6 +19,9 @@ class PaintDictionnary {
     // sorted by rank if available, otherwise by date
     public $sortedList;
 
+    // shown in the gallery selector
+    public $shownInSelector;
+
     const TYPE= "Type";
     const THEME= "Theme";
 
@@ -29,6 +32,7 @@ class PaintDictionnary {
         $this->paints= array();
         $this->sortedList= array();
         $this->kind= self::THEME;
+        $this->shownInSelector= TRUE;
     }
 
     function is_by_theme() {
