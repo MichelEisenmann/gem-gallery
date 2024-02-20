@@ -105,6 +105,11 @@ function adjustPaginationValues() {
         pagination_start= rank_in_gallery;
     } else if ( rank_in_gallery >= pagination_start + pagination_size ) {
         pagination_start++;
+        // special case when the pagination was totally off, we reset it to a valid value
+        // (typically when arriving from index.html)
+        if ( rank_in_gallery >= pagination_start + pagination_size ) {
+            pagination_start= rank_in_gallery;
+        }
     }
     if ( pagination_start > total_number - pagination_size ) {
         pagination_start= total_number - pagination_size;
