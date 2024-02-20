@@ -95,7 +95,27 @@ div.desc {
 
 </head>
 
-  <body>
+<script>
+// Transfer the PHP variables into script global variables
+// Paint information
+
+var dicoKey= "all";
+var paintFiles= [];
+var paintTitles= [];
+var paintDescriptions= [];
+var gemSignature= "<?= $GEM_SIGNATURE ?>";
+<?php
+foreach( $dico->sortedList as $paint ) {
+?>
+        paintFiles.push( "images/<?= $paint->file ?>" );
+        paintTitles.push( "<?= $paint->full_title() ?>" );
+        paintDescriptions.push( "<?= $paint->get_description() ?>" );
+<?php
+}
+?>
+</script>
+
+<body>
 <!-- Navbar (sit on top) -->
 <!-- <div w3-include-html="public/navbar.html"></div> -->
 <!-- Navbar (sit on top) -->
@@ -108,7 +128,7 @@ div.desc {
     <a href="/index.html" class="w3-bar-item w3-button">ACCUEIL</a>
     <a href="/public/expositions.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> EXPOSITIONS</a>
     <a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIE</a>
-    <a href="/public/contenu_d_une_galerie.php?key=all" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>TOUTES LES OEUVRES</a>
+    <a href="/public/acces_a_toutes.php" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>TOUTES LES OEUVRES</a>
     <a href="/public/contenu_d_une_galerie.php?key=new" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>NOUVELLES OEUVRES</a>
     <a href="/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
   </div>
@@ -118,62 +138,32 @@ div.desc {
     <a href="/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ACCUEIL</a>
     <a href="/public/expositions.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPOSITIONS</a>
     <a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERIE</a>
-    <a href="/public/contenu_d_une_galerie.php?key=all" class="w3-bar-item w3-button" onclick="toggleFunction()">TOUTES LES OEUVRES</a>
+    <a href="/public/acces_a_toutes.php" class="w3-bar-item w3-button" onclick="toggleFunction()">TOUTES LES OEUVRES</a>
     <a href="/public/contenu_d_une_galerie.php?key=new" class="w3-bar-item w3-button" onclick="toggleFunction()">NOUVELLES OEUVRES</a>
     <a href="/index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
   </div>
 </div>
 
-
 <div class="w3-container top-container">
-<h1>Galerie<h1>
+<h1>Toutes les peintures<h1>
 </div>
 
 <div class="w3-content">
     <div class="grid">
-      <a href="contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg">
-        <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
-      </a>
-      <a href="contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20211228_Evocation de Gourdon.jpg">
-        <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
-      </a>
-      <a href="contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg">
-        <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" ><br>Pastels</br>			
-      </a>
-      <a href="contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg">
-        <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
-      </a>
-    </div>
-</div>
-
-<hr>
-<div class="w3-content">
-    <div class="grid">
 <?php
-    $main_galleries= array("oil", "acrylic", "pastel", "other");
-      // $ALL_GALLERIES->print();
-foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
-    // skip empty dictionaries and dictionaries that are not supposed to be shown
-    if ( count($dico->paints) == 0 || $dico->shownInSelector == FALSE ) {
-        continue;
-    }
-    // skip the main types
-    if ( in_array($dico->key, $main_galleries) ) {
-        continue;
-    }
-    $latest= $dico->sortedList[0];
-?>
-     <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
-       <img class="limited" alt="<?= $GEM_SIGNATURE ?>" src="images/<?= $latest->getThumbnailFile(); ?>"
-	    >
-       <br><?= ucfirst($dico->name); ?> </br>
-     </a>
-<?php
-}
-?>
-</div>
-</div>
+    $rank= 0;
+   $dico= $ALL_GALLERIES->all_paint_dictionnary;
+foreach( $dico->sortedList as $paint ) {
+    $rank=$rank+1;
+  ?>
+      <a href="../public/affichage_peinture.php?key=all&rank=<?= $rank ?>">
+        <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/<?= $paint->getThumbnailFile() ?>" alt="" />
+      </a>
 
+<?php
+        }  
+   ?>
+</div>
 </div>
 
 <div class="clearfix"></div>    
