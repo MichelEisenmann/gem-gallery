@@ -154,13 +154,13 @@ foreach( $dico->sortedList as $paint ) {
     $rank= 0;
    $dico= $ALL_GALLERIES->all_paint_dictionnary;
 foreach( $dico->sortedList as $paint ) {
-    $rank=$rank+1;
   ?>
       <a href="../public/affichage_peinture.php?key=all&rank=<?= $rank ?>">
         <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/<?= $paint->getThumbnailFile() ?>" alt="" />
       </a>
 
 <?php
+    $rank=$rank+1;
         }  
    ?>
 </div>
