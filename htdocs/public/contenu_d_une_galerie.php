@@ -254,9 +254,9 @@ adjustPaginationValues();
 </a>
 <a href="/index.html" class="w3-bar-item w3-button">ACCUEIL</a>
 <a href="/public/expositions.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> EXPOSITIONS</a>
-<a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIE</a>
-<a href="/public/acces_a_toutes.php" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>TOUTES LES OEUVRES</a>
-<a href="/public/contenu_d_une_galerie.php?key=new" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>NOUVELLES OEUVRES</a>
+<a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIES</a>
+<a href="/public/acces_a_toutes.php" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> COLLECTION</a>
+<a href="/public/contenu_d_une_galerie.php?key=new" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> NOUVELLES OEUVRES</a>
 <a href="/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
 </div>
 
@@ -265,7 +265,7 @@ adjustPaginationValues();
 <a href="/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ACCUEIL</a>
 <a href="/public/expositions.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPOSITIONS</a>
 <a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERIE</a>
-<a href="/public/acces_a_toutes.php" class="w3-bar-item w3-button" onclick="toggleFunction()">TOUTES LES OEUVRES</a>
+<a href="/public/acces_a_toutes.php" class="w3-bar-item w3-button" onclick="toggleFunction()">COLLECTION</a>
 <a href="/public/contenu_d_une_galerie.php?key=new" class="w3-bar-item w3-button" onclick="toggleFunction()">NOUVELLES OEUVRES</a>
 <a href="/index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
 </div>
@@ -273,10 +273,12 @@ adjustPaginationValues();
 
 <!-- ------------------------------------------------------- -->
 <!-- gallery selector -->
+<!-- not shown for special galeries like "all" or "new" -->
 
-    <div class="center gallery_selector">
-      <select id="gallery_selector" onChange="gallerySelected();">
-	<?php
+<?php
+if ( $dico->shownInSelector == TRUE ) {
+    echo "<div class=\"center gallery_selector\">";
+    echo "   <select id=\"gallery_selector\" onChange=\"gallerySelected();\">";
 foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
   // skip empty dictionaries
   if ( count($cur_dico->paints) == 0 || $cur_dico->shownInSelector == FALSE) {
@@ -288,9 +290,15 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
     echo "<option value=\"" .$cur_dico->key ."\">" .$cur_dico->name ."</option><br>";
   }
 }
-	?>
-      </select>
-    </div>
+    echo "</select>";
+    echo "</div>";
+} else {
+  // space for the navbar
+  echo "<div class=\"w3-container top-container\">";
+  echo "<h1></h1>";
+  echo "</div>";
+}
+?>
 
 <!-- seulement visible sur les petits ecrans (reserve un peu de hauteur) -->
 <div class="w3-center espace" style="width:100%;margin:auto;">
