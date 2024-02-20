@@ -100,7 +100,7 @@
       <div class="w3-row">
 
         <div class="w3-col w3-center s1">
-          <button class="w3-button w3-round" onClick="goto_page(<?= "'".$dico->key ."'," .$prev ?>);"><i class="fa fa-backward"></i>
+          <button class="w3-button w3-round" onClick="goto_page(<?= "'".$dico->key ."'," .$prev ?>);"><i class="fa fa-step-backward"></i>
           </button>
         </div>
 
@@ -110,7 +110,7 @@
         </div>
 
         <div class="w3-col w3-center s1">
-            <button class="w3-button w3-round" onClick="goto_page(<?= "'".$dico->key ."'," .$next ?>);"><i class="fa fa-forward"></i>
+            <button class="w3-button w3-round" onClick="goto_page(<?= "'".$dico->key ."'," .$next ?>);"><i class="fa fa-step-forward"></i>
             </button>
         </div>
 

@@ -318,7 +318,7 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
   <div class="pagination w3-center" style="width:100%;margin:auto;">
     <button class="w3-button w3-round pagination-button"
             onClick="showPrevious();">
-<i class="fa fa-backward"></i>
+<i class="fa fa-step-backward"></i>
     </button>
 <?php
   $i= 0;
@@ -334,7 +334,7 @@ $i++;
 ?>
 <button class="w3-button w3-round pagination-button"
         onClick="showNext();">
-<i class="fa fa-forward"></i>
+<i class="fa fa-step-forward"></i>
 </button>
 </div>
 </div>
@@ -351,11 +351,11 @@ $i++;
       <div class="w3-container">
         <button id="prev-button" class="w3-button w3-round pagination-button"
                 onClick="showPrevious();">
-          <i class="fa fa-backward"></i>
+          <i class="fa fa-step-backward"></i>
         </button>
         <button id="next-button" class="w3-button w3-round pagination-button"
                 onClick="showNext();">
-          <i class="fa fa-forward"></i>
+          <i class="fa fa-step-forward"></i>
         </button>
         <button id="start-button" class="w3-button w3-round pagination-button"
                 onClick="startTimer();">
