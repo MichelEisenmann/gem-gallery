@@ -69,10 +69,6 @@ div.desc {
   display: inline-block;
 }
 
-.smalltextref:hover, .smalltextref:active {
-  background-color: #EE0000;
-}
-
 .smalltextgrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -208,7 +204,7 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
 <?php
 foreach ( $main_galleries as $dico ) {
 ?>
-     <a class="textref" href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
+     <a class="textref w3-hover-grey" href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
        <?= ucfirst($dico->name); ?>
      </a>
 <?php
@@ -222,7 +218,7 @@ foreach ( $main_galleries as $dico ) {
 <?php
 foreach ( $other_valid_galleries as $dico ) {
 ?>
-     <a class="smalltextref" href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
+     <a class="smalltextref w3-hover-grey" href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
        <?= ucfirst($dico->name); ?>
      </a>
 <?php
