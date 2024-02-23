@@ -57,8 +57,20 @@ div.desc {
     height: 200px;
 }
 
-a:link {
+.smalltextref {
   text-decoration: none;
+}
+
+.smalltextref:link, .smalltextref:visited {
+  background-color: #FAFAFA;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.smalltextref:hover, .smalltextref:active {
+  background-color: #EE0000;
 }
 
 .smalltextgrid {
@@ -69,6 +81,10 @@ a:link {
     justify-items: center;
     margin: auto;
     font-size: 20px;
+}
+
+.textref {
+  text-decoration: none;
 }
 
 .textgrid {
@@ -104,7 +120,7 @@ a:link {
     }
 
     .smalltextgrid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         font-size: 15px;
     }
 
@@ -144,7 +160,6 @@ var gemSignature= "<?= $GEM_SIGNATURE ?>";
     </a>
     <a href="/index.html" class="w3-bar-item w3-button">ACCUEIL</a>
     <a href="/public/expositions.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> EXPOSITIONS</a>
-    <a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIES</a>
     <a href="/public/acces_a_toutes.php" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="/public/contenu_d_une_galerie.php?key=new" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> NOUVELLES OEUVRES</a>
     <a href="/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -154,7 +169,6 @@ var gemSignature= "<?= $GEM_SIGNATURE ?>";
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ACCUEIL</a>
     <a href="/public/expositions.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPOSITIONS</a>
-    <a href="/public/acces_aux_galeries.php" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERIES</a>
     <a href="/public/acces_a_toutes.php" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="/public/contenu_d_une_galerie.php?key=new" class="w3-bar-item w3-button" onclick="toggleFunction()">NOUVELLES OEUVRES</a>
     <a href="/index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
@@ -194,7 +208,7 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
 <?php
 foreach ( $main_galleries as $dico ) {
 ?>
-     <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
+     <a class="textref" href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
        <?= ucfirst($dico->name); ?>
      </a>
 <?php
@@ -208,7 +222,7 @@ foreach ( $main_galleries as $dico ) {
 <?php
 foreach ( $other_valid_galleries as $dico ) {
 ?>
-     <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
+     <a class="smalltextref" href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
        <?= ucfirst($dico->name); ?>
      </a>
 <?php
