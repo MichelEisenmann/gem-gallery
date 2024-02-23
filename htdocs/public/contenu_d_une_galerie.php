@@ -404,14 +404,16 @@ function gallerySelected() {
 }
 
 function showPrevious() {
-    var x = document.getElementById("gallery_selector").value;
+    var x = dicoKey;
+//    var x = document.getElementById("gallery_selector").value;
     rank_in_gallery= rank_in_gallery-1;
     adjustPaginationValues();
     updateDocument();
 }
 
 function showNext() {
-    var x = document.getElementById("gallery_selector").value;
+    var x= dicoKey;
+//    var x = document.getElementById("gallery_selector").value;
     rank_in_gallery= rank_in_gallery+1;
     adjustPaginationValues();
     updateDocument();
@@ -427,10 +429,6 @@ function startTimer() {
     // just in case..
     stopTimer();
     //
-    var prevBut= document.getElementById("prev-button");
-    prevBut.disabled= true;
-    var nextBut= document.getElementById("next-button");
-    nextBut.disabled= true;
     var startBut= document.getElementById("start-button");
     startBut.disabled= true;
     var stopBut= document.getElementById("stop-button");
@@ -444,10 +442,6 @@ function stopTimer() {
     if ( repeatId != null) {
         clearInterval(repeatId);
         repeatId= null;
-        var prevBut= document.getElementById("prev-button");
-        prevBut.disabled= false;
-        var nextBut= document.getElementById("next-button");
-        nextBut.disabled= false;
         var startBut= document.getElementById("start-button");
         startBut.disabled= false;
         var stopBut= document.getElementById("stop-button");
