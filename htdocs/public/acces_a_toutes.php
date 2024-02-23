@@ -57,6 +57,30 @@ div.desc {
     height: 200px;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+.smalltextgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+.textgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    font-size: 30px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -64,24 +88,29 @@ div.desc {
     align-items: center;
     justify-items: center;
     margin: auto;
+    font-size: 30px;
 }
 .grid img {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
     max-width: 100%;
 }
-.grid img:nth-child(2) {
-    grid-column: span 4;
-}
 
 
 @media only screen and (max-device-width: 576px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
+    .textgrid {
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 15px;
+    }
+
+    .smalltextgrid {
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 15px;
     }
 
     .limited {
         height: 100px;
+        gap: 2px;
     }
 
 }
@@ -100,19 +129,7 @@ div.desc {
 // Paint information
 
 var dicoKey= "all";
-var paintFiles= [];
-var paintTitles= [];
-var paintDescriptions= [];
 var gemSignature= "<?= $GEM_SIGNATURE ?>";
-<?php
-foreach( $dico->sortedList as $paint ) {
-?>
-        paintFiles.push( "images/<?= $paint->file ?>" );
-        paintTitles.push( "<?= $paint->full_title() ?>" );
-        paintDescriptions.push( "<?= $paint->get_description() ?>" );
-<?php
-}
-?>
 </script>
 
 <body>
@@ -147,6 +164,60 @@ foreach( $dico->sortedList as $paint ) {
 <!-- reserve some space for the navbar -->
 <div class="w3-container top-container">
 <h1></h1>
+</div>
+
+<div class="w3-content">
+
+<?php
+$main_galleries_ids= array("oil", "acrylic", "pastel", "other");
+$main_galleries= array();
+$other_valid_galleries= array();
+
+// we want the main_galleries in the order of their ids
+foreach ( $main_galleries_ids as $gallery_id ) {
+    $main_galleries[]= $ALL_GALLERIES->paint_dictionnaries[$gallery_id];
+}
+
+foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
+  // skip empty dictionaries and dictionaries that are not supposed to be shown
+  if ( count($dico->paints) == 0 || $dico->shownInSelector == FALSE ) {
+    continue;
+  }
+  // skip the main types
+  if ( ! in_array($dico->key, $main_galleries_ids) ) {
+    $other_valid_galleries[]= $dico;
+  }
+}
+?>
+
+  <div class="textgrid">
+<?php
+foreach ( $main_galleries as $dico ) {
+?>
+     <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
+       <?= ucfirst($dico->name); ?>
+     </a>
+<?php
+}
+?>
+  </div>
+
+<hr style="width:100%;text-align:left;margin-left:0">
+
+  <div class="smalltextgrid">
+<?php
+foreach ( $other_valid_galleries as $dico ) {
+?>
+     <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
+       <?= ucfirst($dico->name); ?>
+     </a>
+<?php
+}
+?>
+  </div>
+
+<hr style="width:100%;text-align:left;margin-left:0">
+
 </div>
 
 <div class="w3-content">
