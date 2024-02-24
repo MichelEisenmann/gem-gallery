@@ -71,7 +71,7 @@ div.desc {
 
 .smalltextgrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2px;
     align-items: center;
     justify-items: center;
@@ -116,7 +116,7 @@ div.desc {
     }
 
     .smalltextgrid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         font-size: 15px;
     }
 
