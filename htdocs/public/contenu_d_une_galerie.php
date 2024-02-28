@@ -211,6 +211,10 @@ adjustPaginationValues();
     display: none;
 }
 
+.image-bar {
+    display: none;
+}
+
 
 /* Adjustments for phones */
 @media only screen and (max-device-width: 576px) {
@@ -221,6 +225,10 @@ adjustPaginationValues();
 
 #pagination-bar {
     display: none;
+}
+
+.image-bar {
+    display: inline;
 }
 
 .pagination-button {
@@ -347,6 +355,14 @@ $i++;
     <div class="w3-card-4" >
 
       <div class="w3-container">
+        <button class="w3-button w3-round pagination-button image-bar"
+                onClick="showPrevious();">
+          <i class="fa fa-step-backward"></i>
+        </button>
+        <button class="w3-button w3-round pagination-button image-bar"
+                onClick="showNext();">
+          <i class="fa fa-step-forward"></i>
+        </button>
         <button id="start-button" class="w3-button w3-round pagination-button"
                 onClick="startTimer();">
           <i class="fa fa-play"></i>
