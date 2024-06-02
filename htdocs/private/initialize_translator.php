@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('private/translator.php');
+require_once(PRIVATE_PATH .'/translator.php');
 
 // How to use...
 //Translator::setLanguage('fr');
