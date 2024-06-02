@@ -143,8 +143,6 @@ div.desc {
 
 var dicoKey= "all";
 var gemSignature= "<?= $GEM_SIGNATURE ?>";
-
-var language= localStorage.getItem('gem-lang');
 </script>
 
 <body>
@@ -184,7 +182,8 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
 <?php
 foreach ( $main_galleries as $dico ) {
 ?>
-     <a class="textref w3-hover-grey" href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>&lang=" + language+"\"">
+     <a class="textref w3-hover-grey"
+        href="<?= Translator::url('../public/contenu_d_une_galerie.php', "?key=" .$dico->key ) ?>">
        <?= ucfirst($dico->name); ?>
      </a>
 <?php
@@ -198,7 +197,8 @@ foreach ( $main_galleries as $dico ) {
 <?php
 foreach ( $other_valid_galleries as $dico ) {
 ?>
-     <a class="smalltextref w3-hover-grey" href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>&lang=" + language +"\"">
+     <a class="smalltextref w3-hover-grey" 
+        href="<?= Translator::url('../public/contenu_d_une_galerie.php', "?key=" .$dico->key ) ?>">
        <?= ucfirst($dico->name); ?>
      </a>
 <?php
@@ -217,7 +217,8 @@ foreach ( $other_valid_galleries as $dico ) {
    $dico= $ALL_GALLERIES->all_paint_dictionnary;
 foreach( $dico->sortedList as $paint ) {
   ?>
-      <a href="../public/affichage_peinture.php?key=all&rank=<?= $rank ?>&lang=" + language +"\"">
+      <a
+          href="<?= Translator::url('../public/affichage_peinture.php', "?key=all&rank=" .$rank ) ?>">
         <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/<?= $paint->getThumbnailFile() ?>" alt="" />
       </a>
 

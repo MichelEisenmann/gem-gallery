@@ -3,11 +3,14 @@
 class Translator {
 
   // append the current language to the given url
-  static function url($original) {
+  // and the additional keys if given
+  static function url($original, $additional ='') {
+    //
+    $original= $original .$additional;
     if ( str_contains($original, '?' ) ) {
-      return $original . "&lang=" .Translator::getLanguage() ."\"";
+      return $original . "&lang=" .Translator::getLanguage();
     } else {
-      return $original . "?lang=" .Translator::getLanguage() ."\"";
+      return $original . "?lang=" .Translator::getLanguage();
     }
   }
   
