@@ -3,8 +3,7 @@ set -o xtrace
 
 cp -r htdocs/*.php //10.0.0.43/web
 mkdir //10.0.0.43/web/private
-cp -r htdocs/private/*.js //10.0.0.43/web/private
-cp -r htdocs/private/*.php //10.0.0.43/web/private
+cp -r htdocs/private //10.0.0.43/web
 
 cp -r htdocs/public/*.php //10.0.0.43/web/public
 
