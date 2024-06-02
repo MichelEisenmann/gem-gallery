@@ -274,9 +274,9 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $cur_dico ) {
     continue;
   }
   if ( $cur_dico == $dico ) {
-    echo "<option value=\"" .$cur_dico->key ."\" selected>" .$cur_dico->name ."</option><br>";
+    echo "<option value=\"" .$cur_dico->key ."\" selected>" .Translator::t($cur_dico->name) ."</option><br>";
   } else {
-    echo "<option value=\"" .$cur_dico->key ."\">" .$cur_dico->name ."</option><br>";
+    echo "<option value=\"" .$cur_dico->key ."\">" .Translator::t($cur_dico->name) ."</option><br>";
   }
 }
     echo "</select>";
