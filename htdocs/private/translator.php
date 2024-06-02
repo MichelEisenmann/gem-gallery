@@ -8,7 +8,7 @@ class Translator {
     
     return (array_key_exists($key, $messages))
       ? $messages[$key]
-      : $key;
+      : $key . "(missing translation)";
   }
   
   /**

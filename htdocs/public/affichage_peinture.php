@@ -12,6 +12,7 @@
 </script>
 
 <?php include ('../private/initialize.php'); ?>
+<?php include ('../private/initialize_translator.php'); ?>
 <?php include ('../private/initialize_galleries.php'); ?>
 
 <?php

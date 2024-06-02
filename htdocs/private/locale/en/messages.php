@@ -1,5 +1,9 @@
 <?php
 return array(
-             'welcome' => "Welcome !"
+    'ACCUEIL' => "HOME",
+    'EXPOSITIONS' => "EXHIBITIONS",
+    'GALERIE' => "GALLERY",
+    'NOUVEAUTES' => "NEW",
+    'CONTACT' => "CONTACT",
 );
 ?>
