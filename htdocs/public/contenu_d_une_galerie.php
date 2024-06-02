@@ -391,8 +391,13 @@ function toggleFunction() {
 }
 
 function gallerySelected() {
+    // retrieve current language
+    const queryString= window.location.search;
+    const params= new URLSearchParams(queryString);
+    var language= params.get('lang');
+    //
     var x = document.getElementById("gallery_selector").value;
-    location.replace("/public/contenu_d_une_galerie.php?key=" + x);
+    location.replace("/public/contenu_d_une_galerie.php?key=" + x + "&lang=" + language);
 }
 
 function showPrevious() {
@@ -467,9 +472,14 @@ function updateCentralPaint() {
     var img = document.getElementById("central-paint-img");
     img.src= paintFiles[rank_in_gallery];
     img.alt= paintTitles[rank_in_gallery] + " " + gemSignature;
-    //
+
+    // retrieve current language
+    const queryString= window.location.search;
+    const params= new URLSearchParams(queryString);
+    var language= params.get('lang');
+
     var a= document.getElementById("central-paint-href");
-    a.href="../public/affichage_peinture.php?key=" + dicoKey + "&rank=" + rank_in_gallery;
+    a.href="../public/affichage_peinture.php?key=" + dicoKey + "&rank=" + rank_in_gallery + "&lang=" + language;
     //
     var count= "(" + (rank_in_gallery+1) + "/" + total_number + ")";
     //        

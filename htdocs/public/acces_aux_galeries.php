@@ -107,16 +107,16 @@ div.desc {
 
 <div class="w3-content">
     <div class="grid">
-      <a href="contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg">
+      <a href="<?= Translator::url('contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg') ?>">
         <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
       </a>
-      <a href="contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20211228_Evocation de Gourdon.jpg">
+      <a href="<?= Translator::url('contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20211228_Evocation de Gourdon.jpg') ?>">
         <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
       </a>
-      <a href="contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg">
+      <a href="<?= Translator::url('contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg') ?>">
         <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" ><br>Pastels</br>			
       </a>
-      <a href="contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg">
+      <a href="<?= Translator::url('contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg') ?>">
         <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
       </a>
     </div>
@@ -139,7 +139,7 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
     }
     $latest= $dico->sortedList[0];
 ?>
-     <a href="../public/contenu_d_une_galerie.php?key=<?= $dico->key; ?>">
+     <a href="<?= Translator::url('../public/contenu_d_une_galerie.php', "?key=" .$dico->key ) ?>">
        <img class="limited" alt="<?= $GEM_SIGNATURE ?>" src="images/<?= $latest->getThumbnailFile(); ?>"
 	    >
        <br><?= ucfirst($dico->name); ?> </br>
