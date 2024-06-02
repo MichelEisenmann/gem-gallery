@@ -192,27 +192,30 @@
   </div>
 
   <div>
-    <p class="w3-center"><em>La peinture pour transcender le r&eacute;el / Painting to transcend reality</em></p>
+    <p class="w3-center"><em><?= Translator::t('Slogan') ?></em></p>
     <div class="grid">
       <div class="cliping">
 	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg') ?>">
-          <img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
+          <img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" />
+          <br><?= Translator::t("Huiles") ?></br>
 	</a>
       </div>
       <div class="cliping">
 	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20240326_Deflagration_A90x90.jpg') ?>">
 		<img class="limited to-be-signed" src="public/images/Acrylique/20240326_Deflagration_A90x90_small.jpg" alt="Acrylique" />
-		<br>Acryliques</br>
+		        <br><?= Translator::t("Acryliques") ?></br>
 	</a>
       </div>
       <div class="cliping">
 	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg') ?>">
-          <img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" ><br>Pastels</br>			
+          <img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" >
+            <br><?= Translator::t("Pastels") ?></br>			
 	</a>
       </div>
       <div class="cliping">
 	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg') ?>">
-          <img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
+          <img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" />
+          <br><?= Translator::t("Autres") ?></br>
 	</a>
       </div>
     </div>
@@ -247,29 +250,15 @@
 	  </a>
 	</div>
       </main>
-    </p>
   </div>
 </div>
 
-<p class="visible-on-computer w3-center"><em>La peinture pour transcender le r&eacute;el / Painting to transcend reality</em></p>
+<p class="visible-on-computer w3-center"><em><?= Translator::t('Slogan') ?></em></p>
 
 <!-- common part -->
 <div class="w3-content w3-container" id="">
-  <p>Artiste de l'Art Moderne, autodidacte, GEM commence à peindre en 2020 lorsque les confinements pour raison de COVID la tiennent éloignée 
-  de ses enfants à l’étranger. 
-  Pour s’en rapprocher virtuellement, elle les peint d’après photo au pastel sec. Après la pandémie, elle joint l’atelier d’artistes 
-  de <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant</a> à Grasse (06) pour l’apprentissage des techniques 
-  de l’acrylique et de l’huile. 
-<br>Ses tableaux sont essentiellement figuratifs, sujets paysagers, nature, portraits où s'expriment des couleurs vives. Elle immortalise des reflets 
-dans les paysages aquatiques variés, influencée par ses voyages réguliers en Australie.
-Elle prépare et développe ses créations sur tablette avec un stylet. Cette phase d’esquisse numérique permet d’apprécier 
-la composition et la palette de couleurs avant de reproduire sur toile, avec la technique choisie. 
-Son imagination est alimentée en grande partie par ses photos et depuis 2021, elle expose régulièrement en solo 
-ou en exposition collective.</br>
-  </p>
-  
-  <p>Une autre de ses passions est le cinéma. Elle est membre actif du conseil d'administration de l'association
-    <a href="http://lesvisiteursdusoir.com/">Les visiteurs du soir</a> qui g&egrave;re le cinéma Art &amp; Essai de Valbonne (06).
+
+<?= Translator::t('Introduction'); ?>
 
     <div class="visible-on-computer">
       <div class="w3-content w3-container " id="grid">
@@ -277,47 +266,39 @@ ou en exposition collective.</br>
 	  <main class="grid">
 	    <div class="cliping">
 	      <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg') ?>">
-		<img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
+		<img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" />
+                <br><?= Translator::t("Huiles") ?></br>
 	      </a>
 	    </div>
 	    <div class="cliping">
 	      <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20240326_Deflagration_A90x90.jpg') ?>">
-		<img class="limited to-be-signed" src="public/images/Acrylique/20240326_Deflagration_A90x90_small.jpg" alt="Acrylique" /><br>Acryliques</br>
+		<img class="limited to-be-signed" src="public/images/Acrylique/20240326_Deflagration_A90x90_small.jpg" alt="Acrylique" />
+                <br><?= Translator::t("Acryliques") ?></br>
 	      </a>
 	    </div>
 	    <div class="cliping">
  	      <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg') ?>">
-		<img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" ><br>Pastels</br>			
+		<img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" >
+                  <br><?= Translator::t("Pastels") ?></br>			
 	      </a>
 	    </div>
 	    <div class="cliping">
 	      <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg') ?>">
-		<img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
+		<img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" />
+                <br><?= Translator::t("Autres") ?></br>
 	      </a>
 	    </div>
 	  </main>
 	</p>
       </div>	   
     </div>	   
-  <p><em>
-     Self-taught Modern Art artist, GEM began painting in 2020 when COVID lockdowns kept her away from her children abroad. 
-	 To get closer to them virtually, she paints them from photos with dry pastels. 
-	 After the pandemic, she joined <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant</a>'s artist studio in Grasse (06) 
-	 to learn acrylic and oil techniques.
-     <br>Her paintings are essentially figurative, landscape subjects, nature, portraits where bright colors are expressed. She immortalizes 
-	 reflections in the varied aquatic landscapes, influenced by her regular trips to Australia.</br>
-	 <br>She prepares and develops creations on a tablet with a stylus. This digital sketching phase allows 
-	 to appreciate the composition and the color palette before reproducing on canvas, with the chosen technique. 
-	 Much of her imagination is fuelled by her own photos. Since 2021, she has been exhibiting regularly in solo or group exhibitions. 
-    </br>
-  </p>
 
 
   <!-- </div> -->
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <p class="w3-center"><em>Pour contacter / To contact</em></p>
+  <p class="w3-center"><em><?= Translator::t("Contacter") ?></em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m8 w3-panel">
@@ -325,7 +306,7 @@ ou en exposition collective.</br>
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Roquefort-les-pins / Valbonne, 06, FR</br>
 	<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Siret: 799 002 423 00017</br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: contact@giseleeisenmann.com</br>
-	<i class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Instagram: gem.eisenmann</br>	
+	<i class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> @gem.eisenmann</br>	
         <i class="fa fa-play-circle fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
 	<a href="public/images/web/20230725_GEM_painting.mp4">
 	  <img class="video" src="public/images/web/2023_artist-working_small.png" alt="Atelier" />at the studio
@@ -334,11 +315,8 @@ ou en exposition collective.</br>
     </div>
   </div>
 
-Avertissement : Le contenu de ce site Internet est protégé par le droit d'auteur. Toute reproduction est interdite.
-<br> 
-Warning: The content of this web site is copyrighted. Any reproduction is strictly forbidden.
+  <?= Translator::t("Avertissement") ?>
 </div>
-
  
 <script>
 
