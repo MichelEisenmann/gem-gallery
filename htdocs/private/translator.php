@@ -1,6 +1,15 @@
 <?php
 
 class Translator {
+
+  // append the current language to the given url
+  static function url($original) {
+    if ( str_contains($original, '?' ) ) {
+      return $original . "&lang=" .Translator::getLanguage() ."\"";
+    } else {
+      return $original . "?lang=" .Translator::getLanguage() ."\"";
+    }
+  }
   
   static function t($key){
     $language = Translator::getLanguage();

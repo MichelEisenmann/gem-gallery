@@ -181,7 +181,7 @@
 <div class="visible-on-mobile w3-content title" id="about">
   <div class="title-grid">
     <div >
-      <a href="/public/acces_aux_galeries.php">
+      <a href="<?= Translator::url('/public/acces_aux_galeries.php') ?>">
 	<img class="artiste to-be-signed" src="public/images/web/20211008_2emePrix_Pastel_small.jpg" alt="Artist's photo" />
       </a>
     </div>
@@ -195,23 +195,23 @@
     <p class="w3-center"><em>La peinture pour transcender le r&eacute;el / Painting to transcend reality</em></p>
     <div class="grid">
       <div class="cliping">
-	<a href="public/contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg">
+	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg') ?>">
           <img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
 	</a>
       </div>
       <div class="cliping">
-	<a href="public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20240326_Deflagration_A90x90.jpg">
+	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20240326_Deflagration_A90x90.jpg') ?>">
 		<img class="limited to-be-signed" src="public/images/Acrylique/20240326_Deflagration_A90x90_small.jpg" alt="Acrylique" />
 		<br>Acryliques</br>
 	</a>
       </div>
       <div class="cliping">
-	<a href="public/contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg">
+	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg') ?>">
           <img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" ><br>Pastels</br>			
 	</a>
       </div>
       <div class="cliping">
-	<a href="public/contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg">
+	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg') ?>">
           <img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
 	</a>
       </div>
@@ -232,17 +232,17 @@
   <div class="w3-content w3-container " id="grid_theme">
     <p class="w3-center">
       <main class="grid">
-	<div><a href="/public/acces_aux_galeries.php">
+	<div><a href="<?= Translator::url('/public/acces_aux_galeries.php') ?>">
             <img class="artiste to-be-signed" src="public/images/web/20211008_2emePrix_Pastel_small.jpg" alt="Artist's photo" />
 	  </a>
 	</div>
 	<div></div>
-	<div><a href="public/contenu_d_une_galerie.php?key=oil&file=Huile/20230708_ClairDeSoleil_Huile_30P.jpg">
+	<div><a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20230708_ClairDeSoleil_Huile_30P.jpg') ?>">
             <img class="australie_theme to-be-signed" src="public/images/Huile/20230708_ClairDeSoleil_Huile_30P_small.jpg" alt="Australie" />
 	  </a>
 	</div>
 
-	<div><a href="public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20230530_Contemplation_A100x73.jpg">
+	<div><a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20230530_Contemplation_A100x73.jpg') ?>">
             <img class="paysage_theme to-be-signed" src="public/images/Acrylique/20230530_Contemplation_A100x73_small.jpg" alt="Paysage" />
 	  </a>
 	</div>
@@ -276,22 +276,22 @@ ou en exposition collective.</br>
 	<p class="w3-center">
 	  <main class="grid">
 	    <div class="cliping">
-	      <a href="public/contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg">
+	      <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg') ?>">
 		<img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
 	      </a>
 	    </div>
 	    <div class="cliping">
-	      <a href="public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20240326_Deflagration_A90x90.jpg">
+	      <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20240326_Deflagration_A90x90.jpg') ?>">
 		<img class="limited to-be-signed" src="public/images/Acrylique/20240326_Deflagration_A90x90_small.jpg" alt="Acrylique" /><br>Acryliques</br>
 	      </a>
 	    </div>
 	    <div class="cliping">
- 	      <a href="public/contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg">
+ 	      <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg') ?>">
 		<img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" ><br>Pastels</br>			
 	      </a>
 	    </div>
 	    <div class="cliping">
-	      <a href="public/contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg">
+	      <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg') ?>">
 		<img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
 	      </a>
 	    </div>
