@@ -23,10 +23,11 @@ class AllGalleries {
         $this->paint_dictionnaries= array();
     }
 
-    function initialize_contents() {
-      $this->load_dico( "images/dico.csv" );
+    function initialize_contents($public_path) {
+      //        echo "<p> $public_path";
+      $this->load_dico( $public_path . "/images/dico.csv" );
       $this->create_specific_dictionnaries();
-      $this->load_paint_data( "images/paint-data.csv" );
+      $this->load_paint_data( $public_path . "/images/paint-data.csv" );
       $this->fill_new_paints();
     }
 
@@ -78,7 +79,7 @@ class AllGalleries {
                 //                echo "<p> $num fields in line $row: <br /></p>\n";
                 // skip commented lines (starts with '#')
                 if ( !str_starts_with($data[0], '#') ) {
-                    //                    for ($c=0; $c < $num; $c++) {
+                  //                    for ($c=0; $c < $num; $c++) {
                     //                        echo $data[$c] . "<br />\n";
                     //                    }
                     // create the paint

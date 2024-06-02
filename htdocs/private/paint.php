@@ -15,13 +15,16 @@ class Paint {
     public $themes; // an array of strings
 
     // as read from CSV
-    // filename, title, date (YY/MM/DD) , width, height, type, description, themes
+    // filename, title, date (YYYYMMDD) , width, height, type, description, themes
     function set_attributes( $array ) {
         $this->rank= $array[0];
         if ( empty($this->rank) ) {
             $this->rank= Paint::UNDEFINED_RANK;
         } else {
             $this->rank= intval($this->rank);
+        }
+        if ( strlen($array[3]) != 8 ) {
+            echo "** Invalid date for " . $array[1] . ": received " .$array[3] ."<br>";
         }
         $this->file= $array[1]; // le path complet en partant dans images/. Ex: oils/flamboyance.jpg 
         $this->title= $array[2]; 

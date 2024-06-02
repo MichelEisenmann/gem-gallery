@@ -108,6 +108,7 @@ class PaintDictionnary {
 
     // must be called to ensure dictionnary is ready to be used
     function finalize() {
+      //        $this->print();
         usort( $this->sortedList, "PaintDictionnary::latest" );
     }
 
