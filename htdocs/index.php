@@ -227,99 +227,98 @@
 <div class="visible-on-computer w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">
     <blockquote>
-      Gis&egrave;le EISENMANN MONTAGNE (gem)</blockquote> 
+    Gis&egrave;le EISENMANN MONTAGNE (gem)</blockquote> 
   </h3>
   <!-- GRID -->
-
+  
   <!-- Theme grid -->
   <div class="w3-content w3-container " id="grid_theme">
-    <p class="w3-center">
       <main class="grid">
-	<div><a href="<?= Translator::url('/public/acces_aux_galeries.php') ?>">
+	    <div>
+          <a href="<?= Translator::url('/public/acces_aux_galeries.php') ?>">
             <img class="artiste to-be-signed" src="public/images/web/20211008_2emePrix_Pastel_small.jpg" alt="Artist's photo" />
-	  </a>
-	</div>
-	<div></div>
-	<div><a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20230708_ClairDeSoleil_Huile_30P.jpg') ?>">
-            <img class="australie_theme to-be-signed" src="public/images/Huile/20230708_ClairDeSoleil_Huile_30P_small.jpg" alt="Australie" />
-	  </a>
-	</div>
-
-	<div><a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20230530_Contemplation_A100x73.jpg') ?>">
-            <img class="paysage_theme to-be-signed" src="public/images/Acrylique/20230530_Contemplation_A100x73_small.jpg" alt="Paysage" />
-	  </a>
-	</div>
+	      </a>
+	    </div>
+            
+	    <div></div>
+	    <div><a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20230708_ClairDeSoleil_Huile_30P.jpg') ?>">
+          <img class="australie_theme to-be-signed" src="public/images/Huile/20230708_ClairDeSoleil_Huile_30P_small.jpg" alt="Australie" />
+	    </a>
+	    </div>
+        
+	    <div><a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20230530_Contemplation_A100x73.jpg') ?>">
+          <img class="paysage_theme to-be-signed" src="public/images/Acrylique/20230530_Contemplation_A100x73_small.jpg" alt="Paysage" />
+	    </a>
+	    </div>
       </main>
+    </div>
   </div>
-</div>
-
-<p class="visible-on-computer w3-center"><em><?= Translator::t('Slogan') ?></em></p>
-
-<!-- common part -->
-<div class="w3-content w3-container" id="">
-
-<?= Translator::t('Introduction'); ?>
-
+  
+  <div class="visible-on-computer w3-center"><em><?= Translator::t('Slogan') ?></em></div>
+  
+  <!-- common part -->
+  <div class="w3-content w3-container" id="">
+    
+    <?= Translator::t('Introduction'); ?>
     <div class="visible-on-computer">
       <div class="w3-content w3-container " id="grid">
-	<p class="w3-center">
-	  <main class="grid">
-	    <div class="cliping">
-	      <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg') ?>">
-		<img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" />
-                <br><?= Translator::t("Huiles") ?></br>
-	      </a>
-	    </div>
-	    <div class="cliping">
-	      <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20240326_Deflagration_A90x90.jpg') ?>">
-		<img class="limited to-be-signed" src="public/images/Acrylique/20240326_Deflagration_A90x90_small.jpg" alt="Acrylique" />
-                <br><?= Translator::t("Acryliques") ?></br>
-	      </a>
-	    </div>
-	    <div class="cliping">
- 	      <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg') ?>">
-		<img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" >
-                  <br><?= Translator::t("Pastels") ?></br>			
-	      </a>
-	    </div>
-	    <div class="cliping">
-	      <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg') ?>">
-		<img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" />
+	    <p/>
+	    <main class="grid">
+	      <div class="cliping">
+	        <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg') ?>">
+		      <img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" />
+              <br><?= Translator::t("Huiles") ?></br>
+	        </a>
+	      </div>
+
+	      <div class="cliping">
+	        <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20240326_Deflagration_A90x90.jpg') ?>">
+		      <img class="limited to-be-signed" src="public/images/Acrylique/20240326_Deflagration_A90x90_small.jpg" alt="Acrylique" />
+              <br><?= Translator::t("Acryliques") ?></br>
+	        </a>
+	      </div>
+
+	      <div class="cliping">
+ 	        <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg') ?>">
+		      <img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" >
+                <br><?= Translator::t("Pastels") ?></br>			
+	          </a>
+          </div>
+
+          <div class="cliping">
+	        <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg') ?>">
+		        <img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" />
                 <br><?= Translator::t("Autres") ?></br>
-	      </a>
-	    </div>
-	  </main>
-	</p>
+	          </a>
+	      </div>
+	    </main>
       </div>	   
     </div>	   
-
-
+    
   <!-- </div> -->
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <p class="w3-center"><em><?= Translator::t("Contacter") ?></em></p>
+  <div class="w3-center"><em><?= Translator::t("Contacter") ?></em></div>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Roquefort-les-pins / Valbonne, 06, FR</br>
-	<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Siret: 799 002 423 00017</br>
+	    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Siret: 799 002 423 00017</br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: contact@giseleeisenmann.com</br>
-	<i class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> @gem.eisenmann</br>	
+	    <i class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> @gem.eisenmann</br>	
         <i class="fa fa-play-circle fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-	<a href="public/images/web/20230725_GEM_painting.mp4">
-	  <img class="video" src="public/images/web/2023_artist-working_small.png" alt="Atelier" />at the studio
-	</a>     
+	    <a href="public/images/web/20230725_GEM_painting.mp4">
+	          <img class="video" src="public/images/web/2023_artist-working_small.png" alt="Atelier" />at the studio
+	    </a>     
       </div>
     </div>
   </div>
-
   <?= Translator::t("Avertissement") ?>
 </div>
  
 <script>
-
 // add the "alt" attribute to all "to-be-signed" images
 function signImages() {
   var gemSignature= "Gisele Eisenmann (gem)";
@@ -332,7 +331,6 @@ function signImages() {
 document.addEventListener('DOMContentLoaded', function() {
    signImages();
 }, false);  
-
 </script>
 
 </body>
