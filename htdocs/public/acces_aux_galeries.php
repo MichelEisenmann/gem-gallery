@@ -154,19 +154,5 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
 
 <div class="clearfix"></div>    
 
-<!-- allow including some separate html file -->
-<script src="../private/w3-include-html.js"></script>
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
 </body>
 </html>

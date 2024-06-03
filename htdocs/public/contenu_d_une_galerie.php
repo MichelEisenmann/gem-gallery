@@ -316,6 +316,7 @@ foreach( $dico->sortedList as $paint ) {
 $i++;
 }
 ?>
+
 <button class="w3-button w3-round pagination-button"
         onClick="showNext();">
 <i class="fa fa-step-forward"></i>
@@ -371,9 +372,6 @@ $i++;
 </div>
 
 <!-- ------------------------------------------------------- -->
-
-<!-- allow including some separate html file -->
-<script src="../private/w3-include-html.js"></script>
 
 <script>
 
