@@ -1,8 +1,8 @@
 <?php
 return array(
-    'ACCUEIL' => "HOME",
-    'EXPOSITIONS' => "EXHIBITIONS",
-    'GALERIE' => "GALLERY",
+    'ACCUEIL' => "ABOUT",
+    'GALERIE' => "WORK",
+	'EXPOSITIONS' => "EXHIBITIONS",
     'NOUVEAUTES' => "NEW",
     'CONTACT' => "CONTACT",
 
@@ -11,29 +11,29 @@ return array(
     'Pastels' => 'Pastels',
     'Autres' => 'Others',
     'Abstrait' => 'Abstract',
-    'Flore' => 'Flore',
-    'Paysages' => 'Landscapes',
-    'Reproductions' => 'Reproductions',
+    'Flore' => 'Flora',
+    'Paysages' => 'Landscape',
+    'Reproductions' => 'Reproduction',
     'Vivant' => 'Life',
 
     'Slogan' => 'Painting to transcend reality',
 
     'Introduction' => '<p>
-     Self-taught Modern Art artist, GEM began painting in 2020 when COVID lockdowns kept her away from her children abroad. 
-	 To get closer to them virtually, she paints them from photos with dry pastels. 
-	 After the pandemic, she joined <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant</a>\'s artist studio in Grasse (06) 
-	 to learn acrylic and oil techniques.
-     <br>Her paintings are essentially figurative, landscape subjects, nature, portraits where bright colors are expressed. She immortalizes 
-	 reflections in the varied aquatic landscapes, influenced by her regular trips to Australia.</br>
-	 <br>She prepares and develops creations on a tablet with a stylus. This digital sketching phase allows 
-	 to appreciate the composition and the color palette before reproducing on canvas, with the chosen technique. 
-	 Much of her imagination is fuelled by her own photos. Since 2021, she has been exhibiting regularly in solo or group exhibitions. 
+     Self-taught artist, Gisele Eisenmann Montagne (GEM) is a figurative painter working primarily in oils and in acrylics, 
+	 occasionnaly in soft pastels. A former PhD Scientist and computing engineer, GEM\'s transition to painting was catalyzed by 
+	 the realization that enjoying life and nature\'s beauties was paramount when Covid started devastating the world. 
+	 After the pandemic, she developed her oil and acrylic technics joining <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant</a>\'s artist studio in Grasse (06). 
+	 <br>Her paintings are essentially figurative, landscape subjects, nature, portraits where bright colors are expressed. She immortalizes 
+	 reflections in the varied aquatic landscapes. She used the opportunity of her regular trips to Australia to snap photos 
+	 for painting reference materials
+	 She is attracted to the abstract painting, which allows her to bring out colours and shapes freely.</br>
+	 Gem currently lives and works in the French Riviera, France. Since 2021, she has been exhibiting regularly in solo or group exhibitions. 
     </br>
   </p>',
 
     'Avertissement' => 'Warning: The content of this web site is copyrighted. Any reproduction is strictly forbidden.',
 
-    'Contacter' => 'To contact',
+    'Contacter' => 'For all questions or inquiries',
 
 );
 ?>

@@ -6,10 +6,10 @@
     </a>
     <a href="<?= Translator::url('/index.php') ?>"
        class="w3-bar-item w3-button"><?= Translator::t('ACCUEIL') ?></a>
-    <a href="<?= Translator::url('/public/expositions.php') ?>"
-       class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> <?= Translator::t('EXPOSITIONS') ?></a>
     <a href="<?= Translator::url('/public/acces_a_toutes.php') ?>"
        class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> <?= Translator::t('GALERIE') ?></a>
+    <a href="<?= Translator::url('/public/expositions.php') ?>"
+       class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> <?= Translator::t('EXPOSITIONS') ?></a>
     <a href="<?= Translator::url('/public/contenu_d_une_galerie.php?key=new') ?>"
        class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> <?= Translator::t('NOUVEAUTES') ?></a>
     <a href="<?= Translator::url('/index.php#contact') ?>"
@@ -26,10 +26,10 @@
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="<?= Translator::url('/index.php') ?>"
        class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('ACCUEIL') ?></a>
-    <a href="<?= Translator::url('/public/expositions.php') ?>"
-       class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('EXPOSITIONS') ?></a>
     <a href="<?= Translator::url('/public/acces_a_toutes.php') ?>"
        class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('GALERIE') ?></a>
+	<a href="<?= Translator::url('/public/expositions.php') ?>"
+       class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('EXPOSITIONS') ?></a>
     <a href="<?= Translator::url('/public/contenu_d_une_galerie.php?key=new') ?>"
        class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('NOUVEAUTES') ?></a>
     <a href="<?= Translator::url('/index.php#contact') ?>"

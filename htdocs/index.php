@@ -304,13 +304,14 @@
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Roquefort-les-pins / Valbonne, 06, FR</br>
-	    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Siret: 799 002 423 00017</br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: contact@giseleeisenmann.com</br>
+
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> contact@giseleeisenmann.com</br>
 	    <i class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> @gem.eisenmann</br>	
+		<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Roquefort-les-pins / Valbonne, 06, FR</br>
+	    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Siret: 799 002 423 00017</br>
         <i class="fa fa-play-circle fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
 	    <a href="public/images/web/20230725_GEM_painting.mp4">
-	          <img class="video" src="public/images/web/2023_artist-working_small.png" alt="Atelier" />at the studio
+	          <img class="video" src="public/images/web/2023_artist-working_small.png" alt="Atelier" /> At the studio
 	    </a>     
       </div>
     </div>
