@@ -12,7 +12,7 @@
        class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> <?= Translator::t('EXPOSITIONS') ?></a>
     <a href="<?= Translator::url('/public/contenu_d_une_galerie.php?key=new') ?>"
        class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> <?= Translator::t('NOUVEAUTES') ?></a>
-    <a href="<?= Translator::url('/index.php#contact') ?>"
+    <a href="<?= Translator::url('/index.php') ?>#contact"
        class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> <?= Translator::t('CONTACT') ?></a>
     
     <button class="w3-button w3-right" onclick="useEnglish()">
@@ -32,7 +32,7 @@
        class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('EXPOSITIONS') ?></a>
     <a href="<?= Translator::url('/public/contenu_d_une_galerie.php?key=new') ?>"
        class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('NOUVEAUTES') ?></a>
-    <a href="<?= Translator::url('/index.php#contact') ?>"
+    <a href="<?= Translator::url('/index.php') ?>#contact"
        class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('CONTACT') ?></a>
     
   </div>

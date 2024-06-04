@@ -31,7 +31,7 @@ class Translator {
    * @param string $defaultLanguage
    * @return string
    */
-  static function getLanguage($defaultLanguage = 'en')
+  static function getLanguage($defaultLanguage = 'fr')
   {
     $language = null;
     
@@ -54,12 +54,12 @@ class Translator {
     return $language;
   }
 
-  static function setLanguage($newLanguage = 'en') {
+  static function setLanguage($newLanguage = 'fr') {
     $language = $newLanguage;
 
     // If the language given to us is not in our list of supported languages, use the default language.
     if (!isset($language) || !in_array($language, Translator::getSupportedLanguages())) {
-      $language = 'en';
+      $language = 'fr';
     }
 
     $_SESSION['LANG']= $language;
@@ -73,7 +73,7 @@ class Translator {
    * @param string $defaultLanguage
    * @return int|string
    */
-  static function getLanguageFromBrowser($defaultLanguage = 'en')
+  static function getLanguageFromBrowser($defaultLanguage = 'fr')
   {
     $languages = [];
     if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
