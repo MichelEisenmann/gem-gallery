@@ -47,8 +47,8 @@
       height: 250px ;
   }
   .artiste {
-      width: 188px ;
-      height: 250px ;
+      width: 236px ;
+      height: 240px ;
   }
   .video {
       width: 50px ;
@@ -120,14 +120,13 @@
 	height: 114px ;
     }
     .artiste {
-	width: 80px ;
-	height: 114px ;
+	width: 236px ;
+	height: 240px ;
     }
     .video {
 	width: 30px ;
 	height: 18px ;
     }
-
     .title-grid {
 	display: grid;
 	grid-template-rows: repeat(1, 1fr);
@@ -179,20 +178,18 @@
 
 <!-- Mobile version -->
 <div class="visible-on-mobile w3-content title" id="about">
-  <div class="title-grid">
+  <div class="w3-center">
     <div >
       <a href="<?= Translator::url('/public/acces_aux_galeries.php') ?>">
-	<img class="artiste to-be-signed" src="public/images/web/20211008_2emePrix_Pastel_small.jpg" alt="Artist's photo" />
+	<img class="artiste to-be-signed" src="public/images/web/gisele.jpg" alt="Artist's photo" />
       </a>
-    </div>
-    <div>
-      <blockquote>
-	Gis&egrave;le EISENMANN MONTAGNE(gem)</blockquote>
     </div>
   </div>
 
   <div>
-    <p class="w3-center"><em><?= Translator::t('Slogan') ?></em></p>
+	<div class="w3-center">
+	      <img src="public/images/web/gem.png" alt="Artist's signature" />
+        </div>
     <div class="grid">
       <div class="cliping">
 	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg') ?>">
@@ -236,7 +233,7 @@
       <main class="grid">
 	    <div>
           <a href="<?= Translator::url('/public/acces_aux_galeries.php') ?>">
-            <img class="artiste to-be-signed" src="public/images/web/20211008_2emePrix_Pastel_small.jpg" alt="Artist's photo" />
+            <img class="artiste to-be-signed" src="public/images/web/gisele.jpg" alt="Artist's photo" />
 	      </a>
 	    </div>
             
@@ -254,7 +251,7 @@
     </div>
   </div>
   
-  <div class="visible-on-computer w3-center"><em><?= Translator::t('Slogan') ?></em></div>
+<!--  <div class="visible-on-computer w3-center"><em><?= Translator::t('Slogan') ?></em></div> -->
   
   <!-- common part -->
   <div class="w3-content w3-container" id="">
