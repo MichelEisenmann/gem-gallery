@@ -1,11 +1,11 @@
 <div class="w3-top">
   <!-- on veut la navbar toujours au dessus -> modification de la classe des le depart -->
   <div class="w3-bar w3-card w3-white" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-left" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
     <a href="<?= Translator::url('/index.php') ?>"
-       class="w3-bar-item w3-button"><?= Translator::t('ACCUEIL') ?></a>
+       class="w3-bar-item w3-button w3-hide-small"><?= Translator::t('ACCUEIL') ?></a>
     <a href="<?= Translator::url('/public/acces_a_toutes.php') ?>"
        class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> <?= Translator::t('GALERIE') ?></a>
     <a href="<?= Translator::url('/public/expositions.php') ?>"
@@ -22,7 +22,8 @@
       <img src="/public/images/france-48.png" alt="francais"></img>
     </button>
   </div>
-  
+
+  <!-- this is the menu that will be displayed when not enough space is available (accessed through the 3 bars) -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="<?= Translator::url('/index.php') ?>"
        class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('ACCUEIL') ?></a>
