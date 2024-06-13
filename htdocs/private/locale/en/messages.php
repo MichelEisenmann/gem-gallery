@@ -6,6 +6,10 @@ return array(
     'NOUVEAUTES' => "NEW",
     'CONTACT' => "CONTACT",
 
+    'Galeries' => 'Work',
+    'Expositions' => 'Exhibitions',
+    'Nouvelles oeuvres' => 'Recent work',
+
     'Huiles' => 'Oils',
     'Acryliques' => 'Acrylics',
     'Pastels' => 'Pastels',

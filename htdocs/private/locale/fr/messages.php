@@ -6,6 +6,9 @@ return array(
     'NOUVEAUTES' => "NOUVEAUTES",
     'CONTACT' => "CONTACT",
 
+    'Galeries' => 'Galeries',
+    'Expositions' => 'Expositions',
+    'Nouvelles oeuvres' => 'Nouvelles oeuvres',
 
     'Huiles' => 'Huiles',
     'Acryliques' => 'Acryliques',
