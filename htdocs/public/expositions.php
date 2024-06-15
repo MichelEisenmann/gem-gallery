@@ -79,43 +79,49 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">Expositions / Exhibitions</h3>
    <div>
-  <ol>
-     <i><h5 style="background-color:powderblue;">2024</h5>
-		<ul>
+<ol>
+     <h5 style="background-color:orange"><b>2024</b></h5>
+   <ul>
 		<li><b>Exposition virtuelle internationale Arts & Sports 2024 - La maison des artistes</b>
 		  <br><a href="https://www.lamaisondesartistes.fr/site/musee-virtuel-arts-et-sports-2024-galerie/" alt="Arts & Sports 2024" />
 		  International virtual exhibition Arts & Sports 2024: Gallery</a></br>
 		  
 		  </li>
-		<li><b>Gourdon (06, France)</b> - Salle de la Mairie - Exposition SOLO du 5 au 11 JUILLET / exhibition 5-11 July
+		<li><b>5-11 JUILLET / JULY</b>
+		    <br><a href="images/web/Expo-JUL24.jpg" alt="Exhibition Gourdon" />
+		    <img src="images/web/Expo-JUL24_small.jpg" width="60" height="80"/>
+			    <b>GOURDON (06, France)</b></a>
+		    - Exposition SOLO - Salle de la Mairie
+			</br>
 		  </li>
-		<li><b>Seillans (83, France)</b> - Salle du Couvent Place du Thouron - Exposition SOLO du 23 au 30 JUIN / exhibition 23-30 June
+		  <li><b> 23-30 JUIN /JUNE</b>
+		    <br><a href="images/web/Affichette_Expo-Juin24.jpg" alt="Exhibition Seillans" />
+		    <img src="images/web/Affichette_Expo-Juin24_small.jpg" width="60" height="80"/>
+			   <b>SEILLANS (83, France)</b></a>
+		    - Exposition SOLO - Salle du Couvent Place du Thouron
+			</br>
 		  </li>
-		<li><b>Roquefort-les-Pins (06, France)</b> - Médiathèque - Exposition des artistes Roquefortois du 18 MAI au 15 JUIN/ exhibition 18 Mai-15 June
+		 <li><b>18 MAI-15 JUIN</b><b> ROQUEFORT LES PINS (06, France)</b>- Les artistes Roquefortois
 		  </li>
-		<li><b>Antibes (06, France)</b> - FEMIN'EXPO 5 Mars au 6 Avril - Casemates, Boulevard d'Aguillon<br> 
-		[Expo de groupe sur le th&egrave;me "LA COULEUR DES MOTS"]
+		<li><b>MAR 2024</b><b> ANTIBES (06, France)</b> - FEMIN'EXPO Mars "LA COULEUR DES MOTS"
 		</li>
-		<li><b>Roquefort-les-Pins (06, France)</b> Exposition SOLO du 6 Janvier au 03 Février
-		<br><a href="images/web/20240106_Roquefort_Expo_Vernissage.png" alt="Expo Pole image" />
-		<img src="images/web/20240106_Roquefort_Expo_Vernissage.png" width="80" height="100"/>Exposition Vernissage</a>
+		<li><b>JAN 2024</b>
+		    <br><a href="images/web/20240106_Roquefort.png" alt="Expo Pole image" />
+		     <img src="images/web/20240106_Roquefort_small.png" width="60" height="80"/><b>ROQUEFORT LES PINS (06, France)</b></a>
+		- Exposition SOLO
 		  </br> 
 		</li>
-		</ul>
-    </i>
+	</ul>
+
+
      <i><h5 style="background-color:powderblue;">2023</h5>
-		<ul><li><b>Gourdon (06, France)</b> - Salle de la Mairie - Exposition du 4 au 10 Ao&ucirc;t / exhibition 4-10 August 2023
-		<br><a href="images/web/Affichette_Expo-Aout23_small.jpg" alt="Affiche" />
-          <img src="images/web/Affichette_Expo-Aout23_small.jpg" width="80" height="100"/></a>
-		  <!--<a href="https://fb.watch/mFDOHSu0wt/" alt="Exhibition promotion (Facebook)" /> -->
-		  <!--
-		  <a href="https://www.facebook.com/100064724165224/videos/-d%C3%A9couverte-artistique-en-provence-l%C5%93uvre-de-gis%C3%A8le-eisenmann-%EF%B8%8Fchers-amateurs-da/1464701331048618/" alt="Exhibition promotion (Facebook)" />
-		     <img src="images/web/2023_Gourdon_Promotion_small.png" width="100" height="80"/></a> 
-			 -->
-		  </br>	
-		  </li>
+		<ul>
+		<li><a href="images/web/Expo-Aout23_small.jpg" alt="Expo Gourdon" />
+		<img src="images/web/Expo-Aout23_small.jpg" width="60" height="80"/><b>Gourdon (06, France)</b></a>
+		- Salle de la Mairie - 4 au 10 Ao&ucirc;t / exhibition 4-10 August 2023	
+		</li>
 		<li><b>Antibes (06, France)</b> - Spectacles Femin'Arte - FEMIN'EXPO M&eacute;diath&egrave;que Albert Camus - 28 F&eacute;vrier au samedi 11 Mars <br> 
-		Vernissage le 4 Mars 16h [Expo de groupe sur le th&egrave;me "Dansons, sinon nous sommes perdus! (Pina Bausch)"]
+		["Dansons, sinon nous sommes perdus! (Pina Bausch)"]
 		<br><a href="images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Les danseuses" />
           <img src="images/web/20230216_LesDanseuses_Huile_mini.jpg" width="100" height="80"/>Les danseuses</a>
 		  </br> 

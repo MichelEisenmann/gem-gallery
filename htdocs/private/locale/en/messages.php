@@ -3,7 +3,7 @@ return array(
     'ACCUEIL' => "ABOUT",
     'GALERIE' => "WORK",
 	'EXPOSITIONS' => "EXHIBITIONS",
-    'NOUVEAUTES' => "NEW",
+    'NOUVEAUTES' => "LATEST WORKS",
     'CONTACT' => "CONTACT",
 
     'Galeries' => 'Work',
