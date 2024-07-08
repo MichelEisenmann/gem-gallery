@@ -3,6 +3,11 @@
 class Paint {
     // used to denote an unset rank
     const UNDEFINED_RANK= -1;
+
+    // different status
+    const SOLD_STATUS="vendu";
+    const UNAVAILABLE_STATUS="indisponible";
+    const AVAILABLE_STATUS="disponible";
     
     public $rank; // lowest values are shown first. If value is negative, it is ignored
     public $file;
@@ -11,11 +16,12 @@ class Paint {
     public $width;
     public $height;
     public $type;
+    public $status;  // SOLD_STATUS, UNAVAILABLE_STATUS
     public $description;
     public $themes; // an array of strings
 
     // as read from CSV
-    // filename, title, date (YYYYMMDD) , width, height, type, description, themes
+    // filename, title, date (YYYYMMDD) , width, height, type, status, description, themes
     function set_attributes( $array ) {
         $this->rank= $array[0];
         if ( empty($this->rank) ) {
@@ -32,12 +38,13 @@ class Paint {
         $this->width= $array[4];
         $this->height= $array[5];
         $this->type= $array[6];
-        $this->description= $array[7];
+        $this->setStatus($array[7]);
+        $this->description= $array[8];
         // au cas ou les themes ne sont pas donnes
         $this->themes=array();
-        if ( count($array) > 8 ) {
-            // array[8] contient les themes separes par des espaces
-            $themes= explode(" ", trim($array[8]));
+        if ( count($array) > 9 ) {
+            // array[9] contient les themes separes par des espaces
+            $themes= explode(" ", trim($array[9]));
             //
             foreach( $themes as $theme ) {
                 $cur= trim($theme);
@@ -50,6 +57,22 @@ class Paint {
         //        echo date_format($this->date, "Y/m/d") ."<br>";
     }
 
+    /**
+     *
+     */
+    function setStatus( $status ) {
+      $status= trim(strtolower($status));
+      if ( empty($status) ) {
+        $this->status= Paint::AVAILABLE_STATUS;
+      } else if ( strcmp( $status, Paint::SOLD_STATUS ) == 0 ) {
+        $this->status= Paint::SOLD_STATUS;
+      } else if ( strcmp ($status, Paint::UNAVAILABLE_STATUS ) == 0 ) {
+        $this->status= Paint::UNAVAILABLE_STATUS;
+      } else {
+        $this->status= $status;
+      }
+    }
+    
     /**
      * Receives an image path and creates the corresponding thumbnail name
      *     images/public/toto.jpg -> images/public/toto_thumb.jpg
@@ -76,7 +99,7 @@ class Paint {
         //
         //$fdate= $this->get_date();
 		$fsize= $this->get_size();
-        return $this->title ." - " .$fsize ;
+        return $this->title ." - " .$fsize;
     }
 
     function get_date() {
@@ -98,7 +121,7 @@ class Paint {
     }
 
     function print() {
-        echo "[" .$this->rank .", " .$this->file .", " .$this->title .", " .$this->type .", " .date_format($this->date, "Y/m/d") .", " .$this->width ."x" .$this->height .", " .$this->themes ."]";
+        echo "[" .$this->rank .", " .$this->file .", " .$this->title .", " .$this->type .", " .$this->status .", " .date_format($this->date, "Y/m/d") .", " .$this->width ."x" .$this->height .", " .$this->themes ."]";
     }
 }
 ?>
