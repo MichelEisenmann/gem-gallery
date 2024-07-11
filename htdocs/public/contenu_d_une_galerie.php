@@ -505,7 +505,7 @@ function updateCentralPaint() {
     var b= document.getElementById("central-paint-title");
     b.textContent= count + " - " + paintTitles[rank_in_gallery];
     var b= document.getElementById("central-paint-description");
-    b.textContent= paintDescriptions[rank_in_gallery] + " - " + paintStatus[rank_in_gallery];
+    b.textContent= paintDescriptions[rank_in_gallery];
 
     // status part
     var st= document.getElementById("status");
