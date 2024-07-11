@@ -55,6 +55,8 @@ var dicoKey= "<?= $dico_key ?>";
 var paintFiles= [];
 var paintTitles= [];
 var paintDescriptions= [];
+var paintStatus= [];
+var paintStatusTranslated= [];
 var gemSignature= "<?= $GEM_SIGNATURE ?>";
 <?php
 foreach( $dico->sortedList as $paint ) {
@@ -62,6 +64,8 @@ foreach( $dico->sortedList as $paint ) {
         paintFiles.push( "images/<?= $paint->file ?>" );
         paintTitles.push( "<?= $paint->full_title() ?>" );
         paintDescriptions.push( "<?= $paint->get_description() ?>" );
+        paintStatus.push("<?= $paint->get_status() ?>" );
+        paintStatusTranslated.push("<?= Translator::t($paint->get_status()) ?>" );
 <?php
 }
 ?>
@@ -216,6 +220,18 @@ adjustPaginationValues();
     display: none;
 }
 
+.text-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
 
 /* Adjustments for phones */
 @media only screen and (max-device-width: 576px) {
@@ -353,9 +369,14 @@ $i++;
       </div>
 
       <div class="w3-container">
-        <a id="central-paint-href" href="">
-          <img id="central-paint-img"/>
-        </a>
+        <div class="text-container">
+          <a id="central-paint-href" href="">
+            <img id="central-paint-img"/>
+          </a>
+          <div class="top-left">
+            <span id="status"></span>
+          </div>
+        </div>
       </div>
       
       <div class="w3-container">
@@ -484,7 +505,15 @@ function updateCentralPaint() {
     var b= document.getElementById("central-paint-title");
     b.textContent= count + " - " + paintTitles[rank_in_gallery];
     var b= document.getElementById("central-paint-description");
-    b.textContent= paintDescriptions[rank_in_gallery];
+    b.textContent= paintDescriptions[rank_in_gallery] + " - " + paintStatus[rank_in_gallery];
+
+    // status part
+    var st= document.getElementById("status");
+    var status= paintStatus[rank_in_gallery];
+    st.textContent= "";
+    if ( status.length != 0 ) {
+        st.textContent= paintStatusTranslated[rank_in_gallery];
+    }
 }
 
 function makeVisible( img ) {
