@@ -80,7 +80,7 @@
 
         <div class="w3-col w3-center s10 title">
           <?= ucfirst($paint->full_title()); ?> <br>
-            <?= ucfirst($paint->description); ?>
+            <?= ucfirst($paint->get_description_and_status()); ?>
         </div>
 
         <div class="w3-col w3-center s1">

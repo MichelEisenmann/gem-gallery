@@ -220,16 +220,19 @@ adjustPaginationValues();
     display: none;
 }
 
-.text-container {
+/* To display the status on top of the image */
+.status-text-container {
   position: relative;
   text-align: center;
   color: white;
 }
 
-.top-left {
+.status-top-left {
     position: absolute;
     top: 8px;
     left: 16px;
+    background-color: black;
+    color: white;
 }
 
 
@@ -369,11 +372,11 @@ $i++;
       </div>
 
       <div class="w3-container">
-        <div class="text-container">
+        <div class="status-text-container">
           <a id="central-paint-href" href="">
             <img id="central-paint-img"/>
           </a>
-          <div class="top-left">
+          <div class="status-top-left">
             <span id="status"></span>
           </div>
         </div>

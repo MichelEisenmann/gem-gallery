@@ -106,6 +106,14 @@ class Paint {
         return $this->status;
     }
 
+    function get_description_and_status() {
+        if ( empty($this->status) ) {
+          return $this->description;
+        } else {
+          return $this->description ." (" .Translator::t($this->status) .")";
+        }
+    }
+
     function get_date() {
         return date_format($this->date, "m/Y");
     }
