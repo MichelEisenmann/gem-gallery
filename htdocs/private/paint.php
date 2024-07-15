@@ -63,7 +63,7 @@ class Paint {
     function setStatus( $status ) {
       $status= trim(strtolower($status));
       if ( empty($status) ) {
-        $this->status= Paint::AVAILABLE_STATUS;
+        $this->status= "";
       } else if ( strcmp( $status, Paint::SOLD_STATUS ) == 0 ) {
         $this->status= Paint::SOLD_STATUS;
       } else if ( strcmp ($status, Paint::UNAVAILABLE_STATUS ) == 0 ) {
@@ -100,6 +100,18 @@ class Paint {
         //$fdate= $this->get_date();
 		$fsize= $this->get_size();
         return $this->title ." - " .$fsize;
+    }
+
+    function get_status() {
+        return $this->status;
+    }
+
+    function get_description_and_status() {
+        if ( empty($this->status) ) {
+          return $this->description;
+        } else {
+          return $this->description ." (" .Translator::t($this->status) .")";
+        }
     }
 
     function get_date() {

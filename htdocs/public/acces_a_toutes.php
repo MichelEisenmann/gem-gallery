@@ -86,7 +86,7 @@ div.desc {
 
 .textgrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2px;
     align-items: center;
     justify-items: center;
@@ -96,7 +96,7 @@ div.desc {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     align-items: center;
     justify-items: center;
@@ -112,12 +112,12 @@ div.desc {
 
 @media only screen and (max-device-width: 576px) {
     .textgrid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         font-size: 15px;
     }
 
     .smalltextgrid {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         font-size: 15px;
     }
 

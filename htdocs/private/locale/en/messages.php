@@ -6,6 +6,9 @@ return array(
     'NOUVEAUTES' => "LATEST WORKS",
     'CONTACT' => "CONTACT",
 
+    'vendu' => 'Sold',
+    'indisponible' => 'Unavailable',
+
     'Galeries' => 'Work',
     'Expositions' => 'Exhibitions',
     'Nouvelles oeuvres' => 'Recent work',
