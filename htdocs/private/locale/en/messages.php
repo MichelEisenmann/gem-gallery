@@ -7,7 +7,7 @@ return array(
     'CONTACT' => "CONTACT",
 
     'vendu' => 'Sold',
-    'indisponible' => 'Unavailable',
+    'indisponible' => 'Private Coll.',
 
     'Galeries' => 'Work',
     'Expositions' => 'Exhibitions',
