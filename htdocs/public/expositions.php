@@ -87,6 +87,15 @@ body, html {
 		  International virtual exhibition Arts & Sports 2024: Gallery</a></br>
 		  
 		  </li>
+		<li><b>2-6 OCTOBRE / OCTOBER</b>
+		<br><b>ANTIBES (06, France)</b> - "Fa&icirc;tes de la peinture" 14ème édition - (association les amis du mus&eacute;e Picasso)</br> 
+		<p style="color:green;">Prix TROPHEE DE LA VILLE D'ANTIBES
+		<a href="images/web/20241006_Video-FaitesPeinture_Pelican.mp4">[video 19s]</a></p>
+        <a href="images/Acrylique/20240915_Pelican_AC55x38.jpg">
+          <img src="images/Acrylique/20240915_Pelican_AC55x38_small.jpg" width="38"/><i>Le pélican qui s'en va tout seul</i>
+	    </a>
+		</li>
+		
 		<li><b>5-11 JUILLET / JULY</b>
 		    <br><a href="images/web/Expo-JUL24.jpg" alt="Exhibition Gourdon" />
 		    <img src="images/web/Expo-JUL24_small.jpg" width="60" height="80"/>
