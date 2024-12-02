@@ -82,6 +82,12 @@ body, html {
 <ol>
      <h5 style="background-color:orange"><b>2024</b></h5>
    <ul>
+        <li><b>10ème édition annuelle du Luxembourg Art prize</b>
+		<p style="color:green;">CERTIFICAT DE MERITE ARTISTIQUE
+        <a href="images/web/2024-12_LuxembourgArtPrize.png">
+          <img src="images/web/2024-12_LuxembourgArtPrize_small.png" width="38"/><i>Certificat</i>
+	    </a>
+		</li>
 		<li><b>Exposition virtuelle internationale Arts & Sports 2024 - La maison des artistes</b>
 		  <br><a href="https://www.lamaisondesartistes.fr/site/musee-virtuel-arts-et-sports-2024-galerie/" alt="Arts & Sports 2024" />
 		  International virtual exhibition Arts & Sports 2024: Gallery</a></br>
