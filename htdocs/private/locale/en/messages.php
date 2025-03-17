@@ -18,9 +18,9 @@ return array(
     'Pastels' => 'Pastels',
     'Autres' => 'Others',
     'Abstrait' => 'Abstract',
-    'Flore' => 'Flora',
+    'Flore' => 'Floral',
     'Paysages' => 'Landscape',
-    'Reproductions' => 'Reproduction',
+    'Reproductions' => 'Mastercopies',
     'Vivant' => 'Life',
 
     'Slogan' => 'Painting to transcend reality',

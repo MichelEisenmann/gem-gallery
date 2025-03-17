@@ -80,7 +80,27 @@ body, html {
   <h3 class="w3-center">Expositions / Exhibitions</h3>
    <div>
 <ol>
-     <h5 style="background-color:orange"><b>2024</b></h5>
+     <h5 style="background-color:orange"><b>2025</b></h5>
+   <ul>
+        <li><b>11ème édition annuelle du Luxembourg Art prize</b>
+		</li>
+		<li><b>30 Mai-12 Juin / JUNE</b>	    
+			    <b>GOURDON (06, France)</b></a>
+		    - Exposition SOLO - Salle de la Mairie
+			</br>
+		</li>
+		<li><b>Antibes (06, France)</b> Antibes Art Fair - 12-21 Avril 
+		<br><a href="images/Huile/20250314_AirMarin_HU50x50.jpg" alt="Air Marin" />
+          <img src="images/Huile/20250314_AirMarin_HU50x50_small.jpg" width="60" height="60"/>Air Marin</a>
+		  </br> 
+		</li>
+		<li><b>Antibes (06, France)</b> Femin'Arte - FEMIN'EXPO Les Casemates - Boulevard d'Aguillon - 27 F&eacute;vrier au samedi 22 Mars <br> 
+		["Icones"]
+		<br><a href="images/Acrylique/20241109_IconesDechues_AC28x35_small.jpg" alt="Icones Déchues" />
+          <img src="images/web/20241109_IconesDechues_AC28x35_mini.jpg" width="50" height="40"/>Icones d&eacute;chues</a>
+		  </br> 
+		</li>
+     <i><h5 style="background-color:powderblue;">2024</h5>
    <ul>
         <li><b>10ème édition annuelle du Luxembourg Art prize</b>
 		<p style="color:green;">CERTIFICAT DE MERITE ARTISTIQUE
@@ -127,7 +147,7 @@ body, html {
 		  </br> 
 		</li>
 	</ul>
-
+	</i>
 
      <i><h5 style="background-color:powderblue;">2023</h5>
 		<ul>
