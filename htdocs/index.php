@@ -191,18 +191,21 @@
 	      <img src="public/images/web/gem.png" alt="Artist's signature" />
         </div>
     <div class="grid">
-      <div class="cliping">
-	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg') ?>">
-          <img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" />
-          <br><?= Translator::t("Huiles") ?></br>
-	</a>
-      </div>
-      <div class="cliping">
-	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20240326_Deflagration_A90x90.jpg') ?>">
-		<img class="limited to-be-signed" src="public/images/Acrylique/20240326_Deflagration_A90x90_small.jpg" alt="Acrylique" />
-		        <br><?= Translator::t("Acryliques") ?></br>
-	</a>
-      </div>
+		<div class="cliping">
+	        <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20250314_AirMarin_HU50x50.jpg') ?>">
+<!--   <img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" />  -->
+              <img class="limited to-be-signed" src="public/images/Huile/20250314_AirMarin_HU50x50.jpg" alt="Huiles" />
+              <br><?= Translator::t("Huiles") ?></br>
+	        </a>
+	      </div>
+
+	      <div class="cliping">
+	        <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20240822_Aigrette_AC50x76.jpg') ?>">
+		      <img class="limited to-be-signed" src="public/images/Acrylique/20240822_Aigrette_AC50x76_small.jpg" alt="Acrylique" />
+              <br><?= Translator::t("Acryliques") ?></br>
+	        </a>
+	      </div>
+ 
       <div class="cliping">
 	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg') ?>">
           <img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" >
