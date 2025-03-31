@@ -1,7 +1,7 @@
 <?php
 return array(
     'ACCUEIL' => "ABOUT",
-    'GALERIE' => "WORK",
+    'GALERIE' => "GALLERY",
 	'EXPOSITIONS' => "EXHIBITIONS",
     'NOUVEAUTES' => "LATEST WORKS",
     'CONTACT' => "CONTACT",
@@ -9,9 +9,10 @@ return array(
     'vendu' => 'Sold',
     'indisponible' => 'Private Coll.',
 
-    'Galeries' => 'Work',
+    'Galeries' => 'Painting galleries',
     'Expositions' => 'Exhibitions',
     'Nouvelles oeuvres' => 'Recent work',
+	'Toutes les oeuvres' => 'Artwork',
 
     'Huiles' => 'Oils',
     'Acryliques' => 'Acrylics',

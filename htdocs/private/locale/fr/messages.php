@@ -12,6 +12,7 @@ return array(
     'Galeries' => 'Galeries',
     'Expositions' => 'Expositions',
     'Nouvelles oeuvres' => 'Nouvelles oeuvres',
+	'Toutes les oeuvres' => 'Oeuvres',
 
     'Huiles' => 'Huiles',
     'Acryliques' => 'Acryliques',
@@ -30,7 +31,6 @@ return array(
 	A l’origine Docteur es Sciences et informaticienne, elle transitionne vers la peinture lorsque le COVID frappe 
 	et qu’elle réalise combien la vie, la famille et les beautés de la nature sont fondamentales. 
  Après la pandémie, elle joint l’atelier d’artistes de <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant</a> à Grasse (06) 
- et son collectif d’artistes.
 <br>Ses tableaux sont essentiellement figuratifs, sujets paysagers, nature, portraits 
 où s’expriment des couleurs vives. Elle immortalise des reflets 
 dans les paysages aquatiques variés, influencée par ses voyages réguliers en Australie et ses photos 
