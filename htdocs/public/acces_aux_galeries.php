@@ -16,7 +16,8 @@
 <?php include ('../private/initialize_translator.php'); ?>
 <?php include ('../private/initialize_galleries.php'); ?>
 
-<title>Galeries</title>
+<title><?= Translator::t("overview"); ?></title>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -102,23 +103,33 @@ div.desc {
 
 
 <div class="w3-container top-container">
-<h1>Galeries<h1>
+<h1><?= Translator::t("overview"); ?><h1>
 </div>
 
 <div class="w3-content">
     <div class="grid">
-      <a href="<?= Translator::url('contenu_d_une_galerie.php?key=oil&file=Huile/20230216_LesDanseuses_Huile.jpg') ?>">
-        <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" /><br>Huiles</br>
-      </a>
-      <a href="<?= Translator::url('contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20211228_Evocation de Gourdon.jpg') ?>">
-        <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Acrylique/20211228_Evocation de Gourdon_small.jpg" alt="Acrylique" /><br>Acryliques</br>
-      </a>
-      <a href="<?= Translator::url('contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg') ?>">
-        <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" ><br>Pastels</br>			
-      </a>
-      <a href="<?= Translator::url('contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg') ?>">
-        <img class="limited" alt="<?= $GEM_SIGNATURE; ?>" src="images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" /><br>Autres</br>
-      </a>
+<?php
+    $main_galleries= array("oil", "acrylic", "pastel", "other");
+      // $ALL_GALLERIES->print();
+foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
+    // skip empty dictionaries and dictionaries that are not supposed to be shown
+    if ( count($dico->paints) == 0 || $dico->shownInSelector == FALSE ) {
+        continue;
+    }
+    // skip all the non main types
+    if ( ! in_array($dico->key, $main_galleries) ) {
+        continue;
+    }
+    $latest= $dico->sortedList[0];
+?>
+     <a href="<?= Translator::url('../public/contenu_d_une_galerie.php', "?key=" .$dico->key ) ?>">
+       <img class="limited" alt="<?= $GEM_SIGNATURE ?>" src="images/<?= $latest->getThumbnailFile(); ?>"
+	    >
+       <br><?=  Translator::t($dico->key); ?> </br>
+     </a>
+<?php
+ }
+?>
     </div>
 </div>
 
@@ -142,7 +153,7 @@ foreach ( $ALL_GALLERIES->paint_dictionnaries as $dico ) {
      <a href="<?= Translator::url('../public/contenu_d_une_galerie.php', "?key=" .$dico->key ) ?>">
        <img class="limited" alt="<?= $GEM_SIGNATURE ?>" src="images/<?= $latest->getThumbnailFile(); ?>"
 	    >
-       <br><?= ucfirst($dico->name); ?> </br>
+       <br><?=  Translator::t($dico->key); ?> </br>
      </a>
 <?php
 }

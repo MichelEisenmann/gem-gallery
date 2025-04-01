@@ -3,7 +3,7 @@ return array(
     'ACCUEIL' => "ACCUEIL",
     'GALERIE' => "OEUVRES",
 	'EXPOSITIONS' => "EXPOSITIONS",
-    'NOUVEAUTES' => "NOUVEAUTES",
+    'NOUVEAUTES' => "NOUVELLES OEUVRES",
     'CONTACT' => "CONTACT",
 
     'vendu' => 'Vendu',
@@ -11,8 +11,10 @@ return array(
 
     'Galeries' => 'Galeries',
     'Expositions' => 'Expositions',
-    'Nouvelles oeuvres' => 'Nouvelles oeuvres',
-	'Toutes les oeuvres' => 'Oeuvres',
+
+    'overview' => 'Revue des oeuvres',
+    'new' => 'Nouvelles oeuvres',
+	'all' => 'Oeuvres',
 
     'oil' => 'Huiles',
     'acrylic' => 'Acryliques',

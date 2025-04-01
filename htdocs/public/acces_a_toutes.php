@@ -184,7 +184,7 @@ foreach ( $main_galleries as $dico ) {
 ?>
      <a class="textref w3-hover-grey"
         href="<?= Translator::url('../public/contenu_d_une_galerie.php', "?key=" .$dico->key ) ?>">
-       <?= Translator::t(ucfirst($dico->name)); ?>
+       <?= Translator::t($dico->key); ?>
      </a>
 <?php
 }
@@ -199,7 +199,7 @@ foreach ( $other_valid_galleries as $dico ) {
 ?>
      <a class="smalltextref w3-hover-grey" 
         href="<?= Translator::url('../public/contenu_d_une_galerie.php', "?key=" .$dico->key ) ?>">
-       <?= Translator::t(ucfirst($dico->name)); ?>
+       <?= Translator::t($dico->key); ?>
      </a>
 <?php
 }
