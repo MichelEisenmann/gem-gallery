@@ -39,16 +39,14 @@ class AllGalleries {
                 $num = count($data);
                 // echo "<p> $num fields in line $row: <br /></p>\n";
                 // on saute les commentaires (lignes qui commencent par '#')
-                if ( $data[0] != null && !str_starts_with($data[0], '#') && $num == 2 ) {
+                if ( $data[0] != null && !str_starts_with($data[0], '#') && $num == 1 ) {
                     //                                        for ($c=0; $c < $num; $c++) {
                     //                                            echo $data[$c] . "<br />\n";
                     //                                        }
-                    // premier element est la cle, le second est l'intitule
+                    // premier element est la cle
                     $key= trim($data[0]);
-                    // echo $data[0] . $data[1] . "<br />\n";
-                    $value= trim($data[1]);
-                    if ( $key != '' && $value != '' ) {
-                        $this->dictionnary->add_key( $key, $value );
+                    if ( $key != '' ) {
+                        $this->dictionnary->add_key( $key, $key );
                     }
                 }
                 $row++;

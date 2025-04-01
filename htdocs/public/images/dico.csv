@@ -1,22 +1,24 @@
-# Ce fichier donne un correspondance entre une cle (utilisee en interne) et un intitule (qui sera affiche)
+# Ce fichier donne la liste des cles utilisees en internes pour classer les oeuvres dans des groupes differents.
 # Il est utilise
-#   - pour donner un intitule aux dictionnaires speciaux (toutes les peintures et nouvelles peintures)
-#   - pour donner un intitule aux differents cycles
-#   - pour donner un intitule aux types de techniques
+#   - pour definir les dictionnaires speciaux (toutes les peintures et nouvelles peintures)
+#   - pour definir les differents cycles
+#   - pour definir les differentes techniques
+
+# NOTE: lors de leur affichage, les cles sont traduites en utilisant les fichiers private/locale/**/messages.php
 
 # dictionnaires speciaux
-all;Toutes les oeuvres
-new;Nouvelles oeuvres
+all
+new
 
 # cle, intitule
 # - techniques
-acrylic;Acryliques
-pastel;Pastels
-oil;Huiles
-other;Autres
+acrylic
+pastel
+oil
+other
 # - cycles
-paysage; Paysages
-vivant; Vivant
-flore; Flore
-copie; Reproductions
-abstrait; Abstrait
+paysage
+vivant
+flore
+copie
+abstrait
