@@ -193,29 +193,29 @@
     <div class="grid">
 		<div class="cliping">
 	        <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20250314_AirMarin_HU50x50.jpg') ?>">
-<!--   <img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" />  -->
-              <img class="limited to-be-signed" src="public/images/Huile/20250314_AirMarin_HU50x50.jpg" alt="Huiles" />
-              <br><?= Translator::t("Huiles") ?></br>
+<!--   <img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="<?= Translator::t("oil") ?>" />  -->
+              <img class="limited to-be-signed" src="public/images/Huile/20250314_AirMarin_HU50x50.jpg" alt="<?= Translator::t("oil") ?>" />
+              <br><?= Translator::t("oil") ?></br>
 	        </a>
 	      </div>
 
 	      <div class="cliping">
 	        <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20240822_Aigrette_AC50x76.jpg') ?>">
-		      <img class="limited to-be-signed" src="public/images/Acrylique/20240822_Aigrette_AC50x76_small.jpg" alt="Acrylique" />
-              <br><?= Translator::t("Acryliques") ?></br>
+		      <img class="limited to-be-signed" src="public/images/Acrylique/20240822_Aigrette_AC50x76_small.jpg" alt="<?= Translator::t("acrylic") ?>" />
+              <br><?= Translator::t("acrylic") ?></br>
 	        </a>
 	      </div>
  
       <div class="cliping">
 	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg') ?>">
-          <img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" >
-            <br><?= Translator::t("Pastels") ?></br>			
+          <img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="<?= Translator::t("pastel") ?>" >
+            <br><?= Translator::t("pastel") ?></br>			
 	</a>
       </div>
       <div class="cliping">
 	<a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg') ?>">
-          <img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" />
-          <br><?= Translator::t("Autres") ?></br>
+          <img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="<?= Translator::t("other") ?>" />
+          <br><?= Translator::t("other") ?></br>
 	</a>
       </div>
     </div>
@@ -266,30 +266,30 @@
 	    <main class="grid">
 	      <div class="cliping">
 	        <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=oil&file=Huile/20250314_AirMarin_HU50x50.jpg') ?>">
-<!--   <img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="Huiles" />  -->
-              <img class="limited to-be-signed" src="public/images/Huile/20250314_AirMarin_HU50x50.jpg" alt="Huiles" />
-              <br><?= Translator::t("Huiles") ?></br>
+<!--   <img class="limited to-be-signed" src="public/images/Huile/20230216_LesDanseuses_Huile_small.jpg" alt="<?= Translator::t("oil") ?>" />  -->
+              <img class="limited to-be-signed" src="public/images/Huile/20250314_AirMarin_HU50x50.jpg" alt="<?= Translator::t("oil") ?>" />
+              <br><?= Translator::t("oil") ?></br>
 	        </a>
 	      </div>
 
 	      <div class="cliping">
 	        <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=acrylic&file=Acrylique/20240822_Aigrette_AC50x76.jpg') ?>">
-		      <img class="limited to-be-signed" src="public/images/Acrylique/20240822_Aigrette_AC50x76_small.jpg" alt="Acrylique" />
-              <br><?= Translator::t("Acryliques") ?></br>
+		      <img class="limited to-be-signed" src="public/images/Acrylique/20240822_Aigrette_AC50x76_small.jpg" alt="<?= Translator::t("acrylic") ?>" />
+              <br><?= Translator::t("acrylic") ?></br>
 	        </a>
 	      </div>
 
 	      <div class="cliping">
  	        <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=pastel&file=Pastels/20240119_Corentin2Mois.jpg') ?>">
-		      <img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="Pastel" >
-                <br><?= Translator::t("Pastels") ?></br>			
+		      <img class="limited to-be-signed" src="public/images/Pastels/20240119_Corentin2Mois_small.jpg" alt="<?= Translator::t("pastel") ?>" >
+                <br><?= Translator::t("pastel") ?></br>			
 	          </a>
           </div>
 
           <div class="cliping">
 	        <a href="<?= Translator::url('public/contenu_d_une_galerie.php?key=other&file=Autres/20200920_SanguinePascaleGuillaume.jpg') ?>">
-		        <img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="Autres" />
-                <br><?= Translator::t("Autres") ?></br>
+		        <img class="limited to-be-signed" src="public/images/Autres/20200920_SanguinePascaleGuillaume_small.jpg" alt="<?= Translator::t("other") ?>" />
+                <br><?= Translator::t("other") ?></br>
 	          </a>
 	      </div>
 	    </main>
