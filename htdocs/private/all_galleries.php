@@ -135,8 +135,9 @@ class AllGalleries {
         } else {
             $dico= new PaintDictionnary();
             $dico->key= $key;
-            $dico->name= $this->dictionnary->get_label( $key );
-            $this->paint_dictionnaries[$dico->key]= $dico;
+            //            $dico->name= $this->dictionnary->get_label( $key ); 
+            $dico->name= $key;
+           $this->paint_dictionnaries[$dico->key]= $dico;
             return $dico;
         }
     }
