@@ -16,6 +16,9 @@
        class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> <?= Translator::t('BIBLIOGRAPHIE') ?></a>
     <a href="<?= Translator::url('/index.php') ?>#contact"
        class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> <?= Translator::t('CONTACT') ?></a>
+
+    <a href="<?= Translator::url('/public/acces_chronologique.php') ?>"
+       class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> <?= Translator::t('PROVISOIRE') ?></a>
     
     <button class="w3-button w3-right" onclick="useEnglish()">
       <img src="/public/images/uk-48.png" alt="english"></img>
@@ -39,6 +42,9 @@
        class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('BIBLIOGRAPHIE') ?></a>
     <a href="<?= Translator::url('/index.php') ?>#contact"
        class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('CONTACT') ?></a>
+
+    <a href="<?= Translator::url('/public/acces_chronologique.php') ?>"
+       class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('PROVISOIRE') ?></a>
     
   </div>
 </div>
