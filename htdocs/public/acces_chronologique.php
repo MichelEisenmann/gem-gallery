@@ -126,25 +126,29 @@ adjustPaginationValues();
 	font-size: 10px; 
 }
 
-.center {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    margin: auto;
-    width: 40%;
-}
-
-.center-pagination {
+.center-paint {
     padding-top: 10px;
     padding-bottom: 10px;
     margin: auto;
-    width: 60%;
+    max-width: 600px;
+    max-height: 500px;
     //    border: 1px solid;
 }
 
+.center-images {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.limited-image {
+    max-width: 1000px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
 .fitting-image {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     object-fit: scale-down;
     border: 1px solid grey;
 }
@@ -155,6 +159,11 @@ adjustPaginationValues();
 
 .visible-image {
 }
+
+.colored {
+    background-color: dodgerblue;
+  }
+
 
 /* Pagination links */
 .pagination a {
@@ -179,31 +188,20 @@ adjustPaginationValues();
     display: none;
 }
 
-.image-bar {
-    display: none;
-}
-
 /* Adjustments for phones */
 @media only screen and (max-device-width: 576px) {
-.espace {
-    display: block;
-    height: 50px;
+.limited-image {
+    max-width: 100%;
+     margin-left: auto;
+     margin-right: auto;
 }
 
-#pagination-bar {
-    display: none;
-}
 
-.image-bar {
-    display: inline;
-}
-
-.pagination-button {
-    font-size: 15px;
-}
-
-.pagination {
-	display: none;
+.fitting-image {
+    width: 60px;
+    height: 60px;
+    object-fit: scale-down;
+    border: 1px solid grey;
 }
 
 </style>
@@ -213,10 +211,6 @@ adjustPaginationValues();
 <!-- Navbar (sit on top) -->
 <?php include("navbar.php"); ?>
 
-<!-- ------------------------------------------------------- -->
-<!-- gallery selector -->
-<!-- not shown for special galeries like "all" or "new" -->
-
 <?php
   // space for the navbar
   echo "<div class=\"w3-container top-container\">";
@@ -224,39 +218,43 @@ adjustPaginationValues();
   echo "</div>";
 ?>
 
-<!-- seulement visible sur les petits ecrans (reserve un peu de hauteur) -->
-<div class="w3-center espace" style="width:100%;margin:auto;">
+<div class="w3-container">
+
+<!-- ------------------------------------------------------- -->
+<!-- latest paint -->
+
+<div class="w3-center">
+  <a
+      href="<?= Translator::url('../public/affichage_peinture.php', "?key=all&rank=0" ) ?>">
+    <img class="limited-image" alt="<?= $GEM_SIGNATURE; ?>" src="images/<?= $latest->file ?>" alt="" />
+
+  </a>
 </div>
+
 
 <!-- ------------------------------------------------------- -->
 <!-- pagination with images -->
 
-<div id="pagination-bar"  class="center-pagination">
-  <!-- seulement visible sur les grands ecrans -->
-  <!-- necessaire pour etre centre a l'interieur du div de dessus -->
-  <div class="pagination w3-center" style="width:100%;margin:auto;">
-
+<div class="w3-center">
 <?php
   $i= 0;
 foreach( $dico->sortedList as $paint ) {
 ?>
-<img id="paint-<?= $i ?>"
-     class="fitting-image hidden-image"
-     src="images/<?= $paint->getThumbnailFile(); ?>"
-     >
+<a id="paint-<?= $i ?>" class="hidden-image" href="<?= Translator::url('../public/affichage_peinture.php', "?key=all&rank=" .$i ) ?>">
+  <img 
+       class="fitting-image"
+       src="images/<?= $paint->getThumbnailFile(); ?>"
+       >
+</a>
 <?php
 $i++;
 }
 ?>
 
 </div>
-</div>
 
-<div id="pagination-bar-2"  class="center-pagination">
-  <!-- seulement visible sur les grands ecrans -->
-  <!-- necessaire pour etre centre a l'interieur du div de dessus -->
-  <div class="pagination w3-center" style="width:100%;margin:auto;">
-
+<div class="w3-center pagination">
+<div class="w3-bar">
 <a href="#" onClick="showPrevious();">&laquo;</a>
 <?php
      for ($i= 0; $i < $number_of_pages; $i++ ) {
@@ -268,7 +266,7 @@ $i++;
 ?>
 <a href="#" onClick="showNext();">&raquo;</a>
 
-  </div>
+</div>
 </div>
 
 
@@ -365,5 +363,6 @@ function printVariables() {
 
 </script>
 
+</div>
 </body>
 </html>
