@@ -1,14 +1,16 @@
 <?php
 return array(
-    'ACCUEIL' => "ABOUT",
+    'ACCUEIL' => "HOME",
     'GALERIE' => "GALLERY",
 	'EXPOSITIONS' => "EXHIBITIONS",
     'NOUVEAUTES' => "RECENT WORK",
+    'BIBLIOGRAPHIE' => "BIBLIOGRAPHY",
     'CONTACT' => "CONTACT",
 
     'vendu' => 'Sold',
     'indisponible' => 'Private Coll.',
 
+    'Bibliographie' => 'Bibliography',
     'Galeries' => 'Painting galleries',
     'Expositions' => 'Exhibitions',
 
