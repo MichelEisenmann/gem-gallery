@@ -22,33 +22,25 @@
 //  - a paint browser that will let the user move through
 //    paints set by set. The size of a set is fixed by pagination_size (see below)
 
-// the latest paint is displayed on top of the
-// gallery browser
+// the latest paint is displayed on top of the gallery browser
 $dico= $ALL_GALLERIES->all_paint_dictionnary;
 $latest= $dico->sortedList[0];
 
-// the rank of current selected paint in our gallery
-// OPTIONAL. If not given, the image variable must be set
-$rank_in_gallery=0;
-if (array_key_exists("rank", $_GET) ) {
-  $rank_in_gallery=htmlspecialchars($_GET["rank"]);
- }
-
-// the file of the paint. If given, it is used to compute
-//   the rank in gallery
-// OPTIONAL. Should be provided if the rank is unknown
-
-$file_in_gallery="";
-if (array_key_exists("file", $_GET) ) {
-  $file_in_gallery=htmlspecialchars($_GET["file"]);
-  $rank_in_gallery=$dico->get_file_rank($file_in_gallery);
- }
-
-// the rank of the first paint shown in the pagination
-$pagination_start=0;
+// the rank of the active page
+$current_page=0;
 if (array_key_exists("pagination", $_GET) ) {
-  $pagination_start=htmlspecialchars($_GET["pagination"]);
+  $current_page=htmlspecialchars($_GET["pagination"]);
  }
+
+$pagination_size= 5;
+
+$number_of_pages= intdiv(sizeof($dico->sortedList), $pagination_size);
+if ( $number_of_pages * $pagination_size < sizeof($dico->sortedList) ) {
+    $number_of_pages= $number_of_pages +1;
+}
+
+// computed from the active page later
+$rank_in_gallery=0;
 
 ?>
 
@@ -75,51 +67,44 @@ foreach( $dico->sortedList as $paint ) {
 // Pagination:
 //
 //    0 1 2 3 4 5 6 7 8 ...... 40
-//          |-X-----|
+//            | - - - |
 //              
-//  total_number= 41
-//  rank_in_gallery= 4
-//  pagination_start= 3
-//  pagination_size= 5  (constant)
+//  total_number= 41 (number of paints)
+//  current_page= 1 (starts at 0)
+//  pagination_size= 5 (number of paints shown in one page - constant)
+//  rank_in_gallery= 4 (computed from pagination_rank)
 
 // total number of paints
 var total_number= <?= count($dico->sortedList) ?>;
 
 // size of pagination
-var pagination_size= 5;
+var pagination_size= <?= $pagination_size ?>;
+
+// number of pages
+var number_of_pages= <?= $number_of_pages ?>;
 
 // the rank of current selected paint in our gallery
 var rank_in_gallery= <?= $rank_in_gallery ?>;
 
-// the rank of the first paint shown in the pagination
-var pagination_start= <?= $pagination_start ?>;
+// the rank of the current page
+var current_page= <?= $current_page ?>;
 
 // ensure that the received values are consistent
 function adjustPaginationValues() {
     if ( total_number < pagination_size ) {
         pagination_size= total_number;
     }
+    
     // loops when arriving at the extremities
-    if ( rank_in_gallery < 0 ) {
-        rank_in_gallery= total_number-1;
+    if ( current_page < 0 ) {
+        current_page= number_of_pages-1;
     }
-    if ( rank_in_gallery >= total_number ) {
-        rank_in_gallery= 0;
+    if ( current_page >= number_of_pages ) {
+        current_page= 0;
     }
-    // adjust the pagination start so that it fits 
-    if ( rank_in_gallery < pagination_start ) {
-        pagination_start= rank_in_gallery;
-    } else if ( rank_in_gallery >= pagination_start + pagination_size ) {
-        pagination_start++;
-        // special case when the pagination was totally off, we reset it to a valid value
-        // (typically when arriving from index.html)
-        if ( rank_in_gallery >= pagination_start + pagination_size ) {
-            pagination_start= rank_in_gallery;
-        }
-    }
-    if ( pagination_start > total_number - pagination_size ) {
-        pagination_start= total_number - pagination_size;
-    }
+
+    // compute rank_in_gallery from pagination_rank
+    rank_in_gallery= current_page * pagination_size;
 }
 
 adjustPaginationValues();
@@ -271,14 +256,18 @@ $i++;
   <!-- seulement visible sur les grands ecrans -->
   <!-- necessaire pour etre centre a l'interieur du div de dessus -->
   <div class="pagination w3-center" style="width:100%;margin:auto;">
-    <a href="#">&laquo;</a>
-    <a href="#">1</a>
-    <a class="active" href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">4</a>
-    <a href="#">5</a>
-    <a href="#">6</a>
-    <a href="#">&raquo;</a>
+
+<a href="#" onClick="showPrevious();">&laquo;</a>
+<?php
+     for ($i= 0; $i < $number_of_pages; $i++ ) {
+?>
+<a id="page-<?= $i ?>" href="#" onClick="showPage(<?= $i ?>);"><?= $i ?></a>
+
+<?php
+ }
+?>
+<a href="#" onClick="showNext();">&raquo;</a>
+
   </div>
 </div>
 
@@ -300,40 +289,44 @@ function toggleFunction() {
     }
 }
 
+function showPage( page) {
+    current_page= page;
+    adjustPaginationValues();
+    updateDocument();
+}
+
 function showPrevious() {
-    rank_in_gallery= rank_in_gallery-1;
+    current_page= current_page -1;
     adjustPaginationValues();
     updateDocument();
 }
 
 function showNext() {
-    rank_in_gallery= rank_in_gallery+1;
+    current_page= current_page + 1;
     adjustPaginationValues();
     updateDocument();
 }
 
-function selectPaint( rank ) {
-    rank_in_gallery= rank;
-    updateDocument();
-}
-
-
 function updateDocument() {
-    // update the pagination part
+    // update the visible images
     for ( i= 0; i < total_number; i++ ) {
         var img= document.getElementById("paint-" + i);
         if ( img == null ) continue;
-        if ( i < pagination_start ) {
+        if ( i < rank_in_gallery ) {
             makeHidden(img);
-        } else if ( i >= pagination_start + pagination_size ) {
+        } else if ( i >= rank_in_gallery + pagination_size ) {
             makeHidden(img);
         } else {
             makeVisible(img);
         }
-        if ( i == rank_in_gallery ) {
-            makeActive(img);
+    }
+    // activate the current page
+    for ( i= 0; i < number_of_pages; i++ ) {
+        var mark= document.getElementById("page-" + i);
+        if ( i == current_page ) {
+            makeActive(mark);
         } else {
-            makeInactive(img);
+            makeInactive(mark);
         }
     }
 }
@@ -366,7 +359,7 @@ function makeInactive( img ) {
 
 function printVariables() {
     console.log( "rank: " + rank_in_gallery );
-    console.log( "pagination_start: " + pagination_start );
+    console.log( "current_page: " + current_page );
     console.log( "total_number: " + total_number );
 }
 
