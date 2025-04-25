@@ -108,10 +108,7 @@ body, html {
           <img src="images/web/2024-12_LuxembourgArtPrize_small.png" width="38"/>
 	    </a>
 		</li>
-		<li><b>Exposition virtuelle internationale Arts & Sports 2024 - La maison des artistes</b>
-		  <br><a href="https://www.lamaisondesartistes.fr/site/musee-virtuel-arts-et-sports-2024-galerie/?_nationalit=francaise&_dpartements=06" alt="Arts & Sports 2024" />
-		  International virtual exhibition Arts & Sports 2024: Gallery</a></br>
-		  
+		<li><b>Exposition virtuelle internationale Arts & Sports 2024 - La maison des artistes</b>  
 		  </li>
 		<li><b>2-6 OCTOBRE / OCTOBER</b>
 		<br><b>ANTIBES (06, France)</b> - "Fa&icirc;tes de la peinture" 14ème édition - (association les amis du mus&eacute;e Picasso)</br> 
