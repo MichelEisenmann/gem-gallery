@@ -12,14 +12,9 @@
        class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> <?= Translator::t('EXPOSITIONS') ?></a>
     <a href="<?= Translator::url('/public/contenu_d_une_galerie.php?key=new') ?>"
        class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> <?= Translator::t('NOUVEAUTES') ?></a>
-    <a href="<?= Translator::url('/public/bibliographie.php') ?>"
-       class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> <?= Translator::t('BIBLIOGRAPHIE') ?></a>
     <a href="<?= Translator::url('/index.php') ?>#contact"
        class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> <?= Translator::t('CONTACT') ?></a>
 
-    <a href="<?= Translator::url('/public/acces_chronologique.php') ?>"
-       class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> <?= Translator::t('PROVISOIRE') ?></a>
-    
     <button class="w3-button w3-right" onclick="useEnglish()">
       <img src="/public/images/uk-48.png" alt="english"></img>
     </button>
@@ -38,14 +33,9 @@
        class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('EXPOSITIONS') ?></a>
     <a href="<?= Translator::url('/public/contenu_d_une_galerie.php?key=new') ?>"
        class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('NOUVEAUTES') ?></a>
-    <a href="<?= Translator::url('/public/bibliographie.php') ?>"
-       class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('BIBLIOGRAPHIE') ?></a>
     <a href="<?= Translator::url('/index.php') ?>#contact"
        class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('CONTACT') ?></a>
 
-    <a href="<?= Translator::url('/public/acces_chronologique.php') ?>"
-       class="w3-bar-item w3-button" onclick="toggleFunction()"><?= Translator::t('PROVISOIRE') ?></a>
-    
   </div>
 </div>
 
