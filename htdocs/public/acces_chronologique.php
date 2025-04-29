@@ -141,7 +141,7 @@ adjustPaginationValues();
 }
 
 .limited-image {
-    max-width: 1000px;
+    max-width: 600px;
      margin-left: auto;
      margin-right: auto;
 }
