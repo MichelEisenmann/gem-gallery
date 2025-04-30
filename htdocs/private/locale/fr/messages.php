@@ -4,11 +4,13 @@ return array(
     'GALERIE' => "OEUVRES",
 	'EXPOSITIONS' => "EXPOSITIONS",
     'NOUVEAUTES' => "NOUVELLES OEUVRES",
+    'BIBLIOGRAPHIE' => "BIBLIOGRAPHIE",
     'CONTACT' => "CONTACT",
 
     'vendu' => 'Vendu',
     'indisponible' => 'Collection privée',
 
+    'Bibliographie' => 'Bibliographie',
     'Galeries' => 'Galeries',
     'Expositions' => 'Expositions',
 
