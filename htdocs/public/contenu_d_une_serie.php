@@ -94,7 +94,7 @@ if (array_key_exists("pagination", $_GET) ) {
 
       <!-- Page Content -->
   
-      <div class="w3-container w3-animate-opacity gem-animate">
+      <div class="w3-container w3-animate-opacity gem-animate gem-fixed-width">
         
         <!-- ------------------------------------------------------- -->
         <!-- the central selected paint -->
