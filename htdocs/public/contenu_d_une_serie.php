@@ -173,6 +173,9 @@ if (array_key_exists("pagination", $_GET) ) {
 	}
 
 	function updateCentralPaint() {
+            //
+	    document.title= paintTitles[rank_in_gallery];
+	    //
 	    var img = document.getElementById("central-paint-img");
 	    img.src= paintFiles[rank_in_gallery];
 	    img.alt= paintTitles[rank_in_gallery] + " " + gemSignature;
