@@ -18,10 +18,10 @@ class Paint {
     public $type;
     public $status;  // SOLD_STATUS, UNAVAILABLE_STATUS
     public $description;
-    public $themes; // an array of strings
+    public $series; // an array of strings
 
     // as read from CSV
-    // filename, title, date (YYYYMMDD) , width, height, type, status, description, themes
+    // filename, title, date (YYYYMMDD) , width, height, type, status, description, series
     function set_attributes( $array ) {
         $this->rank= $array[0];
         if ( empty($this->rank) ) {
@@ -35,21 +35,21 @@ class Paint {
         $this->file= $array[1]; // le path complet en partant dans images/. Ex: oils/flamboyance.jpg 
         $this->title= $array[2]; 
         $this->date= DateTimeImmutable::createFromFormat("Ymd", $array[3]);
-        $this->width= $array[4];
-        $this->height= $array[5];
+        $this->height= $array[4];
+        $this->width= $array[5];
         $this->type= $array[6];
         $this->setStatus($array[7]);
         $this->description= $array[8];
-        // au cas ou les themes ne sont pas donnes
-        $this->themes=array();
+        // au cas ou les series ne sont pas donnees
+        $this->series=array();
         if ( count($array) > 9 ) {
-            // array[9] contient les themes separes par des espaces
-            $themes= explode(" ", trim($array[9]));
+            // array[9] contient les series separees par des espaces
+            $series= explode(" ", trim($array[9]));
             //
-            foreach( $themes as $theme ) {
-                $cur= trim($theme);
+            foreach( $series as $serie ) {
+                $cur= trim($serie);
                 if ( strlen($cur) > 0 ) {
-                    array_push($this->themes, $cur);
+                    array_push($this->series, $cur);
                 }
             }
         }
@@ -63,7 +63,7 @@ class Paint {
     function setStatus( $status ) {
       $status= trim(strtolower($status));
       if ( empty($status) ) {
-        $this->status= "";
+        $this->status= Paint::AVAILABLE_STATUS;
       } else if ( strcmp( $status, Paint::SOLD_STATUS ) == 0 ) {
         $this->status= Paint::SOLD_STATUS;
       } else if ( strcmp ($status, Paint::UNAVAILABLE_STATUS ) == 0 ) {
@@ -120,7 +120,7 @@ class Paint {
 
     // return a label that shows the dimensions
     function get_size() {
-        return $this->width ."x" .$this->height ." cm";
+        return $this->height ."x" .$this->width ." cm";
     }
 
     // return a protected description
@@ -128,12 +128,12 @@ class Paint {
         return addslashes($this->description);
     }
 
-    function get_themes() {
-        return $this->themes;
+    function get_series() {
+        return $this->series;
     }
 
     function print() {
-        echo "[" .$this->rank .", " .$this->file .", " .$this->title .", " .$this->type .", " .$this->status .", " .date_format($this->date, "Y/m/d") .", " .$this->width ."x" .$this->height .", " .$this->themes ."]";
+        echo "[" .$this->rank .", " .$this->file .", " .$this->title .", " .$this->type .", " .$this->status .", " .date_format($this->date, "Y/m/d") .", " .$this->width ."x" .$this->height .", " .$this->series ."]";
     }
 }
 ?>

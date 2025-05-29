@@ -1,0 +1,35 @@
+/* style for all the serie-xxxx.php pages */
+
+.gem-background-left {margin-top: 10px;}
+.gem-background-right {margin-top: 10px; margin-left: 10px;}
+.gem-background-single {margin-top: 10px;}
+.gem-inline { display:inline-block; vertical-align: text-top}
+
+/* controle le style qui apparait sur le tableau quand on place la souris dessus */
+.gem-hover {
+display: none;
+font-weight: 400;
+}
+
+.gem-very-large-height { height: 600px; }
+.gem-large-height { height: 500px; }
+.gem-medium-height { height: 400px; }
+.gem-small-height { height: 300px; }
+
+
+/* mobiles */
+@media screen and (max-width: 320px) {
+.gem-very-large-height { height: 400px; }
+.gem-large-height { height: 300px; }
+.gem-medium-height { height: 200px; }
+.gem-small-height { height: 200px; }
+}
+
+@media screen and (max-width: 480px) {
+.gem-very-large-height { height: 400px; }
+.gem-large-height { height: 300px; }
+.gem-medium-height { height: 200px; }
+.gem-small-height { height: 200px; }
+}
+
+

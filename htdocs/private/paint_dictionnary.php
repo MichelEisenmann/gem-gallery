@@ -2,7 +2,7 @@
 
 require('paint.php');
 
-// Contient les tableaux qui partagent une meme cle (ca peut etre le type ou le cycle par exemple)
+// Contient les tableaux qui partagent une meme cle (ca peut etre le type ou la serie par exemple)
 class PaintDictionnary {
     // name displayed
     public $name;
@@ -10,7 +10,7 @@ class PaintDictionnary {
     // la cle commune aux tableaux du dictionnaire (le type ou le theme)
     public $key;
 
-    // soit un Theme, soit un Type (Oil, etc)
+    // soit un Type (Oil, etc), soit une Serie
     public $kind;
 
     // array indexed by paint filenames
@@ -23,7 +23,7 @@ class PaintDictionnary {
     public $shownInSelector;
 
     const TYPE= "Type";
-    const THEME= "Theme";
+    const SERIE= "Serie";
 
     const ALL="all";
     const NEW="new";
@@ -31,16 +31,16 @@ class PaintDictionnary {
     public function __construct() {
         $this->paints= array();
         $this->sortedList= array();
-        $this->kind= self::THEME;
+        $this->kind= self::TYPE;
         $this->shownInSelector= TRUE;
-    }
-
-    function is_by_theme() {
-        return $this->kind == self::THEME;
     }
 
     function is_by_type() {
         return $this->kind == self::TYPE;
+    }
+
+    function is_by_serie() {
+        return $this->kind == self::SERIE;
     }
 
     // number of paints
