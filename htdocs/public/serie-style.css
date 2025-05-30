@@ -1,9 +1,23 @@
 /* style for all the serie-xxxx.php pages */
 
-.gem-background-left {margin-top: 10px;}
-.gem-background-right {margin-top: 10px; margin-left: 10px;}
-.gem-background-single {margin-top: 10px;}
-.gem-inline { display:inline-block; vertical-align: text-top}
+/* controle l'agencement des lignes */
+.grid-mono-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.grid-duo-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
 /* controle le style qui apparait sur le tableau quand on place la souris dessus */
 .gem-hover {

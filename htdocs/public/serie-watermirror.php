@@ -96,6 +96,7 @@ $line_generator->generate_style("BrisbaneNorthBank", 50, 50, "white");
 $line_generator->generate_style("BordDeSiagne", 50, 100, "white");
 $line_generator->generate_style("CanalMidi", 50, 50, "black");
     ?>
+
   </style>
   
   <body>
@@ -119,8 +120,6 @@ $line_generator->generate_style("CanalMidi", 50, 50, "black");
       
       
       <!-- Paintings -->
-      <!--   First argument is the height of the line -->
-      <!--   The second number is the percent of width allocated to the first paint -->
 <?= $line_generator->generate_single_line( "gem-medium-height", "ParisQuaiSeine" ); ?>
 <?= $line_generator->generate_double_line( "gem-large-height", "EgretYellowSunset", 50, "MangroveSulfurCockatoo" ); ?>
 <?= $line_generator->generate_double_line( "gem-medium-height", "LaVague", 40, "JeuxDeVagues" ); ?>
