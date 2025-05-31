@@ -11,7 +11,7 @@ return array(
     'momentsfeminins' => 'Feminine Moments',
     'watermirror' => 'Water Mirror',
     'metamorphose' => 'Metamorphosis',
-	'origine' => 'Origin',
+	'emergence' => 'Emergence',
 	
 	//divers
 	'copyrightview' => "View artist's recent exhibition",

@@ -12,7 +12,7 @@ return array(
     'momentsfeminins' => 'Moments Féminins',
     'watermirror' => 'Miroir d\'eau',
     'metamorphose' => 'Métamorphose',
-	'origine' => 'Origine',
+	'emergence' => 'Emergence',
 	
 	// divers
 	'copyrightview' => "Voir la dernière exposition",
