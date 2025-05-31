@@ -121,6 +121,7 @@ if (array_key_exists("pagination", $_GET) ) {
             
             <div class="w3-container w3-center w3-padding-16">
 	          <span id="central-paint-title"></span>
+			       <br>
 	              <span id="central-paint-description"></span>
                       <br>
 		              <span id="central-paint-status"></span>
