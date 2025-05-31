@@ -49,6 +49,15 @@ return array(
     <p>L'exposition qui présentait aussi quelques oeuvres figuratives, en particulier des portraits aux pastels 
 	secs, est terminée. Quelques tableaux sont disponibles à l'achat.
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information</br>
+	</p>",	
+
+    'IntroEmergence' => "
+	<h2>Emergence</h2><p>
+	Emergence présente les oeuvres d'un nouveau départ, une nouvelle voie, de nouvelles compétences
+	à acquérir après la fin de ma carrière en informatique. Aucun fil conducteur; un simple partage 
+    d'émotions au détour d'une rencontre avec une réalité nouvelle.	</p>
+    <p>Quelques tableaux sont disponibles à l'achat.
+	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information</br>
 	</p>",		
 	
     'vendu' => 'Vendu',

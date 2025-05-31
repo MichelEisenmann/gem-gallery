@@ -48,6 +48,15 @@ return array(
 	figurative works, in particular portraits painted with soft pastels. 
 	<br>The exhibition is over, however some paintings are available for purchase.</br>
     <br>Send an email to contact@giseleeisenmann.com for more information</br>
+	</p>",
+
+    'IntroEmergence' => "
+	<h2>Emergence</h2><p>
+	Emergence présents the works of a new beginning, a new path, some new skills to acquire after 
+	the end of my career in computer science. No common thread; a simple sharing of emotions in the course of 
+	an encounter with a new reality.</p>
+    <p>The exhibition is over, however some paintings are available for purchase.</br>
+    <br>Send an email to contact@giseleeisenmann.com for more information</br>
 	</p>",	
 	
 	'Introduction' => '<p>
@@ -63,6 +72,7 @@ return array(
 	 Gem currently lives and works in the French Riviera, France. Since 2021, she has been exhibiting regularly in solo or group exhibitions. 
     </br>
   </p>',
+  
 
     'Avertissement' => 'Warning: The content of this web site is copyrighted. Any reproduction is strictly forbidden.',
 
