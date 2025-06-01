@@ -33,10 +33,10 @@
       <!-- Page Content -->
       <div class="w3-row w3-padding-32 w3-animate-opacity gem-animate gem-fixed-width">
 	<div class="w3-col s6 w3-center w3-container">
-	  <img src="/public/images/web/Accueil-art-gallery1.jpg" alt="" style="width:100%">
+	  <img src="/public/images/web/Gourdon25_murPierres.jpg" alt="" style="width:100%">
 	</div>
 	<div class="w3-col s6 w3-center w3-container">
-	  <img src="/public/images/web/Accueil-art-gallery2.jpg" alt="" style="width:100%" >
+	  <img src="/public/images/web/Gourdon25_AirMarinSakuras.jpg" alt="" style="width:100%" >
 	</div>
       </div>
       
