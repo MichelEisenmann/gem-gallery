@@ -24,15 +24,18 @@ text-decoration: none;
     height: 30px;
 }
 /* remains centered with fixed width when resizing the browser */
-.gem-fixed-width { width: 964px; margin-left: auto; margin-right: auto}
+.gem-fixed-width {width: 964px; margin-left: auto; margin-right: auto}
+.gem-index-fixed-width {width: 800px; margin-left: auto; margin-right: auto}
 
 /* mobiles */
 @media screen and (max-width: 320px) {
-.gem-fixed-width { width: 480px; margin-left: auto; margin-right: auto}
+.gem-fixed-width {width: 480px; margin-left: auto; margin-right: auto}
+.gem-index-fixed-width {width: 480px; margin-left: auto; margin-right: auto}
 }
 
 @media screen and (max-width: 480px) {
-.gem-fixed-width { width: 480px; margin-left: auto; margin-right: auto}
+.gem-fixed-width {width: 480px; margin-left: auto; margin-right: auto}
+.gem-index-fixed-width {width: 480px; margin-left: auto; margin-right: auto}
 }
 
 

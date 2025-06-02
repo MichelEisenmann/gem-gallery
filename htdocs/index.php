@@ -17,9 +17,6 @@
   <?php include ('private/initialize_galleries.php'); ?>
   
   <meta name="viewport" content="width=device-width">
-  <!--
-      <meta name="viewport" content="width=1000, initial-scale=1">
-      -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -31,12 +28,30 @@
       <?php include("public/navbar.php"); ?>
       
       <!-- Page Content -->
-      <div class="w3-row w3-padding-32 w3-animate-opacity gem-animate gem-fixed-width">
-	<div class="w3-col s6 w3-center w3-container">
-	  <img src="/public/images/web/Gourdon25_murPierres.jpg" alt="" style="width:100%">
+      <div class="w3-container w3-animate-opacity gem-animate gem-index-fixed-width">
+        <div class="w3-center">
+	  <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
+	    <img src="/public/images/web/Gourdon25_VueDEnsemble.jpg" alt="" style="width:100%" style="width:100%" />
+	  </a>
 	</div>
-	<div class="w3-col s6 w3-center w3-container">
-	  <img src="/public/images/web/Gourdon25_AirMarinSakuras.jpg" alt="" style="width:100%" >
+        <div class="w3-center w3-padding-16">
+	  <div class="w3-row">
+	    <div class="w3-col s4">
+	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
+		<img src="/public/images/web/Gourdon25_Gi_AirMarin.jpg" alt="" style="width:100%" />
+	      </a>
+	    </div>
+	    <div class="w3-col s4">
+	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
+		<img src="/public/images/web/Gourdon25_Gi_Danseuses.jpg" alt="" style="width:100%"  />
+	      </a>
+	    </div>
+	    <div class="w3-col s4">
+	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
+		<img src="/public/images/web/Gourdon25_Gi_MurPierre.jpg" alt="" style="width:100%"  />
+	      </a>
+	    </div>
+	  </div>
 	</div>
       </div>
       
