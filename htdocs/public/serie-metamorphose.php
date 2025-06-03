@@ -25,7 +25,7 @@ $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 $oil= $ALL_GALLERIES->paint_dictionnaries["oil"];
 $pastel= $ALL_GALLERIES->paint_dictionnaries["pastel"];
 $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
-$other= $ALL_GALLERIES->paint_dictionnaries["other"];
+$aquarelle = $ALL_GALLERIES->paint_dictionnaries["aquarelle"];
 
 // On recupere toutes les peintures qu'on veut voir dans cette serie
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
@@ -52,7 +52,7 @@ $paints["BebeSourit"]= $pastel->paints["Pastels/20240119_Corentin2M_PA26x21.jpg"
 $paints["Tendresse"]= $pastel->paints["Pastels/20240227_Tendresse_PA30x24.jpg"];
 $paints["BebeRose"]= $pastel->paints["Pastels/20240625_BebeRose_PA32x24.jpg"];
 
-$paints["LesMouettes"]= $other->paints["Autres/20230202_LesMouettes_AQ40x30.jpg"];
+$paints["LesMouettes"]= $aquarelle->paints["Autres/20230202_LesMouettes_AQ40x30.jpg"];
 
 
 $line_generator= new LineGenerator();

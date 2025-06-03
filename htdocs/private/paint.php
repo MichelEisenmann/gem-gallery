@@ -99,7 +99,7 @@ class Paint {
         //
         //$fdate= $this->get_date();
 		$fsize= $this->get_size();
-        return $this->title ." - " .$fsize;
+        return $this->title ." - " .Translator::t($this->type) ." - " .$fsize;
     }
 
     function get_status() {

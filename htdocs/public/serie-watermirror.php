@@ -25,7 +25,6 @@ $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 $oil= $ALL_GALLERIES->paint_dictionnaries["oil"];
 $pastel= $ALL_GALLERIES->paint_dictionnaries["pastel"];
 $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
-$other= $ALL_GALLERIES->paint_dictionnaries["other"];
 
 // On recupere toutes les peintures qu'on veut voir dans cette serie
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
@@ -112,13 +111,7 @@ $line_generator->generate_style("CanalMidi", 50, 50, "black");
        <?= Translator::t("IntroWaterMirror"); ?>
       </div>
       
-      <!-- Galerie/Exposition photo -->
-<!--      <div class="w3-container w3-center">
-	<img src="/public/images/web/expo-seillans.png" alt="" style="width:100%">
-      </div>
-	  -->
-      
-      
+       
       <!-- Paintings -->
 <?= $line_generator->generate_single_line( "gem-medium-height", "ParisQuaiSeine" ); ?>
 <?= $line_generator->generate_double_line( "gem-large-height", "EgretYellowSunset", 50, "MangroveSulfurCockatoo" ); ?>

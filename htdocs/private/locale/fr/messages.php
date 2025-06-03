@@ -60,9 +60,7 @@ return array(
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information</br>
 	</p>",		
 	
-    'vendu' => 'Vendu',
-    'indisponible' => 'Collection privée',
-    'disponible' => 'Disponible',
+	
 
 	'contactlaius' => "Pour toute question ou demande de renseignement, 
 	 contacter <b>contact@giseleeisenmann.com</b>
@@ -108,12 +106,20 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     // noms tableaux pour ALT dans HREF
 	'AirMarinTitre' => 'Air Marin',
 	'ParisQuaiSeineTitre' => 'Paris Quai de Seine',
+	
+	// Tableau caracteristiques
+	'oil' => 'Huile sur toile',
+    'acrylic' => 'Acrylique sur toile',
+    'pastel' => 'Pastel Sec sur papier',
+	'aquarelle' => "Aquarelle sur papier",
+	'sanguine' => "Sanguine sur papier",
+	'encrechine' => "Encre de Chine sur papier",
+	'vendu' => 'Vendu',
+    'indisponible' => 'Collection privée',
+    'disponible' => 'Disponible',
+
 
     // oldies -----------------------------
-
-    'oil' => 'Huiles',
-    'acrylic' => 'Acryliques',
-    'pastel' => 'Pastels',
     'other' => 'Autres',
     'abstrait' => 'Abstrait',
     'flore' => 'Flore',

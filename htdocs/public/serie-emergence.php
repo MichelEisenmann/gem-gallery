@@ -25,7 +25,6 @@ $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 $oil= $ALL_GALLERIES->paint_dictionnaries["oil"];
 $pastel= $ALL_GALLERIES->paint_dictionnaries["pastel"];
 $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
-$other= $ALL_GALLERIES->paint_dictionnaries["other"];
 
 // On recupere toutes les peintures qu'on veut voir dans cette serie
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.

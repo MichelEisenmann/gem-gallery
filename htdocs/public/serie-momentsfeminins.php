@@ -25,7 +25,7 @@ $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 $oil= $ALL_GALLERIES->paint_dictionnaries["oil"];
 $pastel= $ALL_GALLERIES->paint_dictionnaries["pastel"];
 $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
-$other= $ALL_GALLERIES->paint_dictionnaries["other"];
+$sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 
 // On recupere toutes les peintures qu'on veut voir dans cette serie
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
@@ -50,7 +50,7 @@ $paints["LaLectrice"]= $acrylic->paints["Acrylique/20250421_Lectrice_AC50x50.jpg
 $paints["LaPiscine"]= $acrylic->paints["Acrylique/20250504_La piscine-AC50x50.jpg"];
 
 // Autres
-$paints["SanguinePascaleGui"]= $other->paints["Autres/20200920_SanguinePascaleGuillaume.jpg"];
+$paints["SanguinePascaleGui"]= $sanguine->paints["Autres/20200920_SanguinePascaleGuillaume.jpg"];
 
 
 $line_generator= new LineGenerator();

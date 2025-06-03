@@ -99,21 +99,25 @@ return array(
 	</br>
 	</p>
 	",
-	
-    'vendu' => 'Sold',
-    'indisponible' => 'Private Coll.',
-    'disponible' => 'Available',
+
 
     // noms tableaux
 	'AirMarinTitre' => 'Sea Air',
 	'ParisQuaiSeineTitre' => 'Paris Seine quay',
+	
+	// Tableau caracteristiques
+	'oil' => 'Oil on canvas',
+    'acrylic' => 'Acrylic on canvas',
+    'pastel' => 'Soft Pastel on Paper',
+	'aquarelle' => "Watercolor on Paper",
+	'sanguine' => "Red Chalk on Paper",
+	'encrechine' => "Indian ink on Paper",
+    'vendu' => 'Sold',
+    'indisponible' => 'Private Coll.',
+    'disponible' => 'Available',
+
 
     // oldies
-
-    'oil' => 'Oils',
-    'acrylic' => 'Acrylics',
-    'pastel' => 'Pastels',
-    'other' => 'Others',
     'abstrait' => 'Abstract',
     'flore' => 'Floral',
     'paysage' => 'Landscape',
