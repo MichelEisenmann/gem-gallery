@@ -1,6 +1,7 @@
 #!/bin/sh
 set -o xtrace
 
+cp -r htdocs/*.html //10.0.0.43/web
 cp -r htdocs/*.php //10.0.0.43/web
 mkdir //10.0.0.43/web/private
 cp -r htdocs/private //10.0.0.43/web
