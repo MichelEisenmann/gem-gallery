@@ -25,7 +25,7 @@
 -1;Acrylique/20211003_LucPlanneur_AC30x40.jpg;L'aviateur;20211003;30;40;acrylic;;aérodrome des Planneurs;emergence
 -1;Acrylique/20211019_PortraitGuillaumeTetine_AC33x24.jpg;Guillaume;20211019;33;24;acrylic;indisponible;Guillaume 2ans, doudou et tetine;emergence
 -1;Acrylique/20211105_OlenEnPied_AC55x46.jpg;Royal;20211105;55;46;acrylic;indisponible;Olen le chien avec sa friandise;emergence
--1;Acrylique/20211127_JeuxDeVagues_AC45x55.jpg;Jeux de vagues;20211127;45;55;acrylic;;Esterel (83);watermirror
+-1;Acrylique/20211127_JeuxDeVagues_AC45x55.jpg;Jeux de vagues;20211127;45;55;acrylic;indisponible;Esterel (83);watermirror
 #-1;Acrylique/20211209_IleAuxLoups.png;Ile aux loups;20211209;40;80;acrylic;; ;emergence
 -1;Acrylique/20211228_EvocationGourdon_AC73x90.jpg;Evocation de Gourdon;20211228;73;90;acrylic;;La côte et le Cap Antibes;metamorphose
 -1;Acrylique/20220317_LesZebres_AC80x40.jpg;Les zebres;20220317;80;40;acrylic;;Zèbres de Namibie en miroir;watermirror
@@ -53,9 +53,9 @@
 -1;Acrylique/20250421_Lectrice_AC50x50.jpg;La lectrice;20250421;50;50;acrylic;;;momentsfeminins
 -1;Acrylique/20250504_La piscine-AC50x50.jpg;La piscine;20250504;50;50;acrylic;;;momentsfeminins
 -1;Huile/20211229_Automne_FromCezanne.jpg;Automne;20211229;80;40;oil;;Automne (d'après Cézanne);emergence
--1;Huile/20220222_Melancolie_HU46x55.jpg;Melancolie;20220222;46;55;oil;;Rêverie sur canapé;emergence
+-1;Huile/20220222_Melancolie_HU46x55.jpg;Melancolie;20220222;46;55;oil;indisponible;Rêverie sur canapé;emergence
 -1;Huile/20220601_EgretYellowSunset-HU90x65.jpg;The great egret;20220601;90;65;oil;;Terranora Creek - Australian Great Egret;watermirror
--1;Huile/20220723_Chardin-FraisesDesBois_HU60x80.jpg;Panier de fraises des bois;20220723;60;80;oil;;Le panier de fraises des bois (d'apres Jean Siméon Chardin);emergence
+-1;Huile/20220723_Chardin-FraisesDesBois_HU60x80.jpg;Panier de fraises des bois;20220723;60;80;oil;indisponible;Le panier de fraises des bois (d'apres Jean Siméon Chardin);emergence
 -1;Huile/20221128_ReveDeTropiques_HU53x70.jpg;Rêve de tropiques;20221128;53;72;oil;; ;watermirror
 -1;Huile/20221109_Flamboyance_HU32x41.jpg;Flamboyance;20221109;32;41;oil;indisponible; ;metamorphose
 -1;Huile/20230216_LesDanseuses_Huile.jpg;Les danseuses;20230216;65;80;oil;;Hommage Pina Bausch Le sacre du Printemps;momentsfeminins
@@ -70,7 +70,7 @@
 -1;Huile/20240728_Brume_HU54x73.jpg;Brumes du soir;20240728;54;73;oil;; ;momentsfeminins
 -1;Huile/20241225_LeTorrent_HU41x33.jpg;Au milieu coule une rivière;20241225;41;33;oil;;Parc du Mercantour (06) ;momentsfeminins
 -1;Huile/20250314_AirMarin_HU50x50.jpg;Air Marin;20250314;50;50;oil;; ;momentsfeminins
--1;Huile/20250319_PortraitPascale_HU50x50.jpg;Portrait de Pascale;20250319;50;50;oil;; ;momentsfeminins
+-1;Huile/20250319_PortraitPascale_HU50x50.jpg;Portrait de Pascale;20250319;50;50;oil;indisponible; ;momentsfeminins
 -1;Pastels/20200809_Le lievre.jpg;Le lièvre;20200809;18;24;pastel;indisponible; ;emergence
 -1;Pastels/20200815_AmericanRobin.jpg;American Robins;20200815;18;24;pastel;; ;emergence
 -1;Pastels/20200824_GuillaumeMaximilien_Bisou.jpg;Calin;20200824;17;23;pastel;indisponible; ;emergence
@@ -95,6 +95,7 @@
 -1;Pastels/20240428_BordDeSiagne_PA32x24.jpg;Bord de Siagne;20240428;32;24;pastel;; Bord de rivière. Le chien Olen;watermirror
 -1;Pastels/20240625_BebeRose_PA32x24.jpg;Bébé et la rose;20240625;32;24;pastel;; Corentin 7mois. Pastels secs et sanguine;metamorphose
 -1;Pastels/20240628_BrisbaneNorthBank_PA21x27.jpg;Brisbane North Bank;20240628;21;27;pastel;;Rivière Brisbane, NSW, Australie;watermirror
+-1;Pastels/20250605_RosesRouges_PA20x18.jpg;Roses Rouges;20250605;20;18;pastel;;Rosier de Gourdon (06);momentsfeminins
 -1;Autres/20200920_SanguinePascaleGuillaume.jpg;Mere et enfant;20200920;12;18;sanguine;vendu;Sanguine- Mere et enfant;momentsfeminins
 #-1;Autres/20201220_Loup et Corbeaux.jpg;Loup et Corbeaux;20201220;18;24;encrechine;;Encre de chine - Loups et corbeaux;emergence
 -1;Autres/20230202_LesMouettes_AQ40x30.jpg;Les mouettes;20230202;40;30;aquarelle;;Aquarelle - Les mouettes;metamorphose

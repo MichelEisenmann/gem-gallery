@@ -34,6 +34,7 @@
       <ul>
 	2025
 	<ul>
+	  <li><?= Translator::t('momentsfeminins') ?>, Le Cannet (06, France) - <?= Translator::t('futureExpoDate') ?></li>
 	  <li><?= Translator::t('momentsfeminins') ?>, Gourdon (06, France) - <?= Translator::t('currentExpoDate') ?></li>
 	</ul>
       </ul>

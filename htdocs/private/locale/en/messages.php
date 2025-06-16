@@ -20,16 +20,18 @@ return array(
 	'faitespeinture' => 'Painting Festival',
 	'assopicasso' => 'Picasso Museum friends organization',
 
-    'currentExpoDate' => 'May 30th to June 12th',
+    'currentExpoDate' => 'May 30th to June 12th - Closed',
+	'futureExpoDate' => 'December 18th - 31st',
     
     'IntroMomentsFem' => '
      <h2>Feminine Moments</h2>
 	 <p>Feminine Moments is a tribute to the beauty of women in their daily existence, from daydreaming 
 	 supervising children at the beach, from dancing to mischievous childhood, 
-	 from the wink of connivance between friends to maternal love.</p>
-     <p>The exhibition, which also presents some of the latest works, will be held from May 30 to June 12, 2025. 
-	 The paintings are available for purchase.
-	  <br>Send an email to contact@giseleeisenmann.com for more information</br>
+	 from the wink of connivance between friends to maternal love.
+	 <br>Get the full view of the painting by clicking on it. </p> 
+     <p>The next exhibition, which also presents some of the latest works, will be held December 18th-31st, 2025
+	 at Le Cannet, Terrasse des Arts (06). Some paintings are available for purchase.
+	 <br>Send an email to contact@giseleeisenmann.com for more information</br>
 	  </p>',
  
 	'IntroWaterMirror' => "

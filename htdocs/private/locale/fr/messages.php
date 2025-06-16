@@ -21,15 +21,17 @@ return array(
     'faitespeinture' => 'Faîtes de la peinture',
     'assopicasso' => 'Association Les amis du Musée Picasso',	
 
-    'currentExpoDate' => '30 Mai au 12 Juin',
+    'currentExpoDate' => '30 Mai au 12 Juin - Terminée',
+	'futureExpoDate' => '18 Décembre au 31 Décembre 2025',
 
     'IntroMomentsFem' => "
 	<h2>Moments Féminins</h2><p>
 	Moments Féminins est un hommage à la beauté des femmes dans leur existence au quotidien, de la rêverie 
 	à la surveillance des enfants à la plage, de la danse à l'enfance espiègle, 
-	du clin d'oeil de connivence entre amies à l'amour maternel.</p>
-    <p>L'exposition qui présente aussi quelques oeuvres récentes se tiendra du 30 Mai au 12 Juin 2025. 
-	Les tableaux sont disponibles à l'achat.
+	du clin d'oeil de connivence entre amies à l'amour maternel. 
+	<br>Obtenez une vue complète du tableau en cliquant dessus</p>
+    <p>L'exposition qui présente aussi quelques oeuvres récentes s'est tenue du 30 Mai au 12 Juin 2025 à Gourdon (06). 
+	Une nouvelle session aura lieu du 18 au 31 Décembre à Le Cannet, Terrasse des Arts (06). 
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information</br>
 	</p>",	
 	
