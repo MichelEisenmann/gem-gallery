@@ -51,6 +51,7 @@ $paints["LaPiscine"]= $acrylic->paints["Acrylique/20250504_La piscine-AC50x50.jp
 
 // Pastels
 $paints["RosesRouges"]= $pastel->paints["Pastels/20250605_RosesRouges_PA20x18.jpg"];
+$paints["LeNenuphar"]= $pastel->paints["Pastels/20250609_LeNenuphar_PA15x10.jpg"];
 // Autres
 $paints["SanguinePascaleGui"]= $sanguine->paints["Autres/20200920_SanguinePascaleGuillaume.jpg"];
 
@@ -99,6 +100,7 @@ $line_generator->generate_style("SakuraNenuphars", 50, 50, "white");
 $line_generator->generate_style("JeuxDeRegards", 50, 50, "white");
 $line_generator->generate_style("LaLectrice", 50, 50, "white");
 $line_generator->generate_style("RosesRouges", 50, 50, "white");
+$line_generator->generate_style("LeNenuphar", 50, 50, "white");
     ?>
   </style>
   
@@ -131,9 +133,10 @@ $line_generator->generate_style("RosesRouges", 50, 50, "white");
 <?= $line_generator->generate_single_line( "gem-medium-height", "BrumesDuSoir" ); ?>
 <?= $line_generator->generate_single_line( "gem-medium-height", "LesDanseuses" ); ?>
 <?= $line_generator->generate_double_line( "gem-large-height", "Contemplation", 60, "PortraitPascale" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "JeuxDeRegards", 60, "LaPiscine" ); ?>
+<?= $line_generator->generate_double_line( "gem-large-height", "LeNenuphar" , 50, "LaPiscine" ); ?>
 <?= $line_generator->generate_single_line( "gem-medium-height", "SakuraNenuphars"); ?>
 <?= $line_generator->generate_double_line( "gem-medium-height", "SanguinePascaleGui", 50, "RosesRouges" ); ?>
+<?= $line_generator->generate_single_line( "gem-small-height", "JeuxDeRegards" ); ?>
 <?= $line_generator->generate_single_line( "gem-medium-height", "Aigrette" ); ?>
 
      <!-- Footer -->

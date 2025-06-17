@@ -40,9 +40,9 @@ $paints["LaTrouee"]= $acrylic->paints["Acrylique/20210801_OlenLaTroueeDonazac_AC
 $paints["LucPlanneur"]= $acrylic->paints["Acrylique/20211003_LucPlanneur_AC30x40.jpg"];
 $paints["GuiTetine"]= $acrylic->paints["Acrylique/20211019_PortraitGuillaumeTetine_AC33x24.jpg"];
 $paints["OlenEnPied"]= $acrylic->paints["Acrylique/20211105_OlenEnPied_AC55x46.jpg"];
-$paints["Abutilons"]= $acrylic->paints["Acrylique/20221016_Abutilon_AC20x27.jpg"];
 $paints["FlamandsRouges"]= $acrylic->paints["Acrylique/20220723_LesFlamantsRouges_AC50x50.jpg"];
 $paints["GuilPiscine"]= $acrylic->paints["Acrylique/20210722_GuillaumePensePiscine_AC20x20.jpg"];
+
 
 
 // Pastels et Autres
@@ -76,25 +76,25 @@ $line_generator->serie_dico= $serie;  // will be used to browse exclusively amon
     /* Cette zone va "clipper" la peinture */
     /* La partie visible de la peinture est definie par les deux valeurs */
     /* Elles definissent quel point de la peinture sera affiche au centre de la zone */
-    /* Par ex: 50, 50 veut dire que le milieu de la peinture (50%, 50%) est au centre de la zone */
+    /* Par ex: 50, 50 veut dire que le milieu de la peinture (W 50%, H 50%) est au centre de la zone */
+	/* 0 est en haut à gauche. H 100 clippera plus vers le bas de la peinture */
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
 $line_generator->generate_style("AutomneCezanne", 0, 50, "white");
-$line_generator->generate_style("PanierFraises", 50, 50, "white");
-$line_generator->generate_style("Melancolie", 50, 50, "black");
-$line_generator->generate_style("Donazac", 50, 50, "white");
-$line_generator->generate_style("LaTrouee", 50, 75, "black");
-$line_generator->generate_style("LucPlanneur", 50, 50, "white");
-$line_generator->generate_style("GuiTetine", 50, 50, "white");
 $line_generator->generate_style("OlenEnPied", 50, 50, "white");
-$line_generator->generate_style("Abutilons", 50, 50, "white");
-$line_generator->generate_style("FlamandsRouges", 100, 50, "white");
-$line_generator->generate_style("GuilPiscine", 50, 50, "white");
+$line_generator->generate_style("PanierFraises", 50, 50, "white");
+$line_generator->generate_style("LaTrouee", 50, 75, "black");
+$line_generator->generate_style("GuiTetine", 50, 50, "white");
 $line_generator->generate_style("Lievre", 50, 50, "white");
+$line_generator->generate_style("FlamandsRouges", 100, 50, "white");
+$line_generator->generate_style("Donazac", 50, 50, "white");
 $line_generator->generate_style("AmericanRobins", 50, 50, "black");
+$line_generator->generate_style("LucPlanneur", 50, 100, "white");
 $line_generator->generate_style("Bisou", 50, 50, "white");
 $line_generator->generate_style("WadiRamm", 50, 50, "white");
+$line_generator->generate_style("GuilPiscine", 0, 80, "white");
+$line_generator->generate_style("Melancolie", 50, 50, "black");
 $line_generator->generate_style("PascRenaissance", 50, 50, "white");
     ?>
   </style>
@@ -121,14 +121,17 @@ $line_generator->generate_style("PascRenaissance", 50, 50, "white");
       <!-- Paintings -->
       <!--   First argument is the height of the line -->
       <!--   The second number is the percent of width allocated to the first paint -->
-<?= $line_generator->generate_double_line( "gem-very-large-height", "AutomneCezanne", 50, "OlenEnPied" ); ?>
+<?= $line_generator->generate_double_line( "gem-large-height", "AutomneCezanne", 50, "OlenEnPied" ); ?>
 <?= $line_generator->generate_single_line( "gem-large-height", "PanierFraises" ); ?>
-<?= $line_generator->generate_double_line( "gem-very-large-height", "LaTrouee", 60, "GuiTetine" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "Lievre", 50, "Abutilons" ); ?>
+<?= $line_generator->generate_double_line( "gem-large-height", "LaTrouee", 50, "GuiTetine" ); ?>
+<?= $line_generator->generate_double_line( "gem-medium-height", "Lievre", 50, "AmericanRobins" ); ?>
 <?= $line_generator->generate_single_line( "gem-medium-height", "Donazac" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "FlamandsRouges", 60, "AmericanRobins" ); ?>
-<?= $line_generator->generate_double_line( "gem-small-height", "Bisou", 50, "WadiRamm" ); ?>
-<?= $line_generator->generate_single_line( "gem-very-large-height", "LucPlanneur" ); ?>
+<?= $line_generator->generate_double_line( "gem-large-height", "FlamandsRouges", 50, "LucPlanneur" ); ?>
+<?= $line_generator->generate_double_line( "gem-small-height", "Bisou", 50, "GuilPiscine" ); ?>
+<?= $line_generator->generate_single_line( "gem-small-height", "WadiRamm" ); ?>
+<?= $line_generator->generate_double_line( "gem-medium-height", "Melancolie", 50, "PascRenaissance" ); ?>
+
+
 
      <!-- Footer -->
     <?php include("../public/copyright.php"); ?>

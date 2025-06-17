@@ -18,11 +18,11 @@
 #;;;;;;;;;
 # rank;filename;title;date;height;width;type;status;description;series
 #-1;Acrylique/20210624_Lever soleil sur Donazac.jpg;Matin sur Donazac;20210610;28;38;acrylic;;Lever soleil Donazac (11);emergence
--1;Acrylique/20210722_GuillaumePensePiscine_AC20x20.jpg;Guillaume pense;20210710;20;20;acrylic;;Réflexion au bord de piscine;emergence
--1;Acrylique/20210801_OlenLaTroueeDonazac_AC33x24.jpg;La trouée du bois;20210810;33;24;acrylic;vendu;(collection privée Paris, FR);emergence
+-1;Acrylique/20210722_GuillaumePensePiscine_AC20x20.jpg;Guillaume pense;20210710;20;20;acrylic;indisponible;Réflexion au bord de piscine;emergence
+-1;Acrylique/20210801_OlenLaTroueeDonazac_AC33x24.jpg;La trouée du bois;20210810;33;24;acrylic;indisponible;(collection privée Paris, FR);emergence
 #-1;Acrylique/20210815_Polynesie-PascaleEtLuc.jpg;Lagon à Taha'a;20210815;33;46;acrylic;;Enfants dans le lagon de Polynesie;emergence
 #-1;Acrylique/20210826_Jeux d eaux Nice_Acrylic.jpg;Miroir d'eau;20210826;12;18;acrylic;;Promenade du Paillon Nice 06;emergence
--1;Acrylique/20211003_LucPlanneur_AC30x40.jpg;L'aviateur;20211003;30;40;acrylic;;aérodrome des Planneurs;emergence
+-1;Acrylique/20211003_LucPlanneur_AC30x40.jpg;L'aviateur;20211003;30;40;acrylic;indisponible;aérodrome des Planneurs;emergence
 -1;Acrylique/20211019_PortraitGuillaumeTetine_AC33x24.jpg;Guillaume;20211019;33;24;acrylic;indisponible;Guillaume 2ans, doudou et tetine;emergence
 -1;Acrylique/20211105_OlenEnPied_AC55x46.jpg;Royal;20211105;55;46;acrylic;indisponible;Olen le chien avec sa friandise;emergence
 -1;Acrylique/20211127_JeuxDeVagues_AC45x55.jpg;Jeux de vagues;20211127;45;55;acrylic;indisponible;Esterel (83);watermirror
@@ -52,7 +52,7 @@
 -1;Acrylique/20240915_Pelican_AC55x38.jpg;Le pélican qui s'en va tout seul;20240915;38;55;acrylic;; ;momentsfeminins
 -1;Acrylique/20250421_Lectrice_AC50x50.jpg;La lectrice;20250421;50;50;acrylic;;;momentsfeminins
 -1;Acrylique/20250504_La piscine-AC50x50.jpg;La piscine;20250504;50;50;acrylic;;;momentsfeminins
--1;Huile/20211229_Automne_FromCezanne.jpg;Automne;20211229;80;40;oil;;Automne (d'après Cézanne);emergence
+-1;Huile/20211229_Automne_FromCezanne.jpg;Automne;20211229;80;40;oil;indisponible;Automne (d'après Cézanne);emergence
 -1;Huile/20220222_Melancolie_HU46x55.jpg;Melancolie;20220222;46;55;oil;indisponible;Rêverie sur canapé;emergence
 -1;Huile/20220601_EgretYellowSunset-HU90x65.jpg;The great egret;20220601;90;65;oil;;Terranora Creek - Australian Great Egret;watermirror
 -1;Huile/20220723_Chardin-FraisesDesBois_HU60x80.jpg;Panier de fraises des bois;20220723;60;80;oil;indisponible;Le panier de fraises des bois (d'apres Jean Siméon Chardin);emergence
@@ -65,7 +65,7 @@
 -1;Huile/20230921_TheRiverBank_Vlaminck_38x46.jpg;The river bank;20230921;38;46;oil;;After The river Bank(1909) Maurice de Vlaminck (1876-1958) FR Fauvisme;momentsfeminins
 -1;Huile/20240130_Zenitude_HU33x24.jpg;Zenitude;20240130;33;24;oil;vendu; ;watermirror
 -1;Huile/20240204_Baigneurs_Huile_50x100.jpg;Baignade à la rivière;20240204;50;100;oil;;Cudgen River, Kingscliff, NSW Australie;momentsfeminins
--1;Huile/20240601_ChapeauOrange_HU46x33.jpg;Le chapeau orange;20240601;46;33;oil;;Corentin et son chapeau;metamorphose
+-1;Huile/20240601_ChapeauOrange_HU46x33.jpg;Le chapeau orange;20240601;46;33;oil;indisponible;Corentin et son chapeau;metamorphose
 -1;Huile/20240613_Sakura-nenuphars_HU54x73.jpg;Sakura et Nénuphars;20240613;54;73;oil;;Cerisiers du temple Byodo-In (Japon);momentsfeminins
 -1;Huile/20240728_Brume_HU54x73.jpg;Brumes du soir;20240728;54;73;oil;; ;momentsfeminins
 -1;Huile/20241225_LeTorrent_HU41x33.jpg;Au milieu coule une rivière;20241225;41;33;oil;;Parc du Mercantour (06) ;momentsfeminins
@@ -79,7 +79,7 @@
 #-1;Pastels/20200902_BebeEpanoui.jpg;Bebe Epanoui;20200902;19;14;pastel;; ;emergence
 -1;Pastels/20200906_Guillaume-surlaTable_Pascale.jpg;Premiers pas;20200906;19;13;pastel;indisponible; ;emergence
 #-1;Pastels/20201023_Luc_Profil.jpg;Profil;20201023;24;18;pastel;; ;emergence
--1;Pastels/20201106_Pascale_RenaissanceItalienne.jpg;Dans le vent;20201106;18;24;pastel;; ;emergence
+-1;Pastels/20201106_Pascale_RenaissanceItalienne.jpg;Dans le vent;20201106;18;24;pastel;indisponible; ;emergence
 -1;Pastels/20201110_Le bisou_PascaleGuillaume.jpg;Le bisou;20201110;20;28;pastel;indisponible; ;emergence
 #-1;Pastels/20201111_Luc au clair de lune.jpg;Clair de Lune;20201111;30;40;pastel;; ;emergence
 #-1;Pastels/20201206_Fiancailles_VersionAUS.jpg;Fiançailles;20201206;30;40;pastel;;Pastel - Fiançailles (collection privée Brisbane, AUS);emergence
@@ -91,11 +91,12 @@
 -1;Pastels/20210917_MichelPolynesie_PA20x28.jpg;Torride;20210917;20;28;pastel;indisponible;Pastel- Au soleil de Polynesie;metamorphose
 -1;Pastels/20220714_LaBrague_PA21x28.jpg;La Brague;20220714;21;28;pastel;;Pastel- La Brague près du pont des Tamarins (Biot, 06);watermirror
 -1;Pastels/20240119_Corentin2M_PA26x21.jpg;Bébé sourit;20240119;26;21;pastel;indisponible;Pastel- Corentin 2 mois;metamorphose
--1;Pastels/20240227_Tendresse_PA30x24.jpg;Tendresse;20240227;30;24;pastel;; Corentin, son père et leur chat;metamorphose
+-1;Pastels/20240227_Tendresse_PA30x24.jpg;Tendresse;20240227;30;24;pastel;indisponible; Corentin, son père et leur chat;metamorphose
 -1;Pastels/20240428_BordDeSiagne_PA32x24.jpg;Bord de Siagne;20240428;32;24;pastel;; Bord de rivière. Le chien Olen;watermirror
--1;Pastels/20240625_BebeRose_PA32x24.jpg;Bébé et la rose;20240625;32;24;pastel;; Corentin 7mois. Pastels secs et sanguine;metamorphose
+-1;Pastels/20240625_BebeRose_PA32x24.jpg;Bébé et la rose;20240625;32;24;pastel;indisponible; Corentin 7mois. Pastels secs et sanguine;metamorphose
 -1;Pastels/20240628_BrisbaneNorthBank_PA21x27.jpg;Brisbane North Bank;20240628;21;27;pastel;;Rivière Brisbane, NSW, Australie;watermirror
 -1;Pastels/20250605_RosesRouges_PA20x18.jpg;Roses Rouges;20250605;20;18;pastel;;Rosier de Gourdon (06);momentsfeminins
--1;Autres/20200920_SanguinePascaleGuillaume.jpg;Mere et enfant;20200920;12;18;sanguine;vendu;Sanguine- Mere et enfant;momentsfeminins
+-1;Pastels/20250609_LeNenuphar_PA15x10.jpg;Le Nénuphar;20250609;15;10;pastel;indisponible;;momentsfeminins
+-1;Autres/20200920_SanguinePascaleGuillaume.jpg;Mere et enfant;20200920;12;18;sanguine;indisponible;Sanguine- Mere et enfant;momentsfeminins
 #-1;Autres/20201220_Loup et Corbeaux.jpg;Loup et Corbeaux;20201220;18;24;encrechine;;Encre de chine - Loups et corbeaux;emergence
 -1;Autres/20230202_LesMouettes_AQ40x30.jpg;Les mouettes;20230202;40;30;aquarelle;;Aquarelle - Les mouettes;metamorphose
