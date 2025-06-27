@@ -85,7 +85,7 @@ class LineGenerator {
     $this->print_line( $indent, "<div class=\"w3-display-container " .$height_style ." " ." gem-" .$tagname ."\"" );
     $this->print_line( $indent, $ttab .$ttab .">" );
     $this->print_line( $indent, $ttab ."<div class=\"w3-display-middle gem-hover\">" );
-    $this->print_line( $indent, $ttab .$ttab .$paint->title ." </br> " .Translator::t($paint->type) ." </br> " .$paint->get_size() ." </br> ");
+    $this->print_line( $indent, $ttab .$ttab .Translator::t($paint->getTitleId()) ." </br> " .Translator::t($paint->type) ." </br> " .$paint->get_size() ." </br> ");
     $this->print_line( $indent, $ttab .$ttab .Translator::t($paint->get_status()) ." </br> " );
     $this->print_line( $indent, $ttab ."</div>" );
     $this->print_line( $indent, "</div>" );
@@ -146,23 +146,6 @@ class LineGenerator {
     $this->print_line( $indent, "</div>" );
   }
   
-  
-  function generate_part_old( $paint, $tagname, $width, $height_style, $style, $indent) {
-    $rank= $this->serie_dico->get_file_rank($paint->file);
-    $serie= $this->serie_dico->name;
-    $url= Translator::url('/public/contenu_d_une_serie.php?serie=' .$serie .'&rank=' .$rank);
-    
-    $ttab= $this->tab;	
-    $this->print_line( $indent, "<a class=\"gem-a\" href=\"" .$url ."\">" );
-    $this->print_line( $indent, "<div class=\"w3-display-container gem-inline " .$height_style ." " .$style ." gem-" .$tagname ."\"" );
-    $this->print_line( $indent, $ttab .$ttab ."style=\"width:" .$width ."%;\">" );
-    $this->print_line( $indent, $ttab ."<div class=\"w3-display-middle gem-hover\">" );
-    $this->print_line( $indent, $ttab .$ttab .$paint->title ." </br> " .$paint->get_size() ." </br> ");
-    $this->print_line( $indent, $ttab .$ttab .Translator::t($paint->get_status()) ." </br> " );
-    $this->print_line( $indent, $ttab ."</div>" );
-    $this->print_line( $indent, "</div>" );
-    $this->print_line( $indent, "</a>" );
-  }
   
   function generate_style( $id, $xpos, $ypos, $color ) {
     $paint= $this->paints[$id];
