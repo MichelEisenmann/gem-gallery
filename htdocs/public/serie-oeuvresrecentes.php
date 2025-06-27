@@ -18,7 +18,7 @@
 
 <?php
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
-$serie_key='momentsfeminins';
+$serie_key='oeuvresrecentes';
 $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 
 // ces dictionnaires sont les dictionnaires standard
@@ -31,28 +31,14 @@ $sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
 // Cet ID servira a les designer le moment venu.
 // Oils
-$paints["LesDanseuses"]= $oil->paints["Huile/20230216_LesDanseuses_Huile.jpg"];
-$paints["ClairDeSoleil"]= $oil->paints["Huile/20230708_ClairDeSoleil_HU92x65.jpg"];
-$paints["TheRiverBankVlaminck"]= $oil->paints["Huile/20230921_TheRiverBank_Vlaminck_38x46.jpg"];
-$paints["BaigneursRiviere"]= $oil->paints["Huile/20240204_Baigneurs_Huile_50x100.jpg"];
-$paints["SakuraNenuphars"]= $oil->paints["Huile/20240613_Sakura-nenuphars_HU54x73.jpg"];
-$paints["BrumesDuSoir"]= $oil->paints["Huile/20240728_Brume_HU54x73.jpg"];
-$paints["LeTorrent"]= $oil->paints["Huile/20241225_LeTorrent_HU41x33.jpg"];
-$paints["AirMarin"]= $oil->paints["Huile/20250314_AirMarin_HU50x50.jpg"];
-$paints["PortraitPascale"]= $oil->paints["Huile/20250319_PortraitPascale_HU50x50.jpg"];
 $paints["NightClub"]= $oil->paints["Huile/20250615_NightClub_HU50x50.jpg"];
 
 // Acrylics
-$paints["JeuxDeRegards"]= $acrylic->paints["Acrylique/20220821_Regards.jpg"];
-$paints["Contemplation"]= $acrylic->paints["Acrylique/20230530_Contemplation_A100x73.jpg"];
-$paints["Aigrette"]= $acrylic->paints["Acrylique/20240822_Aigrette_AC50x76.jpg"];
-$paints["PelicanSeul"]= $acrylic->paints["Acrylique/20240915_Pelican_AC55x38.jpg"];
-$paints["LaLectrice"]= $acrylic->paints["Acrylique/20250421_Lectrice_AC50x50.jpg"];
-$paints["LaPiscine"]= $acrylic->paints["Acrylique/20250504_La piscine-AC50x50.jpg"];
 
-
-// Autres
-$paints["SanguinePascaleGui"]= $sanguine->paints["Autres/20200920_SanguinePascaleGuillaume.jpg"];
+// Pastels
+$paints["RosesRouges"]= $pastel->paints["Pastels/20250605_RosesRouges_PA20x18.jpg"];
+$paints["LeNenuphar"]= $pastel->paints["Pastels/20250609_LeNenuphar_PA15x10.jpg"];
+$paints["GourdonEglise"]= $pastel->paints["Pastels/20250620_GourdonEglise_PA26x18.jpg"];
 
 
 $line_generator= new LineGenerator();
@@ -82,24 +68,10 @@ $line_generator->serie_dico= $serie;  // will be used to browse exclusively amon
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$line_generator->generate_style("AirMarin", 50, 50, "white");
 $line_generator->generate_style("NightClub", 50, 50, "white");
-$line_generator->generate_style("PortraitPascale", 50, 50, "black");
-$line_generator->generate_style("PelicanSeul", 50, 50, "white");
-$line_generator->generate_style("ClairDeSoleil", 70, 50, "white");
-$line_generator->generate_style("BaigneursRiviere", 0, 100, "white");
-$line_generator->generate_style("Contemplation", 70, 100, "black");
-$line_generator->generate_style("LeTorrent", 0, 50, "white");
-$line_generator->generate_style("TheRiverBankVlaminck", 50, 50, "white");
-$line_generator->generate_style("LesDanseuses", 50, 50, "white");
-$line_generator->generate_style("BrumesDuSoir", 50, 50, "white");
-$line_generator->generate_style("LaPiscine", 70, 50, "white");
-$line_generator->generate_style("Aigrette", 50, 100, "white");
-$line_generator->generate_style("SanguinePascaleGui", 40, 50, "white");
-$line_generator->generate_style("SakuraNenuphars", 50, 50, "white");
-$line_generator->generate_style("JeuxDeRegards", 50, 50, "white");
-$line_generator->generate_style("LaLectrice", 50, 50, "white");
-
+$line_generator->generate_style("RosesRouges", 50, 50, "white");
+$line_generator->generate_style("LeNenuphar", 50, 50, "white");
+$line_generator->generate_style("GourdonEglise", 50, 50, "black");
     ?>
   </style>
   
@@ -120,17 +92,10 @@ $line_generator->generate_style("LaLectrice", 50, 50, "white");
       <!-- Paintings -->
       <!--   First argument is the height of the line -->
       <!--   The second number is the percent of width allocated to the first paint -->
-<?= $line_generator->generate_double_line( "gem-large-height", "AirMarin", 50, "NightClub" ); ?>
-<?= $line_generator->generate_single_line( "gem-medium-height", "BaigneursRiviere" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "PortraitPascale", 60, "LaLectrice" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "LeTorrent", 60, "TheRiverBankVlaminck" ); ?>
-<?= $line_generator->generate_single_line( "gem-medium-height", "LesDanseuses" ); ?>
-<?= $line_generator->generate_single_line( "gem-medium-height", "BrumesDuSoir" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "Contemplation", 60, "ClairDeSoleil" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "PelicanSeul" , 50, "LaPiscine" ); ?>
-<?= $line_generator->generate_single_line( "gem-medium-height", "SakuraNenuphars"); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "SanguinePascaleGui", 50, "JeuxDeRegards" ); ?>
-<?= $line_generator->generate_single_line( "gem-medium-height", "Aigrette" ); ?>
+<?= $line_generator->generate_double_line( "gem-medium-height", "LeNenuphar", 50, "RosesRouges" ); ?>
+<?= $line_generator->generate_double_line( "gem-large-height", "NightClub" , 50, "GourdonEglise" ); ?>
+
+
 
      <!-- Footer -->
     <?php include("../public/copyright.php"); ?>
