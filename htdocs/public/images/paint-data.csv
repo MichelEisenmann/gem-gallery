@@ -2,6 +2,8 @@
 #   - '-1' ou pas de valeur, signifie que la date sera utilisee pour le tri (la plus recente en premier);;;;;;;;;;
 #   - une valeur positive signifie qu'on utilise cette valeur pour le tri (valeurs les plus fortes apparaissent en premier);;;;;;;;;;
 #;;;;;;;;;;
+# ID sert a rechercher le titre ainsi que les mots cles (Alt) dans les fichiers messages correspondants.;;;;;;;;;;
+;;;;;;;;;;
 # Status permet par exemple d'indiquer qu'un tableau a ete vendu ou qu'il n'est pas a vendre.;;;;;;;;;;
 "#   ""vendu"" -> le tableau a ete vendu";;;;;;;;;;
 "#   ""indisponible"" -> le tableau n'est pas a vendre";;;;;;;;;;
