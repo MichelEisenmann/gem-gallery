@@ -1,104 +1,104 @@
-# Rank est utilise pour trier les peintures;;;;;;;;;
-#   - '-1' ou pas de valeur, signifie que la date sera utilisee pour le tri (la plus recente en premier);;;;;;;;;
-#   - une valeur positive signifie qu'on utilise cette valeur pour le tri (valeurs les plus fortes apparaissent en premier);;;;;;;;;
-#;;;;;;;;;
-# Status permet par exemple d'indiquer qu'un tableau a ete vendu ou qu'il n'est pas a vendre.;;;;;;;;;
-"#   ""vendu"" -> le tableau a ete vendu";;;;;;;;;
-"#   ""indisponible"" -> le tableau n'est pas a vendre";;;;;;;;;
-#   Si la colonne est vide, le tableau est disponible;;;;;;;;;
-#;;;;;;;;;
-# Series est utilise pour permettre de grouper des tableaux;;;;;;;;;
-#   - un tableau peut appartenir a plusieurs series;;;;;;;;;
-#   - dans la colonne series, on peut mettre plusieurs series en separant leurs cles par un espace: par ex, ;;;;;;;;;
-"# ""watermirror australia""";;;;;;;;;
-#   - l’identifiant de la serie doit etre un mot unique sans espace ou caractere special;;;;;;;;;
-#   - l'intitule de la serie (ce qu'on affiche) doit etre defini dans les fichiers messages;;;;;;;;;
-#;;;;;;;;;
-# Pour ne pas afficher un tableau, il suffit de commenter la ligne correspondante;;;;;;;;;
-#;;;;;;;;;
-# rank;filename;title;date;height;width;type;status;description;series
-#-1;Acrylique/20210624_Lever soleil sur Donazac.jpg;Matin sur Donazac;20210610;28;38;acrylic;;Lever soleil Donazac (11);emergence
--1;Acrylique/20210722_GuillaumePensePiscine_AC20x20.jpg;Guillaume pense;20210710;20;20;acrylic;indisponible;Réflexion au bord de piscine;emergence
--1;Acrylique/20210801_OlenLaTroueeDonazac_AC33x24.jpg;La trouée du bois;20210810;33;24;acrylic;indisponible;(collection privée Paris, FR);emergence
-#-1;Acrylique/20210815_Polynesie-PascaleEtLuc.jpg;Lagon à Taha'a;20210815;33;46;acrylic;;Enfants dans le lagon de Polynesie;emergence
-#-1;Acrylique/20210826_Jeux d eaux Nice_Acrylic.jpg;Miroir d'eau;20210826;12;18;acrylic;;Promenade du Paillon Nice 06;emergence
--1;Acrylique/20211003_LucPlanneur_AC30x40.jpg;L'aviateur;20211003;30;40;acrylic;indisponible;aérodrome des Planneurs;emergence
--1;Acrylique/20211019_PortraitGuillaumeTetine_AC33x24.jpg;Guillaume;20211019;33;24;acrylic;indisponible;Guillaume 2ans, doudou et tetine;emergence
--1;Acrylique/20211105_OlenEnPied_AC55x46.jpg;Royal;20211105;55;46;acrylic;indisponible;Olen le chien avec sa friandise;emergence
--1;Acrylique/20211127_JeuxDeVagues_AC45x55.jpg;Jeux de vagues;20211127;45;55;acrylic;indisponible;Esterel (83);watermirror
-#-1;Acrylique/20211209_IleAuxLoups.png;Ile aux loups;20211209;40;80;acrylic;; ;emergence
--1;Acrylique/20211228_EvocationGourdon_AC73x90.jpg;Evocation de Gourdon;20211228;73;90;acrylic;;La côte et le Cap Antibes;metamorphose
--1;Acrylique/20220317_LesZebres_AC80x40.jpg;Les zebres;20220317;80;40;acrylic;;Zèbres de Namibie en miroir;watermirror
--1;Acrylique/20220312_ParisQuaiDeSeine_AC40x80.jpg;La Seine;20220312;40;80;acrylic;vendu;Paris Quai de Seine;watermirror
--1;Acrylique/20220601_CreekAustralianPelican_AC35x24.jpg;Australian Pelican;20220601;35;24;acrylic;vendu;Terranora Creek Australian Pelican;watermirror
--1;Acrylique/20220609_Le Ficus_AC20x20.jpg;Le Ficus;20220609;20;20;acrylic;;Bord de rivière (NSW);metamorphose
--1;Acrylique/20220723_LesFlamantsRouges_AC50x50.jpg;Les Flamants Rouges;20220723;50;50;acrylic;;Zoo. Collage de bois.;emergence
--1;Acrylique/20220821_Regards.jpg;Jeu de Regards;20220821;40;50;acrylic;; ;momentsfeminins
--1;Acrylique/20221016_Abutilon_AC20x27.jpg;Vase aux Abutilons;20221016;20;27;acrylic;; ;metamorphose
--1;Acrylique/20221103_PinkSunsetTerranoraCreek_AC50x76.jpg;Sunset Terranora Creek;20221103;50;76;acrylic;vendu;Sunset on Terranora Creek (collection privée Brisbane, AUS);watermirror
--1;Acrylique/20221210_BlueSunsetTerranoraCreek_AC54x81.jpg;Blue Sunset;20221210;54;81;acrylic;vendu;Sunset on Terranora Creek (NSW);watermirror
--1;Acrylique/20230504_Mangrove-SulfurCockatoo_AC53x71.jpg;La mangrove;20230504;71;56;acrylic;;La mangrove avec martin-pecheur et sulfur cockatoo(NSW, AUS);watermirror
--1;Acrylique/20230530_Contemplation_A100x73.jpg;Contemplation;20230530;100;73;acrylic;;Bord de riviere La Sorgue (Vaucluse);momentsfeminins
--1;Acrylique/20230629_LaVague_AC33x41.jpg;La vague;20230629;33;41;acrylic;vendu; ;watermirror
--1;Acrylique/20231109_Pelagos_AC41x61.jpg;Pelagos;20231109;41;61;acrylic;vendu;Faune Méditerranéenne – Tortue Caouanne, requin renard, dauphin, baleines;metamorphose
--1;Acrylique/20231111_LesTournesols_AC24x30.jpg;Les tournesols;20231111;24;30;acrylic;vendu; ;metamorphose
-#-1;Acrylique/20231127_EnfantParait_Acrylic-35x27.jpg;Lorsque l'enfant paraît;20231127;27;35;acrylic;;"« Lorsque l'enfant paraît, le cercle de famille applaudit à grands cris."" Victor Hugo";emergence
--1;Acrylique/20231211_MarinaKeithCurran_AC46x91.jpg;Marina Keith Curran;20231211;46;91;acrylic;;Marina Keith Curran NSW Australia;watermirror
--1;Acrylique/20240218_BallonsOlympiques_AC55x38.jpg;Les ballons olympiques;20240218;55;38;acrylic;;Exposition virtuelle internationale Arts & Sports 2024;metamorphose
--1;Acrylique/20240326_Deflagration_AC90x90.jpg;Deflagration;20240326;90;90;acrylic;; ;metamorphose
--1;Acrylique/20240529_Distorsion_AC46x55.jpg;Distorsion;20240529;46;55;acrylic;; ;metamorphose
--1;Acrylique/20240704_Eclosion_AC38x46.jpg;Eclosion;20240704;38;46;acrylic;; ;metamorphose
--1;Acrylique/20240822_Aigrette_AC50x76.jpg;L'aigrette;20240822;76;50;acrylic;; ;momentsfeminins
--1;Acrylique/20240915_Pelican_AC55x38.jpg;Le pélican qui s'en va tout seul;20240915;38;55;acrylic;; ;momentsfeminins
--1;Acrylique/20250421_Lectrice_AC50x50.jpg;La lectrice;20250421;50;50;acrylic;;;momentsfeminins
--1;Acrylique/20250504_La piscine-AC50x50.jpg;La piscine;20250504;50;50;acrylic;;;momentsfeminins
--1;Huile/20211229_Automne_FromCezanne.jpg;Automne;20211229;80;40;oil;indisponible;Automne (d'après Cézanne);emergence
--1;Huile/20220222_Melancolie_HU46x55.jpg;Melancolie;20220222;46;55;oil;indisponible;Rêverie sur canapé;emergence
--1;Huile/20220601_EgretYellowSunset-HU90x65.jpg;The great egret;20220601;90;65;oil;;Terranora Creek - Australian Great Egret;watermirror
--1;Huile/20220723_Chardin-FraisesDesBois_HU60x80.jpg;Panier de fraises des bois;20220723;60;80;oil;indisponible;Le panier de fraises des bois (d'apres Jean Siméon Chardin);emergence
--1;Huile/20221128_ReveDeTropiques_HU53x70.jpg;Rêve de tropiques;20221128;53;72;oil;; ;watermirror
--1;Huile/20221109_Flamboyance_HU32x41.jpg;Flamboyance;20221109;32;41;oil;indisponible; ;metamorphose
--1;Huile/20230216_LesDanseuses_Huile.jpg;Les danseuses;20230216;65;80;oil;;Hommage Pina Bausch Le sacre du Printemps;momentsfeminins
--1;Huile/20230706_Donazac_Hu30P_65x92.jpg;Donazac;20230706;65;92;oil;indisponible;Village du Razès (Aude France);emergence
--1;Huile/20230708_ClairDeSoleil_HU92x65.jpg;Clair de Soleil;20230708;92;65;oil;;(Couteaux) Couchant sur la plage de Coolangatta - Queensland Australia;momentsfeminins
--1;Huile/20230809_IlotMangrove_HU40x80.jpg;Ilot mangrove;20230809;40;80;oil;;Ilot mangrove Terranora Creek - Tweed Heads South - Australia;watermirror
--1;Huile/20230921_TheRiverBank_Vlaminck_38x46.jpg;The river bank;20230921;38;46;oil;;After The river Bank(1909) Maurice de Vlaminck (1876-1958) FR Fauvisme;momentsfeminins
--1;Huile/20240130_Zenitude_HU33x24.jpg;Zenitude;20240130;33;24;oil;vendu; ;watermirror
--1;Huile/20240204_Baigneurs_Huile_50x100.jpg;Baignade à la rivière;20240204;50;100;oil;;Cudgen River, Kingscliff, NSW Australie;momentsfeminins
--1;Huile/20240601_ChapeauOrange_HU46x33.jpg;Le chapeau orange;20240601;46;33;oil;indisponible;Corentin et son chapeau;metamorphose
--1;Huile/20240613_Sakura-nenuphars_HU54x73.jpg;Sakura et Nénuphars;20240613;54;73;oil;;Cerisiers du temple Byodo-In (Japon);momentsfeminins
--1;Huile/20240728_Brume_HU54x73.jpg;Brumes du soir;20240728;54;73;oil;; ;momentsfeminins
--1;Huile/20241225_LeTorrent_HU41x33.jpg;Au milieu coule une rivière;20241225;41;33;oil;;Parc du Mercantour (06) ;momentsfeminins
--1;Huile/20250314_AirMarin_HU50x50.jpg;Air Marin;20250314;50;50;oil;; ;momentsfeminins
--1;Huile/20250615_NightClub_HU50x50.jpg;Night-club;20250620;50;50;oil;; ;momentsfeminins
--1;Huile/20250319_PortraitPascale_HU50x50.jpg;Portrait de Pascale;20250319;50;50;oil;indisponible; ;momentsfeminins
--1;Pastels/20200809_Le lievre.jpg;Le lièvre;20200809;18;24;pastel;indisponible; ;emergence
--1;Pastels/20200815_AmericanRobin.jpg;American Robins;20200815;18;24;pastel;; ;emergence
--1;Pastels/20200824_GuillaumeMaximilien_Bisou.jpg;Calin;20200824;17;23;pastel;indisponible; ;emergence
--1;Pastels/20200827_Desert Jordanie.jpg;Wadi Ramm;20200827;16;24;pastel;;Desert Jordanie;emergence
-#-1;Pastels/20200829_Guillaume_Angelot.jpg;Angelot;20200829;17;23;pastel;; ;emergence
-#-1;Pastels/20200902_BebeEpanoui.jpg;Bebe Epanoui;20200902;19;14;pastel;; ;emergence
--1;Pastels/20200906_Guillaume-surlaTable_Pascale.jpg;Premiers pas;20200906;19;13;pastel;indisponible; ;emergence
-#-1;Pastels/20201023_Luc_Profil.jpg;Profil;20201023;24;18;pastel;; ;emergence
--1;Pastels/20201106_Pascale_RenaissanceItalienne.jpg;Dans le vent;20201106;18;24;pastel;indisponible; ;emergence
--1;Pastels/20201110_Le bisou_PascaleGuillaume.jpg;Le bisou;20201110;20;28;pastel;indisponible; ;emergence
-#-1;Pastels/20201111_Luc au clair de lune.jpg;Clair de Lune;20201111;30;40;pastel;; ;emergence
-#-1;Pastels/20201206_Fiancailles_VersionAUS.jpg;Fiançailles;20201206;30;40;pastel;;Pastel - Fiançailles (collection privée Brisbane, AUS);emergence
--1;Pastels/20201210_Fiancailles_VersionFR.jpg;Fiançailles du soir;20201210;30;40;pastel;indisponible; ;emergence
-#-1;Pastels/20201227_Femme Cruche.jpg;La servante;20201227;40;30;pastel;;La servante au tableau;emergence
-#-1;Pastels/20210124_PascaleAmelie.jpg;Generations;20210124;30;40;pastel;;Generations Petite-fille Grand-mère;emergence
-#-1;Pastels/20210630_Olen et marguerite.jpg;Printemps à Entraunes;20210630;23;18;pastel;; ;emergence
--1;Pastels/20210909_canalDuMidi_PA29x39.jpg;Allée de platanes;20210909;29;39;pastel;vendu;Le long du canal du Midi - Aude, FR - (collection privée, USA);watermirror
--1;Pastels/20210917_MichelPolynesie_PA20x28.jpg;Torride;20210917;20;28;pastel;indisponible;Pastel- Au soleil de Polynesie;metamorphose
--1;Pastels/20220714_LaBrague_PA21x28.jpg;La Brague;20220714;21;28;pastel;;Pastel- La Brague près du pont des Tamarins (Biot, 06);watermirror
--1;Pastels/20240119_Corentin2M_PA26x21.jpg;Bébé sourit;20240119;26;21;pastel;indisponible;Pastel- Corentin 2 mois;metamorphose
--1;Pastels/20240227_Tendresse_PA30x24.jpg;Tendresse;20240227;30;24;pastel;indisponible; Corentin, son père et leur chat;metamorphose
--1;Pastels/20240428_BordDeSiagne_PA32x24.jpg;Bord de Siagne;20240428;32;24;pastel;; Bord de rivière. Le chien Olen;watermirror
--1;Pastels/20240625_BebeRose_PA32x24.jpg;Bébé et la rose;20240625;32;24;pastel;indisponible; Corentin 7mois. Pastels secs et sanguine;metamorphose
--1;Pastels/20240628_BrisbaneNorthBank_PA21x27.jpg;Brisbane North Bank;20240628;21;27;pastel;;Rivière Brisbane, NSW, Australie;watermirror
--1;Pastels/20250605_RosesRouges_PA20x18.jpg;Roses Rouges;20250605;20;18;pastel;;Rosier de Gourdon (06);momentsfeminins
--1;Pastels/20250609_LeNenuphar_PA15x10.jpg;Fleur de Nénuphar;20250609;15;10;pastel;indisponible;;momentsfeminins
--1;Pastels/20250620_GourdonEglise_PA26x18.jpg;Gourdon, l’église;20250620;26;18;pastel;;;momentsfeminins
--1;Autres/20200920_SanguinePascaleGuillaume.jpg;Mere et enfant;20200920;12;18;sanguine;indisponible;Sanguine- Mere et enfant;momentsfeminins
-#-1;Autres/20201220_Loup et Corbeaux.jpg;Loup et Corbeaux;20201220;18;24;encrechine;;Encre de chine - Loups et corbeaux;emergence
--1;Autres/20230202_LesMouettes_AQ40x30.jpg;Les mouettes;20230202;40;30;aquarelle;;Aquarelle - Les mouettes;metamorphose
+# Rank est utilise pour trier les peintures;;;;;;;;;;
+#   - '-1' ou pas de valeur, signifie que la date sera utilisee pour le tri (la plus recente en premier);;;;;;;;;;
+#   - une valeur positive signifie qu'on utilise cette valeur pour le tri (valeurs les plus fortes apparaissent en premier);;;;;;;;;;
+#;;;;;;;;;;
+# Status permet par exemple d'indiquer qu'un tableau a ete vendu ou qu'il n'est pas a vendre.;;;;;;;;;;
+"#   ""vendu"" -> le tableau a ete vendu";;;;;;;;;;
+"#   ""indisponible"" -> le tableau n'est pas a vendre";;;;;;;;;;
+#   Si la colonne est vide, le tableau est disponible;;;;;;;;;;
+#;;;;;;;;;;
+# Series est utilise pour permettre de grouper des tableaux;;;;;;;;;;
+#   - un tableau peut appartenir a plusieurs series;;;;;;;;;;
+#   - dans la colonne series, on peut mettre plusieurs series en separant leurs cles par un espace: par ex, ;;;;;;;;;;
+"# ""watermirror australia""";;;;;;;;;;
+#   - l’identifiant de la serie doit etre un mot unique sans espace ou caractere special;;;;;;;;;;
+#   - l'intitule de la serie (ce qu'on affiche) doit etre defini dans les fichiers messages;;;;;;;;;;
+#;;;;;;;;;;
+# Pour ne pas afficher un tableau, il suffit de commenter la ligne correspondante;;;;;;;;;;
+#;;;;;;;;;;
+# rank;ID;filename;title;date;height;width;type;status;description;series
+#-1;MatinDonazacOlen;Acrylique/20210624_Lever soleil sur Donazac.jpg;Matin sur Donazac;20210610;28;38;acrylic;;Lever soleil Donazac (11);emergence
+-1;GuillaumePense;Acrylique/20210722_GuillaumePensePiscine_AC20x20.jpg;Guillaume pense;20210710;20;20;acrylic;indisponible;Réflexion au bord de piscine;emergence
+-1;TroueeBois;Acrylique/20210801_OlenLaTroueeDonazac_AC33x24.jpg;La trouée du bois;20210810;33;24;acrylic;indisponible;(collection privée Paris, FR);emergence
+#-1;LagonTahaa;Acrylique/20210815_Polynesie-PascaleEtLuc.jpg;Lagon à Taha'a;20210815;33;46;acrylic;;Enfants dans le lagon de Polynesie;emergence
+#-1;PromenadePaillon;Acrylique/20210826_Jeux d eaux Nice_Acrylic.jpg;Miroir d'eau;20210826;12;18;acrylic;;Promenade du Paillon Nice 06;emergence
+-1;Aviateur;Acrylique/20211003_LucPlanneur_AC30x40.jpg;L'aviateur;20211003;30;40;acrylic;indisponible;aérodrome des Planneurs;emergence
+-1;PortraitGuillaumeTetine;Acrylique/20211019_PortraitGuillaumeTetine_AC33x24.jpg;Guillaume;20211019;33;24;acrylic;indisponible;Guillaume 2ans, doudou et tetine;emergence
+-1;Royal;Acrylique/20211105_OlenEnPied_AC55x46.jpg;Royal;20211105;55;46;acrylic;indisponible;Olen le chien avec sa friandise;emergence
+-1;JeuxVagues;Acrylique/20211127_JeuxDeVagues_AC45x55.jpg;Jeux de vagues;20211127;45;55;acrylic;indisponible;Esterel (83);watermirror
+#-1;IleLoups;Acrylique/20211209_IleAuxLoups.png;Ile aux loups;20211209;40;80;acrylic;; ;emergence
+-1;EvocationGourdon;Acrylique/20211228_EvocationGourdon_AC73x90.jpg;Evocation de Gourdon;20211228;73;90;acrylic;;La côte et le Cap Antibes;metamorphose
+-1;LesZebres;Acrylique/20220317_LesZebres_AC80x40.jpg;Les zebres;20220317;80;40;acrylic;;Zèbres de Namibie en miroir;watermirror
+-1;ParisQuaiSeine;Acrylique/20220312_ParisQuaiDeSeine_AC40x80.jpg;La Seine;20220312;40;80;acrylic;vendu;Paris Quai de Seine;watermirror
+-1;AustralianPelican;Acrylique/20220601_CreekAustralianPelican_AC35x24.jpg;Australian Pelican;20220601;35;24;acrylic;vendu;Terranora Creek Australian Pelican;watermirror
+-1;LeFicus;Acrylique/20220609_Le Ficus_AC20x20.jpg;Le Ficus;20220609;20;20;acrylic;;Bord de rivière (NSW);metamorphose
+-1;FlamandsRouges;Acrylique/20220723_LesFlamantsRouges_AC50x50.jpg;Les Flamants Rouges;20220723;50;50;acrylic;;Zoo. Collage de bois.;emergence
+-1;JeuDeRegard;Acrylique/20220821_Regards.jpg;Jeu de Regards;20220821;40;50;acrylic;; ;momentsfeminins
+-1;VaseAbutilons;Acrylique/20221016_Abutilon_AC20x27.jpg;Vase aux Abutilons;20221016;20;27;acrylic;; ;metamorphose
+-1;PinkSunset;Acrylique/20221103_PinkSunsetTerranoraCreek_AC50x76.jpg;Sunset Terranora Creek;20221103;50;76;acrylic;vendu;Sunset on Terranora Creek (collection privée Brisbane, AUS);watermirror
+-1;BlueSunset;Acrylique/20221210_BlueSunsetTerranoraCreek_AC54x81.jpg;Blue Sunset;20221210;54;81;acrylic;vendu;Sunset on Terranora Creek (NSW);watermirror
+-1;MangroveCockatoo;Acrylique/20230504_Mangrove-SulfurCockatoo_AC53x71.jpg;La mangrove;20230504;71;56;acrylic;;La mangrove avec martin-pecheur et sulfur cockatoo(NSW, AUS);watermirror
+-1;Contemplation;Acrylique/20230530_Contemplation_A100x73.jpg;Contemplation;20230530;100;73;acrylic;;Bord de riviere La Sorgue (Vaucluse);momentsfeminins
+-1;LaVague;Acrylique/20230629_LaVague_AC33x41.jpg;La vague;20230629;33;41;acrylic;vendu; ;watermirror
+-1;Pelagos;Acrylique/20231109_Pelagos_AC41x61.jpg;Pelagos;20231109;41;61;acrylic;vendu;Faune Méditerranéenne – Tortue Caouanne, requin renard, dauphin, baleines;metamorphose
+-1;LesTournesols;Acrylique/20231111_LesTournesols_AC24x30.jpg;Les tournesols;20231111;24;30;acrylic;vendu; ;metamorphose
+#-1;EnfantParait;Acrylique/20231127_EnfantParait_Acrylic-35x27.jpg;Lorsque l'enfant paraît;20231127;27;35;acrylic;;"« Lorsque l'enfant paraît, le cercle de famille applaudit à grands cris."" Victor Hugo";emergence
+-1;MarinaKeithCurran;Acrylique/20231211_MarinaKeithCurran_AC46x91.jpg;Marina Keith Curran;20231211;46;91;acrylic;;Marina Keith Curran NSW Australia;watermirror
+-1;BallonsOlympiques;Acrylique/20240218_BallonsOlympiques_AC55x38.jpg;Les ballons olympiques;20240218;55;38;acrylic;;Exposition virtuelle internationale Arts & Sports 2024;metamorphose
+-1;Deflagration;Acrylique/20240326_Deflagration_AC90x90.jpg;Deflagration;20240326;90;90;acrylic;; ;metamorphose
+-1;Distorsion;Acrylique/20240529_Distorsion_AC46x55.jpg;Distorsion;20240529;46;55;acrylic;; ;metamorphose
+-1;Eclosion;Acrylique/20240704_Eclosion_AC38x46.jpg;Eclosion;20240704;38;46;acrylic;; ;metamorphose
+-1;YellowAigrette;Acrylique/20240822_Aigrette_AC50x76.jpg;L'aigrette;20240822;76;50;acrylic;;Le repas de l’aigrette;momentsfeminins
+-1;PelicanToutSeul;Acrylique/20240915_Pelican_AC55x38.jpg;Le pélican qui s'en va tout seul;20240915;38;55;acrylic;; ;momentsfeminins
+-1;LectriceChaton;Acrylique/20250421_Lectrice_AC50x50.jpg;La lectrice;20250421;50;50;acrylic;;;momentsfeminins
+-1;LaPiscine;Acrylique/20250504_La piscine-AC50x50.jpg;La piscine;20250504;50;50;acrylic;;;momentsfeminins
+-1;AutomneCezanne;Huile/20211229_Automne_FromCezanne.jpg;Automne;20211229;80;40;oil;indisponible;Automne (d'après Cézanne);emergence
+-1;PascaleMelancolie;Huile/20220222_Melancolie_HU46x55.jpg;Melancolie;20220222;46;55;oil;indisponible;Rêverie sur canapé;emergence
+-1;EgretYellowSunset;Huile/20220601_EgretYellowSunset-HU90x65.jpg;The great egret;20220601;90;65;oil;;Terranora Creek - Australian Great Egret;watermirror
+-1;PanierFraisesBois;Huile/20220723_Chardin-FraisesDesBois_HU60x80.jpg;Panier de fraises des bois;20220723;60;80;oil;indisponible;Le panier de fraises des bois (d'apres Jean Siméon Chardin);emergence
+-1;ReveDeTropiques;Huile/20221128_ReveDeTropiques_HU53x70.jpg;Rêve de tropiques;20221128;53;72;oil;; ;watermirror
+-1;Flamboyance;Huile/20221109_Flamboyance_HU32x41.jpg;Flamboyance;20221109;32;41;oil;indisponible; ;metamorphose
+-1;LesDanseusesNoires;Huile/20230216_LesDanseuses_Huile.jpg;Les danseuses;20230216;65;80;oil;;Hommage Pina Bausch Le sacre du Printemps;momentsfeminins
+-1;DonazacVillage;Huile/20230706_Donazac_Hu30P_65x92.jpg;Donazac;20230706;65;92;oil;indisponible;Village du Razès (Aude France);emergence
+-1;ClairDeSoleil;Huile/20230708_ClairDeSoleil_HU92x65.jpg;Clair de Soleil;20230708;92;65;oil;;(Couteaux) Couchant sur la plage de Coolangatta - Queensland Australia;momentsfeminins
+-1;IlotMangrove;Huile/20230809_IlotMangrove_HU40x80.jpg;Ilot mangrove;20230809;40;80;oil;;Ilot mangrove Terranora Creek - Tweed Heads South - Australia;watermirror
+-1;RiverBank;Huile/20230921_TheRiverBank_Vlaminck_38x46.jpg;Bord de Rivière;20230921;38;46;oil;;D’après Bord de Rivière (1909) Maurice de Vlaminck (1876-1958) FR Fauvisme;momentsfeminins
+-1;Zenitude;Huile/20240130_Zenitude_HU33x24.jpg;Zenitude;20240130;33;24;oil;vendu; ;watermirror
+-1;BaignadeRiviereCudgen;Huile/20240204_Baigneurs_Huile_50x100.jpg;Baignade à la rivière;20240204;50;100;oil;;Cudgen River, Kingscliff, NSW Australie;momentsfeminins
+-1;ChapeauOrange;Huile/20240601_ChapeauOrange_HU46x33.jpg;Le chapeau orange;20240601;46;33;oil;indisponible;Corentin et son chapeau;metamorphose
+-1;SakuraNenuphars;Huile/20240613_Sakura-nenuphars_HU54x73.jpg;Sakura et Nénuphars;20240613;54;73;oil;;Cerisiers du temple Byodo-In (Japon);momentsfeminins
+-1;BrumesDuSoir;Huile/20240728_Brume_HU54x73.jpg;Brumes du soir;20240728;54;73;oil;; ;momentsfeminins
+-1;MilieuTorrent;Huile/20241225_LeTorrent_HU41x33.jpg;Au milieu coule une rivière;20241225;41;33;oil;;Parc du Mercantour (06) ;momentsfeminins
+-1;AirMarin;Huile/20250314_AirMarin_HU50x50.jpg;Air Marin;20250314;50;50;oil;; ;momentsfeminins
+-1;Nightclub;Huile/20250615_NightClub_HU50x50.jpg;Night-club;20250620;50;50;oil;; ;momentsfeminins
+-1;PortraitPascale;Huile/20250319_PortraitPascale_HU50x50.jpg;Portrait de Pascale;20250319;50;50;oil;indisponible; ;momentsfeminins
+-1;LeLievre;Pastels/20200809_Le lievre.jpg;Le lièvre;20200809;18;24;pastel;indisponible; ;emergence
+-1;AmericanRobins;Pastels/20200815_AmericanRobin.jpg;American Robins;20200815;18;24;pastel;; ;emergence
+-1;Calin;Pastels/20200824_GuillaumeMaximilien_Bisou.jpg;Calin;20200824;17;23;pastel;indisponible; ;emergence
+-1;DesertJordanie;Pastels/20200827_Desert Jordanie.jpg;Wadi Ramm;20200827;16;24;pastel;;Desert Jordanie;emergence
+#-1;GuillaumeAngelot;Pastels/20200829_Guillaume_Angelot.jpg;Angelot;20200829;17;23;pastel;; ;emergence
+#-1;BebeEpanoui;Pastels/20200902_BebeEpanoui.jpg;Bebe Epanoui;20200902;19;14;pastel;; ;emergence
+-1;PremiersPas;Pastels/20200906_Guillaume-surlaTable_Pascale.jpg;Premiers pas;20200906;19;13;pastel;indisponible; ;emergence
+#-1;LucProfilVert;Pastels/20201023_Luc_Profil.jpg;Profil;20201023;24;18;pastel;; ;emergence
+-1;PascaleRenaissance;Pastels/20201106_Pascale_RenaissanceItalienne.jpg;Dans le vent;20201106;18;24;pastel;indisponible; ;emergence
+-1;LeBisou;Pastels/20201110_Le bisou_PascaleGuillaume.jpg;Le bisou;20201110;20;28;pastel;indisponible; ;emergence
+#-1;LucClairDeLune;Pastels/20201111_Luc au clair de lune.jpg;Clair de Lune;20201111;30;40;pastel;; ;emergence
+#-1;FiancaillesAUS;Pastels/20201206_Fiancailles_VersionAUS.jpg;Fiançailles;20201206;30;40;pastel;;Pastel - Fiançailles (collection privée Brisbane, AUS);emergence
+-1;LesFiancesFR;Pastels/20201210_Fiancailles_VersionFR.jpg;Fiançailles du soir;20201210;30;40;pastel;indisponible; ;emergence
+#-1;GiseleLaServante;Pastels/20201227_Femme Cruche.jpg;La servante;20201227;40;30;pastel;;La servante au tableau;emergence
+#-1;Generations;Pastels/20210124_PascaleAmelie.jpg;Generations;20210124;30;40;pastel;;Generations Petite-fille Grand-mère;emergence
+#-1;OlenMargueriteEntraunes;Pastels/20210630_Olen et marguerite.jpg;Printemps à Entraunes;20210630;23;18;pastel;; ;emergence
+-1;AlleePlatanes;Pastels/20210909_canalDuMidi_PA29x39.jpg;Allée de platanes;20210909;29;39;pastel;vendu;Le long du canal du Midi - Aude, FR - (collection privée, USA);watermirror
+-1;MichelPolynesie;Pastels/20210917_MichelPolynesie_PA20x28.jpg;Torride;20210917;20;28;pastel;indisponible;Pastel- Au soleil de Polynesie;metamorphose
+-1;LaBragueTamarin;Pastels/20220714_LaBrague_PA21x28.jpg;La Brague;20220714;21;28;pastel;;Pastel- La Brague près du pont des Tamarins (Biot, 06);watermirror
+-1;BebeSourit;Pastels/20240119_Corentin2M_PA26x21.jpg;Bébé sourit;20240119;26;21;pastel;indisponible;Pastel- Corentin 2 mois;metamorphose
+-1;TendresseChat;Pastels/20240227_Tendresse_PA30x24.jpg;Tendresse;20240227;30;24;pastel;indisponible; Corentin, son père et leur chat;metamorphose
+-1;OlenSiagneDoree;Pastels/20240428_BordDeSiagne_PA32x24.jpg;Bord de Siagne;20240428;32;24;pastel;; Bord de rivière. Le chien Olen;watermirror
+-1;CorentinLaRose;Pastels/20240625_BebeRose_PA32x24.jpg;Bébé et la rose;20240625;32;24;pastel;indisponible; Corentin 7mois. Pastels secs et sanguine;metamorphose
+-1;BrisbaneNorthBank;Pastels/20240628_BrisbaneNorthBank_PA21x27.jpg;Brisbane North Bank;20240628;21;27;pastel;;Rivière Brisbane, NSW, Australie;watermirror
+-1;RosesRouges;Pastels/20250605_RosesRouges_PA20x18.jpg;Roses Rouges;20250605;20;18;pastel;;Rosier de Gourdon (06);momentsfeminins
+-1;FleurNenuphar;Pastels/20250609_LeNenuphar_PA15x10.jpg;Fleur de Nénuphar;20250609;15;10;pastel;indisponible;;momentsfeminins
+-1;GourdonEglise;Pastels/20250620_GourdonEglise_PA26x18.jpg;Gourdon, l’église;20250620;26;18;pastel;;;momentsfeminins
+-1;SanguinePascale;Autres/20200920_SanguinePascaleGuillaume.jpg;Mere et enfant;20200920;12;18;sanguine;indisponible;Sanguine- Mere et enfant;momentsfeminins
+#-1;LoupCorbeauxNeige;Autres/20201220_Loup et Corbeaux.jpg;Loup et Corbeaux;20201220;18;24;encrechine;;Encre de chine - Loups et corbeaux;emergence
+-1;LesMouettesPlage;Autres/20230202_LesMouettes_AQ40x30.jpg;Les mouettes;20230202;40;30;aquarelle;;Aquarelle - Les mouettes;metamorphose

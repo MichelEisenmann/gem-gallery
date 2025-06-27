@@ -10,6 +10,7 @@ class Paint {
     const AVAILABLE_STATUS="disponible";
     
     public $rank; // lowest values are shown first. If value is negative, it is ignored
+	public $id;
     public $file;
     public $title;
     public $date;
@@ -29,22 +30,23 @@ class Paint {
         } else {
             $this->rank= intval($this->rank);
         }
-        if ( strlen($array[3]) != 8 ) {
-            echo "** Invalid date for " . $array[1] . ": received " .$array[3] ."<br>";
+        if ( strlen($array[4]) != 8 ) {
+            echo "** Invalid date for " . $array[1] . ": received " .$array[4] ."<br>";
         }
-        $this->file= $array[1]; // le path complet en partant dans images/. Ex: oils/flamboyance.jpg 
-        $this->title= $array[2]; 
-        $this->date= DateTimeImmutable::createFromFormat("Ymd", $array[3]);
-        $this->height= $array[4];
-        $this->width= $array[5];
-        $this->type= $array[6];
-        $this->setStatus($array[7]);
-        $this->description= $array[8];
+		$this->id= $array[1];
+        $this->file= $array[2]; // le path complet en partant dans images/. Ex: oils/flamboyance.jpg 
+        $this->title= $array[3]; 
+        $this->date= DateTimeImmutable::createFromFormat("Ymd", $array[4]);
+        $this->height= $array[5];
+        $this->width= $array[6];
+        $this->type= $array[7];
+        $this->setStatus($array[8]);
+        $this->description= $array[9];
         // au cas ou les series ne sont pas donnees
         $this->series=array();
-        if ( count($array) > 9 ) {
+        if ( count($array) > 10 ) {
             // array[9] contient les series separees par des espaces
-            $series= explode(" ", trim($array[9]));
+            $series= explode(" ", trim($array[10]));
             //
             foreach( $series as $serie ) {
                 $cur= trim($serie);

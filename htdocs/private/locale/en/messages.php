@@ -110,7 +110,7 @@ return array(
 	",
 
 
-    // noms tableaux
+    // noms tableaux et Alt
 	'AirMarinTitre' => 'Sea Air',
 	'ParisQuaiSeineTitre' => 'Paris Seine quay',
 	

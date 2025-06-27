@@ -44,24 +44,24 @@
 	  
         <div class="w3-center">
 	  <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-	    <img src="/public/images/web/Gourdon25_VueDEnsemble.jpg" alt="" style="width:100%" style="width:100%" />
+	    <img src="/public/images/web/Gourdon25_VueDEnsemble.jpg" alt="<?= Translator::t("exposalle_Alt"); ?>" style="width:100%" style="width:100%" />
 	  </a>
 	</div>
         <div class="w3-center w3-padding-16">
 	  <div class="w3-row">
 	    <div class="w3-col s4">
 	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-		<img src="/public/images/web/Gourdon25_Gi_AirMarin.jpg" alt="" style="width:100%" />
+		<img src="/public/images/web/Gourdon25_Gi_AirMarin.jpg" alt="Exposition Moments Feminins Eisenmann devant tableau Air Marin Huile" style="width:100%" />
 	      </a>
 	    </div>
 	    <div class="w3-col s4">
 	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-		<img src="/public/images/web/Gourdon25_Gi_Danseuses.jpg" alt="" style="width:100%"  />
+		<img src="/public/images/web/Gourdon25_Gi_Danseuses.jpg" alt="Exposition Moments Feminins Eisenmann devant tableau Les Danseuses Huile" style="width:100%"  />
 	      </a>
 	    </div>
 	    <div class="w3-col s4">
 	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-		<img src="/public/images/web/Gourdon25_Gi_MurPierre.jpg" alt="" style="width:100%"  />
+		<img src="/public/images/web/Gourdon25_Gi_MurPierre.jpg" alt="Exposition Moments Feminins Eisenmann devant tableau Contemplation acrylique" style="width:100%"  />
 	      </a>
 	    </div>
 	  </div>

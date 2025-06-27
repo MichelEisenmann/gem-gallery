@@ -114,8 +114,16 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     'Contacter' => "Pour toute question ou message",
 	
     // noms tableaux pour ALT dans HREF
-	'AirMarinTitre' => 'Air Marin',
-	'ParisQuaiSeineTitre' => 'Paris Quai de Seine',
+	// Accueil
+	'exposalle_Alt' => 'Exposition Moments Feminins Salle de la Mairie Gourdon',
+	//acrylic
+	'LaPiscine_Titre' => 'La piscine',
+	'LaPiscine_Alt' => 'Petite fille courant sur le bord de piscine',
+	// Huile
+	'AirMarin_Titre' => 'Air Marin',
+	'AirMarin_Alt' => 'Air Marin',
+	
+	'ParisQuaiSeine_Titre' => 'Paris Quai de Seine',
 	
 	// Tableau caracteristiques
 	'oil' => 'Huile sur toile',
