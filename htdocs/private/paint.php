@@ -17,11 +17,10 @@ class Paint {
     public $height;
     public $type;
     public $status;  // SOLD_STATUS, UNAVAILABLE_STATUS
-    public $description;
     public $series; // an array of strings
 
     // as read from CSV
-    // filename, date (YYYYMMDD) , width, height, type, status, description, series
+    // filename, date (YYYYMMDD) , width, height, type, status, series
     function set_attributes( $array ) {
       // column of information in CSV
         $rank_column= 0;
@@ -32,8 +31,7 @@ class Paint {
         $width_column= 5;
         $type_column= 6;
         $status_column= 7;
-        $description_column= 8;
-        $series_column= 9;
+        $series_column= 8;
       
         $this->rank= $array[$rank_column];
         if ( empty($this->rank) ) {
@@ -51,7 +49,6 @@ class Paint {
         $this->width= $array[$width_column];
         $this->type= $array[$type_column];
         $this->setStatus($array[$status_column]);
-        $this->description= $array[$description_column];
         // au cas ou les series ne sont pas donnees
         $this->series=array();
         if ( count($array) > $series_column ) {
@@ -114,6 +111,10 @@ class Paint {
         return $this->id ."_Alt";
     }
 
+    function getDescriptionId() {
+        return $this->id ."_Desc";
+    }
+
     // what is displayed in the gallery
     function full_title() {
         //
@@ -128,9 +129,9 @@ class Paint {
 
     function get_description_and_status() {
         if ( empty($this->status) ) {
-          return $this->description;
+          return Translator::t($this->getDescriptionId());
         } else {
-          return $this->description ." (" .Translator::t($this->status) .")";
+          return Translator::t($this->getDescriptionId()) ." (" .Translator::t($this->status) .")";
         }
     }
 
@@ -145,7 +146,7 @@ class Paint {
 
     // return a protected description
     function get_description() {
-        return addslashes($this->description);
+        return addslashes(Translator::t($this->getDescriptionId()));
     }
 
     function get_series() {
