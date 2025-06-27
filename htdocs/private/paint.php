@@ -12,7 +12,6 @@ class Paint {
     public $rank; // lowest values are shown first. If value is negative, it is ignored
 	public $id;
     public $file;
-    public $title;
     public $date;
     public $width;
     public $height;
@@ -22,31 +21,42 @@ class Paint {
     public $series; // an array of strings
 
     // as read from CSV
-    // filename, title, date (YYYYMMDD) , width, height, type, status, description, series
+    // filename, date (YYYYMMDD) , width, height, type, status, description, series
     function set_attributes( $array ) {
-        $this->rank= $array[0];
+      // column of information in CSV
+        $rank_column= 0;
+        $id_column= 1;
+        $filename_column= 2;
+        $date_column= 3;
+        $height_column= 4;
+        $width_column= 5;
+        $type_column= 6;
+        $status_column= 7;
+        $description_column= 8;
+        $series_column= 9;
+      
+        $this->rank= $array[$rank_column];
         if ( empty($this->rank) ) {
             $this->rank= Paint::UNDEFINED_RANK;
         } else {
             $this->rank= intval($this->rank);
         }
-        if ( strlen($array[4]) != 8 ) {
-            echo "** Invalid date for " . $array[1] . ": received " .$array[4] ."<br>";
+        if ( strlen($array[$date_column]) != 8 ) {
+            echo "** Invalid date for " . $array[$id_column] . ": received " .$array[$date_column] ."<br>";
         }
-		$this->id= $array[1];
-        $this->file= $array[2]; // le path complet en partant dans images/. Ex: oils/flamboyance.jpg 
-        $this->title= $array[3]; 
-        $this->date= DateTimeImmutable::createFromFormat("Ymd", $array[4]);
-        $this->height= $array[5];
-        $this->width= $array[6];
-        $this->type= $array[7];
-        $this->setStatus($array[8]);
-        $this->description= $array[9];
+		$this->id= $array[$id_column];
+        $this->file= $array[$filename_column]; // le path complet en partant dans images/. Ex: oils/flamboyance.jpg 
+        $this->date= DateTimeImmutable::createFromFormat("Ymd", $array[$date_column]);
+        $this->height= $array[$height_column];
+        $this->width= $array[$width_column];
+        $this->type= $array[$type_column];
+        $this->setStatus($array[$status_column]);
+        $this->description= $array[$description_column];
         // au cas ou les series ne sont pas donnees
         $this->series=array();
-        if ( count($array) > 10 ) {
-            // array[9] contient les series separees par des espaces
-            $series= explode(" ", trim($array[10]));
+        if ( count($array) > $series_column ) {
+            // array[$series_column] contient les series separees par des espaces
+            $series= explode(" ", trim($array[$series_column]));
             //
             foreach( $series as $serie ) {
                 $cur= trim($serie);
@@ -96,12 +106,20 @@ class Paint {
         return $this->rank >= 0;
     }
 
+    function getTitleId() {
+        return $this->id ."_Titre";
+    }
+
+    function getAltId() {
+        return $this->id ."_Alt";
+    }
+
     // what is displayed in the gallery
     function full_title() {
         //
         //$fdate= $this->get_date();
 		$fsize= $this->get_size();
-        return $this->title ." - " .Translator::t($this->type) ." - " .$fsize;
+        return Translator::t($this->getTitleId()) ." - " .Translator::t($this->type) ." - " .$fsize;
     }
 
     function get_status() {
@@ -135,7 +153,7 @@ class Paint {
     }
 
     function print() {
-        echo "[" .$this->rank .", " .$this->file .", " .$this->title .", " .$this->type .", " .$this->status .", " .date_format($this->date, "Y/m/d") .", " .$this->width ."x" .$this->height .", " .$this->series ."]";
+        echo "[" .$this->rank .", " .$this->file .", " .$this->id .", " .$this->type .", " .$this->status .", " .date_format($this->date, "Y/m/d") .", " .$this->width ."x" .$this->height .", " .$this->series ."]";
     }
 }
 ?>
