@@ -24,6 +24,14 @@ return array(
     'currentExpoDate' => '30 Mai au 12 Juin - Terminée',
 	'futureExpoDate' => '18 Décembre au 31 Décembre 2025',
 
+     // Paragraphes Introduction
+	 
+	 'AccueilArtisteIntro' => "
+	<h4>Artiste Peintre - Art Moderne</h4><p>
+	Visitez son monde imaginaire en suivant les oeuvres organisées par série d'expositions 
+	",
+
+	
     'IntroMomentsFem' => "
 	<h2>Moments Féminins</h2><p>
 	Moments Féminins est un hommage à la beauté des femmes dans leur existence au quotidien, de la rêverie 

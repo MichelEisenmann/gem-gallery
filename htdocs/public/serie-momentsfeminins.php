@@ -117,12 +117,7 @@ $line_generator->generate_style("LeNenuphar", 50, 50, "white");
         <?= Translator::t("IntroMomentsFem"); ?>
         </div>
       
-      <!-- Galerie/Exposition photo -->
-<!--      <div class="w3-container w3-center">
-	<img src="/public/images/web/expo-seillans.png" alt="" style="width:100%">
-      </div>
--->      
-      
+       
       <!-- Paintings -->
       <!--   First argument is the height of the line -->
       <!--   The second number is the percent of width allocated to the first paint -->

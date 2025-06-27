@@ -22,6 +22,13 @@ return array(
 
     'currentExpoDate' => 'May 30th to June 12th - Closed',
 	'futureExpoDate' => 'December 18th - 31st',
+	
+	// Paragraphes Introduction
+	 
+	 'AccueilArtisteIntro' => "
+	<h4>Painter - Modern Art</h4><p>
+	Visit her imaginary world by following the artworks organized by series of exhibitions 
+	",
     
     'IntroMomentsFem' => '
      <h2>Feminine Moments</h2>
