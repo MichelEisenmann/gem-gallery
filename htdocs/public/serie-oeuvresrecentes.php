@@ -30,10 +30,9 @@ $sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 // On recupere toutes les peintures qu'on veut voir dans cette serie
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
 // Cet ID servira a les designer le moment venu.
+
 // Oils
 $paints["NightClub"]= $oil->paints["Huile/20250615_NightClub_HU50x50.jpg"];
-
-// Acrylics
 
 // Pastels
 $paints["RosesRouges"]= $pastel->paints["Pastels/20250605_RosesRouges_PA20x18.jpg"];
@@ -68,7 +67,7 @@ $line_generator->serie_dico= $serie;  // will be used to browse exclusively amon
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$line_generator->generate_style("NightClub", 50, 50, "white");
+$line_generator->generate_style("NightClub", 50, 50, "black");
 $line_generator->generate_style("RosesRouges", 50, 50, "white");
 $line_generator->generate_style("LeNenuphar", 50, 50, "white");
 $line_generator->generate_style("GourdonEglise", 50, 50, "black");
@@ -85,14 +84,14 @@ $line_generator->generate_style("GourdonEglise", 50, 50, "black");
       
       <!-- Text Part -->
       <div class="w3-container w3-left-align">
-        <?= Translator::t("IntroMomentsFem"); ?>
+        <?= Translator::t("IntroOeuvresRecentes"); ?>
         </div>
       
        
       <!-- Paintings -->
       <!--   First argument is the height of the line -->
       <!--   The second number is the percent of width allocated to the first paint -->
-<?= $line_generator->generate_double_line( "gem-medium-height", "LeNenuphar", 50, "RosesRouges" ); ?>
+<?= $line_generator->generate_double_line( "gem-small-height", "LeNenuphar", 50, "RosesRouges" ); ?>
 <?= $line_generator->generate_double_line( "gem-large-height", "NightClub" , 50, "GourdonEglise" ); ?>
 
 

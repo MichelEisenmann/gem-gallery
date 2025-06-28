@@ -5,6 +5,7 @@
  $series[1]= "watermirror";
  $series[2]= "metamorphose";
  $series[3]= "emergence";
+ $series[4]= "oeuvresrecentes";
  ?>
 
 <!-- LARGE screens -->

@@ -13,9 +13,11 @@ return array(
     'watermirror' => 'Miroir d\'eau',
     'metamorphose' => 'Métamorphose',
 	'emergence' => 'Emergence',
+	'oeuvresrecentes' => 'dernières oeuvres',
 	
 	// divers
 	'copyrightview' => "Voir la dernière exposition",
+	'Avertissement' => "Avertissement : Le contenu de ce site Internet est protégé par le droit d’auteur. Toute reproduction est interdite.",
 	'soloexpo' => 'Expositions Solo', 
 	'groupexpo' => "Une sélection d'expositions de groupe",
     'faitespeinture' => 'Faîtes de la peinture',
@@ -30,7 +32,7 @@ return array(
 	<h4>Artiste Peintre - Art Moderne</h4><p>
 	Visitez son monde imaginaire en suivant les oeuvres organisées par série d'expositions 
 	",
-
+	'AccueilArtisteIntroFin' => " et les",
 	
     'IntroMomentsFem' => "
 	<h2>Moments Féminins</h2><p>
@@ -70,12 +72,7 @@ return array(
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information</br>
 	</p>",		
 	
-	
-
-	'contactlaius' => "Pour toute question ou demande de renseignement, 
-	 contacter <b>contact@giseleeisenmann.com</b>
-	 <p>Adresse de l'atelier : 
-	 <br>Valbonne, Provence-Alpes Côte d'Azur, France</br></p> ",
+    'IntroOeuvresRecentes' => "Oeuvres crées récemment et jamais exposées. ",	
 
     'Introduction' => '  <p>Gisèle Eisenmann Montagné (nom artiste: GEM) est une artiste autodidacte, travaillant 
 	principalement aujourd’hui avec l’huile et l’acrylique, et occasionnellement avec des pastels secs. 
@@ -92,6 +89,21 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 </br>
  ',
  
+     'Winner' => '<p>Gisèle Eisenmann Montagné est lauréate des prix suivants
+	<ul><li>2024 Luxembourg Art prize: CERTIFICAT DE MERITE ARTISTIQUE </li>
+	    <li>2024 Prix TROPHEE DE LA VILLE ANTIBES ["Faîtes de la peinture" - (association les amis du musée Picasso)] </li> 
+		<li>2021 2ème prix, catégorie Aquarelle/pastel ["Faîtes de la peinture" - (association les amis du musée Picasso)] </li> 
+	</ul>',
+
+   // Contact Page 
+    'Contacter' => "Pour toute question ou message",
+	'contactlaius' => "Pour toute question ou demande de renseignement, 
+	 contacter <b>contact@giseleeisenmann.com</b>
+	 <p>Adresse de l'atelier : 
+	 <br>Valbonne, Provence-Alpes Côte d'Azur, France</br></p> ",
+
+
+ 
     'additionalinfo' => "
 	<h5>Information Complémentaire</h5>
 	<b>Comment puis-je acheter un tableau?</b>
@@ -103,15 +115,11 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	</p>
 	",
 	
-    'Winner' => '<p>Gisèle Eisenmann Montagné est lauréate des prix suivants
-	<ul><li>2024 Luxembourg Art prize: CERTIFICAT DE MERITE ARTISTIQUE </li>
-	    <li>2024 Prix TROPHEE DE LA VILLE ANTIBES ["Faîtes de la peinture" - (association les amis du musée Picasso)] </li> 
-		<li>2021 2ème prix, catégorie Aquarelle/pastel ["Faîtes de la peinture" - (association les amis du musée Picasso)] </li> 
-	</ul>',
 
-    'Avertissement' => "Avertissement : Le contenu de ce site Internet est protégé par le droit d’auteur. Toute reproduction est interdite.",
 
-    'Contacter' => "Pour toute question ou message",
+
+
+
 	
     // ----------- noms tableaux pour ALT dans HREF
     //             et titres des tableaux
@@ -119,19 +127,19 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	'exposalle_Alt' => 'Exposition Moments Feminins Salle de la Mairie Gourdon',
 
 	//acrylic
-    'MatinDonazacOlen_Alt' => "Matin sur Donazac",
+    'MatinDonazacOlen_Alt' => "Lever de soleil sur village de Donazac (Aude, FR)",
     'MatinDonazacOlen_Titre' => "Matin sur Donazac",
-    'MatinDonazacOlen_Desc' => "Lever soleil Donazac (11)",
-    'GuillaumePense_Alt' => "Guillaume pense",
+    'MatinDonazacOlen_Desc' => "Lever de soleil sur village de Donazac (Aude, FR)",
+    'GuillaumePense_Alt' => "Petit garçon allongé bord de piscine",
     'GuillaumePense_Titre' => "Guillaume pense",
-    'GuillaumePense_Desc' => "Réflexion au bord de piscine",
+    'GuillaumePense_Desc' => "Introspection au bord de piscine",
     'TroueeBois_Alt' => "La trouée du bois",
     'TroueeBois_Titre' => "La trouée du bois",
-    'TroueeBois_Desc' => "(collection privée Paris, FR)",
-    'LagonTahaa_Alt' => "Lagon à Taha'a",
+    'TroueeBois_Desc' => "Paysage de peupliers en automne (Aude, FR)",
+    'LagonTahaa_Alt' => "Enfants jouant dans le lagon à Taha'a - Polynésie",
     'LagonTahaa_Titre' => "Lagon à Taha'a",
-    'LagonTahaa_Desc' => "Enfants dans le lagon de Polynesie",
-    'PromenadePaillon_Alt' => "Miroir d'eau",
+    'LagonTahaa_Desc' => "Enfants jouant dans le lagon à Taha'a - Polynésie",
+    'PromenadePaillon_Alt' => "Enfants jouant miroir d'eau de la ville de Nice Promenade du Paillon",
     'PromenadePaillon_Titre' => "Miroir d'eau",
     'PromenadePaillon_Desc' => "Promenade du Paillon Nice 06",
     'Aviateur_Alt' => "L'aviateur",
@@ -212,16 +220,16 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     'Eclosion_Alt' => "Eclosion",
     'Eclosion_Titre' => "Eclosion",
     'Eclosion_Desc' => "",
-    'YellowAigrette_Alt' => "L'aigrette",
+    'YellowAigrette_Alt' => "Grande aigrette chasse sur la lagune côtière de la mangrove",
     'YellowAigrette_Titre' => "L'aigrette",
-    'YellowAigrette_Desc' => "Le repas de l’aigrette",
-    'PelicanToutSeul_Alt' => "Le pélican qui s'en va tout seul",
+    'YellowAigrette_Desc' => "Chasse dans la mangrove (NSW, Australie)",
+    'PelicanToutSeul_Alt' => "Coucher de soleil et mangrove Silhouette pelican",
     'PelicanToutSeul_Titre' => "Le pélican qui s'en va tout seul",
-    'PelicanToutSeul_Desc' => "",
-    'LectriceChaton_Alt' => "La lectrice",
+    'PelicanToutSeul_Desc' => "Sur fond de mangrove, coucher de soleil (NSW, Australie)",
+    'LectriceChaton_Alt' => "Soir d'hiver Femme lisant Chaton blanc espiègle",
     'LectriceChaton_Titre' => "La lectrice",
     'LectriceChaton_Desc' => "",
-    'LaPiscine_Alt' => "La piscine",
+    'LaPiscine_Alt' => "Petite fille courant sur le bord de la piscine",
     'LaPiscine_Titre' => "La piscine",
     'LaPiscine_Desc' => "",
 

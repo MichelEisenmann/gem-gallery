@@ -12,9 +12,11 @@ return array(
     'watermirror' => 'Water Mirror',
     'metamorphose' => 'Metamorphosis',
 	'emergence' => 'Emergence',
+	'oeuvresrecentes' => 'latest art works',
 	
 	//divers
 	'copyrightview' => "View artist's recent exhibition",
+    'Avertissement' => 'Warning: The content of this web site is copyrighted. Any reproduction is strictly forbidden.',
 	'soloexpo' => 'Solo Exhibitions', 
 	'groupexpo' => 'Selected Group Exhibitions',
 	'faitespeinture' => 'Painting Festival',
@@ -24,11 +26,11 @@ return array(
 	'futureExpoDate' => 'December 18th - 31st',
 	
 	// Paragraphes Introduction
-	 
 	 'AccueilArtisteIntro' => "
 	<h4>Painter - Modern Art</h4><p>
 	Visit her imaginary world by following the artworks organized by series of exhibitions 
 	",
+	'AccueilArtisteIntroFin' => " and ",
     
     'IntroMomentsFem' => '
      <h2>Feminine Moments</h2>
@@ -67,6 +69,8 @@ return array(
     <p>The exhibition is over, however some paintings are available for purchase.</br>
     <br>Send an email to contact@giseleeisenmann.com for more information</br>
 	</p>",	
+
+    'IntroOeuvresRecentes' => "Artworks created recently and never exhibited. ",	
 	
 	'Introduction' => '<p>
      Self-taught artist, Gisele Eisenmann Montagne (signing artist name: GEM) is a figurative painter working primarily 
@@ -82,21 +86,22 @@ return array(
     </br>
   </p>',
   
-
-    'Avertissement' => 'Warning: The content of this web site is copyrighted. Any reproduction is strictly forbidden.',
-
-    'Contacter' => 'For all questions or inquiries',
-	'contactlaius' => "For all questions or inquiries,  
-	 contact <b>contact@giseleeisenmann.com</b>
-	 <p>Studio Address : 
-	 <br>Valbonne, Provence-Alpes CÃ´te d'Azur, France</br></p> ",
-	
-	'Winner' => '<p>GisÃ¨le Eisenmann MontagnÃ© is the winner of the following prices and awards
+  	'Winner' => '<p>GisÃ¨le Eisenmann MontagnÃ© is the winner of the following prices and awards
 	<ul><li>2024 Luxembourg Art prize: certificate of artistic achievement </li>
 	    <li>2024 Trophy Award of Antibes City [Painting Festival - (Picasso Museum friends organization)] </li> 
 		<li>2021 2nd prize, Watercolour/Pastel category [Painting Festival - (Picasso Museum friends organization)] </li> 
 	</ul>',
+
+    // Contact Page
+    'Contacter' => 'For all questions or inquiries',
+	'contactlaius' => "For all questions or inquiries,  
+	 contact <b>contact@giseleeisenmann.com</b>
+	 <p>Studio Address : 
+	 <br>Valbonne, Provence-Alpes Côte d'Azur, France</br></p> ",
 	
+
+
+
 	'additionalinfo' => "
 	<h5>Additional Information</h5>
 	<b>How can I purchase a painting?</b>
@@ -116,20 +121,20 @@ return array(
 	'exposalle_Alt' => 'Exposition Moments Feminins Salle de la Mairie Gourdon',
 
 	//acrylic
-    'MatinDonazacOlen_Alt' => "Matin sur Donazac",
-    'MatinDonazacOlen_Titre' => "Matin sur Donazac",
-    'MatinDonazacOlen_Desc' => "Lever soleil Donazac (11)",
-    'GuillaumePense_Alt' => "Guillaume pense",
-    'GuillaumePense_Titre' => "Guillaume pense",
-    'GuillaumePense_Desc' => "Réflexion au bord de piscine",
-    'TroueeBois_Alt' => "La trouée du bois",
-    'TroueeBois_Titre' => "La trouée du bois",
-    'TroueeBois_Desc' => "(collection privée Paris, FR)",
-    'LagonTahaa_Alt' => "Lagon à Taha'a",
-    'LagonTahaa_Titre' => "Lagon à Taha'a",
-    'LagonTahaa_Desc' => "Enfants dans le lagon de Polynesie",
-    'PromenadePaillon_Alt' => "Miroir d'eau",
-    'PromenadePaillon_Titre' => "Miroir d'eau",
+    'MatinDonazacOlen_Alt' => "Sunrise over the village of Donazac (Aude, FR)",
+    'MatinDonazacOlen_Titre' => "Sunrise over Donazac",
+    'MatinDonazacOlen_Desc' => "Sunrise over the village of Donazac (Aude, FR)",
+    'GuillaumePense_Alt' => "Little boy lying by the pool",
+    'GuillaumePense_Titre' => "Guillaume thinks",
+    'GuillaumePense_Desc' => "Introspection by the pool",
+    'TroueeBois_Alt' => "The edge of the wood",
+    'TroueeBois_Titre' => "The edge of the wood",
+    'TroueeBois_Desc' => "Poplar landscape in autumn (Aude, FR)",
+    'LagonTahaa_Alt' => "Children playing in the Lagoon in Taha'a - Polynesia",
+    'LagonTahaa_Titre' => "Lagoon in Taha'a",
+    'LagonTahaa_Desc' => "Children playing in the Lagoon in Taha'a - Polynesia",
+    'PromenadePaillon_Alt' => "Children playing water mirror of the city of Nice Promenade du Paillon",
+    'PromenadePaillon_Titre' => "Water Mirror",
     'PromenadePaillon_Desc' => "Promenade du Paillon Nice 06",
     'Aviateur_Alt' => "L'aviateur",
     'Aviateur_Titre' => "L'aviateur",
@@ -209,17 +214,17 @@ return array(
     'Eclosion_Alt' => "Eclosion",
     'Eclosion_Titre' => "Eclosion",
     'Eclosion_Desc' => "",
-    'YellowAigrette_Alt' => "L'aigrette",
-    'YellowAigrette_Titre' => "L'aigrette",
-    'YellowAigrette_Desc' => "Le repas de l’aigrette",
-    'PelicanToutSeul_Alt' => "Le pélican qui s'en va tout seul",
-    'PelicanToutSeul_Titre' => "Le pélican qui s'en va tout seul",
-    'PelicanToutSeul_Desc' => "",
-    'LectriceChaton_Alt' => "La lectrice",
-    'LectriceChaton_Titre' => "La lectrice",
+    'YellowAigrette_Alt' => "Great Egret hunts on the coastal lagoon of the mangrove",
+    'YellowAigrette_Titre' => "The egret",
+    'YellowAigrette_Desc' => "Great Egret hunts on the coastal lagoon of the mangrove (NSW, Australia)",
+    'PelicanToutSeul_Alt' => "Sunset and Mangrove Pelican Silhouette",
+    'PelicanToutSeul_Titre' => "The pelican that goes away on its own",
+    'PelicanToutSeul_Desc' => "Sunset on the mangrove (NSW, Australia)",
+    'LectriceChaton_Alt' => "Winter Evening Woman reading Mischievous white Kitten",
+    'LectriceChaton_Titre' => "The reader",
     'LectriceChaton_Desc' => "",
-    'LaPiscine_Alt' => "La piscine",
-    'LaPiscine_Titre' => "La piscine",
+    'LaPiscine_Alt' => "Little girl running on the edge of the pool",
+    'LaPiscine_Titre' => "The swimming pool",
     'LaPiscine_Desc' => "",
 
 	// oil

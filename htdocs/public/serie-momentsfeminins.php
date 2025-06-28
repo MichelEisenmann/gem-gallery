@@ -122,13 +122,13 @@ $line_generator->generate_style("LaLectrice", 50, 50, "white");
       <!--   The second number is the percent of width allocated to the first paint -->
 <?= $line_generator->generate_double_line( "gem-large-height", "AirMarin", 50, "NightClub" ); ?>
 <?= $line_generator->generate_single_line( "gem-medium-height", "BaigneursRiviere" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "PortraitPascale", 60, "LaLectrice" ); ?>
+<?= $line_generator->generate_double_line( "gem-large-height", "PortraitPascale", 50, "LaLectrice" ); ?>
 <?= $line_generator->generate_double_line( "gem-large-height", "LeTorrent", 60, "TheRiverBankVlaminck" ); ?>
-<?= $line_generator->generate_single_line( "gem-medium-height", "LesDanseuses" ); ?>
+<?= $line_generator->generate_single_line( "gem-large-height", "LesDanseuses" ); ?>
 <?= $line_generator->generate_single_line( "gem-medium-height", "BrumesDuSoir" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "Contemplation", 60, "ClairDeSoleil" ); ?>
+<?= $line_generator->generate_double_line( "gem-very-large-height", "Contemplation", 60, "ClairDeSoleil" ); ?>
 <?= $line_generator->generate_double_line( "gem-large-height", "PelicanSeul" , 50, "LaPiscine" ); ?>
-<?= $line_generator->generate_single_line( "gem-medium-height", "SakuraNenuphars"); ?>
+<?= $line_generator->generate_single_line( "gem-large-height", "SakuraNenuphars"); ?>
 <?= $line_generator->generate_double_line( "gem-large-height", "SanguinePascaleGui", 50, "JeuxDeRegards" ); ?>
 <?= $line_generator->generate_single_line( "gem-medium-height", "Aigrette" ); ?>
 
