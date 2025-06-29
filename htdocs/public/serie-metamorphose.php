@@ -155,17 +155,6 @@ $column_generator->generate_style("LesMouettesPlage", "white");
 
     </div>
     
-    <script>
-      // add the "alt" attribute to all "to-be-signed" images
-      function signImages() {
-        var gemSignature= "Gisele Eisenmann (gem)";
-        let images= document.querySelectorAll(".to-be-signed");
-        for ( let i= 0; i < images.length; i++ ) {
-	  images[i].setAttribute( 'alt', gemSignature );
-        }
-      }
-      document.addEventListener('DOMContentLoaded', function() { signImages(); }, false);  
-   </script>
     
   </body>
 </html>
