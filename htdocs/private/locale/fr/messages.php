@@ -13,7 +13,7 @@ return array(
     'watermirror' => 'Miroir d\'eau',
     'metamorphose' => 'Métamorphose',
 	'emergence' => 'Emergence',
-	'oeuvresrecentes' => 'dernières oeuvres',
+	'oeuvresrecentes' => 'Dernières Oeuvres',
 	
 	// divers
 	'copyrightview' => "Voir la dernière exposition",

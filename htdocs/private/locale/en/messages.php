@@ -12,7 +12,7 @@ return array(
     'watermirror' => 'Water Mirror',
     'metamorphose' => 'Metamorphosis',
 	'emergence' => 'Emergence',
-	'oeuvresrecentes' => 'latest art works',
+	'oeuvresrecentes' => 'Latest art works',
 	
 	//divers
 	'copyrightview' => "View artist's recent exhibition",
