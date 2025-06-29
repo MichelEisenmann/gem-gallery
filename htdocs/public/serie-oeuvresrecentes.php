@@ -32,12 +32,12 @@ $sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 // Cet ID servira a les designer le moment venu.
 
 // Oils
-$paints["NightClub"]= $oil->paints["Huile/20250615_NightClub_HU50x50.jpg"];
+$paints["Nightclub"]= $oil->paints["Nightclub"];
 
 // Pastels
-$paints["RosesRouges"]= $pastel->paints["Pastels/20250605_RosesRouges_PA20x18.jpg"];
-$paints["LeNenuphar"]= $pastel->paints["Pastels/20250609_LeNenuphar_PA15x10.jpg"];
-$paints["GourdonEglise"]= $pastel->paints["Pastels/20250620_GourdonEglise_PA26x18.jpg"];
+$paints["RosesRouges"]= $pastel->paints["RosesRouges"];
+$paints["FleurNenuphar"]= $pastel->paints["FleurNenuphar"];
+$paints["GourdonEglise"]= $pastel->paints["GourdonEglise"];
 
 
 $line_generator= new LineGenerator();
@@ -67,9 +67,9 @@ $line_generator->serie_dico= $serie;  // will be used to browse exclusively amon
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$line_generator->generate_style("NightClub", 50, 50, "black");
+$line_generator->generate_style("Nightclub", 50, 50, "black");
 $line_generator->generate_style("RosesRouges", 50, 50, "white");
-$line_generator->generate_style("LeNenuphar", 50, 50, "white");
+$line_generator->generate_style("FleurNenuphar", 50, 50, "white");
 $line_generator->generate_style("GourdonEglise", 50, 50, "black");
     ?>
   </style>
@@ -91,8 +91,8 @@ $line_generator->generate_style("GourdonEglise", 50, 50, "black");
       <!-- Paintings -->
       <!--   First argument is the height of the line -->
       <!--   The second number is the percent of width allocated to the first paint -->
-<?= $line_generator->generate_double_line( "gem-small-height", "LeNenuphar", 50, "RosesRouges" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "NightClub" , 50, "GourdonEglise" ); ?>
+<?= $line_generator->generate_double_line( "gem-small-height", "FleurNenuphar", 50, "RosesRouges" ); ?>
+<?= $line_generator->generate_double_line( "gem-large-height", "Nightclub" , 50, "GourdonEglise" ); ?>
 
 
 

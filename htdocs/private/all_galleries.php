@@ -31,30 +31,6 @@ class AllGalleries {
       $this->fill_new_paints();
     }
 
-    //    function load_dico( $dico_file ) {
-    //        // ouvre le fichier csv - separateur doit etre ';'
-    //        $row= 1;
-    //        if (($handle = fopen($dico_file, "r")) !== FALSE) {
-    //            while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {
-    //                $num = count($data);
-    //                // echo "<p> $num fields in line $row: <br /></p>\n";
-    //                // on saute les commentaires (lignes qui commencent par '#')
-    //                if ( $data[0] != null && !str_starts_with($data[0], '#') && $num == 1 ) {
-    //                    //                                        for ($c=0; $c < $num; $c++) {
-    //                    //                                            echo $data[$c] . "<br />\n";
-    //                    //                                        }
-    //                    // premier element est la cle
-    //                    $key= trim($data[0]);
-    //                    if ( $key != '' ) {
-    //                        $this->dictionnary->add_key( $key, $key );
-    //                    }
-    //                }
-    //                $row++;
-    //            }
-    //            fclose($handle);
-    //        }
-    //    }
-
     // must be called after load_dico so that labels are available
     function create_specific_dictionnaries() {
       $dico= $this->get_or_create_dictionnary(PaintDictionnary::ALL);

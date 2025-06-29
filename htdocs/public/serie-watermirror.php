@@ -30,27 +30,27 @@ $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
 // Cet ID servira a les designer le moment venu.
 // Oils
-$paints["EgretYellowSunset"]= $oil->paints["Huile/20220601_EgretYellowSunset-HU90x65.jpg"];
-$paints["ReveDeTropiques"]= $oil->paints["Huile/20221128_ReveDeTropiques_HU53x70.jpg"];
-$paints["IlotMangrove"]= $oil->paints["Huile/20230809_IlotMangrove_HU40x80.jpg"];
-$paints["Zenitude"]= $oil->paints["Huile/20240130_Zenitude_HU33x24.jpg"];
+$paints["EgretYellowSunset"]= $oil->paints["EgretYellowSunset"];
+$paints["ReveDeTropiques"]= $oil->paints["ReveDeTropiques"];
+$paints["IlotMangrove"]= $oil->paints["IlotMangrove"];
+$paints["Zenitude"]= $oil->paints["Zenitude"];
 
 // Acrylics
-$paints["JeuxDeVagues"]= $acrylic->paints["Acrylique/20211127_JeuxDeVagues_AC45x55.jpg"];
-$paints["LesZebres"]= $acrylic->paints["Acrylique/20220317_LesZebres_AC80x40.jpg"];
-$paints["ParisQuaiSeine"]= $acrylic->paints["Acrylique/20220312_ParisQuaiDeSeine_AC40x80.jpg"];
-$paints["AustralianPelican"]= $acrylic->paints["Acrylique/20220601_CreekAustralianPelican_AC35x24.jpg"];
-$paints["PinkSunsetTerranoraCreek"]= $acrylic->paints["Acrylique/20221103_PinkSunsetTerranoraCreek_AC50x76.jpg"];
-$paints["BlueTerranoraSunset"]= $acrylic->paints["Acrylique/20221210_BlueSunsetTerranoraCreek_AC54x81.jpg"];
-$paints["MangroveSulfurCockatoo"]= $acrylic->paints["Acrylique/20230504_Mangrove-SulfurCockatoo_AC53x71.jpg"];
-$paints["LaVague"]= $acrylic->paints["Acrylique/20230629_LaVague_AC33x41.jpg"];
-$paints["MarinaKeithCurran"]= $acrylic->paints["Acrylique/20231211_MarinaKeithCurran_AC46x91.jpg"];
+$paints["JeuxVagues"]= $acrylic->paints["JeuxVagues"];
+$paints["LesZebres"]= $acrylic->paints["LesZebres"];
+$paints["ParisQuaiSeine"]= $acrylic->paints["ParisQuaiSeine"];
+$paints["AustralianPelican"]= $acrylic->paints["AustralianPelican"];
+$paints["PinkSunset"]= $acrylic->paints["PinkSunset"];
+$paints["BlueSunset"]= $acrylic->paints["BlueSunset"];
+$paints["MangroveCockatoo"]= $acrylic->paints["MangroveCockatoo"];
+$paints["LaVague"]= $acrylic->paints["LaVague"];
+$paints["MarinaKeithCurran"]= $acrylic->paints["MarinaKeithCurran"];
 
 // Pastels
-$paints["LaBrague"]= $pastel->paints["Pastels/20220714_LaBrague_PA21x28.jpg"];
-$paints["BrisbaneNorthBank"]= $pastel->paints["Pastels/20240628_BrisbaneNorthBank_PA21x27.jpg"];
-$paints["BordDeSiagne"]= $pastel->paints["Pastels/20240428_BordDeSiagne_PA32x24.jpg"];
-$paints["CanalMidi"]= $pastel->paints["Pastels/20210909_canalDuMidi_PA29x39.jpg"];
+$paints["LaBragueTamarin"]= $pastel->paints["LaBragueTamarin"];
+$paints["BrisbaneNorthBank"]= $pastel->paints["BrisbaneNorthBank"];
+$paints["OlenSiagneDoree"]= $pastel->paints["OlenSiagneDoree"];
+$paints["AlleePlatanes"]= $pastel->paints["AlleePlatanes"];
 
 $line_generator= new LineGenerator();
 $line_generator->paints= $paints; // may contain paints that are not in serie
@@ -81,19 +81,19 @@ $line_generator->generate_style("EgretYellowSunset", 50, 100, "noir");
 $line_generator->generate_style("ReveDeTropiques", 25, 50, "white");
 $line_generator->generate_style("IlotMangrove", 50, 50, "white");
 $line_generator->generate_style("Zenitude", 50, 50, "white");
-$line_generator->generate_style("JeuxDeVagues", 0, 50, "white");
+$line_generator->generate_style("JeuxVagues", 0, 50, "white");
 $line_generator->generate_style("LesZebres", 50, 50, "white");
 $line_generator->generate_style("ParisQuaiSeine", 50, 50, "white");
 $line_generator->generate_style("AustralianPelican", 50, 50, "white");
-$line_generator->generate_style("PinkSunsetTerranoraCreek", 50, 50, "white");
-$line_generator->generate_style("BlueTerranoraSunset", 0, 50, "white");
-$line_generator->generate_style("MangroveSulfurCockatoo", 50, 50, "white");
+$line_generator->generate_style("PinkSunset", 50, 50, "white");
+$line_generator->generate_style("BlueSunset", 0, 50, "white");
+$line_generator->generate_style("MangroveCockatoo", 50, 50, "white");
 $line_generator->generate_style("LaVague", 50, 50, "white");
 $line_generator->generate_style("MarinaKeithCurran", 50, 50, "white");
-$line_generator->generate_style("LaBrague", 0, 50, "white");
+$line_generator->generate_style("LaBragueTamarin", 0, 50, "white");
 $line_generator->generate_style("BrisbaneNorthBank", 50, 50, "white");
-$line_generator->generate_style("BordDeSiagne", 50, 100, "white");
-$line_generator->generate_style("CanalMidi", 50, 50, "black");
+$line_generator->generate_style("OlenSiagneDoree", 50, 100, "white");
+$line_generator->generate_style("AlleePlatanes", 50, 50, "black");
     ?>
 
   </style>
@@ -114,16 +114,16 @@ $line_generator->generate_style("CanalMidi", 50, 50, "black");
        
       <!-- Paintings -->
 <?= $line_generator->generate_single_line( "gem-medium-height", "ParisQuaiSeine" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "EgretYellowSunset", 50, "MangroveSulfurCockatoo" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "LaVague", 40, "JeuxDeVagues" ); ?>
+<?= $line_generator->generate_double_line( "gem-large-height", "EgretYellowSunset", 50, "MangroveCockatoo" ); ?>
+<?= $line_generator->generate_double_line( "gem-medium-height", "LaVague", 40, "JeuxVagues" ); ?>
 <?= $line_generator->generate_double_line( "gem-medium-height", "ReveDeTropiques", 55, "AustralianPelican" ); ?>
 <?= $line_generator->generate_single_line( "gem-small-height", "MarinaKeithCurran" ); ?>
 <?= $line_generator->generate_single_line( "gem-small-height", "IlotMangrove" ); ?>
-<?= $line_generator->generate_double_line( "gem-small-height", "PinkSunsetTerranoraCreek", 55, "BordDeSiagne" ); ?>
+<?= $line_generator->generate_double_line( "gem-small-height", "PinkSunset", 55, "OlenSiagneDoree" ); ?>
 <?= $line_generator->generate_single_line( "gem-medium-height", "LesZebres" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "CanalMidi", 50, "LaBrague" ); ?>
+<?= $line_generator->generate_double_line( "gem-large-height", "AlleePlatanes", 50, "LaBragueTamarin" ); ?>
 <?= $line_generator->generate_double_line( "gem-medium-height", "BrisbaneNorthBank", 50, "Zenitude" ); ?>
-<?= $line_generator->generate_single_line( "gem-large-height", "BlueTerranoraSunset" ); ?>
+<?= $line_generator->generate_single_line( "gem-large-height", "BlueSunset" ); ?>
 
     <!-- Footer -->
     <?php include("../public/copyright.php"); ?>

@@ -32,27 +32,27 @@ $aquarelle = $ALL_GALLERIES->paint_dictionnaries["aquarelle"];
 // Cet ID servira a les designer le moment venu.
 
 // Oils
-$paints["Flamboyance"]= $oil->paints["Huile/20221109_Flamboyance_HU32x41.jpg"];
-$paints["ChapeauOrange"]= $oil->paints["Huile/20240601_ChapeauOrange_HU46x33.jpg"];
+$paints["Flamboyance"]= $oil->paints["Flamboyance"];
+$paints["ChapeauOrange"]= $oil->paints["ChapeauOrange"];
 
 // Acrylics
-$paints["EvocationGourdon"]= $acrylic->paints["Acrylique/20211228_EvocationGourdon_AC73x90.jpg"];
-$paints["LeFicus"]= $acrylic->paints["Acrylique/20220609_Le Ficus_AC20x20.jpg"];
-$paints["Abutilons"]= $acrylic->paints["Acrylique/20221016_Abutilon_AC20x27.jpg"];
-$paints["Pelagos"]= $acrylic->paints["Acrylique/20231109_Pelagos_AC41x61.jpg"];
-$paints["Tournesols"]= $acrylic->paints["Acrylique/20231111_LesTournesols_AC24x30.jpg"];
-$paints["BallonsOl"]= $acrylic->paints["Acrylique/20240218_BallonsOlympiques_AC55x38.jpg"];
-$paints["Deflagration"]= $acrylic->paints["Acrylique/20240326_Deflagration_AC90x90.jpg"];
-$paints["Distorsion"]= $acrylic->paints["Acrylique/20240529_Distorsion_AC46x55.jpg"];
-$paints["Eclosion"]= $acrylic->paints["Acrylique/20240704_Eclosion_AC38x46.jpg"];
+$paints["EvocationGourdon"]= $acrylic->paints["EvocationGourdon"];
+$paints["LeFicus"]= $acrylic->paints["LeFicus"];
+$paints["VaseAbutilons"]= $acrylic->paints["VaseAbutilons"];
+$paints["Pelagos"]= $acrylic->paints["Pelagos"];
+$paints["LesTournesols"]= $acrylic->paints["LesTournesols"];
+$paints["BallonsOlympiques"]= $acrylic->paints["BallonsOlympiques"];
+$paints["Deflagration"]= $acrylic->paints["Deflagration"];
+$paints["Distorsion"]= $acrylic->paints["Distorsion"];
+$paints["Eclosion"]= $acrylic->paints["Eclosion"];
 
 // Pastels et Autres
-$paints["MichelPoly"]= $pastel->paints["Pastels/20210917_MichelPolynesie_PA20x28.jpg"];
-$paints["BebeSourit"]= $pastel->paints["Pastels/20240119_Corentin2M_PA26x21.jpg"];
-$paints["Tendresse"]= $pastel->paints["Pastels/20240227_Tendresse_PA30x24.jpg"];
-$paints["BebeRose"]= $pastel->paints["Pastels/20240625_BebeRose_PA32x24.jpg"];
+$paints["MichelPolynesie"]= $pastel->paints["MichelPolynesie"];
+$paints["BebeSourit"]= $pastel->paints["BebeSourit"];
+$paints["TendresseChat"]= $pastel->paints["TendresseChat"];
+$paints["CorentinLaRose"]= $pastel->paints["CorentinLaRose"];
 
-$paints["LesMouettes"]= $aquarelle->paints["Autres/20230202_LesMouettes_AQ40x30.jpg"];
+$paints["LesMouettesPlage"]= $aquarelle->paints["LesMouettesPlage"];
 
 
 $line_generator= new LineGenerator();
@@ -86,18 +86,18 @@ $line_generator->generate_style("Flamboyance", 50, 50, "white");
 $line_generator->generate_style("ChapeauOrange", 50, 50, "white");
 $line_generator->generate_style("EvocationGourdon", 50, 50, "white");
 $line_generator->generate_style("LeFicus", 50, 50, "white");
-$line_generator->generate_style("Abutilons", 50, 50, "white");
+$line_generator->generate_style("VaseAbutilons", 50, 50, "white");
 $line_generator->generate_style("Pelagos", 0, 50, "black");
-$line_generator->generate_style("Tournesols", 50, 50, "white");
-$line_generator->generate_style("BallonsOl", 50, 50, "white");
+$line_generator->generate_style("LesTournesols", 50, 50, "white");
+$line_generator->generate_style("BallonsOlympiques", 50, 50, "white");
 $line_generator->generate_style("Deflagration", 50, 50, "white");
 $line_generator->generate_style("Distorsion", 50, 50, "white");
 $line_generator->generate_style("Eclosion", 50, 50, "white");
-$line_generator->generate_style("MichelPoly", 50, 50, "white");
+$line_generator->generate_style("MichelPolynesie", 50, 50, "white");
 $line_generator->generate_style("BebeSourit", 50, 50, "white");
-$line_generator->generate_style("Tendresse", 50, 50, "white");
-$line_generator->generate_style("BebeRose", 50, 50, "white");
-$line_generator->generate_style("LesMouettes", 0, 50, "white");
+$line_generator->generate_style("TendresseChat", 50, 50, "white");
+$line_generator->generate_style("CorentinLaRose", 50, 50, "white");
+$line_generator->generate_style("LesMouettesPlage", 0, 50, "white");
     ?>
   </style>
   
@@ -124,14 +124,14 @@ $line_generator->generate_style("LesMouettes", 0, 50, "white");
       <!--   First argument is the height of the line -->
       <!--   The second number is the percent of width allocated to the first paint -->
 <?= $line_generator->generate_double_line( "gem-medium-height", "Deflagration", 60, "Distorsion" ); ?>
-<?= $line_generator->generate_double_line( "gem-small-height", "Eclosion", 50, "Tournesols" ); ?>
+<?= $line_generator->generate_double_line( "gem-small-height", "Eclosion", 50, "LesTournesols" ); ?>
 <?= $line_generator->generate_single_line( "gem-very-large-height", "Pelagos" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "EvocationGourdon", 60, "Tendresse" ); ?>
+<?= $line_generator->generate_double_line( "gem-medium-height", "EvocationGourdon", 60, "TendresseChat" ); ?>
 <?= $line_generator->generate_double_line( "gem-large-height", "ChapeauOrange", 60, "Flamboyance" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "Abutilons", 60, "BebeSourit" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "LesMouettes", 60, "BebeRose" ); ?>
-<?= $line_generator->generate_single_line( "gem-large-height", "MichelPoly" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "BallonsOl", 60, "LeFicus" ); ?>
+<?= $line_generator->generate_double_line( "gem-medium-height", "VaseAbutilons", 60, "BebeSourit" ); ?>
+<?= $line_generator->generate_double_line( "gem-medium-height", "LesMouettesPlage", 60, "CorentinLaRose" ); ?>
+<?= $line_generator->generate_single_line( "gem-large-height", "MichelPolynesie" ); ?>
+<?= $line_generator->generate_double_line( "gem-medium-height", "BallonsOlympiques", 60, "LeFicus" ); ?>
 
 
      <!-- Footer -->

@@ -76,15 +76,15 @@ class PaintDictionnary {
         return $this->sortedList[$rank];
     }
 
-    // receive the file of a paiting
+    // receive the id of a paiting
     // must return its rank
-    function get_file_rank( $file ) {
-      //      echo $file ." for file <br>";
+    function get_id_rank( $id ) {
+      //      echo $id ." for id <br>";
       $rank= 0;
       foreach ( $this->sortedList as $paint ) {
         //        echo $rank ." as cur rank <br>";
-        //        echo $paint->file ." as cur file <br>";
-        if ( strcmp( $paint->file, $file ) == 0 ) {
+        //        echo $paint->id ." as cur id <br>";
+        if ( strcmp( $paint->id, $id ) == 0 ) {
           //          echo $rank ." for rank <br>";
           return $rank;
         }
@@ -94,16 +94,9 @@ class PaintDictionnary {
     }
 
     function add_paint( $paint ) {
-      $this->paints[$paint->file]= $paint;
+      //      $this->paints[$paint->file]= $paint;
+      $this->paints[$paint->id]= $paint;
       $this->sortedList[]=$paint;
-    }
-
-    function old_add_paint( $paint, $paint_key ) {
-        // case insensitive
-        if ( strcasecmp($paint_key, $this->key) == 0 ) {
-            $this->paints[$paint->file]= $paint;
-            $this->sortedList[]=$paint;
-        }
     }
 
     // must be called to ensure dictionnary is ready to be used
