@@ -58,6 +58,7 @@
 
       var dicoKey= "<?= $serie_key ?>";
       var paintFiles= [];
+      var paintAlts= [];
       var paintTitles= [];
       var paintDescriptions= [];
       var paintStatus= [];
@@ -66,11 +67,12 @@
       <?php
       foreach( $serie_dico->sortedList as $paint ) {
       ?>
-	      paintFiles.push( "images/<?= $paint->file ?>" );
-	  paintTitles.push( "<?= $paint->full_title() ?>" );
-	  paintDescriptions.push( "<?= trim($paint->get_description()) ?>" );
-	  paintStatus.push("<?= trim($paint->get_status()) ?>" );
-	  paintStatusTranslated.push("<?= Translator::t(trim($paint->get_status())) ?>" );
+      paintFiles.push( "images/<?= $paint->file ?>" );
+      paintAlts.push( "<?= Translator::t($paint->getAltId()) ?>" );
+      paintTitles.push( "<?= $paint->full_title() ?>" );
+      paintDescriptions.push( "<?= trim($paint->get_description()) ?>" );
+      paintStatus.push("<?= trim($paint->get_status()) ?>" );
+      paintStatusTranslated.push("<?= Translator::t(trim($paint->get_status())) ?>" );
 	  <?php
 						    }
 	  ?>
@@ -178,8 +180,8 @@ function updateCentralPaint() {
     document.title= paintTitles[rank_in_gallery];
     //
     var img = document.getElementById("central-paint-img");
-    img.src= paintFiles[rank_in_gallery];
-    img.alt= paintTitles[rank_in_gallery] + " " + gemSignature;
+    img.setAttribute('src', paintFiles[rank_in_gallery] );
+    img.setAttribute('alt', paintAlts[rank_in_gallery] );
     
     // retrieve current language
     const queryString= window.location.search;
@@ -203,11 +205,11 @@ function updateCentralPaint() {
     var third= "";
     if ( paintDescriptions[rank_in_gallery].length !== 0 ) {
         second= paintDescriptions[rank_in_gallery];
-	b2.textContent= second;
+	    b2.textContent= second;
         if ( paintStatus[rank_in_gallery].length !== 0 ) {
             third= paintStatusTranslated[rank_in_gallery];
-	    b3.textContent= third;
-	}
+	        b3.textContent= third;
+	    }
     } else {
 	if ( paintStatus[rank_in_gallery].length !== 0 ) {
             second= paintStatusTranslated[rank_in_gallery];

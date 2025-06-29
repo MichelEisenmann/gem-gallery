@@ -14,7 +14,7 @@
   <?php include ('../private/initialize.php'); ?>
   <?php include ('../private/initialize_translator.php'); ?>
   <?php include ('../private/initialize_galleries.php'); ?>
-  <?php include ('../private/line_generator.php'); ?>
+  <?php include ('../private/column_generator.php'); ?>
 
 <?php
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
@@ -31,33 +31,33 @@ $sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
 // Cet ID servira a les designer le moment venu.
 // Oils
-$paints["LesDanseuses"]= $oil->paints["Huile/20230216_LesDanseuses_Huile.jpg"];
-$paints["ClairDeSoleil"]= $oil->paints["Huile/20230708_ClairDeSoleil_HU92x65.jpg"];
-$paints["TheRiverBankVlaminck"]= $oil->paints["Huile/20230921_TheRiverBank_Vlaminck_38x46.jpg"];
-$paints["BaigneursRiviere"]= $oil->paints["Huile/20240204_Baigneurs_Huile_50x100.jpg"];
-$paints["SakuraNenuphars"]= $oil->paints["Huile/20240613_Sakura-nenuphars_HU54x73.jpg"];
-$paints["BrumesDuSoir"]= $oil->paints["Huile/20240728_Brume_HU54x73.jpg"];
-$paints["LeTorrent"]= $oil->paints["Huile/20241225_LeTorrent_HU41x33.jpg"];
-$paints["AirMarin"]= $oil->paints["Huile/20250314_AirMarin_HU50x50.jpg"];
-$paints["PortraitPascale"]= $oil->paints["Huile/20250319_PortraitPascale_HU50x50.jpg"];
-$paints["NightClub"]= $oil->paints["Huile/20250615_NightClub_HU50x50.jpg"];
+$paints["LesDanseusesNoires"]= $oil->paints["LesDanseusesNoires"];
+$paints["ClairDeSoleil"]= $oil->paints["ClairDeSoleil"];
+$paints["RiverBank"]= $oil->paints["RiverBank"];
+$paints["BaignadeRiviereCudgen"]= $oil->paints["BaignadeRiviereCudgen"];
+$paints["SakuraNenuphars"]= $oil->paints["SakuraNenuphars"];
+$paints["BrumesDuSoir"]= $oil->paints["BrumesDuSoir"];
+$paints["MilieuTorrent"]= $oil->paints["MilieuTorrent"];
+$paints["AirMarin"]= $oil->paints["AirMarin"];
+$paints["PortraitPascale"]= $oil->paints["PortraitPascale"];
+$paints["Nightclub"]= $oil->paints["Nightclub"];
 
 // Acrylics
-$paints["JeuxDeRegards"]= $acrylic->paints["Acrylique/20220821_Regards.jpg"];
-$paints["Contemplation"]= $acrylic->paints["Acrylique/20230530_Contemplation_A100x73.jpg"];
-$paints["Aigrette"]= $acrylic->paints["Acrylique/20240822_Aigrette_AC50x76.jpg"];
-$paints["PelicanSeul"]= $acrylic->paints["Acrylique/20240915_Pelican_AC55x38.jpg"];
-$paints["LaLectrice"]= $acrylic->paints["Acrylique/20250421_Lectrice_AC50x50.jpg"];
-$paints["LaPiscine"]= $acrylic->paints["Acrylique/20250504_La piscine-AC50x50.jpg"];
+$paints["JeuDeRegard"]= $acrylic->paints["JeuDeRegard"];
+$paints["Contemplation"]= $acrylic->paints["Contemplation"];
+$paints["YellowAigrette"]= $acrylic->paints["YellowAigrette"];
+$paints["PelicanToutSeul"]= $acrylic->paints["PelicanToutSeul"];
+$paints["LectriceChaton"]= $acrylic->paints["LectriceChaton"];
+$paints["LaPiscine"]= $acrylic->paints["LaPiscine"];
 
 
 // Autres
-$paints["SanguinePascaleGui"]= $sanguine->paints["Autres/20200920_SanguinePascaleGuillaume.jpg"];
+$paints["SanguinePascale"]= $sanguine->paints["SanguinePascale"];
 
 
-$line_generator= new LineGenerator();
-$line_generator->paints= $paints; // may contain paints that are not in serie
-$line_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
+$column_generator= new ColumnGenerator();
+$column_generator->paints= $paints; // may contain paints that are not in serie
+$column_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
 ?>
 
 
@@ -82,23 +82,23 @@ $line_generator->serie_dico= $serie;  // will be used to browse exclusively amon
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$line_generator->generate_style("AirMarin", 50, 50, "white");
-$line_generator->generate_style("NightClub", 50, 50, "white");
-$line_generator->generate_style("PortraitPascale", 50, 50, "black");
-$line_generator->generate_style("PelicanSeul", 50, 50, "white");
-$line_generator->generate_style("ClairDeSoleil", 70, 50, "white");
-$line_generator->generate_style("BaigneursRiviere", 0, 100, "white");
-$line_generator->generate_style("Contemplation", 70, 100, "black");
-$line_generator->generate_style("LeTorrent", 0, 50, "white");
-$line_generator->generate_style("TheRiverBankVlaminck", 50, 50, "white");
-$line_generator->generate_style("LesDanseuses", 50, 50, "white");
-$line_generator->generate_style("BrumesDuSoir", 50, 50, "white");
-$line_generator->generate_style("LaPiscine", 70, 50, "white");
-$line_generator->generate_style("Aigrette", 50, 100, "white");
-$line_generator->generate_style("SanguinePascaleGui", 40, 50, "white");
-$line_generator->generate_style("SakuraNenuphars", 50, 50, "white");
-$line_generator->generate_style("JeuxDeRegards", 50, 50, "white");
-$line_generator->generate_style("LaLectrice", 50, 50, "white");
+$column_generator->generate_style("AirMarin", "white");
+$column_generator->generate_style("Nightclub", "white");
+$column_generator->generate_style("PortraitPascale", "black");
+$column_generator->generate_style("PelicanToutSeul", "white");
+$column_generator->generate_style("ClairDeSoleil", "white");
+$column_generator->generate_style("BaignadeRiviereCudgen", "white");
+$column_generator->generate_style("Contemplation", "black");
+$column_generator->generate_style("MilieuTorrent", "white");
+$column_generator->generate_style("RiverBank", "white");
+$column_generator->generate_style("LesDanseusesNoires", "white");
+$column_generator->generate_style("BrumesDuSoir", "white");
+$column_generator->generate_style("LaPiscine", "white");
+$column_generator->generate_style("YellowAigrette", "white");
+$column_generator->generate_style("SanguinePascale", "white");
+$column_generator->generate_style("SakuraNenuphars", "white");
+$column_generator->generate_style("JeuDeRegard", "white");
+$column_generator->generate_style("LectriceChaton", "white");
 
     ?>
   </style>
@@ -114,39 +114,40 @@ $line_generator->generate_style("LaLectrice", 50, 50, "white");
       <!-- Text Part -->
       <div class="w3-container w3-left-align">
         <?= Translator::t("IntroMomentsFem"); ?>
-        </div>
-      
-       
-      <!-- Paintings -->
-      <!--   First argument is the height of the line -->
-      <!--   The second number is the percent of width allocated to the first paint -->
-<?= $line_generator->generate_double_line( "gem-large-height", "AirMarin", 50, "NightClub" ); ?>
-<?= $line_generator->generate_single_line( "gem-medium-height", "BaigneursRiviere" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "PortraitPascale", 50, "LaLectrice" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "LeTorrent", 60, "TheRiverBankVlaminck" ); ?>
-<?= $line_generator->generate_single_line( "gem-large-height", "LesDanseuses" ); ?>
-<?= $line_generator->generate_single_line( "gem-medium-height", "BrumesDuSoir" ); ?>
-<?= $line_generator->generate_double_line( "gem-very-large-height", "Contemplation", 60, "ClairDeSoleil" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "PelicanSeul" , 50, "LaPiscine" ); ?>
-<?= $line_generator->generate_single_line( "gem-large-height", "SakuraNenuphars"); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "SanguinePascaleGui", 50, "JeuxDeRegards" ); ?>
-<?= $line_generator->generate_single_line( "gem-medium-height", "Aigrette" ); ?>
+      </div>
 
+      <!-- Paintings -->
+      <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
+        <!-- First column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "AirMarin" ); ?>
+          <?= $column_generator->add_to_column( "PortraitPascale" ); ?>
+          <?= $column_generator->add_to_column( "LectriceChaton" ); ?>
+          <?= $column_generator->add_to_column( "LesDanseusesNoires" ); ?>
+          <?= $column_generator->add_to_column( "MilieuTorrent" ); ?>
+        </div>
+        <!-- Second column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "BaignadeRiviereCudgen" ); ?>
+          <?= $column_generator->add_to_column( "ClairDeSoleil" ); ?>
+          <?= $column_generator->add_to_column( "Nightclub" ); ?>
+          <?= $column_generator->add_to_column( "BrumesDuSoir" ); ?>
+          <?= $column_generator->add_to_column( "LaPiscine" ); ?>
+        </div>
+        <!-- Third column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "SakuraNenuphars" ); ?>
+          <?= $column_generator->add_to_column( "SanguinePascale" ); ?>
+          <?= $column_generator->add_to_column( "Contemplation" ); ?>
+          <?= $column_generator->add_to_column( "JeuDeRegard" ); ?>
+          <?= $column_generator->add_to_column( "YellowAigrette" ); ?>
+          <?= $column_generator->add_to_column( "PelicanToutSeul" ); ?>
+        </div>
+      </div>
+      
      <!-- Footer -->
     <?php include("../public/copyright.php"); ?>
     
     </div>
-    <script>
-      // add the "alt" attribute to all "to-be-signed" images
-      function signImages() {
-        var gemSignature= "Gisele Eisenmann (gem)";
-        let images= document.querySelectorAll(".to-be-signed");
-        for ( let i= 0; i < images.length; i++ ) {
-	  images[i].setAttribute( 'alt', gemSignature );
-        }
-      }
-      document.addEventListener('DOMContentLoaded', function() { signImages(); }, false);  
-   </script>
-    
   </body>
 </html>

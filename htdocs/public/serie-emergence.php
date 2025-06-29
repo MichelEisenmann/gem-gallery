@@ -14,7 +14,7 @@
   <?php include ('../private/initialize.php'); ?>
   <?php include ('../private/initialize_translator.php'); ?>
   <?php include ('../private/initialize_galleries.php'); ?>
-  <?php include ('../private/line_generator.php'); ?>
+  <?php include ('../private/column_generator.php'); ?>
 
 <?php
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
@@ -30,32 +30,32 @@ $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
 // Cet ID servira a les designer le moment venu.
 // Oils
-$paints["AutomneCezanne"]= $oil->paints["Huile/20211229_Automne_FromCezanne.jpg"];
-$paints["PanierFraises"]= $oil->paints["Huile/20220723_Chardin-FraisesDesBois_HU60x80.jpg"];
-$paints["Melancolie"]= $oil->paints["Huile/20220222_Melancolie_HU46x55.jpg"];
-$paints["Donazac"]= $oil->paints["Huile/20230706_Donazac_Hu30P_65x92.jpg"];
+$paints["AutomneCezanne"]= $oil->paints["AutomneCezanne"];
+$paints["PanierFraisesBois"]= $oil->paints["PanierFraisesBois"];
+$paints["PascaleMelancolie"]= $oil->paints["PascaleMelancolie"];
+$paints["DonazacVillage"]= $oil->paints["DonazacVillage"];
 
 // Acrylics
-$paints["LaTrouee"]= $acrylic->paints["Acrylique/20210801_OlenLaTroueeDonazac_AC33x24.jpg"];
-$paints["LucPlanneur"]= $acrylic->paints["Acrylique/20211003_LucPlanneur_AC30x40.jpg"];
-$paints["GuiTetine"]= $acrylic->paints["Acrylique/20211019_PortraitGuillaumeTetine_AC33x24.jpg"];
-$paints["OlenEnPied"]= $acrylic->paints["Acrylique/20211105_OlenEnPied_AC55x46.jpg"];
-$paints["FlamandsRouges"]= $acrylic->paints["Acrylique/20220723_LesFlamantsRouges_AC50x50.jpg"];
-$paints["GuilPiscine"]= $acrylic->paints["Acrylique/20210722_GuillaumePensePiscine_AC20x20.jpg"];
+$paints["TroueeBois"]= $acrylic->paints["TroueeBois"];
+$paints["Aviateur"]= $acrylic->paints["Aviateur"];
+$paints["PortraitGuillaumeTetine"]= $acrylic->paints["PortraitGuillaumeTetine"];
+$paints["Royal"]= $acrylic->paints["Royal"];
+$paints["FlamandsRouges"]= $acrylic->paints["FlamandsRouges"];
+$paints["GuillaumePense"]= $acrylic->paints["GuillaumePense"];
 
 
 
 // Pastels et Autres
-$paints["Lievre"]= $pastel->paints["Pastels/20200809_Le lievre.jpg"];
-$paints["AmericanRobins"]= $pastel->paints["Pastels/20200815_AmericanRobin.jpg"];
-$paints["Bisou"]= $pastel->paints["Pastels/20200824_GuillaumeMaximilien_Bisou.jpg"];
-$paints["WadiRamm"]= $pastel->paints["Pastels/20200827_Desert Jordanie.jpg"];
-$paints["PascRenaissance"]= $pastel->paints["Pastels/20201106_Pascale_RenaissanceItalienne.jpg"];
+$paints["LeLievre"]= $pastel->paints["LeLievre"];
+$paints["AmericanRobins"]= $pastel->paints["AmericanRobins"];
+$paints["LeBisou"]= $pastel->paints["LeBisou"];
+$paints["DesertJordanie"]= $pastel->paints["DesertJordanie"];
+$paints["PascaleRenaissance"]= $pastel->paints["PascaleRenaissance"];
 
 
-$line_generator= new LineGenerator();
-$line_generator->paints= $paints; // may contain paints that are not in serie
-$line_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
+$column_generator= new ColumnGenerator();
+$column_generator->paints= $paints; // may contain paints that are not in serie
+$column_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
 ?>
 
 
@@ -81,21 +81,21 @@ $line_generator->serie_dico= $serie;  // will be used to browse exclusively amon
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$line_generator->generate_style("AutomneCezanne", 0, 50, "white");
-$line_generator->generate_style("OlenEnPied", 50, 50, "white");
-$line_generator->generate_style("PanierFraises", 50, 50, "white");
-$line_generator->generate_style("LaTrouee", 50, 75, "black");
-$line_generator->generate_style("GuiTetine", 50, 50, "white");
-$line_generator->generate_style("Lievre", 50, 50, "white");
-$line_generator->generate_style("FlamandsRouges", 100, 50, "white");
-$line_generator->generate_style("Donazac", 50, 50, "white");
-$line_generator->generate_style("AmericanRobins", 50, 50, "black");
-$line_generator->generate_style("LucPlanneur", 50, 100, "white");
-$line_generator->generate_style("Bisou", 50, 50, "white");
-$line_generator->generate_style("WadiRamm", 50, 50, "white");
-$line_generator->generate_style("GuilPiscine", 0, 80, "white");
-$line_generator->generate_style("Melancolie", 50, 50, "black");
-$line_generator->generate_style("PascRenaissance", 50, 50, "white");
+$column_generator->generate_style("AutomneCezanne", "white");
+$column_generator->generate_style("Royal", "white");
+$column_generator->generate_style("PanierFraisesBois", "white");
+$column_generator->generate_style("TroueeBois", "black");
+$column_generator->generate_style("PortraitGuillaumeTetine", "white");
+$column_generator->generate_style("LeLievre", "white");
+$column_generator->generate_style("FlamandsRouges", "white");
+$column_generator->generate_style("DonazacVillage", "white");
+$column_generator->generate_style("AmericanRobins", "black");
+$column_generator->generate_style("Aviateur", "white");
+$column_generator->generate_style("LeBisou", "white");
+$column_generator->generate_style("DesertJordanie", "white");
+$column_generator->generate_style("GuillaumePense", "white");
+$column_generator->generate_style("PascaleMelancolie", "black");
+$column_generator->generate_style("PascaleRenaissance", "white");
     ?>
   </style>
   
@@ -119,35 +119,36 @@ $line_generator->generate_style("PascRenaissance", 50, 50, "white");
 -->      
       
       <!-- Paintings -->
-      <!--   First argument is the height of the line -->
-      <!--   The second number is the percent of width allocated to the first paint -->
-<?= $line_generator->generate_double_line( "gem-large-height", "AutomneCezanne", 50, "OlenEnPied" ); ?>
-<?= $line_generator->generate_single_line( "gem-large-height", "PanierFraises" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "LaTrouee", 50, "GuiTetine" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "Lievre", 50, "AmericanRobins" ); ?>
-<?= $line_generator->generate_single_line( "gem-medium-height", "Donazac" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "FlamandsRouges", 50, "LucPlanneur" ); ?>
-<?= $line_generator->generate_double_line( "gem-small-height", "Bisou", 50, "GuilPiscine" ); ?>
-<?= $line_generator->generate_single_line( "gem-small-height", "WadiRamm" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "Melancolie", 50, "PascRenaissance" ); ?>
-
-
-
+      <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
+        <!-- First column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "AutomneCezanne" ); ?>
+          <?= $column_generator->add_to_column( "Royal" ); ?>
+          <?= $column_generator->add_to_column( "PanierFraisesBois" ); ?>
+          <?= $column_generator->add_to_column( "TroueeBois" ); ?>
+          <?= $column_generator->add_to_column( "PortraitGuillaumeTetine" ); ?>
+        </div>
+        <!-- Second column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "LeLievre" ); ?>
+          <?= $column_generator->add_to_column( "AmericanRobins" ); ?>
+          <?= $column_generator->add_to_column( "DonazacVillage" ); ?>
+          <?= $column_generator->add_to_column( "FlamandsRouges" ); ?>
+          <?= $column_generator->add_to_column( "Aviateur" ); ?>
+        </div>
+        <!-- Third column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "LeBisou" ); ?>
+          <?= $column_generator->add_to_column( "GuillaumePense" ); ?>
+          <?= $column_generator->add_to_column( "DesertJordanie" ); ?>
+          <?= $column_generator->add_to_column( "PascaleMelancolie"); ?>
+          <?= $column_generator->add_to_column( "PascaleRenaissance" ); ?>
+        </div>
+      </div>
+      
      <!-- Footer -->
     <?php include("../public/copyright.php"); ?>
     
     </div>
-    <script>
-      // add the "alt" attribute to all "to-be-signed" images
-      function signImages() {
-        var gemSignature= "Gisele Eisenmann (gem)";
-        let images= document.querySelectorAll(".to-be-signed");
-        for ( let i= 0; i < images.length; i++ ) {
-	  images[i].setAttribute( 'alt', gemSignature );
-        }
-      }
-      document.addEventListener('DOMContentLoaded', function() { signImages(); }, false);  
-   </script>
-    
   </body>
 </html>

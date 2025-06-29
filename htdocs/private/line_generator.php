@@ -76,7 +76,7 @@ class LineGenerator {
   }
 
   function generate_part( $paint, $tagname, $height_style, $indent) {
-    $rank= $this->serie_dico->get_file_rank($paint->file);
+    $rank= $this->serie_dico->get_id_rank($paint->id);
     $serie= $this->serie_dico->name;
     $url= Translator::url('/public/contenu_d_une_serie.php?serie=' .$serie .'&rank=' .$rank);
     
