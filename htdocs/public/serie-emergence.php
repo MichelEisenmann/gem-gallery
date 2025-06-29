@@ -14,7 +14,7 @@
   <?php include ('../private/initialize.php'); ?>
   <?php include ('../private/initialize_translator.php'); ?>
   <?php include ('../private/initialize_galleries.php'); ?>
-  <?php include ('../private/line_generator.php'); ?>
+  <?php include ('../private/column_generator.php'); ?>
 
 <?php
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
@@ -53,9 +53,9 @@ $paints["DesertJordanie"]= $pastel->paints["DesertJordanie"];
 $paints["PascaleRenaissance"]= $pastel->paints["PascaleRenaissance"];
 
 
-$line_generator= new LineGenerator();
-$line_generator->paints= $paints; // may contain paints that are not in serie
-$line_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
+$column_generator= new ColumnGenerator();
+$column_generator->paints= $paints; // may contain paints that are not in serie
+$column_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
 ?>
 
 
@@ -81,21 +81,21 @@ $line_generator->serie_dico= $serie;  // will be used to browse exclusively amon
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$line_generator->generate_style("AutomneCezanne", 0, 50, "white");
-$line_generator->generate_style("Royal", 50, 50, "white");
-$line_generator->generate_style("PanierFraisesBois", 50, 50, "white");
-$line_generator->generate_style("TroueeBois", 50, 75, "black");
-$line_generator->generate_style("PortraitGuillaumeTetine", 50, 50, "white");
-$line_generator->generate_style("LeLievre", 50, 50, "white");
-$line_generator->generate_style("FlamandsRouges", 100, 50, "white");
-$line_generator->generate_style("DonazacVillage", 50, 50, "white");
-$line_generator->generate_style("AmericanRobins", 50, 50, "black");
-$line_generator->generate_style("Aviateur", 50, 100, "white");
-$line_generator->generate_style("LeBisou", 50, 50, "white");
-$line_generator->generate_style("DesertJordanie", 50, 50, "white");
-$line_generator->generate_style("GuillaumePense", 0, 80, "white");
-$line_generator->generate_style("PascaleMelancolie", 50, 50, "black");
-$line_generator->generate_style("PascaleRenaissance", 50, 50, "white");
+$column_generator->generate_style("AutomneCezanne", "white");
+$column_generator->generate_style("Royal", "white");
+$column_generator->generate_style("PanierFraisesBois", "white");
+$column_generator->generate_style("TroueeBois", "black");
+$column_generator->generate_style("PortraitGuillaumeTetine", "white");
+$column_generator->generate_style("LeLievre", "white");
+$column_generator->generate_style("FlamandsRouges", "white");
+$column_generator->generate_style("DonazacVillage", "white");
+$column_generator->generate_style("AmericanRobins", "black");
+$column_generator->generate_style("Aviateur", "white");
+$column_generator->generate_style("LeBisou", "white");
+$column_generator->generate_style("DesertJordanie", "white");
+$column_generator->generate_style("GuillaumePense", "white");
+$column_generator->generate_style("PascaleMelancolie", "black");
+$column_generator->generate_style("PascaleRenaissance", "white");
     ?>
   </style>
   
@@ -119,20 +119,33 @@ $line_generator->generate_style("PascaleRenaissance", 50, 50, "white");
 -->      
       
       <!-- Paintings -->
-      <!--   First argument is the height of the line -->
-      <!--   The second number is the percent of width allocated to the first paint -->
-<?= $line_generator->generate_double_line( "gem-large-height", "AutomneCezanne", 50, "Royal" ); ?>
-<?= $line_generator->generate_single_line( "gem-large-height", "PanierFraisesBois" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "TroueeBois", 50, "PortraitGuillaumeTetine" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "LeLievre", 50, "AmericanRobins" ); ?>
-<?= $line_generator->generate_single_line( "gem-medium-height", "DonazacVillage" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "FlamandsRouges", 50, "Aviateur" ); ?>
-<?= $line_generator->generate_double_line( "gem-small-height", "LeBisou", 50, "GuillaumePense" ); ?>
-<?= $line_generator->generate_single_line( "gem-small-height", "DesertJordanie" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "PascaleMelancolie", 50, "PascaleRenaissance" ); ?>
-
-
-
+      <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
+        <!-- First column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "AutomneCezanne" ); ?>
+          <?= $column_generator->add_to_column( "Royal" ); ?>
+          <?= $column_generator->add_to_column( "PanierFraisesBois" ); ?>
+          <?= $column_generator->add_to_column( "TroueeBois" ); ?>
+          <?= $column_generator->add_to_column( "PortraitGuillaumeTetine" ); ?>
+        </div>
+        <!-- Second column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "LeLievre" ); ?>
+          <?= $column_generator->add_to_column( "AmericanRobins" ); ?>
+          <?= $column_generator->add_to_column( "DonazacVillage" ); ?>
+          <?= $column_generator->add_to_column( "FlamandsRouges" ); ?>
+          <?= $column_generator->add_to_column( "Aviateur" ); ?>
+        </div>
+        <!-- Third column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "LeBisou" ); ?>
+          <?= $column_generator->add_to_column( "GuillaumePense" ); ?>
+          <?= $column_generator->add_to_column( "DesertJordanie" ); ?>
+          <?= $column_generator->add_to_column( "PascaleMelancolie"); ?>
+          <?= $column_generator->add_to_column( "PascaleRenaissance" ); ?>
+        </div>
+      </div>
+      
      <!-- Footer -->
     <?php include("../public/copyright.php"); ?>
     

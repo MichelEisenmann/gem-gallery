@@ -14,7 +14,7 @@
   <?php include ('../private/initialize.php'); ?>
   <?php include ('../private/initialize_translator.php'); ?>
   <?php include ('../private/initialize_galleries.php'); ?>
-  <?php include ('../private/line_generator.php'); ?>
+  <?php include ('../private/column_generator.php'); ?>
 
 <?php
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
@@ -40,9 +40,9 @@ $paints["FleurNenuphar"]= $pastel->paints["FleurNenuphar"];
 $paints["GourdonEglise"]= $pastel->paints["GourdonEglise"];
 
 
-$line_generator= new LineGenerator();
-$line_generator->paints= $paints; // may contain paints that are not in serie
-$line_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
+$column_generator= new ColumnGenerator();
+$column_generator->paints= $paints; // may contain paints that are not in serie
+$column_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
 ?>
 
 
@@ -67,10 +67,10 @@ $line_generator->serie_dico= $serie;  // will be used to browse exclusively amon
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$line_generator->generate_style("Nightclub", 50, 50, "black");
-$line_generator->generate_style("RosesRouges", 50, 50, "white");
-$line_generator->generate_style("FleurNenuphar", 50, 50, "white");
-$line_generator->generate_style("GourdonEglise", 50, 50, "black");
+$column_generator->generate_style("Nightclub", "black");
+$column_generator->generate_style("RosesRouges", "white");
+$column_generator->generate_style("FleurNenuphar", "white");
+$column_generator->generate_style("GourdonEglise", "black");
     ?>
   </style>
   
@@ -89,10 +89,21 @@ $line_generator->generate_style("GourdonEglise", 50, 50, "black");
       
        
       <!-- Paintings -->
-      <!--   First argument is the height of the line -->
-      <!--   The second number is the percent of width allocated to the first paint -->
-<?= $line_generator->generate_double_line( "gem-small-height", "FleurNenuphar", 50, "RosesRouges" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "Nightclub" , 50, "GourdonEglise" ); ?>
+      <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
+        <!-- First column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "FleurNenuphar" ); ?>
+        </div>
+        <!-- Second column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "RosesRouges" ); ?>
+          <?= $column_generator->add_to_column( "Nightclub" ); ?>
+        </div>
+        <!-- Third column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "GourdonEglise" ); ?>
+        </div>
+      </div>
 
 
 

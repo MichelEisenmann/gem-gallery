@@ -14,7 +14,7 @@
   <?php include ('../private/initialize.php'); ?>
   <?php include ('../private/initialize_translator.php'); ?>
   <?php include ('../private/initialize_galleries.php'); ?>
-  <?php include ('../private/line_generator.php'); ?>
+  <?php include ('../private/column_generator.php'); ?>
 
 <?php
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
@@ -55,9 +55,9 @@ $paints["CorentinLaRose"]= $pastel->paints["CorentinLaRose"];
 $paints["LesMouettesPlage"]= $aquarelle->paints["LesMouettesPlage"];
 
 
-$line_generator= new LineGenerator();
-$line_generator->paints= $paints; // may contain paints that are not in serie
-$line_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
+$column_generator= new ColumnGenerator();
+$column_generator->paints= $paints; // may contain paints that are not in serie
+$column_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
 ?>
 
 
@@ -82,22 +82,22 @@ $line_generator->serie_dico= $serie;  // will be used to browse exclusively amon
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$line_generator->generate_style("Flamboyance", 50, 50, "white");
-$line_generator->generate_style("ChapeauOrange", 50, 50, "white");
-$line_generator->generate_style("EvocationGourdon", 50, 50, "white");
-$line_generator->generate_style("LeFicus", 50, 50, "white");
-$line_generator->generate_style("VaseAbutilons", 50, 50, "white");
-$line_generator->generate_style("Pelagos", 0, 50, "black");
-$line_generator->generate_style("LesTournesols", 50, 50, "white");
-$line_generator->generate_style("BallonsOlympiques", 50, 50, "white");
-$line_generator->generate_style("Deflagration", 50, 50, "white");
-$line_generator->generate_style("Distorsion", 50, 50, "white");
-$line_generator->generate_style("Eclosion", 50, 50, "white");
-$line_generator->generate_style("MichelPolynesie", 50, 50, "white");
-$line_generator->generate_style("BebeSourit", 50, 50, "white");
-$line_generator->generate_style("TendresseChat", 50, 50, "white");
-$line_generator->generate_style("CorentinLaRose", 50, 50, "white");
-$line_generator->generate_style("LesMouettesPlage", 0, 50, "white");
+  $column_generator->generate_style("Flamboyance", "white");
+$column_generator->generate_style("ChapeauOrange",  "white");
+$column_generator->generate_style("EvocationGourdon",  "white");
+$column_generator->generate_style("LeFicus",  "white");
+$column_generator->generate_style("VaseAbutilons",  "white");
+$column_generator->generate_style("Pelagos", "black");
+$column_generator->generate_style("LesTournesols",  "white");
+$column_generator->generate_style("BallonsOlympiques",  "white");
+$column_generator->generate_style("Deflagration",  "white");
+$column_generator->generate_style("Distorsion",  "white");
+$column_generator->generate_style("Eclosion",  "white");
+$column_generator->generate_style("MichelPolynesie",  "white");
+$column_generator->generate_style("BebeSourit",  "white");
+$column_generator->generate_style("TendresseChat",  "white");
+$column_generator->generate_style("CorentinLaRose",  "white");
+$column_generator->generate_style("LesMouettesPlage", "white");
     ?>
   </style>
   
@@ -121,19 +121,35 @@ $line_generator->generate_style("LesMouettesPlage", 0, 50, "white");
 -->      
       
       <!-- Paintings -->
-      <!--   First argument is the height of the line -->
-      <!--   The second number is the percent of width allocated to the first paint -->
-<?= $line_generator->generate_double_line( "gem-medium-height", "Deflagration", 60, "Distorsion" ); ?>
-<?= $line_generator->generate_double_line( "gem-small-height", "Eclosion", 50, "LesTournesols" ); ?>
-<?= $line_generator->generate_single_line( "gem-very-large-height", "Pelagos" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "EvocationGourdon", 60, "TendresseChat" ); ?>
-<?= $line_generator->generate_double_line( "gem-large-height", "ChapeauOrange", 60, "Flamboyance" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "VaseAbutilons", 60, "BebeSourit" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "LesMouettesPlage", 60, "CorentinLaRose" ); ?>
-<?= $line_generator->generate_single_line( "gem-large-height", "MichelPolynesie" ); ?>
-<?= $line_generator->generate_double_line( "gem-medium-height", "BallonsOlympiques", 60, "LeFicus" ); ?>
-
-
+      <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
+        <!-- First column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "Deflagration" ); ?>
+          <?= $column_generator->add_to_column( "Distorsion" ); ?>
+          <?= $column_generator->add_to_column( "Eclosion" ); ?>
+          <?= $column_generator->add_to_column( "LesTournesols" ); ?>
+          <?= $column_generator->add_to_column( "Pelagos" ); ?>
+          <?= $column_generator->add_to_column( "EvocationGourdon" ); ?>
+        </div>
+        <!-- Second column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "TendresseChat" ); ?>
+          <?= $column_generator->add_to_column( "ChapeauOrange" ); ?>
+          <?= $column_generator->add_to_column( "Flamboyance" ); ?>
+          <?= $column_generator->add_to_column( "VaseAbutilons" ); ?>
+          <?= $column_generator->add_to_column( "BebeSourit" ); ?>
+        </div>
+        <!-- Third column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "LesMouettesPlage" ); ?>
+          <?= $column_generator->add_to_column( "CorentinLaRose" ); ?>
+          <?= $column_generator->add_to_column( "MichelPolynesie" ); ?>
+          <?= $column_generator->add_to_column( "BallonsOlympiques" ); ?>
+          <?= $column_generator->add_to_column( "LeFicus" ); ?>
+        </div>
+      </div>
+          
+          
      <!-- Footer -->
     <?php include("../public/copyright.php"); ?>
 
