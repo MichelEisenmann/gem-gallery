@@ -42,6 +42,7 @@ $paints["PortraitGuillaumeTetine"]= $acrylic->paints["PortraitGuillaumeTetine"];
 $paints["Royal"]= $acrylic->paints["Royal"];
 $paints["FlamandsRouges"]= $acrylic->paints["FlamandsRouges"];
 $paints["GuillaumePense"]= $acrylic->paints["GuillaumePense"];
+$paints["LeFicus"]= $acrylic->paints["LeFicus"];
 
 
 
@@ -51,6 +52,7 @@ $paints["AmericanRobins"]= $pastel->paints["AmericanRobins"];
 $paints["LeBisou"]= $pastel->paints["LeBisou"];
 $paints["DesertJordanie"]= $pastel->paints["DesertJordanie"];
 $paints["PascaleRenaissance"]= $pastel->paints["PascaleRenaissance"];
+$paints["AlleePlatanes"]= $pastel->paints["AlleePlatanes"];
 
 
 $column_generator= new ColumnGenerator();
@@ -86,7 +88,7 @@ $column_generator->generate_style("Royal", "white");
 $column_generator->generate_style("PanierFraisesBois", "white");
 $column_generator->generate_style("TroueeBois", "black");
 $column_generator->generate_style("PortraitGuillaumeTetine", "white");
-$column_generator->generate_style("LeLievre", "white");
+$column_generator->generate_style("LeLievre", "noir");
 $column_generator->generate_style("FlamandsRouges", "white");
 $column_generator->generate_style("DonazacVillage", "white");
 $column_generator->generate_style("AmericanRobins", "black");
@@ -96,6 +98,8 @@ $column_generator->generate_style("DesertJordanie", "white");
 $column_generator->generate_style("GuillaumePense", "white");
 $column_generator->generate_style("PascaleMelancolie", "black");
 $column_generator->generate_style("PascaleRenaissance", "white");
+$column_generator->generate_style("AlleePlatanes", "black");
+$column_generator->generate_style("LeFicus",  "white");
     ?>
   </style>
   
@@ -125,26 +129,28 @@ $column_generator->generate_style("PascaleRenaissance", "white");
           <?= $column_generator->add_to_column( "AutomneCezanne" ); ?>
           <?= $column_generator->add_to_column( "Royal" ); ?>
           <?= $column_generator->add_to_column( "TroueeBois" ); ?>
+		  <?= $column_generator->add_to_column( "AmericanRobins" ); ?>
 		  <?= $column_generator->add_to_column( "FlamandsRouges" ); ?>
 
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "PortraitGuillaumeTetine" ); ?>
           <?= $column_generator->add_to_column( "LeLievre" ); ?>
-          <?= $column_generator->add_to_column( "AmericanRobins" ); ?>
-          <?= $column_generator->add_to_column( "DonazacVillage" ); ?>
 		  <?= $column_generator->add_to_column( "PanierFraisesBois" ); ?>
-          <?= $column_generator->add_to_column( "Aviateur" ); ?>
+          <?= $column_generator->add_to_column( "DonazacVillage" ); ?>
+ 		  <?= $column_generator->add_to_column( "DesertJordanie" ); ?>
         </div>
         <!-- Third column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
           <?= $column_generator->add_to_column( "AlleePlatanes" ); ?>
           <?= $column_generator->add_to_column( "LeBisou" ); ?>
           <?= $column_generator->add_to_column( "GuillaumePense" ); ?>
-          <?= $column_generator->add_to_column( "DesertJordanie" ); ?>
           <?= $column_generator->add_to_column( "PascaleMelancolie"); ?>
+		  <?= $column_generator->add_to_column( "Aviateur" ); ?>
           <?= $column_generator->add_to_column( "PascaleRenaissance" ); ?>
-		  <?= $column_generator->add_to_column( "PortraitGuillaumeTetine" ); ?>
+		  <?= $column_generator->add_to_column( "LeFicus" ); ?>
+
         </div>
       </div>
       

@@ -37,9 +37,7 @@ $paints["ChapeauOrange"]= $oil->paints["ChapeauOrange"];
 
 // Acrylics
 $paints["EvocationGourdon"]= $acrylic->paints["EvocationGourdon"];
-$paints["LeFicus"]= $acrylic->paints["LeFicus"];
 $paints["VaseAbutilons"]= $acrylic->paints["VaseAbutilons"];
-$paints["Pelagos"]= $acrylic->paints["Pelagos"];
 $paints["LesTournesols"]= $acrylic->paints["LesTournesols"];
 $paints["BallonsOlympiques"]= $acrylic->paints["BallonsOlympiques"];
 $paints["Deflagration"]= $acrylic->paints["Deflagration"];
@@ -85,9 +83,7 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
   $column_generator->generate_style("Flamboyance", "white");
 $column_generator->generate_style("ChapeauOrange",  "white");
 $column_generator->generate_style("EvocationGourdon",  "white");
-$column_generator->generate_style("LeFicus",  "white");
 $column_generator->generate_style("VaseAbutilons",  "white");
-$column_generator->generate_style("Pelagos", "black");
 $column_generator->generate_style("LesTournesols",  "white");
 $column_generator->generate_style("BallonsOlympiques",  "white");
 $column_generator->generate_style("Deflagration",  "white");
@@ -126,9 +122,8 @@ $column_generator->generate_style("LesMouettesPlage", "white");
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
          <?= $column_generator->add_to_column( "Distorsion" ); ?>
 		 <?= $column_generator->add_to_column( "TendresseChat" ); ?>
+		 <?= $column_generator->add_to_column( "Flamboyance" ); ?>
           <?= $column_generator->add_to_column( "LesTournesols" ); ?>
-          <?= $column_generator->add_to_column( "Pelagos" ); ?>
-          <?= $column_generator->add_to_column( "EvocationGourdon" ); ?>
           <?= $column_generator->add_to_column( "LesMouettesPlage" ); ?>
 		  
         </div>
@@ -136,7 +131,7 @@ $column_generator->generate_style("LesMouettesPlage", "white");
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		  <?= $column_generator->add_to_column( "Deflagration" ); ?>
           <?= $column_generator->add_to_column( "ChapeauOrange" ); ?>
-          <?= $column_generator->add_to_column( "Flamboyance" ); ?>
+          <?= $column_generator->add_to_column( "EvocationGourdon" ); ?> 
           <?= $column_generator->add_to_column( "VaseAbutilons" ); ?>
 
         </div>
@@ -147,7 +142,7 @@ $column_generator->generate_style("LesMouettesPlage", "white");
           <?= $column_generator->add_to_column( "MichelPolynesie" ); ?>
 		  <?= $column_generator->add_to_column( "BebeSourit" ); ?>
           <?= $column_generator->add_to_column( "BallonsOlympiques" ); ?>
-          <?= $column_generator->add_to_column( "LeFicus" ); ?>
+ 
         </div>
       </div>
           

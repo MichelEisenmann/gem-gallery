@@ -45,12 +45,13 @@ $paints["BlueSunset"]= $acrylic->paints["BlueSunset"];
 $paints["MangroveCockatoo"]= $acrylic->paints["MangroveCockatoo"];
 $paints["LaVague"]= $acrylic->paints["LaVague"];
 $paints["MarinaKeithCurran"]= $acrylic->paints["MarinaKeithCurran"];
+$paints["Pelagos"]= $acrylic->paints["Pelagos"];
 
 // Pastels
 $paints["LaBragueTamarin"]= $pastel->paints["LaBragueTamarin"];
 $paints["BrisbaneNorthBank"]= $pastel->paints["BrisbaneNorthBank"];
 $paints["OlenSiagneDoree"]= $pastel->paints["OlenSiagneDoree"];
-$paints["AlleePlatanes"]= $pastel->paints["AlleePlatanes"];
+
 
 $column_generator= new ColumnGenerator();
 $column_generator->paints= $paints; // may contain paints that are not in serie
@@ -93,7 +94,8 @@ $column_generator->generate_style("MarinaKeithCurran", "white");
 $column_generator->generate_style("LaBragueTamarin", "white");
 $column_generator->generate_style("BrisbaneNorthBank", "white");
 $column_generator->generate_style("OlenSiagneDoree", "white");
-$column_generator->generate_style("AlleePlatanes", "black");
+$column_generator->generate_style("Pelagos", "black");
+
     ?>
 
   </style>
@@ -113,33 +115,33 @@ $column_generator->generate_style("AlleePlatanes", "black");
       
        
       <!-- Paintings -->
-      <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
+      <div class="w3-grid" style="grid-template-columns:50% 50%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "ParisQuaiSeine" ); ?>
+		  <?= $column_generator->add_to_column( "MangroveCockatoo" ); ?>
           <?= $column_generator->add_to_column( "EgretYellowSunset" ); ?>
            <?= $column_generator->add_to_column( "LaVague" ); ?>
           <?= $column_generator->add_to_column( "JeuxVagues" ); ?>
           <?= $column_generator->add_to_column( "ReveDeTropiques" ); ?>
 		  <?= $column_generator->add_to_column( "OlenSiagneDoree" ); ?>
-        </div>
-        <!-- Second column --> 
-        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "BlueSunset" ); ?>
-          <?= $column_generator->add_to_column( "MarinaKeithCurran" ); ?>
-          <?= $column_generator->add_to_column( "IlotMangrove" ); ?>
-		  <?= $column_generator->add_to_column( "LesZebres" ); ?>
-          <?= $column_generator->add_to_column( "PinkSunset" ); ?>
+		  <?= $column_generator->add_to_column( "LaBragueTamarin" ); ?>
+
+
 
 
         </div>
         <!-- Third column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "MangroveCockatoo" ); ?>
+          <?= $column_generator->add_to_column( "ParisQuaiSeine" ); ?> 
+		  <?= $column_generator->add_to_column( "BlueSunset" ); ?>
+		  <?= $column_generator->add_to_column( "MarinaKeithCurran" ); ?>
 		  <?= $column_generator->add_to_column( "AustralianPelican" ); ?>
-          <?= $column_generator->add_to_column( "LaBragueTamarin" ); ?>
-          <?= $column_generator->add_to_column( "BrisbaneNorthBank" ); ?>
+          <?= $column_generator->add_to_column( "IlotMangrove" ); ?>
+		  <?= $column_generator->add_to_column( "LesZebres" ); ?>
+		  <?= $column_generator->add_to_column( "PinkSunset" ); ?>
+		  <?= $column_generator->add_to_column( "Pelagos" ); ?>
           <?= $column_generator->add_to_column( "Zenitude" ); ?>
+		  <?= $column_generator->add_to_column( "BrisbaneNorthBank" ); ?>
 
         </div>
       </div>
