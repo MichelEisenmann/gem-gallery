@@ -124,26 +124,28 @@ $column_generator->generate_style("LesMouettesPlage", "white");
       <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "Deflagration" ); ?>
-          <?= $column_generator->add_to_column( "Distorsion" ); ?>
-          <?= $column_generator->add_to_column( "Eclosion" ); ?>
+         <?= $column_generator->add_to_column( "Distorsion" ); ?>
+		 <?= $column_generator->add_to_column( "TendresseChat" ); ?>
           <?= $column_generator->add_to_column( "LesTournesols" ); ?>
           <?= $column_generator->add_to_column( "Pelagos" ); ?>
           <?= $column_generator->add_to_column( "EvocationGourdon" ); ?>
+          <?= $column_generator->add_to_column( "LesMouettesPlage" ); ?>
+		  
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "TendresseChat" ); ?>
+		  <?= $column_generator->add_to_column( "Deflagration" ); ?>
           <?= $column_generator->add_to_column( "ChapeauOrange" ); ?>
           <?= $column_generator->add_to_column( "Flamboyance" ); ?>
           <?= $column_generator->add_to_column( "VaseAbutilons" ); ?>
-          <?= $column_generator->add_to_column( "BebeSourit" ); ?>
+
         </div>
         <!-- Third column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "LesMouettesPlage" ); ?>
+		  <?= $column_generator->add_to_column( "Eclosion" ); ?>
           <?= $column_generator->add_to_column( "CorentinLaRose" ); ?>
           <?= $column_generator->add_to_column( "MichelPolynesie" ); ?>
+		  <?= $column_generator->add_to_column( "BebeSourit" ); ?>
           <?= $column_generator->add_to_column( "BallonsOlympiques" ); ?>
           <?= $column_generator->add_to_column( "LeFicus" ); ?>
         </div>

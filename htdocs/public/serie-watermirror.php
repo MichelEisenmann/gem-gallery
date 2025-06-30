@@ -118,27 +118,29 @@ $column_generator->generate_style("AlleePlatanes", "black");
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
           <?= $column_generator->add_to_column( "ParisQuaiSeine" ); ?>
           <?= $column_generator->add_to_column( "EgretYellowSunset" ); ?>
-          <?= $column_generator->add_to_column( "MangroveCockatoo" ); ?>
-          <?= $column_generator->add_to_column( "LaVague" ); ?>
+           <?= $column_generator->add_to_column( "LaVague" ); ?>
           <?= $column_generator->add_to_column( "JeuxVagues" ); ?>
           <?= $column_generator->add_to_column( "ReveDeTropiques" ); ?>
+		  <?= $column_generator->add_to_column( "OlenSiagneDoree" ); ?>
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "AustralianPelican" ); ?>
+		  <?= $column_generator->add_to_column( "BlueSunset" ); ?>
           <?= $column_generator->add_to_column( "MarinaKeithCurran" ); ?>
           <?= $column_generator->add_to_column( "IlotMangrove" ); ?>
+		  <?= $column_generator->add_to_column( "LesZebres" ); ?>
           <?= $column_generator->add_to_column( "PinkSunset" ); ?>
-          <?= $column_generator->add_to_column( "OlenSiagneDoree" ); ?>
-          <?= $column_generator->add_to_column( "LesZebres" ); ?>
+
+
         </div>
         <!-- Third column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "AlleePlatanes" ); ?>
+		  <?= $column_generator->add_to_column( "MangroveCockatoo" ); ?>
+		  <?= $column_generator->add_to_column( "AustralianPelican" ); ?>
           <?= $column_generator->add_to_column( "LaBragueTamarin" ); ?>
           <?= $column_generator->add_to_column( "BrisbaneNorthBank" ); ?>
           <?= $column_generator->add_to_column( "Zenitude" ); ?>
-          <?= $column_generator->add_to_column( "BlueSunset" ); ?>
+
         </div>
       </div>
       

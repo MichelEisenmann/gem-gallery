@@ -124,25 +124,27 @@ $column_generator->generate_style("PascaleRenaissance", "white");
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
           <?= $column_generator->add_to_column( "AutomneCezanne" ); ?>
           <?= $column_generator->add_to_column( "Royal" ); ?>
-          <?= $column_generator->add_to_column( "PanierFraisesBois" ); ?>
           <?= $column_generator->add_to_column( "TroueeBois" ); ?>
-          <?= $column_generator->add_to_column( "PortraitGuillaumeTetine" ); ?>
+		  <?= $column_generator->add_to_column( "FlamandsRouges" ); ?>
+
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
           <?= $column_generator->add_to_column( "LeLievre" ); ?>
           <?= $column_generator->add_to_column( "AmericanRobins" ); ?>
           <?= $column_generator->add_to_column( "DonazacVillage" ); ?>
-          <?= $column_generator->add_to_column( "FlamandsRouges" ); ?>
+		  <?= $column_generator->add_to_column( "PanierFraisesBois" ); ?>
           <?= $column_generator->add_to_column( "Aviateur" ); ?>
         </div>
         <!-- Third column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "AlleePlatanes" ); ?>
           <?= $column_generator->add_to_column( "LeBisou" ); ?>
           <?= $column_generator->add_to_column( "GuillaumePense" ); ?>
           <?= $column_generator->add_to_column( "DesertJordanie" ); ?>
           <?= $column_generator->add_to_column( "PascaleMelancolie"); ?>
           <?= $column_generator->add_to_column( "PascaleRenaissance" ); ?>
+		  <?= $column_generator->add_to_column( "PortraitGuillaumeTetine" ); ?>
         </div>
       </div>
       

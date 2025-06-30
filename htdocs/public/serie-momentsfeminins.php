@@ -124,23 +124,25 @@ $column_generator->generate_style("LectriceChaton", "white");
           <?= $column_generator->add_to_column( "PortraitPascale" ); ?>
           <?= $column_generator->add_to_column( "LectriceChaton" ); ?>
           <?= $column_generator->add_to_column( "LesDanseusesNoires" ); ?>
+		  <?= $column_generator->add_to_column( "Nightclub" ); ?>
           <?= $column_generator->add_to_column( "MilieuTorrent" ); ?>
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
           <?= $column_generator->add_to_column( "BaignadeRiviereCudgen" ); ?>
           <?= $column_generator->add_to_column( "ClairDeSoleil" ); ?>
-          <?= $column_generator->add_to_column( "Nightclub" ); ?>
+		  <?= $column_generator->add_to_column( "SakuraNenuphars" ); ?>
           <?= $column_generator->add_to_column( "BrumesDuSoir" ); ?>
-          <?= $column_generator->add_to_column( "LaPiscine" ); ?>
+		  <?= $column_generator->add_to_column( "YellowAigrette" ); ?>
+
         </div>
         <!-- Third column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "SakuraNenuphars" ); ?>
+
           <?= $column_generator->add_to_column( "SanguinePascale" ); ?>
           <?= $column_generator->add_to_column( "Contemplation" ); ?>
           <?= $column_generator->add_to_column( "JeuDeRegard" ); ?>
-          <?= $column_generator->add_to_column( "YellowAigrette" ); ?>
+ 		  <?= $column_generator->add_to_column( "LaPiscine" ); ?>  
           <?= $column_generator->add_to_column( "PelicanToutSeul" ); ?>
         </div>
       </div>
