@@ -40,15 +40,15 @@ class ColumnGenerator {
     $tt3ab= $tt2ab .$tt2ab;
     $tt4ab= $tt3ab .$tt2ab;
     $tt5ab= $tt4ab .$tt2ab;
-    $this->print_line( $indent, "<a class=\"gem-a\" href=\"" .$url ."\">" );
     $this->print_line( $indent, $tt2ab ."<div class=\"w3-display-container w3-padding" ." gem-" .$tagname ."\" >" );
+    $this->print_line( $indent, "<a class=\"gem-a\" href=\"" .$url ."\">" );
     $this->print_line( $indent, $tt3ab   ."<img src=\"" .$file ."\" class=\"" ."gem-" .$tagname ."\" alt=\"" .$alt ."\">" );
-    $this->print_line( $indent, $tt3ab     ."<div class=\"w3-display-middle gem-hover\">" );
+    $this->print_line( $indent, $tt3ab     ."<div class=\"w3-display-middle w3-hide-small gem-hover\">" );
     $this->print_line( $indent, $tt4ab       .Translator::t($paint->getTitleId()) ." </br> " .Translator::t($paint->type) ." </br> " .$paint->get_size() ." </br> ");
     $this->print_line( $indent, $tt4ab       .Translator::t($paint->get_status()) ." </br> " );
     $this->print_line( $indent, $tt3ab     ."</div>" );
-    $this->print_line( $indent, $tt2ab ."</div>" );
     $this->print_line( $indent, "</a>" );
+    $this->print_line( $indent, $tt2ab ."</div>" );
   }
   
   function generate_style( $id, $color ) {
