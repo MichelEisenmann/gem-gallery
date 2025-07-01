@@ -43,7 +43,7 @@ $paints["Royal"]= $acrylic->paints["Royal"];
 $paints["FlamandsRouges"]= $acrylic->paints["FlamandsRouges"];
 $paints["GuillaumePense"]= $acrylic->paints["GuillaumePense"];
 $paints["LeFicus"]= $acrylic->paints["LeFicus"];
-
+$paints["Pelagos"]= $acrylic->paints["Pelagos"];
 
 
 // Pastels et Autres
@@ -100,6 +100,7 @@ $column_generator->generate_style("PascaleMelancolie", "black");
 $column_generator->generate_style("PascaleRenaissance", "white");
 $column_generator->generate_style("AlleePlatanes", "black");
 $column_generator->generate_style("LeFicus",  "white");
+$column_generator->generate_style("Pelagos", "black");
     ?>
   </style>
   
@@ -140,6 +141,7 @@ $column_generator->generate_style("LeFicus",  "white");
 		  <?= $column_generator->add_to_column( "PanierFraisesBois" ); ?>
           <?= $column_generator->add_to_column( "DonazacVillage" ); ?>
  		  <?= $column_generator->add_to_column( "DesertJordanie" ); ?>
+		  <?= $column_generator->add_to_column( "Pelagos" ); ?>
         </div>
         <!-- Third column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">

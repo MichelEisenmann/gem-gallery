@@ -33,7 +33,6 @@ $sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 // Oils
 $paints["LesDanseusesNoires"]= $oil->paints["LesDanseusesNoires"];
 $paints["ClairDeSoleil"]= $oil->paints["ClairDeSoleil"];
-$paints["RiverBank"]= $oil->paints["RiverBank"];
 $paints["BaignadeRiviereCudgen"]= $oil->paints["BaignadeRiviereCudgen"];
 $paints["SakuraNenuphars"]= $oil->paints["SakuraNenuphars"];
 $paints["BrumesDuSoir"]= $oil->paints["BrumesDuSoir"];
@@ -90,7 +89,6 @@ $column_generator->generate_style("ClairDeSoleil", "white");
 $column_generator->generate_style("BaignadeRiviereCudgen", "white");
 $column_generator->generate_style("Contemplation", "black");
 $column_generator->generate_style("MilieuTorrent", "white");
-$column_generator->generate_style("RiverBank", "white");
 $column_generator->generate_style("LesDanseusesNoires", "white");
 $column_generator->generate_style("BrumesDuSoir", "white");
 $column_generator->generate_style("LaPiscine", "white");

@@ -34,6 +34,7 @@ $paints["EgretYellowSunset"]= $oil->paints["EgretYellowSunset"];
 $paints["ReveDeTropiques"]= $oil->paints["ReveDeTropiques"];
 $paints["IlotMangrove"]= $oil->paints["IlotMangrove"];
 $paints["Zenitude"]= $oil->paints["Zenitude"];
+$paints["RiverBank"]= $oil->paints["RiverBank"];
 
 // Acrylics
 $paints["JeuxVagues"]= $acrylic->paints["JeuxVagues"];
@@ -45,7 +46,7 @@ $paints["BlueSunset"]= $acrylic->paints["BlueSunset"];
 $paints["MangroveCockatoo"]= $acrylic->paints["MangroveCockatoo"];
 $paints["LaVague"]= $acrylic->paints["LaVague"];
 $paints["MarinaKeithCurran"]= $acrylic->paints["MarinaKeithCurran"];
-$paints["Pelagos"]= $acrylic->paints["Pelagos"];
+
 
 // Pastels
 $paints["LaBragueTamarin"]= $pastel->paints["LaBragueTamarin"];
@@ -94,7 +95,7 @@ $column_generator->generate_style("MarinaKeithCurran", "white");
 $column_generator->generate_style("LaBragueTamarin", "white");
 $column_generator->generate_style("BrisbaneNorthBank", "white");
 $column_generator->generate_style("OlenSiagneDoree", "white");
-$column_generator->generate_style("Pelagos", "black");
+$column_generator->generate_style("RiverBank", "white");
 
     ?>
 
@@ -115,17 +116,19 @@ $column_generator->generate_style("Pelagos", "black");
       
        
       <!-- Paintings -->
-      <div class="w3-grid" style="grid-template-columns:50% 50%">
+      <div class="w3-grid" style="grid-template-columns:30% 70%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		  <?= $column_generator->add_to_column( "MangroveCockatoo" ); ?>
           <?= $column_generator->add_to_column( "EgretYellowSunset" ); ?>
            <?= $column_generator->add_to_column( "LaVague" ); ?>
+		  <?= $column_generator->add_to_column( "AustralianPelican" ); ?>
           <?= $column_generator->add_to_column( "JeuxVagues" ); ?>
-          <?= $column_generator->add_to_column( "ReveDeTropiques" ); ?>
+		  <?= $column_generator->add_to_column( "RiverBank" ); ?>
 		  <?= $column_generator->add_to_column( "OlenSiagneDoree" ); ?>
 		  <?= $column_generator->add_to_column( "LaBragueTamarin" ); ?>
-
+         <?= $column_generator->add_to_column( "Zenitude" ); ?>
+		  <?= $column_generator->add_to_column( "BrisbaneNorthBank" ); ?>
 
 
 
@@ -135,13 +138,12 @@ $column_generator->generate_style("Pelagos", "black");
           <?= $column_generator->add_to_column( "ParisQuaiSeine" ); ?> 
 		  <?= $column_generator->add_to_column( "BlueSunset" ); ?>
 		  <?= $column_generator->add_to_column( "MarinaKeithCurran" ); ?>
-		  <?= $column_generator->add_to_column( "AustralianPelican" ); ?>
           <?= $column_generator->add_to_column( "IlotMangrove" ); ?>
 		  <?= $column_generator->add_to_column( "LesZebres" ); ?>
+          <?= $column_generator->add_to_column( "ReveDeTropiques" ); ?>
 		  <?= $column_generator->add_to_column( "PinkSunset" ); ?>
-		  <?= $column_generator->add_to_column( "Pelagos" ); ?>
-          <?= $column_generator->add_to_column( "Zenitude" ); ?>
-		  <?= $column_generator->add_to_column( "BrisbaneNorthBank" ); ?>
+
+ 
 
         </div>
       </div>
