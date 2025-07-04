@@ -80,21 +80,21 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     
     <?php
 $column_generator->generate_style("EgretYellowSunset", "noir");
-$column_generator->generate_style("ReveDeTropiques", "white");
+$column_generator->generate_style("ReveDeTropiques", "black");
 $column_generator->generate_style("IlotMangrove", "white");
-$column_generator->generate_style("Zenitude", "white");
-$column_generator->generate_style("JeuxVagues", "white");
+$column_generator->generate_style("Zenitude", "black");
+$column_generator->generate_style("JeuxVagues", "black");
 $column_generator->generate_style("LesZebres", "white");
 $column_generator->generate_style("ParisQuaiSeine", "white");
 $column_generator->generate_style("AustralianPelican", "white");
-$column_generator->generate_style("PinkSunset", "white");
-$column_generator->generate_style("BlueSunset", "white");
+$column_generator->generate_style("PinkSunset", "black");
+$column_generator->generate_style("BlueSunset", "black");
 $column_generator->generate_style("MangroveCockatoo", "white");
 $column_generator->generate_style("LaVague", "white");
 $column_generator->generate_style("MarinaKeithCurran", "white");
 $column_generator->generate_style("LaBragueTamarin", "white");
-$column_generator->generate_style("BrisbaneNorthBank", "white");
-$column_generator->generate_style("OlenSiagneDoree", "white");
+$column_generator->generate_style("BrisbaneNorthBank", "black");
+$column_generator->generate_style("OlenSiagneDoree", "black");
 $column_generator->generate_style("RiverBank", "white");
 
     ?>

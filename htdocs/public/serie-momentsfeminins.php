@@ -82,19 +82,19 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     
     <?php
 $column_generator->generate_style("AirMarin", "white");
-$column_generator->generate_style("Nightclub", "white");
+$column_generator->generate_style("Nightclub", "black");
 $column_generator->generate_style("PortraitPascale", "black");
 $column_generator->generate_style("PelicanToutSeul", "white");
-$column_generator->generate_style("ClairDeSoleil", "white");
-$column_generator->generate_style("BaignadeRiviereCudgen", "white");
+$column_generator->generate_style("ClairDeSoleil", "black");
+$column_generator->generate_style("BaignadeRiviereCudgen", "black");
 $column_generator->generate_style("Contemplation", "black");
-$column_generator->generate_style("MilieuTorrent", "white");
+$column_generator->generate_style("MilieuTorrent", "black");
 $column_generator->generate_style("LesDanseusesNoires", "white");
 $column_generator->generate_style("BrumesDuSoir", "white");
 $column_generator->generate_style("LaPiscine", "white");
 $column_generator->generate_style("YellowAigrette", "white");
-$column_generator->generate_style("SanguinePascale", "white");
-$column_generator->generate_style("SakuraNenuphars", "white");
+$column_generator->generate_style("SanguinePascale", "black");
+$column_generator->generate_style("SakuraNenuphars", "black");
 $column_generator->generate_style("JeuDeRegard", "white");
 $column_generator->generate_style("LectriceChaton", "white");
 

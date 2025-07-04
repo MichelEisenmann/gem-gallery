@@ -82,18 +82,18 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     <?php
   $column_generator->generate_style("Flamboyance", "white");
 $column_generator->generate_style("ChapeauOrange",  "white");
-$column_generator->generate_style("EvocationGourdon",  "white");
+$column_generator->generate_style("EvocationGourdon",  "black");
 $column_generator->generate_style("VaseAbutilons",  "white");
-$column_generator->generate_style("LesTournesols",  "white");
-$column_generator->generate_style("BallonsOlympiques",  "white");
-$column_generator->generate_style("Deflagration",  "white");
+$column_generator->generate_style("LesTournesols",  "black");
+$column_generator->generate_style("BallonsOlympiques",  "black");
+$column_generator->generate_style("Deflagration",  "black");
 $column_generator->generate_style("Distorsion",  "white");
 $column_generator->generate_style("Eclosion",  "white");
 $column_generator->generate_style("MichelPolynesie",  "white");
-$column_generator->generate_style("BebeSourit",  "white");
-$column_generator->generate_style("TendresseChat",  "white");
-$column_generator->generate_style("CorentinLaRose",  "white");
-$column_generator->generate_style("LesMouettesPlage", "white");
+$column_generator->generate_style("BebeSourit",  "black");
+$column_generator->generate_style("TendresseChat",  "black");
+$column_generator->generate_style("CorentinLaRose",  "black");
+$column_generator->generate_style("LesMouettesPlage", "black");
     ?>
   </style>
   
