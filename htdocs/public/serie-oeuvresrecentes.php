@@ -33,6 +33,7 @@ $sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 
 // Oils
 $paints["Nightclub"]= $oil->paints["Nightclub"];
+$paints["Waterfalls"]= $oil->paints["Waterfalls"];
 
 // Pastels
 $paints["RosesRouges"]= $pastel->paints["RosesRouges"];
@@ -71,6 +72,7 @@ $column_generator->generate_style("Nightclub", "black");
 $column_generator->generate_style("RosesRouges", "white");
 $column_generator->generate_style("FleurNenuphar", "white");
 $column_generator->generate_style("GourdonEglise", "black");
+$column_generator->generate_style("Waterfalls", "white");
     ?>
   </style>
   
@@ -92,6 +94,7 @@ $column_generator->generate_style("GourdonEglise", "black");
       <div class="w3-grid" style="grid-template-columns:50% 50%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "Waterfalls" ); ?>
           <?= $column_generator->add_to_column( "FleurNenuphar" ); ?>
 		  <?= $column_generator->add_to_column( "RosesRouges" ); ?>
 

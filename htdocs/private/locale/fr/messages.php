@@ -291,6 +291,9 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     'Nightclub_Alt' => "Un couple s'élance sur une piste de danse.",
     'Nightclub_Titre' => "Night-club",
     'Nightclub_Desc' => "",
+	'Waterfalls_Alt' => "Paysage de l'arctique. Cascades, montagnes et barque isolée",
+    'Waterfalls_Titre' => "Waterfalls",
+    'Waterfalls_Desc' => "Vue d'artiste. Paysage du Nord",
 
     // Pastel
     'PortraitPascale_Alt' => "Portrait de Pascale",

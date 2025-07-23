@@ -285,6 +285,9 @@ return array(
     'Nightclub_Alt' => "Night-club - A couple takes to the dance floor.",
     'Nightclub_Titre' => "Night-club",
     'Nightclub_Desc' => "",
+	'Waterfalls_Alt' => "Arctic landscape. Waterfalls, mountains and lonely boat",
+    'Waterfalls_Titre' => "Waterfalls",
+    'Waterfalls_Desc' => "Artiste view. Northen landscape.",
 
     // Pastel
     'PortraitPascale_Alt' => "Portrait de Pascale",
