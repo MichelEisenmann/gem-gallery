@@ -234,7 +234,7 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     'LaPiscine_Desc' => "",
 	'Cavalcade_Alt' => "Abstraction rouge et verte cadre bois peint",
     'Cavalcade_Titre' => "Cavalcade",
-    'Cavalcade_Desc' => "Abstrait",
+    'Cavalcade_Desc' => "Abstrait. Couteaux - Texture",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",

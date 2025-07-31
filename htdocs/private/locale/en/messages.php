@@ -228,7 +228,7 @@ return array(
     'LaPiscine_Desc' => "",
 	'Cavalcade_Alt' => "Red and green abstraction painted wooden frame",
     'Cavalcade_Titre' => "Cavalcade",
-    'Cavalcade_Desc' => "Abstraction",
+    'Cavalcade_Desc' => "Abstraction. Painting knives and texturing",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",
