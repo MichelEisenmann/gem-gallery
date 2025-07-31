@@ -35,6 +35,10 @@ $sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 $paints["Nightclub"]= $oil->paints["Nightclub"];
 $paints["LacBleu"]= $oil->paints["LacBleu"];
 
+// Acrylic
+$paints["Cavalcade"]= $acrylic->paints["Cavalcade"];
+
+
 // Pastels
 $paints["RosesRouges"]= $pastel->paints["RosesRouges"];
 $paints["FleurNenuphar"]= $pastel->paints["FleurNenuphar"];
@@ -73,6 +77,7 @@ $column_generator->generate_style("RosesRouges", "white");
 $column_generator->generate_style("FleurNenuphar", "white");
 $column_generator->generate_style("GourdonEglise", "black");
 $column_generator->generate_style("LacBleu", "white");
+$column_generator->generate_style("Cavalcade", "white");
     ?>
   </style>
   

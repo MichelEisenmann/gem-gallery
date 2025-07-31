@@ -226,6 +226,9 @@ return array(
     'LaPiscine_Alt' => "Little girl running on the edge of the pool",
     'LaPiscine_Titre' => "The swimming pool",
     'LaPiscine_Desc' => "",
+	'Cavalcade_Alt' => "Red and green abstraction painted wooden frame",
+    'Cavalcade_Titre' => "Cavalcade",
+    'Cavalcade_Desc' => "Abstraction",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",
