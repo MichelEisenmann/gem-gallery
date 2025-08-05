@@ -1,6 +1,6 @@
 <?php
 return array(
-    'Work' => "Work",
+    'Work' => "Artwork",
     'Expositions' => "Exhibitions",
     'About' => "About",
 	'Biography' => "Biography",
