@@ -96,18 +96,23 @@ $column_generator->generate_style("Cavalcade", "white");
       
        
       <!-- Paintings -->
+      <div class="w3-grid" style="grid-template-columns:100%">
+        <!-- Only column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "LacBleu" ); ?>
+        </div>
+      </div>
+
       <div class="w3-grid" style="grid-template-columns:50% 50%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "LacBleu" ); ?>
           <?= $column_generator->add_to_column( "FleurNenuphar" ); ?>
 		  <?= $column_generator->add_to_column( "RosesRouges" ); ?>
-
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
- <?= $column_generator->add_to_column( "Nightclub" ); ?>
- <?= $column_generator->add_to_column( "Cavalcade" ); ?>
+          <?= $column_generator->add_to_column( "Nightclub" ); ?>
+          <?= $column_generator->add_to_column( "Cavalcade" ); ?>
 		  <?= $column_generator->add_to_column( "GourdonEglise" ); ?>
          </div>
       </div>
