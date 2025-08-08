@@ -37,6 +37,7 @@ $paints["LacBleu"]= $oil->paints["LacBleu"];
 
 // Acrylic
 $paints["Cavalcade"]= $acrylic->paints["Cavalcade"];
+$paints["Farandole"]= $acrylic->paints["Farandole"];
 
 
 // Pastels
@@ -78,6 +79,7 @@ $column_generator->generate_style("FleurNenuphar", "white");
 $column_generator->generate_style("GourdonEglise", "black");
 $column_generator->generate_style("LacBleu", "white");
 $column_generator->generate_style("Cavalcade", "white");
+$column_generator->generate_style("Farandole", "white");
     ?>
   </style>
   
@@ -115,6 +117,13 @@ $column_generator->generate_style("Cavalcade", "white");
           <?= $column_generator->add_to_column( "Cavalcade" ); ?>
 		  <?= $column_generator->add_to_column( "GourdonEglise" ); ?>
          </div>
+      </div>
+	  
+       <!-- Only column --> 	  
+	  <div class="w3-grid" style="grid-template-columns:100%">
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "Farandole" ); ?>
+        </div>
       </div>
 
 

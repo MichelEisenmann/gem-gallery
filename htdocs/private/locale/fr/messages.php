@@ -72,7 +72,7 @@ return array(
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information</br>
 	</p>",		
 	
-    'IntroOeuvresRecentes' => "Oeuvres crées récemment et jamais exposées. ",	
+    'IntroOeuvresRecentes' => "Oeuvres créées récemment et jamais exposées. ",	
 
     'Introduction' => '  <p>Gisèle Eisenmann Montagné (nom artiste: GEM) est une artiste autodidacte, travaillant 
 	principalement aujourd’hui avec l’huile et l’acrylique, et occasionnellement avec des pastels secs. 
@@ -235,6 +235,9 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	'Cavalcade_Alt' => "Abstraction rouge et verte cadre bois peint",
     'Cavalcade_Titre' => "Cavalcade",
     'Cavalcade_Desc' => "Abstrait. Couteaux - Texture",
+	'Farandole_Alt' => "Fleurs orangées et blanches texturées en mouvement",
+    'Cavalcade_Titre' => "Farandole",
+    'Cavalcade_Desc' => "",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",
