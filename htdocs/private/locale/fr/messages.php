@@ -41,8 +41,8 @@ return array(
 	du clin d'oeil de connivence entre amies à l'amour maternel. 
 	<br>Obtenez une vue complète du tableau en cliquant dessus</p>
     <p>L'exposition qui présente aussi quelques oeuvres récentes s'est tenue du 30 Mai au 12 Juin 2025 à Gourdon (06). 
-	Une nouvelle session aura lieu du 18 au 31 Décembre à Le Cannet, Terrasse des Arts (06). 
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information</br>
+	Une nouvelle session aura lieu du 18 au 31 Décembre 2025 à Le Cannet, Terrasse des Arts (06). 
+	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",	
 	
 	'IntroWaterMirror' => "
@@ -51,7 +51,7 @@ return array(
 	Les oeuvres capturent souvent des moments paisibles dans la nature que j'ai reproduits à partir de mes photos. Comme un
 	clin d'oeil facétieux, j'ajoute parfois une touche surréaliste pour enrichir la vue. 
     <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information</br>
+	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",
 
     'IntroMetamorphose' => "
@@ -60,7 +60,7 @@ return array(
 	couleurs chatoyantes orange, marron et or correspondent à cette étude. </p>
     <p>L'exposition qui présentait aussi quelques oeuvres figuratives, en particulier des portraits aux pastels 
 	secs, est terminée. Quelques tableaux sont disponibles à l'achat.
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information</br>
+	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",	
 
     'IntroEmergence' => "
@@ -69,7 +69,7 @@ return array(
 	à acquérir après la fin de ma carrière en informatique. Aucun fil conducteur; un simple partage 
     d'émotions au détour d'une rencontre avec une réalité nouvelle.	</p>
     <p>Quelques tableaux sont disponibles à l'achat.
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information</br>
+	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",		
 	
     'IntroOeuvresRecentes' => "Oeuvres créées récemment et jamais exposées. ",	
@@ -232,12 +232,12 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     'LaPiscine_Alt' => "Petite fille courant sur le bord de la piscine",
     'LaPiscine_Titre' => "La piscine",
     'LaPiscine_Desc' => "",
-	'Cavalcade_Alt' => "Abstraction rouge et verte cadre bois peint",
+	'Cavalcade_Alt' => "Abstraction rouge et verte avec cadre en bois peint",
     'Cavalcade_Titre' => "Cavalcade",
-    'Cavalcade_Desc' => "Abstrait. Couteaux - Texture",
+    'Cavalcade_Desc' => "Abstrait encadré. Motifs texturés",
 	'Farandole_Alt' => "Fleurs orangées et blanches texturées en mouvement",
-    'Cavalcade_Titre' => "Farandole",
-    'Cavalcade_Desc' => "",
+    'Farandole_Titre' => "Farandole",
+    'Farandole_Desc' => "",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",

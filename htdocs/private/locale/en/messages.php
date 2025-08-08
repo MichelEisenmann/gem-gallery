@@ -12,7 +12,7 @@ return array(
     'watermirror' => 'Water Mirror',
     'metamorphose' => 'Metamorphosis',
 	'emergence' => 'Emergence',
-	'oeuvresrecentes' => 'Latest art works',
+	'oeuvresrecentes' => 'Latest Artwork',
 	
 	//divers
 	'copyrightview' => "View artist's recent exhibition",
@@ -40,7 +40,7 @@ return array(
 	 <br>Get the full view of the painting by clicking on it. </p> 
      <p>The next exhibition, which also presents some of the latest works, will be held December 18th-31st, 2025
 	 at Le Cannet, Terrasse des Arts (06). Some paintings are available for purchase.
-	 <br>Send an email to contact@giseleeisenmann.com for more information</br>
+	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	  </p>',
  
 	'IntroWaterMirror' => "
@@ -49,7 +49,7 @@ return array(
 	The works often capture peaceful moments in nature that I have reproduced from my photos. Like a mischievous wink, I sometimes 
 	add a surreal touch to enrich the view. 
 	<br>The exhibition is closed but some paintings are still available for purchase.</br>
-    <br>Send an email to contact@giseleeisenmann.com for more information</br>
+    <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",	
 	
     'IntroMetamorphose' => "
@@ -58,7 +58,7 @@ return array(
 	shimmering colors orange, brown and gold correspond to this study. It also presented some 
 	figurative works, in particular portraits painted with soft pastels. 
 	<br>The exhibition is over, however some paintings are available for purchase.</br>
-    <br>Send an email to contact@giseleeisenmann.com for more information</br>
+    <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",
 
     'IntroEmergence' => "
@@ -67,7 +67,7 @@ return array(
 	the end of my career in computer science. No common thread; a simple sharing of emotions in the course of 
 	an encounter with a new reality.</p>
     <p>The exhibition is over, however some paintings are available for purchase.</br>
-    <br>Send an email to contact@giseleeisenmann.com for more information</br>
+    <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",	
 
     'IntroOeuvresRecentes' => "Artworks created recently and never exhibited. ",	
@@ -226,9 +226,9 @@ return array(
     'LaPiscine_Alt' => "Little girl running on the edge of the pool",
     'LaPiscine_Titre' => "The swimming pool",
     'LaPiscine_Desc' => "",
-	'Cavalcade_Alt' => "Red and green abstraction painted wooden frame",
+	'Cavalcade_Alt' => "Red and green abstraction painted with wooden frame",
     'Cavalcade_Titre' => "Cavalcade",
-    'Cavalcade_Desc' => "Abstraction. Painting knives and texturing",
+    'Cavalcade_Desc' => "Framed abstract. Textured patterns",
     'Farandole_Alt' => "Orange and white flowers with modeling paste",
     'Farandole_Titre' => "Farandole",
     'Farandole_Desc' => "",

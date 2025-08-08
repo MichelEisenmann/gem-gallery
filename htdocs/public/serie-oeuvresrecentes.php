@@ -38,6 +38,7 @@ $paints["LacBleu"]= $oil->paints["LacBleu"];
 // Acrylic
 $paints["Cavalcade"]= $acrylic->paints["Cavalcade"];
 $paints["Farandole"]= $acrylic->paints["Farandole"];
+$paints["VaseAbutilons"]= $acrylic->paints["VaseAbutilons"];
 
 
 // Pastels
@@ -76,6 +77,7 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
 $column_generator->generate_style("Nightclub", "black");
 $column_generator->generate_style("RosesRouges", "white");
 $column_generator->generate_style("FleurNenuphar", "white");
+$column_generator->generate_style("VaseAbutilons",  "white");
 $column_generator->generate_style("GourdonEglise", "black");
 $column_generator->generate_style("LacBleu", "white");
 $column_generator->generate_style("Cavalcade", "white");
@@ -99,7 +101,7 @@ $column_generator->generate_style("Farandole", "white");
        
       <!-- Paintings -->
       <div class="w3-grid" style="grid-template-columns:100%">
-        <!-- Only column --> 
+        <!-- single column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		  <?= $column_generator->add_to_column( "LacBleu" ); ?>
         </div>
@@ -108,24 +110,22 @@ $column_generator->generate_style("Farandole", "white");
       <div class="w3-grid" style="grid-template-columns:50% 50%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "FleurNenuphar" ); ?>
+		   <?= $column_generator->add_to_column( "Farandole" ); ?>
 		  <?= $column_generator->add_to_column( "RosesRouges" ); ?>
+		  <?= $column_generator->add_to_column( "GourdonEglise" ); ?>
+
+
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "Nightclub" ); ?>
-          <?= $column_generator->add_to_column( "Cavalcade" ); ?>
-		  <?= $column_generator->add_to_column( "GourdonEglise" ); ?>
+           <?= $column_generator->add_to_column( "FleurNenuphar" ); ?>
+          <?= $column_generator->add_to_column( "VaseAbutilons" ); ?>
+		  <?= $column_generator->add_to_column( "Cavalcade" ); ?>
+
          </div>
       </div>
 	  
-       <!-- Only column --> 	  
-	  <div class="w3-grid" style="grid-template-columns:100%">
-        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "Farandole" ); ?>
-        </div>
-      </div>
-
+ 
 
 
      <!-- Footer -->

@@ -37,7 +37,6 @@ $paints["ChapeauOrange"]= $oil->paints["ChapeauOrange"];
 
 // Acrylics
 $paints["EvocationGourdon"]= $acrylic->paints["EvocationGourdon"];
-$paints["VaseAbutilons"]= $acrylic->paints["VaseAbutilons"];
 $paints["LesTournesols"]= $acrylic->paints["LesTournesols"];
 $paints["BallonsOlympiques"]= $acrylic->paints["BallonsOlympiques"];
 $paints["Deflagration"]= $acrylic->paints["Deflagration"];
@@ -83,7 +82,7 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
   $column_generator->generate_style("Flamboyance", "white");
 $column_generator->generate_style("ChapeauOrange",  "white");
 $column_generator->generate_style("EvocationGourdon",  "black");
-$column_generator->generate_style("VaseAbutilons",  "white");
+
 $column_generator->generate_style("LesTournesols",  "black");
 $column_generator->generate_style("BallonsOlympiques",  "black");
 $column_generator->generate_style("Deflagration",  "black");
@@ -122,31 +121,53 @@ $column_generator->generate_style("LesMouettesPlage", "black");
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
          <?= $column_generator->add_to_column( "Distorsion" ); ?>
 		 <?= $column_generator->add_to_column( "TendresseChat" ); ?>
-		 <?= $column_generator->add_to_column( "Flamboyance" ); ?>
-          <?= $column_generator->add_to_column( "LesTournesols" ); ?>
-          <?= $column_generator->add_to_column( "LesMouettesPlage" ); ?>
+          <?= $column_generator->add_to_column( "MichelPolynesie" ); ?>		 
+
 		  
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		  <?= $column_generator->add_to_column( "Deflagration" ); ?>
           <?= $column_generator->add_to_column( "ChapeauOrange" ); ?>
-          <?= $column_generator->add_to_column( "EvocationGourdon" ); ?> 
-          <?= $column_generator->add_to_column( "VaseAbutilons" ); ?>
-
         </div>
-        <!-- Third column --> 
+ 
+       <!-- Third column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		  <?= $column_generator->add_to_column( "Eclosion" ); ?>
           <?= $column_generator->add_to_column( "CorentinLaRose" ); ?>
-          <?= $column_generator->add_to_column( "MichelPolynesie" ); ?>
 		  <?= $column_generator->add_to_column( "BebeSourit" ); ?>
+
+
+ 
+        </div>
+      </div>
+	  
+	  <!-- single column --> 
+	  <div class="w3-grid" style="grid-template-columns:100%">
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		     <?= $column_generator->add_to_column( "EvocationGourdon" ); ?> 
+        </div>
+      </div>
+          
+       <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
+        <!-- First column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+           <?= $column_generator->add_to_column( "LesMouettesPlage" ); ?>
+		  
+        </div>
+        <!-- Second column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		 <?= $column_generator->add_to_column( "Flamboyance" ); ?>
+		 <?= $column_generator->add_to_column( "LesTournesols" ); ?>
+        </div>
+ 
+       <!-- Third column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
           <?= $column_generator->add_to_column( "BallonsOlympiques" ); ?>
  
         </div>
       </div>
-          
-          
+	  
      <!-- Footer -->
     <?php include("../public/copyright.php"); ?>
 
