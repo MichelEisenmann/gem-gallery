@@ -43,10 +43,16 @@
    <?= Translator::t("AccueilArtisteIntroFin"); ?><a href="<?= Translator::url('/public/serie-oeuvresrecentes.php') ?>">
 <?= Translator::t("oeuvresrecentes"); ?> </a>
       </div>	  
-	  
+
         <div class="w3-center">
 	  <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-	    <img src="/public/images/web/Gourdon25_VueDEnsemble.jpg" alt="<?= Translator::t("exposalle_Alt"); ?>" style="width:100%" style="width:100%" />
+	    <img src="/public/images/web/affiche_LeCannet-29x27.png" alt="<?= Translator::t("exposalle_Alt"); ?>" style="width:100%" style="width:100%" />
+	  </a>
+	</div>
+<!----	  
+        <div class="w3-center">
+	  <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
+	    <img src="/public/images/web/affiche_LeCannet-29x27.png" alt="<?= Translator::t("exposalle_Alt"); ?>" style="width:100%" style="width:100%" />
 	  </a>
 	</div>
         <div class="w3-center w3-padding-16">
@@ -69,6 +75,7 @@
 	  </div>
 	</div>
       </div>
+--->
       
       <!-- Footer -->
       <?php include("public/copyright.php"); ?>

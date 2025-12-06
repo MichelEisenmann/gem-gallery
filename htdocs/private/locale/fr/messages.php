@@ -25,6 +25,7 @@ return array(
 
     'currentExpoDate' => '30 Mai au 12 Juin - Terminée',
 	'futureExpoDate' => '18 Décembre au 31 Décembre 2025',
+	'futureExpoLieu' =>  "Le Cannet, 06, France",
 
      // Paragraphes Introduction
 	 
@@ -124,7 +125,7 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     // ----------- noms tableaux pour ALT dans HREF
     //             et titres des tableaux
 	// Accueil
-	'exposalle_Alt' => 'Exposition Moments Feminins Salle de la Mairie Gourdon',
+	'exposalle_Alt' => 'Exposition Moments Feminins Le Cannet 06 France',
 
 	//acrylic
     'MatinDonazacOlen_Alt' => "Matin sur Donazac - Lever de soleil sur le village (Aude, FR)",

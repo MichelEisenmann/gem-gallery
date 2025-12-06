@@ -24,6 +24,7 @@ return array(
 
     'currentExpoDate' => 'May 30th to June 12th - Closed',
 	'futureExpoDate' => 'December 18th - 31st',
+    'futureExpoLieu' =>  "Le Cannet, 06, France",
 	
 	// Paragraphes Introduction
 	 'AccueilArtisteIntro' => "
@@ -75,8 +76,8 @@ return array(
 	'Introduction' => '<p>
      Self-taught artist, Gisele Eisenmann Montagne (signing artist name: GEM) is a figurative painter working primarily 
 	 in oils and in acrylics, occasionnaly in soft pastels. A former PhD Scientist and computing engineer, GEM\'s transition
-	 to painting was catalyzed by the realization that enjoying life and nature\'s beauties was paramount when the pandemic
-	 started devastating the world in 2020. 
+	 to painting was catalyzed by the realization that enjoying life and nature\'s beauties was invaluable when the covid-19 pandemic
+	 came along in 2020 and we were forced indoors and isolated. 
 	 She developed her oil and acrylic technics joining <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant</a>\'s artist studio in Grasse (06). 
 	 <br>Her paintings are essentially figurative, landscape subjects, nature, portraits where bright and saturated colors 
 	 are expressed. She immortalizes reflections in the varied aquatic landscapes. She used the opportunity of her 
@@ -118,7 +119,7 @@ return array(
     // ----------- noms tableaux pour ALT dans HREF
     //             et titres des tableaux
 	// Accueil
-	'exposalle_Alt' => 'Exposition Moments Feminins Salle de la Mairie Gourdon',
+	'exposalle_Alt' => 'Exposition Moments Feminins Le Cannet 06 France',
 
 	//acrylic
     'MatinDonazacOlen_Alt' => "Sunrise over the village of Donazac (Aude, FR)",
