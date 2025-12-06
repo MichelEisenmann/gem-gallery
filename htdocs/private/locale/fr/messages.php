@@ -91,7 +91,7 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
  ',
  
      'Winner' => '<p>Gisèle Eisenmann Montagné est lauréate des prix suivants
-	<ul><li>2024 Luxembourg Art prize: CERTIFICAT DE MERITE ARTISTIQUE </li>
+	<ul><li>2025 et 2024 Luxembourg Art prize: CERTIFICAT DE MERITE ARTISTIQUE </li>
 	    <li>2024 Prix TROPHEE DE LA VILLE ANTIBES ["Faîtes de la peinture" - (association les amis du musée Picasso)] </li> 
 		<li>2021 2ème prix, catégorie Aquarelle/pastel ["Faîtes de la peinture" - (association les amis du musée Picasso)] </li> 
 	</ul>',

@@ -88,7 +88,7 @@ return array(
   </p>',
   
   	'Winner' => '<p>GisÃ¨le Eisenmann MontagnÃ© is the winner of the following prices and awards
-	<ul><li>2024 Luxembourg Art prize: certificate of artistic achievement </li>
+	<ul><li>2025 and 2024 Luxembourg Art prize: certificate of artistic achievement </li>
 	    <li>2024 Trophy Award of Antibes City [Painting Festival - (Picasso Museum friends organization)] </li> 
 		<li>2021 2nd prize, Watercolour/Pastel category [Painting Festival - (Picasso Museum friends organization)] </li> 
 	</ul>',
