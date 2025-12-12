@@ -48,6 +48,8 @@ $paints["YellowAigrette"]= $acrylic->paints["YellowAigrette"];
 $paints["PelicanToutSeul"]= $acrylic->paints["PelicanToutSeul"];
 $paints["LectriceChaton"]= $acrylic->paints["LectriceChaton"];
 $paints["LaPiscine"]= $acrylic->paints["LaPiscine"];
+$paints["Cathedrale"]= $acrylic->paints["Cathedrale"];
+$paints["EtangBoreal"]= $acrylic->paints["EtangBoreal"];
 
 
 // Autres
@@ -81,6 +83,8 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
+$column_generator->generate_style("EtangBoreal", "white");
+$column_generator->generate_style("Cathedrale", "white");
 $column_generator->generate_style("AirMarin", "white");
 $column_generator->generate_style("Nightclub", "black");
 $column_generator->generate_style("PortraitPascale", "black");
@@ -114,7 +118,15 @@ $column_generator->generate_style("LectriceChaton", "white");
         <?= Translator::t("IntroMomentsFem"); ?>
       </div>
 
-      <!-- Paintings -->
+     <!-- Paintings -->
+      <div class="w3-grid" style="grid-template-columns:100%">
+        <!-- single column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "LacBleu" ); ?>
+        </div>
+      </div>
+	  
+
       <div class="w3-grid" style="grid-template-columns:45% 55%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
@@ -126,6 +138,9 @@ $column_generator->generate_style("LectriceChaton", "white");
 		  <?= $column_generator->add_to_column( "JeuDeRegard" ); ?>   
           <?= $column_generator->add_to_column( "MilieuTorrent" ); ?>
 		  <?= $column_generator->add_to_column( "PelicanToutSeul" ); ?>
+		  <?= $column_generator->add_to_column( "Farandole" ); ?>
+		  <?= $column_generator->add_to_column( "RosesRouges" ); ?>
+		  <?= $column_generator->add_to_column( "GourdonEglise" ); ?>
 <!--        </div>
                 <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 --> 
@@ -144,10 +159,16 @@ $column_generator->generate_style("LectriceChaton", "white");
 		  <?= $column_generator->add_to_column( "SakuraNenuphars" ); ?>
           <?= $column_generator->add_to_column( "BrumesDuSoir" ); ?>
 		  <?= $column_generator->add_to_column( "YellowAigrette" ); ?>
+		  <?= $column_generator->add_to_column( "FleurNenuphar" ); ?>
+          <?= $column_generator->add_to_column( "VaseAbutilons" ); ?>
+		  <?= $column_generator->add_to_column( "EtangAustral" ); ?>
 
 
         </div>
       </div>
+	  
+
+ 
       
      <!-- Footer -->
     <?php include("../public/copyright.php"); ?>

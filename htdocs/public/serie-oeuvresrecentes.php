@@ -36,7 +36,8 @@ $paints["Nightclub"]= $oil->paints["Nightclub"];
 $paints["LacBleu"]= $oil->paints["LacBleu"];
 
 // Acrylic
-$paints["Cavalcade"]= $acrylic->paints["Cavalcade"];
+$paints["Cathedrale"]= $acrylic->paints["Cathedrale"];
+$paints["EtangBoreal"]= $acrylic->paints["EtangBoreal"];
 $paints["Farandole"]= $acrylic->paints["Farandole"];
 $paints["VaseAbutilons"]= $acrylic->paints["VaseAbutilons"];
 
@@ -80,7 +81,8 @@ $column_generator->generate_style("FleurNenuphar", "white");
 $column_generator->generate_style("VaseAbutilons",  "white");
 $column_generator->generate_style("GourdonEglise", "black");
 $column_generator->generate_style("LacBleu", "white");
-$column_generator->generate_style("Cavalcade", "white");
+$column_generator->generate_style("EtangBoreal", "white");
+$column_generator->generate_style("Cathedrale", "white");
 $column_generator->generate_style("Farandole", "white");
     ?>
   </style>
