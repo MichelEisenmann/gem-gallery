@@ -82,7 +82,6 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
   $column_generator->generate_style("Flamboyance", "white");
 $column_generator->generate_style("ChapeauOrange",  "white");
 $column_generator->generate_style("EvocationGourdon",  "black");
-
 $column_generator->generate_style("LesTournesols",  "black");
 $column_generator->generate_style("BallonsOlympiques",  "black");
 $column_generator->generate_style("Deflagration",  "black");

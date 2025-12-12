@@ -239,6 +239,12 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	'Farandole_Alt' => "Fleurs orangées et blanches texturées en mouvement",
     'Farandole_Titre' => "Farandole",
     'Farandole_Desc' => "",
+    'Cathedrale_Alt' => "Abstrait. Puits de lumière au milieu de piliers",
+    'Cathedrale_Titre' => "Cathedrale",
+    'Cathedrale_Desc' => "Peinture contemporaine avec collage",
+	'EtangAustral_Alt' => "Plan d'eau - grandes herbes et oiseau noir et jaune",
+    'EtangAustral_Titre' => "Etang Austral",
+    'EtangAustral_Desc' => "Peinture contemporaine avec collage de plantes australiennes",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",
@@ -298,7 +304,7 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     'Nightclub_Alt' => "Un couple s'élance sur une piste de danse.",
     'Nightclub_Titre' => "Night-club",
     'Nightclub_Desc' => "",
-	'LacBleu_Alt' => "Paysage de l'arctique. Cascades, montagnes et barque isolée",
+	'LacBleu_Alt' => "Paysage de l'arctique. Cascades, montagnes",
     'LacBleu_Titre' => "Lac Bleu",
     'LacBleu_Desc' => "Vue d'artiste. Paysage du Nord",
 

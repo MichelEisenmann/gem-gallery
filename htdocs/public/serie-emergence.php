@@ -53,6 +53,8 @@ $paints["LeBisou"]= $pastel->paints["LeBisou"];
 $paints["DesertJordanie"]= $pastel->paints["DesertJordanie"];
 $paints["PascaleRenaissance"]= $pastel->paints["PascaleRenaissance"];
 $paints["AlleePlatanes"]= $pastel->paints["AlleePlatanes"];
+$paints["FleurNenuphar"]= $pastel->paints["FleurNenuphar"];
+
 
 
 $column_generator= new ColumnGenerator();
@@ -101,6 +103,7 @@ $column_generator->generate_style("PascaleRenaissance", "white");
 $column_generator->generate_style("AlleePlatanes", "black");
 $column_generator->generate_style("LeFicus",  "white");
 $column_generator->generate_style("Pelagos", "black");
+$column_generator->generate_style("FleurNenuphar", "black");
     ?>
   </style>
   
@@ -132,7 +135,7 @@ $column_generator->generate_style("Pelagos", "black");
           <?= $column_generator->add_to_column( "TroueeBois" ); ?>
 		  <?= $column_generator->add_to_column( "AmericanRobins" ); ?>
 		  <?= $column_generator->add_to_column( "FlamandsRouges" ); ?>
-
+		  <?= $column_generator->add_to_column( "LeFicus" ); ?>
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
@@ -151,7 +154,7 @@ $column_generator->generate_style("Pelagos", "black");
           <?= $column_generator->add_to_column( "PascaleMelancolie"); ?>
 		  <?= $column_generator->add_to_column( "Aviateur" ); ?>
           <?= $column_generator->add_to_column( "PascaleRenaissance" ); ?>
-		  <?= $column_generator->add_to_column( "LeFicus" ); ?>
+		  <?= $column_generator->add_to_column( "FleurNenuphar" ); ?>
 
         </div>
       </div>

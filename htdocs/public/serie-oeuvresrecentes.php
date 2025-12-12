@@ -36,16 +36,16 @@ $paints["Nightclub"]= $oil->paints["Nightclub"];
 $paints["LacBleu"]= $oil->paints["LacBleu"];
 
 // Acrylic
+$paints["EtangAustral"]= $acrylic->paints["EtangAustral"];
 $paints["Cathedrale"]= $acrylic->paints["Cathedrale"];
-$paints["EtangBoreal"]= $acrylic->paints["EtangBoreal"];
 $paints["Farandole"]= $acrylic->paints["Farandole"];
-$paints["VaseAbutilons"]= $acrylic->paints["VaseAbutilons"];
+
 
 
 // Pastels
 $paints["RosesRouges"]= $pastel->paints["RosesRouges"];
-$paints["FleurNenuphar"]= $pastel->paints["FleurNenuphar"];
 $paints["GourdonEglise"]= $pastel->paints["GourdonEglise"];
+
 
 
 $column_generator= new ColumnGenerator();
@@ -75,14 +75,11 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$column_generator->generate_style("Nightclub", "black");
 $column_generator->generate_style("RosesRouges", "white");
-$column_generator->generate_style("FleurNenuphar", "white");
-$column_generator->generate_style("VaseAbutilons",  "white");
 $column_generator->generate_style("GourdonEglise", "black");
 $column_generator->generate_style("LacBleu", "white");
-$column_generator->generate_style("EtangBoreal", "white");
-$column_generator->generate_style("Cathedrale", "white");
+$column_generator->generate_style("EtangAustral", "white");
+$column_generator->generate_style("Cathedrale", "black");
 $column_generator->generate_style("Farandole", "white");
     ?>
   </style>
@@ -109,22 +106,29 @@ $column_generator->generate_style("Farandole", "white");
         </div>
       </div>
 
+      <div class="w3-grid" style="grid-template-columns:100%">
+        <!-- single column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "Cathedrale" ); ?>
+        </div>
+      </div>
+	  
       <div class="w3-grid" style="grid-template-columns:50% 50%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		   <?= $column_generator->add_to_column( "Farandole" ); ?>
 		  <?= $column_generator->add_to_column( "RosesRouges" ); ?>
-		  <?= $column_generator->add_to_column( "GourdonEglise" ); ?>
+  		  <?= $column_generator->add_to_column( "EtangAustral" ); ?>
 
 
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-           <?= $column_generator->add_to_column( "FleurNenuphar" ); ?>
-          <?= $column_generator->add_to_column( "VaseAbutilons" ); ?>
-		  <?= $column_generator->add_to_column( "Cavalcade" ); ?>
+		  <?= $column_generator->add_to_column( "GourdonEglise" ); ?>
+		  <?= $column_generator->add_to_column( "Farandole" ); ?>
 
          </div>
+		 
+ 
       </div>
 	  
  

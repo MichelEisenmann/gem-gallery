@@ -233,6 +233,12 @@ return array(
     'Farandole_Alt' => "Orange and white flowers with modeling paste",
     'Farandole_Titre' => "Farandole",
     'Farandole_Desc' => "",
+	'Cathedrale_Alt' => "Abstract. Skylight amidst pillars",
+    'Cathedrale_Titre' => "Cathedral",
+    'Cathedrale_Desc' => "Contemporary painting with collage",
+	'EtangAustral_Alt' => "Body of water - tall grass and black and yellow bird",
+    'EtangAustral_Titre' => "Southern pond",
+    'EtangAustral_Desc' => "Contemporary painting with collage of Australian plants",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",
@@ -292,7 +298,7 @@ return array(
     'Nightclub_Alt' => "Night-club - A couple takes to the dance floor.",
     'Nightclub_Titre' => "Night-club",
     'Nightclub_Desc' => "",
-	'LacBleu_Alt' => "Arctic landscape. Lake, waterfalls, mountains and lonely boat",
+	'LacBleu_Alt' => "Arctic landscape. Lake, waterfalls, mountains",
     'LacBleu_Titre' => "Blue lake",
     'LacBleu_Desc' => "Artiste view. Northen landscape.",
 
