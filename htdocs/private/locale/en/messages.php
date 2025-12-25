@@ -12,6 +12,7 @@ return array(
     'watermirror' => 'Water Mirror',
     'metamorphose' => 'Metamorphosis',
 	'emergence' => 'Emergence',
+	'collage' => 'Gluing Material',
 	'oeuvresrecentes' => 'Latest Artwork',
 	
 	//divers
@@ -64,13 +65,20 @@ return array(
 
     'IntroEmergence' => "
 	<h2>Emergence</h2><p>
-	Emergence prÃ©sents the works of a new beginning, a new path, some new skills to acquire after 
+	Emergence presents the works of a new beginning, a new path, some new skills to acquire after 
 	the end of my career in computer science. No common thread; a simple sharing of emotions in the course of 
 	an encounter with a new reality.</p>
     <p>The exhibition is over, however some paintings are available for purchase.</br>
     <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",	
 
+    'IntroCollage' => "
+	<h2>Gluing Material</h2><p>
+	Contemporary painting	</p>
+    <p>The exhibition is over, however some paintings are available for purchase.</br>
+    <br>Send an email to contact@giseleeisenmann.com for more information.</br>
+	</p>",		
+	
     'IntroOeuvresRecentes' => "Artworks created recently and never exhibited. ",	
 	
 	'Introduction' => '<p>
@@ -239,6 +247,9 @@ return array(
 	'EtangAustral_Alt' => "Body of water - tall grass and black and yellow bird",
     'EtangAustral_Titre' => "Southern pond",
     'EtangAustral_Desc' => "Contemporary painting with collage of Australian plants",
+	'Poisson_Alt' => "Imaginary orange and red fish underwater",
+    'Poisson_Titre' => "Fish",
+    'Poisson_Desc' => "Contemporary painting with collage",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",

@@ -30,7 +30,7 @@
 -1;JeuxVagues;Acrylique/20211127_JeuxDeVagues_AC45x55.jpg;20211127;45;55;acrylic;indisponible;watermirror
 #-1;IleLoups;Acrylique/20211209_IleAuxLoups.png;20211209;40;80;acrylic;;emergence
 -1;EvocationGourdon;Acrylique/20211228_EvocationGourdon_AC73x90.jpg;20211228;73;90;acrylic;;metamorphose
--1;LesZebres;Acrylique/20220317_LesZebres_AC80x40.jpg;20220317;80;40;acrylic;;watermirror
+-1;LesZebres;Acrylique/20220317_LesZebres_AC40x80.jpg;20220317;40;80;acrylic;;watermirror
 -1;ParisQuaiSeine;Acrylique/20220312_ParisQuaiDeSeine_AC40x80.jpg;20220312;40;80;acrylic;vendu;watermirror
 -1;AustralianPelican;Acrylique/20220601_CreekAustralianPelican_AC35x24.jpg;20220601;35;24;acrylic;vendu;watermirror
 -1;LeFicus;Acrylique/20220609_Le Ficus_AC20x20.jpg;20220609;20;20;acrylic;;emergence
@@ -56,8 +56,9 @@
 -1;LaPiscine;Acrylique/20250504_La piscine-AC50x50.jpg;20250504;50;50;acrylic;;momentsfeminins
 #-1;Cavalcade;Acrylique/20250731_Cavalcade_AC295x295.jpg;20250731;30;30;acrylic;;oeuvresrecentes
 -1;Farandole;Acrylique/20250804_Farandole_AC30x60.jpg;20250804;30;60;acrylic;;oeuvresrecentes
--1;EtangAustral;Acrylique/20251020_EtangAustral_AC25x25.jpg;20251020;25;25;acrylic;;oeuvresrecentes
--1;Cathedrale;Acrylique/20251209_Cathedrale_AC50x65.jpg;20251209;50;65;acrylic;;oeuvresrecentes
+-1;EtangAustral;Acrylique/20251020_EtangAustral_AC25x25.jpg;20251020;25;25;acrylic;;oeuvresrecentes collage
+-1;Cathedrale;Acrylique/20251209_Cathedrale_AC50x65.jpg;20251209;50;65;acrylic;;oeuvresrecentes collage
+-1;Poisson;Acrylique/20251224_Poisson_AC25x25.jpg;20251224;25;25;acrylic;;collage
 -1;AutomneCezanne;Huile/20211229_Automne_FromCezanne.jpg;20211229;80;40;oil;indisponible;emergence
 -1;PascaleMelancolie;Huile/20220222_Melancolie_HU46x55.jpg;20220222;46;55;oil;indisponible;emergence
 -1;EgretYellowSunset;Huile/20220601_EgretYellowSunset-HU90x65.jpg;20220601;90;65;oil;;watermirror

@@ -13,6 +13,7 @@ return array(
     'watermirror' => 'Miroir d\'eau',
     'metamorphose' => 'Métamorphose',
 	'emergence' => 'Emergence',
+	'collage' => 'Collage',
 	'oeuvresrecentes' => 'Dernières Oeuvres',
 	
 	// divers
@@ -69,6 +70,13 @@ return array(
 	Emergence présente les oeuvres d'un nouveau départ, une nouvelle voie, de nouvelles compétences
 	à acquérir après la fin de ma carrière en informatique. Aucun fil conducteur; un simple partage 
     d'émotions au détour d'une rencontre avec une réalité nouvelle.	</p>
+    <p>Quelques tableaux sont disponibles à l'achat.
+	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
+	</p>",		
+
+    'IntroCollage' => "
+	<h2>Collage</h2><p>
+	Peinture contemporaine	</p>
     <p>Quelques tableaux sont disponibles à l'achat.
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",		
@@ -244,7 +252,10 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     'Cathedrale_Desc' => "Peinture contemporaine avec collage",
 	'EtangAustral_Alt' => "Plan d'eau - grandes herbes et oiseau noir et jaune",
     'EtangAustral_Titre' => "Etang Austral",
-    'EtangAustral_Desc' => "Peinture contemporaine avec collage de plantes australiennes",
+    'EtangAustral_Desc' => "Peinture contemporaine avec collage de végétaux australiens",
+	'Poisson_Alt' => "Poisson imaginaire orange et rouge sous l'eau",
+    'Poisson_Titre' => "Poisson",
+    'Poisson_Desc' => "Peinture contemporaine avec collage",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",
