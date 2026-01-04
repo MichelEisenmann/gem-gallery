@@ -46,7 +46,7 @@
 
 <!--- scenario 0 - florilege ---->
    <div class="w3-center">
-	  <a href="<?= Translator::url('/public/-oeuvresrecentes.php') ?>">
+	  <a href="<?= Translator::url('/public/serie-oeuvresrecentes.php') ?>">
 	    <img src="/public/images/Acrylique/20251209_Cathedrale_AC50x65.jpg" alt="" style="width:100%" style="width:100%" />
 	  </a>
 	</div>
