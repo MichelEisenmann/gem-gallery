@@ -15,7 +15,7 @@
       </a>
     </div>
   </p>
-    <i class="fa fa-copyright"></i>2025 by Gisele Eisenmann Montagné <br>Valbonne 06, France</br>
+    <i class="fa fa-copyright"></i>2020-2026 by Gisele Eisenmann Montagné <br>Valbonne 06, France</br>
   
 </footer>
 

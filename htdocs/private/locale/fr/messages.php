@@ -24,9 +24,12 @@ return array(
     'faitespeinture' => 'Faîtes de la peinture',
     'assopicasso' => 'Association Les amis du Musée Picasso',	
 
+    // Expositions
     'currentExpoDate' => '30 Mai au 12 Juin - Terminée',
 	'futureExpoDate' => '18 Décembre au 31 Décembre 2025',
 	'futureExpoLieu' =>  "Le Cannet, 06, France",
+	'ExpoDateGourdon2026' => '28 Août au 10 Septembre 2026',
+	'ExpoDateAntibesArtFair2026' => '11 au 20 Avril 2026',
 
      // Paragraphes Introduction
 	 
@@ -42,8 +45,7 @@ return array(
 	à la surveillance des enfants à la plage, de la danse à l'enfance espiègle, 
 	du clin d'oeil de connivence entre amies à l'amour maternel. 
 	<br>Obtenez une vue complète du tableau en cliquant dessus</p>
-    <p>L'exposition qui présente aussi quelques oeuvres récentes s'est tenue du 30 Mai au 12 Juin 2025 à Gourdon (06). 
-	Une nouvelle session aura lieu du 18 au 31 Décembre 2025 à Le Cannet, Terrasse des Arts (06). 
+    <p>L'exposition s'est tenue du 30 Mai au 12 Juin 2025 à Gourdon (06), puis du 18 au 31 Décembre 2025 à Le Cannet, Terrasse des Arts (06). 
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",	
 	
@@ -81,7 +83,7 @@ return array(
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",		
 	
-    'IntroOeuvresRecentes' => "Oeuvres créées récemment et jamais exposées. ",	
+    'IntroOeuvresRecentes' => "Oeuvres créées récemment.",	
 
     'Introduction' => '  <p>Gisèle Eisenmann Montagné (nom artiste: GEM) est une artiste autodidacte, travaillant 
 	principalement aujourd’hui avec l’huile et l’acrylique, et occasionnellement avec des pastels secs. 

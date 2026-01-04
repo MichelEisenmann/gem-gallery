@@ -18,7 +18,7 @@
 
 <?php
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
-$serie_key='oeuvresrecentes';
+$serie_key='collage';
 $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 
 // ces dictionnaires sont les dictionnaires standard
@@ -38,12 +38,7 @@ $paints["EtangAustral"]= $acrylic->paints["EtangAustral"];
 $paints["Cathedrale"]= $acrylic->paints["Cathedrale"];
 $paints["Poisson"]= $acrylic->paints["Poisson"];
 
-
-
 // Pastels
-
-
-
 
 $column_generator= new ColumnGenerator();
 $column_generator->paints= $paints; // may contain paints that are not in serie
@@ -111,10 +106,7 @@ $column_generator->generate_style("Poisson", "white");
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		  <?= $column_generator->add_to_column( "Poisson" ); ?>
-
          </div>
-		 
- 
       </div>
 	  
  

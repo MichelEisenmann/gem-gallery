@@ -23,9 +23,12 @@ return array(
 	'faitespeinture' => 'Painting Festival',
 	'assopicasso' => 'Picasso Museum friends organization',
 
+     // Expositions
     'currentExpoDate' => 'May 30th to June 12th - Closed',
 	'futureExpoDate' => 'December 18th - 31st',
     'futureExpoLieu' =>  "Le Cannet, 06, France",
+	'ExpoDateGourdon2026' => 'August 28th to September 10th 2026',
+	'ExpoDateAntibesArtFair2026' => 'April 11th-20th 2026',
 	
 	// Paragraphes Introduction
 	 'AccueilArtisteIntro' => "
@@ -40,8 +43,7 @@ return array(
 	 supervising children at the beach, from dancing to mischievous childhood, 
 	 from the wink of connivance between friends to maternal love.
 	 <br>Get the full view of the painting by clicking on it. </p> 
-     <p>The next exhibition, which also presents some of the latest works, will be held December 18th-31st, 2025
-	 at Le Cannet, Terrasse des Arts (06). Some paintings are available for purchase.
+     <p>This exhibition is closed but some paintings are still available for purchase.</br>
 	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	  </p>',
  
@@ -79,7 +81,7 @@ return array(
     <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",		
 	
-    'IntroOeuvresRecentes' => "Artworks created recently and never exhibited. ",	
+    'IntroOeuvresRecentes' => "Artworks created recently.",	
 	
 	'Introduction' => '<p>
      Self-taught artist, Gisele Eisenmann Montagne (signing artist name: GEM) is a figurative painter working primarily 

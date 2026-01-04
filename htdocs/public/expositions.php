@@ -31,11 +31,19 @@
     <!-- Page Content -->
     <div class="w3-container w3-padding-32 w3-animate-opacity gem-animate gem-fixed-width">
       <h5><b><?= Translator::t('soloexpo') ?></b></h5>
+	  
+      <ul>
+	2026
+	<ul>
+	  <li>Gourdon (06, France) - <?= Translator::t('ExpoDateGourdon2026') ?></li>
+	</ul>
+      </ul>
+	  
       <ul>
 	2025
 	<ul>
-	  <li><?= Translator::t('momentsfeminins') ?>, Le Cannet (06, France) - <?= Translator::t('futureExpoDate') ?></li>
-	  <li><?= Translator::t('momentsfeminins') ?>, Gourdon (06, France) - <?= Translator::t('currentExpoDate') ?></li>
+	  <li><?= Translator::t('momentsfeminins') ?>, Le Cannet (06, France)</li>
+	  <li><?= Translator::t('momentsfeminins') ?>, Gourdon (06, France)</li>
 	</ul>
       </ul>
 
@@ -58,12 +66,21 @@
       <h5><b><?= Translator::t('groupexpo') ?></b></h5>
 
       <ul>
-	2025
+
+    <ul>
+	2026
+	    <ul>	  
+	  	  <li>Art Fair, Antibes (06, France)  - <?= Translator::t('ExpoDateAntibesArtFair2026') ?></li>
+		 </ul>
+    </ul>
+	
 	<ul>
+	2025
+	  <ul>
 	  <li>Antibes Art Fair, Antibes (06, France) </li>
 	  <li>Feminin'Arte, Antibes (06, France) </li>
-	</ul>
-      </ul>
+	  </ul>
+	 </ul> 
 
       <ul>
 	2024
