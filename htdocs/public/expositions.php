@@ -65,12 +65,11 @@
       
       <h5><b><?= Translator::t('groupexpo') ?></b></h5>
 
-      <ul>
-
+ 
     <ul>
 	2026
 	    <ul>	  
-	  	  <li>Art Fair, Antibes (06, France)  - <?= Translator::t('ExpoDateAntibesArtFair2026') ?></li>
+	  	  <li>Antibes Art Fair, Antibes (06, France)  - <?= Translator::t('ExpoDateAntibesArtFair2026') ?></li>
 		 </ul>
     </ul>
 	
