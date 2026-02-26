@@ -285,6 +285,9 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	'ApresMidiOiseau_Alt' => "Un pelican plane devant un coucher de soleil",
     'ApresMidiOiseau_Titre' => "Apres-Midi d'un Oiseau",
     'ApresMidiOiseau_Desc' => "Peinture contemporaine, technique mixte",
+	'ApresLaPluie_Alt' => "Chien Route foret après la pluie",
+    'ApresLaPluie_Titre' => "Après la pluie",
+    'ApresLaPluie_Desc' => "Le couchant se réflète sur la route mouillée",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",

@@ -279,6 +279,9 @@ return array(
 	'ApresMidiOiseau_Alt' => "A pelican hovers in front of a sunset",
     'ApresMidiOiseau_Titre' => "Afternoon of a Bird",
     'ApresMidiOiseau_Desc' => "Contemporary painting with collage, mixed media",
+	'ApresLaPluie_Alt' => "Dog Road Forest After Rain",
+    'ApresLaPluie_Titre' => "After rain",
+    'ApresLaPluie_Desc' => "The setting sun is reflected on the wet road",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",
