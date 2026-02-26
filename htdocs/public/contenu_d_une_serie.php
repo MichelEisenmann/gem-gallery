@@ -60,6 +60,7 @@
       var paintFiles= [];
       var paintAlts= [];
       var paintTitles= [];
+      var paintTypesAndSizes= [];
       var paintDescriptions= [];
       var paintStatus= [];
       var paintStatusTranslated= [];
@@ -69,7 +70,8 @@
       ?>
       paintFiles.push( "images/<?= $paint->file ?>" );
       paintAlts.push( "<?= Translator::t($paint->getAltId()) ?>" );
-      paintTitles.push( "<?= $paint->full_title() ?>" );
+      paintTitles.push( "<?= $paint->get_title() ?>" );
+      paintTypesAndSizes.push( "<?= $paint->type_and_size() ?>" );
       paintDescriptions.push( "<?= trim($paint->get_description()) ?>" );
       paintStatus.push("<?= trim($paint->get_status()) ?>" );
       paintStatusTranslated.push("<?= Translator::t(trim($paint->get_status())) ?>" );
@@ -122,11 +124,13 @@
             </div>
             
             <div class="w3-container w3-center w3-padding-16">
-	      <span id="central-paint-title"></span>
+	      <b><span id="central-paint-title"></span></b>
 	      <br>
 	      <span id="central-paint-second-line"></span>
               <br>
 	      <span id="central-paint-third-line"></span>
+              <br>
+	      <span id="central-paint-fourth-line"></span>
             </div>
           </div>
 
@@ -198,22 +202,26 @@ function updateCentralPaint() {
     // third contains status if second contains description
     var b2= document.getElementById("central-paint-second-line");
     var b3= document.getElementById("central-paint-third-line");
+    var b4= document.getElementById("central-paint-fourth-line");
     b2.textContent= "";
     b3.textContent= "";
+    b4.textContent= "";
     //
+	b2.textContent= paintTypesAndSizes[rank_in_gallery];
     var second= "";
     var third= "";
+    var fourth= "";
     if ( paintDescriptions[rank_in_gallery].length !== 0 ) {
-        second= paintDescriptions[rank_in_gallery];
-	    b2.textContent= second;
+        third= paintDescriptions[rank_in_gallery];
+	    b3.textContent= third;
         if ( paintStatus[rank_in_gallery].length !== 0 ) {
-            third= paintStatusTranslated[rank_in_gallery];
-	        b3.textContent= third;
+            fourth= paintStatusTranslated[rank_in_gallery];
+	        b4.textContent= fourth;
 	    }
     } else {
 	if ( paintStatus[rank_in_gallery].length !== 0 ) {
-            second= paintStatusTranslated[rank_in_gallery];
-	    b2.textContent= second;
+            third= paintStatusTranslated[rank_in_gallery];
+	    b3.textContent= third;
 	}
     }
 }

@@ -42,6 +42,7 @@ $paints["Savana"]= $acrylic->paints["Savana"];
 $paints["PurpleSeagull"]= $acrylic->paints["PurpleSeagull"];
 $paints["YellowSunset"]= $acrylic->paints["YellowSunset"];
 $paints["ApresMidiOiseau"]= $acrylic->paints["ApresMidiOiseau"];
+$paints["ApresLaPluie"]= $acrylic->paints["ApresLaPluie"];
 
 
 // Pastels
@@ -83,6 +84,7 @@ $column_generator->generate_style("Savana", "white");
 $column_generator->generate_style("PurpleSeagull", "black");
 $column_generator->generate_style("YellowSunset", "black");
 $column_generator->generate_style("ApresMidiOiseau", "white");
+$column_generator->generate_style("ApresLaPluie", "black");
     ?>
   </style>
   
@@ -102,52 +104,36 @@ $column_generator->generate_style("ApresMidiOiseau", "white");
        
        <!-- Paintings -->
  
-      <div class="w3-grid" style="grid-template-columns:100%">
-        <!-- single column --> 
-        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "Cathedrale" ); ?>
-        </div>
-      </div>
-	  
-      <div class="w3-grid" style="grid-template-columns:50% 50%">
-        <!-- First column --> 
-        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-  		  <?= $column_generator->add_to_column( "EtangAustral" ); ?>
-
-
-        </div>
-        <!-- Second column --> 
-        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "Poisson" ); ?>
-         </div>
-      </div>
-	  
-      <div class="w3-grid" style="grid-template-columns:100%">
-        <!-- single column --> 
-        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "YellowSunset" ); ?>
-        </div>
-      </div>
-	  
-	  <div class="w3-grid" style="grid-template-columns:100%">
+  	  <div class="w3-grid" style="grid-template-columns:100%">
         <!-- single column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		  <?= $column_generator->add_to_column( "ApresMidiOiseau" ); ?>
         </div>
       </div>
 	  
-	   <div class="w3-grid" style="grid-template-columns:50% 50%">
+      <div class="w3-grid" style="grid-template-columns:50% 50%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-<!-- 		  <?= $column_generator->add_to_column( "LeverSoleilRouge" ); ?> -->
-		  <?= $column_generator->add_to_column( "PurpleSeagull" ); ?>
+		   <?= $column_generator->add_to_column( "Cathedrale" ); ?>
+		   <?= $column_generator->add_to_column( "Savana" ); ?>
+		   <?= $column_generator->add_to_column( "EtangAustral" ); ?>
+
         </div>
 		
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "Savana" ); ?>
+		   <?= $column_generator->add_to_column( "PurpleSeagull" ); ?>
+		  <?= $column_generator->add_to_column( "Poisson" ); ?>
+		   <?= $column_generator->add_to_column( "ApresLaPluie" ); ?>
          </div>
-      </div> 
+      </div>
+
+      <div class="w3-grid" style="grid-template-columns:100%">
+        <!-- single column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "YellowSunset" ); ?>
+        </div>
+      </div>
 
 
      <!-- Footer -->

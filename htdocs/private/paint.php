@@ -118,11 +118,24 @@ class Paint {
     }
 
     // what is displayed in the gallery
+    function get_title() {
+        return Translator::t($this->getTitleId());
+    }
+	
+    // what is displayed in the gallery
     function full_title() {
         //
         //$fdate= $this->get_date();
 		$fsize= $this->get_size();
         return Translator::t($this->getTitleId()) ." - " .Translator::t($this->type) ." - " .$fsize;
+    }
+	
+    // what is displayed in the gallery
+    function type_and_size() {
+        //
+        //$fdate= $this->get_date();
+		$fsize= $this->get_size();
+        return Translator::t($this->type) ." - " .$fsize;
     }
 
     function get_status() {
