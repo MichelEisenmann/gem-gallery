@@ -38,7 +38,6 @@ $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
 $paints["EtangAustral"]= $acrylic->paints["EtangAustral"];
 $paints["Cathedrale"]= $acrylic->paints["Cathedrale"];
 $paints["Poisson"]= $acrylic->paints["Poisson"];
-$paints["LeverSoleilRouge"]= $acrylic->paints["LeverSoleilRouge"];
 $paints["Savana"]= $acrylic->paints["Savana"];
 $paints["PurpleSeagull"]= $acrylic->paints["PurpleSeagull"];
 $paints["YellowSunset"]= $acrylic->paints["YellowSunset"];
