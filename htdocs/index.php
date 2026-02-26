@@ -53,35 +53,36 @@
 
 <!----	scenario 1 Affiche prochaine exposition 
         <div class="w3-center">
-	  <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
+	  <a href="<?= Translator::url('/public/serie-oeuvresrecentes.php') ?>">
 	    <img src="/public/images/web/affiche_LeCannet-29x27.png" alt="<?= Translator::t("exposalle_Alt"); ?>" style="width:100%" style="width:100%" />
 	  </a>
 	</div>
  --->
- 
+     <div class="w3-container w3-padding-32 w3-animate-opacity gem-animate gem-fixed-width">
+	 <b><?= Translator::t('Cathedrale_Titre'); ?></b> 
+	 <br>
+	 <?= Translator::t('Cathedrale_Details'); ?> </br>
+      </div>
 <!-- scenario 2: Images de scène d'exposition --->
-        <div class="w3-center">
-	  <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-	    <img src="/public/images/web/affiche_LeCannet-29x27.png" alt="<?= Translator::t("exposalle_Alt"); ?>" style="width:100%" style="width:100%" />
-	  </a>
-	</div>
-        <div class="w3-center w3-padding-16">
+      <div class="w3-center w3-padding-16">
 	  <div class="w3-row">
 	    <div class="w3-col s4">
 	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-		<img src="/public/images/web/Gourdon25_Gi_AirMarin.jpg" alt="Exposition Moments Feminins Eisenmann devant tableau Air Marin Huile" style="width:100%" />
+		<img src="/public/images/web/20251220-LeCannetMiddle.jpg" alt="Exposition Moments Feminins Le Cannet" style="width:100%" />
+	      </a>
+	    </div>
+	  <div class="w3-col s4">
+	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
+		<img src="/public/images/web/20260226_LeCannetEntree.jpg" alt="Exposition Moments Feminins " style="width:100%"  />
 	      </a>
 	    </div>
 	    <div class="w3-col s4">
 	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-		<img src="/public/images/web/Gourdon25_Gi_Danseuses.jpg" alt="Exposition Moments Feminins Eisenmann devant tableau Les Danseuses Huile" style="width:100%"  />
+		<img src="/public/images/web/20251220-LeCannet_Back.jpg" alt="Exposition Moments Feminins Le Cannet" style="width:100%"  />
 	      </a>
 	    </div>
-	    <div class="w3-col s4">
-	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-		<img src="/public/images/web/Gourdon25_Gi_MurPierre.jpg" alt="Exposition Moments Feminins Eisenmann devant tableau Contemplation acrylique" style="width:100%"  />
-	      </a>
-	    </div>
+
+		
 	  </div>
 	</div>
       </div>

@@ -107,7 +107,7 @@ $column_generator->generate_style("SanguinePascale", "black");
 $column_generator->generate_style("SakuraNenuphars", "black");
 $column_generator->generate_style("JeuDeRegard", "white");
 $column_generator->generate_style("LectriceChaton", "white");
-$column_generator->generate_style("LacBleu", "white");
+$column_generator->generate_style("LacBleu", "black");
 $column_generator->generate_style("RosesRouges", "white");
 $column_generator->generate_style("VaseAbutilons",  "white");
 $column_generator->generate_style("GourdonEglise", "black");

@@ -24,6 +24,9 @@ return array(
 	'faitespeinture' => 'Painting Festival',
 	'assopicasso' => 'Picasso Museum friends organization',
 
+	// Page Accueil
+	'Cathedrale_Details' => "Acrylic on canvas, 50x65cm",
+	
      // Expositions
     'currentExpoDate' => 'May 30th to June 12th - Closed',
 	'futureExpoDate' => 'December 18th - 31st',
