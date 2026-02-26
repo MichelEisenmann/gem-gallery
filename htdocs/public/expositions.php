@@ -68,8 +68,10 @@
  
     <ul>
 	2026
-	    <ul>	  
+	    <ul>
+          <li><?= Translator::t('ExpoSeillan2026') ?>, Seillans (83, France) - <?= Translator::t('ExpoDateSeillans2026') ?></li>		
 	  	  <li>Antibes Art Fair, Antibes (06, France)  - <?= Translator::t('ExpoDateAntibesArtFair2026') ?></li>
+		  <li><?= Translator::t('ExpoCannesGare2026') ?> - Cannes Espace Gare Maritime (06, France) - <?= Translator::t('ExpoDateCannesGare2026') ?></li>
 		 </ul>
     </ul>
 	

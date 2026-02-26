@@ -15,6 +15,7 @@ return array(
 	'emergence' => 'Emergence',
 	'collage' => 'Collage',
 	'oeuvresrecentes' => 'Dernières Oeuvres',
+	'couleursettexture' => 'Couleurs et Texture',
 	
 	// divers
 	'copyrightview' => "Voir la dernière exposition",
@@ -30,6 +31,10 @@ return array(
 	'futureExpoLieu' =>  "Le Cannet, 06, France",
 	'ExpoDateGourdon2026' => '28 Août au 10 Septembre 2026',
 	'ExpoDateAntibesArtFair2026' => '11 au 20 Avril 2026',
+	'ExpoDateCannesGare2026' => '11 au 20 Avril 2026',
+	'ExpoCannesGare2026' => 'Exposition Internationale des Artistes',
+	'ExpoDateSeillans2026' => '7-25 Mai 2026',
+	'ExpoSeillan2026' => 'Salon de Mai',
 
      // Paragraphes Introduction
 	 
@@ -74,7 +79,14 @@ return array(
     d'émotions au détour d'une rencontre avec une réalité nouvelle.	</p>
     <p>Quelques tableaux sont disponibles à l'achat.
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
-	</p>",		
+	</p>",	
+    
+	'IntroCouleursEtTexture' => "
+	<h2>Couleurs et Texture</h2><p>
+	Couleurs chatoyantes et peinture en relief.	</p>
+    <p>Quelques tableaux sont disponibles à l'achat.
+	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
+	</p>",			
 
     'IntroCollage' => "
 	<h2>Collage</h2><p>
@@ -258,6 +270,21 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	'Poisson_Alt' => "Poisson imaginaire orange et rouge sous l'eau",
     'Poisson_Titre' => "Poisson",
     'Poisson_Desc' => "Peinture contemporaine avec collage",
+	'LeverSoleilRouge_Alt' => "Lever de soleil sur la plage. Ciel rougeoyant",
+    'LeverSoleilRouge_Titre' => "Lever de soleil rouge",
+    'LeverSoleilRouge_Desc' => "Lever de soleil sur la plage. Ciel rougeoyant",
+	'Savana_Alt' => "Paysage imaginaire. Grand soleil jaune, arbre, animaux, passerelle et ruisseau",
+    'Savana_Titre' => "Savana",
+    'Savana_Desc' => "Peinture contemporaine avec collage",
+	'PurpleSeagull_Alt' => "Mouette observe embrasement de la plage et rive",
+    'PurpleSeagull_Titre' => "Purple Seagull",
+    'PurpleSeagull_Desc' => "Peinture contemporaine avec collage, technique mixte",
+	'YellowSunset_Alt' => "Coucher de soleil jaune. Observateur sur la plage",
+    'YellowSunset_Titre' => "Yellow Sunset",
+    'YellowSunset_Desc' => "Peinture contemporaine, technique mixte",
+	'ApresMidiOiseau_Alt' => "Un pelican plane devant un coucher de soleil",
+    'ApresMidiOiseau_Titre' => "Apres-Midi d'un Oiseau",
+    'ApresMidiOiseau_Desc' => "Peinture contemporaine, technique mixte",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",

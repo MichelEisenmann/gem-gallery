@@ -38,7 +38,10 @@ $sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 $paints["EtangAustral"]= $acrylic->paints["EtangAustral"];
 $paints["Cathedrale"]= $acrylic->paints["Cathedrale"];
 $paints["Poisson"]= $acrylic->paints["Poisson"];
-
+$paints["Savana"]= $acrylic->paints["Savana"];
+$paints["PurpleSeagull"]= $acrylic->paints["PurpleSeagull"];
+$paints["YellowSunset"]= $acrylic->paints["YellowSunset"];
+$paints["ApresMidiOiseau"]= $acrylic->paints["ApresMidiOiseau"];
 
 
 // Pastels
@@ -76,6 +79,10 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
 $column_generator->generate_style("EtangAustral", "white");
 $column_generator->generate_style("Cathedrale", "black");
 $column_generator->generate_style("Poisson", "white");
+$column_generator->generate_style("Savana", "white");
+$column_generator->generate_style("PurpleSeagull", "black");
+$column_generator->generate_style("YellowSunset", "black");
+$column_generator->generate_style("ApresMidiOiseau", "white");
     ?>
   </style>
   
@@ -115,7 +122,32 @@ $column_generator->generate_style("Poisson", "white");
          </div>
       </div>
 	  
- 
+      <div class="w3-grid" style="grid-template-columns:100%">
+        <!-- single column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "YellowSunset" ); ?>
+        </div>
+      </div>
+	  
+	  <div class="w3-grid" style="grid-template-columns:100%">
+        <!-- single column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "ApresMidiOiseau" ); ?>
+        </div>
+      </div>
+	  
+	   <div class="w3-grid" style="grid-template-columns:50% 50%">
+        <!-- First column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+<!-- 		  <?= $column_generator->add_to_column( "LeverSoleilRouge" ); ?> -->
+		  <?= $column_generator->add_to_column( "PurpleSeagull" ); ?>
+        </div>
+		
+        <!-- Second column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "Savana" ); ?>
+         </div>
+      </div> 
 
 
      <!-- Footer -->

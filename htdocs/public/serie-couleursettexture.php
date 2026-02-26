@@ -18,14 +18,14 @@
 
 <?php
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
-$serie_key='collage';
+$serie_key='couleursettexture';
 $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 
 // ces dictionnaires sont les dictionnaires standard
 $oil= $ALL_GALLERIES->paint_dictionnaries["oil"];
 $pastel= $ALL_GALLERIES->paint_dictionnaries["pastel"];
 $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
-$sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
+
 
 // On recupere toutes les peintures qu'on veut voir dans cette serie
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
@@ -33,10 +33,18 @@ $sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 
 // Oils
 
+
 // Acrylic
 $paints["EtangAustral"]= $acrylic->paints["EtangAustral"];
 $paints["Cathedrale"]= $acrylic->paints["Cathedrale"];
 $paints["Poisson"]= $acrylic->paints["Poisson"];
+$paints["LeverSoleilRouge"]= $acrylic->paints["LeverSoleilRouge"];
+$paints["Savana"]= $acrylic->paints["Savana"];
+$paints["PurpleSeagull"]= $acrylic->paints["PurpleSeagull"];
+$paints["YellowSunset"]= $acrylic->paints["YellowSunset"];
+$paints["ApresMidiOiseau"]= $acrylic->paints["ApresMidiOiseau"];
+
+
 
 // Pastels
 
@@ -45,8 +53,6 @@ $column_generator->paints= $paints; // may contain paints that are not in serie
 $column_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
 ?>
 
-
-  
 
   <title><?= Translator::t($serie_key); ?> | Gisèle Eisenmann Montagné</title>
   
@@ -70,6 +76,11 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
 $column_generator->generate_style("EtangAustral", "white");
 $column_generator->generate_style("Cathedrale", "black");
 $column_generator->generate_style("Poisson", "white");
+$column_generator->generate_style("LeverSoleilRouge", "white");
+$column_generator->generate_style("Savana", "white");
+$column_generator->generate_style("PurpleSeagull", "black");
+$column_generator->generate_style("YellowSunset", "black");
+$column_generator->generate_style("ApresMidiOiseau", "white");
     ?>
   </style>
   
@@ -83,11 +94,11 @@ $column_generator->generate_style("Poisson", "white");
       
       <!-- Text Part -->
       <div class="w3-container w3-left-align">
-        <?= Translator::t("IntroCollage"); ?>
+        <?= Translator::t("IntroCouleursEtTexture"); ?>
         </div>
       
        
-      <!-- Paintings -->
+       <!-- Paintings -->
  
       <div class="w3-grid" style="grid-template-columns:100%">
         <!-- single column --> 
@@ -100,19 +111,43 @@ $column_generator->generate_style("Poisson", "white");
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
   		  <?= $column_generator->add_to_column( "EtangAustral" ); ?>
-
-
         </div>
+		
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		  <?= $column_generator->add_to_column( "Poisson" ); ?>
+
+         </div>
+      </div>
+
+      <div class="w3-grid" style="grid-template-columns:100%">
+        <!-- single column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "YellowSunset" ); ?>
+        </div>
+      </div>
+	  
+	  <div class="w3-grid" style="grid-template-columns:100%">
+        <!-- single column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "ApresMidiOiseau" ); ?>
+        </div>
+      </div>
+	  
+	   <div class="w3-grid" style="grid-template-columns:50% 50%">
+        <!-- First column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+<!-- 		  <?= $column_generator->add_to_column( "LeverSoleilRouge" ); ?> -->
+		  <?= $column_generator->add_to_column( "PurpleSeagull" ); ?>
+        </div>
+		
+        <!-- Second column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "Savana" ); ?>
          </div>
       </div>
 	  
- 
-
-
-     <!-- Footer -->
+      <!-- Footer -->
     <?php include("../public/copyright.php"); ?>
     
     </div>

@@ -1,12 +1,16 @@
 <?php
  // add here all the series you want to see in the menu
  // The ids must match the names that are in the excel file
- $series[0]= "momentsfeminins";
- $series[1]= "watermirror";
- $series[2]= "metamorphose";
- $series[3]= "emergence";
- $series[4]= "oeuvresrecentes";
+ $series[0]= "couleursettexture";
+ $series[1]= "momentsfeminins";
+ $series[2]= "watermirror";
+ $series[3]= "metamorphose";
+ $series[4]= "emergence";
+ $series[5]= "oeuvresrecentes";
+
  ?>
+
+
 
 <!-- LARGE screens -->
 <div class="w3-container w3-padding-32 w3-animate-opacity gem-animate gem-fixed-width w3-hide-small w3-hide-medium">

@@ -22,6 +22,8 @@ class Paint {
     // as read from CSV
     // filename, date (YYYYMMDD) , width, height, type, status, series
     function set_attributes( $array ) {
+    //    echo $array[0] ."<br>";
+
       // column of information in CSV
         $rank_column= 0;
         $id_column= 1;

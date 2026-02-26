@@ -14,6 +14,7 @@ return array(
 	'emergence' => 'Emergence',
 	'collage' => 'Gluing Material',
 	'oeuvresrecentes' => 'Latest Artwork',
+	'couleursettexture' => 'Colours and Texture',
 	
 	//divers
 	'copyrightview' => "View artist's recent exhibition",
@@ -29,6 +30,10 @@ return array(
     'futureExpoLieu' =>  "Le Cannet, 06, France",
 	'ExpoDateGourdon2026' => 'August 28th to September 10th 2026',
 	'ExpoDateAntibesArtFair2026' => 'April 11th-20th 2026',
+	'ExpoDateCannesGare2026' => 'April 11th-20th 2026',
+	'ExpoCannesGare2026' => 'International Exhibition of Artists',
+	'ExpoDateSeillans2026' => 'May 7th-25th 2026',
+	'ExpoSeillan2026' => 'May Fair',
 	
 	// Paragraphes Introduction
 	 'AccueilArtisteIntro' => "
@@ -73,6 +78,13 @@ return array(
     <p>The exhibition is over, however some paintings are available for purchase.</br>
     <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",	
+	
+	'IntroCouleursEtTexture' => "
+	<h2>Colors and texture</h2><p>
+	Shimmering colors and relief painting.</p>
+    paintings are available for purchase.</br>
+    <br>Send an email to contact@giseleeisenmann.com for more information.</br>
+	</p>",	
 
     'IntroCollage' => "
 	<h2>Gluing Material</h2><p>
@@ -97,7 +109,7 @@ return array(
     </br>
   </p>',
   
-  	'Winner' => '<p>GisÃ¨le Eisenmann MontagnÃ© is the winner of the following prices and awards
+  	'Winner' => '<p>Gisele Eisenmann Montagné is the winner of the following prices and awards
 	<ul><li>2025 and 2024 Luxembourg Art prize: certificate of artistic achievement </li>
 	    <li>2024 Trophy Award of Antibes City [Painting Festival - (Picasso Museum friends organization)] </li> 
 		<li>2021 2nd prize, Watercolour/Pastel category [Painting Festival - (Picasso Museum friends organization)] </li> 
@@ -170,7 +182,7 @@ return array(
     'LesZebres_Desc' => "Fictitious creation of overlapping zebras. False mirror effect. (Namibia Desert)",
     'ParisQuaiSeine_Alt' => "Winter in Paris. View from the Pont Neuf towards the Pont des Arts",
     'ParisQuaiSeine_Titre' => "Paris, Quay of the Seine",
-    'ParisQuaiSeine_Desc' => "Pont des Arts, Quai Conti, the Paris Mint, Dome of the Institut de France",
+    'ParisQuaiSeine_Desc' => "Pont des Arts, Quay Conti, La Monnaie de Paris Museum, Dome of the Institut de France",
     'AustralianPelican_Alt' => "An Australian pelican watches the sunset over Terranora Creek",
     'AustralianPelican_Titre' => "Australian Pelican",
     'AustralianPelican_Desc' => "Australian Pelican and sunset over Terranora Creek (New South Wales, AUS)",
@@ -252,6 +264,21 @@ return array(
 	'Poisson_Alt' => "Imaginary orange and red fish underwater",
     'Poisson_Titre' => "Fish",
     'Poisson_Desc' => "Contemporary painting with collage",
+	'LeverSoleilRouge_Alt' => "Sunrise on the beach. Glowing Sky",
+    'LeverSoleilRouge_Titre' => "Red Sunrise",
+    'LeverSoleilRouge_Desc' => "Sunrise on the beach. Glowing Sky",
+	'Savana_Alt' => "Imaginary landscape. Big yellow sun, tree, animals, walkway and stream",
+    'Savana_Titre' => "Savana",
+    'Savana_Desc' => "Contemporary painting with collage",
+	'PurpleSeagull_Alt' => "Seagull observes the blaze of the beach and shore",
+    'PurpleSeagull_Titre' => "Purple Seagull",
+    'PurpleSeagull_Desc' => "Contemporary painting with collage, mixed media",
+	'YellowSunset_Alt' => "Yellow sunset. Observer on the beach",
+    'YellowSunset_Titre' => "Yellow Sunset",
+    'YellowSunset_Desc' => "Contemporary painting with collage, mixed media",
+	'ApresMidiOiseau_Alt' => "A pelican hovers in front of a sunset",
+    'ApresMidiOiseau_Titre' => "Afternoon of a Bird",
+    'ApresMidiOiseau_Desc' => "Contemporary painting with collage, mixed media",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",

@@ -51,14 +51,15 @@
 	  </a>
 	</div>
 
-<!----	scenario 1 Affiche prochaine exposition  
+<!----	scenario 1 Affiche prochaine exposition 
         <div class="w3-center">
 	  <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
 	    <img src="/public/images/web/affiche_LeCannet-29x27.png" alt="<?= Translator::t("exposalle_Alt"); ?>" style="width:100%" style="width:100%" />
 	  </a>
 	</div>
-	
-<!-- scenario 2: Images de scène d'exposition 
+ --->
+ 
+<!-- scenario 2: Images de scène d'exposition --->
         <div class="w3-center">
 	  <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
 	    <img src="/public/images/web/affiche_LeCannet-29x27.png" alt="<?= Translator::t("exposalle_Alt"); ?>" style="width:100%" style="width:100%" />
@@ -84,7 +85,7 @@
 	  </div>
 	</div>
       </div>
---->
+
       
       <!-- Footer -->
       <?php include("public/copyright.php"); ?>

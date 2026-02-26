@@ -121,9 +121,8 @@ $column_generator->generate_style("LesMouettesPlage", "black");
          <?= $column_generator->add_to_column( "Distorsion" ); ?>
 		 <?= $column_generator->add_to_column( "TendresseChat" ); ?>
           <?= $column_generator->add_to_column( "MichelPolynesie" ); ?>		 
+         </div>
 
-		  
-        </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		  <?= $column_generator->add_to_column( "Deflagration" ); ?>
@@ -135,9 +134,6 @@ $column_generator->generate_style("LesMouettesPlage", "black");
 		  <?= $column_generator->add_to_column( "Eclosion" ); ?>
           <?= $column_generator->add_to_column( "CorentinLaRose" ); ?>
 		  <?= $column_generator->add_to_column( "BebeSourit" ); ?>
-
-
- 
         </div>
       </div>
 	  
