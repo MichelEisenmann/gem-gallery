@@ -61,16 +61,10 @@
 	<div class="w3-center w3-padding-16">
 	  <div class="w3-row-padding" >
 	    <div class="w3-col s5">
-	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-		<img src="/public/images/web/AfficheAntibesAF.jpg" alt="Antibes Art Fair 2026" style="width:100%" />
-	      </a>
-	    </div>
-	    <div class="w3-col s2">
+	      <img src="/public/images/web/AfficheAntibesAF.jpg" alt="Antibes Art Fair 2026" style="width:100%" />
 	    </div>
 	    <div class="w3-col s5">
-	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-		<img src="/public/images/web/AfficheCannes_Pantero.jpg" alt="Exposition Internationale des Artistes 2026" style="width:100%"  />
-	      </a>
+	      <img src="/public/images/web/AfficheCannes_Pantero.jpg" alt="Exposition Internationale des Artistes 2026" style="width:100%"  />
 	    </div>
 	    
 	    
