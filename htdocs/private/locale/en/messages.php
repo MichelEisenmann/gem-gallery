@@ -285,6 +285,9 @@ return array(
 	'ApresLaPluie_Alt' => "Dog Road Forest After Rain",
     'ApresLaPluie_Titre' => "After rain",
     'ApresLaPluie_Desc' => "The setting sun is reflected on the wet road",
+	'RencontreAuSommet_Alt' => "Alpine landscape woman marmot",
+    'RencontreAuSommet_Titre' => "Summit meeting",
+    'RencontreAuSommet_Desc' => "Young woman and marmot - alpine landscape",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",

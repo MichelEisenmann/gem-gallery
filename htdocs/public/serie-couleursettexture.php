@@ -43,6 +43,7 @@ $paints["PurpleSeagull"]= $acrylic->paints["PurpleSeagull"];
 $paints["YellowSunset"]= $acrylic->paints["YellowSunset"];
 $paints["ApresMidiOiseau"]= $acrylic->paints["ApresMidiOiseau"];
 $paints["ApresLaPluie"]= $acrylic->paints["ApresLaPluie"];
+$paints["RencontreAuSommet"]= $acrylic->paints["RencontreAuSommet"];
 
 
 
@@ -82,6 +83,7 @@ $column_generator->generate_style("PurpleSeagull", "black");
 $column_generator->generate_style("YellowSunset", "black");
 $column_generator->generate_style("ApresMidiOiseau", "white");
 $column_generator->generate_style("ApresLaPluie", "black");
+$column_generator->generate_style("RencontreAuSommet, "white");
     ?>
   </style>
   
@@ -104,6 +106,7 @@ $column_generator->generate_style("ApresLaPluie", "black");
         <!-- single column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		  <?= $column_generator->add_to_column( "ApresMidiOiseau" ); ?>
+		  <?= $column_generator->add_to_column( "RencontreAuSommet" ); ?>
         </div>
       </div>
 	  

@@ -291,6 +291,9 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	'ApresLaPluie_Alt' => "Chien Route foret après la pluie",
     'ApresLaPluie_Titre' => "Après la pluie",
     'ApresLaPluie_Desc' => "Le couchant se réflète sur la route mouillée",
+	'RencontreAuSommet_Alt' => "Paysage alpin femme marmotte",
+    'RencontreAuSommet_Titre' => "Rencontre Au Sommet",
+    'RencontreAuSommet_Desc' => "Jeune femme et marmotte - paysage alpin",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",
