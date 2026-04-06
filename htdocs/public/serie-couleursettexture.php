@@ -83,7 +83,7 @@ $column_generator->generate_style("PurpleSeagull", "black");
 $column_generator->generate_style("YellowSunset", "black");
 $column_generator->generate_style("ApresMidiOiseau", "white");
 $column_generator->generate_style("ApresLaPluie", "black");
-$column_generator->generate_style("RencontreAuSommet, "white");
+$column_generator->generate_style("RencontreAuSommet", "white");
     ?>
   </style>
   
