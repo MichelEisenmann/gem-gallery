@@ -6,11 +6,11 @@
  $series[2]= "watermirror";
  $series[3]= "metamorphose";
  $series[4]= "emergence";
- $series[5]= "oeuvresrecentes";
+
 
  ?>
 
-
+<!-- $series[5]= "oeuvresrecentes"; -->
 
 <!-- LARGE screens -->
 <div class="w3-container w3-padding-32 w3-animate-opacity gem-animate gem-fixed-width w3-hide-small w3-hide-medium">

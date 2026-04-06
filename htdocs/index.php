@@ -40,8 +40,11 @@
 <?= Translator::t("metamorphose"); ?> </a>,
        <a href="<?= Translator::url('/public/serie-emergence.php') ?>">
 <?= Translator::t("emergence"); ?> </a>]
+ 
+<!--
    <?= Translator::t("AccueilArtisteIntroFin"); ?><a href="<?= Translator::url('/public/serie-oeuvresrecentes.php') ?>">
 <?= Translator::t("oeuvresrecentes"); ?> </a>
+-->
       </div>	  
 
 <!--- scenario 0 - florilege ---->
