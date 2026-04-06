@@ -29,6 +29,7 @@ return array(
 	'Cathedrale_Details' => "Acrylique sur toile, 50x65cm",
 
     // Expositions
+    'ProchainsEvenements' => 'Retrouvez les oeuvres de GEM sur ces salons:',
     'currentExpoDate' => '30 Mai au 12 Juin - Terminée',
 	'futureExpoDate' => '18 Décembre au 31 Décembre 2025',
 	'futureExpoLieu' =>  "Le Cannet, 06, France",

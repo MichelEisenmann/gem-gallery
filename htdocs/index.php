@@ -24,86 +24,74 @@
   
   <body>
 
-      <!-- Header -->
-      <?php include("public/navbar.php"); ?>
-      
-      <!-- Page Content -->
+    <!-- Header -->
+    <?php include("public/navbar.php"); ?>
+    
+    <!-- Page Content -->
       <div class="w3-container w3-animate-opacity gem-animate gem-index-fixed-width">
 
-      <div class="w3-left-align gem-menu">
-        <?= Translator::t("AccueilArtisteIntro"); ?>
-	    [<a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-<?= Translator::t("momentsfeminins"); ?> </a>,
-         <a href="<?= Translator::url('/public/serie-watermirror.php') ?>">
-<?= Translator::t("watermirror"); ?> </a>, 
-        <a href="<?= Translator::url('/public/serie-metamorphose.php') ?>">
-<?= Translator::t("metamorphose"); ?> </a>,
-       <a href="<?= Translator::url('/public/serie-emergence.php') ?>">
-<?= Translator::t("emergence"); ?> </a>]
- 
-<!--
-   <?= Translator::t("AccueilArtisteIntroFin"); ?><a href="<?= Translator::url('/public/serie-oeuvresrecentes.php') ?>">
-<?= Translator::t("oeuvresrecentes"); ?> </a>
--->
-      </div>	  
+	<div class="w3-left-align gem-menu">
+          <?= Translator::t("AccueilArtisteIntro"); ?>
+	  [<a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
+            <?= Translator::t("momentsfeminins"); ?> </a>,
+          <a href="<?= Translator::url('/public/serie-watermirror.php') ?>">
+            <?= Translator::t("watermirror"); ?> </a>, 
+          <a href="<?= Translator::url('/public/serie-metamorphose.php') ?>">
+            <?= Translator::t("metamorphose"); ?> </a>,
+          <a href="<?= Translator::url('/public/serie-emergence.php') ?>">
+            <?= Translator::t("emergence"); ?> </a>]
+	</div>	  
 
 <!--- scenario 0 - florilege ---->
-   <div class="w3-center">
+	<div class="w3-center">
 	  <a href="<?= Translator::url('/public/serie-oeuvresrecentes.php') ?>">
 	    <img src="/public/images/Acrylique/20251209_Cathedrale_AC50x65.jpg" alt="" style="width:100%" style="width:100%" />
 	  </a>
 	</div>
 
-<!----	scenario 1 Affiche prochaine exposition 
-        <div class="w3-center">
-	  <a href="<?= Translator::url('/public/serie-oeuvresrecentes.php') ?>">
-	    <img src="/public/images/web/affiche_LeCannet-29x27.png" alt="<?= Translator::t("exposalle_Alt"); ?>" style="width:100%" style="width:100%" />
-	  </a>
+	<div class="w3-container w3-padding-32 w3-animate-opacity gem-animate gem-fixed-width">
+	  <b><?= Translator::t('Cathedrale_Titre'); ?> - </b> 
+	  <?= Translator::t('Cathedrale_Details'); ?> </br>
 	</div>
- --->
-     <div class="w3-container w3-padding-32 w3-animate-opacity gem-animate gem-fixed-width">
-	 <b><?= Translator::t('Cathedrale_Titre'); ?></b> 
-	 <br>
-	 <?= Translator::t('Cathedrale_Details'); ?> </br>
-      </div>
-<!-- scenario 2: Images de scène d'exposition --->
-      <div class="w3-center w3-padding-16">
-	  <div class="w3-row">
-	    <div class="w3-col s4">
-	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-		<img src="/public/images/web/20251220-LeCannetMiddle.jpg" alt="Exposition Moments Feminins Le Cannet" style="width:100%" />
-	      </a>
-	    </div>
-	  <div class="w3-col s4">
-	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-		<img src="/public/images/web/20260226_LeCannetEntree.jpg" alt="Exposition Moments Feminins " style="width:100%"  />
-	      </a>
-	    </div>
-	    <div class="w3-col s4">
-	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-		<img src="/public/images/web/20251220-LeCannet_Back.jpg" alt="Exposition Moments Feminins Le Cannet" style="width:100%"  />
-	      </a>
-	    </div>
 
-		
+	<!-- scenario 2: Images de scène d'exposition --->
+	<div class="w3-left-align gem-menu">
+	  <?= Translator::t("ProchainsEvenements"); ?>
+	</div>
+	<div class="w3-center w3-padding-16">
+	  <div class="w3-row-padding" >
+	    <div class="w3-col s5">
+	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
+		<img src="/public/images/web/AfficheAntibesAF.jpg" alt="Antibes Art Fair 2026" style="width:100%" />
+	      </a>
+	    </div>
+	    <div class="w3-col s2">
+	    </div>
+	    <div class="w3-col s5">
+	      <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
+		<img src="/public/images/web/AfficheCannes_Pantero.jpg" alt="Exposition Internationale des Artistes 2026" style="width:100%"  />
+	      </a>
+	    </div>
+	    
+	    
 	  </div>
 	</div>
       </div>
-
+      
       
       <!-- Footer -->
       <?php include("public/copyright.php"); ?>
       
-
+      
       <script>
-      // add the "alt" attribute to all "to-be-signed" images
-      function signImages() {
-      var gemSignature= "Gisele Eisenmann (gem)";
+	// add the "alt" attribute to all "to-be-signed" images
+	function signImages() {
+	var gemSignature= "Gisele Eisenmann (gem)";
         let images= document.querySelectorAll(".to-be-signed");
         for ( let i= 0; i < images.length; i++ ) {
 	  images[i].setAttribute( 'alt', gemSignature );
         }
-      }
+        }
       document.addEventListener('DOMContentLoaded', function() { signImages(); }, false);  
     </script>
     

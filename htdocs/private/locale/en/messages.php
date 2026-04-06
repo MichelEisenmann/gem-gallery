@@ -28,6 +28,7 @@ return array(
 	'Cathedrale_Details' => "Acrylic on canvas, 50x65cm",
 	
      // Expositions
+    'ProchainsEvenements' => "Come and see GEM's artworks at the following fairs",
     'currentExpoDate' => 'May 30th to June 12th - Closed',
 	'futureExpoDate' => 'December 18th - 31st',
     'futureExpoLieu' =>  "Le Cannet, 06, France",
