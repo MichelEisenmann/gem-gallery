@@ -32,7 +32,9 @@
 
 	<div class="w3-left-align gem-menu">
           <?= Translator::t("AccueilArtisteIntro"); ?>
-	  [<a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
+	  [<a href="<?= Translator::url('/public/serie-couleursettexture.php') ?>">
+            <?= Translator::t("couleursettexture"); ?> </a>,
+		<a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
             <?= Translator::t("momentsfeminins"); ?> </a>,
           <a href="<?= Translator::url('/public/serie-watermirror.php') ?>">
             <?= Translator::t("watermirror"); ?> </a>, 
@@ -61,10 +63,10 @@
 	<div class="w3-center w3-padding-16">
 	  <div class="w3-row-padding" >
 	    <div class="w3-col s5">
-	      <img src="/public/images/web/AfficheAntibesAF.jpg" alt="Antibes Art Fair 2026" style="width:100%" />
+	      <img src="/public/images/web/Seillans_affiche_2026.jpg" alt="Seillans salon de Mai 2026" style="width:100%" />
 	    </div>
 	    <div class="w3-col s5">
-	      <img src="/public/images/web/AfficheCannes_Pantero.jpg" alt="Exposition Internationale des Artistes 2026" style="width:100%"  />
+	      <img src="/public/images/web/LayoutPrevisionnel.jpg" alt="Seillans Oeuvres exposées" style="width:100%"  />
 	    </div>
 	    
 	    

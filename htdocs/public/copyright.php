@@ -1,7 +1,7 @@
 
 <footer class="w3-padding-16 w3-center gem-footer">
   <?= Translator::t('copyrightview') ?>
-  <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>"><?= Translator::t('momentsfeminins') ?></a>
+  <a href="<?= Translator::url('/public/serie-couleursettexture.php') ?>"><?= Translator::t('couleursettexture') ?></a>
   <p>
     <div class="">
       <a class="gem-a" href="https://www.instagram.com/gem.eisenmann/">

@@ -29,7 +29,8 @@ return array(
 	'Cathedrale_Details' => "Acrylique sur toile, 50x65cm",
 
     // Expositions
-    'ProchainsEvenements' => 'Retrouvez les oeuvres de GEM sur ces salons:',
+    'ProchainsEvenements' => "Le salon international de Cannes et l'Antibes Art Fair 2026 sont terminés. 
+	Retrouvez les oeuvres de GEM au salon de Seillans (83)",
     'currentExpoDate' => '30 Mai au 12 Juin - Terminée',
 	'futureExpoDate' => '18 Décembre au 31 Décembre 2025',
 	'futureExpoLieu' =>  "Le Cannet, 06, France",
@@ -274,7 +275,7 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	'Poisson_Alt' => "Poisson imaginaire orange et rouge sous l'eau",
     'Poisson_Titre' => "Poisson",
     'Poisson_Desc' => "Peinture contemporaine avec collage",
-	'LeverSoleilRouge_Alt' => "Lever de soleil sur la plage. Ciel rougeoyant",
+	'LeverSoleilRouge_Alt' => "Lever de soleil sur la plage. Ciel rougeoyant, mouettes",
     'LeverSoleilRouge_Titre' => "Lever de soleil rouge",
     'LeverSoleilRouge_Desc' => "Lever de soleil sur la plage. Ciel rougeoyant",
 	'Savana_Alt' => "Paysage imaginaire. Grand soleil jaune, arbre, animaux, passerelle et ruisseau",
