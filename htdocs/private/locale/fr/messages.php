@@ -296,9 +296,12 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	'RencontreAuSommet_Alt' => "Paysage alpin femme marmotte",
     'RencontreAuSommet_Titre' => "Rencontre Au Sommet",
     'RencontreAuSommet_Desc' => "Jeune femme et marmotte - paysage alpin",
+	'Carnaval_Alt' => "Abstraction guirlandes colorées",
+    'Carnaval_Titre' => "Carnaval",
+    'Carnaval_Desc' => " ",
 	'Dryade_Alt' => "Buste de femme, feuillage, fleur",
     'Dryade_Titre' => "Dryade",
-    'Dryade_Desc' => "Nymphe de la forêt ",
+    'Dryade_Desc' => "Nymphe de la forêt",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",

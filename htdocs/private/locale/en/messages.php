@@ -289,9 +289,12 @@ return array(
 	'RencontreAuSommet_Alt' => "Alpine landscape woman marmot",
     'RencontreAuSommet_Titre' => "Summit meeting",
     'RencontreAuSommet_Desc' => "Young woman and marmot - alpine landscape",
-	'Dryade_Alt' => "Buste de femme, feuillage, fleur",
-    'Dryade_Titre' => "Dryade",
-    'Dryade_Desc' => "Nymphe de la forêt ",
+	'Carnaval_Alt' => "abstraction colorful garlands",
+    'Carnaval_Titre' => "Carnival",
+    'Carnaval_Desc' => " ",	
+	'Dryade_Alt' => "Bust of a woman, foliage, flower",
+    'Dryade_Titre' => "Dryad",
+    'Dryade_Desc' => "Forest nymph",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",

@@ -46,6 +46,7 @@ $paints["ApresLaPluie"]= $acrylic->paints["ApresLaPluie"];
 $paints["RencontreAuSommet"]= $acrylic->paints["RencontreAuSommet"];
 $paints["LeverSoleilRouge"]= $acrylic->paints["LeverSoleilRouge"];
 $paints["Dryade"]= $acrylic->paints["Dryade"];
+$paints["Carnaval"]= $acrylic->paints["Carnaval"];
 
 
 
@@ -87,6 +88,7 @@ $column_generator->generate_style("ApresMidiOiseau", "white");
 $column_generator->generate_style("ApresLaPluie", "black");
 $column_generator->generate_style("RencontreAuSommet", "white");
 $column_generator->generate_style("Dryade", "black");
+$column_generator->generate_style("Carnaval", "white");
     ?>
   </style>
   
