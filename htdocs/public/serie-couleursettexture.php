@@ -47,6 +47,7 @@ $paints["RencontreAuSommet"]= $acrylic->paints["RencontreAuSommet"];
 $paints["LeverSoleilRouge"]= $acrylic->paints["LeverSoleilRouge"];
 $paints["Dryade"]= $acrylic->paints["Dryade"];
 $paints["Carnaval"]= $acrylic->paints["Carnaval"];
+$paints["Spirale"]= $acrylic->paints["Spirale"];
 
 
 
@@ -89,6 +90,7 @@ $column_generator->generate_style("ApresLaPluie", "black");
 $column_generator->generate_style("RencontreAuSommet", "white");
 $column_generator->generate_style("Dryade", "black");
 $column_generator->generate_style("Carnaval", "white");
+$column_generator->generate_style("Spirale", "white");
     ?>
   </style>
   
@@ -139,10 +141,12 @@ $column_generator->generate_style("Carnaval", "white");
 		<!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		   <?= $column_generator->add_to_column( "LeverSoleilRouge" ); ?>
+		   <?= $column_generator->add_to_column( "Spirale" ); ?>
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 			<?= $column_generator->add_to_column( "Dryade" ); ?>
+			<?= $column_generator->add_to_column( "Carnaval" ); ?>
         </div>		
 	</div>
 	  

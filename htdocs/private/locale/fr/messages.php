@@ -302,6 +302,9 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	'Dryade_Alt' => "Buste de femme, feuillage, fleur",
     'Dryade_Titre' => "Dryade",
     'Dryade_Desc' => "Nymphe de la forêt",
+	'Spirale_Alt' => "Volute avec des tons jaunes et orangés",
+    'Spirale_Titre' => "Spirale",
+    'Spirale_Desc' => "",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",

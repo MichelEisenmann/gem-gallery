@@ -295,6 +295,9 @@ return array(
 	'Dryade_Alt' => "Bust of a woman, foliage, flower",
     'Dryade_Titre' => "Dryad",
     'Dryade_Desc' => "Forest nymph",
+	'Spirale_Alt' => "Swirl with yellow and orange tones",
+	'Spirale_Titre' => "Spiral",
+    'Spirale_Desc' => "",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",
