@@ -32,8 +32,8 @@
 
 	<div class="w3-left-align gem-menu">
           <?= Translator::t("AccueilArtisteIntro"); ?>
-	  [<a href="<?= Translator::url('/public/serie-couleursettexture.php') ?>">
-            <?= Translator::t("couleursettexture"); ?> </a>,
+	  [<a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
+            <?= Translator::t("couleursetmodele"); ?> </a>,
 		<a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
             <?= Translator::t("momentsfeminins"); ?> </a>,
           <a href="<?= Translator::url('/public/serie-watermirror.php') ?>">
@@ -46,30 +46,27 @@
 
 <!--- scenario 0 - florilege ---->
 	<div class="w3-center">
-	  <a href="<?= Translator::url('/public/serie-couleursettexture.php') ?>">
-	    <img src="/public/images/Acrylique/20251209_Cathedrale_AC50x65.jpg" alt="" style="width:100%" style="width:100%" />
+	  <a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
+	    <img src="/public/images/Acrylique/20260602_ConteMusical_AC60x30_small.jpg" alt="Conte Musical" style="width:100%" style="width:100%" />
 	  </a>
 	</div>
 
 	<div class="w3-container w3-padding-32 w3-animate-opacity gem-animate gem-fixed-width">
-	  <b><?= Translator::t('Cathedrale_Titre'); ?> - </b> 
-	  <?= Translator::t('Cathedrale_Details'); ?> </br>
+	  <b><?= Translator::t('ConteMusical_Titre'); ?> - </b> 
+	  <?= Translator::t('ConteMusical_Desc'); ?> </br>
 	</div>
 
 	<!-- scenario 2: Images de scène d'exposition --->
-	<div class="w3-left-align gem-menu">
+<!--- 	<div class="w3-left-align gem-menu">
 	  <?= Translator::t("ProchainsEvenements"); ?>
 	</div>
+	-->
 	<div class="w3-center w3-padding-16">
 	  <div class="w3-row-padding" >
-	    <div class="w3-col s5">
-	      <img src="/public/images/web/Seillans_affiche_2026.jpg" alt="Seillans salon de Mai 2026" style="width:100%" />
+	    <div class="w3-col s8">
+	      <img src="/public/images/web/Decor_ConteMusical-V2.jpg" alt="Decor conte musical" style="width:100%" />
 	    </div>
-	    <div class="w3-col s5">
-	      <img src="/public/images/web/LayoutPrevisionnel.jpg" alt="Seillans Oeuvres exposées" style="width:100%"  />
-	    </div>
-	    
-	    
+     
 	  </div>
 	</div>
       </div>

@@ -35,7 +35,8 @@
       <ul>
 	2026
 	<ul>
-	  <li>Gourdon (06, France) - <?= Translator::t('ExpoDateGourdon2026') ?></li>
+	  <li><b>Gourdon (06, France)</b> - <?= Translator::t('ExpoDateGourdon2026') ?> <i><a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
+            <?= Translator::t("couleursetmodele"); ?> </a></i></li>
 	</ul>
       </ul>
 	  

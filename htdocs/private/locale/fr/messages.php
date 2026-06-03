@@ -13,12 +13,11 @@ return array(
     'watermirror' => 'Miroir d\'eau',
     'metamorphose' => 'Métamorphose',
 	'emergence' => 'Emergence',
-	'collage' => 'Collage',
 	'oeuvresrecentes' => 'Dernières Oeuvres',
-	'couleursettexture' => 'Couleurs et Texture',
+	'couleursetmodele' => 'Couleurs et modelé',
 	
 	// divers
-	'copyrightview' => "Voir la dernière exposition",
+	'copyrightview' => "Voir la dernière/à venir exposition",
 	'Avertissement' => "Avertissement : Le contenu de ce site Internet est protégé par le droit d’auteur. Toute reproduction est interdite.",
 	'soloexpo' => 'Expositions Solo', 
 	'groupexpo' => "Une sélection d'expositions de groupe",
@@ -43,7 +42,7 @@ return array(
 
      // Paragraphes Introduction
 	 
-	 'AccueilArtisteIntro' => "
+	'AccueilArtisteIntro' => "
 	<h4>Artiste Peintre - Art Moderne</h4><p>
 	Visitez son monde imaginaire en suivant les oeuvres organisées par série d'expositions 
 	",
@@ -86,20 +85,13 @@ return array(
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",	
     
-	'IntroCouleursEtTexture' => "
-	<h2>Couleurs et Texture</h2><p>
-	Couleurs chatoyantes et peinture en relief.	</p>
+	'IntroCouleursEtModele' => "
+	<h2>Couleurs et Modelé</h2><p>
+	Couleurs chatoyantes et rendu du relief, des formes avec la peinture et matériau.	</p>
     <p>Quelques tableaux sont disponibles à l'achat.
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",			
 
-    'IntroCollage' => "
-	<h2>Collage</h2><p>
-	Peinture contemporaine	</p>
-    <p>Quelques tableaux sont disponibles à l'achat.
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
-	</p>",		
-	
     'IntroOeuvresRecentes' => "Oeuvres créées récemment.",	
 
     'Introduction' => '  <p>Gisèle Eisenmann Montagné (nom artiste: GEM) est une artiste autodidacte, travaillant 
@@ -305,6 +297,9 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	'Spirale_Alt' => "Volute avec des tons jaunes et orangés",
     'Spirale_Titre' => "Spirale",
     'Spirale_Desc' => "",
+	'ConteMusical_Alt' => "Triptyque abstrait Jaune et bleu",
+    'ConteMusical_Titre' => "Conte Musical",
+    'ConteMusical_Desc' => "Triptyque abstrait - 3x (60x30cm)",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",

@@ -14,7 +14,7 @@ return array(
 	'emergence' => 'Emergence',
 	'collage' => 'Gluing Material',
 	'oeuvresrecentes' => 'Latest Artwork',
-	'couleursettexture' => 'Colours and Texture',
+	'couleursetmodele' => 'colors and pattern',
 	
 	//divers
 	'copyrightview' => "View artist's recent exhibition",
@@ -83,9 +83,9 @@ return array(
     <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",	
 	
-	'IntroCouleursEtTexture' => "
-	<h2>Colors and texture</h2><p>
-	Shimmering colors and relief painting.</p>
+	'IntroCouleursEtModele' => "
+	<h2>Colors and pattern</h2><p>
+	Shimmering colours and rendering of relief and shapes with paint and material.</p>
     paintings are available for purchase.</br>
     <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",	
@@ -298,6 +298,9 @@ return array(
 	'Spirale_Alt' => "Swirl with yellow and orange tones",
 	'Spirale_Titre' => "Spiral",
     'Spirale_Desc' => "",
+	'ConteMusical_Alt' => "Abstract Triptych Yellow and Blue",
+	'ConteMusical_Titre' => "Musical Tale",
+    'ConteMusical_Desc' => "Abstract Triptych - 3x (60x30cm)",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",
