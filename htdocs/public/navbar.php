@@ -1,7 +1,7 @@
 <?php
  // add here all the series you want to see in the menu
  // The ids must match the names that are in the excel file
- $series[0]= "couleursettexture";
+ $series[0]= "couleursetmodele";
  $series[1]= "momentsfeminins";
  $series[2]= "watermirror";
  $series[3]= "metamorphose";
