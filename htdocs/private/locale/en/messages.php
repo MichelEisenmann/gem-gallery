@@ -14,7 +14,7 @@ return array(
 	'emergence' => 'Emergence',
 	'collage' => 'Gluing Material',
 	'oeuvresrecentes' => 'Latest Artwork',
-	'couleursetmodele' => 'colors and pattern',
+	'couleursetmodele' => 'Symphony of colors and texture',
 	
 	//divers
 	'copyrightview' => "View artist's recent exhibition",
@@ -28,7 +28,7 @@ return array(
 	'Cathedrale_Details' => "Acrylic on canvas, 50x65cm",
 	
      // Expositions
-    'ProchainsEvenements' => "Cannes International exhibition and Antibes Art Fair 2026 are over. Come and see GEM's artworks at Seillans (83)",
+    'ProchainsEvenements' => "Gourdon exhibition",
     'currentExpoDate' => 'May 30th to June 12th - Closed',
 	'futureExpoDate' => 'December 18th - 31st',
     'futureExpoLieu' =>  "Le Cannet, 06, France",
@@ -84,9 +84,9 @@ return array(
 	</p>",	
 	
 	'IntroCouleursEtModele' => "
-	<h2>Colors and pattern</h2><p>
-	Shimmering colours and rendering of relief and shapes with paint and material.</p>
-    paintings are available for purchase.</br>
+	<h2>Symphony of colors and texture</h2><p>
+	Shimmering colors and rendering of relief and shapes with paint and material.</p>
+    Paintings are available for purchase.</br>
     <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",	
 
@@ -299,8 +299,11 @@ return array(
 	'Spirale_Titre' => "Spiral",
     'Spirale_Desc' => "",
 	'ConteMusical_Alt' => "Abstract Triptych Yellow and Blue",
-	'ConteMusical_Titre' => "Musical Tale",
-    'ConteMusical_Desc' => "Abstract Triptych - 3x (60x30cm)",
+	'ConteMusical_Titre' => "Conte Musical (Musical Tale)",
+    'ConteMusical_Desc' => "Abstract Triptych",
+	'Mimosa_Alt' => "Abstract diptych Yellow and Green",
+    'Mimosa_Titre' => "Mimosa",
+    'Mimosa_Desc' => "Abstract diptych",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",

@@ -14,7 +14,7 @@ return array(
     'metamorphose' => 'Métamorphose',
 	'emergence' => 'Emergence',
 	'oeuvresrecentes' => 'Dernières Oeuvres',
-	'couleursetmodele' => 'Couleurs et modelé',
+	'couleursetmodele' => 'Symphonie Couleurs et Texture',
 	
 	// divers
 	'copyrightview' => "Voir la dernière/à venir exposition",
@@ -28,8 +28,7 @@ return array(
 	'Cathedrale_Details' => "Acrylique sur toile, 50x65cm",
 
     // Expositions
-    'ProchainsEvenements' => "Le salon international de Cannes et l'Antibes Art Fair 2026 sont terminés. 
-	Retrouvez les oeuvres de GEM au salon de Seillans (83)",
+    'ProchainsEvenements' => "Exposition Gourdon",
     'currentExpoDate' => '30 Mai au 12 Juin - Terminée',
 	'futureExpoDate' => '18 Décembre au 31 Décembre 2025',
 	'futureExpoLieu' =>  "Le Cannet, 06, France",
@@ -86,7 +85,7 @@ return array(
 	</p>",	
     
 	'IntroCouleursEtModele' => "
-	<h2>Couleurs et Modelé</h2><p>
+	<h2>Symphonie de couleurs et texture</h2><p>
 	Couleurs chatoyantes et rendu du relief, des formes avec la peinture et matériau.	</p>
     <p>Quelques tableaux sont disponibles à l'achat.
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
@@ -299,7 +298,10 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     'Spirale_Desc' => "",
 	'ConteMusical_Alt' => "Triptyque abstrait Jaune et bleu",
     'ConteMusical_Titre' => "Conte Musical",
-    'ConteMusical_Desc' => "Triptyque abstrait - 3x (60x30cm)",
+    'ConteMusical_Desc' => "Triptyque abstrait",
+	'Mimosa_Alt' => "Diptyque abstrait Jaune et Vert",
+    'Mimosa_Titre' => "Mimosa",
+    'Mimosa_Desc' => "Diptyque abstrait",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",

@@ -1,7 +1,12 @@
 
 <footer class="w3-padding-16 w3-center gem-footer">
   <?= Translator::t('copyrightview') ?>
-  <a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>"><?= Translator::t('couleursetmodele') ?></a>
+
+<!-----  
+<a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>"><?= Translator::t('couleursetmodele') ?></a> 
+-->
+
+  <a href="<?= Translator::url('/public/exposition_suivante_flyer.php') ?>"><?= Translator::t('couleursetmodele') ?></a>
   <p>
     <div class="">
       <a class="gem-a" href="https://www.instagram.com/gem.eisenmann/">

@@ -50,6 +50,7 @@ $paints["Carnaval"]= $acrylic->paints["Carnaval"];
 $paints["Spirale"]= $acrylic->paints["Spirale"];
 $paints["ConteMusical"]= $acrylic->paints["ConteMusical"];
 $paints["Cavalcade"]= $acrylic->paints["Cavalcade"];
+$paints["Mimosa"]= $acrylic->paints["Mimosa"];
 
 
 
@@ -93,8 +94,9 @@ $column_generator->generate_style("RencontreAuSommet", "white");
 $column_generator->generate_style("Dryade", "black");
 $column_generator->generate_style("Carnaval", "white");
 $column_generator->generate_style("Spirale", "white");
-$column_generator->generate_style("ConteMusical", "black");
+$column_generator->generate_style("ConteMusical", "white");
 $column_generator->generate_style("Cavalcade", "white");
+$column_generator->generate_style("Mimosa", "black");
     ?>
   </style>
   
@@ -116,9 +118,9 @@ $column_generator->generate_style("Cavalcade", "white");
     <div class="w3-grid" style="grid-template-columns:100%">
         <!-- single column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "ConteMusical" ); ?>
-		 			   		  
+		  <?= $column_generator->add_to_column( "ConteMusical" ); ?> 			   		  
         </div>
+
     </div>	 
 	  
       <div class="w3-grid" style="grid-template-columns:50% 50%">
@@ -126,8 +128,8 @@ $column_generator->generate_style("Cavalcade", "white");
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		   <?= $column_generator->add_to_column( "ApresMidiOiseau" ); ?>
 		   <?= $column_generator->add_to_column( "EtangAustral" ); ?>
-		   <?= $column_generator->add_to_column( "Cathedrale" ); ?>
-		   <?= $column_generator->add_to_column( "PurpleSeagull" ); ?>
+		   <?= $column_generator->add_to_column( "Mimosa" ); ?> 
+		   <?= $column_generator->add_to_column( "Dryade" ); ?>
         </div>
 		
         <!-- Second column --> 
@@ -139,7 +141,14 @@ $column_generator->generate_style("Cavalcade", "white");
          </div>
       </div>
 
-    <div class="w3-grid" style="grid-template-columns:100%">
+   <div class="w3-grid" style="grid-template-columns:100%">
+        <!-- single column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "Cathedrale" ); ?> 			   		  
+        </div>
+    </div>	
+ 
+ <div class="w3-grid" style="grid-template-columns:100%">
         <!-- single column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		  <?= $column_generator->add_to_column( "YellowSunset" ); ?>
@@ -152,12 +161,13 @@ $column_generator->generate_style("Cavalcade", "white");
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		   <?= $column_generator->add_to_column( "LeverSoleilRouge" ); ?>
 		   <?= $column_generator->add_to_column( "Spirale" ); ?>
+		   <?= $column_generator->add_to_column( "Carnaval" ); ?>
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-			<?= $column_generator->add_to_column( "Dryade" ); ?>
-			<?= $column_generator->add_to_column( "Carnaval" ); ?>
+	    			   		  
 			<?= $column_generator->add_to_column( "Cavalcade" ); ?>
+			<?= $column_generator->add_to_column( "PurpleSeagull" ); ?>
         </div>		
 	</div>
 	  

@@ -51,26 +51,18 @@
 	  </a>
 	</div>
 
-	<div class="w3-container w3-padding-32 w3-animate-opacity gem-animate gem-fixed-width">
-	  <b><?= Translator::t('ConteMusical_Titre'); ?> - </b> 
-	  <?= Translator::t('ConteMusical_Desc'); ?> </br>
-	</div>
 
-	<!-- scenario 2: Images de scène d'exposition --->
-<!--- 	<div class="w3-left-align gem-menu">
-	  <?= Translator::t("ProchainsEvenements"); ?>
-	</div>
-	-->
 	<div class="w3-center w3-padding-16">
-	  <div class="w3-row-padding" >
-	    <div class="w3-col s8">
-	      <img src="/public/images/web/Decor_ConteMusical-V2.jpg" alt="Decor conte musical" style="width:100%" />
-	    </div>
-     
-	  </div>
+		<div class="w3-row-padding" >
+			<div class="w3-col s8">
+			<img src="/public/images/web/Decor_ConteMusical-V2.jpg" alt="Decor conte musical" style="width:100%" />
+			</div>
+		</div>
 	</div>
-      </div>
       
+	</div>
+ 
+
       
       <!-- Footer -->
       <?php include("public/copyright.php"); ?>
