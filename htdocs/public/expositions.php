@@ -35,8 +35,11 @@
       <ul>
 	2026
 	<ul>
-	  <li><b>Gourdon (06, France)</b> - <?= Translator::t('ExpoDateGourdon2026') ?> <i><a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
-            <?= Translator::t("couleursetmodele"); ?> </a></i></li>
+	  <li><b>Gourdon (06, France)</b> - <?= Translator::t('ExpoDateGourdon2026') ?> 
+	  <a href="<?= Translator::url('/public/exposition_suivante_flyer.php') ?>"><?= Translator::t('couleursetmodele') ?></a>
+	  <!-- <i><a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
+            <?= Translator::t("couleursetmodele"); ?> </a></i> -->
+	  </li>
 	</ul>
       </ul>
 	  
@@ -70,6 +73,7 @@
     <ul>
 	2026
 	    <ul>
+		  <li><?= Translator::t('faitespeinture') ?> - (<?= Translator::t('assopicasso') ?>), Antibes (06, France) 29/09 - 04/10</li>
           <li><?= Translator::t('ExpoSeillan2026') ?>, Seillans (83, France) - <?= Translator::t('ExpoDateSeillans2026') ?></li>		
 	  	  <li>Antibes Art Fair, Antibes (06, France)  - <?= Translator::t('ExpoDateAntibesArtFair2026') ?></li>
 		  <li><?= Translator::t('ExpoCannesGare2026') ?> - Cannes Espace Gare Maritime (06, France) - <?= Translator::t('ExpoDateCannesGare2026') ?></li>

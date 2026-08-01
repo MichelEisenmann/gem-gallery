@@ -51,6 +51,8 @@ $paints["Spirale"]= $acrylic->paints["Spirale"];
 $paints["ConteMusical"]= $acrylic->paints["ConteMusical"];
 $paints["Cavalcade"]= $acrylic->paints["Cavalcade"];
 $paints["Mimosa"]= $acrylic->paints["Mimosa"];
+$paints["Festif"]= $acrylic->paints["Festif"];
+$paints["LaPasserelle"]= $pastel->paints["LaPasserelle"];
 
 
 
@@ -97,6 +99,8 @@ $column_generator->generate_style("Spirale", "white");
 $column_generator->generate_style("ConteMusical", "white");
 $column_generator->generate_style("Cavalcade", "white");
 $column_generator->generate_style("Mimosa", "black");
+$column_generator->generate_style("Festif", "white");
+$column_generator->generate_style("LaPasserelle", "white");
     ?>
   </style>
   
@@ -162,12 +166,14 @@ $column_generator->generate_style("Mimosa", "black");
 		   <?= $column_generator->add_to_column( "LeverSoleilRouge" ); ?>
 		   <?= $column_generator->add_to_column( "Spirale" ); ?>
 		   <?= $column_generator->add_to_column( "Carnaval" ); ?>
+		   <?= $column_generator->add_to_column( "LaPasserelle" ); ?>
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 	    			   		  
 			<?= $column_generator->add_to_column( "Cavalcade" ); ?>
 			<?= $column_generator->add_to_column( "PurpleSeagull" ); ?>
+			<?= $column_generator->add_to_column( "Festif" ); ?>
         </div>		
 	</div>
 	  

@@ -304,6 +304,9 @@ return array(
 	'Mimosa_Alt' => "Abstract diptych Yellow and Green",
     'Mimosa_Titre' => "Mimosa",
     'Mimosa_Desc' => "Abstract diptych",
+	'Festif_Alt' => "Abstract diptych Red and orange",
+    'Festif_Titre' => "Festif (Festive)",
+    'Festif_Desc' => "Abstract diptych",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",
@@ -452,6 +455,9 @@ return array(
     'GourdonEglise_Alt' => "Gourdon, l’église",
     'GourdonEglise_Titre' => "Gourdon, l’église",
     'GourdonEglise_Desc' => "",
+	'LaPasserelle_Alt' => "Footbridge A child runs to his mother",
+    'LaPasserelle_Titre' => "La Passerelle (Footbridge)",
+    'LaPasserelle_Desc' => "A child runs to his mother",
 
     // Sanguine
     'SanguinePascale_Alt' => "Mere et enfant",

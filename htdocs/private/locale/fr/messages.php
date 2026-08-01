@@ -302,6 +302,9 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	'Mimosa_Alt' => "Diptyque abstrait Jaune et Vert",
     'Mimosa_Titre' => "Mimosa",
     'Mimosa_Desc' => "Diptyque abstrait",
+	'Festif_Alt' => "Diptyque abstrait Rouge Orangé",
+    'Festif_Titre' => "Festif",
+    'Festif_Desc' => "Diptyque abstrait",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",
@@ -450,6 +453,9 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     'GourdonEglise_Alt' => "Gourdon, l’église",
     'GourdonEglise_Titre' => "Gourdon, l’église",
     'GourdonEglise_Desc' => "",
+	'LaPasserelle_Alt' => "Passerelle Un enfant court vers sa mère",
+    'LaPasserelle_Titre' => "La Passerelle",
+    'LaPasserelle_Desc' => "Un enfant court vers sa mère",
 
     // Sanguine
     'SanguinePascale_Alt' => "Mere et enfant",
