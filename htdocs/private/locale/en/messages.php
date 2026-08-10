@@ -25,7 +25,9 @@ return array(
 	'assopicasso' => 'Picasso Museum friends organization',
 
 	// Page Accueil
-	'Cathedrale_Details' => "Acrylic on canvas, 50x65cm",
+	'Accueil_CreationsDefinition0' => "It all starts with an emotion — a harmony that my eye perceives.", 
+	'Accueil_CreationsDefinition1' => "My creations are characterized by figurative shapes, with saturated colors and soft lines.",
+	'Accueil_CreationsDefinition2' => "I often add a touch of surrealism, summoning dreams, humour and life. Visit my imaginary world.",
 	
      // Expositions
     'ProchainsEvenements' => "Gourdon exhibition",

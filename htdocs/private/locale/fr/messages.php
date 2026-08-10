@@ -25,7 +25,9 @@ return array(
     'assopicasso' => 'Association Les amis du Musée Picasso',	
 
 	// Page Accueil
-	'Cathedrale_Details' => "Acrylique sur toile, 50x65cm",
+	'Accueil_CreationsDefinition0' => "Tout commence par une émotion — une harmonie que mon œil perçoit.",
+	'Accueil_CreationsDefinition1' => "Mes créations se caractérisent par des formes figuratives, aux couleurs saturées et aux lignes souples. ",
+	'Accueil_CreationsDefinition2' => "J'y ajoute souvent une touche de surréalisme, convoquant le rêve, l'humour et la vie. Visitez mon monde imaginaire.", 
 
     // Expositions
     'ProchainsEvenements' => "Exposition Gourdon",

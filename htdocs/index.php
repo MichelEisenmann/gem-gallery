@@ -26,10 +26,22 @@
 
     <!-- Header -->
     <?php include("public/navbar.php"); ?>
-    
-    <!-- Page Content -->
-      <div class="w3-container w3-animate-opacity gem-animate gem-index-fixed-width">
 
+    <!-- Page Content -->
+    <div class="w3-container w3-animate-opacity gem-animate gem-index-fixed-width">
+	
+<!--- Intro Photo et contenu oeuvres ---->
+	<div class="w3-left">
+	    <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:25%" />
+	    <div class="w3-center"><?= Translator::t("Accueil_CreationsDefinition0"); ?>
+			<br><?= Translator::t("Accueil_CreationsDefinition1"); ?></br>
+			<br><?= Translator::t("Accueil_CreationsDefinition2"); ?></br>
+		</div>
+	</div>
+    
+
+
+<!---
 	<div class="w3-left-align gem-menu">
           <?= Translator::t("AccueilArtisteIntro"); ?>
 	  [<a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
@@ -43,8 +55,9 @@
           <a href="<?= Translator::url('/public/serie-emergence.php') ?>">
             <?= Translator::t("emergence"); ?> </a>]
 	</div>	  
+--->
 
-<!--- scenario 0 - florilege ---->
+	
 	<div class="w3-center">
 	  <a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
 	    <img src="/public/images/Acrylique/20260602_ConteMusical_AC60x30_small.jpg" alt="Conte Musical" style="width:100%" style="width:100%" />
