@@ -21,6 +21,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="./public/global-style.css">
+
+  <style>
+    .introcontainer {
+    display: grid;
+    grid-template-columns: 30% auto;
+    padding: 10px;
+    }
+    .introcontainer div {
+    padding: 10px;
+    }
+  </style>
+  
   
   <body>
 
@@ -30,15 +42,18 @@
     <!-- Page Content -->
     <div class="w3-container w3-animate-opacity gem-animate gem-index-fixed-width">
 	
-<!--- Intro Photo et contenu oeuvres ---->
-	<div class="w3-left">
-	    <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:25%" />
-	    <div class="w3-center"><?= Translator::t("Accueil_CreationsDefinition0"); ?>
-			<br><?= Translator::t("Accueil_CreationsDefinition1"); ?></br>
-			<br><?= Translator::t("Accueil_CreationsDefinition2"); ?></br>
-		</div>
+      <!--- Intro Photo et contenu oeuvres ---->
+      <div class="introcontainer">
+	<div>
+	  <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:70%"/>
 	</div>
-    
+	<div class="">
+          <?= Translator::t("AccueilArtisteIntro"); ?>
+	  <?= Translator::t("Accueil_CreationsDefinition0"); ?>
+	  <?= Translator::t("Accueil_CreationsDefinition1"); ?>
+	  <?= Translator::t("Accueil_CreationsDefinition2"); ?>
+	</div>
+      </div>
 
 
 <!---

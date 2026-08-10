@@ -45,7 +45,6 @@ return array(
 	 
 	'AccueilArtisteIntro' => "
 	<h4>Artiste Peintre - Art Moderne</h4><p>
-	Visitez son monde imaginaire en suivant les oeuvres organisées par série d'expositions 
 	",
 	'AccueilArtisteIntroFin' => " et les",
 	

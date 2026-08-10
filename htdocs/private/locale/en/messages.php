@@ -44,7 +44,6 @@ return array(
 	// Paragraphes Introduction
 	 'AccueilArtisteIntro' => "
 	<h4>Painter - Modern Art</h4><p>
-	Visit her imaginary world by following the artworks organized by series of exhibitions 
 	",
 	'AccueilArtisteIntroFin' => " and ",
     
