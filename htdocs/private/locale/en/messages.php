@@ -28,6 +28,13 @@ return array(
 	'Accueil_CreationsDefinition0' => "It all starts with an emotion — a harmony that my eye perceives.", 
 	'Accueil_CreationsDefinition1' => "My creations are characterized by figurative shapes, with saturated colors and soft lines.",
 	'Accueil_CreationsDefinition2' => "I often add a touch of surrealism, summoning dreams, humour and life. Visit my imaginary world.",
+
+    'Tableaux' => "Paints",
+    'Compositions' => "Compositions",
+    'Collages' => "Collages",
+    'Abstrait' => "Abstract",
+    'Atelier' => "Atelier",
+    'Expositions' => "Exhibitions",
 	
      // Expositions
     'ProchainsEvenements' => "Gourdon exhibition",
@@ -47,6 +54,14 @@ return array(
 	",
 	'AccueilArtisteIntroFin' => " and ",
     
+    'IntroCompositions' => '
+     <h2>Compositions</h2>
+	 <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	 <br>Get the full view of the painting by clicking on it. </p> 
+     <p>This exhibition is closed but some paintings are still available for purchase.</br>
+	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
+	  </p>',
+ 
     'IntroMomentsFem' => '
      <h2>Feminine Moments</h2>
 	 <p>Feminine Moments is a tribute to the beauty of women in their daily existence, from daydreaming 

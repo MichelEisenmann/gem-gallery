@@ -31,6 +31,15 @@
     .introcontainer div {
     padding: 10px;
     }
+
+    .accesscontainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    }
+    .accesscontainer div {
+    padding: 10px;
+    }
   </style>
   
   
@@ -56,6 +65,43 @@
       </div>
 
 
+      <!-- Grille des choix --->
+      <div class="accesscontainer">
+	<div>
+	  <?= Translator::t("Tableaux"); ?>
+	  <img src="/public/images/Acrylique/20250421_Lectrice_AC50x50_small.jpg" alt="Conte Musical" style="width:100%"  />
+	</div>
+	
+	<div>
+          <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+	    <?= Translator::t("Compositions"); ?>
+	    <img src="/public/images/Acrylique/20260615_Mimosa_AC27x19_small.jpg" alt="Conte Musical" style="width:100%" />
+	    </a>
+	</div>
+	
+	<div>
+	  <?= Translator::t("Collages"); ?>
+	  <img src="/public/images/Acrylique/20260429_Dryade_AC46x38_small.jpg" alt="Conte Musical" style="width:100%" />
+	</div>
+	
+	<div>
+	  <?= Translator::t("Abstrait"); ?>
+	  <img src="/public/images/Acrylique/20240326_Deflagration_AC90x90_small.jpg" alt="Conte Musical" style="width:100%" />
+	</div>
+	
+	<div>
+	  <?= Translator::t("Atelier"); ?>
+	  <img src="/public/images/web/2024-04-29-GEM-peint.png" alt="Conte Musical" style="width:100%" />
+	</div>
+	
+	<div>
+	  <?= Translator::t("Expositions"); ?>
+	  <img src="/public/images/web/Affichette_Expo-Gourdon26_Cadre.jpg" alt="Conte Musical" style="width:100%" />
+	</div>
+	
+      </div>
+      
+
 <!---
 	<div class="w3-left-align gem-menu">
           <?= Translator::t("AccueilArtisteIntro"); ?>
@@ -70,8 +116,6 @@
           <a href="<?= Translator::url('/public/serie-emergence.php') ?>">
             <?= Translator::t("emergence"); ?> </a>]
 	</div>	  
---->
-
 	
 	<div class="w3-center">
 	  <a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
@@ -87,6 +131,8 @@
 			</div>
 		</div>
 	</div>
+--->
+
       
 	</div>
  
