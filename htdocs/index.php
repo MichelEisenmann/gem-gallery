@@ -32,6 +32,10 @@
     padding: 10px;
     }
 
+    .for-mobile {
+    display:none;
+    }
+
     .accesscontainer {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -52,8 +56,8 @@
     object-fit: cover;
     object-position: center;
     }
-
-@media screen and (max-width: 480px) {
+    
+    @media screen and (max-width: 480px) {
     .accesscontainer {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -62,7 +66,23 @@
     .accesscontainer div {
     padding: 10px;
     }
-}
+
+    .for-computer {
+    display: none;
+    }
+
+    .for-mobile {
+    display: inline;
+    }
+
+    .introcontainer {
+    display: grid;
+    grid-template-columns: 30% auto;
+    padding: 10px;
+    }
+    .introcontainer div {
+    padding: 10px;
+    }
 
     }
 
@@ -77,12 +97,31 @@
     <div class="w3-container w3-animate-opacity gem-animate gem-index-fixed-width">
 	
       <!--- Intro Photo et contenu oeuvres ---->
-      <div class="introcontainer">
-	<div>
-	  <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:70%"/>
+      <div class="for-computer">
+	<div class="introcontainer">
+	  <div>
+	    <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:70%"/>
+	  </div>
+	  <div class="">
+            <?= Translator::t("AccueilArtisteIntro"); ?>
+	    <?= Translator::t("Accueil_CreationsDefinition0"); ?>
+	    <?= Translator::t("Accueil_CreationsDefinition1"); ?>
+	    <?= Translator::t("Accueil_CreationsDefinition2"); ?>
+	  </div>
 	</div>
+      </div>
+
+      <div class="for-mobile">
+	<div class="introcontainer">
+	  <div>
+	    <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:70%"/>
+	  </div>
+	  <div class="">
+            <?= Translator::t("AccueilArtisteIntro"); ?>
+	  </div>
+	</div>
+	
 	<div class="">
-          <?= Translator::t("AccueilArtisteIntro"); ?>
 	  <?= Translator::t("Accueil_CreationsDefinition0"); ?>
 	  <?= Translator::t("Accueil_CreationsDefinition1"); ?>
 	  <?= Translator::t("Accueil_CreationsDefinition2"); ?>
