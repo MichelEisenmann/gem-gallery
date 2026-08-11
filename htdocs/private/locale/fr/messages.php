@@ -29,6 +29,13 @@ return array(
 	'Accueil_CreationsDefinition1' => "Mes créations se caractérisent par des formes figuratives, aux couleurs saturées et aux lignes souples. ",
 	'Accueil_CreationsDefinition2' => "J'y ajoute souvent une touche de surréalisme, convoquant le rêve, l'humour et la vie. Visitez mon monde imaginaire.", 
 
+    'Tableaux' => "Tableaux",
+    'Compositions' => "Compositions",
+    'Collages' => "Collages",
+    'Abstrait' => "Abstrait",
+    'Atelier' => "Atelier",
+    'Expositions' => "Expositions",
+
     // Expositions
     'ProchainsEvenements' => "Exposition Gourdon",
     'currentExpoDate' => '30 Mai au 12 Juin - Terminée',
@@ -45,7 +52,6 @@ return array(
 	 
 	'AccueilArtisteIntro' => "
 	<h4>Artiste Peintre - Art Moderne</h4><p>
-	Visitez son monde imaginaire en suivant les oeuvres organisées par série d'expositions 
 	",
 	'AccueilArtisteIntroFin' => " et les",
 	

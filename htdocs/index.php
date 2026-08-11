@@ -21,6 +21,72 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="./public/global-style.css">
+
+  <style>
+    .introcontainer {
+    display: grid;
+    grid-template-columns: 30% auto;
+    padding: 10px;
+    }
+    .introcontainer div {
+    padding: 10px;
+    }
+
+    .for-mobile {
+    display:none;
+    }
+
+    .accesscontainer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 10px;
+    }
+    .accesscontainer div {
+    padding: 10px;
+    }
+
+    .imagecontainer {
+    height: 200px;
+    overflow: hidden;
+    }
+
+    .imagecontainer div {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    }
+    
+    @media screen and (max-width: 480px) {
+    .accesscontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    }
+    .accesscontainer div {
+    padding: 10px;
+    }
+
+    .for-computer {
+    display: none;
+    }
+
+    .for-mobile {
+    display: inline;
+    }
+
+    .introcontainer {
+    display: grid;
+    grid-template-columns: 30% auto;
+    padding: 10px;
+    }
+    .introcontainer div {
+    padding: 10px;
+    }
+
+    }
+
+  </style>
   
   <body>
 
@@ -30,17 +96,108 @@
     <!-- Page Content -->
     <div class="w3-container w3-animate-opacity gem-animate gem-index-fixed-width">
 	
-<!--- Intro Photo et contenu oeuvres ---->
-	<div class="w3-left">
-	    <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:25%" />
-	    <div class="w3-center"><?= Translator::t("Accueil_CreationsDefinition0"); ?>
-			<br><?= Translator::t("Accueil_CreationsDefinition1"); ?></br>
-			<br><?= Translator::t("Accueil_CreationsDefinition2"); ?></br>
-		</div>
+      <!--- Intro Photo et contenu oeuvres ---->
+      <div class="for-computer">
+	<div class="introcontainer">
+	  <div>
+	    <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:70%"/>
+	  </div>
+	  <div class="">
+            <?= Translator::t("AccueilArtisteIntro"); ?>
+	    <?= Translator::t("Accueil_CreationsDefinition0"); ?>
+	    <?= Translator::t("Accueil_CreationsDefinition1"); ?>
+	    <?= Translator::t("Accueil_CreationsDefinition2"); ?>
+	  </div>
 	</div>
-    
+      </div>
 
+      <div class="for-mobile">
+	<div class="introcontainer">
+	  <div>
+	    <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:70%"/>
+	  </div>
+	  <div class="">
+            <?= Translator::t("AccueilArtisteIntro"); ?>
+	  </div>
+	</div>
+	
+	<div class="">
+	  <?= Translator::t("Accueil_CreationsDefinition0"); ?>
+	  <?= Translator::t("Accueil_CreationsDefinition1"); ?>
+	  <?= Translator::t("Accueil_CreationsDefinition2"); ?>
+	</div>
+      </div>
 
+      
+      <!-- Grille des choix --->
+      <div class="accesscontainer">
+
+        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer">
+	      <img src="/public/images/Acrylique/20250421_Lectrice_AC50x50_small.jpg" alt="Conte Musical" style="width:100%; "  />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("Tableaux"); ?>
+	    </div>
+	  </div>
+	</a>
+        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer w3-center">
+	      <img src="/public/images/Acrylique/20260615_Mimosa_AC27x19_small.jpg" alt="Conte Musical" style="width:100%; " />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("Compositions"); ?>
+	    </div>
+	  </div>
+	</a>
+	
+        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer w3-center">
+	    <img src="/public/images/Acrylique/20260429_Dryade_AC46x38_small.jpg" alt="Conte Musical" style="width:100%; " />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("Collages"); ?>
+	    </div>
+	  </div>
+	</a>
+	
+        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer w3-center">
+	    <img src="/public/images/Acrylique/20240326_Deflagration_AC90x90_small.jpg" alt="Conte Musical" style="width:100%; " />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("Abstrait"); ?>
+	    </div>
+	  </div>
+	</a>
+	
+        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer w3-center">
+	      <img src="/public/images/web/2024-04-29-GEM-peint.png" alt="Conte Musical" style="width:100%; " />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("Atelier"); ?>
+	    </div>
+	  </div>
+	</a>
+	
+	<a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer w3-center">
+	    <img src="/public/images/web/Affichette_Expo-Gourdon26_Cadre.jpg" alt="Conte Musical" style="width:100%; " />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("Expositions"); ?>
+	    </div>
+	  </div>
+	</a>
+      </div>
+      
 <!---
 	<div class="w3-left-align gem-menu">
           <?= Translator::t("AccueilArtisteIntro"); ?>
@@ -55,8 +212,6 @@
           <a href="<?= Translator::url('/public/serie-emergence.php') ?>">
             <?= Translator::t("emergence"); ?> </a>]
 	</div>	  
---->
-
 	
 	<div class="w3-center">
 	  <a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
@@ -72,6 +227,8 @@
 			</div>
 		</div>
 	</div>
+--->
+
       
 	</div>
  
