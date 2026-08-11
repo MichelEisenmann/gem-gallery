@@ -142,7 +142,7 @@
 	    </div>
 	  </div>
 	</a>
-        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+        <a href="<?= Translator::url('/public/serie-composition.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
 	      <img src="/public/images/Acrylique/20260615_Mimosa_AC27x19_small.jpg" alt="Conte Musical" style="width:100%; " />

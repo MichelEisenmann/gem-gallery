@@ -55,6 +55,14 @@ return array(
 	",
 	'AccueilArtisteIntroFin' => " et les",
 	
+    'IntroComposition' => '
+     <h2>Compositions</h2>
+	 <p>Compositions are ....
+	 </p> 
+     <p>This exhibition is closed but some paintings are still available for purchase.</br>
+	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
+	  </p>',
+
     'IntroMomentsFem' => "
 	<h2>Moments Féminins</h2><p>
 	Moments Féminins est un hommage à la beauté des femmes dans leur existence au quotidien, de la rêverie 
