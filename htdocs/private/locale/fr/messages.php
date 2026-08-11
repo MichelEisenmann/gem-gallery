@@ -55,14 +55,6 @@ return array(
 	",
 	'AccueilArtisteIntroFin' => " et les",
 	
-    'IntroCompositions' => '
-     <h2>Compositions</h2>
-        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-	     <br>Get the full view of the painting by clicking on it. </p> 
-             <p>L'exposition s'est tenue du 30 Mai au 12 Juin 2025 à Gourdon (06), puis du 18 au 31 Décembre 2025 à Le Cannet, Terrasse des Arts (06). 
-	         <br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
-	             </p>',
- 
     'IntroMomentsFem' => "
 	<h2>Moments Féminins</h2><p>
 	Moments Féminins est un hommage à la beauté des femmes dans leur existence au quotidien, de la rêverie 

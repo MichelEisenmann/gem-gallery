@@ -34,14 +34,39 @@
 
     .accesscontainer {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     padding: 10px;
     }
     .accesscontainer div {
     padding: 10px;
     }
+
+    .imagecontainer {
+    height: 200px;
+    overflow: hidden;
+    }
+
+    .imagecontainer div {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    }
+
+@media screen and (max-width: 480px) {
+    .accesscontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    }
+    .accesscontainer div {
+    padding: 10px;
+    }
+}
+
+    }
+
   </style>
-  
   
   <body>
 
@@ -64,44 +89,76 @@
 	</div>
       </div>
 
-
+      
       <!-- Grille des choix --->
       <div class="accesscontainer">
-	<div>
-	  <?= Translator::t("Tableaux"); ?>
-	  <img src="/public/images/Acrylique/20250421_Lectrice_AC50x50_small.jpg" alt="Conte Musical" style="width:100%"  />
-	</div>
+
+        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer">
+	      <img src="/public/images/Acrylique/20250421_Lectrice_AC50x50_small.jpg" alt="Conte Musical" style="width:100%; "  />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("Tableaux"); ?>
+	    </div>
+	  </div>
+	</a>
+        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer w3-center">
+	      <img src="/public/images/Acrylique/20260615_Mimosa_AC27x19_small.jpg" alt="Conte Musical" style="width:100%; " />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("Compositions"); ?>
+	    </div>
+	  </div>
+	</a>
 	
-	<div>
-          <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
-	    <?= Translator::t("Compositions"); ?>
-	    <img src="/public/images/Acrylique/20260615_Mimosa_AC27x19_small.jpg" alt="Conte Musical" style="width:100%" />
-	    </a>
-	</div>
+        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer w3-center">
+	    <img src="/public/images/Acrylique/20260429_Dryade_AC46x38_small.jpg" alt="Conte Musical" style="width:100%; " />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("Collages"); ?>
+	    </div>
+	  </div>
+	</a>
 	
-	<div>
-	  <?= Translator::t("Collages"); ?>
-	  <img src="/public/images/Acrylique/20260429_Dryade_AC46x38_small.jpg" alt="Conte Musical" style="width:100%" />
-	</div>
+        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer w3-center">
+	    <img src="/public/images/Acrylique/20240326_Deflagration_AC90x90_small.jpg" alt="Conte Musical" style="width:100%; " />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("Abstrait"); ?>
+	    </div>
+	  </div>
+	</a>
 	
-	<div>
-	  <?= Translator::t("Abstrait"); ?>
-	  <img src="/public/images/Acrylique/20240326_Deflagration_AC90x90_small.jpg" alt="Conte Musical" style="width:100%" />
-	</div>
+        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer w3-center">
+	      <img src="/public/images/web/2024-04-29-GEM-peint.png" alt="Conte Musical" style="width:100%; " />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("Atelier"); ?>
+	    </div>
+	  </div>
+	</a>
 	
-	<div>
-	  <?= Translator::t("Atelier"); ?>
-	  <img src="/public/images/web/2024-04-29-GEM-peint.png" alt="Conte Musical" style="width:100%" />
-	</div>
-	
-	<div>
-	  <?= Translator::t("Expositions"); ?>
-	  <img src="/public/images/web/Affichette_Expo-Gourdon26_Cadre.jpg" alt="Conte Musical" style="width:100%" />
-	</div>
-	
+	<a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer w3-center">
+	    <img src="/public/images/web/Affichette_Expo-Gourdon26_Cadre.jpg" alt="Conte Musical" style="width:100%; " />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("Expositions"); ?>
+	    </div>
+	  </div>
+	</a>
       </div>
       
-
 <!---
 	<div class="w3-left-align gem-menu">
           <?= Translator::t("AccueilArtisteIntro"); ?>
