@@ -153,13 +153,13 @@
 	  </div>
 	</a>
 	
-        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+        <a href="<?= Translator::url('/public/serie-mixedmedia.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
-	    <img src="/public/images/Acrylique/20260429_Dryade_AC46x38_small.jpg" alt="Conte Musical" style="width:100%; " />
+	    <img src="/public/images/Acrylique/20230629_LaVague_AC33x41_small.jpg" alt="LaVague" style="width:100%; " />
 	    </div>
 	    <div class="w3-container w3-center">
-	      <?= Translator::t("Collages"); ?>
+	      <?= Translator::t("MixedMedia"); ?>
 	    </div>
 	  </div>
 	</a>

@@ -4,7 +4,7 @@ return array(
     'Work' => "Oeuvres",
     'Expositions' => "Expositions",
     'About' => "Biographie",
-	'Biography' => "Biographie",
+    'Biography' => "Biographie",
     'Contact' => "Contact",
 
     // Series
@@ -12,26 +12,26 @@ return array(
     'momentsfeminins' => 'Moments Féminins',
     'watermirror' => 'Miroir d\'eau',
     'metamorphose' => 'Métamorphose',
-	'emergence' => 'Emergence',
-	'oeuvresrecentes' => 'Dernières Oeuvres',
-	'couleursetmodele' => 'Symphonie Couleurs et Texture',
+    'emergence' => 'Emergence',
+    'oeuvresrecentes' => 'Dernières Oeuvres',
+    'couleursetmodele' => 'Symphonie Couleurs et Texture',
 	
 	// divers
-	'copyrightview' => "Voir la dernière/à venir exposition",
-	'Avertissement' => "Avertissement : Le contenu de ce site Internet est protégé par le droit d’auteur. Toute reproduction est interdite.",
-	'soloexpo' => 'Expositions Solo', 
-	'groupexpo' => "Une sélection d'expositions de groupe",
+    'copyrightview' => "Voir la dernière/à venir exposition",
+    'Avertissement' => "Avertissement : Le contenu de ce site Internet est protégé par le droit d’auteur. Toute reproduction est interdite.",
+    'soloexpo' => 'Expositions Solo', 
+    'groupexpo' => "Une sélection d'expositions de groupe",
     'faitespeinture' => 'Faîtes de la peinture',
     'assopicasso' => 'Association Les amis du Musée Picasso',	
 
 	// Page Accueil
-	'Accueil_CreationsDefinition0' => "Tout commence par une émotion — une harmonie que mon œil perçoit.",
-	'Accueil_CreationsDefinition1' => "Mes créations se caractérisent par des formes figuratives, aux couleurs saturées et aux lignes souples. ",
-	'Accueil_CreationsDefinition2' => "J'y ajoute souvent une touche de surréalisme, convoquant le rêve, l'humour et la vie. Visitez mon monde imaginaire.", 
+    'Accueil_CreationsDefinition0' => "Tout commence par une émotion — une harmonie que mon œil perçoit.",
+    'Accueil_CreationsDefinition1' => "Mes créations se caractérisent par des formes figuratives, aux couleurs saturées et aux lignes souples. ",
+    'Accueil_CreationsDefinition2' => "J'y ajoute souvent une touche de surréalisme, convoquant le rêve, l'humour et la vie. Visitez mon monde imaginaire.", 
 
     'Tableaux' => "Tableaux",
     'Compositions' => "Compositions",
-    'Collages' => "Collages",
+    'MixedMedia' => "Collages",
     'Abstrait' => "Abstrait",
     'Atelier' => "Atelier",
     'Expositions' => "Expositions",
@@ -57,11 +57,18 @@ return array(
 	
     'IntroComposition' => '
      <h2>Compositions</h2>
-	 <p>Compositions are ....
+	 <p>Les compositions sont ....
 	 </p> 
-     <p>This exhibition is closed but some paintings are still available for purchase.</br>
-	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
-	  </p>',
+    <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
+	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
+     </p>',
+
+    IntroMixedMedia' => "
+     <h2>Gluing Material</h2><p>
+	Peinture contemporaine	</p>
+    <p>The exhibition is over, however some paintings are available for purchase.</br>
+      <br>Send an email to contact@giseleeisenmann.com for more information.</br>
+    </p>",		
 
     'IntroMomentsFem' => "
 	<h2>Moments Féminins</h2><p>

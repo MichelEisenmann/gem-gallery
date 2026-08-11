@@ -12,7 +12,7 @@ return array(
     'watermirror' => 'Water Mirror',
     'metamorphose' => 'Metamorphosis',
 	'emergence' => 'Emergence',
-	'collage' => 'Gluing Material',
+	'mixedmedia' => 'Gluing Material',
 	'oeuvresrecentes' => 'Latest Artwork',
 	'couleursetmodele' => 'Symphony of colors and texture',
 	
@@ -31,7 +31,7 @@ return array(
 
     'Tableaux' => "Paintings",
     'Compositions' => "Compositions",
-    'Collages' => "Mixed Media",
+    'MixedMedia' => "Mixed Media",
     'Abstrait' => "Abstract",
     'Atelier' => "Studio",
     'Expositions' => "Exhibitions",
@@ -62,6 +62,13 @@ return array(
 	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	  </p>',
 
+    'IntroMixedMedia' => "
+	<h2>Gluing Material</h2><p>
+	Contemporary painting	</p>
+    <p>The exhibition is over, however some paintings are available for purchase.</br>
+    <br>Send an email to contact@giseleeisenmann.com for more information.</br>
+	</p>",		
+	
     'IntroMomentsFem' => '
      <h2>Feminine Moments</h2>
 	 <p>Feminine Moments is a tribute to the beauty of women in their daily existence, from daydreaming 
@@ -106,13 +113,6 @@ return array(
     <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",	
 
-    'IntroCollage' => "
-	<h2>Gluing Material</h2><p>
-	Contemporary painting	</p>
-    <p>The exhibition is over, however some paintings are available for purchase.</br>
-    <br>Send an email to contact@giseleeisenmann.com for more information.</br>
-	</p>",		
-	
     'IntroOeuvresRecentes' => "Artworks created recently.",	
 	
 	'Introduction' => '<p>
