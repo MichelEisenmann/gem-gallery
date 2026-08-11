@@ -1,4 +1,13 @@
 <?php
+
+ // ATTENTION pour avoir un traitement correct des apostrophes, il FAUT mettre des "" autour des valeurs des messages
+ //    En anglais, le probleme n'est pas la et donc on peut mettre des ''
+ //
+ //    Exemple:
+ //           'Intro' => 'Gisele s'est la plus belle'    NE FONCTIONNE PAS
+ //       par contre
+ //           'Intro' => "Michel est le plus beau" FONCTIONNE :-)
+//		     
 return array(
 
     'Work' => "Oeuvres",
@@ -15,6 +24,10 @@ return array(
     'emergence' => 'Emergence',
     'oeuvresrecentes' => 'Dernières Oeuvres',
     'couleursetmodele' => 'Symphonie Couleurs et Texture',
+    'portraits' => 'Portraits',
+    'mixedmedia' => 'Collages',
+    'composition' => 'Compositions',
+    'paintings' => 'Tableaux',
 	
 	// divers
     'copyrightview' => "Voir la dernière/à venir exposition",
@@ -55,27 +68,35 @@ return array(
 	",
 	'AccueilArtisteIntroFin' => " et les",
 	
-    'IntroAbstrait' => '
+    'IntroPortraits' => "
+     <h2>Portraits</h2>
+	 <p>Les portraits sont ....
+	 </p> 
+    <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
+	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
+     </p>",
+
+    'IntroAbstrait' => "
      <h2>Abstrait</h2>
 	 <p>Les tableaux abstrait sont ....
 	 </p> 
     <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
-     </p>',
+     </p>",
 
-    'IntroComposition' => '
+    'IntroComposition' => "
      <h2>Compositions</h2>
 	 <p>Les compositions sont ....
 	 </p> 
     <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
-     </p>',
+     </p>",
 
-    IntroMixedMedia' => "
-     <h2>Gluing Material</h2><p>
+    'IntroMixedMedia' => "
+     <h2>Collages</h2><p>
 	Peinture contemporaine	</p>
-    <p>The exhibition is over, however some paintings are available for purchase.</br>
-      <br>Send an email to contact@giseleeisenmann.com for more information.</br>
+    <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
+	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
     </p>",		
 
     'IntroMomentsFem' => "
@@ -139,11 +160,11 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 </br>
  ',
  
-     'Winner' => '<p>Gisèle Eisenmann Montagné est lauréate des prix suivants
+     'Winner' => "<p>Gisèle Eisenmann Montagné est lauréate des prix suivants
 	<ul><li>2025 et 2024 Luxembourg Art prize: CERTIFICAT DE MERITE ARTISTIQUE </li>
-	    <li>2024 Prix TROPHEE DE LA VILLE ANTIBES ["Faîtes de la peinture" - (association les amis du musée Picasso)] </li> 
-		<li>2021 2ème prix, catégorie Aquarelle/pastel ["Faîtes de la peinture" - (association les amis du musée Picasso)] </li> 
-	</ul>',
+	    <li>2024 Prix TROPHEE DE LA VILLE ANTIBES [\"Faîtes de la peinture\" - (association les amis du musée Picasso)] </li> 
+		<li>2021 2ème prix, catégorie Aquarelle/pastel [\"Faîtes de la peinture\" - (association les amis du musée Picasso)] </li> 
+	</ul>",
 
    // Contact Page 
     'Contacter' => "Pour toute question ou message",

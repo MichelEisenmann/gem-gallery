@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="UTF-8">
-  <title>GEM</title>
   
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9KWX3PWND"></script>
@@ -9,18 +8,22 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-R9KWX3PWND');
+    gtag('config', 'G-R9KWX3PWND'); 
   </script>
 
-  <?php include ('private/initialize.php'); ?>
-  <?php include ('private/initialize_translator.php'); ?>
-  <?php include ('private/initialize_galleries.php'); ?>
+  <?php include ('../private/initialize.php'); ?>
+  <?php include ('../private/initialize_translator.php'); ?>
+  <?php include ('../private/initialize_galleries.php'); ?>
    
+
+  <title><?= Translator::t('paintings'); ?> | Gisele Eisenmann Montagné</title>
+  
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="./public/global-style.css">
+  <link rel="stylesheet" href="./global-style.css">    
+  <link rel="stylesheet" href="./serie-style.css">    
 
   <style>
     .introcontainer {
@@ -91,7 +94,7 @@
   <body>
 
     <!-- Header -->
-    <?php include("public/navbar.php"); ?>
+    <?php include("../public/navbar.php"); ?>
 
     <!-- Page Content -->
     <div class="w3-container w3-animate-opacity gem-animate gem-index-fixed-width">
@@ -132,110 +135,47 @@
       <!-- Grille des choix --->
       <div class="accesscontainer">
 
-        <a href="<?= Translator::url('/public/acces-paintings.php') ?>">
+        <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer">
-	      <img src="/public/images/Acrylique/20250421_Lectrice_AC50x50_small.jpg" alt="Conte Musical" style="width:100%; "  />
+	      <img src="/public/images/Huile/20250314_AirMarin_HU50x50_small.jpg" alt="Air Marin" style="width:100%; "  />
 	    </div>
 	    <div class="w3-container w3-center">
-	      <?= Translator::t("Tableaux"); ?>
+	      <?= Translator::t("momentsfeminins"); ?>
 	    </div>
 	  </div>
 	</a>
-        <a href="<?= Translator::url('/public/serie-composition.php') ?>">
+        <a href="<?= Translator::url('/public/serie-watermirror.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
-	      <img src="/public/images/Acrylique/20260615_Mimosa_AC27x19_small.jpg" alt="Mimosa" style="width:100%; " />
+	      <img src="/public/images/Acrylique/20250504_La piscine-AC50x50_small.jpg" alt="La Piscine" style="width:100%; " />
 	    </div>
 	    <div class="w3-container w3-center">
-	      <?= Translator::t("Compositions"); ?>
+	      <?= Translator::t("watermirror"); ?>
 	    </div>
 	  </div>
 	</a>
 	
-        <a href="<?= Translator::url('/public/serie-mixedmedia.php') ?>">
+        <a href="<?= Translator::url('/public/serie-portraits.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
-	    <img src="/public/images/Acrylique/20230629_LaVague_AC33x41_small.jpg" alt="LaVague" style="width:100%; " />
+	    <img src="/public/images/Acrylique/20250421_Lectrice_AC50x50_small.jpg" alt="Conte Musical" style="width:100%; " />
 	    </div>
 	    <div class="w3-container w3-center">
-	      <?= Translator::t("MixedMedia"); ?>
+	      <?= Translator::t("portraits"); ?>
 	    </div>
 	  </div>
 	</a>
 	
-        <a href="<?= Translator::url('/public/serie-abstrait.php') ?>">
-	  <div class="w3-card-4">
-	    <div class="imagecontainer w3-center">
-	    <img src="/public/images/Acrylique/20240326_Deflagration_AC90x90_small.jpg" alt="Conte Musical" style="width:100%; " />
-	    </div>
-	    <div class="w3-container w3-center">
-	      <?= Translator::t("Abstrait"); ?>
-	    </div>
-	  </div>
-	</a>
-	
-        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
-	  <div class="w3-card-4">
-	    <div class="imagecontainer w3-center">
-	      <img src="/public/images/web/2024-04-29-GEM-peint.png" alt="Conte Musical" style="width:100%; " />
-	    </div>
-	    <div class="w3-container w3-center">
-	      <?= Translator::t("Atelier"); ?>
-	    </div>
-	  </div>
-	</a>
-	
-	<a href="<?= Translator::url('/public/expositions.php') ?>">
-	  <div class="w3-card-4">
-	    <div class="imagecontainer w3-center">
-	    <img src="/public/images/web/Affichette_Expo-Gourdon26_Cadre.jpg" alt="Conte Musical" style="width:100%; " />
-	    </div>
-	    <div class="w3-container w3-center">
-	      <?= Translator::t("Expositions"); ?>
-	    </div>
-	  </div>
-	</a>
+
       </div>
-      
-<!---
-	<div class="w3-left-align gem-menu">
-          <?= Translator::t("AccueilArtisteIntro"); ?>
-	  [<a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
-            <?= Translator::t("couleursetmodele"); ?> </a>,
-		<a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-            <?= Translator::t("momentsfeminins"); ?> </a>,
-          <a href="<?= Translator::url('/public/serie-watermirror.php') ?>">
-            <?= Translator::t("watermirror"); ?> </a>, 
-          <a href="<?= Translator::url('/public/serie-metamorphose.php') ?>">
-            <?= Translator::t("metamorphose"); ?> </a>,
-          <a href="<?= Translator::url('/public/serie-emergence.php') ?>">
-            <?= Translator::t("emergence"); ?> </a>]
-	</div>	  
-	
-	<div class="w3-center">
-	  <a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
-	    <img src="/public/images/Acrylique/20260602_ConteMusical_AC60x30_small.jpg" alt="Conte Musical" style="width:100%" style="width:100%" />
-	  </a>
-	</div>
-
-
-	<div class="w3-center w3-padding-16">
-		<div class="w3-row-padding" >
-			<div class="w3-col s8">
-			<img src="/public/images/web/Decor_ConteMusical-V2.jpg" alt="Decor conte musical" style="width:100%" />
-			</div>
-		</div>
-	</div>
---->
-
       
 	</div>
  
 
       
       <!-- Footer -->
-      <?php include("public/copyright.php"); ?>
+      <?php include("../public/copyright.php"); ?>
       
       
       <script>

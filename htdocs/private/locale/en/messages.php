@@ -15,6 +15,9 @@ return array(
 	'mixedmedia' => 'Gluing Material',
 	'oeuvresrecentes' => 'Latest Artwork',
 	'couleursetmodele' => 'Symphony of colors and texture',
+	'portraits' => 'Portraits',
+    'composition' => 'Compositions',
+    'paintings' => 'Paintings',
 	
 	//divers
 	'copyrightview' => "View artist's recent exhibition",
@@ -54,6 +57,14 @@ return array(
 	",
 	'AccueilArtisteIntroFin' => " and ",
     
+    'IntroPortraits' => '
+     <h2>Portraits</h2>
+	 <p>The portraits are ....
+	 </p> 
+     <p>This exhibition is closed but some paintings are still available for purchase.</br>
+	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
+	  </p>',
+
     'IntroAbstrait' => '
      <h2>Abstrait</h2>
 	 <p>The abstract paintings are ....
