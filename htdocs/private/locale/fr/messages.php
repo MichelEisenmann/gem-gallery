@@ -55,6 +55,14 @@ return array(
 	",
 	'AccueilArtisteIntroFin' => " et les",
 	
+    'IntroAbstrait' => '
+     <h2>Abstrait</h2>
+	 <p>Les tableaux abstrait sont ....
+	 </p> 
+    <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
+	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
+     </p>',
+
     'IntroComposition' => '
      <h2>Compositions</h2>
 	 <p>Les compositions sont ....

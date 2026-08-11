@@ -115,7 +115,7 @@ $column_generator->generate_style("TroisReveurs", "noir");
       
       <!-- Text Part -->
       <div class="w3-container w3-left-align">
-       <?= Translator::t("IntroComposition"); ?>
+       <?= Translator::t("IntroMixedMedia"); ?>
       </div>
       
        
