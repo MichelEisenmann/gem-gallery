@@ -32,31 +32,23 @@ $sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 // Cet ID servira a les designer le moment venu.
 // Oils
 $paints["LesDanseusesNoires"]= $oil->paints["LesDanseusesNoires"];
-$paints["ClairDeSoleil"]= $oil->paints["ClairDeSoleil"];
-$paints["BaignadeRiviereCudgen"]= $oil->paints["BaignadeRiviereCudgen"];
-$paints["SakuraNenuphars"]= $oil->paints["SakuraNenuphars"];
-$paints["BrumesDuSoir"]= $oil->paints["BrumesDuSoir"];
-$paints["MilieuTorrent"]= $oil->paints["MilieuTorrent"];
 $paints["AirMarin"]= $oil->paints["AirMarin"];
 $paints["PortraitPascale"]= $oil->paints["PortraitPascale"];
 $paints["Nightclub"]= $oil->paints["Nightclub"];
-$paints["LacBleu"]= $oil->paints["LacBleu"];
+$paints["AutomneCezanne"]= $oil->paints["AutomneCezanne"];
+$paints["PascaleMelancolie"]= $oil->paints["PascaleMelancolie"];
+
 
 // Acrylics
-$paints["JeuDeRegard"]= $acrylic->paints["JeuDeRegard"];
-$paints["Contemplation"]= $acrylic->paints["Contemplation"];
-$paints["YellowAigrette"]= $acrylic->paints["YellowAigrette"];
-$paints["PelicanToutSeul"]= $acrylic->paints["PelicanToutSeul"];
 $paints["LectriceChaton"]= $acrylic->paints["LectriceChaton"];
 $paints["LaPiscine"]= $acrylic->paints["LaPiscine"];
-$paints["Cathedrale"]= $acrylic->paints["Cathedrale"];
-$paints["EtangAustral"]= $acrylic->paints["EtangAustral"];
-$paints["Farandole"]= $acrylic->paints["Farandole"];
 $paints["VaseAbutilons"]= $acrylic->paints["VaseAbutilons"];
 
 // Pastels
 $paints["RosesRouges"]= $pastel->paints["RosesRouges"];
-$paints["GourdonEglise"]= $pastel->paints["GourdonEglise"];
+$paints["LeBisou"]= $pastel->paints["LeBisou"];
+$paints["PascaleRenaissance"]= $pastel->paints["PascaleRenaissance"];
+
 
 // Autres
 $paints["SanguinePascale"]= $sanguine->paints["SanguinePascale"];
@@ -89,29 +81,21 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$column_generator->generate_style("EtangAustral", "white");
-$column_generator->generate_style("Cathedrale", "black");
+
 $column_generator->generate_style("AirMarin", "white");
 $column_generator->generate_style("Nightclub", "black");
 $column_generator->generate_style("PortraitPascale", "black");
-$column_generator->generate_style("PelicanToutSeul", "white");
-$column_generator->generate_style("ClairDeSoleil", "black");
-$column_generator->generate_style("BaignadeRiviereCudgen", "black");
-$column_generator->generate_style("Contemplation", "black");
-$column_generator->generate_style("MilieuTorrent", "black");
 $column_generator->generate_style("LesDanseusesNoires", "white");
-$column_generator->generate_style("BrumesDuSoir", "white");
 $column_generator->generate_style("LaPiscine", "white");
-$column_generator->generate_style("YellowAigrette", "white");
 $column_generator->generate_style("SanguinePascale", "black");
-$column_generator->generate_style("SakuraNenuphars", "black");
-$column_generator->generate_style("JeuDeRegard", "white");
 $column_generator->generate_style("LectriceChaton", "white");
-$column_generator->generate_style("LacBleu", "black");
 $column_generator->generate_style("RosesRouges", "white");
 $column_generator->generate_style("VaseAbutilons",  "white");
-$column_generator->generate_style("GourdonEglise", "black");
-$column_generator->generate_style("Farandole", "white");
+$column_generator->generate_style("AutomneCezanne", "white");
+$column_generator->generate_style("LeBisou", "white");
+$column_generator->generate_style("PascaleMelancolie", "black");
+$column_generator->generate_style("PascaleRenaissance", "white");
+
 
     ?>
   </style>
@@ -133,52 +117,40 @@ $column_generator->generate_style("Farandole", "white");
       <div class="w3-grid" style="grid-template-columns:100%">
         <!-- single column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "LacBleu" ); ?>
+		  <?= $column_generator->add_to_column( "LesDanseusesNoires" ); ?>
         </div>
       </div>
 	  
 
-      <div class="w3-grid" style="grid-template-columns:50% 50%">
+      <div class="w3-grid" style="grid-template-columns:40% 30% 30%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
           <?= $column_generator->add_to_column( "AirMarin" ); ?>
           <?= $column_generator->add_to_column( "PortraitPascale" ); ?>
-          <?= $column_generator->add_to_column( "LectriceChaton" ); ?>
-		  <?= $column_generator->add_to_column( "Nightclub" ); ?>
-		  <?= $column_generator->add_to_column( "LaPiscine" ); ?>  
-		  <?= $column_generator->add_to_column( "JeuDeRegard" ); ?>   
-          <?= $column_generator->add_to_column( "MilieuTorrent" ); ?>
-		  <?= $column_generator->add_to_column( "PelicanToutSeul" ); ?>
-<!--		  <?= $column_generator->add_to_column( "Farandole" ); ?>
-		  <?= $column_generator->add_to_column( "GourdonEglise" ); ?>
-		  -->
+          <?= $column_generator->add_to_column( "VaseAbutilons" ); ?>
+
+
+	  
         </div>
-		
-		
+
+        <!-- second column --> 
+       <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">		
+		  <?= $column_generator->add_to_column( "Nightclub" ); ?>
+		  <?= $column_generator->add_to_column( "LectriceChaton" ); ?>
+		 <?= $column_generator->add_to_column( "SanguinePascale" ); ?>
+		  <?= $column_generator->add_to_column( "LeBisou" ); ?>		 
+       </div>
+	   
         <!-- Third column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "SanguinePascale" ); ?>
-          <?= $column_generator->add_to_column( "Contemplation" ); ?>
-		  <?= $column_generator->add_to_column( "BaignadeRiviereCudgen" ); ?> 
-		  <?= $column_generator->add_to_column( "LesDanseusesNoires" ); ?>
-		  <?= $column_generator->add_to_column( "ClairDeSoleil" ); ?>
-		  <?= $column_generator->add_to_column( "SakuraNenuphars" ); ?>
-          <?= $column_generator->add_to_column( "BrumesDuSoir" ); ?>
-		  <?= $column_generator->add_to_column( "YellowAigrette" ); ?>
-          <?= $column_generator->add_to_column( "VaseAbutilons" ); ?>
-<!--		  <?= $column_generator->add_to_column( "EtangAustral" ); ?>
+		  <?= $column_generator->add_to_column( "LaPiscine" ); ?>  
 		  <?= $column_generator->add_to_column( "RosesRouges" ); ?>
-		  -->
+		  <?= $column_generator->add_to_column( "PascaleRenaissance" ); ?>
+		 <?= $column_generator->add_to_column( "PascaleMelancolie"); ?>
+		 <?= $column_generator->add_to_column( "AutomneCezanne" ); ?>
+ 
         </div>
       </div>
-<!--
-      <div class="w3-grid" style="grid-template-columns:100%">
-        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "Cathedrale" ); ?>
-        </div>
-      </div>
--->	  
-
  
       
      <!-- Footer -->

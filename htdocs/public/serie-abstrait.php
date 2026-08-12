@@ -35,9 +35,16 @@ $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
 $paints["Deflagration"]= $acrylic->paints["Deflagration"];
 $paints["Distorsion"]= $acrylic->paints["Distorsion"];
 $paints["Eclosion"]= $acrylic->paints["Eclosion"];
+$paints["LesZebres"]= $acrylic->paints["LesZebres"];
+$paints["ConteMusical"]= $acrylic->paints["ConteMusical"];
+$paints["Mimosa"]= $acrylic->paints["Mimosa"];
+$paints["Festif"]= $acrylic->paints["Festif"];
+$paints["TroisReveurs"]= $acrylic->paints["TroisReveurs"];
 
 // Oils
 $paints["Flamboyance"]= $oil->paints["Flamboyance"];
+$paints["ReveDeTropiques"]= $oil->paints["ReveDeTropiques"];
+$paints["Zenitude"]= $oil->paints["Zenitude"];
 
 // Pastels
 
@@ -70,6 +77,10 @@ $column_generator->generate_style("Deflagration", "noir");
 $column_generator->generate_style("Distorsion", "noir");
 $column_generator->generate_style("Eclosion", "noir");
 $column_generator->generate_style("Flamboyance", "noir");
+$column_generator->generate_style("Spirale", "white");
+$column_generator->generate_style("ConteMusical", "white");
+$column_generator->generate_style("Mimosa", "black");
+$column_generator->generate_style("Festif", "white");
 
     ?>
 

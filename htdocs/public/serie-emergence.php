@@ -30,9 +30,9 @@ $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
 // Cet ID servira a les designer le moment venu.
 // Oils
-$paints["AutomneCezanne"]= $oil->paints["AutomneCezanne"];
+
 $paints["PanierFraisesBois"]= $oil->paints["PanierFraisesBois"];
-$paints["PascaleMelancolie"]= $oil->paints["PascaleMelancolie"];
+
 $paints["DonazacVillage"]= $oil->paints["DonazacVillage"];
 
 // Acrylics
@@ -49,9 +49,8 @@ $paints["Pelagos"]= $acrylic->paints["Pelagos"];
 // Pastels et Autres
 $paints["LeLievre"]= $pastel->paints["LeLievre"];
 $paints["AmericanRobins"]= $pastel->paints["AmericanRobins"];
-$paints["LeBisou"]= $pastel->paints["LeBisou"];
 $paints["DesertJordanie"]= $pastel->paints["DesertJordanie"];
-$paints["PascaleRenaissance"]= $pastel->paints["PascaleRenaissance"];
+
 $paints["AlleePlatanes"]= $pastel->paints["AlleePlatanes"];
 $paints["FleurNenuphar"]= $pastel->paints["FleurNenuphar"];
 
@@ -85,21 +84,20 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$column_generator->generate_style("AutomneCezanne", "white");
+
 $column_generator->generate_style("Royal", "white");
 $column_generator->generate_style("PanierFraisesBois", "white");
 $column_generator->generate_style("TroueeBois", "black");
-$column_generator->generate_style("PortraitGuillaumeTetine", "white");
+
 $column_generator->generate_style("LeLievre", "noir");
 $column_generator->generate_style("FlamandsRouges", "white");
 $column_generator->generate_style("DonazacVillage", "white");
 $column_generator->generate_style("AmericanRobins", "black");
 $column_generator->generate_style("Aviateur", "white");
-$column_generator->generate_style("LeBisou", "white");
+
 $column_generator->generate_style("DesertJordanie", "white");
 $column_generator->generate_style("GuillaumePense", "white");
-$column_generator->generate_style("PascaleMelancolie", "black");
-$column_generator->generate_style("PascaleRenaissance", "white");
+
 $column_generator->generate_style("AlleePlatanes", "black");
 $column_generator->generate_style("LeFicus",  "white");
 $column_generator->generate_style("Pelagos", "black");
@@ -130,7 +128,7 @@ $column_generator->generate_style("FleurNenuphar", "black");
       <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "AutomneCezanne" ); ?>
+
           <?= $column_generator->add_to_column( "Royal" ); ?>
           <?= $column_generator->add_to_column( "TroueeBois" ); ?>
 		  <?= $column_generator->add_to_column( "AmericanRobins" ); ?>
@@ -149,11 +147,11 @@ $column_generator->generate_style("FleurNenuphar", "black");
         <!-- Third column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
           <?= $column_generator->add_to_column( "AlleePlatanes" ); ?>
-          <?= $column_generator->add_to_column( "LeBisou" ); ?>
+
           <?= $column_generator->add_to_column( "GuillaumePense" ); ?>
-          <?= $column_generator->add_to_column( "PascaleMelancolie"); ?>
+ 
 		  <?= $column_generator->add_to_column( "Aviateur" ); ?>
-          <?= $column_generator->add_to_column( "PascaleRenaissance" ); ?>
+ 
 		  <?= $column_generator->add_to_column( "FleurNenuphar" ); ?>
 
         </div>

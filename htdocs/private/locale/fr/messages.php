@@ -4,7 +4,7 @@
  //    En anglais, le probleme n'est pas la et donc on peut mettre des ''
  //
  //    Exemple:
- //           'Intro' => 'Gisele s'est la plus belle'    NE FONCTIONNE PAS
+ //           'Intro' => 'Gisele c'est la plus belle'    NE FONCTIONNE PAS
  //       par contre
  //           'Intro' => "Michel est le plus beau" FONCTIONNE :-)
 //		     
@@ -19,7 +19,7 @@ return array(
     // Series
     'Serie' => 'Série',
     'momentsfeminins' => 'Moments Féminins',
-    'watermirror' => 'Miroir d\'eau',
+    'watermirror' => "Miroir d'eau",
     'metamorphose' => 'Métamorphose',
     'emergence' => 'Emergence',
     'oeuvresrecentes' => 'Dernières Oeuvres',
@@ -30,7 +30,7 @@ return array(
     'paintings' => 'Tableaux',
 	
 	// divers
-    'copyrightview' => "Voir la dernière/à venir exposition",
+    'copyrightview' => "Voir la dernière à venir exposition",
     'Avertissement' => "Avertissement : Le contenu de ce site Internet est protégé par le droit d’auteur. Toute reproduction est interdite.",
     'soloexpo' => 'Expositions Solo', 
     'groupexpo' => "Une sélection d'expositions de groupe",
@@ -44,7 +44,7 @@ return array(
 
     'Tableaux' => "Tableaux",
     'Compositions' => "Compositions",
-    'MixedMedia' => "Collages",
+    'MixedMedia' => "Techniques Mixtes",
     'Abstrait' => "Abstrait",
     'Atelier' => "Atelier",
     'Expositions' => "Expositions",
@@ -162,8 +162,8 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
  
      'Winner' => "<p>Gisèle Eisenmann Montagné est lauréate des prix suivants
 	<ul><li>2025 et 2024 Luxembourg Art prize: CERTIFICAT DE MERITE ARTISTIQUE </li>
-	    <li>2024 Prix TROPHEE DE LA VILLE ANTIBES [\"Faîtes de la peinture\" - (association les amis du musée Picasso)] </li> 
-		<li>2021 2ème prix, catégorie Aquarelle/pastel [\"Faîtes de la peinture\" - (association les amis du musée Picasso)] </li> 
+	    <li>2024 Prix TROPHEE DE LA VILLE ANTIBES [Faîtes de la peinture - (association les amis du musée Picasso)] </li> 
+		<li>2021 2ème prix, catégorie Aquarelle/pastel [Faîtes de la peinture - (association les amis du musée Picasso)] </li> 
 	</ul>",
 
    // Contact Page 

@@ -33,7 +33,6 @@ $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
 
 // Acrylics
 $paints["FlamandsRouges"]= $acrylic->paints["FlamandsRouges"];
-$paints["LaVague"]= $acrylic->paints["LaVague"];
 $paints["LesTournesols"]= $acrylic->paints["LesTournesols"];
 $paints["Farandole"]= $acrylic->paints["Farandole"];
 $paints["EtangAustral"]= $acrylic->paints["EtangAustral"];
@@ -46,12 +45,14 @@ $paints["YellowSunset"]= $acrylic->paints["YellowSunset"];
 $paints["ApresMidiOiseau"]= $acrylic->paints["ApresMidiOiseau"];
 $paints["ApresLaPluie"]= $acrylic->paints["ApresLaPluie"];
 $paints["RencontreAuSommet"]= $acrylic->paints["RencontreAuSommet"];
+$paints["LeverSoleilRouge"]= $acrylic->paints["LeverSoleilRouge"];
 $paints["Carnaval"]= $acrylic->paints["Carnaval"];
 $paints["Dryade"]= $acrylic->paints["Dryade"];
 $paints["Spirale"]= $acrylic->paints["Spirale"];
 $paints["Cavalcade"]= $acrylic->paints["Cavalcade"];
 $paints["Leman"]= $acrylic->paints["Leman"];
-$paints["TroisReveurs"]= $acrylic->paints["TroisReveurs"];
+
+
 
 // Pastels
 
@@ -81,24 +82,27 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     
     <?php
 $column_generator->generate_style("FlamandsRouges", "noir");
-$column_generator->generate_style("LaVague", "noir");
 $column_generator->generate_style("LesTournesols", "noir");
 $column_generator->generate_style("Farandole", "noir");
-$column_generator->generate_style("EtangAustral", "noir");
-$column_generator->generate_style("Cathedrale", "noir");
-$column_generator->generate_style("Poisson", "noir");
-$column_generator->generate_style("LeverSoleilRouge", "noir");
-$column_generator->generate_style("Savana", "noir");
-$column_generator->generate_style("PurpleSeagull", "noir");
-$column_generator->generate_style("YellowSunset", "noir");
-$column_generator->generate_style("ApresMidiOiseau", "noir");
-$column_generator->generate_style("ApresLaPluie", "noir");
-$column_generator->generate_style("RencontreAuSommet", "noir");
-$column_generator->generate_style("Carnaval", "noir");
-$column_generator->generate_style("Dryade", "noir");
-$column_generator->generate_style("Spirale", "noir");
-$column_generator->generate_style("Cavalcade", "noir");
-$column_generator->generate_style("Leman", "noir");
+$column_generator->generate_style("EtangAustral", "white");
+$column_generator->generate_style("Cathedrale", "black");
+$column_generator->generate_style("Poisson", "white");
+$column_generator->generate_style("LeverSoleilRouge", "white");
+$column_generator->generate_style("Savana", "white");
+$column_generator->generate_style("PurpleSeagull", "black");
+$column_generator->generate_style("YellowSunset", "black");
+$column_generator->generate_style("ApresMidiOiseau", "white");
+$column_generator->generate_style("ApresLaPluie", "black");
+$column_generator->generate_style("RencontreAuSommet", "white");
+$column_generator->generate_style("Dryade", "black");
+$column_generator->generate_style("Carnaval", "white");
+$column_generator->generate_style("Spirale", "white");
+$column_generator->generate_style("Cavalcade", "white");
+
+
+
+
+
 $column_generator->generate_style("TroisReveurs", "noir");
 
     ?>

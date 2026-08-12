@@ -111,6 +111,7 @@
 	</div>
       </div>
 
+<!---- Mobile début --->
       <div class="for-mobile">
 	<div class="introcontainer">
 	  <div>
@@ -127,7 +128,7 @@
 	  <?= Translator::t("Accueil_CreationsDefinition2"); ?>
 	</div>
       </div>
-
+<!---- Mobile fin --->
       
       <!-- Grille des choix --->
       <div class="accesscontainer">
@@ -145,7 +146,7 @@
         <a href="<?= Translator::url('/public/serie-composition.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
-	      <img src="/public/images/Acrylique/20260615_Mimosa_AC27x19_small.jpg" alt="Mimosa" style="width:100%; " />
+	      <img src="/public/images/Acrylique/20260623_Festif_AC41x27_small.png" alt="Festif" style="width:100%; " />
 	    </div>
 	    <div class="w3-container w3-center">
 	      <?= Translator::t("Compositions"); ?>

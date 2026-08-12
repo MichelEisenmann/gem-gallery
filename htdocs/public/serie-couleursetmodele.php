@@ -35,24 +35,14 @@ $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
 
 
 // Acrylic
-$paints["EtangAustral"]= $acrylic->paints["EtangAustral"];
-$paints["Cathedrale"]= $acrylic->paints["Cathedrale"];
-$paints["Poisson"]= $acrylic->paints["Poisson"];
-$paints["Savana"]= $acrylic->paints["Savana"];
-$paints["PurpleSeagull"]= $acrylic->paints["PurpleSeagull"];
-$paints["YellowSunset"]= $acrylic->paints["YellowSunset"];
-$paints["ApresMidiOiseau"]= $acrylic->paints["ApresMidiOiseau"];
-$paints["ApresLaPluie"]= $acrylic->paints["ApresLaPluie"];
-$paints["RencontreAuSommet"]= $acrylic->paints["RencontreAuSommet"];
-$paints["LeverSoleilRouge"]= $acrylic->paints["LeverSoleilRouge"];
-$paints["Dryade"]= $acrylic->paints["Dryade"];
-$paints["Carnaval"]= $acrylic->paints["Carnaval"];
-$paints["Spirale"]= $acrylic->paints["Spirale"];
-$paints["ConteMusical"]= $acrylic->paints["ConteMusical"];
-$paints["Cavalcade"]= $acrylic->paints["Cavalcade"];
-$paints["Mimosa"]= $acrylic->paints["Mimosa"];
-$paints["Festif"]= $acrylic->paints["Festif"];
-$paints["LaPasserelle"]= $pastel->paints["LaPasserelle"];
+
+
+
+
+
+
+
+
 
 
 
@@ -83,24 +73,7 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$column_generator->generate_style("EtangAustral", "white");
-$column_generator->generate_style("Cathedrale", "black");
-$column_generator->generate_style("Poisson", "white");
-$column_generator->generate_style("LeverSoleilRouge", "white");
-$column_generator->generate_style("Savana", "white");
-$column_generator->generate_style("PurpleSeagull", "black");
-$column_generator->generate_style("YellowSunset", "black");
-$column_generator->generate_style("ApresMidiOiseau", "white");
-$column_generator->generate_style("ApresLaPluie", "black");
-$column_generator->generate_style("RencontreAuSommet", "white");
-$column_generator->generate_style("Dryade", "black");
-$column_generator->generate_style("Carnaval", "white");
-$column_generator->generate_style("Spirale", "white");
-$column_generator->generate_style("ConteMusical", "white");
-$column_generator->generate_style("Cavalcade", "white");
-$column_generator->generate_style("Mimosa", "black");
-$column_generator->generate_style("Festif", "white");
-$column_generator->generate_style("LaPasserelle", "white");
+
     ?>
   </style>
   

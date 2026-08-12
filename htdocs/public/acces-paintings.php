@@ -99,37 +99,7 @@
     <!-- Page Content -->
     <div class="w3-container w3-animate-opacity gem-animate gem-index-fixed-width">
 	
-      <!--- Intro Photo et contenu oeuvres ---->
-      <div class="for-computer">
-	<div class="introcontainer">
-	  <div>
-	    <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:70%"/>
-	  </div>
-	  <div class="">
-            <?= Translator::t("AccueilArtisteIntro"); ?>
-	    <?= Translator::t("Accueil_CreationsDefinition0"); ?>
-	    <?= Translator::t("Accueil_CreationsDefinition1"); ?>
-	    <?= Translator::t("Accueil_CreationsDefinition2"); ?>
-	  </div>
-	</div>
-      </div>
 
-      <div class="for-mobile">
-	<div class="introcontainer">
-	  <div>
-	    <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:70%"/>
-	  </div>
-	  <div class="">
-            <?= Translator::t("AccueilArtisteIntro"); ?>
-	  </div>
-	</div>
-	
-	<div class="">
-	  <?= Translator::t("Accueil_CreationsDefinition0"); ?>
-	  <?= Translator::t("Accueil_CreationsDefinition1"); ?>
-	  <?= Translator::t("Accueil_CreationsDefinition2"); ?>
-	</div>
-      </div>
 
       
       <!-- Grille des choix --->
@@ -168,6 +138,39 @@
 	</a>
 	
 
+      </div>
+	  
+	  
+	 <!--- Quelques peintures in situ ---->
+      <div class="for-computer">
+	<div class="introcontainer">
+	  <div>
+	    <img src="/public/images/web/20241214_LaTrouee-InSitu.jpg" alt="La Trouee" style="width:70%"/>
+	  </div>
+	  	  <div>
+	    <img src="/public/images/web/20241214_LaTrouee-InSitu.jpg" alt="La Trouee" style="width:70%"/>
+	  </div>
+	  	  <div>
+	    <img src="/public/images/web/20241214_LaTrouee-InSitu.jpg" alt="La Trouee" style="width:70%"/>
+	  </div>
+	</div>
+      </div>
+
+      <div class="for-mobile">
+	<div class="introcontainer">
+	  <div>
+	    <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:70%"/>
+	  </div>
+	  <div class="">
+            <?= Translator::t("AccueilArtisteIntro"); ?>
+	  </div>
+	</div>
+	
+	<div class="">
+	  <?= Translator::t("Accueil_CreationsDefinition0"); ?>
+	  <?= Translator::t("Accueil_CreationsDefinition1"); ?>
+	  <?= Translator::t("Accueil_CreationsDefinition2"); ?>
+	</div>
       </div>
       
 	</div>
