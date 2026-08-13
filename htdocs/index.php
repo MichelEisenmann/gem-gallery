@@ -133,13 +133,13 @@
       <!-- Grille des choix --->
       <div class="accesscontainer">
 
-        <a href="<?= Translator::url('/public/acces-paintings.php') ?>">
+        <a href="<?= Translator::url('/public/acces-figuratif.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer">
 	      <img src="/public/images/Acrylique/20250421_Lectrice_AC50x50_small.jpg" alt="Conte Musical" style="width:100%; "  />
 	    </div>
 	    <div class="w3-container w3-center">
-	      <?= Translator::t("Tableaux"); ?>
+	      <?= Translator::t("Figuratif"); ?>
 	    </div>
 	  </div>
 	</a>
@@ -171,7 +171,7 @@
 	    <img src="/public/images/Acrylique/20240326_Deflagration_AC90x90_small.jpg" alt="Conte Musical" style="width:100%; " />
 	    </div>
 	    <div class="w3-container w3-center">
-	      <?= Translator::t("Abstrait"); ?>
+	      <?= Translator::t("Abstraits"); ?>
 	    </div>
 	  </div>
 	</a>

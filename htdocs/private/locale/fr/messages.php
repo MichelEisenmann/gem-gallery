@@ -21,10 +21,9 @@ return array(
     'momentsfeminins' => 'Moments Féminins',
     'watermirror' => "Miroir d'eau",
     'metamorphose' => 'Métamorphose',
-    'emergence' => 'Emergence',
     'couleursetmodele' => 'Symphonie Couleurs et Texture',
-	'paintings' => 'Tableaux',
-    'portraits' => 'Portraits',
+	'figuratif' => 'Figuratif',
+    'portrait' => 'Portraits',
     'composition' => 'Compositions',
 	'mixedmedia' => 'Techniques mixtes',
 	'multitexture' => 'Finition multitexturée',
@@ -44,10 +43,10 @@ return array(
     'Accueil_CreationsDefinition1' => "Mes créations se caractérisent par des formes figuratives, aux couleurs saturées et aux lignes souples. ",
     'Accueil_CreationsDefinition2' => "J'y ajoute souvent une touche de surréalisme, convoquant le rêve, l'humour et la vie. Visitez mon monde imaginaire.", 
 
-    'Tableaux' => "Tableaux",
+    'Figuratif' => "Paysages et Nature",
     'Compositions' => "Compositions",
     'MixedMedia' => "Techniques Mixtes",
-    'Abstrait' => "Abstrait",
+    'Abstraits' => "Abstrait",
     'Atelier' => "Atelier",
     'Expositions' => "Expositions",
 
@@ -138,14 +137,6 @@ return array(
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",	
 
-    'IntroEmergence' => "
-	<h2>Emergence</h2><p>
-	Emergence présente les oeuvres d'un nouveau départ, une nouvelle voie, de nouvelles compétences
-	à acquérir après la fin de ma carrière en informatique. Aucun fil conducteur; un simple partage 
-    d'émotions au détour d'une rencontre avec une réalité nouvelle.	</p>
-    <p>Quelques tableaux sont disponibles à l'achat.
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
-	</p>",	
     
 	'IntroCouleursEtModele' => "
 	<h2>Symphonie de couleurs et texture</h2><p>

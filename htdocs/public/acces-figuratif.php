@@ -16,7 +16,7 @@
   <?php include ('../private/initialize_galleries.php'); ?>
    
 
-  <title><?= Translator::t('paintings'); ?> | Gisele Eisenmann Montagné</title>
+  <title><?= Translator::t('figuratif'); ?> | Gisele Eisenmann Montagné</title>
   
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
@@ -126,13 +126,13 @@
 	  </div>
 	</a>
 	
-        <a href="<?= Translator::url('/public/serie-portraits.php') ?>">
+        <a href="<?= Translator::url('/public/serie-portrait.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
-	    <img src="/public/images/Acrylique/20250421_Lectrice_AC50x50_small.jpg" alt="Conte Musical" style="width:100%; " />
+	    <img src="/public/images/Acrylique/20211019_PortraitGuillaumeTetine_AC33x24_small.jpg" alt="Guillaume Tetine" style="width:100%; " />
 	    </div>
 	    <div class="w3-container w3-center">
-	      <?= Translator::t("portraits"); ?>
+	      <?= Translator::t("portrait"); ?>
 	    </div>
 	  </div>
 	</a>

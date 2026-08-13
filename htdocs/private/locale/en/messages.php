@@ -11,10 +11,9 @@ return array(
     'momentsfeminins' => 'Feminine Moments',
     'watermirror' => 'Water Mirror',
     'metamorphose' => 'Metamorphosis',
-	'emergence' => 'Emergence',
 	'couleursetmodele' => 'Symphony of colors and texture',
-	'paintings' => 'Paintings',
-	'portraits' => 'Portraits',
+	'figuratif' => 'Figurative',
+	'portrait' => 'Portraits',
     'composition' => 'Compositions',
 	'mixedmedia' => 'Techniques mixtes',
 	'multitexture' => 'Multi-textured finish',
@@ -34,10 +33,10 @@ return array(
 	'Accueil_CreationsDefinition1' => "My creations are characterized by figurative shapes, with saturated colors and soft lines.",
 	'Accueil_CreationsDefinition2' => "I often add a touch of surrealism, summoning dreams, humour and life. Visit my imaginary world.",
 
-    'Tableaux' => "Paintings",
+    'Figuratif' => "Landscape and Nature",
     'Compositions' => "Compositions",
     'MixedMedia' => "Mixed Media",
-    'Abstrait' => "Abstract",
+    'Abstraits' => "Abstract",
     'Atelier' => "Studio",
     'Expositions' => "Exhibitions",
 	
@@ -125,15 +124,7 @@ return array(
     <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",
 
-    'IntroEmergence' => "
-	<h2>Emergence</h2><p>
-	Emergence presents the works of a new beginning, a new path, some new skills to acquire after 
-	the end of my career in computer science. No common thread; a simple sharing of emotions in the course of 
-	an encounter with a new reality.</p>
-    <p>The exhibition is over, however some paintings are available for purchase.</br>
-    <br>Send an email to contact@giseleeisenmann.com for more information.</br>
-	</p>",	
-	
+
 	'IntroCouleursEtModele' => "
 	<h2>Symphony of colors and texture</h2><p>
 	Shimmering colors and rendering of relief and shapes with paint and material.</p>
