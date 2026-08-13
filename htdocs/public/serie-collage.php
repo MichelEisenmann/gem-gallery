@@ -17,13 +17,12 @@
   <?php include ('../private/column_generator.php'); ?>
 
 <?php
+
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
-$serie_key='mixedmedia';
+$serie_key='collage';
 $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 
 // ces dictionnaires sont les dictionnaires standard
-$oil= $ALL_GALLERIES->paint_dictionnaries["oil"];
-$pastel= $ALL_GALLERIES->paint_dictionnaries["pastel"];
 $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
 
 // On recupere toutes les peintures qu'on veut voir dans cette serie
@@ -33,28 +32,17 @@ $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
 
 // Acrylics
 $paints["FlamandsRouges"]= $acrylic->paints["FlamandsRouges"];
-$paints["LesTournesols"]= $acrylic->paints["LesTournesols"];
-$paints["Farandole"]= $acrylic->paints["Farandole"];
 $paints["EtangAustral"]= $acrylic->paints["EtangAustral"];
 $paints["Cathedrale"]= $acrylic->paints["Cathedrale"];
 $paints["Poisson"]= $acrylic->paints["Poisson"];
-$paints["LeverSoleilRouge"]= $acrylic->paints["LeverSoleilRouge"];
 $paints["Savana"]= $acrylic->paints["Savana"];
 $paints["PurpleSeagull"]= $acrylic->paints["PurpleSeagull"];
 $paints["YellowSunset"]= $acrylic->paints["YellowSunset"];
 $paints["ApresMidiOiseau"]= $acrylic->paints["ApresMidiOiseau"];
-$paints["ApresLaPluie"]= $acrylic->paints["ApresLaPluie"];
-$paints["RencontreAuSommet"]= $acrylic->paints["RencontreAuSommet"];
-$paints["LeverSoleilRouge"]= $acrylic->paints["LeverSoleilRouge"];
 $paints["Carnaval"]= $acrylic->paints["Carnaval"];
 $paints["Dryade"]= $acrylic->paints["Dryade"];
 $paints["Spirale"]= $acrylic->paints["Spirale"];
 $paints["Cavalcade"]= $acrylic->paints["Cavalcade"];
-$paints["Leman"]= $acrylic->paints["Leman"];
-
-
-
-// Pastels
 
 $column_generator= new ColumnGenerator();
 $column_generator->paints= $paints; // may contain paints that are not in serie
@@ -82,28 +70,19 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     
     <?php
 $column_generator->generate_style("FlamandsRouges", "noir");
-$column_generator->generate_style("LesTournesols", "noir");
-$column_generator->generate_style("Farandole", "noir");
 $column_generator->generate_style("EtangAustral", "white");
 $column_generator->generate_style("Cathedrale", "black");
 $column_generator->generate_style("Poisson", "white");
-$column_generator->generate_style("LeverSoleilRouge", "white");
 $column_generator->generate_style("Savana", "white");
 $column_generator->generate_style("PurpleSeagull", "black");
 $column_generator->generate_style("YellowSunset", "black");
 $column_generator->generate_style("ApresMidiOiseau", "white");
-$column_generator->generate_style("ApresLaPluie", "black");
-$column_generator->generate_style("RencontreAuSommet", "white");
-$column_generator->generate_style("Dryade", "black");
 $column_generator->generate_style("Carnaval", "white");
+$column_generator->generate_style("Dryade", "black");
 $column_generator->generate_style("Spirale", "white");
 $column_generator->generate_style("Cavalcade", "white");
 
 
-
-
-
-$column_generator->generate_style("TroisReveurs", "noir");
 
     ?>
 
@@ -124,35 +103,36 @@ $column_generator->generate_style("TroisReveurs", "noir");
       
        
       <!-- Paintings -->
-      <div class="w3-grid" style="grid-template-columns:30% 70%">
+      <div class="w3-grid" style="grid-template-columns:100%">
+        <!-- single column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "ApresMidiOiseau" ); ?>
+        </div>
+      </div>
+	  
+      <div class="w3-grid" style="grid-template-columns:40% 60%">
 
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column("FlamandsRouges" ); ?>
-          <?= $column_generator->add_to_column("LaVague" ); ?>
-          <?= $column_generator->add_to_column("LesTournesols" ); ?>
-          <?= $column_generator->add_to_column("Farandole" ); ?>
-          <?= $column_generator->add_to_column("EtangAustral" ); ?>
-          <?= $column_generator->add_to_column("Cathedrale" ); ?>
+           <?= $column_generator->add_to_column("EtangAustral" ); ?>
+		   <?= $column_generator->add_to_column("Cavalcade" ); ?>
+		  <?= $column_generator->add_to_column("Spirale" ); ?>
           <?= $column_generator->add_to_column("Poisson" ); ?>
-          <?= $column_generator->add_to_column("LeverSoleilRouge" ); ?>
-          <?= $column_generator->add_to_column("Savana" ); ?>
-          <?= $column_generator->add_to_column("PurpleSeagull" ); ?>
-          <?= $column_generator->add_to_column("YellowSunset" ); ?>
+		  <?= $column_generator->add_to_column("Dryade" ); ?>
+		  <?= $column_generator->add_to_column("FlamandsRouges" ); ?>
 
         </div>
 
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column("ApresMidiOiseau" ); ?>
-          <?= $column_generator->add_to_column("ApresLaPluie" ); ?>
-          <?= $column_generator->add_to_column("RencontreAuSommet" ); ?>
-          <?= $column_generator->add_to_column("Carnaval" ); ?>
-          <?= $column_generator->add_to_column("Dryade" ); ?>
-          <?= $column_generator->add_to_column("Spirale" ); ?>
-          <?= $column_generator->add_to_column("Cavalcade" ); ?>
-          <?= $column_generator->add_to_column("Leman" ); ?>
-          <?= $column_generator->add_to_column("TroisReveurs" ); ?>
+		  <?= $column_generator->add_to_column("Cathedrale" ); ?>
+		  <?= $column_generator->add_to_column("Savana" ); ?>
+          <?= $column_generator->add_to_column("PurpleSeagull" ); ?>
+          <?= $column_generator->add_to_column("YellowSunset" ); ?>
+		   <?= $column_generator->add_to_column("Carnaval" ); ?>
+
+
+
 
         </div>
 

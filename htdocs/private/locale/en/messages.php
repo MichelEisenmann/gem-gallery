@@ -13,12 +13,13 @@ return array(
     'metamorphose' => 'Metamorphosis',
 	'emergence' => 'Emergence',
 	'couleursetmodele' => 'Symphony of colors and texture',
-	'collage' => 'Collage',
-	'multitexture' => 'Multi-textured finish',
 	'paintings' => 'Paintings',
 	'portraits' => 'Portraits',
     'composition' => 'Compositions',
 	'mixedmedia' => 'Techniques mixtes',
+	'multitexture' => 'Multi-textured finish',
+	'collage' => 'Collage',
+
 	
 	//divers
 	'copyrightview' => "View artist's recent exhibition",

@@ -27,8 +27,9 @@ return array(
     'portraits' => 'Portraits',
     'composition' => 'Compositions',
 	'mixedmedia' => 'Techniques mixtes',
-	'collage' => 'Collage',
 	'multitexture' => 'Finition multitexturée',
+	'collage' => 'Collage',
+
 	
 	// divers
     'copyrightview' => "Voir la dernière à venir exposition",
@@ -105,7 +106,7 @@ return array(
      <h2>Finition multi-texturée</h2><p>
 	Peinture contemporaine	</p>
     <br>Pour créer ces pieces, je commence par modifier la surface de mes toiles en changeant ses caractéristiques comme l'absorption, la texture ou la couleur. </br>
-	Au-dessur de ces nouvelles surfaces, j'applique la peinture acrylique ou autre, éventuellement en renouvelant la procédure sur plusieurs niveaux. </br>	
+	Au-dessus de ces nouvelles surfaces, j'applique la peinture acrylique ou autre, éventuellement en renouvelant la procédure sur plusieurs niveaux. </br>	
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
     </p>",		
 	
