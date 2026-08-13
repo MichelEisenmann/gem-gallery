@@ -14,6 +14,7 @@ return array(
 	'couleursetmodele' => 'Symphony of colors and texture',
 	'figuratif' => 'Figurative',
 	'portrait' => 'Portraits',
+	'surrealisme' => 'Surrealism',
     'composition' => 'Compositions',
 	'mixedmedia' => 'Techniques mixtes',
 	'multitexture' => 'Multi-textured finish',
@@ -68,10 +69,15 @@ return array(
 
     'IntroAbstrait' => '
      <h2>Abstrait</h2>
-	 <p>The abstract paintings are ....
-	 </p> 
-     <p>This exhibition is closed but some paintings are still available for purchase.</br>
-	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
+	 <br>This series plays on surprise and intrigue at the same time, mixing surrealism with purely abstract pieces. </br>
+	 <br>It is created with different approaches: acrylic painting with a knife, work on textures, material effects...
+	 </br> 
+ 	 ',
+	 
+	 'IntroSurrealisme' => "
+     <h2>Surréalism</h2>
+	 <p> This series plays on surprise, sometimes with humor, by presenting compositions of unexpected objects or beings
+confusing perspectives, resulting in surrealist works.
 	  </p>',
 
     'IntroComposition' => '
@@ -82,7 +88,7 @@ return array(
 	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	  </p>',
 
-    'IntroCollage' => "
+    'IntroCollage' => '
      <h2>Collages</h2><p>
 	Contemporary painting</p>
     <br>My artworks are two-dimensional pieces made up of a base of white canvas stretched over a stretcher on which I glue different materials (plants, net, cardboard, paper, wood...) and then I add the paint.</br>	

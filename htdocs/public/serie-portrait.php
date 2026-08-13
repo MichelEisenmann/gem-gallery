@@ -123,11 +123,6 @@ $column_generator->generate_style("GiseleLaServante", "white");
         <?= Translator::t("IntroPortraits"); ?>
         </div>
       
-      <!-- Galerie/Exposition photo -->
-<!--      <div class="w3-container w3-center">
-	<img src="/public/images/web/expo-seillans.png" alt="" style="width:100%">
-      </div>
--->      
       
       <!-- Paintings -->
       <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
@@ -150,9 +145,6 @@ $column_generator->generate_style("GiseleLaServante", "white");
 		  <?= $column_generator->add_to_column( "PortraitGuillaumeTetine" ); ?>
 		  <?= $column_generator->add_to_column( "BebeSourit" ); ?>
 		  <?= $column_generator->add_to_column( "GiseleLaServante" ); ?>
-
-
- 
 
         </div>
         <!-- Third column --> 

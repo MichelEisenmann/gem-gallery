@@ -24,6 +24,7 @@ return array(
     'couleursetmodele' => 'Symphonie Couleurs et Texture',
 	'figuratif' => 'Figuratif',
     'portrait' => 'Portraits',
+	'surrealisme' => 'Surrealisme',
     'composition' => 'Compositions',
 	'mixedmedia' => 'Techniques mixtes',
 	'multitexture' => 'Finition multitexturée',
@@ -79,12 +80,17 @@ return array(
 
     'IntroAbstrait' => "
      <h2>Abstrait</h2>
-	 <p>Les tableaux abstrait sont ....
-	 </p> 
-    <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
+	 <p>Cette série joue sur la surprise et l'intrigue à la fois, mêlant le surréalisme aux pieces purement abstraites. 
+	 Elle est crée avec différentes approches : peinture acrylique au couteau, travail des textures, effets de matière...</br>	
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
      </p>",
 
+    'IntroSurrealisme' => "
+     <h2>Surréalisme</h2>
+	 <p>Cette série joue sur la surprise, parfois avec humour, en présentant des compositions d'objets ou d'êtres inattendues,
+	des perspectives déroutantes, résultant en oeuvres surréalistes. 
+     </p>",	
+	
     'IntroComposition' => "
      <h2>Compositions</h2>
 	 <p>Les compositions sont ....

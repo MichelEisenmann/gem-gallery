@@ -43,8 +43,6 @@ $paints["AutomneCezanne"]= $oil->paints["AutomneCezanne"];
 $paints["LectriceChaton"]= $acrylic->paints["LectriceChaton"];
 $paints["LaPiscine"]= $acrylic->paints["LaPiscine"];
 $paints["VaseAbutilons"]= $acrylic->paints["VaseAbutilons"];
-$paints["JeuDeRegard"]= $acrylic->paints["JeuDeRegard"];
-
 
 // Pastels
 $paints["RosesRouges"]= $pastel->paints["RosesRouges"];
@@ -130,9 +128,6 @@ $column_generator->generate_style("JeuDeRegard", "black");
           <?= $column_generator->add_to_column( "AirMarin" ); ?>
           <?= $column_generator->add_to_column( "LaPasserelle" ); ?>
           <?= $column_generator->add_to_column( "VaseAbutilons" ); ?>
-
-
-
 	  
         </div>
 

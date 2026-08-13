@@ -28,7 +28,8 @@
   <style>
     .introcontainer {
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: auto auto;
+	grid-row-start:2;
     padding: 10px;
     }
     .introcontainer div {
@@ -41,7 +42,8 @@
 
     .accesscontainer {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: auto auto;
+	grid-row-start:2;
     padding: 10px;
     }
     .accesscontainer div {
@@ -63,7 +65,8 @@
     @media screen and (max-width: 480px) {
     .accesscontainer {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
+	grid-template-rows: 50% 50%;
     padding: 10px;
     }
     .accesscontainer div {
@@ -80,7 +83,8 @@
 
     .introcontainer {
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: auto auto;
+	grid-template-rows: 50% 50%;
     padding: 10px;
     }
     .introcontainer div {
@@ -115,6 +119,7 @@
 	    </div>
 	  </div>
 	</a>
+	
         <a href="<?= Translator::url('/public/serie-watermirror.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
@@ -137,6 +142,17 @@
 	  </div>
 	</a>
 
+       <a href="<?= Translator::url('/public/serie-surrealisme.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer w3-center">
+	    <img src="/public/images/Acrylique/20220821_Regards_small.jpg" alt="Jeu de regards" style="width:100%; " />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("surrealisme"); ?>
+	    </div>
+	  </div>
+	</a>
+	
       </div>
 	  
 	  

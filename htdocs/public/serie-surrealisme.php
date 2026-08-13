@@ -18,46 +18,37 @@
 
 <?php
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
-$serie_key='abstrait';
+$serie_key='surrealisme';
 $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 
 // ces dictionnaires sont les dictionnaires standard
 $oil= $ALL_GALLERIES->paint_dictionnaries["oil"];
-$pastel= $ALL_GALLERIES->paint_dictionnaries["pastel"];
 $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
+
 
 // On recupere toutes les peintures qu'on veut voir dans cette serie
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
 // Cet ID servira a les designer le moment venu.
+
 // Oils
-$paints["Flamboyance"]= $oil->paints["Flamboyance"];
-$paints["Zenitude"]= $oil->paints["Zenitude"];
-
-// Acrylics
-$paints["Deflagration"]= $acrylic->paints["Deflagration"];
-$paints["Distorsion"]= $acrylic->paints["Distorsion"];
-$paints["Eclosion"]= $acrylic->paints["Eclosion"];
-
-$paints["ConteMusical"]= $acrylic->paints["ConteMusical"];
-$paints["Mimosa"]= $acrylic->paints["Mimosa"];
-$paints["Festif"]= $acrylic->paints["Festif"];
-$paints["Carnaval"]= $acrylic->paints["Carnaval"];
-$paints["Spirale"]= $acrylic->paints["Spirale"];
-$paints["Cathedrale"]= $acrylic->paints["Cathedrale"];
-$paints["Cavalcade"]= $acrylic->paints["Cavalcade"];
+$paints["ReveDeTropiques"]= $oil->paints["ReveDeTropiques"];
 
 
+// Acrylic
+$paints["IleLoups"]= $acrylic->paints["IleLoups"];
+$paints["EvocationGourdon"]= $acrylic->paints["EvocationGourdon"];
+$paints["LesZebres"]= $acrylic->paints["LesZebres"];
+$paints["JeuDeRegard"]= $acrylic->paints["JeuDeRegard"];
+$paints["BallonsOlympiques"]= $acrylic->paints["BallonsOlympiques"];
 
-
-// Pastels
 
 $column_generator= new ColumnGenerator();
 $column_generator->paints= $paints; // may contain paints that are not in serie
 $column_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
 ?>
-  
 
-  <title><?= Translator::t($serie_key); ?> | Gisele Eisenmann Montagné</title>
+
+  <title><?= Translator::t($serie_key); ?> | Gisèle Eisenmann Montagné</title>
   
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
@@ -65,7 +56,7 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
 
   <link rel="stylesheet" href="./global-style.css">    
   <link rel="stylesheet" href="./serie-style.css">    
-      
+
   <style>
     /* On doit utiliser un des ID qu'on a defini plus haut */
     /* Chaque peinture va s'afficher dans une zone definie plus loin */
@@ -76,17 +67,13 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$column_generator->generate_style("Deflagration", "black");
-$column_generator->generate_style("Distorsion", "black");
-$column_generator->generate_style("Eclosion", "black");
-$column_generator->generate_style("Flamboyance", "black");
-$column_generator->generate_style("Spirale", "white");
-$column_generator->generate_style("ConteMusical", "white");
-$column_generator->generate_style("Mimosa", "black");
-$column_generator->generate_style("Festif", "white");
-
+$column_generator->generate_style("ReveDeTropiques", "white");
+$column_generator->generate_style("IleLoups", "white");
+$column_generator->generate_style("EvocationGourdon", "white");
+$column_generator->generate_style("LesZebres", "white");
+$column_generator->generate_style("JeuDeRegard", "black");
+$column_generator->generate_style("BallonsOlympiques", "white");
     ?>
-
   </style>
   
   <body>
@@ -99,33 +86,35 @@ $column_generator->generate_style("Festif", "white");
       
       <!-- Text Part -->
       <div class="w3-container w3-left-align">
-       <?= Translator::t("IntroAbstrait"); ?>
-      </div>
+        <?= Translator::t("IntroSurrealisme"); ?>
+        </div>
       
        
-      <!-- Paintings -->
-      <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
+       <!-- Paintings -->
+       <div class="w3-grid" style="grid-template-columns:60% 40%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-
-          <?= $column_generator->add_to_column("Distorsion" ); ?>
-          <?= $column_generator->add_to_column("Deflagration" ); ?>
-          <?= $column_generator->add_to_column("Eclosion" ); ?>
-          <?= $column_generator->add_to_column("Flamboyance" ); ?>
-
+		   <?= $column_generator->add_to_column( "ReveDeTropiques" ); ?>
+		   <?= $column_generator->add_to_column( "LesZebres" ); ?>
+		   <?= $column_generator->add_to_column( "EvocationGourdon" ); ?>
         </div>
+		
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		</div>
+		<?= $column_generator->add_to_column( "BallonsOlympiques" ); ?>
+		<?= $column_generator->add_to_column( "JeuDeRegard" ); ?>
+		   <?= $column_generator->add_to_column( "IleLoups" ); ?>
 		
-		<!-- Third column --> 
-        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		</div>
+         </div>
       </div>
-      
+
+
+	</div>
+	  
+	  
       <!-- Footer -->
-      <?php include("../public/copyright.php"); ?>
-      
+    <?php include("../public/copyright.php"); ?>
+    
     </div>
     
   </body>
