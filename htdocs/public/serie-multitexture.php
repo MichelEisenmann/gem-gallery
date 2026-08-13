@@ -22,32 +22,22 @@ $serie_key='multitexture';
 $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 
 // ces dictionnaires sont les dictionnaires standard
-$oil= $ALL_GALLERIES->paint_dictionnaries["oil"];
-$pastel= $ALL_GALLERIES->paint_dictionnaries["pastel"];
 $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
-$sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 
 // On recupere toutes les peintures qu'on veut voir dans cette serie
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
 // Cet ID servira a les designer le moment venu.
 
-// Oils
-
 
 // Acrylic
-$paints["EtangAustral"]= $acrylic->paints["EtangAustral"];
-$paints["Cathedrale"]= $acrylic->paints["Cathedrale"];
-$paints["Poisson"]= $acrylic->paints["Poisson"];
-$paints["Savana"]= $acrylic->paints["Savana"];
+$paints["TroisReveurs"]= $acrylic->paints["TroisReveurs"];
+$paints["Leman"]= $acrylic->paints["Leman"];
+$paints["RencontreAuSommet"]= $acrylic->paints["RencontreAuSommet"];
+$paints["LeverSoleilRouge"]= $acrylic->paints["LeverSoleilRouge"];
 $paints["PurpleSeagull"]= $acrylic->paints["PurpleSeagull"];
 $paints["YellowSunset"]= $acrylic->paints["YellowSunset"];
 $paints["ApresMidiOiseau"]= $acrylic->paints["ApresMidiOiseau"];
 $paints["ApresLaPluie"]= $acrylic->paints["ApresLaPluie"];
-
-
-// Pastels
-
-
 
 
 $column_generator= new ColumnGenerator();
@@ -77,10 +67,10 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$column_generator->generate_style("EtangAustral", "white");
-$column_generator->generate_style("Cathedrale", "black");
-$column_generator->generate_style("Poisson", "white");
-$column_generator->generate_style("Savana", "white");
+$column_generator->generate_style("TroisReveurs", "white");
+$column_generator->generate_style("Leman", "black");
+$column_generator->generate_style("RencontreAuSommet", "white");
+$column_generator->generate_style("LeverSoleilRouge", "white");
 $column_generator->generate_style("PurpleSeagull", "black");
 $column_generator->generate_style("YellowSunset", "black");
 $column_generator->generate_style("ApresMidiOiseau", "white");
@@ -107,35 +97,29 @@ $column_generator->generate_style("ApresLaPluie", "black");
   	  <div class="w3-grid" style="grid-template-columns:100%">
         <!-- single column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "ApresMidiOiseau" ); ?>
+		  <?= $column_generator->add_to_column( "RencontreAuSommet" ); ?>
         </div>
       </div>
 	  
-      <div class="w3-grid" style="grid-template-columns:50% 50%">
+      <div class="w3-grid" style="grid-template-columns:40% 60%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		   <?= $column_generator->add_to_column( "Cathedrale" ); ?>
-		   <?= $column_generator->add_to_column( "Savana" ); ?>
-		   <?= $column_generator->add_to_column( "EtangAustral" ); ?>
+		   <?= $column_generator->add_to_column( "LeverSoleilRouge" ); ?>
+		   <?= $column_generator->add_to_column( "ApresLaPluie" ); ?>
+		   <?= $column_generator->add_to_column( "Leman" ); ?>
+		   <?= $column_generator->add_to_column( "PurpleSeagull" ); ?>
 
         </div>
 		
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		   <?= $column_generator->add_to_column( "PurpleSeagull" ); ?>
-		  <?= $column_generator->add_to_column( "Poisson" ); ?>
-		   <?= $column_generator->add_to_column( "ApresLaPluie" ); ?>
+		   <?= $column_generator->add_to_column( "TroisReveurs" ); ?>
+		  <?= $column_generator->add_to_column( "YellowSunset" ); ?>
+		   <?= $column_generator->add_to_column( "ApresMidiOiseau" ); ?>
          </div>
       </div>
 
-      <div class="w3-grid" style="grid-template-columns:100%">
-        <!-- single column --> 
-        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "YellowSunset" ); ?>
-        </div>
-      </div>
-
-
+ 
      <!-- Footer -->
     <?php include("../public/copyright.php"); ?>
     

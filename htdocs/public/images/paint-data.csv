@@ -58,13 +58,13 @@
 -1,EtangAustral,Acrylique/20251020_EtangAustral_AC25x25.jpg,20251020,25,25,acrylic,,collage
 -1,Cathedrale,Acrylique/20251209_Cathedrale_AC50x65.jpg,20251209,50,65,acrylic,,collage abstrait
 -1,Poisson,Acrylique/20251224_Poisson_AC25x25.jpg,20251224,25,25,acrylic,,collage
--1,LeverSoleilRouge,Acrylique/20251228_LeverSoleilRouge_AC20x20.jpg,20251228,20,20,acrylic,,mixedmedia
+-1,LeverSoleilRouge,Acrylique/20251228_LeverSoleilRouge_AC20x20.jpg,20251228,20,20,acrylic,,multitexture
 -1,Savana,Acrylique/20260115_Savana_AC50x50.jpg,20260115,50,50,acrylic,,collage
--1,PurpleSeagull,Acrylique/20260125_PurpleSeagull_AC73x50.jpg,20260125,73,50,acrylic,,collage
--1,YellowSunset,Acrylique/20260209_YellowSunset_AC40x80.jpg,20260209,40,80,acrylic,,collage
--1,ApresMidiOiseau,Acrylique/20260215_ApresMidiOiseau_AC50x73.jpg,20260215,50,73,acrylic,,collage
--1,ApresLaPluie,Acrylique/20260226_ApresLaPluie_AC46x38.jpg,20260226,46,38,acrylic,,mixedmedia
--1,RencontreAuSommet,Acrylique/20260312_RecontreAuSommet_AC50x73.jpg,20260312,50,73,acrylic,,mixedmedia 
+-1,PurpleSeagull,Acrylique/20260125_PurpleSeagull_AC73x50.jpg,20260125,73,50,acrylic,,collage multitexture
+-1,YellowSunset,Acrylique/20260209_YellowSunset_AC40x80.jpg,20260209,40,80,acrylic,,collage multitexture
+-1,ApresMidiOiseau,Acrylique/20260215_ApresMidiOiseau_AC50x73.jpg,20260215,50,73,acrylic,,collage multitexture
+-1,ApresLaPluie,Acrylique/20260226_ApresLaPluie_AC46x38.jpg,20260226,46,38,acrylic,,multitexture
+-1,RencontreAuSommet,Acrylique/20260312_RecontreAuSommet_AC50x73.jpg,20260312,50,73,acrylic,,multitexture 
 -1,Carnaval,Acrylique/20260407_Carnaval_AC30x40.jpg,20260407,30,40,acrylic,,collage abstrait
 -1,Dryade,Acrylique/20260429_Dryade_AC46x38.jpg,20260429,46,38,acrylic,,collage
 -1,Spirale,Acrylique/20260505_Spirale_AC46x38.jpg,20260505,46,38,acrylic,,collage abstrait
@@ -72,8 +72,8 @@
 -1,ConteMusical,Acrylique/20260602_ConteMusical_AC60x30.jpg,20260602,60,30(x3),acrylic,,composition abstrait
 -1,Mimosa,Acrylique/20260615_Mimosa_AC27x19.jpg,20260615,27,19(x2),acrylic,,composition abstrait
 -1,Festif,Acrylique/20260623_Festif_AC41x27.png,20260623,41,27(x2),acrylic,,composition abstrait
--1,Leman,Acrylique/20260705_Leman_AC50x50.png,20260705,50,50,acrylic,,mixedmedia
--1,TroisReveurs,Acrylique/20260725_TroisReveurs_AC65x46.png,20260725,65,46,acrylic,,mixedmedia
+-1,Leman,Acrylique/20260705_Leman_AC50x50.png,20260705,50,50,acrylic,,multitexture
+-1,TroisReveurs,Acrylique/20260725_TroisReveurs_AC65x46.png,20260725,65,46,acrylic,,multitexture
 -1,AutomneCezanne,Huile/20211229_Automne_FromCezanne.jpg,20211229,80,40,oil,indisponible,emergence
 -1,PascaleMelancolie,Huile/20220222_Melancolie_HU46x55.jpg,20220222,46,55,oil,indisponible,portraits
 -1,EgretYellowSunset,Huile/20220601_EgretYellowSunset-HU90x65.jpg,20220601,90,65,oil,,watermirror

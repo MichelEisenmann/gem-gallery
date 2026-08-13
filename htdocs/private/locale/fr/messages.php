@@ -366,6 +366,12 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	'Festif_Alt' => "Diptyque abstrait Rouge Orangé",
     'Festif_Titre' => "Festif",
     'Festif_Desc' => "Diptyque abstrait",
+	'Leman_Alt' => "Lac Léman sunset",
+    'Leman_Titre' => "Léman",
+    'Leman_Desc' => "Sunset sur le lac Léman - milans",
+	'TroisReveurs_Alt' => "Deux enfants et un chat regardent par la fenêtre",
+    'TroisReveurs_Titre' => "Trois rêveurs",
+    'TroisReveurs_Desc' => "Deux enfants et un chat regardent par la fenêtre",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",

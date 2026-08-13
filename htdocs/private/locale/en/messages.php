@@ -350,6 +350,12 @@ return array(
 	'Festif_Alt' => "Abstract diptych Red and orange",
     'Festif_Titre' => "Festif (Festive)",
     'Festif_Desc' => "Abstract diptych",
+	'Leman_Alt' => "Lac Léman sunset",
+    'Leman_Titre' => "Léman (Lake Geneva)",
+    'Leman_Desc' => "Sunset on Lake Geneva - kites",
+	'TroisReveurs_Alt' => "Two children and a cat look out the window",
+    'TroisReveurs_Titre' => "Three Dreamers",
+    'TroisReveurs_Desc' => "Two children and a cat look out the window",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",
