@@ -22,12 +22,13 @@ return array(
     'watermirror' => "Miroir d'eau",
     'metamorphose' => 'Métamorphose',
     'emergence' => 'Emergence',
-    'oeuvresrecentes' => 'Dernières Oeuvres',
     'couleursetmodele' => 'Symphonie Couleurs et Texture',
+	'paintings' => 'Tableaux',
     'portraits' => 'Portraits',
-    'mixedmedia' => 'Collages',
     'composition' => 'Compositions',
-    'paintings' => 'Tableaux',
+	'mixedmedia' => 'Techniques mixtes',
+	'collage' => 'Collage',
+	'multitexture' => 'Finition multitexturée',
 	
 	// divers
     'copyrightview' => "Voir la dernière à venir exposition",
@@ -92,13 +93,22 @@ return array(
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
      </p>",
 
-    'IntroMixedMedia' => "
+    'IntroCollage' => "
      <h2>Collages</h2><p>
-	Peinture contemporaine	</p>
-    <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
+	Peinture contemporaine</p>
+    <br>Mes oeuvres sont des pieces en deux dimensions constituées d'une base de toile blanche tendue sur un chassis </br>
+    <br>sur laquelle je colle differents matériaux (végétaux, filet, carton, papier, bois...) puis j'ajoute la peinture. </br>	
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
     </p>",		
 
+    'IntroMultiTexture' => "
+     <h2>Finition multi-texturée</h2><p>
+	Peinture contemporaine	</p>
+    <br>Pour créer ces pieces, je commence par modifier la surface de mes toiles en changeant ses caractéristiques comme l'absorption, la texture ou la couleur. </br>
+	Au-dessur de ces nouvelles surfaces, j'applique la peinture acrylique ou autre, éventuellement en renouvelant la procédure sur plusieurs niveaux. </br>	
+	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
+    </p>",		
+	
     'IntroMomentsFem' => "
 	<h2>Moments Féminins</h2><p>
 	Moments Féminins est un hommage à la beauté des femmes dans leur existence au quotidien, de la rêverie 
@@ -142,8 +152,6 @@ return array(
     <p>Quelques tableaux sont disponibles à l'achat.
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",			
-
-    'IntroOeuvresRecentes' => "Oeuvres créées récemment.",	
 
     'Introduction' => '  <p>Gisèle Eisenmann Montagné (nom artiste: GEM) est une artiste autodidacte, travaillant 
 	principalement aujourd’hui avec l’huile et l’acrylique, et occasionnellement avec des pastels secs. 

@@ -27,6 +27,8 @@ $pastel= $ALL_GALLERIES->paint_dictionnaries["pastel"];
 $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
 $sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 
+
+
 // On recupere toutes les peintures qu'on veut voir dans cette serie
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
 // Cet ID servira a les designer le moment venu.
@@ -38,16 +40,18 @@ $paints["Nightclub"]= $oil->paints["Nightclub"];
 $paints["AutomneCezanne"]= $oil->paints["AutomneCezanne"];
 $paints["PascaleMelancolie"]= $oil->paints["PascaleMelancolie"];
 
-
 // Acrylics
 $paints["LectriceChaton"]= $acrylic->paints["LectriceChaton"];
 $paints["LaPiscine"]= $acrylic->paints["LaPiscine"];
 $paints["VaseAbutilons"]= $acrylic->paints["VaseAbutilons"];
+$paints["JeuDeRegard"]= $acrylic->paints["JeuDeRegard"];
+
 
 // Pastels
 $paints["RosesRouges"]= $pastel->paints["RosesRouges"];
 $paints["LeBisou"]= $pastel->paints["LeBisou"];
 $paints["PascaleRenaissance"]= $pastel->paints["PascaleRenaissance"];
+$paints["LaPasserelle"]= $pastel->paints["LaPasserelle"];
 
 
 // Autres
@@ -95,6 +99,8 @@ $column_generator->generate_style("AutomneCezanne", "white");
 $column_generator->generate_style("LeBisou", "white");
 $column_generator->generate_style("PascaleMelancolie", "black");
 $column_generator->generate_style("PascaleRenaissance", "white");
+$column_generator->generate_style("LaPasserelle", "white");
+$column_generator->generate_style("JeuDeRegard", "black");
 
 
     ?>
@@ -127,7 +133,9 @@ $column_generator->generate_style("PascaleRenaissance", "white");
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
           <?= $column_generator->add_to_column( "AirMarin" ); ?>
           <?= $column_generator->add_to_column( "PortraitPascale" ); ?>
+		  <?= $column_generator->add_to_column( "LaPasserelle" ); ?>
           <?= $column_generator->add_to_column( "VaseAbutilons" ); ?>
+		  <?= $column_generator->add_to_column( "JeuDeRegard" ); ?>
 
 
 	  

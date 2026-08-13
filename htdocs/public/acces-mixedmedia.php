@@ -16,7 +16,7 @@
   <?php include ('../private/initialize_galleries.php'); ?>
    
 
-  <title><?= Translator::t('paintings'); ?> | Gisele Eisenmann Montagné</title>
+  <title><?= Translator::t('mixedmedia'); ?> | Gisele Eisenmann Montagné</title>
   
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
@@ -28,7 +28,7 @@
   <style>
     .introcontainer {
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: 50% auto;
     padding: 10px;
     }
     .introcontainer div {
@@ -41,7 +41,7 @@
 
     .accesscontainer {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 50% 50%;
     padding: 10px;
     }
     .accesscontainer div {
@@ -49,7 +49,7 @@
     }
 
     .imagecontainer {
-    height: 200px;
+    height: 400px;
     overflow: hidden;
     }
 
@@ -59,7 +59,8 @@
     object-fit: cover;
     object-position: center;
     }
-    
+
+    /* for mobile */
     @media screen and (max-width: 480px) {
     .accesscontainer {
     display: grid;
@@ -68,6 +69,10 @@
     }
     .accesscontainer div {
     padding: 10px;
+    }
+	.imagecontainer {
+    height: 200px;
+    overflow: hidden;
     }
 
     .for-computer {
@@ -80,7 +85,7 @@
 
     .introcontainer {
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: 50% auto;
     padding: 10px;
     }
     .introcontainer div {
@@ -105,42 +110,30 @@
       <!-- Grille des choix --->
       <div class="accesscontainer">
 
-        <a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-	  <div class="w3-card-4">
+        <a href="<?= Translator::url('/public/serie-collage.php') ?>">
+	  <div class="w3-card-4" >
 	    <div class="imagecontainer">
-	      <img src="/public/images/Huile/20250314_AirMarin_HU50x50_small.jpg" alt="Air Marin" style="width:100%; "  />
+	      <img src="/public/images/Acrylique/20260505_Spirale_AC46x38_small.jpg" alt="Spirale" style="width:100%; "  />
 	    </div>
 	    <div class="w3-container w3-center">
-	      <?= Translator::t("momentsfeminins"); ?>
+	      <?= Translator::t("collage"); ?>
 	    </div>
 	  </div>
 	</a>
-        <a href="<?= Translator::url('/public/serie-watermirror.php') ?>">
+        <a href="<?= Translator::url('/public/serie-multitexture.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
-	      <img src="/public/images/Acrylique/20250504_La piscine-AC50x50_small.jpg" alt="La Piscine" style="width:100%; " />
+	      <img src="/public/images/Acrylique/20251228_LeverSoleilRouge_AC20x20_small.jpg" alt="Lever Soleil Rouge" style="width:100%; " />
 	    </div>
 	    <div class="w3-container w3-center">
-	      <?= Translator::t("watermirror"); ?>
+	      <?= Translator::t("multitexture"); ?>
 	    </div>
 	  </div>
 	</a>
-	
-        <a href="<?= Translator::url('/public/serie-portraits.php') ?>">
-	  <div class="w3-card-4">
-	    <div class="imagecontainer w3-center">
-	    <img src="/public/images/Acrylique/20250421_Lectrice_AC50x50_small.jpg" alt="Conte Musical" style="width:100%; " />
-	    </div>
-	    <div class="w3-container w3-center">
-	      <?= Translator::t("portraits"); ?>
-	    </div>
-	  </div>
-	</a>
-
       </div>
 	  
 	  
-    
+      
 	</div>
  
 

@@ -6,18 +6,19 @@ return array(
 	'Biography' => "Biography",
     'Contact' => "Contact",
 
-    // Series
+    // Series: 
     'Serie' => 'Serie',
     'momentsfeminins' => 'Feminine Moments',
     'watermirror' => 'Water Mirror',
     'metamorphose' => 'Metamorphosis',
 	'emergence' => 'Emergence',
-	'mixedmedia' => 'Gluing Material',
-	'oeuvresrecentes' => 'Latest Artwork',
 	'couleursetmodele' => 'Symphony of colors and texture',
+	'collage' => 'Collage',
+	'multitexture' => 'Multi-textured finish',
+	'paintings' => 'Paintings',
 	'portraits' => 'Portraits',
     'composition' => 'Compositions',
-    'paintings' => 'Paintings',
+	'mixedmedia' => 'Techniques mixtes',
 	
 	//divers
 	'copyrightview' => "View artist's recent exhibition",
@@ -81,12 +82,19 @@ return array(
 	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	  </p>',
 
-    'IntroMixedMedia' => "
-	<h2>Gluing Material</h2><p>
-	Contemporary painting	</p>
-    <p>The exhibition is over, however some paintings are available for purchase.</br>
-    <br>Send an email to contact@giseleeisenmann.com for more information.</br>
-	</p>",		
+    'IntroCollage' => "
+     <h2>Collages</h2><p>
+	Contemporary painting</p>
+    <br>My artworks are two-dimensional pieces made up of a base of white canvas stretched over a stretcher on which I glue different materials (plants, net, cardboard, paper, wood...) and then I add the paint.</br>	
+	<br>Send an email to contact@giseleeisenmann.com for more information.</br>
+    </p>",		
+
+    'IntroMultiTexture' => "
+     <h2>Multitexture finish</h2><p>
+	Contemporary painting</p>
+    <br>To create these pieces, I start by modifying the surface of my canvases by changing its characteristics such as absorption, texture or color. Beyond these new surfaces, I apply acrylic or other paint, possibly renewing the procedure on several levels.</br>	
+	<br>Send an email to contact@giseleeisenmann.com for more information.</br>
+    </p>",		
 	
     'IntroMomentsFem' => '
      <h2>Feminine Moments</h2>
@@ -132,8 +140,7 @@ return array(
     <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",	
 
-    'IntroOeuvresRecentes' => "Artworks created recently.",	
-	
+
 	'Introduction' => '<p>
      Self-taught artist, Gisele Eisenmann Montagne (signing artist name: GEM) is a figurative painter working primarily 
 	 in oils and in acrylics, occasionnaly in soft pastels. A former PhD Scientist and computing engineer, GEM\'s transition

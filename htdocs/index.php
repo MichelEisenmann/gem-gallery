@@ -154,10 +154,10 @@
 	  </div>
 	</a>
 	
-        <a href="<?= Translator::url('/public/serie-mixedmedia.php') ?>">
+        <a href="<?= Translator::url('/public/acces-mixedmedia.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
-	    <img src="/public/images/Acrylique/20230629_LaVague_AC33x41_small.jpg" alt="LaVague" style="width:100%; " />
+	    <img src="/public/images/Acrylique/20251224_Poisson_AC25x25_small.jpg" alt="Poisson" style="width:100%; " />
 	    </div>
 	    <div class="w3-container w3-center">
 	      <?= Translator::t("MixedMedia"); ?>
