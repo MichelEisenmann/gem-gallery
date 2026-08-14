@@ -18,10 +18,16 @@
 
 <?php
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
-$serie_key='atelier';
-// $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
+$serie_key= 'atelier';
+$atelier= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
+
+$paints=[];
+$paints["GEMPeint"]= $atelier->paints["GEMPeint"];
 
 
+$column_generator= new ColumnGenerator();
+$column_generator->paints= $paints; // may contain paints that are not in serie
+$column_generator->serie_dico= $atelier;  // will be used to browse exclusively amongst serie
 ?>
   
 
@@ -44,35 +50,9 @@ $serie_key='atelier';
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
   
     <?php
-$column_generator->generate_style("ConteMusical", "black");
-$column_generator->generate_style("Mimosa", "white");
-$column_generator->generate_style("Festif", "white");
+$column_generator->generate_style_not_a_paint("GEMPeint");
 
     ?>
-
-.gem-MimosaInSitu {
-    width: 90%;}
-
-.gem-MimosaInSitu:hover {
-    opacity: 0.8;
-}
-
-.gem-MimosaInSitu:hover > .gem-hover {
-    color: white;
-    display: block;
-}
-
-.gem-FestifInSitu {
-    width: 90%;}
-
-.gem-FestifInSitu:hover {
-    opacity: 0.8;
-}
-
-.gem-FestifInSitu:hover > .gem-hover {
-    color: white;
-    display: block;
-}
   </style>
   
   <body>
@@ -85,36 +65,19 @@ $column_generator->generate_style("Festif", "white");
       
       <!-- Text Part -->
       <div class="w3-container w3-left-align">
-       <?= Translator::t("IntroComposition"); ?>
+       <?= Translator::t("IntroAtelier"); ?>
       </div>
       
        
-      <!-- Paintings (Grille avec images in-situ)-->	  
+      <!-- Paintings (Grille avec images provenant de la serie atelier)-->	  
 	  
-      <div class="w3-grid" style="grid-template-columns:33% 33% 33%">
+      <div class="w3-grid" style="grid-template-columns:100%">
+
        <!-- First column --> 
        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-	     <?= $column_generator->add_to_column( "ConteMusical" ); ?>
-		 
-		 <div class="w3-display-container w3-padding gem-ConteMusical" >
-            <img src="images/web/conte-musical-blue-coach-unsplash-edited.png" class="gem-ConteMusical" alt="Conte musical">
-        </div>
+	     <?= $column_generator->add_to_column_not_a_paint( "GEMPeint" ); ?>
 		 
        </div>
-       <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-         <?= $column_generator->add_to_column( "Mimosa" ); ?> 
-		 
-		 <div class="w3-display-container w3-padding gem-MimosaInSitu" >
-            <img src="images/web/mimosas-bedroom-2-unsplash-2.png" class="gem-MimosaInSitu" alt="Mimosa">
-		</div>
-       </div>
-       <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		 <?= $column_generator->add_to_column( "Festif" ); ?>
-		 
-		 <div class="w3-display-container w3-padding gem-FestifInSitu" >
-            <img src="images/web/festif-living-room-unsplash.png" class="gem-FestifInSitu" alt="Mimosa">
-		</div>
-      </div>
 		     
       </div>
       

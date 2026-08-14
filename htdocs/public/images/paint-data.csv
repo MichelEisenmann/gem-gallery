@@ -136,8 +136,8 @@
 #  - date is not used but should be set to a valid date, for ex: 20260815
 #  - series can be defined as usual. Suggested values:
 #    . 'insitu' for photos of paints in situ
-#    . 'exhibition' for photos of exhibitions
-#    . 'studio' for photos of GEM environment
+#    . 'expo' for photos of exhibitions
+#    . 'atelier' for photos of GEM environment
 #    . 'other' for all the other photos
 #
 # rank,ID,filename,date,height,width,type,status,series
@@ -158,22 +158,22 @@
 -1,ArtGalleryInSitu1,web/Accueil-art-gallery1.jpg,20260815,0,0,photo,,insitu
 -1,ArtGalleryInSitu2,web/Accueil-art-gallery2.jpg,20260815,0,0,photo,,insitu
 #
-# studio
+# atelier
 #
--1,GEMPeint,web/2024-04-29-GEM-peint.png,20260815,0,0,photo,,studio
+-1,GEMPeint,web/2024-04-29-GEM-peint.png,20260815,0,0,photo,,atelier
 #
 # exhibitions
 #
--1,AfficheGourdon2026,web/Affichette_Expo-Gourdon26_Cadre.jpg,20260815,0,0,photo,,studio
--1,ExpoAirMarinSakuras2025,web/Gourdon25_AirMarinSakuras.jpg,20260815,0,0,photo,,studio
--1,ExpoPelicanPiscine2025,web/Gourdon25_CoinPelicanPiscine.jpg,20260815,0,0,photo,,studio
--1,ExpoAirmarin2025,web/Gourdon25_Gi_AirMarin.jpg,20260815,0,0,photo,,studio
--1,ExpoDanseuses2025,web/Gourdon25_Gi_Danseuses.jpg,20260815,0,0,photo,,studio
--1,ExpoGiMurPierre2025,web/Gourdon25_Gi_MurPierre.jpg,20260815,0,0,photo,,studio
--1,ExpoVueEnsemble2025,web/Gourdon25_VueDEnsemble.jpg,20260815,0,0,photo,,studio
--1,ExpoMurPierre2025,web/Gourdon25_murPierres.jpg,20260815,0,0,photo,,studio
--1,Layout,web/LayoutPrevisionnel.jpg,20260815,0,0,photo,,studio
--1,AfficheSeillans2026,web/Seillans_affiche_2026.jpg,20260815,0,0,photo,,studio
+-1,AfficheGourdon2026,web/Affichette_Expo-Gourdon26_Cadre.jpg,20260815,0,0,photo,,expo
+-1,ExpoAirMarinSakuras2025,web/Gourdon25_AirMarinSakuras.jpg,20260815,0,0,photo,,expo
+-1,ExpoPelicanPiscine2025,web/Gourdon25_CoinPelicanPiscine.jpg,20260815,0,0,photo,,expo
+-1,ExpoAirmarin2025,web/Gourdon25_Gi_AirMarin.jpg,20260815,0,0,photo,,expo
+-1,ExpoDanseuses2025,web/Gourdon25_Gi_Danseuses.jpg,20260815,0,0,photo,,expo
+-1,ExpoGiMurPierre2025,web/Gourdon25_Gi_MurPierre.jpg,20260815,0,0,photo,,expo
+-1,ExpoVueEnsemble2025,web/Gourdon25_VueDEnsemble.jpg,20260815,0,0,photo,,expo
+-1,ExpoMurPierre2025,web/Gourdon25_murPierres.jpg,20260815,0,0,photo,,expo
+-1,Layout,web/LayoutPrevisionnel.jpg,20260815,0,0,photo,,expo
+-1,AfficheSeillans2026,web/Seillans_affiche_2026.jpg,20260815,0,0,photo,,expo
 #
 # other
 #

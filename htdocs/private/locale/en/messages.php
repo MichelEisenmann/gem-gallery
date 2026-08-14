@@ -66,6 +66,13 @@ return array(
 	</p>",
 
 
+    'IntroAtelier' => '
+     <h2>Studio</h2>
+	 <p>Those photos show GEM painting in her studio....
+	 </p> 
+	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
+	 ',
+
     'IntroPortraits' => '
      <h2>Portraits</h2>
 	 <p>The portraits are ....

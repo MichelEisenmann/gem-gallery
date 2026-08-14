@@ -17,10 +17,6 @@
   <?php include ('../private/column_generator.php'); ?>
 
 <?php
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
 $serie_key='composition';
 $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
@@ -75,9 +71,9 @@ $column_generator->generate_style("ConteMusical", "black");
 $column_generator->generate_style("Mimosa", "white");
 $column_generator->generate_style("Festif", "white");
 
-$column_generator->generate_style("ConteMusicalInSitu", "black");
-$column_generator->generate_style("MimosasInSitu", "white");
-$column_generator->generate_style("FestifInSitu", "white");
+$column_generator->generate_style_not_a_paint("ConteMusicalInSitu");
+$column_generator->generate_style_not_a_paint("MimosasInSitu");
+$column_generator->generate_style_not_a_paint("FestifInSitu");
 
     ?>
 
@@ -111,19 +107,19 @@ $column_generator->generate_style("FestifInSitu", "white");
        <!-- First column --> 
        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 	 <?= $column_generator->add_to_column( "ConteMusical" ); ?>
-	 <?= $column_generator->add_to_column( "ConteMusicalInSitu" ); ?>
+	 <?= $column_generator->add_to_column_not_a_paint( "ConteMusicalInSitu" ); ?>
 		 
        </div>
 
        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
          <?= $column_generator->add_to_column( "Mimosa" ); ?> 
-         <?= $column_generator->add_to_column( "MimosasInSitu" ); ?> 
+         <?= $column_generator->add_to_column_not_a_paint( "MimosasInSitu" ); ?> 
 		 
        </div>
 
        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 	 <?= $column_generator->add_to_column( "Festif" ); ?>
-	 <?= $column_generator->add_to_column( "FestifInSitu" ); ?>
+	 <?= $column_generator->add_to_column_not_a_paint( "FestifInSitu" ); ?>
 
       </div>
 		     
