@@ -18,7 +18,9 @@
 #,,,,,,,,
 "# Pour ne pas afficher un tableau, il suffit de commenter la ligne correspondante",,,,,,,,
 #,,,,,,,,
+#
 # rank,ID,filename,date,height,width,type,status,series
+#
 #-1,MatinDonazacOlen,Acrylique/20210624_Lever soleil sur Donazac.jpg,20210610,28,38,acrylic,,emergence
 -1,GuillaumePense,Acrylique/20210722_GuillaumePensePiscine_AC20x20.jpg,20210710,20,20,acrylic,indisponible,portrait
 -1,TroueeBois,Acrylique/20210801_OlenLaTroueeDonazac_AC33x24.jpg,20210810,33,24,acrylic,indisponible,emergence
@@ -126,3 +128,60 @@
 -1,SanguinePascale,Autres/20200920_SanguinePascaleGuillaume.jpg,20200920,12,18,sanguine,indisponible,momentsfeminins
 #-1,LoupCorbeauxNeige,Autres/20201220_Loup et Corbeaux.jpg,20201220,18,24,encrechine,,emergence
 -1,LesMouettesPlage,Autres/20230202_LesMouettes_AQ40x30.jpg,20230202,40,30,aquarelle,,watermirror
+#
+# Records below are NOT paints. They are used in the web pages for example to display in-situ photos.
+# All the files are usually in the web folder.
+#  - Height and width are not used but should be set to some value, for ex: 0,0
+#  - type should be set to 'photo'
+#  - date is not used but should be set to a valid date, for ex: 20260815
+#  - series can be defined as usual. Suggested values:
+#    . 'insitu' for photos of paints in situ
+#    . 'exhibition' for photos of exhibitions
+#    . 'studio' for photos of GEM environment
+#    . 'other' for all the other photos
+#
+# rank,ID,filename,date,height,width,type,status,series
+#
+#  insitu
+#
+-1,LaTroueeInSitu,web/20241214_LaTrouee-InSitu.jpg,20260815,0,0,photo,,insitu
+-1,SpiraleInSitu,web/Spirale_InSitu.png,20260815,0,0,photo,,insitu
+-1,AirMarinInSitu,web/air-marin-night-club-living-room-unsplash.png,20260815,0,0,photo,,insitu
+-1,DanseusesInSitu,web/danseuses-bedroom-unsplash.png,20260815,0,0,photo,,insitu
+-1,FestifInSitu,web/festif-living-room-unsplash.png,20260815,0,0,photo,,insitu
+-1,ClairDeSoleilInSitu,web/clair-de-soleil-salon-fauteuil-unsplash.png,20260815,0,0,photo,,insitu
+-1,ConteMusicalInSitu,web/conte-musical-blue-coach-unsplash-edited.png,20260815,0,0,photo,,insitu
+-1,ContemplationAigretteInSitu,web/contemplation-aigrette-salon-coach-2-unsplash.png,20260815,0,0,photo,,insitu
+-1,CreoleInSitu,web/canvy_creole-rencontre.jpg,20260815,0,0,photo,,insitu
+-1,MimosasInSitu,web/mimosas-bedroom-2-unsplash-2.png,20260815,0,0,photo,,insitu
+-1,ConteMusicalInSitu,web/Decor_ConteMusical-V2.jpg,20260815,0,0,photo,,insitu
+-1,ArtGalleryInSitu1,web/Accueil-art-gallery1.jpg,20260815,0,0,photo,,insitu
+-1,ArtGalleryInSitu2,web/Accueil-art-gallery2.jpg,20260815,0,0,photo,,insitu
+#
+# studio
+#
+-1,GEMPeint,web/2024-04-29-GEM-peint.png,20260815,0,0,photo,,studio
+#
+# exhibitions
+#
+-1,AfficheGourdon2026,web/Affichette_Expo-Gourdon26_Cadre.jpg,20260815,0,0,photo,,studio
+-1,ExpoAirMarinSakuras2025,web/Gourdon25_AirMarinSakuras.jpg,20260815,0,0,photo,,studio
+-1,ExpoPelicanPiscine2025,web/Gourdon25_CoinPelicanPiscine.jpg,20260815,0,0,photo,,studio
+-1,ExpoAirmarin2025,web/Gourdon25_Gi_AirMarin.jpg,20260815,0,0,photo,,studio
+-1,ExpoDanseuses2025,web/Gourdon25_Gi_Danseuses.jpg,20260815,0,0,photo,,studio
+-1,ExpoGiMurPierre2025,web/Gourdon25_Gi_MurPierre.jpg,20260815,0,0,photo,,studio
+-1,ExpoVueEnsemble2025,web/Gourdon25_VueDEnsemble.jpg,20260815,0,0,photo,,studio
+-1,ExpoMurPierre2025,web/Gourdon25_murPierres.jpg,20260815,0,0,photo,,studio
+-1,Layout,web/LayoutPrevisionnel.jpg,20260815,0,0,photo,,studio
+-1,AfficheSeillans2026,web/Seillans_affiche_2026.jpg,20260815,0,0,photo,,studio
+#
+# other
+#
+-1,GEMAcceuil,web/20260730_GEM_Accueil.png,20260815,0,0,photo,,other
+-1,Signa,web/Signa.jpg,20260815,0,0,photo,,other
+-1,SignaExpo,web/Signa_expo.jpg,20260815,0,0,photo,,other
+-1,SignaExpo2,web/Signa_expo_2.jpg,20260815,0,0,photo,,other
+-1,SignaSmall,web/Signa_small.jpg,20260815,0,0,photo,,other
+-1,ArtMajeur,web/artmajeur-com.png,20260815,0,0,photo,,other
+-1,GEM,web/gem.png,20260815,0,0,photo,,other
+-1,Gisele,web/gisele.jpg,20260815,0,0,photo,,other
