@@ -6,18 +6,20 @@ return array(
 	'Biography' => "Biography",
     'Contact' => "Contact",
 
-    // Series
+    // Series: 
     'Serie' => 'Serie',
     'momentsfeminins' => 'Feminine Moments',
     'watermirror' => 'Water Mirror',
     'metamorphose' => 'Metamorphosis',
-	'emergence' => 'Emergence',
-	'mixedmedia' => 'Gluing Material',
-	'oeuvresrecentes' => 'Latest Artwork',
 	'couleursetmodele' => 'Symphony of colors and texture',
-	'portraits' => 'Portraits',
+	'figuratif' => 'Figurative',
+	'portrait' => 'Portraits',
+	'surrealisme' => 'Surrealism',
     'composition' => 'Compositions',
-    'paintings' => 'Paintings',
+	'mixedmedia' => 'Techniques mixtes',
+	'multitexture' => 'Multi-textured finish',
+	'collage' => 'Collage',
+
 	
 	//divers
 	'copyrightview' => "View artist's recent exhibition",
@@ -32,10 +34,10 @@ return array(
 	'Accueil_CreationsDefinition1' => "My creations are characterized by figurative shapes, with saturated colors and soft lines.",
 	'Accueil_CreationsDefinition2' => "I often add a touch of surrealism, summoning dreams, humour and life. Visit my imaginary world.",
 
-    'Tableaux' => "Paintings",
+    'Figuratif' => "Landscape and Nature",
     'Compositions' => "Compositions",
     'MixedMedia' => "Mixed Media",
-    'Abstrait' => "Abstract",
+    'Abstraits' => "Abstract",
     'Atelier' => "Studio",
     'Expositions' => "Exhibitions",
 	
@@ -67,10 +69,15 @@ return array(
 
     'IntroAbstrait' => '
      <h2>Abstrait</h2>
-	 <p>The abstract paintings are ....
-	 </p> 
-     <p>This exhibition is closed but some paintings are still available for purchase.</br>
-	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
+	 <br>This series plays on surprise and intrigue at the same time, mixing surrealism with purely abstract pieces. </br>
+	 <br>It is created with different approaches: acrylic painting with a knife, work on textures, material effects...
+	 </br> 
+ 	 ',
+	 
+	 'IntroSurrealisme' => "
+     <h2>Surréalism</h2>
+	 <p> This series plays on surprise, sometimes with humor, by presenting compositions of unexpected objects or beings
+confusing perspectives, resulting in surrealist works.
 	  </p>',
 
     'IntroComposition' => '
@@ -81,12 +88,19 @@ return array(
 	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	  </p>',
 
-    'IntroMixedMedia' => "
-	<h2>Gluing Material</h2><p>
-	Contemporary painting	</p>
-    <p>The exhibition is over, however some paintings are available for purchase.</br>
-    <br>Send an email to contact@giseleeisenmann.com for more information.</br>
-	</p>",		
+    'IntroCollage' => '
+     <h2>Collages</h2><p>
+	Contemporary painting</p>
+    <br>My artworks are two-dimensional pieces made up of a base of white canvas stretched over a stretcher on which I glue different materials (plants, net, cardboard, paper, wood...) and then I add the paint.</br>	
+	<br>Send an email to contact@giseleeisenmann.com for more information.</br>
+    </p>",		
+
+    'IntroMultiTexture' => "
+     <h2>Multitexture finish</h2><p>
+	Contemporary painting</p>
+    <br>To create these pieces, I start by modifying the surface of my canvases by changing its characteristics such as absorption, texture or color. Beyond these new surfaces, I apply acrylic or other paint, possibly renewing the procedure on several levels.</br>	
+	<br>Send an email to contact@giseleeisenmann.com for more information.</br>
+    </p>",		
 	
     'IntroMomentsFem' => '
      <h2>Feminine Moments</h2>
@@ -116,15 +130,7 @@ return array(
     <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",
 
-    'IntroEmergence' => "
-	<h2>Emergence</h2><p>
-	Emergence presents the works of a new beginning, a new path, some new skills to acquire after 
-	the end of my career in computer science. No common thread; a simple sharing of emotions in the course of 
-	an encounter with a new reality.</p>
-    <p>The exhibition is over, however some paintings are available for purchase.</br>
-    <br>Send an email to contact@giseleeisenmann.com for more information.</br>
-	</p>",	
-	
+
 	'IntroCouleursEtModele' => "
 	<h2>Symphony of colors and texture</h2><p>
 	Shimmering colors and rendering of relief and shapes with paint and material.</p>
@@ -132,8 +138,7 @@ return array(
     <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",	
 
-    'IntroOeuvresRecentes' => "Artworks created recently.",	
-	
+
 	'Introduction' => '<p>
      Self-taught artist, Gisele Eisenmann Montagne (signing artist name: GEM) is a figurative painter working primarily 
 	 in oils and in acrylics, occasionnaly in soft pastels. A former PhD Scientist and computing engineer, GEM\'s transition
@@ -342,6 +347,12 @@ return array(
 	'Festif_Alt' => "Abstract diptych Red and orange",
     'Festif_Titre' => "Festif (Festive)",
     'Festif_Desc' => "Abstract diptych",
+	'Leman_Alt' => "Lac Léman sunset",
+    'Leman_Titre' => "Léman (Lake Geneva)",
+    'Leman_Desc' => "Sunset on Lake Geneva - kites",
+	'TroisReveurs_Alt' => "Two children and a cat look out the window",
+    'TroisReveurs_Titre' => "Three Dreamers",
+    'TroisReveurs_Desc' => "Two children and a cat look out the window",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",
@@ -424,80 +435,80 @@ return array(
     'GuillaumeAngelot_Alt' => "Angelot",
     'GuillaumeAngelot_Titre' => "Angelot",
     'GuillaumeAngelot_Desc' => "",
-    'BebeEpanoui_Alt' => "Bebe Epanoui",
-    'BebeEpanoui_Titre' => "Bebe Epanoui",
+    'BebeEpanoui_Alt' => "Blossoming baby",
+    'BebeEpanoui_Titre' => "Blossoming baby",
     'BebeEpanoui_Desc' => "",
-    'PremiersPas_Alt' => "Premiers pas",
-    'PremiersPas_Titre' => "Premiers pas",
+    'PremiersPas_Alt' => "First steps",
+    'PremiersPas_Titre' => "First steps",
     'PremiersPas_Desc' => "",
-    'LucProfilVert_Alt' => "Profil",
-    'LucProfilVert_Titre' => "Profil",
+    'LucProfilVert_Alt' => "Luc Profile",
+    'LucProfilVert_Titre' => "Profile",
     'LucProfilVert_Desc' => "",
-    'PascaleRenaissance_Alt' => "Dans le vent",
-    'PascaleRenaissance_Titre' => "Dans le vent",
+    'PascaleRenaissance_Alt' => "In the wind",
+    'PascaleRenaissance_Titre' => "In the wind",
     'PascaleRenaissance_Desc' => "",
-    'LeBisou_Alt' => "Le bisou",
-    'LeBisou_Titre' => "Le bisou",
+    'LeBisou_Alt' => "the kiss",
+    'LeBisou_Titre' => "the kiss",
     'LeBisou_Desc' => "",
-    'LucClairDeLune_Alt' => "Clair de Lune",
-    'LucClairDeLune_Titre' => "Clair de Lune",
+    'LucClairDeLune_Alt' => "Moonlight",
+    'LucClairDeLune_Titre' => "Moonlight",
     'LucClairDeLune_Desc' => "",
-    'FiancaillesAUS_Alt' => "Fiançailles",
-    'FiancaillesAUS_Titre' => "Fiançailles",
-    'FiancaillesAUS_Desc' => "Pastel - Fiançailles (collection privée Brisbane, AUS)",
-    'LesFiancesFR_Alt' => "Fiançailles du soir",
-    'LesFiancesFR_Titre' => "Fiançailles du soir",
+    'FiancaillesAUS_Alt' => "Engagement",
+    'FiancaillesAUS_Titre' => "Engagement",
+    'FiancaillesAUS_Desc' => "Soft Pastel - Engagement",
+    'LesFiancesFR_Alt' => "Evening engagement",
+    'LesFiancesFR_Titre' => "Evening engagement",
     'LesFiancesFR_Desc' => "",
-    'GiseleLaServante_Alt' => "La servante",
-    'GiseleLaServante_Titre' => "La servante",
-    'GiseleLaServante_Desc' => "La servante au tableau",
+    'GiseleLaServante_Alt' => "The Maid",
+    'GiseleLaServante_Titre' => "The Maid",
+    'GiseleLaServante_Desc' => "The maid holding a painting",
     'Generations_Alt' => "Generations",
     'Generations_Titre' => "Generations",
-    'Generations_Desc' => "Generations Petite-fille Grand-mère",
-    'OlenMargueriteEntraunes_Alt' => "Printemps à Entraunes",
-    'OlenMargueriteEntraunes_Titre' => "Printemps à Entraunes",
+    'Generations_Desc' => "Generations Granddaughter Grandmother",
+    'OlenMargueriteEntraunes_Alt' => "Spring in Entraunes (06 FR)",
+    'OlenMargueriteEntraunes_Titre' => "Spring in Entraunes (06 FR)",
     'OlenMargueriteEntraunes_Desc' => "",
-    'AlleePlatanes_Alt' => "Allée de platanes",
-    'AlleePlatanes_Titre' => "Allée de platanes",
-    'AlleePlatanes_Desc' => "Le long du canal du Midi - Aude, FR - (collection privée, USA)",
-    'MichelPolynesie_Alt' => "Torride",
-    'MichelPolynesie_Titre' => "Torride",
-    'MichelPolynesie_Desc' => "Pastel- Au soleil de Polynesie",
-    'LaBragueTamarin_Alt' => "La Brague",
-    'LaBragueTamarin_Titre' => "La Brague",
-    'LaBragueTamarin_Desc' => "Pastel- La Brague près du pont des Tamarins (Biot, 06)",
-    'BebeSourit_Alt' => "Bébé sourit",
-    'BebeSourit_Titre' => "Bébé sourit",
-    'BebeSourit_Desc' => "Pastel- Corentin 2 mois",
-    'TendresseChat_Alt' => "Tendresse",
-    'TendresseChat_Titre' => "Tendresse",
-    'TendresseChat_Desc' => " Corentin, son père et leur chat",
-    'OlenSiagneDoree_Alt' => "Bord de Siagne",
-    'OlenSiagneDoree_Titre' => "Bord de Siagne",
-    'OlenSiagneDoree_Desc' => " Bord de rivière. Le chien Olen",
-    'CorentinLaRose_Alt' => "Bébé et la rose",
-    'CorentinLaRose_Titre' => "Bébé et la rose",
-    'CorentinLaRose_Desc' => " Corentin 7mois. Pastels secs et sanguine",
+    'AlleePlatanes_Alt' => "Plane tree alley",
+    'AlleePlatanes_Titre' => "Plane tree alley",
+    'AlleePlatanes_Desc' => "Along the Canal du Midi - Aude, FR",
+    'MichelPolynesie_Alt' => "Steamy",
+    'MichelPolynesie_Titre' => "Torride (Steamy)",
+    'MichelPolynesie_Desc' => "Soft Pastel- In the sun of Polynesia",
+    'LaBragueTamarin_Alt' => "La Brague river",
+    'LaBragueTamarin_Titre' => "La Brague river",
+    'LaBragueTamarin_Desc' => "The Brague near the Tamarins bridge (Biot, 06)",
+    'BebeSourit_Alt' => "baby smiles",
+    'BebeSourit_Titre' => "baby smiles",
+    'BebeSourit_Desc' => "Pastel- 2 months-old Corentin ",
+    'TendresseChat_Alt' => "Tenderness",
+    'TendresseChat_Titre' => "Tenderness",
+    'TendresseChat_Desc' => " Corentin, his father and their cat",
+    'OlenSiagneDoree_Alt' => "Siagne river",
+    'OlenSiagneDoree_Titre' => "Siagne river",
+    'OlenSiagneDoree_Desc' => " Riverside. The dog Olen",
+    'CorentinLaRose_Alt' => "Baby and the Rose",
+    'CorentinLaRose_Titre' => "Bébé et la rose (Baby and the Rose)",
+    'CorentinLaRose_Desc' => " 7 months-old Corentin . Soft and sanguine pastels",
     'BrisbaneNorthBank_Alt' => "Brisbane North Bank",
     'BrisbaneNorthBank_Titre' => "Brisbane North Bank",
-    'BrisbaneNorthBank_Desc' => "Rivière Brisbane, NSW, Australie",
-    'RosesRouges_Alt' => "Roses Rouges",
-    'RosesRouges_Titre' => "Roses Rouges",
-    'RosesRouges_Desc' => "Rosier de Gourdon (06)",
-    'FleurNenuphar_Alt' => "Fleur de Nénuphar",
-    'FleurNenuphar_Titre' => "Fleur de Nénuphar",
+    'BrisbaneNorthBank_Desc' => "Brisbane River, NSW, Australie",
+    'RosesRouges_Alt' => "Red Roses",
+    'RosesRouges_Titre' => "Roses Rouges (Red Roses)",
+    'RosesRouges_Desc' => "Rose bush Gourdon (06)",
+    'FleurNenuphar_Alt' => "Water Lily Flower",
+    'FleurNenuphar_Titre' => "Fleur de Nénuphar (Water Lily Flower)",
     'FleurNenuphar_Desc' => "",
-    'GourdonEglise_Alt' => "Gourdon, l’église",
-    'GourdonEglise_Titre' => "Gourdon, l’église",
+    'GourdonEglise_Alt' => "Gourdon, the church",
+    'GourdonEglise_Titre' => "Gourdon, the church",
     'GourdonEglise_Desc' => "",
 	'LaPasserelle_Alt' => "Footbridge A child runs to his mother",
     'LaPasserelle_Titre' => "La Passerelle (Footbridge)",
     'LaPasserelle_Desc' => "A child runs to his mother",
 
     // Sanguine
-    'SanguinePascale_Alt' => "Mere et enfant",
-    'SanguinePascale_Titre' => "Mere et enfant",
-    'SanguinePascale_Desc' => "Sanguine- Mere et enfant",
+    'SanguinePascale_Alt' => "Mother and child",
+    'SanguinePascale_Titre' => "Mother and child",
+    'SanguinePascale_Desc' => "Sanguine- Mother and child",
 
     // Encre chine
     'LoupCorbeauxNeige_Alt' => "Loup et Corbeaux",
@@ -505,9 +516,9 @@ return array(
     'LoupCorbeauxNeige_Desc' => "Encre de chine - Loups et corbeaux",
 
     // Aquarelle
-    'LesMouettesPlage_Alt' => "Les mouettes",
-    'LesMouettesPlage_Titre' => "Les mouettes",
-    'LesMouettesPlage_Desc' => "Aquarelle - Les mouettes",
+    'LesMouettesPlage_Alt' => "Seagulls",
+    'LesMouettesPlage_Titre' => "Les mouettes (Seagulls)",
+    'LesMouettesPlage_Desc' => "watercolor - Seagulls",
     
 	// Tableau caracteristiques
 	'oil' => 'Oil on canvas',

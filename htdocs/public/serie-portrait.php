@@ -18,7 +18,7 @@
 
 <?php
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
-$serie_key='portraits';
+$serie_key='portrait';
 $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 
 // ces dictionnaires sont les dictionnaires standard
@@ -31,23 +31,20 @@ $sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
 // Cet ID servira a les designer le moment venu.
 // Oils
-
-
-
-$paints["LesDanseusesNoires"]= $oil->paints["LesDanseusesNoires"];
+$paints["PascaleMelancolie"]= $oil->paints["PascaleMelancolie"];
+$paints["PortraitPascale"]= $oil->paints["PortraitPascale"];
+$paints["ChapeauOrange"]= $oil->paints["ChapeauOrange"];
 
 // Acrylics
-$paints["JeuDeRegard"]= $acrylic->paints["JeuDeRegard"];
-$paints["GuillaumePense"]= $acrylic->paints["GuillaumePense"];
 $paints["Aviateur"]= $acrylic->paints["Aviateur"];
 $paints["PortraitGuillaumeTetine"]= $acrylic->paints["PortraitGuillaumeTetine"];
 $paints["Royal"]= $acrylic->paints["Royal"];
+$paints["GuillaumePense"]= $acrylic->paints["GuillaumePense"];
+$paints["EnfantParait"]= $acrylic->paints["EnfantParait"];
 
-// Oil
-$paints["PascaleMelancolie"]= $oil->paints["PascaleMelancolie"];
-$paints["ChapeauOrange"]= $oil->paints["ChapeauOrange"];
 
-// Pastels
+// Pastels et Autres
+$paints["LeLievre"]= $pastel->paints["LeLievre"];
 $paints["Calin"]= $pastel->paints["Calin"];
 $paints["PremiersPas"]= $pastel->paints["PremiersPas"];
 $paints["PascaleRenaissance"]= $pastel->paints["PascaleRenaissance"];
@@ -56,12 +53,15 @@ $paints["MichelPolynesie"]= $pastel->paints["MichelPolynesie"];
 $paints["BebeSourit"]= $pastel->paints["BebeSourit"];
 $paints["TendresseChat"]= $pastel->paints["TendresseChat"];
 $paints["CorentinLaRose"]= $pastel->paints["CorentinLaRose"];
+$paints["Generations"]= $pastel->paints["Generations"];
+$paints["GiseleLaServante"]= $pastel->paints["GiseleLaServante"];
 
 
 $column_generator= new ColumnGenerator();
 $column_generator->paints= $paints; // may contain paints that are not in serie
 $column_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
 ?>
+
 
   
 
@@ -80,15 +80,19 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     /* Cette zone va "clipper" la peinture */
     /* La partie visible de la peinture est definie par les deux valeurs */
     /* Elles definissent quel point de la peinture sera affiche au centre de la zone */
-    /* Par ex: 50, 50 veut dire que le milieu de la peinture (50%, 50%) est au centre de la zone */
+    /* Par ex: 50, 50 veut dire que le milieu de la peinture (W 50%, H 50%) est au centre de la zone */
+	/* 0 est en haut à gauche. H 100 clippera plus vers le bas de la peinture */
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$column_generator->generate_style("GuillaumePense", "white");
-$column_generator->generate_style("Aviateur", "white");
-$column_generator->generate_style("PortraitGuillaumeTetine", "white");
+
 $column_generator->generate_style("Royal", "white");
-$column_generator->generate_style("PascaleMelancolie", "white");
+$column_generator->generate_style("PortraitPascale", "black");
+$column_generator->generate_style("LeLievre", "noir");
+$column_generator->generate_style("Aviateur", "white");
+$column_generator->generate_style("GuillaumePense", "white");
+$column_generator->generate_style("PortraitGuillaumeTetine", "black");
+$column_generator->generate_style("PascaleMelancolie","black");
 $column_generator->generate_style("ChapeauOrange", "white");
 $column_generator->generate_style("Calin", "white");
 $column_generator->generate_style("PremiersPas", "white");
@@ -98,7 +102,9 @@ $column_generator->generate_style("MichelPolynesie", "white");
 $column_generator->generate_style("BebeSourit", "white");
 $column_generator->generate_style("TendresseChat", "white");
 $column_generator->generate_style("CorentinLaRose", "white");
-
+$column_generator->generate_style("EnfantParait", "white");
+$column_generator->generate_style("Generations", "white");
+$column_generator->generate_style("GiseleLaServante", "white");
 
 
     ?>
@@ -115,33 +121,42 @@ $column_generator->generate_style("CorentinLaRose", "white");
       <!-- Text Part -->
       <div class="w3-container w3-left-align">
         <?= Translator::t("IntroPortraits"); ?>
-      </div>
-
-     <!-- Paintings -->
-
-      <div class="w3-grid" style="grid-template-columns:50% 50%">
+        </div>
+      
+      
+      <!-- Paintings -->
+      <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "GuillaumePense" ); ?>
-          <?= $column_generator->add_to_column( "Aviateur" ); ?>
-          <?= $column_generator->add_to_column( "PortraitGuillaumeTetine" ); ?>
-          <?= $column_generator->add_to_column( "Royal" ); ?>
-          <?= $column_generator->add_to_column( "PascaleMelancolie" ); ?>
-          <?= $column_generator->add_to_column( "ChapeauOrange" ); ?>
-
-        </div>
-		
-		
-        <!-- Second column --> 
-        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "Calin" ); ?>
+		  <?= $column_generator->add_to_column( "ChapeauOrange" ); ?>
+		  <?= $column_generator->add_to_column( "Calin" ); ?>
           <?= $column_generator->add_to_column( "PremiersPas" ); ?>
           <?= $column_generator->add_to_column( "PascaleRenaissance" ); ?>
           <?= $column_generator->add_to_column( "LesFiancesFR" ); ?>
-          <?= $column_generator->add_to_column( "MichelPolynesie" ); ?>
-          <?= $column_generator->add_to_column( "BebeSourit" ); ?>
-          <?= $column_generator->add_to_column( "TendresseChat" ); ?>
+          <?= $column_generator->add_to_column( "EnfantParait" ); ?>
+		  <?= $column_generator->add_to_column( "Generations" ); ?>
+
+ 
+        </div>
+        <!-- Second column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+          <?= $column_generator->add_to_column( "PortraitPascale" ); ?>
+		  <?= $column_generator->add_to_column( "MichelPolynesie" ); ?>
+		  <?= $column_generator->add_to_column( "PortraitGuillaumeTetine" ); ?>
+		  <?= $column_generator->add_to_column( "BebeSourit" ); ?>
+		  <?= $column_generator->add_to_column( "GiseleLaServante" ); ?>
+
+        </div>
+        <!-- Third column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		  <?= $column_generator->add_to_column( "Aviateur" ); ?>
+		  <?= $column_generator->add_to_column( "TendresseChat" ); ?>
           <?= $column_generator->add_to_column( "CorentinLaRose" ); ?>
+          <?= $column_generator->add_to_column( "PascaleMelancolie" ); ?>
+          <?= $column_generator->add_to_column( "GuillaumePense" ); ?>
+		  <?= $column_generator->add_to_column( "Royal" ); ?>
+		  <?= $column_generator->add_to_column( "LeLievre" ); ?>
+
 
         </div>
       </div>

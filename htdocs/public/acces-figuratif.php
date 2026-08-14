@@ -16,7 +16,7 @@
   <?php include ('../private/initialize_galleries.php'); ?>
    
 
-  <title><?= Translator::t('paintings'); ?> | Gisele Eisenmann Montagné</title>
+  <title><?= Translator::t('figuratif'); ?> | Gisele Eisenmann Montagné</title>
   
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
@@ -28,7 +28,8 @@
   <style>
     .introcontainer {
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: auto auto;
+	grid-row-start:2;
     padding: 10px;
     }
     .introcontainer div {
@@ -41,7 +42,8 @@
 
     .accesscontainer {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: auto auto;
+	grid-row-start:2;
     padding: 10px;
     }
     .accesscontainer div {
@@ -63,7 +65,8 @@
     @media screen and (max-width: 480px) {
     .accesscontainer {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
+	grid-template-rows: 50% 50%;
     padding: 10px;
     }
     .accesscontainer div {
@@ -80,7 +83,8 @@
 
     .introcontainer {
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: auto auto;
+	grid-template-rows: 50% 50%;
     padding: 10px;
     }
     .introcontainer div {
@@ -99,37 +103,7 @@
     <!-- Page Content -->
     <div class="w3-container w3-animate-opacity gem-animate gem-index-fixed-width">
 	
-      <!--- Intro Photo et contenu oeuvres ---->
-      <div class="for-computer">
-	<div class="introcontainer">
-	  <div>
-	    <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:70%"/>
-	  </div>
-	  <div class="">
-            <?= Translator::t("AccueilArtisteIntro"); ?>
-	    <?= Translator::t("Accueil_CreationsDefinition0"); ?>
-	    <?= Translator::t("Accueil_CreationsDefinition1"); ?>
-	    <?= Translator::t("Accueil_CreationsDefinition2"); ?>
-	  </div>
-	</div>
-      </div>
 
-      <div class="for-mobile">
-	<div class="introcontainer">
-	  <div>
-	    <img src="/public/images/web/20260730_GEM_Accueil.png" class="w3-circle" alt="GEM Photo" style="width:70%"/>
-	  </div>
-	  <div class="">
-            <?= Translator::t("AccueilArtisteIntro"); ?>
-	  </div>
-	</div>
-	
-	<div class="">
-	  <?= Translator::t("Accueil_CreationsDefinition0"); ?>
-	  <?= Translator::t("Accueil_CreationsDefinition1"); ?>
-	  <?= Translator::t("Accueil_CreationsDefinition2"); ?>
-	</div>
-      </div>
 
       
       <!-- Grille des choix --->
@@ -145,6 +119,7 @@
 	    </div>
 	  </div>
 	</a>
+	
         <a href="<?= Translator::url('/public/serie-watermirror.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
@@ -156,20 +131,32 @@
 	  </div>
 	</a>
 	
-        <a href="<?= Translator::url('/public/serie-portraits.php') ?>">
+        <a href="<?= Translator::url('/public/serie-portrait.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
-	    <img src="/public/images/Acrylique/20250421_Lectrice_AC50x50_small.jpg" alt="Conte Musical" style="width:100%; " />
+	    <img src="/public/images/Acrylique/20211019_PortraitGuillaumeTetine_AC33x24_small.jpg" alt="Guillaume Tetine" style="width:100%; " />
 	    </div>
 	    <div class="w3-container w3-center">
-	      <?= Translator::t("portraits"); ?>
+	      <?= Translator::t("portrait"); ?>
+	    </div>
+	  </div>
+	</a>
+
+       <a href="<?= Translator::url('/public/serie-surrealisme.php') ?>">
+	  <div class="w3-card-4">
+	    <div class="imagecontainer w3-center">
+	    <img src="/public/images/Acrylique/20220821_Regards_small.jpg" alt="Jeu de regards" style="width:100%; " />
+	    </div>
+	    <div class="w3-container w3-center">
+	      <?= Translator::t("surrealisme"); ?>
 	    </div>
 	  </div>
 	</a>
 	
-
       </div>
-      
+	  
+	  
+    
 	</div>
  
 

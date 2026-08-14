@@ -18,36 +18,28 @@
 
 <?php
 // ce dictionnaire servira lorsqu'on voudra parcourir la serie sur la page qui montre les peintures une par une
-$serie_key='oeuvresrecentes';
+$serie_key='surrealisme';
 $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 
 // ces dictionnaires sont les dictionnaires standard
 $oil= $ALL_GALLERIES->paint_dictionnaries["oil"];
-$pastel= $ALL_GALLERIES->paint_dictionnaries["pastel"];
 $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
-$sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
+
 
 // On recupere toutes les peintures qu'on veut voir dans cette serie
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
 // Cet ID servira a les designer le moment venu.
 
 // Oils
+$paints["ReveDeTropiques"]= $oil->paints["ReveDeTropiques"];
 
 
 // Acrylic
-$paints["EtangAustral"]= $acrylic->paints["EtangAustral"];
-$paints["Cathedrale"]= $acrylic->paints["Cathedrale"];
-$paints["Poisson"]= $acrylic->paints["Poisson"];
-$paints["Savana"]= $acrylic->paints["Savana"];
-$paints["PurpleSeagull"]= $acrylic->paints["PurpleSeagull"];
-$paints["YellowSunset"]= $acrylic->paints["YellowSunset"];
-$paints["ApresMidiOiseau"]= $acrylic->paints["ApresMidiOiseau"];
-$paints["ApresLaPluie"]= $acrylic->paints["ApresLaPluie"];
-
-
-// Pastels
-
-
+$paints["IleLoups"]= $acrylic->paints["IleLoups"];
+$paints["EvocationGourdon"]= $acrylic->paints["EvocationGourdon"];
+$paints["LesZebres"]= $acrylic->paints["LesZebres"];
+$paints["JeuDeRegard"]= $acrylic->paints["JeuDeRegard"];
+$paints["BallonsOlympiques"]= $acrylic->paints["BallonsOlympiques"];
 
 
 $column_generator= new ColumnGenerator();
@@ -55,8 +47,6 @@ $column_generator->paints= $paints; // may contain paints that are not in serie
 $column_generator->serie_dico= $serie;  // will be used to browse exclusively amongst serie
 ?>
 
-
-  
 
   <title><?= Translator::t($serie_key); ?> | Gisèle Eisenmann Montagné</title>
   
@@ -77,14 +67,12 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
     
     <?php
-$column_generator->generate_style("EtangAustral", "white");
-$column_generator->generate_style("Cathedrale", "black");
-$column_generator->generate_style("Poisson", "white");
-$column_generator->generate_style("Savana", "white");
-$column_generator->generate_style("PurpleSeagull", "black");
-$column_generator->generate_style("YellowSunset", "black");
-$column_generator->generate_style("ApresMidiOiseau", "white");
-$column_generator->generate_style("ApresLaPluie", "black");
+$column_generator->generate_style("ReveDeTropiques", "white");
+$column_generator->generate_style("IleLoups", "white");
+$column_generator->generate_style("EvocationGourdon", "white");
+$column_generator->generate_style("LesZebres", "white");
+$column_generator->generate_style("JeuDeRegard", "black");
+$column_generator->generate_style("BallonsOlympiques", "white");
     ?>
   </style>
   
@@ -98,45 +86,33 @@ $column_generator->generate_style("ApresLaPluie", "black");
       
       <!-- Text Part -->
       <div class="w3-container w3-left-align">
-        <?= Translator::t("IntroOeuvresRecentes"); ?>
+        <?= Translator::t("IntroSurrealisme"); ?>
         </div>
       
        
        <!-- Paintings -->
- 
-  	  <div class="w3-grid" style="grid-template-columns:100%">
-        <!-- single column --> 
-        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "ApresMidiOiseau" ); ?>
-        </div>
-      </div>
-	  
-      <div class="w3-grid" style="grid-template-columns:50% 50%">
+       <div class="w3-grid" style="grid-template-columns:60% 40%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		   <?= $column_generator->add_to_column( "Cathedrale" ); ?>
-		   <?= $column_generator->add_to_column( "Savana" ); ?>
-		   <?= $column_generator->add_to_column( "EtangAustral" ); ?>
-
+		   <?= $column_generator->add_to_column( "ReveDeTropiques" ); ?>
+		   <?= $column_generator->add_to_column( "LesZebres" ); ?>
+		   <?= $column_generator->add_to_column( "EvocationGourdon" ); ?>
         </div>
 		
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		   <?= $column_generator->add_to_column( "PurpleSeagull" ); ?>
-		  <?= $column_generator->add_to_column( "Poisson" ); ?>
-		   <?= $column_generator->add_to_column( "ApresLaPluie" ); ?>
+		<?= $column_generator->add_to_column( "BallonsOlympiques" ); ?>
+		<?= $column_generator->add_to_column( "JeuDeRegard" ); ?>
+		   <?= $column_generator->add_to_column( "IleLoups" ); ?>
+		
          </div>
       </div>
 
-      <div class="w3-grid" style="grid-template-columns:100%">
-        <!-- single column --> 
-        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		  <?= $column_generator->add_to_column( "YellowSunset" ); ?>
-        </div>
-      </div>
 
-
-     <!-- Footer -->
+	</div>
+	  
+	  
+      <!-- Footer -->
     <?php include("../public/copyright.php"); ?>
     
     </div>

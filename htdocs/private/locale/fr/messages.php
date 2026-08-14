@@ -4,7 +4,7 @@
  //    En anglais, le probleme n'est pas la et donc on peut mettre des ''
  //
  //    Exemple:
- //           'Intro' => 'Gisele s'est la plus belle'    NE FONCTIONNE PAS
+ //           'Intro' => 'Gisele c'est la plus belle'    NE FONCTIONNE PAS
  //       par contre
  //           'Intro' => "Michel est le plus beau" FONCTIONNE :-)
 //		     
@@ -19,18 +19,20 @@ return array(
     // Series
     'Serie' => 'Série',
     'momentsfeminins' => 'Moments Féminins',
-    'watermirror' => 'Miroir d\'eau',
+    'watermirror' => "Miroir d'eau",
     'metamorphose' => 'Métamorphose',
-    'emergence' => 'Emergence',
-    'oeuvresrecentes' => 'Dernières Oeuvres',
     'couleursetmodele' => 'Symphonie Couleurs et Texture',
-    'portraits' => 'Portraits',
-    'mixedmedia' => 'Collages',
+	'figuratif' => 'Figuratif',
+    'portrait' => 'Portraits',
+	'surrealisme' => 'Surrealisme',
     'composition' => 'Compositions',
-    'paintings' => 'Tableaux',
+	'mixedmedia' => 'Techniques mixtes',
+	'multitexture' => 'Finition multitexturée',
+	'collage' => 'Collage',
+
 	
 	// divers
-    'copyrightview' => "Voir la dernière/à venir exposition",
+    'copyrightview' => "Voir la dernière à venir exposition",
     'Avertissement' => "Avertissement : Le contenu de ce site Internet est protégé par le droit d’auteur. Toute reproduction est interdite.",
     'soloexpo' => 'Expositions Solo', 
     'groupexpo' => "Une sélection d'expositions de groupe",
@@ -42,10 +44,10 @@ return array(
     'Accueil_CreationsDefinition1' => "Mes créations se caractérisent par des formes figuratives, aux couleurs saturées et aux lignes souples. ",
     'Accueil_CreationsDefinition2' => "J'y ajoute souvent une touche de surréalisme, convoquant le rêve, l'humour et la vie. Visitez mon monde imaginaire.", 
 
-    'Tableaux' => "Tableaux",
+    'Figuratif' => "Paysages et Nature",
     'Compositions' => "Compositions",
-    'MixedMedia' => "Collages",
-    'Abstrait' => "Abstrait",
+    'MixedMedia' => "Techniques Mixtes",
+    'Abstraits' => "Abstrait",
     'Atelier' => "Atelier",
     'Expositions' => "Expositions",
 
@@ -78,12 +80,17 @@ return array(
 
     'IntroAbstrait' => "
      <h2>Abstrait</h2>
-	 <p>Les tableaux abstrait sont ....
-	 </p> 
-    <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
+	 <p>Cette série joue sur la surprise et l'intrigue à la fois, mêlant le surréalisme aux pieces purement abstraites. 
+	 Elle est crée avec différentes approches : peinture acrylique au couteau, travail des textures, effets de matière...</br>	
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
      </p>",
 
+    'IntroSurrealisme' => "
+     <h2>Surréalisme</h2>
+	 <p>Cette série joue sur la surprise, parfois avec humour, en présentant des compositions d'objets ou d'êtres inattendues,
+	des perspectives déroutantes, résultant en oeuvres surréalistes. 
+     </p>",	
+	
     'IntroComposition' => "
      <h2>Compositions</h2>
 	 <p>Les compositions sont ....
@@ -92,13 +99,22 @@ return array(
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
      </p>",
 
-    'IntroMixedMedia' => "
+    'IntroCollage' => "
      <h2>Collages</h2><p>
-	Peinture contemporaine	</p>
-    <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
+	Peinture contemporaine</p>
+    <br>Mes oeuvres sont des pieces en deux dimensions constituées d'une base de toile blanche tendue sur un chassis </br>
+    <br>sur laquelle je colle differents matériaux (végétaux, filet, carton, papier, bois...) puis j'ajoute la peinture. </br>	
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
     </p>",		
 
+    'IntroMultiTexture' => "
+     <h2>Finition multi-texturée</h2><p>
+	Peinture contemporaine	</p>
+    <br>Pour créer ces pieces, je commence par modifier la surface de mes toiles en changeant ses caractéristiques comme l'absorption, la texture ou la couleur. </br>
+	Au-dessus de ces nouvelles surfaces, j'applique la peinture acrylique ou autre, éventuellement en renouvelant la procédure sur plusieurs niveaux. </br>	
+	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
+    </p>",		
+	
     'IntroMomentsFem' => "
 	<h2>Moments Féminins</h2><p>
 	Moments Féminins est un hommage à la beauté des femmes dans leur existence au quotidien, de la rêverie 
@@ -127,14 +143,6 @@ return array(
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",	
 
-    'IntroEmergence' => "
-	<h2>Emergence</h2><p>
-	Emergence présente les oeuvres d'un nouveau départ, une nouvelle voie, de nouvelles compétences
-	à acquérir après la fin de ma carrière en informatique. Aucun fil conducteur; un simple partage 
-    d'émotions au détour d'une rencontre avec une réalité nouvelle.	</p>
-    <p>Quelques tableaux sont disponibles à l'achat.
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
-	</p>",	
     
 	'IntroCouleursEtModele' => "
 	<h2>Symphonie de couleurs et texture</h2><p>
@@ -142,8 +150,6 @@ return array(
     <p>Quelques tableaux sont disponibles à l'achat.
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",			
-
-    'IntroOeuvresRecentes' => "Oeuvres créées récemment.",	
 
     'Introduction' => '  <p>Gisèle Eisenmann Montagné (nom artiste: GEM) est une artiste autodidacte, travaillant 
 	principalement aujourd’hui avec l’huile et l’acrylique, et occasionnellement avec des pastels secs. 
@@ -162,8 +168,8 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
  
      'Winner' => "<p>Gisèle Eisenmann Montagné est lauréate des prix suivants
 	<ul><li>2025 et 2024 Luxembourg Art prize: CERTIFICAT DE MERITE ARTISTIQUE </li>
-	    <li>2024 Prix TROPHEE DE LA VILLE ANTIBES [\"Faîtes de la peinture\" - (association les amis du musée Picasso)] </li> 
-		<li>2021 2ème prix, catégorie Aquarelle/pastel [\"Faîtes de la peinture\" - (association les amis du musée Picasso)] </li> 
+	    <li>2024 Prix TROPHEE DE LA VILLE ANTIBES [Faîtes de la peinture - (association les amis du musée Picasso)] </li> 
+		<li>2021 2ème prix, catégorie Aquarelle/pastel [Faîtes de la peinture - (association les amis du musée Picasso)] </li> 
 	</ul>",
 
    // Contact Page 
@@ -357,6 +363,12 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
 	'Festif_Alt' => "Diptyque abstrait Rouge Orangé",
     'Festif_Titre' => "Festif",
     'Festif_Desc' => "Diptyque abstrait",
+	'Leman_Alt' => "Lac Léman sunset",
+    'Leman_Titre' => "Léman",
+    'Leman_Desc' => "Sunset sur le lac Léman - milans",
+	'TroisReveurs_Alt' => "Deux enfants et un chat regardent par la fenêtre",
+    'TroisReveurs_Titre' => "Trois rêveurs",
+    'TroisReveurs_Desc' => "Deux enfants et un chat regardent par la fenêtre",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",
