@@ -104,25 +104,23 @@ $column_generator->generate_style("Festif", "white");
       
        
       <!-- Paintings -->
-      <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
+      <div class="w3-grid" style="grid-template-columns:50% 50%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-
-          <?= $column_generator->add_to_column("Distorsion" ); ?>
-          <?= $column_generator->add_to_column("Deflagration" ); ?>
+           <?= $column_generator->add_to_column("Distorsion" ); ?>
           <?= $column_generator->add_to_column("Eclosion" ); ?>
+		  <?= $column_generator->add_to_column("ConteMusical" ); ?>
           <?= $column_generator->add_to_column("Flamboyance" ); ?>
 
         </div>
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		 <?= $column_generator->add_to_column("Deflagration" ); ?>
+		 <?= $column_generator->add_to_column("Mimosa" ); ?>
+		 <?= $column_generator->add_to_column("Spirale" ); ?>
+          <?= $column_generator->add_to_column("Festif" ); ?>
 		</div>
-		
-		<!-- Third column --> 
-        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		</div>
-      </div>
-      
+     </div> 
       <!-- Footer -->
       <?php include("../public/copyright.php"); ?>
       

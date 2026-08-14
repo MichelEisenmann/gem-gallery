@@ -44,7 +44,7 @@
 -1,LaVague,Acrylique/20230629_LaVague_AC33x41.jpg,20230629,33,41,acrylic,vendu,mixedmedia
 -1,Pelagos,Acrylique/20231109_Pelagos_AC41x61.jpg,20231109,41,61,acrylic,vendu,watermirror
 -1,LesTournesols,Acrylique/20231111_LesTournesols_AC24x30.jpg,20231111,24,30,acrylic,vendu,mixedmedia
--1,EnfantParait,Acrylique/20231127_EnfantParait_Acrylic-35x27.jpg,20231127,27,35,acrylic,,portrait
+-1,EnfantParait,Acrylique/20231127_EnfantParait_Acrylic-35x27.jpg,20231127,27,35,acrylic,indisponible,portrait
 -1,MarinaKeithCurran,Acrylique/20231211_MarinaKeithCurran_AC46x91.jpg,20231211,46,91,acrylic,,watermirror
 -1,BallonsOlympiques,Acrylique/20240218_BallonsOlympiques_AC55x38.jpg,20240218,55,38,acrylic,,surrealisme
 -1,Deflagration,Acrylique/20240326_Deflagration_AC90x90.jpg,20240326,90,90,acrylic,, abstrait
@@ -72,7 +72,7 @@
 -1,ConteMusical,Acrylique/20260602_ConteMusical_AC60x30.jpg,20260602,60,30(x3),acrylic,,composition abstrait
 -1,Mimosa,Acrylique/20260615_Mimosa_AC27x19.jpg,20260615,27,19(x2),acrylic,,composition abstrait
 -1,Festif,Acrylique/20260623_Festif_AC41x27.png,20260623,41,27(x2),acrylic,,composition abstrait
--1,Leman,Acrylique/20260705_Leman_AC50x50.png,20260705,50,50,acrylic,,multitexture
+-1,Leman,Acrylique/20260705_Leman_AC50x50.png,20260705,50,50,acrylic,,multitexture watermirror
 -1,TroisReveurs,Acrylique/20260725_TroisReveurs_AC65x46.png,20260725,65,46,acrylic,,multitexture
 -1,AutomneCezanne,Huile/20211229_Automne_FromCezanne.jpg,20211229,80,40,oil,indisponible,momentsfeminins
 -1,PascaleMelancolie,Huile/20220222_Melancolie_HU46x55.jpg,20220222,46,55,oil,indisponible,portrait
@@ -108,8 +108,8 @@
 #-1,LucClairDeLune,Pastels/20201111_Luc au clair de lune.jpg,20201111,30,40,pastel,,emergence
 #-1,FiancaillesAUS,Pastels/20201206_Fiancailles_VersionAUS.jpg,20201206,30,40,pastel,,portrait
 -1,LesFiancesFR,Pastels/20201210_Fiancailles_VersionFR.jpg,20201210,30,40,pastel,indisponible,portrait
--1,GiseleLaServante,Pastels/20201227_Femme Cruche.jpg,20201227,40,30,pastel,,portrait
--1,Generations,Pastels/20210124_PascaleAmelie.jpg,20210124,30,40,pastel,,portrait
+-1,GiseleLaServante,Pastels/20201227_Femme Cruche.jpg,20201227,40,30,pastel,indisponible,portrait
+-1,Generations,Pastels/20210124_PascaleAmelie.jpg,20210124,30,40,pastel,indisponible,portrait
 #-1,OlenMargueriteEntraunes,Pastels/20210630_Olen et marguerite.jpg,20210630,23,18,pastel,,emergence
 -1,AlleePlatanes,Pastels/20210909_canalDuMidi_PA29x39.jpg,20210909,29,39,pastel,vendu,emergence
 -1,MichelPolynesie,Pastels/20210917_MichelPolynesie_PA20x28.jpg,20210917,20,28,pastel,indisponible,portrait

@@ -56,6 +56,7 @@ $paints["PelicanToutSeul"]= $acrylic->paints["PelicanToutSeul"];
 $paints["Leman"]= $acrylic->paints["Leman"];
 
 
+
 // Pastels
 $paints["LaBragueTamarin"]= $pastel->paints["LaBragueTamarin"];
 $paints["BrisbaneNorthBank"]= $pastel->paints["BrisbaneNorthBank"];
@@ -116,6 +117,7 @@ $column_generator->generate_style("LaBragueTamarin", "white");
 $column_generator->generate_style("BrisbaneNorthBank", "black");
 $column_generator->generate_style("OlenSiagneDoree", "black");
 $column_generator->generate_style("LesMouettesPlage", "black");
+
 
 
 

@@ -80,9 +80,8 @@ return array(
 
     'IntroAbstrait' => "
      <h2>Abstrait</h2>
-	 <p>Cette série joue sur la surprise et l'intrigue à la fois, mêlant le surréalisme aux pieces purement abstraites. 
-	 Elle est crée avec différentes approches : peinture acrylique au couteau, travail des textures, effets de matière...</br>	
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
+	 <p>Inspirée essentiellement par la nature et l'environnement, cette série navigue entre construction géométrique et mouvement d'envolée lyrique.  
+	 <br>Elle est créee avec différentes approches : peinture acrylique au couteau, travail des textures, effets de matière...</br>	
      </p>",
 
     'IntroSurrealisme' => "
@@ -102,9 +101,8 @@ return array(
     'IntroCollage' => "
      <h2>Collages</h2><p>
 	Peinture contemporaine</p>
-    <br>Mes oeuvres sont des pieces en deux dimensions constituées d'une base de toile blanche tendue sur un chassis </br>
-    <br>sur laquelle je colle differents matériaux (végétaux, filet, carton, papier, bois...) puis j'ajoute la peinture. </br>	
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
+    <p>Mes oeuvres sont des pieces en deux dimensions constituées d'une base de toile blanche tendue sur un chassis 
+    sur laquelle je colle differents matériaux (végétaux, filet, carton, papier, bois...) puis j'ajoute la peinture. 
     </p>",		
 
     'IntroMultiTexture' => "

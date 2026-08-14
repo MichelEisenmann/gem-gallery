@@ -69,8 +69,8 @@ return array(
 
     'IntroAbstrait' => '
      <h2>Abstrait</h2>
-	 <br>This series plays on surprise and intrigue at the same time, mixing surrealism with purely abstract pieces. </br>
-	 <br>It is created with different approaches: acrylic painting with a knife, work on textures, material effects...
+	 <br>Inspired essentially by nature and the environment, this series navigates between geometric construction and lyrical flight movement. 
+	 It is created with different approaches: acrylic painting with a knife, work on textures, material effects...
 	 </br> 
  	 ',
 	 
