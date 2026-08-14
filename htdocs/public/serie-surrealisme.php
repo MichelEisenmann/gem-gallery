@@ -87,7 +87,7 @@ $column_generator->generate_style("BallonsOlympiques", "white");
       <!-- Text Part -->
       <div class="w3-container w3-left-align">
         <?= Translator::t("IntroSurrealisme"); ?>
-        </div>
+      </div>
       
        
        <!-- Paintings -->

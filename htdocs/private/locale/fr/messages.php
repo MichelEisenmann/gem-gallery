@@ -92,10 +92,7 @@ return array(
 	
     'IntroComposition' => "
      <h2>Compositions</h2>
-	 <p>Les compositions sont ....
-	 </p> 
-    <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
+	 <p>Suggestion de présentation de ces pièces coordonnées. 
      </p>",
 
     'IntroCollage' => "

@@ -40,6 +40,7 @@ $paints["EgretYellowSunset"]= $oil->paints["EgretYellowSunset"];
 $paints["IlotMangrove"]= $oil->paints["IlotMangrove"];
 $paints["RiverBank"]= $oil->paints["RiverBank"];
 $paints["LacBleu"]= $oil->paints["LacBleu"];
+$paints["Zenitude"]= $oil->paints["Zenitude"];
 
 // Acrylics
 $paints["JeuxVagues"]= $acrylic->paints["JeuxVagues"];
@@ -117,6 +118,9 @@ $column_generator->generate_style("LaBragueTamarin", "white");
 $column_generator->generate_style("BrisbaneNorthBank", "black");
 $column_generator->generate_style("OlenSiagneDoree", "black");
 $column_generator->generate_style("LesMouettesPlage", "black");
+$column_generator->generate_style("Zenitude", "black");
+$column_generator->generate_style("LaVague", "white");
+
 
 
 
@@ -193,6 +197,7 @@ $column_generator->generate_style("LesMouettesPlage", "black");
        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		<?= $column_generator->add_to_column( "BlueSunset" ); ?>
          <?= $column_generator->add_to_column( "Contemplation" ); ?>
+		 <?= $column_generator->add_to_column( "OlenSiagneDoree" ); ?>  
         </div>
       
        <!-- second column --> 	    
@@ -200,7 +205,7 @@ $column_generator->generate_style("LesMouettesPlage", "black");
 		  <?= $column_generator->add_to_column( "LaVague" ); ?>
 		  <?= $column_generator->add_to_column( "LesMouettesPlage" ); ?>
 		  <?= $column_generator->add_to_column( "BrisbaneNorthBank" ); ?>
-		  <?= $column_generator->add_to_column( "OlenSiagneDoree" ); ?>  
+		  <?= $column_generator->add_to_column( "Zenitude" ); ?>  
 		</div>
 
         <!-- third column -->        

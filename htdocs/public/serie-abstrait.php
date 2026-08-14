@@ -31,7 +31,6 @@ $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
 // Cet ID servira a les designer le moment venu.
 // Oils
 $paints["Flamboyance"]= $oil->paints["Flamboyance"];
-$paints["Zenitude"]= $oil->paints["Zenitude"];
 
 // Acrylics
 $paints["Deflagration"]= $acrylic->paints["Deflagration"];
@@ -82,8 +81,12 @@ $column_generator->generate_style("Eclosion", "black");
 $column_generator->generate_style("Flamboyance", "black");
 $column_generator->generate_style("Spirale", "white");
 $column_generator->generate_style("ConteMusical", "white");
-$column_generator->generate_style("Mimosa", "black");
+$column_generator->generate_style("Carnaval", "black");
+$column_generator->generate_style("Cathedrale", "white");
+$column_generator->generate_style("Cavalcade", "white");
 $column_generator->generate_style("Festif", "white");
+$column_generator->generate_style("Mimosa", "white");
+
 
     ?>
 
@@ -104,7 +107,7 @@ $column_generator->generate_style("Festif", "white");
       
        
       <!-- Paintings -->
-      <div class="w3-grid" style="grid-template-columns:50% 50%">
+      <div class="w3-grid" style="grid-template-columns:30% 40% 30%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
            <?= $column_generator->add_to_column("Distorsion" ); ?>
@@ -116,8 +119,15 @@ $column_generator->generate_style("Festif", "white");
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		 <?= $column_generator->add_to_column("Deflagration" ); ?>
-		 <?= $column_generator->add_to_column("Mimosa" ); ?>
+		 <?= $column_generator->add_to_column("Cathedrale" ); ?>
 		 <?= $column_generator->add_to_column("Spirale" ); ?>
+ 
+		</div>
+		  <!-- Third column --> 
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+		 <?= $column_generator->add_to_column("Cavalcade" ); ?>
+		 <?= $column_generator->add_to_column("Mimosa" ); ?>
+		 <?= $column_generator->add_to_column("Carnaval" ); ?>
           <?= $column_generator->add_to_column("Festif" ); ?>
 		</div>
      </div> 

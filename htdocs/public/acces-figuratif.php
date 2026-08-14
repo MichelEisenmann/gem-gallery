@@ -66,7 +66,7 @@
     .accesscontainer {
     display: grid;
     grid-template-columns: auto auto;
-	grid-template-rows: 50% 50%;
+	grid-row-start:2;
     padding: 10px;
     }
     .accesscontainer div {
@@ -84,8 +84,7 @@
     .introcontainer {
     display: grid;
     grid-template-columns: auto auto;
-	grid-template-rows: 50% 50%;
-    padding: 10px;
+	padding: 10px;
     }
     .introcontainer div {
     padding: 10px;
@@ -118,7 +117,7 @@
 	      <?= Translator::t("momentsfeminins"); ?>
 	    </div>
 	  </div>
-	</a>
+	   </a>
 	
         <a href="<?= Translator::url('/public/serie-watermirror.php') ?>">
 	  <div class="w3-card-4">
