@@ -29,6 +29,7 @@ return array(
 	'mixedmedia' => 'Techniques mixtes',
 	'multitexture' => 'Finition multitexturée',
 	'collage' => 'Collage',
+	'atelier' => 'Atelier',
 
 	
 	// divers
@@ -70,6 +71,13 @@ return array(
 	",
 	'AccueilArtisteIntroFin' => " et les",
 	
+	'IntroAtelier' => "
+     <h2>Atelier</h2>
+	 <p>Les portraits sont ....
+	 </p> 
+    
+     ",
+	 
     'IntroPortraits' => "
      <h2>Portraits</h2>
 	 <p>Les portraits sont ....
@@ -129,16 +137,7 @@ return array(
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",
 
-    'IntroMetamorphose' => "
-	<h2>Métamorphose</h2><p>
-	Métamorphose explore l'agencement de figures géométriques soumises à une pression. Trois tableaux aux 
-	couleurs chatoyantes orange, marron et or correspondent à cette étude. </p>
-    <p>L'exposition qui présentait aussi quelques oeuvres figuratives, en particulier des portraits aux pastels 
-	secs, est terminée. Quelques tableaux sont disponibles à l'achat.
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
-	</p>",	
-
-    
+   
 	'IntroCouleursEtModele' => "
 	<h2>Symphonie de couleurs et texture</h2><p>
 	Couleurs chatoyantes et rendu du relief, des formes avec la peinture et matériau.	</p>

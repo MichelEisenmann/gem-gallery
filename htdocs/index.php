@@ -176,7 +176,7 @@
 	  </div>
 	</a>
 	
-        <a href="<?= Translator::url('/public/serie-compositions.php') ?>">
+        <a href="<?= Translator::url('/public/serie-atelier.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
 	      <img src="/public/images/web/2024-04-29-GEM-peint.png" alt="Conte Musical" style="width:100%; " />
@@ -199,38 +199,7 @@
 	</a>
       </div>
       
-<!---
-	<div class="w3-left-align gem-menu">
-          <?= Translator::t("AccueilArtisteIntro"); ?>
-	  [<a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
-            <?= Translator::t("couleursetmodele"); ?> </a>,
-		<a href="<?= Translator::url('/public/serie-momentsfeminins.php') ?>">
-            <?= Translator::t("momentsfeminins"); ?> </a>,
-          <a href="<?= Translator::url('/public/serie-watermirror.php') ?>">
-            <?= Translator::t("watermirror"); ?> </a>, 
-          <a href="<?= Translator::url('/public/serie-metamorphose.php') ?>">
-            <?= Translator::t("metamorphose"); ?> </a>,
-          <a href="<?= Translator::url('/public/serie-emergence.php') ?>">
-            <?= Translator::t("emergence"); ?> </a>]
-	</div>	  
-	
-	<div class="w3-center">
-	  <a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
-	    <img src="/public/images/Acrylique/20260602_ConteMusical_AC60x30_small.jpg" alt="Conte Musical" style="width:100%" style="width:100%" />
-	  </a>
-	</div>
 
-
-	<div class="w3-center w3-padding-16">
-		<div class="w3-row-padding" >
-			<div class="w3-col s8">
-			<img src="/public/images/web/Decor_ConteMusical-V2.jpg" alt="Decor conte musical" style="width:100%" />
-			</div>
-		</div>
-	</div>
---->
-
-      
 	</div>
  
 
