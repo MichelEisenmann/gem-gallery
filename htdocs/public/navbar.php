@@ -1,11 +1,14 @@
 <?php
  // add here all the series you want to see in the menu
  // The ids must match the names that are in the excel file
- $series[0]= "couleursetmodele";
- $series[1]= "momentsfeminins";
- $series[2]= "watermirror";
- $series[3]= "metamorphose";
+ $series[0]= "momentsfeminins";
+ $series[1]= "watermirror";
+ $series[2]= "portrait";
+ $series[3]= "surrealisme";
  $series[4]= "composition";
+ $series[5]= "collage";
+ $series[6]= "multitexture";
+  
 
 
 

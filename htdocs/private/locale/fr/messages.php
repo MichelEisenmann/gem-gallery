@@ -80,10 +80,8 @@ return array(
 	 
     'IntroPortraits' => "
      <h2>Portraits</h2>
-	 <p>Les portraits sont ....
-	 </p> 
-    <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
+	 <p>Florilège de portraits comme un album de famille. Création ou composition à partir de photos. 
+	 <br>Réalisation sur commande possible: envoyez un email à contact@giseleeisenmann.com</br>
      </p>",
 
     'IntroAbstrait' => "
@@ -100,7 +98,7 @@ return array(
 	
     'IntroComposition' => "
      <h2>Compositions</h2>
-	 <p>Suggestion de présentation de ces pièces coordonnées (diptyques et triptyche). 
+	 <p>Suggestion de présentation de ces pièces coordonnées (diptyques et triptyque). 
      </p>",
 
     'IntroCollage' => "
@@ -113,8 +111,10 @@ return array(
     'IntroMultiTexture' => "
      <h2>Finition multi-texturée</h2><p>
 	Peinture contemporaine	</p>
-    <p>Pour créer ces pieces, je commence par modifier la surface de mes toiles en changeant ses caractéristiques comme l'absorption, la texture ou la couleur. </br>
-	Au-dessus de ces nouvelles surfaces, j'applique la peinture acrylique ou autre, éventuellement en renouvelant la procédure sur plusieurs niveaux. </br>	
+    <p>Pour créer ces pieces, je commence par modifier la surface de mes toiles en changeant ses caractéristiques comme l'absorption, 
+	la texture ou la couleur. 
+	<br>Au-dessus de ces nouvelles surfaces, j'applique la peinture acrylique ou autre, éventuellement en renouvelant 
+	la procédure sur plusieurs niveaux. </br>	
 	</p>",		
 	
     'IntroMomentsFem' => "
@@ -128,8 +128,8 @@ return array(
 	<h2>Miroir d'eau</h2><p>
     Miroir d'eau explore comment l'eau et la lumière transforment les paysages, créant des jeux de reflets et d'ombres. 
 	Les oeuvres capturent souvent des moments paisibles dans la nature que j'ai reproduits à partir de mes photos. 
-    <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
+    <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. 
+	Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",
 
    

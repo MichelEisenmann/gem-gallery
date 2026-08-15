@@ -67,7 +67,7 @@ $column_generator->serie_dico= $serie;  // will be used to browse exclusively am
     /* Le dernier parametre est la couleur du texte qui apparait quand la souris se deplace sur l image */
   
     <?php
-$column_generator->generate_style("ConteMusical", "black");
+$column_generator->generate_style("ConteMusical", "white");
 $column_generator->generate_style("Mimosa", "white");
 $column_generator->generate_style("Festif", "white");
 

@@ -17,7 +17,7 @@ return array(
 	'surrealisme' => 'Surrealism',
     'composition' => 'Compositions',
 	'mixedmedia' => 'Mixed media',
-	'multitexture' => 'Multi-textured finish',
+	'multitexture' => 'Multitextured finish',
 	'collage' => 'Collage',
 	'atelier' => 'Studio',
 
@@ -70,10 +70,8 @@ return array(
 
     'IntroPortraits' => '
      <h2>Portraits</h2>
-	 <p>The portraits are ....
-	 </p> 
-     <p>This exhibition is closed but some paintings are still available for purchase.</br>
-	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
+	 <p>An anthology of portraits like a family album. Created or composed from photos.
+	 <br>Made-to-order possible: send an email to contact@giseleeisenmann.com</br>
 	  </p>',
 
     'IntroAbstrait' => '
@@ -83,8 +81,8 @@ return array(
 	 </br> 
  	 ',
 	 
-	 'IntroSurrealisme' => "
-     <h2>Surréalism</h2>
+	 'IntroSurrealisme' => '
+     <h2>Surrealism</h2>
 	 <p> This series plays on surprise, sometimes with humor, by presenting compositions of unexpected objects or beings
 confusing perspectives, resulting in surrealist works.
 	  </p>',
@@ -97,16 +95,18 @@ confusing perspectives, resulting in surrealist works.
     'IntroCollage' => '
      <h2>Collages</h2><p>
 	Contemporary painting</p>
-    <p>My artworks are two-dimensional pieces made up of a base of white canvas stretched over a stretcher on which I glue different materials (plants, net, cardboard, paper, wood...) and then I add the paint.</br>	
+    <p>My artworks are two-dimensional pieces made up of a base of white canvas stretched over a stretcher 
+	on which I glue different materials (plants, net, cardboard, paper, wood...) and then I add the paint.</br>	
 	<br>Send an email to contact@giseleeisenmann.com for more information.</br>
-    </p>",		
+    </p>',		
 
-    'IntroMultiTexture' => "
-     <h2>Multitexture finish</h2><p>
+    'IntroMultiTexture' => '
+     <h2>Multitextured finish</h2><p>
 	Contemporary painting</p>
-    <br>To create these pieces, I start by modifying the surface of my canvases by changing its characteristics such as absorption, texture or color. Beyond these new surfaces, I apply acrylic or other paint, possibly renewing the procedure on several levels.</br>	
-	<br>Send an email to contact@giseleeisenmann.com for more information.</br>
-    </p>",		
+    <p>To create these pieces, I start by modifying the surface of my canvases by changing its characteristics 
+	such as absorption, texture or color. 
+	<br>Above these new surfaces, I apply acrylic or other paint, possibly by renewing the procedure on several levels.</br>	
+    </p>',		
 	
     'IntroMomentsFem' => '
      <h2>Feminine Moments</h2>
@@ -115,21 +115,20 @@ confusing perspectives, resulting in surrealist works.
 	 <br>A few pieces presented at exhibitions on the subject in 2025 complete this list.</br> 
      </p>',
  
-	'IntroWaterMirror' => "
+	'IntroWaterMirror' => '
 	<h2>Water Mirror</h2><p>
     Water Mirror explores how water and light transform landscapes, creating plays of reflections and shadows. 
 	The works often capture peaceful moments in nature that I have reproduced from my photos.  
-	<br>The exhibition is closed but some paintings are still available for purchase.</br>
-    <br>Send an email to contact@giseleeisenmann.com for more information.</br>
-	</p>",	
+	<br>The exhibition is closed but some paintings are still available for purchase. Send an email to contact@giseleeisenmann.com 
+	for more information.</br>
+	</p>',	
 	
 
-	'IntroCouleursEtModele' => "
+	'IntroCouleursEtModele' => '
 	<h2>Symphony of colors and texture</h2><p>
 	Shimmering colors and rendering of relief and shapes with paint and material.</p>
     Paintings are available for purchase.</br>
-    <br>Send an email to contact@giseleeisenmann.com for more information.</br>
-	</p>",	
+	</p>',	
 
 
 	'Introduction' => '<p>
@@ -207,7 +206,7 @@ confusing perspectives, resulting in surrealist works.
     'Royal_Desc' => "Olen, American Shepherd, 2 years old with his treat",
     'JeuxVagues_Alt' => "A man in a swimsuit plays with his dog in the waves",
     'JeuxVagues_Titre' => "Wave games",
-    'JeuxVagues_Desc' => "red sand beach of Estérel (83, FR)",
+    'JeuxVagues_Desc' => "Red sand beach near Estérel mountain (83, FR)",
     'IleLoups_Alt' => "Ile aux loups",
     'IleLoups_Titre' => "Ile aux loups",
     'IleLoups_Desc' => "",
@@ -230,7 +229,7 @@ confusing perspectives, resulting in surrealist works.
     'FlamandsRouges_Titre' => "The red flamingos",
     'FlamandsRouges_Desc' => "A red flamingo displays its beak above a wooden collage.",
     'JeuDeRegard_Alt' => "A blonde girl's green eye emerges from a scarf.",
-    'JeuDeRegard_Titre' => "Game of looks",
+    'JeuDeRegard_Titre' => "Jeu de Regards (Game of looks)",
     'JeuDeRegard_Desc' => "Composition to highlight beautiful eyes",
     'VaseAbutilons_Alt' => "a blue vase on the table with a bouquet of abutilons",
     'VaseAbutilons_Titre' => "Abutilons vase",
@@ -353,7 +352,7 @@ confusing perspectives, resulting in surrealist works.
     'AutomneCezanne_Desc' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - Mastercopy after Cezanne",
     'PascaleMelancolie_Alt' => "Melancholy - young woman in lace blouse, head resting on cushion",
     'PascaleMelancolie_Titre' => "Melancholia",
-    'PascaleMelancolie_Desc' => "Reverie on the sofa",
+    'PascaleMelancolie_Desc' => "Daydreaming on the sofa",
     'EgretYellowSunset_Alt' => "The great egret",
     'EgretYellowSunset_Titre' => "The great egret",
     'EgretYellowSunset_Desc' => "Terranora Creek - Australian Great Egret (NSW Australia)",
@@ -397,7 +396,7 @@ confusing perspectives, resulting in surrealist works.
     'BrumesDuSoir_Titre' => "Evening mists",
     'BrumesDuSoir_Desc' => "",
     'MilieuTorrent_Alt' => "A young chamois is on the edge of the torrent",
-    'MilieuTorrent_Titre' => "in the middle flows a river",
+    'MilieuTorrent_Titre' => "In the middle flows a river",
     'MilieuTorrent_Desc' => "Mercantour Park (06, FR) ",
     'AirMarin_Alt' => "Sea Air - A woman sitting on a windowsill watches the day break over the Mediterranean",
     'AirMarin_Titre' => "Sea Air",
@@ -466,7 +465,7 @@ confusing perspectives, resulting in surrealist works.
     'AlleePlatanes_Desc' => "Along the Canal du Midi - Aude, FR",
     'MichelPolynesie_Alt' => "Steamy",
     'MichelPolynesie_Titre' => "Torride (Steamy)",
-    'MichelPolynesie_Desc' => "Soft Pastel- In the sun of Polynesia",
+    'MichelPolynesie_Desc' => "Under the Polynesian sun",
     'LaBragueTamarin_Alt' => "La Brague river",
     'LaBragueTamarin_Titre' => "La Brague river",
     'LaBragueTamarin_Desc' => "The Brague near the Tamarins bridge (Biot, 06)",
