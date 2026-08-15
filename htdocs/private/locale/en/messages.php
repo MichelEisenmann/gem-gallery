@@ -16,7 +16,7 @@ return array(
 	'portrait' => 'Portraits',
 	'surrealisme' => 'Surrealism',
     'composition' => 'Compositions',
-	'mixedmedia' => 'Techniques mixtes',
+	'mixedmedia' => 'Mixed media',
 	'multitexture' => 'Multi-textured finish',
 	'collage' => 'Collage',
 	'atelier' => 'Studio',
@@ -32,7 +32,7 @@ return array(
 
 	// Page Accueil
 	'Accueil_CreationsDefinition0' => "It all starts with an emotion — a harmony that my eye perceives.", 
-	'Accueil_CreationsDefinition1' => "My creations are characterized by figurative shapes, with saturated colors and soft lines.",
+	'Accueil_CreationsDefinition1' => "My creations are characterized by figurative or abstract shapes, with saturated colors and soft lines.",
 	'Accueil_CreationsDefinition2' => "I often add a touch of surrealism, summoning dreams, humour and life. Visit my imaginary world.",
 
     'Figuratif' => "Landscape and Nature",
@@ -60,18 +60,13 @@ return array(
 	",
 	'AccueilArtisteIntroFin' => " and ",
     
-	'IntroAtelier' => "
-	<h2>Studio</h2><p>
-	
-	</p>",
-
-
-    'IntroAtelier' => '
+    'IntroAtelier' => "
      <h2>Studio</h2>
-	 <p>Those photos show GEM painting in her studio....
+	 <p>In my workshop I design, I paint and I complete my work with the artisanal touch: dressing the back by the parameters 
+	 of the painting, making the frame and painting, installation of the hook. A little glimpse of my artist's studio. 
 	 </p> 
 	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
-	 ',
+	 ",
 
     'IntroPortraits' => '
      <h2>Portraits</h2>
@@ -96,16 +91,13 @@ confusing perspectives, resulting in surrealist works.
 
     'IntroComposition' => '
      <h2>Compositions</h2>
-	 <p>Compositions are ....
-	 </p> 
-     <p>This exhibition is closed but some paintings are still available for purchase.</br>
-	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
-	  </p>',
+	 <p>Suggested presentation of these coordinated paintings (diptych and tritypch).
+	 </p>',
 
     'IntroCollage' => '
      <h2>Collages</h2><p>
 	Contemporary painting</p>
-    <br>My artworks are two-dimensional pieces made up of a base of white canvas stretched over a stretcher on which I glue different materials (plants, net, cardboard, paper, wood...) and then I add the paint.</br>	
+    <p>My artworks are two-dimensional pieces made up of a base of white canvas stretched over a stretcher on which I glue different materials (plants, net, cardboard, paper, wood...) and then I add the paint.</br>	
 	<br>Send an email to contact@giseleeisenmann.com for more information.</br>
     </p>",		
 
@@ -118,19 +110,15 @@ confusing perspectives, resulting in surrealist works.
 	
     'IntroMomentsFem' => '
      <h2>Feminine Moments</h2>
-	 <p>Feminine Moments is a tribute to the beauty of women in their daily existence, from daydreaming 
-	 supervising children at the beach, from dancing to mischievous childhood, 
+	 <p>Feminine Moments is a tribute to the beauty of women in their daily existence, from dancing to mischievous childhood, 
 	 from the wink of connivance between friends to maternal love.
-	 <br>Get the full view of the painting by clicking on it. </p> 
-     <p>This exhibition is closed but some paintings are still available for purchase.</br>
-	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
-	  </p>',
+	 <br>A few pieces presented at exhibitions on the subject in 2025 complete this list.</br> 
+     </p>',
  
 	'IntroWaterMirror' => "
 	<h2>Water Mirror</h2><p>
     Water Mirror explores how water and light transform landscapes, creating plays of reflections and shadows. 
-	The works often capture peaceful moments in nature that I have reproduced from my photos. Like a mischievous wink, I sometimes 
-	add a surreal touch to enrich the view. 
+	The works often capture peaceful moments in nature that I have reproduced from my photos.  
 	<br>The exhibition is closed but some paintings are still available for purchase.</br>
     <br>Send an email to contact@giseleeisenmann.com for more information.</br>
 	</p>",	
@@ -258,7 +246,7 @@ confusing perspectives, resulting in surrealist works.
     'MangroveCockatoo_Desc' => "Mangrove with fictitious kingfisher and sulphur-crested cockatoo (NSW, AUS)",
     'Contemplation_Alt' => "A woman seen from behind in a red dress sitting on a bench contemplates the Sorgue River",
     'Contemplation_Titre' => "Contemplation",
-    'Contemplation_Desc' => "Fictitious riverbank of the Sorgue (Vaucluse, France)",
+    'Contemplation_Desc' => "Inspired by the Sorgue river (Vaucluse, France)",
     'LaVague_Alt' => "a breaking wave, shaped like a tunnel as it breaks",
     'LaVague_Titre' => "The wave",
     'LaVague_Desc' => "",
@@ -300,34 +288,34 @@ confusing perspectives, resulting in surrealist works.
     'LaPiscine_Desc' => "",
 	'Cavalcade_Alt' => "Red and green abstraction painted with wooden frame",
     'Cavalcade_Titre' => "Cavalcade",
-    'Cavalcade_Desc' => "Framed abstract. Textured patterns",
+    'Cavalcade_Desc' => "Texture paste, wood, paint",
     'Farandole_Alt' => "Orange and white flowers with modeling paste",
     'Farandole_Titre' => "Farandole",
     'Farandole_Desc' => "",
 	'Cathedrale_Alt' => "Abstract. Skylight amidst pillars",
     'Cathedrale_Titre' => "Cathedral",
-    'Cathedrale_Desc' => "Contemporary painting with collage",
+    'Cathedrale_Desc' => "Contemporary painting with collage - plants, cardboard, net, crumpled paper",
 	'EtangAustral_Alt' => "Body of water - tall grass and black and yellow bird",
     'EtangAustral_Titre' => "Southern pond",
-    'EtangAustral_Desc' => "Contemporary painting with collage of Australian plants",
+    'EtangAustral_Desc' => "Contemporary painting with collage - plants",
 	'Poisson_Alt' => "Imaginary orange and red fish underwater",
     'Poisson_Titre' => "Fish",
-    'Poisson_Desc' => "Contemporary painting with collage",
+    'Poisson_Desc' => "Contemporary painting with collage - crumpled paper, net",
 	'LeverSoleilRouge_Alt' => "Sunrise on the beach. Glowing Sky",
     'LeverSoleilRouge_Titre' => "Red Sunrise",
     'LeverSoleilRouge_Desc' => "Sunrise on the beach. Glowing Sky",
 	'Savana_Alt' => "Imaginary landscape. Big yellow sun, tree, animals, walkway and stream",
     'Savana_Titre' => "Savana",
-    'Savana_Desc' => "Contemporary painting with collage",
+    'Savana_Desc' => "Contemporary painting - collage Plants, Net, Wood",
 	'PurpleSeagull_Alt' => "Seagull observes the blaze of the beach and shore",
     'PurpleSeagull_Titre' => "Purple Seagull",
-    'PurpleSeagull_Desc' => "Contemporary painting with collage, mixed media",
+    'PurpleSeagull_Desc' => "Contemporary painting - collage, mixed media",
 	'YellowSunset_Alt' => "Yellow sunset. Observer on the beach",
     'YellowSunset_Titre' => "Yellow Sunset",
-    'YellowSunset_Desc' => "Contemporary painting with collage, mixed media",
+    'YellowSunset_Desc' => "Contemporary painting - mixed media and sand incrusted",
 	'ApresMidiOiseau_Alt' => "A pelican hovers in front of a sunset",
     'ApresMidiOiseau_Titre' => "Afternoon of a Bird",
-    'ApresMidiOiseau_Desc' => "Contemporary painting with collage, mixed media",
+    'ApresMidiOiseau_Desc' => "Contemporary painting with crumpled paper, mixed media",
 	'ApresLaPluie_Alt' => "Dog Road Forest After Rain",
     'ApresLaPluie_Titre' => "After rain",
     'ApresLaPluie_Desc' => "The setting sun is reflected on the wet road",
@@ -336,13 +324,13 @@ confusing perspectives, resulting in surrealist works.
     'RencontreAuSommet_Desc' => "Young woman and marmot - alpine landscape",
 	'Carnaval_Alt' => "abstraction colorful garlands",
     'Carnaval_Titre' => "Carnival",
-    'Carnaval_Desc' => " ",	
+    'Carnaval_Desc' => "Crumpled paper, wooden parts, net ",	
 	'Dryade_Alt' => "Bust of a woman, foliage, flower",
     'Dryade_Titre' => "Dryad",
-    'Dryade_Desc' => "Forest nymph",
+    'Dryade_Desc' => "Forest nymph - Crumpled paper, fern",
 	'Spirale_Alt' => "Swirl with yellow and orange tones",
 	'Spirale_Titre' => "Spiral",
-    'Spirale_Desc' => "",
+    'Spirale_Desc' => "Collage (net, plant, crumpled paper, plant)",
 	'ConteMusical_Alt' => "Abstract Triptych Yellow and Blue",
 	'ConteMusical_Titre' => "Conte Musical (Musical Tale)",
     'ConteMusical_Desc' => "Abstract Triptych",
@@ -357,7 +345,7 @@ confusing perspectives, resulting in surrealist works.
     'Leman_Desc' => "Sunset on Lake Geneva - kites",
 	'TroisReveurs_Alt' => "Two children and a cat look out the window",
     'TroisReveurs_Titre' => "Three Dreamers",
-    'TroisReveurs_Desc' => "Two children and a cat look out the window",
+    'TroisReveurs_Desc' => "",
 
 	// oil
     'AutomneCezanne_Alt' => "Autumn - allegorical theme of the seasons at the Jas de Bouffan - after Cezanne",
@@ -523,7 +511,7 @@ confusing perspectives, resulting in surrealist works.
     // Aquarelle
     'LesMouettesPlage_Alt' => "Seagulls",
     'LesMouettesPlage_Titre' => "Les mouettes (Seagulls)",
-    'LesMouettesPlage_Desc' => "watercolor - Seagulls",
+    'LesMouettesPlage_Desc' => "",
     
 	// Tableau caracteristiques
 	'oil' => 'Oil on canvas',

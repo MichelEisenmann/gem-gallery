@@ -42,7 +42,7 @@ return array(
 
 	// Page Accueil
     'Accueil_CreationsDefinition0' => "Tout commence par une émotion — une harmonie que mon œil perçoit.",
-    'Accueil_CreationsDefinition1' => "Mes créations se caractérisent par des formes figuratives, aux couleurs saturées et aux lignes souples. ",
+    'Accueil_CreationsDefinition1' => "Mes créations se caractérisent par des formes figuratives ou abstraites, aux couleurs saturées et aux lignes souples. ",
     'Accueil_CreationsDefinition2' => "J'y ajoute souvent une touche de surréalisme, convoquant le rêve, l'humour et la vie. Visitez mon monde imaginaire.", 
 
     'Figuratif' => "Paysages et Nature",
@@ -73,9 +73,9 @@ return array(
 	
 	'IntroAtelier' => "
      <h2>Atelier</h2>
-	 <p>Les portraits sont ....
+	 <p>Dans mon atelier je conçois, je peins et je complète mon travail par la touche artisanale: habillage du dos par les paramètres du tableau, 
+	 confection du cadre et peinture, installation de l'accroche. Un petit aperçu de mon atelier d'artiste. 
 	 </p> 
-    
      ",
 	 
     'IntroPortraits' => "
@@ -100,7 +100,7 @@ return array(
 	
     'IntroComposition' => "
      <h2>Compositions</h2>
-	 <p>Suggestion de présentation de ces pièces coordonnées. 
+	 <p>Suggestion de présentation de ces pièces coordonnées (diptyques et triptyche). 
      </p>",
 
     'IntroCollage' => "
@@ -113,26 +113,21 @@ return array(
     'IntroMultiTexture' => "
      <h2>Finition multi-texturée</h2><p>
 	Peinture contemporaine	</p>
-    <br>Pour créer ces pieces, je commence par modifier la surface de mes toiles en changeant ses caractéristiques comme l'absorption, la texture ou la couleur. </br>
+    <p>Pour créer ces pieces, je commence par modifier la surface de mes toiles en changeant ses caractéristiques comme l'absorption, la texture ou la couleur. </br>
 	Au-dessus de ces nouvelles surfaces, j'applique la peinture acrylique ou autre, éventuellement en renouvelant la procédure sur plusieurs niveaux. </br>	
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
-    </p>",		
+	</p>",		
 	
     'IntroMomentsFem' => "
 	<h2>Moments Féminins</h2><p>
-	Moments Féminins est un hommage à la beauté des femmes dans leur existence au quotidien, de la rêverie 
-	à la surveillance des enfants à la plage, de la danse à l'enfance espiègle, 
-	du clin d'oeil de connivence entre amies à l'amour maternel. 
-	<br>Obtenez une vue complète du tableau en cliquant dessus</p>
-    <p>L'exposition s'est tenue du 30 Mai au 12 Juin 2025 à Gourdon (06), puis du 18 au 31 Décembre 2025 à Le Cannet, Terrasse des Arts (06). 
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
+	Moments Féminins est un hommage à la beauté des femmes dans leur existence au quotidien,  
+	de la danse à l'enfance espiègle, du clin d'œil de complicité entre amis à l'amour maternel. 
+	<br>Quelques pieces présentées aux expositions sur le sujet en 2025, completent cette liste. </br>
 	</p>",	
 	
 	'IntroWaterMirror' => "
 	<h2>Miroir d'eau</h2><p>
     Miroir d'eau explore comment l'eau et la lumière transforment les paysages, créant des jeux de reflets et d'ombres. 
-	Les oeuvres capturent souvent des moments paisibles dans la nature que j'ai reproduits à partir de mes photos. Comme un
-	clin d'oeil facétieux, j'ajoute parfois une touche surréaliste pour enrichir la vue. 
+	Les oeuvres capturent souvent des moments paisibles dans la nature que j'ai reproduits à partir de mes photos. 
     <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. </br>	
 	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",
@@ -263,7 +258,7 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     'MangroveCockatoo_Desc' => "La mangrove avec martin-pêcheur et cacatoès à huppe jaune (Nouvelle-Galles du Sud, AUS)",
     'Contemplation_Alt' => "Contemplation - une femme de dos en robe rouge assise sur un banc contemple la rivière La Sorgue",
     'Contemplation_Titre' => "Contemplation",
-    'Contemplation_Desc' => "Bord fictif de riviere La Sorgue (Vaucluse)",
+    'Contemplation_Desc' => "Inspiré de la riviere La Sorgue (Vaucluse)",
     'LaVague_Alt' => "une vague déferlante, en forme de tunnel au moment où elle se brise",
     'LaVague_Titre' => "La vague",
     'LaVague_Desc' => "",
@@ -305,34 +300,34 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     'LaPiscine_Desc' => "",
 	'Cavalcade_Alt' => "Abstraction rouge et verte avec cadre en bois peint",
     'Cavalcade_Titre' => "Cavalcade",
-    'Cavalcade_Desc' => "Abstrait encadré. Motifs texturés",
+    'Cavalcade_Desc' => "Pâte à texture, bois, peinture",
 	'Farandole_Alt' => "Fleurs orangées et blanches texturées en mouvement",
     'Farandole_Titre' => "Farandole",
     'Farandole_Desc' => "",
     'Cathedrale_Alt' => "Abstrait. Puits de lumière au milieu de piliers",
     'Cathedrale_Titre' => "Cathedrale",
-    'Cathedrale_Desc' => "Peinture contemporaine avec collage",
+    'Cathedrale_Desc' => "Peinture contemporaine avec collage - plantes, carton, papier froissé, filet",
 	'EtangAustral_Alt' => "Plan d'eau - grandes herbes et oiseau noir et jaune",
     'EtangAustral_Titre' => "Etang Austral",
-    'EtangAustral_Desc' => "Peinture contemporaine avec collage de végétaux australiens",
+    'EtangAustral_Desc' => "Peinture contemporaine avec collage - plantes",
 	'Poisson_Alt' => "Poisson imaginaire orange et rouge sous l'eau",
     'Poisson_Titre' => "Poisson",
-    'Poisson_Desc' => "Peinture contemporaine avec collage",
+    'Poisson_Desc' => "Peinture contemporaine - collage papier froissé, filet",
 	'LeverSoleilRouge_Alt' => "Lever de soleil sur la plage. Ciel rougeoyant, mouettes",
     'LeverSoleilRouge_Titre' => "Lever de soleil rouge",
     'LeverSoleilRouge_Desc' => "Lever de soleil sur la plage. Ciel rougeoyant",
 	'Savana_Alt' => "Paysage imaginaire. Grand soleil jaune, arbre, animaux, passerelle et ruisseau",
     'Savana_Titre' => "Savana",
-    'Savana_Desc' => "Peinture contemporaine avec collage",
+    'Savana_Desc' => "Peinture contemporaine - collage plantes, filet, bois ",
 	'PurpleSeagull_Alt' => "Mouette observe embrasement de la plage et rive",
     'PurpleSeagull_Titre' => "Purple Seagull",
-    'PurpleSeagull_Desc' => "Peinture contemporaine avec collage, technique mixte",
+    'PurpleSeagull_Desc' => "Peinture contemporaine - collage, technique mixte",
 	'YellowSunset_Alt' => "Coucher de soleil jaune. Observateur sur la plage",
     'YellowSunset_Titre' => "Yellow Sunset",
-    'YellowSunset_Desc' => "Peinture contemporaine, technique mixte",
+    'YellowSunset_Desc' => "Peinture contemporaine - technique mixte et sable collé",
 	'ApresMidiOiseau_Alt' => "Un pelican plane devant un coucher de soleil",
     'ApresMidiOiseau_Titre' => "Apres-Midi d'un Oiseau",
-    'ApresMidiOiseau_Desc' => "Peinture contemporaine, technique mixte",
+    'ApresMidiOiseau_Desc' => "Peinture contemporaine, technique mixte et papier froissé",
 	'ApresLaPluie_Alt' => "Chien Route foret après la pluie",
     'ApresLaPluie_Titre' => "Après la pluie",
     'ApresLaPluie_Desc' => "Le couchant se réflète sur la route mouillée",
@@ -341,13 +336,13 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     'RencontreAuSommet_Desc' => "Jeune femme et marmotte - paysage alpin",
 	'Carnaval_Alt' => "Abstraction guirlandes colorées",
     'Carnaval_Titre' => "Carnaval",
-    'Carnaval_Desc' => " ",
+    'Carnaval_Desc' => "Papier froissé, pieces en bois, filet",
 	'Dryade_Alt' => "Buste de femme, feuillage, fleur",
     'Dryade_Titre' => "Dryade",
-    'Dryade_Desc' => "Nymphe de la forêt",
+    'Dryade_Desc' => "Nymphe de la forêt - Papier froissé, fougère",
 	'Spirale_Alt' => "Volute avec des tons jaunes et orangés",
     'Spirale_Titre' => "Spirale",
-    'Spirale_Desc' => "",
+    'Spirale_Desc' => "Collage filet, carton, plante, papier froissé",
 	'ConteMusical_Alt' => "Triptyque abstrait Jaune et bleu",
     'ConteMusical_Titre' => "Conte Musical",
     'ConteMusical_Desc' => "Triptyque abstrait",
@@ -362,7 +357,7 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     'Leman_Desc' => "Sunset sur le lac Léman - milans",
 	'TroisReveurs_Alt' => "Deux enfants et un chat regardent par la fenêtre",
     'TroisReveurs_Titre' => "Trois rêveurs",
-    'TroisReveurs_Desc' => "Deux enfants et un chat regardent par la fenêtre",
+    'TroisReveurs_Desc' => "",
 
 	// oil
     'AutomneCezanne_Alt' => "Automne - thème allégorique des saisons au Jas de Bouffan",
@@ -528,7 +523,7 @@ Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et form
     // Aquarelle
     'LesMouettesPlage_Alt' => "Les mouettes",
     'LesMouettesPlage_Titre' => "Les mouettes",
-    'LesMouettesPlage_Desc' => "Aquarelle - Les mouettes",
+    'LesMouettesPlage_Desc' => "",
 
 	// Tableau caracteristiques
 	'oil' => 'Huile sur toile',

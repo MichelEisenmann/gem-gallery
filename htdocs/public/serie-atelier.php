@@ -23,6 +23,11 @@ $atelier= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 
 $paints=[];
 $paints["GEMPeint"]= $atelier->paints["GEMPeint"];
+$paints["PeintGauche"]= $atelier->paints["PeintGauche"];
+$paints["PeintCadrePascale"]= $atelier->paints["PeintCadrePascale"];
+$paints["BaptiseTableau"]= $atelier->paints["BaptiseTableau"];
+$paints["InstalleCable"]= $atelier->paints["InstalleCable"];
+$paints["MesureAccroche"]= $atelier->paints["MesureAccroche"];
 
 
 $column_generator= new ColumnGenerator();
@@ -51,6 +56,11 @@ $column_generator->serie_dico= $atelier;  // will be used to browse exclusively 
   
     <?php
 $column_generator->generate_style_not_a_paint("GEMPeint");
+$column_generator->generate_style_not_a_paint("PeintGauche");
+$column_generator->generate_style_not_a_paint("PeintCadrePascale");
+$column_generator->generate_style_not_a_paint("BaptiseTableau");
+$column_generator->generate_style_not_a_paint("InstalleCable");
+$column_generator->generate_style_not_a_paint("MesureAccroche");
 
     ?>
   </style>
@@ -71,15 +81,30 @@ $column_generator->generate_style_not_a_paint("GEMPeint");
        
       <!-- Paintings (Grille avec images provenant de la serie atelier)-->	  
 	  
-      <div class="w3-grid" style="grid-template-columns:100%">
+      <div class="w3-grid" style="grid-template-columns:33% 33% 33%">
 
        <!-- First column --> 
        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 	     <?= $column_generator->add_to_column_not_a_paint( "GEMPeint" ); ?>
-		 
+		 <?= $column_generator->add_to_column_not_a_paint( "BaptiseTableau" ); ?> 
+
+
+
        </div>
-		     
-      </div>
+
+       <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+	     <?= $column_generator->add_to_column_not_a_paint( "PeintCadrePascale" ); ?> 
+		 <?= $column_generator->add_to_column_not_a_paint( "MesureAccroche" ); ?>
+
+	   </div>
+		 
+       <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+	   	<?= $column_generator->add_to_column_not_a_paint( "PeintGauche" ); ?>
+		<?= $column_generator->add_to_column_not_a_paint( "InstalleCable" ); ?>
+
+	 
+       </div>
+	</div>	     
       
       <!-- Footer -->
       <?php include("../public/copyright.php"); ?>

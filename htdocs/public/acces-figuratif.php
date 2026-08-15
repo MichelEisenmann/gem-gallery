@@ -51,7 +51,7 @@
     }
 
     .imagecontainer {
-    height: 200px;
+    height: 300px;
     overflow: hidden;
     }
 
@@ -89,6 +89,10 @@
     .introcontainer div {
     padding: 10px;
     }
+	.imagecontainer {
+     overflow: hidden;
+	 height: 200px;
+    }
 
     }
 
@@ -122,7 +126,7 @@
         <a href="<?= Translator::url('/public/serie-watermirror.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
-	      <img src="/public/images/Acrylique/20250504_La piscine-AC50x50_small.jpg" alt="La Piscine" style="width:100%; " />
+	      <img src="/public/images/Acrylique/20250504_La piscine-AC50x50_small.jpg" alt="La Piscine" style="width:100%;" />
 	    </div>
 	    <div class="w3-container w3-center">
 	      <?= Translator::t("watermirror"); ?>
@@ -133,7 +137,7 @@
         <a href="<?= Translator::url('/public/serie-portrait.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
-	    <img src="/public/images/Acrylique/20211019_PortraitGuillaumeTetine_AC33x24_small.jpg" alt="Guillaume Tetine" style="width:100%; " />
+	    <img src="/public/images/Acrylique/20211019_PortraitGuillaumeTetine_AC33x24_small.jpg" alt="Guillaume Tetine" style="width:100%;" />
 	    </div>
 	    <div class="w3-container w3-center">
 	      <?= Translator::t("portrait"); ?>
@@ -144,7 +148,7 @@
        <a href="<?= Translator::url('/public/serie-surrealisme.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
-	    <img src="/public/images/Acrylique/20220821_Regards_small.jpg" alt="Jeu de regards" style="width:100%; " />
+	    <img src="/public/images/Acrylique/20220821_Regards_small.jpg" alt="Jeu de regards" style="width:100%;" />
 	    </div>
 	    <div class="w3-container w3-center">
 	      <?= Translator::t("surrealisme"); ?>

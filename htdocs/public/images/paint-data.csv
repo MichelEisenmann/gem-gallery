@@ -30,14 +30,14 @@
 -1,PortraitGuillaumeTetine,Acrylique/20211019_PortraitGuillaumeTetine_AC33x24.jpg,20211019,33,24,acrylic,indisponible,portrait
 -1,Royal,Acrylique/20211105_OlenEnPied_AC55x46.jpg,20211105,55,46,acrylic,indisponible,portrait
 -1,JeuxVagues,Acrylique/20211127_JeuxDeVagues_AC45x55.jpg,20211127,45,55,acrylic,indisponible,watermirror
--1,IleLoups,Acrylique/20211209_IleAuxLoups.png,20211209,40,80,acrylic,,surrealisme
+-1,IleLoups,Acrylique/20211209_IleAuxLoups.png,20211209,40,80,acrylic,indisponible,surrealisme
 -1,EvocationGourdon,Acrylique/20211228_EvocationGourdon_AC73x90.jpg,20211228,73,90,acrylic,,surrealisme
 -1,LesZebres,Acrylique/20220317_LesZebres_AC40x80.jpg,20220317,40,80,acrylic,,surrealisme
 -1,ParisQuaiSeine,Acrylique/20220312_ParisQuaiDeSeine_AC40x80.jpg,20220312,40,80,acrylic,vendu,watermirror
 -1,AustralianPelican,Acrylique/20220601_CreekAustralianPelican_AC35x24.jpg,20220601,35,24,acrylic,vendu,watermirror
 -1,LeFicus,Acrylique/20220609_Le Ficus_AC20x20.jpg,20220609,20,20,acrylic,,emergence
 -1,FlamandsRouges,Acrylique/20220723_LesFlamantsRouges_AC50x50.jpg,20220723,50,50,acrylic,,collage
--1,JeuDeRegard,Acrylique/20220821_Regards.jpg,20220821,40,50,acrylic,,surrealisme
+-1,JeuDeRegard,Acrylique/20220821_Regards.jpg,20220821,40,50,acrylic,,surrealisme momentsfeminins
 -1,VaseAbutilons,Acrylique/20250709_Abutilons_AC20x27.jpg,20250709,20,27,acrylic,,momentsfeminins
 -1,PinkSunset,Acrylique/20221103_PinkSunsetTerranoraCreek_AC50x76.jpg,20221103,50,76,acrylic,vendu,watermirror
 -1,BlueSunset,Acrylique/20221210_BlueSunsetTerranoraCreek_AC54x81.jpg,20221210,54,81,acrylic,vendu,watermirror
@@ -82,7 +82,7 @@
 -1,PanierFraisesBois,Huile/20220723_Chardin-FraisesDesBois_HU60x80.jpg,20220723,60,80,oil,indisponible,emergence
 -1,ReveDeTropiques,Huile/20221128_ReveDeTropiques_HU53x70.jpg,20221128,53,72,oil,,surrealisme
 -1,Flamboyance,Huile/20221109_Flamboyance_HU32x41.jpg,20221109,32,41,oil,indisponible,abstrait
--1,LesDanseusesNoires,Huile/20230216_LesDanseuses_Huile.jpg,20230216,65,80,oil,,momentsfeminins
+-1,LesDanseusesNoires,Huile/20230216_LesDanseuses_HU65x80.jpg,20230216,65,80,oil,,momentsfeminins
 -1,DonazacVillage,Huile/20230706_Donazac_Hu30P_65x92.jpg,20230706,65,92,oil,indisponible,emergence
 -1,ClairDeSoleil,Huile/20230708_ClairDeSoleil_HU92x65.jpg,20230708,92,65,oil,,watermirror
 -1,IlotMangrove,Huile/20230809_IlotMangrove_HU40x80.jpg,20230809,40,80,oil,,watermirror
@@ -144,23 +144,28 @@
 #
 #  insitu
 #
--1,LaTroueeInSitu,web/20241214_LaTrouee-InSitu.jpg,20260815,0,0,photo,,insitu
--1,SpiraleInSitu,web/Spirale_InSitu.png,20260815,0,0,photo,,insitu
--1,AirMarinInSitu,web/air-marin-night-club-living-room-unsplash.png,20260815,0,0,photo,,insitu
--1,DanseusesInSitu,web/danseuses-bedroom-unsplash.png,20260815,0,0,photo,,insitu
--1,FestifInSitu,web/festif-living-room-unsplash.png,20260815,0,0,photo,,insitu
--1,ClairDeSoleilInSitu,web/clair-de-soleil-salon-fauteuil-unsplash.png,20260815,0,0,photo,,insitu
--1,ConteMusicalInSitu,web/conte-musical-blue-coach-unsplash-edited.png,20260815,0,0,photo,,insitu
--1,ContemplationAigretteInSitu,web/contemplation-aigrette-salon-coach-2-unsplash.png,20260815,0,0,photo,,insitu
--1,CreoleInSitu,web/canvy_creole-rencontre.jpg,20260815,0,0,photo,,insitu
--1,MimosasInSitu,web/mimosas-bedroom-2-unsplash-2.png,20260815,0,0,photo,,insitu
--1,ConteMusicalInSitu,web/Decor_ConteMusical-V2.jpg,20260815,0,0,photo,,insitu
+-1,LaTroueeInSitu,web/InSitu_LaTrouee_ApptVera.jpg,20260815,0,0,photo,,insitu
+-1,SpiraleInSitu,web/InSitu_Spirale.png,20260815,0,0,photo,,insitu
+-1,AirMarinInSitu,web/InSitu_AirMarinNightClub.png,20260815,0,0,photo,,insitu
+-1,DanseusesInSitu,web/InSitu_Danseuses-bedroom.png,20260815,0,0,photo,,insitu
+-1,FestifInSitu,web/InSitu_festif-living-room.png,20260815,0,0,photo,,insitu
+-1,ClairDeSoleilInSitu,web/InSitu_ClairDeSoleil_Salon.png,20260815,0,0,photo,,insitu
+-1,ConteMusicalInSitu,web/InSitu_conte-musical-blue-coach.png,20260815,0,0,photo,,insitu
+-1,ContemplationAigretteInSitu,web/InSitu_Contemplation-aigrette-salon.png,20260815,0,0,photo,,insitu
+-1,CreoleInSitu,web/InSitu_creole-rencontre.jpg,20260815,0,0,photo,,insitu
+-1,MimosasInSitu,web/InSitu_mimosas-bedroom.png,20260815,0,0,photo,,insitu
+-1,ConteMusicalInSitu,web/InSitu_ConteMusical_GreyCoach.jpg,20260815,0,0,photo,,insitu
 -1,ArtGalleryInSitu1,web/Accueil-art-gallery1.jpg,20260815,0,0,photo,,insitu
 -1,ArtGalleryInSitu2,web/Accueil-art-gallery2.jpg,20260815,0,0,photo,,insitu
 #
 # atelier
 #
--1,GEMPeint,web/2024-04-29-GEM-peint.png,20260815,0,0,photo,,atelier
+-1,GEMPeint,web/Atelier_2024-GEM-peint.png,20260815,0,0,photo,,atelier
+-1,PeintGauche,web/Atelier_peintIleMangrove.png,20260815,0,0,photo,,atelier
+-1,PeintCadrePascale,web/Atelier_PeintCadre.png,20260815,0,0,photo,,atelier
+-1,BaptiseTableau,web/Atelier_BaptiseTableau.png,20260815,0,0,photo,,atelier
+-1,InstalleCable,web/Atelier_InstalleFilFer.png,20260815,0,0,photo,,atelier
+-1,MesureAccroche,web/Atelier_MesureAccroche.png,20260815,0,0,photo,,atelier
 #
 # exhibitions
 #

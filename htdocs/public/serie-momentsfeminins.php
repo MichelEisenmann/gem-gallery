@@ -43,11 +43,13 @@ $paints["AutomneCezanne"]= $oil->paints["AutomneCezanne"];
 $paints["LectriceChaton"]= $acrylic->paints["LectriceChaton"];
 $paints["LaPiscine"]= $acrylic->paints["LaPiscine"];
 $paints["VaseAbutilons"]= $acrylic->paints["VaseAbutilons"];
+$paints["JeuDeRegard"]= $acrylic->paints["JeuDeRegard"];
 
 // Pastels
 $paints["RosesRouges"]= $pastel->paints["RosesRouges"];
 $paints["LeBisou"]= $pastel->paints["LeBisou"];
 $paints["LaPasserelle"]= $pastel->paints["LaPasserelle"];
+$paints["GourdonEglise"] = $pastel->paints["GourdonEglise"];
 
 
 // Autres
@@ -92,9 +94,9 @@ $column_generator->generate_style("RosesRouges", "white");
 $column_generator->generate_style("VaseAbutilons",  "white");
 $column_generator->generate_style("AutomneCezanne", "white");
 $column_generator->generate_style("LeBisou", "white");
-$column_generator->generate_style("PascaleMelancolie", "black");
 $column_generator->generate_style("LaPasserelle", "white");
 $column_generator->generate_style("JeuDeRegard", "black");
+$column_generator->generate_style("GourdonEglise", "black");
 
 
     ?>
@@ -136,7 +138,8 @@ $column_generator->generate_style("JeuDeRegard", "black");
 		  <?= $column_generator->add_to_column( "Nightclub" ); ?>
 		  <?= $column_generator->add_to_column( "LectriceChaton" ); ?>
 		 <?= $column_generator->add_to_column( "SanguinePascale" ); ?>
-		  <?= $column_generator->add_to_column( "LeBisou" ); ?>		 
+		  <?= $column_generator->add_to_column( "LeBisou" ); ?>	
+		  <?= $column_generator->add_to_column( "GourdonEglise" ); ?>		 		  
        </div>
 	   
         <!-- Third column --> 
