@@ -35,9 +35,9 @@
   		  
 		<!-- scenario 2: Images de scène d'exposition --->
 		<div class="w3-padding-16">
-			<a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>">
+			<!---  <a href="<?= Translator::url('/public/serie-couleursetmodele.php') ?>"> --->
 				<img src="/public/images/web/Affichette_Expo-Gourdon26_Cadre.jpg" alt="Gourdon exhibition flyer" style="width:100%" />
-			</a> 
+			<!-- </a> -->
 		</div>
 
 

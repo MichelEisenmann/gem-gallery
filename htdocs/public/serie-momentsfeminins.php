@@ -44,12 +44,17 @@ $paints["LectriceChaton"]= $acrylic->paints["LectriceChaton"];
 $paints["LaPiscine"]= $acrylic->paints["LaPiscine"];
 $paints["VaseAbutilons"]= $acrylic->paints["VaseAbutilons"];
 $paints["JeuDeRegard"]= $acrylic->paints["JeuDeRegard"];
+$paints["TroueeBois"]= $acrylic->paints["TroueeBois"];
 
 // Pastels
 $paints["RosesRouges"]= $pastel->paints["RosesRouges"];
 $paints["LeBisou"]= $pastel->paints["LeBisou"];
 $paints["LaPasserelle"]= $pastel->paints["LaPasserelle"];
 $paints["GourdonEglise"] = $pastel->paints["GourdonEglise"];
+$paints["AlleePlatanes"] = $pastel->paints["AlleePlatanes"];
+$paints["DesertJordanie"] = $pastel->paints["DesertJordanie"];
+$paints["AmericanRobins"] = $pastel->paints["AmericanRobins"];
+
 
 
 // Autres
@@ -97,6 +102,10 @@ $column_generator->generate_style("LeBisou", "white");
 $column_generator->generate_style("LaPasserelle", "white");
 $column_generator->generate_style("JeuDeRegard", "black");
 $column_generator->generate_style("GourdonEglise", "black");
+$column_generator->generate_style("TroueeBois", "black");
+$column_generator->generate_style("AlleePlatanes", "black");
+$column_generator->generate_style("DesertJordanie", "white");
+$column_generator->generate_style("AmericanRobins", "white");
 
 
     ?>
@@ -130,6 +139,7 @@ $column_generator->generate_style("GourdonEglise", "black");
           <?= $column_generator->add_to_column( "AirMarin" ); ?>
           <?= $column_generator->add_to_column( "LaPasserelle" ); ?>
           <?= $column_generator->add_to_column( "VaseAbutilons" ); ?>
+		  <?= $column_generator->add_to_column( "TroueeBois" ); ?>
 	  
         </div>
 
@@ -139,7 +149,8 @@ $column_generator->generate_style("GourdonEglise", "black");
 		  <?= $column_generator->add_to_column( "LectriceChaton" ); ?>
 		 <?= $column_generator->add_to_column( "SanguinePascale" ); ?>
 		  <?= $column_generator->add_to_column( "LeBisou" ); ?>	
-		  <?= $column_generator->add_to_column( "GourdonEglise" ); ?>		 		  
+		  <?= $column_generator->add_to_column( "GourdonEglise" ); ?>
+          <?= $column_generator->add_to_column( "AlleePlatanes" ); ?>		  
        </div>
 	   
         <!-- Third column --> 
@@ -147,7 +158,10 @@ $column_generator->generate_style("GourdonEglise", "black");
 		  <?= $column_generator->add_to_column( "LaPiscine" ); ?>  
 		  <?= $column_generator->add_to_column( "JeuDeRegard" ); ?>
 		  <?= $column_generator->add_to_column( "RosesRouges" ); ?>
+		  <?= $column_generator->add_to_column( "DesertJordanie" ); ?>
+		  <?= $column_generator->add_to_column( "AmericanRobins" ); ?>
 		  <?= $column_generator->add_to_column( "AutomneCezanne" ); ?>
+
  
         </div>
       </div>
