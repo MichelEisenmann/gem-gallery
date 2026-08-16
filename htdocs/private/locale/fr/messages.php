@@ -33,7 +33,7 @@ return array(
 
 	
 	// divers
-    'copyrightview' => "Voir la dernière à venir exposition",
+    'copyrightview' => "Evènement: informez-vous sur la prochaine exposition",
     'Avertissement' => "Avertissement : Le contenu de ce site Internet est protégé par le droit d’auteur. Toute reproduction est interdite.",
     'soloexpo' => 'Expositions Solo', 
     'groupexpo' => "Une sélection d'expositions de groupe",
@@ -98,13 +98,13 @@ return array(
 	
     'IntroComposition' => "
      <h2>Compositions</h2>
-	 <p>Suggestion de présentation de ces pièces coordonnées (diptyques et triptyque). 
+	 <p>Suggestion de présentation de ces oeuvres diptyques et triptyque. 
      </p>",
 
     'IntroCollage' => "
      <h2>Collages</h2><p>
 	Peinture contemporaine</p>
-    <p>Mes oeuvres sont des pieces en deux dimensions constituées d'une base de toile blanche tendue sur un chassis 
+    <p>Ces oeuvres sont des pieces en deux dimensions constituées d'une base de toile blanche tendue sur un chassis 
     sur laquelle je colle differents matériaux (végétaux, filet, carton, papier, bois...) puis j'ajoute la peinture. 
     </p>",		
 
@@ -128,18 +128,9 @@ return array(
 	<h2>Miroir d'eau</h2><p>
     Miroir d'eau explore comment l'eau et la lumière transforment les paysages, créant des jeux de reflets et d'ombres. 
 	Les oeuvres capturent souvent des moments paisibles dans la nature que j'ai reproduits à partir de mes photos. 
-    <br>L'exposition est terminée mais quelques tableaux sont encore disponibles à l'achat. 
-	Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
 	</p>",
 
    
-	'IntroCouleursEtModele' => "
-	<h2>Symphonie de couleurs et texture</h2><p>
-	Couleurs chatoyantes et rendu du relief, des formes avec la peinture et matériau.	</p>
-    <p>Quelques tableaux sont disponibles à l'achat.
-	<br>Envoyez un email à contact@giseleeisenmann.com pour plus d'information.</br>
-	</p>",			
-
     'Introduction' => '  <p>Gisèle Eisenmann Montagné (nom artiste: GEM) est une artiste autodidacte, travaillant 
 	principalement aujourd’hui avec l’huile et l’acrylique, et occasionnellement avec des pastels secs. 
 	A l’origine Docteur es Sciences et informaticienne, elle transitionne vers la peinture lorsque le COVID frappe 

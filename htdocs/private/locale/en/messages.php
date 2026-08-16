@@ -23,7 +23,7 @@ return array(
 
 	
 	//divers
-	'copyrightview' => "View artist's recent exhibition",
+	'copyrightview' => "Event: get informed on upcoming exhibition",
     'Avertissement' => 'Warning: The content of this web site is copyrighted. Any reproduction is strictly forbidden.',
 	'soloexpo' => 'Solo Exhibitions', 
 	'groupexpo' => 'Selected Group Exhibitions',
@@ -64,9 +64,7 @@ return array(
      <h2>Studio</h2>
 	 <p>In my workshop I design, I paint and I complete my work with the artisanal touch: dressing the back by the parameters 
 	 of the painting, making the frame and painting, installation of the hook. A little glimpse of my artist's studio. 
-	 </p> 
-	 <br>Send an email to contact@giseleeisenmann.com for more information.</br>
-	 ",
+	 </p> ",
 
     'IntroPortraits' => '
      <h2>Portraits</h2>
@@ -95,10 +93,9 @@ confusing perspectives, resulting in surrealist works.
     'IntroCollage' => '
      <h2>Collages</h2><p>
 	Contemporary painting</p>
-    <p>My artworks are two-dimensional pieces made up of a base of white canvas stretched over a stretcher 
-	on which I glue different materials (plants, net, cardboard, paper, wood...) and then I add the paint.</br>	
-	<br>Send an email to contact@giseleeisenmann.com for more information.</br>
-    </p>',		
+    <p>These paintings are two-dimensional pieces made up of a base of white canvas stretched over a stretcher 
+	on which I glue different materials (plants, net, cardboard, paper, wood...) and then I add the paint.	
+	</p>',		
 
     'IntroMultiTexture' => '
      <h2>Multitextured finish</h2><p>
@@ -119,8 +116,6 @@ confusing perspectives, resulting in surrealist works.
 	<h2>Water Mirror</h2><p>
     Water Mirror explores how water and light transform landscapes, creating plays of reflections and shadows. 
 	The works often capture peaceful moments in nature that I have reproduced from my photos.  
-	<br>The exhibition is closed but some paintings are still available for purchase. Send an email to contact@giseleeisenmann.com 
-	for more information.</br>
 	</p>',	
 	
 
