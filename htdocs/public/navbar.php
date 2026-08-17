@@ -4,10 +4,11 @@
  $series[0]= "momentsfeminins";
  $series[1]= "watermirror";
  $series[2]= "portrait";
- $series[3]= "surrealisme";
- $series[4]= "composition";
- $series[5]= "collage";
- $series[6]= "multitexture";
+ $series[3]= "abstrait";
+ $series[4]= "surrealisme";
+ $series[5]= "composition";
+ $series[6]= "collage";
+ $series[7]= "multitexture";
   
 
 
