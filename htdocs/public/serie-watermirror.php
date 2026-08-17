@@ -26,6 +26,8 @@ $oil= $ALL_GALLERIES->paint_dictionnaries["oil"];
 $pastel= $ALL_GALLERIES->paint_dictionnaries["pastel"];
 $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
 $aquarelle = $ALL_GALLERIES->paint_dictionnaries["aquarelle"];
+$insitu= $ALL_GALLERIES->paint_dictionnaries["insitu"];
+
 
 // On recupere toutes les peintures qu'on veut voir dans cette serie
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
@@ -56,7 +58,9 @@ $paints["YellowAigrette"]= $acrylic->paints["YellowAigrette"];
 $paints["PelicanToutSeul"]= $acrylic->paints["PelicanToutSeul"];
 $paints["Leman"]= $acrylic->paints["Leman"];
 
-
+// in Situ
+$paints["ClairDeSoleilInSitu"]= $insitu->paints["ClairDeSoleilInSitu"];
+$paints["ContemplationAigretteInSitu"]= $insitu->paints["ContemplationAigretteInSitu"];
 
 // Pastels
 $paints["LaBragueTamarin"]= $pastel->paints["LaBragueTamarin"];
@@ -120,6 +124,8 @@ $column_generator->generate_style("OlenSiagneDoree", "black");
 $column_generator->generate_style("LesMouettesPlage", "black");
 $column_generator->generate_style("Zenitude", "black");
 $column_generator->generate_style("LaVague", "white");
+$column_generator->generate_style_not_a_paint("ClairDeSoleilInSitu");
+$column_generator->generate_style_not_a_paint("ContemplationAigretteInSitu");
 
 
 
@@ -156,6 +162,7 @@ $column_generator->generate_style("LaVague", "white");
 	  
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		<?= $column_generator->add_to_column( "ClairDeSoleil" ); ?>
+		<?= $column_generator->add_to_column_not_a_paint( "ClairDeSoleilInSitu" ); ?> 
 		<?= $column_generator->add_to_column( "BrumesDuSoir" ); ?>
 		<?= $column_generator->add_to_column( "EgretYellowSunset" ); ?>
         </div>
@@ -169,6 +176,7 @@ $column_generator->generate_style("LaVague", "white");
 		 <?= $column_generator->add_to_column( "JeuxVagues" ); ?>
 		  <?= $column_generator->add_to_column( "LaBragueTamarin" ); ?>
 		  <?= $column_generator->add_to_column( "MilieuTorrent" ); ?>
+		  <?= $column_generator->add_to_column_not_a_paint( "ContemplationAigretteInSitu" ); ?> 
 
 		</div>
    
@@ -180,6 +188,8 @@ $column_generator->generate_style("LaVague", "white");
           <?= $column_generator->add_to_column( "ParisQuaiSeine" ); ?> 
 		  <?= $column_generator->add_to_column( "PinkSunset" ); ?>
 		  <?= $column_generator->add_to_column( "MangroveCockatoo" ); ?>
+		  <?= $column_generator->add_to_column( "Contemplation" ); ?>
+		 
 
         </div>
       </div>
@@ -196,7 +206,7 @@ $column_generator->generate_style("LaVague", "white");
       <div class="w3-grid" style="grid-template-columns:38% 24% 38%">
        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		<?= $column_generator->add_to_column( "BlueSunset" ); ?>
-         <?= $column_generator->add_to_column( "Contemplation" ); ?>
+
 		 <?= $column_generator->add_to_column( "OlenSiagneDoree" ); ?>  
         </div>
       
