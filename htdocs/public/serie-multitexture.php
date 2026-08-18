@@ -23,6 +23,8 @@ $serie= $ALL_GALLERIES->paint_dictionnaries[$serie_key];
 
 // ces dictionnaires sont les dictionnaires standard
 $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
+$insitu= $ALL_GALLERIES->paint_dictionnaries["insitu"];
+
 
 // On recupere toutes les peintures qu'on veut voir dans cette serie
 // On les stocke dans "$paints" et on leur donne un ID qui doit etre sans caractere special.
@@ -38,6 +40,10 @@ $paints["PurpleSeagull"]= $acrylic->paints["PurpleSeagull"];
 $paints["YellowSunset"]= $acrylic->paints["YellowSunset"];
 $paints["ApresMidiOiseau"]= $acrylic->paints["ApresMidiOiseau"];
 $paints["ApresLaPluie"]= $acrylic->paints["ApresLaPluie"];
+
+// in Situ
+$paints["CreoleInSitu"]= $insitu->paints["CreoleInSitu"];
+$paints["ApresMidiYellowSunsetInSitu"]= $insitu->paints["ApresMidiYellowSunsetInSitu"];
 
 
 $column_generator= new ColumnGenerator();
@@ -75,6 +81,8 @@ $column_generator->generate_style("PurpleSeagull", "black");
 $column_generator->generate_style("YellowSunset", "black");
 $column_generator->generate_style("ApresMidiOiseau", "white");
 $column_generator->generate_style("ApresLaPluie", "black");
+$column_generator->generate_style_not_a_paint("CreoleInSitu");
+$column_generator->generate_style_not_a_paint("ApresMidiYellowSunsetInSitu");
     ?>
   </style>
   
@@ -93,29 +101,48 @@ $column_generator->generate_style("ApresLaPluie", "black");
       
        
        <!-- Paintings -->
- 
-  	  <div class="w3-grid" style="grid-template-columns:100%">
+   	  <div class="w3-grid" style="grid-template-columns:100%">
         <!-- single column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		  <?= $column_generator->add_to_column( "RencontreAuSommet" ); ?>
         </div>
       </div>
 	  
-      <div class="w3-grid" style="grid-template-columns:40% 60%">
+	 <!-- block 1 + in-situ -->
+     <div class="w3-grid" style="grid-template-columns:100%">
+	   <!-- first column --> 
+       <div class="w3-grid" style="grid-template-columns:50% 50%">
+        
+		<div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">	 
+		  <?= $column_generator->add_to_column_not_a_paint( "CreoleInSitu" ); ?> 
+		  <?= $column_generator->add_to_column( "Leman" ); ?>
+
+        </div>
+         <!-- second column --> 	    
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">	
+		   <?= $column_generator->add_to_column( "TroisReveurs" ); ?>
+        </div>
+       </div>
+	</div>
+	
+
+	 <!-- block 2 Reprise peintures           -->		
+      <div class="w3-grid" style="grid-template-columns:35% 65%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		   <?= $column_generator->add_to_column( "LeverSoleilRouge" ); ?>
 		   <?= $column_generator->add_to_column( "ApresLaPluie" ); ?>
-		   <?= $column_generator->add_to_column( "Leman" ); ?>
 		   <?= $column_generator->add_to_column( "PurpleSeagull" ); ?>
+		   <?= $column_generator->add_to_column( "LeverSoleilRouge" ); ?>
 
         </div>
 		
         <!-- Second column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-		   <?= $column_generator->add_to_column( "TroisReveurs" ); ?>
+
 		  <?= $column_generator->add_to_column( "YellowSunset" ); ?>
 		   <?= $column_generator->add_to_column( "ApresMidiOiseau" ); ?>
+		   <?= $column_generator->add_to_column_not_a_paint( "ApresMidiYellowSunsetInSitu" ); ?>
+
          </div>
       </div>
 
