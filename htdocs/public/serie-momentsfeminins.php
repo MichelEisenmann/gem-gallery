@@ -26,6 +26,7 @@ $oil= $ALL_GALLERIES->paint_dictionnaries["oil"];
 $pastel= $ALL_GALLERIES->paint_dictionnaries["pastel"];
 $acrylic= $ALL_GALLERIES->paint_dictionnaries["acrylic"];
 $sanguine = $ALL_GALLERIES->paint_dictionnaries["sanguine"];
+$insitu= $ALL_GALLERIES->paint_dictionnaries["insitu"];
 
 
 
@@ -55,6 +56,9 @@ $paints["AlleePlatanes"] = $pastel->paints["AlleePlatanes"];
 $paints["DesertJordanie"] = $pastel->paints["DesertJordanie"];
 $paints["AmericanRobins"] = $pastel->paints["AmericanRobins"];
 
+// in Situ
+$paints["DanseusesInSitu"]= $insitu->paints["DanseusesInSitu"];
+$paints["AirMarinInSitu"]= $insitu->paints["AirMarinInSitu"];
 
 
 // Autres
@@ -106,6 +110,9 @@ $column_generator->generate_style("TroueeBois", "black");
 $column_generator->generate_style("AlleePlatanes", "black");
 $column_generator->generate_style("DesertJordanie", "white");
 $column_generator->generate_style("AmericanRobins", "white");
+$column_generator->generate_style_not_a_paint("DanseusesInSitu");
+$column_generator->generate_style_not_a_paint("AirMarinInSitu");
+
 
 
     ?>
@@ -132,20 +139,40 @@ $column_generator->generate_style("AmericanRobins", "white");
         </div>
       </div>
 	  
+	 <!-- block 1 + in-situ -->
+     <div class="w3-grid" style="grid-template-columns:100%">
+	   <!-- first column --> 
+       <div class="w3-grid" style="grid-template-columns:50% 50%">
+        
+		<div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">	 
+          <?= $column_generator->add_to_column( "AirMarin" ); ?>
+		  <?= $column_generator->add_to_column_not_a_paint( "DanseusesInSitu" ); ?> 
+        </div>
+         <!-- second column --> 	    
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">	
+		<?= $column_generator->add_to_column( "Nightclub" ); ?>
+		<?= $column_generator->add_to_column_not_a_paint( "AirMarinInSitu" ); ?> 
+        </div>
+       </div>
+	</div>
+	
 
+	 <!-- block 2 Reprise peintures           -->			 
+     <div class="w3-grid" style="grid-template-columns:100%">
       <div class="w3-grid" style="grid-template-columns:40% 30% 30%">
         <!-- First column --> 
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
-          <?= $column_generator->add_to_column( "AirMarin" ); ?>
+
           <?= $column_generator->add_to_column( "LaPasserelle" ); ?>
           <?= $column_generator->add_to_column( "VaseAbutilons" ); ?>
-		  <?= $column_generator->add_to_column( "TroueeBois" ); ?>
+		  <?= $column_generator->add_to_column( "DesertJordanie" ); ?>
+		  <?= $column_generator->add_to_column( "AutomneCezanne" ); ?>
+
 	  
         </div>
 
         <!-- second column --> 
        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">		
-		  <?= $column_generator->add_to_column( "Nightclub" ); ?>
 		  <?= $column_generator->add_to_column( "LectriceChaton" ); ?>
 		 <?= $column_generator->add_to_column( "SanguinePascale" ); ?>
 		  <?= $column_generator->add_to_column( "LeBisou" ); ?>	
@@ -158,13 +185,14 @@ $column_generator->generate_style("AmericanRobins", "white");
 		  <?= $column_generator->add_to_column( "LaPiscine" ); ?>  
 		  <?= $column_generator->add_to_column( "JeuDeRegard" ); ?>
 		  <?= $column_generator->add_to_column( "RosesRouges" ); ?>
-		  <?= $column_generator->add_to_column( "DesertJordanie" ); ?>
+		  <?= $column_generator->add_to_column( "TroueeBois" ); ?>
 		  <?= $column_generator->add_to_column( "AmericanRobins" ); ?>
-		  <?= $column_generator->add_to_column( "AutomneCezanne" ); ?>
+
 
  
         </div>
       </div>
+	  </div>
  
       
      <!-- Footer -->

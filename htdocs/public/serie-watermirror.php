@@ -148,6 +148,7 @@ $column_generator->generate_style_not_a_paint("ContemplationAigretteInSitu");
       </div>
 
      <!-- Paintings -->
+	 <!-- block 1 before in-situ -->
       <div class="w3-grid" style="grid-template-columns:100%">
     
 		  <!-- single column 1st step--> 
@@ -164,7 +165,7 @@ $column_generator->generate_style_not_a_paint("ContemplationAigretteInSitu");
 		<?= $column_generator->add_to_column( "ClairDeSoleil" ); ?>
 		<?= $column_generator->add_to_column_not_a_paint( "ClairDeSoleilInSitu" ); ?> 
 		<?= $column_generator->add_to_column( "BrumesDuSoir" ); ?>
-		<?= $column_generator->add_to_column( "EgretYellowSunset" ); ?>
+
         </div>
 
 		
@@ -176,8 +177,6 @@ $column_generator->generate_style_not_a_paint("ContemplationAigretteInSitu");
 		 <?= $column_generator->add_to_column( "JeuxVagues" ); ?>
 		  <?= $column_generator->add_to_column( "LaBragueTamarin" ); ?>
 		  <?= $column_generator->add_to_column( "MilieuTorrent" ); ?>
-		  <?= $column_generator->add_to_column_not_a_paint( "ContemplationAigretteInSitu" ); ?> 
-
 		</div>
    
 	   
@@ -188,15 +187,32 @@ $column_generator->generate_style_not_a_paint("ContemplationAigretteInSitu");
           <?= $column_generator->add_to_column( "ParisQuaiSeine" ); ?> 
 		  <?= $column_generator->add_to_column( "PinkSunset" ); ?>
 		  <?= $column_generator->add_to_column( "MangroveCockatoo" ); ?>
-		  <?= $column_generator->add_to_column( "Contemplation" ); ?>
-		 
-
         </div>
       </div>
-</div>
+      </div>
 
+	 <!-- block 2 in-situ           -->
      <div class="w3-grid" style="grid-template-columns:100%">
-       <!-- single column 2nd step--> 
+	   <!-- first column --> 
+       <div class="w3-grid" style="grid-template-columns:38% 24% 38%">
+        
+		<div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">	 
+		<?= $column_generator->add_to_column( "EgretYellowSunset" ); ?>	 
+        </div>
+         <!-- second column --> 	    
+        <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">	
+		<?= $column_generator->add_to_column_not_a_paint( "ContemplationAigretteInSitu" ); ?> 
+       </div>
+         <!-- Third column --> 	
+       <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
+	   	<?= $column_generator->add_to_column( "Contemplation" ); ?>
+		</div>
+		</div>
+	 </div>
+	 		 
+	 <!-- block 3 Reprise peintures           -->			 
+     <div class="w3-grid" style="grid-template-columns:100%">
+       <!-- single column --> 
 	  <div class="w3-grid" style="grid-template-columns:100%">
         <div class="w3-grid" style="grid-template-columns:auto; align-content:flex-start">
 		  <?= $column_generator->add_to_column( "IlotMangrove" ); ?>
@@ -226,7 +242,7 @@ $column_generator->generate_style_not_a_paint("ContemplationAigretteInSitu");
         </div>
       </div>
 	  </div>
-		
+	
      <!-- Footer -->
     <?php include("../public/copyright.php"); ?>
     
