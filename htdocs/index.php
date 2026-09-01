@@ -179,7 +179,7 @@
         <a href="<?= Translator::url('/public/serie-atelier.php') ?>">
 	  <div class="w3-card-4">
 	    <div class="imagecontainer w3-center">
-	      <img src="/public/images/web/2024-04-29-GEM-peint.png" alt="Conte Musical" style="width:100%; " />
+	      <img src="/public/images/web/Atelier_2024-GEM-peint.png" alt="GEM peint" style="width:100%; " />
 	    </div>
 	    <div class="w3-container w3-center">
 	      <?= Translator::t("Atelier"); ?>
