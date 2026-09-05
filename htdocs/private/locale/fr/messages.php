@@ -131,20 +131,20 @@ return array(
 	</p>",
 
    
-    'Introduction' => '  <p>Gisèle Eisenmann Montagné (nom artiste: GEM) est une artiste autodidacte, travaillant 
-	principalement aujourd’hui avec l’huile et l’acrylique, et occasionnellement avec des pastels secs. 
-	A l’origine Docteur es Sciences et informaticienne, elle transitionne vers la peinture lorsque le COVID frappe 
-	et qu’elle réalise combien la vie, la famille et les beautés de la nature sont fondamentales. 
- Après la pandémie, elle joint l’atelier d’artistes de <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant</a> à Grasse (06) 
-<br>Ses tableaux sont essentiellement figuratifs, sujets paysagers, nature, portraits 
-où s’expriment des couleurs vives. Elle immortalise des reflets 
-dans les paysages aquatiques variés, influencée par ses voyages réguliers en Australie et ses photos 
-qui lui servent de source d’inspiration. 
-Elle explore aussi l’abstrait qui lui permet de faire jaillir couleurs et formes plus librement. 
+    'Introduction' => " <p>Gisèle Eisenmann Montagné, née en 1959, est peintre autodidacte, son nom d'artiste est GEM. Elle débute la peinture pendant
+la pandémie de 2020 avec l'usage de pastels secs en pratiquant avec des tutoriaux sur internet. Elle se forme ensuite auprès d'artistes
+comme Josy Grant de Grasse (06, France) pour les bases de la peinture à l'huile et à l'acrylique, puis auprès de l'artiste
+Françoise Lebègue de Cannes (alias F Sim) pour la peinture contemporaine.  
+Deux évènements vont déterminer sa nouvelle carrière d'artiste peintre:
+<ul> <li> la pandémie de 2020 qui l'isole 2 ans de son tout premier petit-fils encore bébé qui vit à l'étranger. Ceci la pousse à transcender l'absence par
+la création d'après photo. Peindre est l'art de créer de la présence, matérialiser les êtres et les choses ici et maintenant.</li>
+<li> Un premier prix décerné 1 an après la conforte dans sa légitimité d'artiste en reconnaissant la qualité et la valeur de son travail. </li>
+</ul>
+ Après une période essentiellement figurative, imprégnée de la nature et de son environnement (portraits, paysages), elle évolue vers une expression plus personnelle (techniques mixtes, collage, abstraction).
 </br>
 <br> Elle vit et travaille sur la Cote d’Azur (France). Depuis 2021, elle expose régulièrement en solo ou en exposition collective.
 </br>
- ',
+ ",
  
      'Winner' => "<p>Gisèle Eisenmann Montagné est lauréate des prix suivants
 	<ul><li>2025 et 2024 Luxembourg Art prize: CERTIFICAT DE MERITE ARTISTIQUE </li>

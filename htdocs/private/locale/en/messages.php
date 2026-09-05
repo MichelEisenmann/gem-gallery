@@ -127,16 +127,18 @@ confusing perspectives, resulting in surrealist works.
 
 
 	'Introduction' => '<p>
-     Self-taught artist, Gisele Eisenmann Montagne (signing artist name: GEM) is a figurative painter working primarily 
-	 in oils and in acrylics, occasionnaly in soft pastels. A former PhD Scientist and computing engineer, GEM\'s transition
-	 to painting was catalyzed by the realization that enjoying life and nature\'s beauties was invaluable when the covid-19 pandemic
-	 came along in 2020 and we were forced indoors and isolated. 
-	 She developed her oil and acrylic technics joining <a href="http://www.atelier-des-beaux-arts-grasse.fr/">Josy Grant</a>\'s artist studio in Grasse (06). 
-	 <br>Her paintings are essentially figurative, landscape subjects, nature, portraits where bright and saturated colors 
-	 are expressed. She immortalizes reflections in the varied aquatic landscapes. She used the opportunity of her 
-	 regular trips to Australia to snap photos for painting reference materials
-	 She is attracted to the abstract painting, which allows her to bring out colours and shapes freely.</br>
-	 Gem currently lives and works in the French Riviera, France. Since 2021, she has been exhibiting regularly in solo or group exhibitions. 
+     Gisèle Eisenmann Montagné, born in 1959, is a self-taught painter, her artist name is GEM. She began painting during the 2020 pandemic 
+	 with the use of soft pastels learning with tutorials from the internet. She then trained with artists such as 
+	 Josy Grant from Grasse (06, France) about the basics of oil and acrylic painting, then with the artist Françoise Lebègue from Cannes (alias F Sim) 
+	 for contemporary painting. Two events will determine her new career as a painter: 
+	 <ul><li>The pandemic of 2020 which isolated her 2 years from her very first grandson, still a baby, who lives abroad. 
+	 This pushes her to transcend absence through the creation based on photographs. Painting is the art of creating presence, materializing 
+	 beings and things here and now. </li>
+	 <li>A first prize awarded 1 year later confirmed her legitimacy as an artist by recognising the quality and value of her work.</li>
+	 </ul></p>
+	 <br>After an essentially figurative period, impregnated with nature and its environment (portraits, landscapes), she evolved towards 
+	 a more personal expression (mixed techniques, collage, abstraction). Gem currently lives and works in the French Riviera, France. 
+	 Since 2021, she has been exhibiting regularly in solo or group exhibitions. 
     </br>
   </p>',
   
