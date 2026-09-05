@@ -38,7 +38,7 @@
 	  <?= Translator::t('contactlaius') ?>
 	</div>
 	<div class="w3-col s6 w3-center w3-container">
-	  <img class="to-be-signed" src="../public/images/web/2024-04-29-GEM-peint.png" alt="Artist" style="width:100%"/>
+	  <img class="to-be-signed" src="../public/images/web/Atelier_peintIleMangrove.png" alt="ArtistMangrove" style="width:100%"/>
 	</div>
       </div>
 
