@@ -1,8 +1,9 @@
 <?php
 return array(
-    'Work' => "Artwork",
+    'Work' => "Paintings",
     'Expositions' => "Exhibitions",
-    'About' => "About",
+	'Demarche' => "Artistic Approach",
+    'About' => "Biography",
 	'Biography' => "Biography",
     'Contact' => "Contact",
 
@@ -125,7 +126,7 @@ confusing perspectives, resulting in surrealist works.
     Paintings are available for purchase.</br>
 	</p>',	
 
-
+   // Biographie Page    
 	'Introduction' => '<p>
      Gisèle Eisenmann Montagné, born in 1959, is a self-taught painter, her artist name is GEM. She began painting during the 2020 pandemic 
 	 with the use of soft pastels learning with tutorials from the internet. She then trained with artists such as 
@@ -148,6 +149,16 @@ confusing perspectives, resulting in surrealist works.
 		<li>2021 2nd prize, Watercolour/Pastel category [Painting Festival - (Picasso Museum friends organization)] </li> 
 	</ul>',
 
+   // Démarche Page 
+   'DemarchePrologue' => "Capturing the fleeting image of the harmony of life, taking its essence, interpreting it and 
+   materializing it with colors, texture and then share it",
+   'DemarcheTexte' => "<p>Very early on, I took photos in reportage mode and this process of capture and sharing was at work. 
+   My photos are my main source of inspiration. But painting fulfills me more in time and space. 
+   I feel like painting is a long-term process, a time necessary to appropriate the landscape or the environment of the subject. 
+   Similarly, texture and relief expression are as important as the choice of colors. Thus, modeling and inlay of materials 
+   on the canvas (characters, animals or architectural elements) give me this spatial sensation.
+   </p>",
+   
     // Contact Page
     'Contacter' => 'For all questions or inquiries',
 	'contactlaius' => "For all questions or inquiries,  

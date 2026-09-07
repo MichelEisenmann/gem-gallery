@@ -12,6 +12,7 @@ return array(
 
     'Work' => "Oeuvres",
     'Expositions' => "Expositions",
+	'Demarche' => "Démarche",
     'About' => "Biographie",
     'Biography' => "Biographie",
     'Contact' => "Contact",
@@ -130,7 +131,8 @@ return array(
 	Les oeuvres capturent souvent des moments paisibles dans la nature que j'ai reproduits à partir de mes photos. 
 	</p>",
 
-   
+
+   // Biographie Page    
     'Introduction' => " <p>Gisèle Eisenmann Montagné, née en 1959, est peintre autodidacte, son nom d'artiste est GEM. Elle débute la peinture pendant
 la pandémie de 2020 avec l'usage de pastels secs en pratiquant avec des tutoriaux sur internet. Elle se forme ensuite auprès d'artistes
 comme Josy Grant de Grasse (06, France) pour les bases de la peinture à l'huile et à l'acrylique, puis auprès de l'artiste
@@ -152,6 +154,17 @@ la création d'après photo. Peindre est l'art de créer de la présence, matér
 		<li>2021 2ème prix, catégorie Aquarelle/pastel [Faîtes de la peinture - (association les amis du musée Picasso)] </li> 
 	</ul>",
 
+   // Démarche Page 
+   'DemarchePrologue' => "Capturer l'image fugace de l'harmonie de la vie, en prélever l'essence, l'interpréter et la matérialiser avec des couleurs, 
+   de la texture puis la partager",
+   'DemarcheTexte' => " <p>Très tôt, je prends des photos en mode reportage et ce processus de capture et partage est à l'oeuvre. 
+   Mes photos sont ma principale source d'inspiration. Mais la peinture m'épanouit plus dans le temps et l'espace. 
+   <br> Peindre s'inscrit pour moi dans le temps long, un temps nécessaire pour s'approprier le paysage ou l'environnement
+   du sujet. De même, la texture et l'expression en relief sont aussi importants que le choix des couleurs.  Ainsi, le modelage et l'inscrustation
+   de matériaux sur la toile (personnages, animaux ou éléments architecturaux) m'apportent cette sensation spatiale. </br> 
+    </p>
+ ",
+ 
    // Contact Page 
     'Contacter' => "Pour toute question ou message",
 	'contactlaius' => "Pour toute question ou demande de renseignement, 
