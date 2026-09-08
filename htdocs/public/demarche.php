@@ -51,22 +51,6 @@
       <!-- text -->
       <div class="w3-content w3-container gem-justify">
 
-	          <img class="artiste to-be-signed img-right"
-                       src="../public/images/Acrylique/20260125_PurpleSeagull_AC73x50_small.jpg"
-                       alt="Purple seagull"
-                       onclick="document.getElementById('ModalSeagull').style.display='block'"
-                       />
-
-               <!-- the part that is displayed when one clicks on the above image -->
-               <div id="ModalSeagull" class="w3-modal" onclick="this.style.display='none'">
-                 <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                 <div class="w3-modal-content w3-animate-zoom">
-	               <img class="artiste to-be-signed"
-                            src="../public/images/Acrylique/20260125_PurpleSeagull_AC73x50.jpg"
-                            alt="Purple seagull" width="100%"/>
-                 </div>
-               </div>
-
 	           <?= Translator::t('DemarchePrologue'); ?>
       </div>
 
@@ -88,6 +72,24 @@
                </div>
 
         <?= Translator::t('DemarcheTexte'); ?>	  
+
+	          <img class="artiste to-be-signed img-right"
+                       src="../public/images/Acrylique/20260125_PurpleSeagull_AC73x50_small.jpg"
+                       alt="Purple seagull"
+                       onclick="document.getElementById('ModalSeagull').style.display='block'"
+                       />
+
+               <!-- the part that is displayed when one clicks on the above image -->
+               <div id="ModalSeagull" class="w3-modal" onclick="this.style.display='none'">
+                 <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                 <div class="w3-modal-content w3-animate-zoom">
+	               <img class="artiste to-be-signed"
+                            src="../public/images/Acrylique/20260125_PurpleSeagull_AC73x50.jpg"
+                            alt="Purple seagull" width="100%"/>
+                 </div>
+               </div>
+        <?= Translator::t('DemarcheTexte2'); ?>	  
+        <?= Translator::t('DemarcheTexte3'); ?>	  
       </div>
 
       

@@ -157,13 +157,23 @@ la création d'après photo. Peindre est l'art de créer de la présence, matér
    // Démarche Page 
    'DemarchePrologue' => "Capturer l'image fugace de l'harmonie de la vie, en prélever l'essence, l'interpréter et la matérialiser avec des couleurs, 
    de la texture puis la partager",
+
    'DemarcheTexte' => " <p>Très tôt, je prends des photos en mode reportage et ce processus de capture et partage est à l'oeuvre. 
    Mes photos sont ma principale source d'inspiration. Mais la peinture m'épanouit plus dans le temps et l'espace. 
    <br> Peindre s'inscrit pour moi dans le temps long, un temps nécessaire pour s'approprier le paysage ou l'environnement
    du sujet. De même, la texture et l'expression en relief sont aussi importants que le choix des couleurs.  Ainsi, le modelage et l'inscrustation
    de matériaux sur la toile (personnages, animaux ou éléments architecturaux) m'apportent cette sensation spatiale. </br> 
-    </p>
- ",
+    </p>",
+
+   'DemarcheTexte2' => " Mes tableaux procurent serenite, calme et poussent a l'instrospection. Les couleurs vives (delcinaison de orange et
+    jaune) s'allient aux bleus des elements liquides ou du ciel. Les jeux de lumiere me fascinent. Je suis egalement inspiree par le rythme
+    des lignes elancees, la dynamique des corps en mouvement, la gestuelle, la posesie des formes arrondies.",
+
+    'DemarcheTexte3' => "Au point de vue technique, pour exprimer ma creation, j'ai choisi le pastel sec sur papier pour les douces images
+     et les portraits petits formats. J'ai travaille a l'huile et au couteau pour les paysages afin de donner de la texture aux grands
+     formats sur toile. La peinture a l'acrylique me permet maintenant d'evoluer vers encore plus de texture et de relief, grace au collage et
+     techniques mixtes. En parallele, je travaille a la conceptuatlisation des elements figuratifs qui me touchent, capturer leur essence
+     ce qui aboutit a des tableaux plus abstraits.",
  
    // Contact Page 
     'Contacter' => "Pour toute question ou message",

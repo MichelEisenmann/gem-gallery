@@ -152,12 +152,17 @@ confusing perspectives, resulting in surrealist works.
    // Démarche Page 
    'DemarchePrologue' => "Capturing the fleeting image of the harmony of life, taking its essence, interpreting it and 
    materializing it with colors, texture and then share it",
+
    'DemarcheTexte' => "<p>Very early on, I took photos in reportage mode and this process of capture and sharing was at work. 
    My photos are my main source of inspiration. But painting fulfills me more in time and space. 
    I feel like painting is a long-term process, a time necessary to appropriate the landscape or the environment of the subject. 
    Similarly, texture and relief expression are as important as the choice of colors. Thus, modeling and inlay of materials 
    on the canvas (characters, animals or architectural elements) give me this spatial sensation.
    </p>",
+
+    'DemarcheTexte2' => "todo DemarcheText2",
+
+    'DemarcheTexte3' => "todo DemarcheText3",
    
     // Contact Page
     'Contacter' => 'For all questions or inquiries',
