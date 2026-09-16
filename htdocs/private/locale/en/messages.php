@@ -150,19 +150,26 @@ confusing perspectives, resulting in surrealist works.
 	</ul>',
 
    // Démarche Page 
-   'DemarchePrologue' => "Capturing the fleeting image of the harmony of life, taking its essence, interpreting it and 
-   materializing it with colors, texture and then share it",
+   'DemarchePrologue' => "Capturing the fleeting image of life's harmony, distilling its essence, interpreting and materializing 
+   it through color and texture, and then sharing it.",
 
-   'DemarcheTexte' => "<p>Very early on, I took photos in reportage mode and this process of capture and sharing was at work. 
-   My photos are my main source of inspiration. But painting fulfills me more in time and space. 
-   I feel like painting is a long-term process, a time necessary to appropriate the landscape or the environment of the subject. 
-   Similarly, texture and relief expression are as important as the choice of colors. Thus, modeling and inlay of materials 
-   on the canvas (characters, animals or architectural elements) give me this spatial sensation.
-   </p>",
+   'DemarcheTexte' => " <p>This is what drives me; I began with photography as a way to capture and share emotional moments. 
+   Today, my photographs serve as the primary inspiration for my creative work. Painting, however, offers me a sense of fulfillment 
+   that unfolds across both time and space. For me, painting is a long-term process—time needed to truly internalize the landscape or 
+   the subject's environment. Texture and relief are just as important as the choice of colors. 
+   Consequently, modeling and embedding materials onto the canvas (such as figures, animals, or architectural elements) 
+   provide me with that sense of spatial depth.</br> 
+    </p>",
 
-    'DemarcheTexte2' => "todo DemarcheText2",
+   'DemarcheTexte2' => " My paintings evoke serenity and calm, inviting introspection. Vibrant colors—shades of orange and 
+   yellow—blend with the blues of water and sky. I am fascinated by the interplay of light. I also draw inspiration from the 
+   rhythm of slender lines, the dynamics of bodies in motion, expressive gestures, and the poetry of rounded forms.",
 
-    'DemarcheTexte3' => "todo DemarcheText3",
+    'DemarcheTexte3' => "Technically, I employ different methods depending on the subject. I choose soft pastel on paper 
+	for gentle imagery and small-format portraits. I have worked with oils and a palette knife on landscapes to add texture 
+	to large-scale canvases. Acrylic paint now allows me to explore even greater texture and relief through collage and 
+	mixed-media techniques. At the same time, I focus on conceptualizing the figurative elements that resonate with 
+	me—capturing their essence—which results in more abstract paintings. ",
    
     // Contact Page
     'Contacter' => 'For all questions or inquiries',
